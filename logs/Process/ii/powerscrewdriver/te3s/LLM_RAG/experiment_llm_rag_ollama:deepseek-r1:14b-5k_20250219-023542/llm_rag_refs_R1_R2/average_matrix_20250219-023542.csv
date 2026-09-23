@@ -1,0 +1,8 @@
+,Housing,Motor,Clip,Gear,Shaft,Battery,Trigger
+Housing,1,1,1,1,1,0,1
+Motor,1,1,0,1,0,1,1
+Clip,1,0,1,0,0,0,0
+Gear,1,1,0,1,1,0,0
+Shaft,1,0,0,1,1,0,0
+Battery,0,1,0,0,0,1,1
+Trigger,1,1,0,0,0,1,1

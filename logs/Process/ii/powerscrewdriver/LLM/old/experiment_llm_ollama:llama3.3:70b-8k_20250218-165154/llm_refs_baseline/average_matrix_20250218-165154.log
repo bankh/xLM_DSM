@@ -1,0 +1,537 @@
+2025-02-19 22:31:11,464 - DSM_None_None_ - INFO - 
+Best matches for each ground truth component:
+2025-02-19 22:31:11,466 - DSM_None_None_ - INFO - 
+Bit:
+2025-02-19 22:31:11,468 - DSM_None_None_ - INFO -   predicted_component  embedding_similarity
+1             Battery              0.425371
+4              Handle              0.402832
+5              Switch              0.401422
+2025-02-19 22:31:11,470 - DSM_None_None_ - INFO - 
+Transmission:
+2025-02-19 22:31:11,472 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+12              Switch              0.534613
+9              Gearbox              0.524029
+7                Motor              0.450794
+2025-02-19 22:31:11,475 - DSM_None_None_ - INFO - 
+Motor:
+2025-02-19 22:31:11,476 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+14               Motor              1.000000
+15             Battery              0.538682
+16             Gearbox              0.475674
+2025-02-19 22:31:11,479 - DSM_None_None_ - INFO - 
+Electrical System:
+2025-02-19 22:31:11,480 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+27             Circuit              0.528743
+22             Battery              0.436050
+21               Motor              0.353539
+2025-02-19 22:31:11,483 - DSM_None_None_ - INFO - 
+Battery Holder:
+2025-02-19 22:31:11,484 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+29             Battery              0.647835
+32              Handle              0.380479
+34             Circuit              0.320435
+2025-02-19 22:31:11,486 - DSM_None_None_ - INFO - 
+Housing:
+2025-02-19 22:31:11,487 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+39              Handle              0.345588
+41             Circuit              0.269509
+37             Gearbox              0.247303
+2025-02-19 22:31:11,491 - DSM_None_None_ - INFO - 
+External Environment:
+2025-02-19 22:31:11,491 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+43             Battery              0.265501
+46              Handle              0.244003
+47              Switch              0.238198
+2025-02-19 22:31:24,170 - DSM_None_None_ - INFO - System Context: power drill
+2025-02-19 22:31:24,172 - DSM_None_None_ - INFO - Similarity Threshold: 0.3
+2025-02-19 22:31:39,898 - DSM_None_None_ - INFO - 
+Removing mapping due to low similarity:
+2025-02-19 22:31:39,899 - DSM_None_None_ - INFO - - External Environment -> Switch (similarity: 0.238)
+2025-02-19 22:31:39,902 - DSM_None_None_ - INFO - 
+Final Component Mapping (only valid matches):
+2025-02-19 22:31:39,903 - DSM_None_None_ - INFO -   Ground Truth Component Matched Predicted Component
+0                    Bit                       Chuck
+1           Transmission                     Gearbox
+2                  Motor                       Motor
+3      Electrical System                     Circuit
+4         Battery Holder                     Battery
+5                Housing                      Handle
+2025-02-19 22:32:59,213 - DSM_None_None_ - INFO - System Context: power drill
+2025-02-19 22:32:59,216 - DSM_None_None_ - INFO - Similarity Threshold: 0.3
+2025-02-19 22:33:18,252 - DSM_None_None_ - INFO - 
+Removing mapping due to low similarity:
+2025-02-19 22:33:18,253 - DSM_None_None_ - INFO - - External Environment -> Switch (similarity: 0.238)
+2025-02-19 22:33:18,262 - DSM_None_None_ - INFO - 
+Final Component Mapping (only valid matches):
+2025-02-19 22:33:18,263 - DSM_None_None_ - INFO -   Ground Truth Component Matched Predicted Component
+0                    Bit                       Chuck
+1           Transmission                     Gearbox
+2                  Motor                       Motor
+3      Electrical System                     Circuit
+4         Battery Holder                     Battery
+5                Housing                      Handle
+2025-02-19 22:36:50,455 - DSM_None_None_ - INFO - System Context: power drill
+2025-02-19 22:36:50,456 - DSM_None_None_ - INFO - Similarity Threshold: 0.3
+2025-02-19 22:37:05,069 - DSM_None_None_ - INFO - 
+Removing invalid mapping:
+2025-02-19 22:37:05,070 - DSM_None_None_ - INFO - - External Environment -> 
+2025-02-19 22:37:05,071 - DSM_None_None_ - INFO - 
+Final Component Mapping (only valid matches):
+2025-02-19 22:37:05,072 - DSM_None_None_ - INFO -   Ground Truth Component Matched Predicted Component
+0                    Bit                       Chuck
+1           Transmission                     Gearbox
+2                  Motor                       Motor
+3      Electrical System                     Circuit
+4         Battery Holder                     Battery
+5                Housing                      Handle
+2025-02-19 22:37:05,077 - DSM_None_None_ - INFO - 
+=== STARTING DSM EVALUATION ===
+2025-02-19 22:37:05,077 - DSM_None_None_ - INFO - 
+=== RAW LLM OUTPUT EVALUATION ===
+2025-02-19 22:37:05,091 - DSM_None_None_ - INFO - 
+Evaluation Metrics for Raw LLM Output:
+2025-02-19 22:37:05,092 - DSM_None_None_ - INFO - accuracy: 0.7143
+2025-02-19 22:37:05,093 - DSM_None_None_ - INFO - precision: 0.7083
+2025-02-19 22:37:05,094 - DSM_None_None_ - INFO - recall: 1.0000
+2025-02-19 22:37:05,095 - DSM_None_None_ - INFO - f1_score: 0.8293
+2025-02-19 22:37:05,096 - DSM_None_None_ - INFO - edit_distance: 14.0000
+2025-02-19 22:37:05,097 - DSM_None_None_ - INFO - spectral_distance: 2.8168
+2025-02-19 22:37:05,098 - DSM_None_None_ - INFO - 
+=== ALIGNED COMPONENTS EVALUATION ===
+2025-02-19 22:37:05,106 - DSM_None_None_ - INFO - 
+Aligned Matrices:
+2025-02-19 22:37:05,109 - DSM_None_None_ - INFO - 
+Ground Truth Matrix (original component names):
+                   Bit  Transmission  Motor  Electrical System  \
+Bit                  1             1      0                  0   
+Transmission         1             1      1                  0   
+Motor                0             1      1                  0   
+Electrical System    1             1      1                  1   
+Battery Holder       0             0      0                  1   
+Housing              0             1      1                  1   
+
+                   Battery Holder  Housing  
+Bit                             0        0  
+Transmission                    0        1  
+Motor                           1        1  
+Electrical System               1        1  
+Battery Holder                  1        1  
+Housing                         1        1  
+2025-02-19 22:37:05,115 - DSM_None_None_ - INFO - 
+Aligned Predicted Matrix (predicted (ground truth) format):
+                             Chuck (Bit)  Gearbox (Transmission)  \
+Chuck (Bit)                          1.0                     1.0   
+Gearbox (Transmission)               1.0                     1.0   
+Motor (Motor)                        1.0                     1.0   
+Circuit (Electrical System)          1.0                     1.0   
+Battery (Battery Holder)             1.0                     1.0   
+Handle (Housing)                     1.0                     1.0   
+
+                             Motor (Motor)  Circuit (Electrical System)  \
+Chuck (Bit)                            1.0                          0.0   
+Gearbox (Transmission)                 1.0                          1.0   
+Motor (Motor)                          1.0                          1.0   
+Circuit (Electrical System)            1.0                          1.0   
+Battery (Battery Holder)               1.0                          1.0   
+Handle (Housing)                       1.0                          1.0   
+
+                             Battery (Battery Holder)  Handle (Housing)  
+Chuck (Bit)                                       1.0               1.0  
+Gearbox (Transmission)                            1.0               1.0  
+Motor (Motor)                                     1.0               1.0  
+Circuit (Electrical System)                       1.0               1.0  
+Battery (Battery Holder)                          1.0               1.0  
+Handle (Housing)                                  1.0               1.0  
+2025-02-19 22:37:05,128 - DSM_None_None_ - INFO - 
+Evaluation Metrics for Aligned Components:
+2025-02-19 22:37:05,129 - DSM_None_None_ - INFO - accuracy: 0.6944
+2025-02-19 22:37:05,130 - DSM_None_None_ - INFO - precision: 0.6857
+2025-02-19 22:37:05,130 - DSM_None_None_ - INFO - recall: 1.0000
+2025-02-19 22:37:05,131 - DSM_None_None_ - INFO - f1_score: 0.8136
+2025-02-19 22:37:05,132 - DSM_None_None_ - INFO - edit_distance: 11.0000
+2025-02-19 22:37:05,133 - DSM_None_None_ - INFO - spectral_distance: 2.5396
+2025-02-19 22:37:05,134 - DSM_None_None_ - INFO - 
+=== GENERATING VISUALIZATIONS ===
+2025-02-19 22:37:06,666 - DSM_None_None_ - INFO - 
+Evaluation complete. Visualizations generated.
+2025-02-19 23:18:01,239 - DSM_None_None_ - INFO - 
+Best matches for each ground truth component:
+2025-02-19 23:18:01,241 - DSM_None_None_ - INFO - 
+Bit:
+2025-02-19 23:18:01,243 - DSM_None_None_ - INFO -   predicted_component  embedding_similarity
+1             Battery              0.425371
+4              Handle              0.402832
+5              Switch              0.401422
+2025-02-19 23:18:01,247 - DSM_None_None_ - INFO - 
+Transmission:
+2025-02-19 23:18:01,248 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+12              Switch              0.534613
+9              Gearbox              0.524029
+7                Motor              0.450794
+2025-02-19 23:18:01,251 - DSM_None_None_ - INFO - 
+Motor:
+2025-02-19 23:18:01,252 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+14               Motor              1.000000
+15             Battery              0.538682
+16             Gearbox              0.475674
+2025-02-19 23:18:01,254 - DSM_None_None_ - INFO - 
+Electrical System:
+2025-02-19 23:18:01,256 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+27             Circuit              0.528743
+22             Battery              0.436050
+21               Motor              0.353539
+2025-02-19 23:18:01,258 - DSM_None_None_ - INFO - 
+Battery Holder:
+2025-02-19 23:18:01,259 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+29             Battery              0.647835
+32              Handle              0.380479
+34             Circuit              0.320435
+2025-02-19 23:18:01,262 - DSM_None_None_ - INFO - 
+Housing:
+2025-02-19 23:18:01,263 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+39              Handle              0.345588
+41             Circuit              0.269509
+37             Gearbox              0.247303
+2025-02-19 23:18:01,265 - DSM_None_None_ - INFO - 
+External Environment:
+2025-02-19 23:18:01,266 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+43             Battery              0.265501
+46              Handle              0.244003
+47              Switch              0.238198
+2025-02-19 23:18:06,043 - DSM_None_None_ - INFO - System Context: power drill
+2025-02-19 23:18:06,045 - DSM_None_None_ - INFO - Similarity Threshold: 0.3
+2025-02-19 23:18:06,063 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-02-19 23:18:06,064 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/PowerDrill/LLM/experiment_llm_ollama:llama3.3:70b-8k_20250218-165154/llm_refs_baseline/average_matrix_20250218-165154.csv
+2025-02-19 23:18:06,064 - DSM_None_None_ - INFO - Extracted model: llama3.3:70b-8k
+2025-02-19 23:18:06,065 - DSM_None_None_ - INFO - Creating similarity matrix text
+2025-02-19 23:18:06,099 - DSM_None_None_ - INFO - Creating prompt
+2025-02-19 23:18:06,100 - DSM_None_None_ - INFO - Attempting to use model: llama3.3:70b-8k
+2025-02-19 23:18:06,371 - DSM_None_None_ - INFO - 
+Final Component Mapping (only valid matches):
+2025-02-19 23:18:06,372 - DSM_None_None_ - INFO - Empty DataFrame
+Columns: [Ground Truth Component, Matched Predicted Component]
+Index: []
+2025-02-19 23:18:06,374 - DSM_None_None_ - INFO - 
+Evaluation complete. Visualizations generated.
+2025-02-20 03:06:25,059 - DSM_None_None_ - INFO - 
+Best matches for each ground truth component:
+2025-02-20 03:06:25,061 - DSM_None_None_ - INFO - 
+Bit:
+2025-02-20 03:06:25,063 - DSM_None_None_ - INFO -   predicted_component  embedding_similarity
+1             Battery              0.425371
+4              Handle              0.402832
+5              Switch              0.401422
+2025-02-20 03:06:25,067 - DSM_None_None_ - INFO - 
+Transmission:
+2025-02-20 03:06:25,068 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+12              Switch              0.534613
+9              Gearbox              0.524029
+7                Motor              0.450794
+2025-02-20 03:06:25,071 - DSM_None_None_ - INFO - 
+Motor:
+2025-02-20 03:06:25,072 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+14               Motor              1.000000
+15             Battery              0.538682
+16             Gearbox              0.475674
+2025-02-20 03:06:25,075 - DSM_None_None_ - INFO - 
+Electrical System:
+2025-02-20 03:06:25,076 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+27             Circuit              0.528743
+22             Battery              0.436050
+21               Motor              0.353539
+2025-02-20 03:06:25,078 - DSM_None_None_ - INFO - 
+Battery Holder:
+2025-02-20 03:06:25,080 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+29             Battery              0.647835
+32              Handle              0.380479
+34             Circuit              0.320435
+2025-02-20 03:06:25,082 - DSM_None_None_ - INFO - 
+Housing:
+2025-02-20 03:06:25,084 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+39              Handle              0.345588
+41             Circuit              0.269509
+37             Gearbox              0.247303
+2025-02-20 03:06:25,086 - DSM_None_None_ - INFO - 
+External Environment:
+2025-02-20 03:06:25,087 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+43             Battery              0.265501
+46              Handle              0.244003
+47              Switch              0.238198
+2025-02-20 03:06:37,246 - DSM_None_None_ - INFO - System Context: power drill
+2025-02-20 03:06:37,247 - DSM_None_None_ - INFO - Similarity Threshold: 0.3
+2025-02-20 03:06:37,248 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-02-20 03:06:37,248 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/PowerDrill/LLM/experiment_llm_ollama:llama3.3:70b-8k_20250218-165154/llm_refs_baseline/average_matrix_20250218-165154.csv
+2025-02-20 03:06:37,249 - DSM_None_None_ - INFO - Extracted model: llama3.3:70b-8k
+2025-02-20 03:06:37,250 - DSM_None_None_ - INFO - Creating similarity matrix text
+2025-02-20 03:06:37,276 - DSM_None_None_ - INFO - Creating prompt
+2025-02-20 03:06:37,277 - DSM_None_None_ - INFO - Attempting to use model: llama3.3:70b-8k
+2025-02-20 03:06:37,998 - DSM_None_None_ - INFO - 
+Final Component Mapping (only valid matches):
+2025-02-20 03:06:37,999 - DSM_None_None_ - INFO - Empty DataFrame
+Columns: [Ground Truth Component, Matched Predicted Component]
+Index: []
+2025-02-20 03:06:38,001 - DSM_None_None_ - INFO - 
+Evaluation complete. Visualizations generated.
+2025-02-20 03:31:17,972 - DSM_None_None_ - INFO - 
+Best matches for each ground truth component:
+2025-02-20 03:31:17,973 - DSM_None_None_ - INFO - 
+Bit:
+2025-02-20 03:31:17,975 - DSM_None_None_ - INFO -   predicted_component  embedding_similarity
+1             Battery              0.425371
+4              Handle              0.402832
+5              Switch              0.401422
+2025-02-20 03:31:17,979 - DSM_None_None_ - INFO - 
+Transmission:
+2025-02-20 03:31:17,980 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+12              Switch              0.534613
+9              Gearbox              0.524029
+7                Motor              0.450794
+2025-02-20 03:31:17,983 - DSM_None_None_ - INFO - 
+Motor:
+2025-02-20 03:31:17,984 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+14               Motor              1.000000
+15             Battery              0.538682
+16             Gearbox              0.475674
+2025-02-20 03:31:17,987 - DSM_None_None_ - INFO - 
+Electrical System:
+2025-02-20 03:31:17,988 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+27             Circuit              0.528743
+22             Battery              0.436050
+21               Motor              0.353539
+2025-02-20 03:31:17,991 - DSM_None_None_ - INFO - 
+Battery Holder:
+2025-02-20 03:31:17,992 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+29             Battery              0.647835
+32              Handle              0.380479
+34             Circuit              0.320435
+2025-02-20 03:31:17,995 - DSM_None_None_ - INFO - 
+Housing:
+2025-02-20 03:31:17,996 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+39              Handle              0.345588
+41             Circuit              0.269509
+37             Gearbox              0.247303
+2025-02-20 03:31:17,999 - DSM_None_None_ - INFO - 
+External Environment:
+2025-02-20 03:31:18,000 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+43             Battery              0.265501
+46              Handle              0.244003
+47              Switch              0.238198
+2025-02-20 03:31:28,563 - DSM_None_None_ - INFO - System Context: power drill
+2025-02-20 03:31:28,565 - DSM_None_None_ - INFO - Similarity Threshold: 0.3
+2025-02-20 03:31:28,566 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-02-20 03:31:28,567 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/PowerDrill/LLM/experiment_llm_ollama:llama3.3:70b-8k_20250218-165154/llm_refs_baseline/average_matrix_20250218-165154.csv
+2025-02-20 03:31:28,568 - DSM_None_None_ - INFO - Extracted model: llama3.3:70b-8k
+2025-02-20 03:31:28,569 - DSM_None_None_ - INFO - Creating similarity matrix text
+2025-02-20 03:31:28,604 - DSM_None_None_ - INFO - Creating prompt
+2025-02-20 03:31:28,604 - DSM_None_None_ - INFO - Attempting to use model: llama3.3:70b-8k
+2025-02-20 03:31:29,283 - DSM_None_None_ - INFO - 
+Final Component Mapping (only valid matches):
+2025-02-20 03:31:29,284 - DSM_None_None_ - INFO - Empty DataFrame
+Columns: [Ground Truth Component, Matched Predicted Component]
+Index: []
+2025-02-20 03:31:29,287 - DSM_None_None_ - INFO - 
+Evaluation complete. Visualizations generated.
+2025-02-20 03:34:21,621 - DSM_None_None_ - INFO - 
+Best matches for each ground truth component:
+2025-02-20 03:34:21,623 - DSM_None_None_ - INFO - 
+Bit:
+2025-02-20 03:34:21,624 - DSM_None_None_ - INFO -   predicted_component  embedding_similarity
+1             Battery              0.425361
+4              Handle              0.402900
+5              Switch              0.401470
+2025-02-20 03:34:21,628 - DSM_None_None_ - INFO - 
+Transmission:
+2025-02-20 03:34:21,629 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+12              Switch              0.534613
+9              Gearbox              0.524072
+7                Motor              0.450794
+2025-02-20 03:34:21,632 - DSM_None_None_ - INFO - 
+Motor:
+2025-02-20 03:34:21,633 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+14               Motor              1.000000
+15             Battery              0.538682
+16             Gearbox              0.475715
+2025-02-20 03:34:21,636 - DSM_None_None_ - INFO - 
+Electrical System:
+2025-02-20 03:34:21,637 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+27             Circuit              0.528743
+22             Battery              0.436050
+21               Motor              0.353539
+2025-02-20 03:34:21,640 - DSM_None_None_ - INFO - 
+Battery Holder:
+2025-02-20 03:34:21,641 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+29             Battery              0.647835
+32              Handle              0.380479
+34             Circuit              0.320435
+2025-02-20 03:34:21,644 - DSM_None_None_ - INFO - 
+Housing:
+2025-02-20 03:34:21,645 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+39              Handle              0.345588
+41             Circuit              0.269509
+37             Gearbox              0.247316
+2025-02-20 03:34:21,648 - DSM_None_None_ - INFO - 
+External Environment:
+2025-02-20 03:34:21,649 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+43             Battery              0.265501
+46              Handle              0.244003
+47              Switch              0.238198
+2025-02-20 03:34:49,426 - DSM_None_None_ - INFO - System Context: power drill
+2025-02-20 03:34:49,428 - DSM_None_None_ - INFO - Similarity Threshold: 0.3
+2025-02-20 03:34:49,429 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-02-20 03:34:49,431 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/PowerDrill/LLM/experiment_llm_ollama:llama3.3:70b-8k_20250218-165154/llm_refs_baseline/average_matrix_20250218-165154.csv
+2025-02-20 03:34:49,431 - DSM_None_None_ - INFO - Extracted model: llama3.3:70b-8k
+2025-02-20 03:34:49,432 - DSM_None_None_ - INFO - Creating similarity matrix text
+2025-02-20 03:34:49,500 - DSM_None_None_ - INFO - Creating prompt
+2025-02-20 03:34:49,503 - DSM_None_None_ - INFO - Attempting to use model: llama3.3:70b-8k
+2025-02-20 03:34:49,887 - DSM_None_None_ - INFO - Final Component Mapping (only valid matches):
+2025-02-20 03:34:49,888 - DSM_None_None_ - INFO - Empty DataFrame
+Columns: [Ground Truth Component, Matched Predicted Component]
+Index: []
+2025-02-20 03:34:49,896 - DSM_None_None_ - INFO - Evaluation complete. Visualizations generated.
+2025-02-20 03:39:33,557 - DSM_None_None_ - INFO - 
+Best matches for each ground truth component:
+2025-02-20 03:39:33,559 - DSM_None_None_ - INFO - 
+Bit:
+2025-02-20 03:39:33,560 - DSM_None_None_ - INFO -   predicted_component  embedding_similarity
+1             Battery              0.425371
+4              Handle              0.402832
+5              Switch              0.401422
+2025-02-20 03:39:33,564 - DSM_None_None_ - INFO - 
+Transmission:
+2025-02-20 03:39:33,565 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+12              Switch              0.534613
+9              Gearbox              0.524029
+7                Motor              0.450794
+2025-02-20 03:39:33,568 - DSM_None_None_ - INFO - 
+Motor:
+2025-02-20 03:39:33,569 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+14               Motor              1.000000
+15             Battery              0.538682
+16             Gearbox              0.475674
+2025-02-20 03:39:33,572 - DSM_None_None_ - INFO - 
+Electrical System:
+2025-02-20 03:39:33,573 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+27             Circuit              0.528743
+22             Battery              0.436050
+21               Motor              0.353539
+2025-02-20 03:39:33,576 - DSM_None_None_ - INFO - 
+Battery Holder:
+2025-02-20 03:39:33,577 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+29             Battery              0.647835
+32              Handle              0.380479
+34             Circuit              0.320435
+2025-02-20 03:39:33,580 - DSM_None_None_ - INFO - 
+Housing:
+2025-02-20 03:39:33,581 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+39              Handle              0.345588
+41             Circuit              0.269509
+37             Gearbox              0.247303
+2025-02-20 03:39:33,584 - DSM_None_None_ - INFO - 
+External Environment:
+2025-02-20 03:39:33,585 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+43             Battery              0.265501
+46              Handle              0.244003
+47              Switch              0.238198
+2025-02-20 03:39:42,189 - DSM_None_None_ - INFO - System Context: power drill
+2025-02-20 03:39:42,192 - DSM_None_None_ - INFO - Similarity Threshold: 0.3
+2025-02-20 03:39:42,192 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-02-20 03:39:42,193 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/PowerDrill/LLM/experiment_llm_ollama:llama3.3:70b-8k_20250218-165154/llm_refs_baseline/average_matrix_20250218-165154.csv
+2025-02-20 03:39:42,194 - DSM_None_None_ - INFO - Extracted model: llama3.3:70b-8k
+2025-02-20 03:39:42,195 - DSM_None_None_ - INFO - Creating similarity matrix text
+2025-02-20 03:39:42,228 - DSM_None_None_ - INFO - Creating prompt
+2025-02-20 03:39:42,229 - DSM_None_None_ - INFO - Attempting to use model: llama3.3:70b-8k
+2025-02-20 03:39:42,229 - DSM_None_None_ - INFO - Using Ollama path
+2025-02-20 03:39:42,230 - DSM_None_None_ - INFO - Model name: llama3.3:70b-8k
+2025-02-20 03:39:42,231 - DSM_None_None_ - INFO - Prompt length: 1886
+2025-02-20 03:39:42,232 - DSM_None_None_ - INFO - Running curl command: curl --location "http://localhost:11434/api/generate" --data '{"model": "llama3.3:70b-8k", "prompt": "Given these components from a power drill, determine the optimal one-to-one mapping between ground truth and predicted components:\n\nGround Truth Components: ['Bit', 'Transmission', 'Motor', 'Electrical System', 'Battery Holder', 'Housing', 'External Environment']\nPredicted Components: ['Motor', 'Battery', 'Gearbox', 'Chuck', 'Handle', 'Switch', 'Circuit']\n\nAvailable matches (above 0.3 similarity threshold):\n\nBit potential matches:\n- Battery (similarity: 0.425)\n- Chuck (similarity: 0.321)\n- Handle (similarity: 0.403)\n- Switch (similarity: 0.401)\n\nTransmission potential matches:\n- Motor (similarity: 0.451)\n- Battery (similarity: 0.386)\n- Gearbox (similarity: 0.524)\n- Chuck (similarity: 0.310)\n- Handle (similarity: 0.407)\n- Switch (similarity: 0.535)\n\nMotor potential matches:\n- Motor (similarity: 1.000)\n- Battery (similarity: 0.539)\n- Gearbox (similarity: 0.476)\n- Handle (similarity: 0.425)\n- Switch (similarity: 0.426)\n- Circuit (similarity: 0.368)\n\nElectrical System potential matches:\n- Motor (similarity: 0.354)\n- Battery (similarity: 0.436)\n- Switch (similarity: 0.321)\n- Circuit (similarity: 0.529)\n\nBattery Holder potential matches:\n- Motor (similarity: 0.319)\n- Battery (similarity: 0.648)\n- Gearbox (similarity: 0.320)\n- Handle (similarity: 0.380)\n- Circuit (similarity: 0.320)\n\nHousing potential matches:\n- Handle (similarity: 0.346)\n\nExternal Environment potential matches:\n\n\nTask:\n1. Consider ALL components simultaneously to find the optimal global matching\n2. Each predicted component can only be matched ONCE\n3. Each ground truth component should get at most one match\n4. Consider:\n   - Similarity scores\n   - Functional equivalence\n   - System-level relationships\n   - Overall system coherence\n\nReturn in this format:\nMAPPINGS:\n[ground truth 1] -> [predicted 1]\n[ground truth 2] -> [predicted 2]\n...\nREASON: [brief explanation of the overall matching strategy]", "stream": false}'
+2025-02-20 03:39:42,249 - DSM_None_None_ - ERROR - Curl command failed with return code: 3
+2025-02-20 03:39:42,250 - DSM_None_None_ - ERROR - Stderr:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100   262  100    26  100   236  31630   280k --:--:-- --:--:-- --:--:--  255k
+curl: (3) URL using bad/illegal format or missing URL
+curl: (3) URL using bad/illegal format or missing URL
+curl: (3) unmatched close brace/bracket in URL position 12:
+Environment]\nPredicted Components: [Motor, Battery, Gearbox, Chuck, Handle, Switch, Circuit]\n\nAvailable matches (above 0.3 similarity threshold):\n\nBit potential matches:\n- Battery (similarity: 0.425)\n- Chuck (similarity: 0.321)\n- Handle (similarity: 0.403)\n- Switch (similarity: 0.401)\n\nTransmission potential matches:\n- Motor (similarity: 0.451)\n- Battery (similarity: 0.386)\n- Gearbox (similarity: 0.524)\n- Chuck (similarity: 0.310)\n- Handle (
+
+2025-02-20 03:39:42,254 - DSM_None_None_ - INFO - Final Component Mapping (only valid matches):
+2025-02-20 03:39:42,255 - DSM_None_None_ - INFO - Empty DataFrame
+Columns: [Ground Truth Component, Matched Predicted Component]
+Index: []
+2025-02-20 03:39:42,258 - DSM_None_None_ - INFO - Evaluation complete. Visualizations generated.
+2025-02-20 03:44:29,751 - DSM_None_None_ - INFO - 
+Best matches for each ground truth component:
+2025-02-20 03:44:29,753 - DSM_None_None_ - INFO - 
+Bit:
+2025-02-20 03:44:29,755 - DSM_None_None_ - INFO -   predicted_component  embedding_similarity
+1             Battery              0.425367
+4              Handle              0.402793
+5              Switch              0.401662
+2025-02-20 03:44:29,759 - DSM_None_None_ - INFO - 
+Transmission:
+2025-02-20 03:44:29,760 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+12              Switch              0.534520
+9              Gearbox              0.524076
+7                Motor              0.449248
+2025-02-20 03:44:29,762 - DSM_None_None_ - INFO - 
+Motor:
+2025-02-20 03:44:29,764 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+14               Motor              1.000000
+15             Battery              0.538835
+16             Gearbox              0.475808
+2025-02-20 03:44:29,767 - DSM_None_None_ - INFO - 
+Electrical System:
+2025-02-20 03:44:29,768 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+27             Circuit              0.528700
+22             Battery              0.436006
+21               Motor              0.352884
+2025-02-20 03:44:29,771 - DSM_None_None_ - INFO - 
+Battery Holder:
+2025-02-20 03:44:29,772 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+29             Battery              0.647866
+32              Handle              0.380544
+34             Circuit              0.320489
+2025-02-20 03:44:29,775 - DSM_None_None_ - INFO - 
+Housing:
+2025-02-20 03:44:29,776 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+39              Handle              0.345542
+41             Circuit              0.269494
+37             Gearbox              0.247330
+2025-02-20 03:44:29,779 - DSM_None_None_ - INFO - 
+External Environment:
+2025-02-20 03:44:29,780 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+43             Battery              0.265493
+46              Handle              0.243988
+47              Switch              0.238159
+2025-02-20 03:44:37,456 - DSM_None_None_ - INFO - System Context: power drill
+2025-02-20 03:44:37,459 - DSM_None_None_ - INFO - Similarity Threshold: 0.3
+2025-02-20 03:44:37,459 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-02-20 03:44:37,460 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/PowerDrill/LLM/experiment_llm_ollama:llama3.3:70b-8k_20250218-165154/llm_refs_baseline/average_matrix_20250218-165154.csv
+2025-02-20 03:44:37,462 - DSM_None_None_ - INFO - Extracted model: llama3.3:70b-8k
+2025-02-20 03:44:37,463 - DSM_None_None_ - INFO - Creating similarity matrix text
+2025-02-20 03:44:37,497 - DSM_None_None_ - INFO - Creating prompt
+2025-02-20 03:44:37,497 - DSM_None_None_ - INFO - Attempting to use model: llama3.3:70b-8k
+2025-02-20 03:44:37,498 - DSM_None_None_ - INFO - Using Ollama path
+2025-02-20 03:44:37,538 - DSM_None_None_ - INFO - Model name: llama3.3:70b-8k
+2025-02-20 03:44:37,539 - DSM_None_None_ - INFO - Prompt length: 1886
+2025-02-20 03:45:28,071 - DSM_None_None_ - INFO - Response status code: 200
+2025-02-20 03:45:28,072 - DSM_None_None_ - INFO - API call succeeded
+2025-02-20 03:45:28,073 - DSM_None_None_ - INFO - Got response: To solve this problem, we need to consider all components simultaneously and find the optimal global...
+2025-02-20 03:45:28,073 - DSM_None_None_ - INFO - 
+Initial LLM Suggested Mappings:
+2025-02-20 03:45:28,075 - DSM_None_None_ - INFO - Motor -> Motor (similarity: 1.000)
+2025-02-20 03:45:28,076 - DSM_None_None_ - INFO - Battery Holder -> Battery (similarity: 0.648)
+2025-02-20 03:45:28,077 - DSM_None_None_ - INFO - Transmission -> Gearbox (similarity: 0.524)
+2025-02-20 03:45:28,078 - DSM_None_None_ - INFO - Electrical System -> Circuit (similarity: 0.529)
+2025-02-20 03:45:28,079 - DSM_None_None_ - INFO - Bit -> Chuck (similarity: 0.321)
+2025-02-20 03:45:28,080 - DSM_None_None_ - INFO - Housing -> Handle (similarity: 0.346)
+2025-02-20 03:45:28,085 - DSM_None_None_ - INFO - Final Component Mapping (only valid matches):
+2025-02-20 03:45:28,086 - DSM_None_None_ - INFO -   Ground Truth Component Matched Predicted Component
+0                  Motor                       Motor
+1         Battery Holder                     Battery
+2           Transmission                     Gearbox
+3      Electrical System                     Circuit
+4                    Bit                       Chuck
+5                Housing                      Handle
+2025-02-20 03:45:28,089 - DSM_None_None_ - INFO - Evaluation complete. Visualizations generated.

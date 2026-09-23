@@ -1,0 +1,386 @@
+2025-02-20 04:24:18,419 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Run 1/5
+2025-02-20 04:24:18,457 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - DEBUG: Initializing LLMInference.
+2025-02-20 04:24:18,458 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Initialized LLM inference for system: power screwdriver
+2025-02-20 04:24:18,459 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Initialized DSM for system: power screwdriver
+2025-02-20 04:24:18,460 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Inference model: ollama:mixtral:8x22b_6k
+2025-02-20 04:24:18,461 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Prompt (attempt 1/3): 
+            Please identify the major components of power screwdriver in the engineering based on proximity relationships.             
+            The number of components must not exceed 7 (can be equal) and must be a list of strings.             
+            Please do not identify similar components that will work together under subsystem level since our interest is to identify the major components that form the core architecture of the system.             
+            Here is an example of the components for made-up system:             
+            final response = [ "component 1", "component 2", "component 3", "component 4", "component 5" ]             
+            IMPORTANT: THE FORMAT OF THE OUTPUT MUST BE AS A LIST OF STRINGS ONLY SIMILAR TO THE ONE ABOVE (NO LATEX, NO CODE, NO DESCRIPTION, OR OTHER ENCODINGS).              
+2025-02-20 04:24:57,328 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - LLM Response:  ["Motor", "Gearbox", "Chuck", "Clutch", "Trigger Switch", "Battery", "Housing"]
+2025-02-20 04:24:57,330 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Matrix: ['Motor', 'Gearbox', 'Chuck', 'Clutch', 'Trigger Switch', 'Battery', 'Housing']
+2025-02-20 04:24:57,331 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Components: ['Motor', 'Gearbox', 'Chuck', 'Clutch', 'Trigger Switch', 'Battery', 'Housing']
+2025-02-20 04:24:59,035 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - LLM Response:  Valid
+2025-02-20 04:24:59,036 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Validation response:  Valid
+2025-02-20 04:24:59,037 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Filtered validation response:  Valid
+2025-02-20 04:24:59,038 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Component list validated successfully on attempt 1
+2025-02-20 04:24:59,040 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Components: ['Motor', 'Gearbox', 'Chuck', 'Clutch', 'Trigger Switch', 'Battery', 'Housing']
+2025-02-20 04:24:59,040 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - --------------------------------------------------
+2025-02-20 04:24:59,041 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Predicted Components: ['Motor', 'Gearbox', 'Chuck', 'Clutch', 'Trigger Switch', 'Battery', 'Housing']
+2025-02-20 04:24:59,043 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Number of components: 7
+2025-02-20 04:24:59,044 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Predicted components for query: ['Motor', 'Gearbox', 'Chuck', 'Clutch', 'Trigger Switch', 'Battery', 'Housing']
+2025-02-20 04:24:59,045 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Query: 
+        Please identify system-level proximity relationships (in contact) between the components of Power Screwdriver, as listed below, and represent them in a Design Structure Matrix (DSM) format.  
+        The relationships should be articulated in plain English, capturing the essence of their interactions. 
+        Here is the list of subsystems/components to analyze: ['Motor', 'Gearbox', 'Chuck', 'Clutch', 'Trigger Switch', 'Battery', 'Housing'] 
+        The DSM should clearly indicate the interactions between these components as 1 exist and 0 does not exist, considering both the presence and nature of these connections.             
+        Present the output in a square matrix format (number of rows and columns MUST be the same as the number of components = 7 for this example), with rows and columns labeled accordingly. 
+        Diagonal elements should be 1 in DSM matrix since each component interacts with itself. 
+        If you don't know the answer, just write 2 for the specific cell that you are unsure of. A worst case scenario of the **as a list of lists** shown below (diagonal elements are 1 and rest are 2). Don't make up an answer.         final response = [
+            [1, 2, 2, 2, 2, 2, 2],
+            [2, 1, 2, 2, 2, 2, 2],
+            [2, 2, 1, 2, 2, 2, 2],
+            [2, 2, 2, 1, 2, 2, 2],
+            [2, 2, 2, 2, 1, 2, 2],
+            [2, 2, 2, 2, 2, 1, 2],
+            [2, 2, 2, 2, 2, 2, 1]
+        ]
+
+        IMPORTANT: Your response must **ONLY** contain a valid **as a list of lists** in the following example format 7x7 matrix.         
+        The below list of lists is just an example format of your response. **Replace** the values with your **actual analysis** while providing your response with parameter of 'final response'.        
+        final response = [
+            [1, 0, 0, 0, 0, 0, 0],
+            [0, 1, 0, 0, 0, 0, 0],
+            [0, 0, 1, 0, 0, 0, 0],
+            [0, 0, 0, 1, 0, 0, 0],
+            [0, 0, 0, 0, 1, 0, 0],
+            [0, 0, 0, 0, 0, 1, 0],
+            [0, 0, 0, 0, 0, 0, 1]
+        ]
+
+        IMPORTANT: THE FORMAT OF THE OUTPUT MUST BE AS LIST OF LISTS ONLY SIMILAR TO THE ONE ABOVE (NO LATEX, CODE, OR OTHER ENCODINGS).
+        
+2025-02-20 04:25:30,899 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - LLM Response:  Based on the components of a Power Screwdriver and their typical interactions, here is the Design Structure Matrix:
+
+final response = [
+    [1, 1, 1, 0, 1, 1, 1],   # Motor interacts with Gearbox, Chuck, Trigger Switch, Battery, Housing
+    [1, 1, 1, 1, 0, 0, 1],   # Gearbox interacts with Motor, Chuck, Clutch, Housing
+    [1, 1, 1, 0, 0, 0, 1],   # Chuck interacts with Motor, Gearbox, Housing
+    [0, 1, 0, 1, 0, 0, 1],   # Clutch interacts with Gearbox, Housing
+    [1, 0, 0, 0, 1, 0, 1],   # Trigger Switch interacts with Motor, Housing
+    [1, 0, 0, 0, 0, 1, 1],   # Battery interacts with Motor, Housing
+    [1, 1, 1, 1, 1, 1, 1]    # Housing interacts with all components
+]
+2025-02-20 04:25:30,900 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Response:  Based on the components of a Power Screwdriver and their typical interactions, here is the Design Structure Matrix:
+
+final response = [
+    [1, 1, 1, 0, 1, 1, 1],   # Motor interacts with Gearbox, Chuck, Trigger Switch, Battery, Housing
+    [1, 1, 1, 1, 0, 0, 1],   # Gearbox interacts with Motor, Chuck, Clutch, Housing
+    [1, 1, 1, 0, 0, 0, 1],   # Chuck interacts with Motor, Gearbox, Housing
+    [0, 1, 0, 1, 0, 0, 1],   # Clutch interacts with Gearbox, Housing
+    [1, 0, 0, 0, 1, 0, 1],   # Trigger Switch interacts with Motor, Housing
+    [1, 0, 0, 0, 0, 1, 1],   # Battery interacts with Motor, Housing
+    [1, 1, 1, 1, 1, 1, 1]    # Housing interacts with all components
+]
+2025-02-20 04:25:30,901 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Matrix: [[1, 1, 1, 0, 1, 1, 1], [1, 1, 1, 1, 0, 0, 1], [1, 1, 1, 0, 0, 0, 1], [0, 1, 0, 1, 0, 0, 1], [1, 0, 0, 0, 1, 0, 1], [1, 0, 0, 0, 0, 1, 1], [1, 1, 1, 1, 1, 1, 1]]
+2025-02-20 04:25:30,902 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Final Matrix:
+[[1, 1, 1, 0, 1, 1, 1], [1, 1, 1, 1, 0, 0, 1], [1, 1, 1, 0, 0, 0, 1], [0, 1, 0, 1, 0, 0, 1], [1, 0, 0, 0, 1, 0, 1], [1, 0, 0, 0, 0, 1, 1], [1, 1, 1, 1, 1, 1, 1]]
+2025-02-20 04:25:30,903 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - --------------------------------------------------
+2025-02-20 04:25:30,903 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Matrix from response.
+2025-02-20 04:25:30,905 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - At run 1/5
+2025-02-20 04:25:30,906 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Matrix: [[1, 1, 1, 0, 1, 1, 1], [1, 1, 1, 1, 0, 0, 1], [1, 1, 1, 0, 0, 0, 1], [0, 1, 0, 1, 0, 0, 1], [1, 0, 0, 0, 1, 0, 1], [1, 0, 0, 0, 0, 1, 1], [1, 1, 1, 1, 1, 1, 1]]
+2025-02-20 04:25:30,907 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - --------------------------------------------------
+2025-02-20 04:25:40,918 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Run 2/5
+2025-02-20 04:25:40,954 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - DEBUG: Initializing LLMInference.
+2025-02-20 04:25:40,955 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Initialized LLM inference for system: power screwdriver
+2025-02-20 04:25:40,955 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Initialized DSM for system: power screwdriver
+2025-02-20 04:25:40,956 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Inference model: ollama:mixtral:8x22b_6k
+2025-02-20 04:25:40,957 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Predicted Components: ['Motor', 'Gearbox', 'Chuck', 'Clutch', 'Trigger Switch', 'Battery', 'Housing']
+2025-02-20 04:25:40,958 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Number of components: 7
+2025-02-20 04:25:40,958 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Predicted components for query: ['Motor', 'Gearbox', 'Chuck', 'Clutch', 'Trigger Switch', 'Battery', 'Housing']
+2025-02-20 04:25:40,959 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Query: 
+        Please identify system-level proximity relationships (in contact) between the components of Power Screwdriver, as listed below, and represent them in a Design Structure Matrix (DSM) format.  
+        The relationships should be articulated in plain English, capturing the essence of their interactions. 
+        Here is the list of subsystems/components to analyze: ['Motor', 'Gearbox', 'Chuck', 'Clutch', 'Trigger Switch', 'Battery', 'Housing'] 
+        The DSM should clearly indicate the interactions between these components as 1 exist and 0 does not exist, considering both the presence and nature of these connections.             
+        Present the output in a square matrix format (number of rows and columns MUST be the same as the number of components = 7 for this example), with rows and columns labeled accordingly. 
+        Diagonal elements should be 1 in DSM matrix since each component interacts with itself. 
+        If you don't know the answer, just write 2 for the specific cell that you are unsure of. A worst case scenario of the **as a list of lists** shown below (diagonal elements are 1 and rest are 2). Don't make up an answer.         final response = [
+            [1, 2, 2, 2, 2, 2, 2],
+            [2, 1, 2, 2, 2, 2, 2],
+            [2, 2, 1, 2, 2, 2, 2],
+            [2, 2, 2, 1, 2, 2, 2],
+            [2, 2, 2, 2, 1, 2, 2],
+            [2, 2, 2, 2, 2, 1, 2],
+            [2, 2, 2, 2, 2, 2, 1]
+        ]
+
+        IMPORTANT: Your response must **ONLY** contain a valid **as a list of lists** in the following example format 7x7 matrix.         
+        The below list of lists is just an example format of your response. **Replace** the values with your **actual analysis** while providing your response with parameter of 'final response'.        
+        final response = [
+            [1, 0, 0, 0, 0, 0, 0],
+            [0, 1, 0, 0, 0, 0, 0],
+            [0, 0, 1, 0, 0, 0, 0],
+            [0, 0, 0, 1, 0, 0, 0],
+            [0, 0, 0, 0, 1, 0, 0],
+            [0, 0, 0, 0, 0, 1, 0],
+            [0, 0, 0, 0, 0, 0, 1]
+        ]
+
+        IMPORTANT: THE FORMAT OF THE OUTPUT MUST BE AS LIST OF LISTS ONLY SIMILAR TO THE ONE ABOVE (NO LATEX, CODE, OR OTHER ENCODINGS).
+        
+2025-02-20 04:26:09,034 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - LLM Response:  Based on the components of a Power Screwdriver and their typical interactions, here is the Design Structure Matrix:
+
+final response = [
+    [1, 1, 1, 0, 1, 1, 1],   # Motor interacts with Gearbox, Chuck, Trigger Switch, Battery, Housing
+    [1, 1, 1, 1, 0, 1, 1],   # Gearbox interacts with Motor, Chuck, Clutch, Housing
+    [1, 1, 1, 0, 0, 0, 1],   # Chuck interacts with Motor, Gearbox, Housing
+    [0, 1, 0, 1, 0, 0, 1],   # Clutch interacts with Gearbox, Housing
+    [1, 0, 0, 0, 1, 0, 1],   # Trigger Switch interacts with Motor, Housing
+    [1, 1, 0, 0, 0, 1, 1],   # Battery interacts with Motor, Housing
+    [1, 1, 1, 1, 1, 1, 1]    # Housing interacts with all components
+]
+2025-02-20 04:26:09,035 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Response:  Based on the components of a Power Screwdriver and their typical interactions, here is the Design Structure Matrix:
+
+final response = [
+    [1, 1, 1, 0, 1, 1, 1],   # Motor interacts with Gearbox, Chuck, Trigger Switch, Battery, Housing
+    [1, 1, 1, 1, 0, 1, 1],   # Gearbox interacts with Motor, Chuck, Clutch, Housing
+    [1, 1, 1, 0, 0, 0, 1],   # Chuck interacts with Motor, Gearbox, Housing
+    [0, 1, 0, 1, 0, 0, 1],   # Clutch interacts with Gearbox, Housing
+    [1, 0, 0, 0, 1, 0, 1],   # Trigger Switch interacts with Motor, Housing
+    [1, 1, 0, 0, 0, 1, 1],   # Battery interacts with Motor, Housing
+    [1, 1, 1, 1, 1, 1, 1]    # Housing interacts with all components
+]
+2025-02-20 04:26:09,036 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Matrix: [[1, 1, 1, 0, 1, 1, 1], [1, 1, 1, 1, 0, 1, 1], [1, 1, 1, 0, 0, 0, 1], [0, 1, 0, 1, 0, 0, 1], [1, 0, 0, 0, 1, 0, 1], [1, 1, 0, 0, 0, 1, 1], [1, 1, 1, 1, 1, 1, 1]]
+2025-02-20 04:26:09,038 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Final Matrix:
+[[1, 1, 1, 0, 1, 1, 1], [1, 1, 1, 1, 0, 1, 1], [1, 1, 1, 0, 0, 0, 1], [0, 1, 0, 1, 0, 0, 1], [1, 0, 0, 0, 1, 0, 1], [1, 1, 0, 0, 0, 1, 1], [1, 1, 1, 1, 1, 1, 1]]
+2025-02-20 04:26:09,038 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - --------------------------------------------------
+2025-02-20 04:26:09,039 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Matrix from response.
+2025-02-20 04:26:09,040 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - At run 2/5
+2025-02-20 04:26:09,041 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Matrix: [[1, 1, 1, 0, 1, 1, 1], [1, 1, 1, 1, 0, 1, 1], [1, 1, 1, 0, 0, 0, 1], [0, 1, 0, 1, 0, 0, 1], [1, 0, 0, 0, 1, 0, 1], [1, 1, 0, 0, 0, 1, 1], [1, 1, 1, 1, 1, 1, 1]]
+2025-02-20 04:26:09,041 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - --------------------------------------------------
+2025-02-20 04:26:19,052 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Run 3/5
+2025-02-20 04:26:19,088 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - DEBUG: Initializing LLMInference.
+2025-02-20 04:26:19,089 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Initialized LLM inference for system: power screwdriver
+2025-02-20 04:26:19,090 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Initialized DSM for system: power screwdriver
+2025-02-20 04:26:19,091 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Inference model: ollama:mixtral:8x22b_6k
+2025-02-20 04:26:19,092 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Predicted Components: ['Motor', 'Gearbox', 'Chuck', 'Clutch', 'Trigger Switch', 'Battery', 'Housing']
+2025-02-20 04:26:19,093 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Number of components: 7
+2025-02-20 04:26:19,094 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Predicted components for query: ['Motor', 'Gearbox', 'Chuck', 'Clutch', 'Trigger Switch', 'Battery', 'Housing']
+2025-02-20 04:26:19,095 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Query: 
+        Please identify system-level proximity relationships (in contact) between the components of Power Screwdriver, as listed below, and represent them in a Design Structure Matrix (DSM) format.  
+        The relationships should be articulated in plain English, capturing the essence of their interactions. 
+        Here is the list of subsystems/components to analyze: ['Motor', 'Gearbox', 'Chuck', 'Clutch', 'Trigger Switch', 'Battery', 'Housing'] 
+        The DSM should clearly indicate the interactions between these components as 1 exist and 0 does not exist, considering both the presence and nature of these connections.             
+        Present the output in a square matrix format (number of rows and columns MUST be the same as the number of components = 7 for this example), with rows and columns labeled accordingly. 
+        Diagonal elements should be 1 in DSM matrix since each component interacts with itself. 
+        If you don't know the answer, just write 2 for the specific cell that you are unsure of. A worst case scenario of the **as a list of lists** shown below (diagonal elements are 1 and rest are 2). Don't make up an answer.         final response = [
+            [1, 2, 2, 2, 2, 2, 2],
+            [2, 1, 2, 2, 2, 2, 2],
+            [2, 2, 1, 2, 2, 2, 2],
+            [2, 2, 2, 1, 2, 2, 2],
+            [2, 2, 2, 2, 1, 2, 2],
+            [2, 2, 2, 2, 2, 1, 2],
+            [2, 2, 2, 2, 2, 2, 1]
+        ]
+
+        IMPORTANT: Your response must **ONLY** contain a valid **as a list of lists** in the following example format 7x7 matrix.         
+        The below list of lists is just an example format of your response. **Replace** the values with your **actual analysis** while providing your response with parameter of 'final response'.        
+        final response = [
+            [1, 0, 0, 0, 0, 0, 0],
+            [0, 1, 0, 0, 0, 0, 0],
+            [0, 0, 1, 0, 0, 0, 0],
+            [0, 0, 0, 1, 0, 0, 0],
+            [0, 0, 0, 0, 1, 0, 0],
+            [0, 0, 0, 0, 0, 1, 0],
+            [0, 0, 0, 0, 0, 0, 1]
+        ]
+
+        IMPORTANT: THE FORMAT OF THE OUTPUT MUST BE AS LIST OF LISTS ONLY SIMILAR TO THE ONE ABOVE (NO LATEX, CODE, OR OTHER ENCODINGS).
+        
+2025-02-20 04:26:47,993 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - LLM Response:  Based on the components of a Power Screwdriver and their typical interactions, here is the Design Structure Matrix:
+
+final response = [
+    [1, 1, 1, 0, 1, 1, 1],   # Motor interacts with Gearbox, Chuck, Trigger Switch, Battery, Housing
+    [1, 1, 1, 1, 0, 1, 1],   # Gearbox interacts with Motor, Chuck, Clutch, Housing
+    [1, 1, 1, 0, 0, 0, 1],   # Chuck interacts with Motor, Gearbox, Housing
+    [0, 1, 0, 1, 0, 0, 1],   # Clutch interacts with Gearbox, Housing
+    [1, 0, 0, 0, 1, 0, 1],   # Trigger Switch interacts with Motor, Housing
+    [1, 1, 0, 0, 0, 1, 1],   # Battery interacts with Motor, Housing
+    [1, 1, 1, 1, 1, 1, 1]    # Housing interacts with all components
+]
+2025-02-20 04:26:47,994 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Response:  Based on the components of a Power Screwdriver and their typical interactions, here is the Design Structure Matrix:
+
+final response = [
+    [1, 1, 1, 0, 1, 1, 1],   # Motor interacts with Gearbox, Chuck, Trigger Switch, Battery, Housing
+    [1, 1, 1, 1, 0, 1, 1],   # Gearbox interacts with Motor, Chuck, Clutch, Housing
+    [1, 1, 1, 0, 0, 0, 1],   # Chuck interacts with Motor, Gearbox, Housing
+    [0, 1, 0, 1, 0, 0, 1],   # Clutch interacts with Gearbox, Housing
+    [1, 0, 0, 0, 1, 0, 1],   # Trigger Switch interacts with Motor, Housing
+    [1, 1, 0, 0, 0, 1, 1],   # Battery interacts with Motor, Housing
+    [1, 1, 1, 1, 1, 1, 1]    # Housing interacts with all components
+]
+2025-02-20 04:26:47,996 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Matrix: [[1, 1, 1, 0, 1, 1, 1], [1, 1, 1, 1, 0, 1, 1], [1, 1, 1, 0, 0, 0, 1], [0, 1, 0, 1, 0, 0, 1], [1, 0, 0, 0, 1, 0, 1], [1, 1, 0, 0, 0, 1, 1], [1, 1, 1, 1, 1, 1, 1]]
+2025-02-20 04:26:47,997 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Final Matrix:
+[[1, 1, 1, 0, 1, 1, 1], [1, 1, 1, 1, 0, 1, 1], [1, 1, 1, 0, 0, 0, 1], [0, 1, 0, 1, 0, 0, 1], [1, 0, 0, 0, 1, 0, 1], [1, 1, 0, 0, 0, 1, 1], [1, 1, 1, 1, 1, 1, 1]]
+2025-02-20 04:26:47,998 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - --------------------------------------------------
+2025-02-20 04:26:47,998 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Matrix from response.
+2025-02-20 04:26:48,000 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - At run 3/5
+2025-02-20 04:26:48,001 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Matrix: [[1, 1, 1, 0, 1, 1, 1], [1, 1, 1, 1, 0, 1, 1], [1, 1, 1, 0, 0, 0, 1], [0, 1, 0, 1, 0, 0, 1], [1, 0, 0, 0, 1, 0, 1], [1, 1, 0, 0, 0, 1, 1], [1, 1, 1, 1, 1, 1, 1]]
+2025-02-20 04:26:48,002 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - --------------------------------------------------
+2025-02-20 04:26:58,013 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Run 4/5
+2025-02-20 04:26:58,049 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - DEBUG: Initializing LLMInference.
+2025-02-20 04:26:58,050 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Initialized LLM inference for system: power screwdriver
+2025-02-20 04:26:58,051 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Initialized DSM for system: power screwdriver
+2025-02-20 04:26:58,052 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Inference model: ollama:mixtral:8x22b_6k
+2025-02-20 04:26:58,052 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Predicted Components: ['Motor', 'Gearbox', 'Chuck', 'Clutch', 'Trigger Switch', 'Battery', 'Housing']
+2025-02-20 04:26:58,053 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Number of components: 7
+2025-02-20 04:26:58,054 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Predicted components for query: ['Motor', 'Gearbox', 'Chuck', 'Clutch', 'Trigger Switch', 'Battery', 'Housing']
+2025-02-20 04:26:58,055 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Query: 
+        Please identify system-level proximity relationships (in contact) between the components of Power Screwdriver, as listed below, and represent them in a Design Structure Matrix (DSM) format.  
+        The relationships should be articulated in plain English, capturing the essence of their interactions. 
+        Here is the list of subsystems/components to analyze: ['Motor', 'Gearbox', 'Chuck', 'Clutch', 'Trigger Switch', 'Battery', 'Housing'] 
+        The DSM should clearly indicate the interactions between these components as 1 exist and 0 does not exist, considering both the presence and nature of these connections.             
+        Present the output in a square matrix format (number of rows and columns MUST be the same as the number of components = 7 for this example), with rows and columns labeled accordingly. 
+        Diagonal elements should be 1 in DSM matrix since each component interacts with itself. 
+        If you don't know the answer, just write 2 for the specific cell that you are unsure of. A worst case scenario of the **as a list of lists** shown below (diagonal elements are 1 and rest are 2). Don't make up an answer.         final response = [
+            [1, 2, 2, 2, 2, 2, 2],
+            [2, 1, 2, 2, 2, 2, 2],
+            [2, 2, 1, 2, 2, 2, 2],
+            [2, 2, 2, 1, 2, 2, 2],
+            [2, 2, 2, 2, 1, 2, 2],
+            [2, 2, 2, 2, 2, 1, 2],
+            [2, 2, 2, 2, 2, 2, 1]
+        ]
+
+        IMPORTANT: Your response must **ONLY** contain a valid **as a list of lists** in the following example format 7x7 matrix.         
+        The below list of lists is just an example format of your response. **Replace** the values with your **actual analysis** while providing your response with parameter of 'final response'.        
+        final response = [
+            [1, 0, 0, 0, 0, 0, 0],
+            [0, 1, 0, 0, 0, 0, 0],
+            [0, 0, 1, 0, 0, 0, 0],
+            [0, 0, 0, 1, 0, 0, 0],
+            [0, 0, 0, 0, 1, 0, 0],
+            [0, 0, 0, 0, 0, 1, 0],
+            [0, 0, 0, 0, 0, 0, 1]
+        ]
+
+        IMPORTANT: THE FORMAT OF THE OUTPUT MUST BE AS LIST OF LISTS ONLY SIMILAR TO THE ONE ABOVE (NO LATEX, CODE, OR OTHER ENCODINGS).
+        
+2025-02-20 04:27:26,764 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - LLM Response:  Based on the components of a Power Screwdriver and their typical interactions, here is the Design Structure Matrix:
+
+final response = [
+    [1, 1, 1, 0, 1, 1, 1],   # Motor interacts with Gearbox, Chuck, Trigger Switch, Battery, Housing
+    [1, 1, 1, 1, 0, 1, 1],   # Gearbox interacts with Motor, Chuck, Clutch, Housing
+    [1, 1, 1, 0, 0, 0, 1],   # Chuck interacts with Motor, Gearbox, Housing
+    [0, 1, 0, 1, 0, 0, 1],   # Clutch interacts with Gearbox, Housing
+    [1, 0, 0, 0, 1, 0, 1],   # Trigger Switch interacts with Motor, Housing
+    [1, 1, 0, 0, 0, 1, 1],   # Battery interacts with Motor, Housing
+    [1, 1, 1, 1, 1, 1, 1]    # Housing interacts with all components
+]
+2025-02-20 04:27:26,765 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Response:  Based on the components of a Power Screwdriver and their typical interactions, here is the Design Structure Matrix:
+
+final response = [
+    [1, 1, 1, 0, 1, 1, 1],   # Motor interacts with Gearbox, Chuck, Trigger Switch, Battery, Housing
+    [1, 1, 1, 1, 0, 1, 1],   # Gearbox interacts with Motor, Chuck, Clutch, Housing
+    [1, 1, 1, 0, 0, 0, 1],   # Chuck interacts with Motor, Gearbox, Housing
+    [0, 1, 0, 1, 0, 0, 1],   # Clutch interacts with Gearbox, Housing
+    [1, 0, 0, 0, 1, 0, 1],   # Trigger Switch interacts with Motor, Housing
+    [1, 1, 0, 0, 0, 1, 1],   # Battery interacts with Motor, Housing
+    [1, 1, 1, 1, 1, 1, 1]    # Housing interacts with all components
+]
+2025-02-20 04:27:26,766 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Matrix: [[1, 1, 1, 0, 1, 1, 1], [1, 1, 1, 1, 0, 1, 1], [1, 1, 1, 0, 0, 0, 1], [0, 1, 0, 1, 0, 0, 1], [1, 0, 0, 0, 1, 0, 1], [1, 1, 0, 0, 0, 1, 1], [1, 1, 1, 1, 1, 1, 1]]
+2025-02-20 04:27:26,767 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Final Matrix:
+[[1, 1, 1, 0, 1, 1, 1], [1, 1, 1, 1, 0, 1, 1], [1, 1, 1, 0, 0, 0, 1], [0, 1, 0, 1, 0, 0, 1], [1, 0, 0, 0, 1, 0, 1], [1, 1, 0, 0, 0, 1, 1], [1, 1, 1, 1, 1, 1, 1]]
+2025-02-20 04:27:26,768 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - --------------------------------------------------
+2025-02-20 04:27:26,769 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Matrix from response.
+2025-02-20 04:27:26,770 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - At run 4/5
+2025-02-20 04:27:26,771 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Matrix: [[1, 1, 1, 0, 1, 1, 1], [1, 1, 1, 1, 0, 1, 1], [1, 1, 1, 0, 0, 0, 1], [0, 1, 0, 1, 0, 0, 1], [1, 0, 0, 0, 1, 0, 1], [1, 1, 0, 0, 0, 1, 1], [1, 1, 1, 1, 1, 1, 1]]
+2025-02-20 04:27:26,772 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - --------------------------------------------------
+2025-02-20 04:27:36,783 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Run 5/5
+2025-02-20 04:27:36,821 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - DEBUG: Initializing LLMInference.
+2025-02-20 04:27:36,822 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Initialized LLM inference for system: power screwdriver
+2025-02-20 04:27:36,822 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Initialized DSM for system: power screwdriver
+2025-02-20 04:27:36,823 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Inference model: ollama:mixtral:8x22b_6k
+2025-02-20 04:27:36,824 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Predicted Components: ['Motor', 'Gearbox', 'Chuck', 'Clutch', 'Trigger Switch', 'Battery', 'Housing']
+2025-02-20 04:27:36,825 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Number of components: 7
+2025-02-20 04:27:36,826 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Predicted components for query: ['Motor', 'Gearbox', 'Chuck', 'Clutch', 'Trigger Switch', 'Battery', 'Housing']
+2025-02-20 04:27:36,827 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Query: 
+        Please identify system-level proximity relationships (in contact) between the components of Power Screwdriver, as listed below, and represent them in a Design Structure Matrix (DSM) format.  
+        The relationships should be articulated in plain English, capturing the essence of their interactions. 
+        Here is the list of subsystems/components to analyze: ['Motor', 'Gearbox', 'Chuck', 'Clutch', 'Trigger Switch', 'Battery', 'Housing'] 
+        The DSM should clearly indicate the interactions between these components as 1 exist and 0 does not exist, considering both the presence and nature of these connections.             
+        Present the output in a square matrix format (number of rows and columns MUST be the same as the number of components = 7 for this example), with rows and columns labeled accordingly. 
+        Diagonal elements should be 1 in DSM matrix since each component interacts with itself. 
+        If you don't know the answer, just write 2 for the specific cell that you are unsure of. A worst case scenario of the **as a list of lists** shown below (diagonal elements are 1 and rest are 2). Don't make up an answer.         final response = [
+            [1, 2, 2, 2, 2, 2, 2],
+            [2, 1, 2, 2, 2, 2, 2],
+            [2, 2, 1, 2, 2, 2, 2],
+            [2, 2, 2, 1, 2, 2, 2],
+            [2, 2, 2, 2, 1, 2, 2],
+            [2, 2, 2, 2, 2, 1, 2],
+            [2, 2, 2, 2, 2, 2, 1]
+        ]
+
+        IMPORTANT: Your response must **ONLY** contain a valid **as a list of lists** in the following example format 7x7 matrix.         
+        The below list of lists is just an example format of your response. **Replace** the values with your **actual analysis** while providing your response with parameter of 'final response'.        
+        final response = [
+            [1, 0, 0, 0, 0, 0, 0],
+            [0, 1, 0, 0, 0, 0, 0],
+            [0, 0, 1, 0, 0, 0, 0],
+            [0, 0, 0, 1, 0, 0, 0],
+            [0, 0, 0, 0, 1, 0, 0],
+            [0, 0, 0, 0, 0, 1, 0],
+            [0, 0, 0, 0, 0, 0, 1]
+        ]
+
+        IMPORTANT: THE FORMAT OF THE OUTPUT MUST BE AS LIST OF LISTS ONLY SIMILAR TO THE ONE ABOVE (NO LATEX, CODE, OR OTHER ENCODINGS).
+        
+2025-02-20 04:28:06,715 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - LLM Response:  Based on the components of a Power Screwdriver and their typical interactions, here is the Design Structure Matrix:
+
+final response = [
+    [1, 1, 1, 0, 1, 1, 1],   # Motor interacts with Gearbox, Chuck, Trigger Switch, Battery, Housing
+    [1, 1, 1, 1, 0, 1, 1],   # Gearbox interacts with Motor, Chuck, Clutch, Housing
+    [1, 1, 1, 0, 0, 0, 1],   # Chuck interacts with Motor, Gearbox, Housing
+    [0, 1, 0, 1, 0, 0, 1],   # Clutch interacts with Gearbox, Housing
+    [1, 0, 0, 0, 1, 0, 1],   # Trigger Switch interacts with Motor, Housing
+    [1, 1, 0, 0, 0, 1, 1],   # Battery interacts with Motor, Housing
+    [1, 1, 1, 1, 1, 1, 1]    # Housing interacts with all components
+]
+2025-02-20 04:28:06,716 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Response:  Based on the components of a Power Screwdriver and their typical interactions, here is the Design Structure Matrix:
+
+final response = [
+    [1, 1, 1, 0, 1, 1, 1],   # Motor interacts with Gearbox, Chuck, Trigger Switch, Battery, Housing
+    [1, 1, 1, 1, 0, 1, 1],   # Gearbox interacts with Motor, Chuck, Clutch, Housing
+    [1, 1, 1, 0, 0, 0, 1],   # Chuck interacts with Motor, Gearbox, Housing
+    [0, 1, 0, 1, 0, 0, 1],   # Clutch interacts with Gearbox, Housing
+    [1, 0, 0, 0, 1, 0, 1],   # Trigger Switch interacts with Motor, Housing
+    [1, 1, 0, 0, 0, 1, 1],   # Battery interacts with Motor, Housing
+    [1, 1, 1, 1, 1, 1, 1]    # Housing interacts with all components
+]
+2025-02-20 04:28:06,718 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Matrix: [[1, 1, 1, 0, 1, 1, 1], [1, 1, 1, 1, 0, 1, 1], [1, 1, 1, 0, 0, 0, 1], [0, 1, 0, 1, 0, 0, 1], [1, 0, 0, 0, 1, 0, 1], [1, 1, 0, 0, 0, 1, 1], [1, 1, 1, 1, 1, 1, 1]]
+2025-02-20 04:28:06,719 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Final Matrix:
+[[1, 1, 1, 0, 1, 1, 1], [1, 1, 1, 1, 0, 1, 1], [1, 1, 1, 0, 0, 0, 1], [0, 1, 0, 1, 0, 0, 1], [1, 0, 0, 0, 1, 0, 1], [1, 1, 0, 0, 0, 1, 1], [1, 1, 1, 1, 1, 1, 1]]
+2025-02-20 04:28:06,720 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - --------------------------------------------------
+2025-02-20 04:28:06,721 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Matrix from response.
+2025-02-20 04:28:06,721 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - At run 5/5
+2025-02-20 04:28:06,722 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Matrix: [[1, 1, 1, 0, 1, 1, 1], [1, 1, 1, 1, 0, 1, 1], [1, 1, 1, 0, 0, 0, 1], [0, 1, 0, 1, 0, 0, 1], [1, 0, 0, 0, 1, 0, 1], [1, 1, 0, 0, 0, 1, 1], [1, 1, 1, 1, 1, 1, 1]]
+2025-02-20 04:28:06,723 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - --------------------------------------------------
+2025-02-20 04:28:16,734 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Duration of reference combination {}: 0:03:58.315175
+2025-02-20 04:28:16,735 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2025-02-20 04:28:16,736 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - 
+==================================================
+2025-02-20 04:28:16,737 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Average DSM Matrix for model: ollama:mixtral:8x22b_6k
+2025-02-20 04:28:16,738 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - End of log reference type(s): ['baseline']
+2025-02-20 04:28:16,740 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Saving results to: ../output/experiment_llm_ollama:mixtral:8x22b_6k_20250220-042418/llm_refs_baseline
+2025-02-20 04:28:16,744 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - 
+Average Matrix:
+                Motor  Gearbox  Chuck  Clutch  Trigger Switch  Battery  Housing
+Motor               1        1      1       0               1        1        1
+Gearbox             1        1      1       1               0        1        1
+Chuck               1        1      1       0               0        0        1
+Clutch              0        1      0       1               0        0        1
+Trigger Switch      1        0      0       0               1        0        1
+Battery             1        1      0       0               0        1        1
+Housing             1        1      1       1               1        1        1
+2025-02-20 04:28:16,745 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - 
+Components: ['Motor', 'Gearbox', 'Chuck', 'Clutch', 'Trigger Switch', 'Battery', 'Housing']
+2025-02-20 04:28:16,746 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - ==================================================
+
+2025-02-20 04:28:16,749 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Saved CSV to: ../output/experiment_llm_ollama:mixtral:8x22b_6k_20250220-042418/llm_refs_baseline/average_matrix_20250220-042418.csv
+2025-02-20 04:28:16,750 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Saved JSON to: ../output/experiment_llm_ollama:mixtral:8x22b_6k_20250220-042418/llm_refs_baseline/detailed_results_20250220-042418.json
+2025-02-20 04:28:17,025 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Saved visualization to: ../output/experiment_llm_ollama:mixtral:8x22b_6k_20250220-042418/llm_refs_baseline/average_matrix_20250220-042418.png
+2025-02-20 04:28:17,026 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Duration of experiment for ollama:mixtral:8x22b_6k in llm inference type: 0:03:59

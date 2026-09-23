@@ -1,0 +1,260 @@
+2025-02-22 20:49:06,322 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Run 1/5
+2025-02-22 20:49:06,359 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - DEBUG: Initializing LLMInference.
+2025-02-22 20:49:06,360 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Initialized LLM inference for system: CubeSat (nanosatellite)
+2025-02-22 20:49:06,361 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Initialized DSM for system: CubeSat (nanosatellite)
+2025-02-22 20:49:06,362 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Inference model: gpt-4-turbo-preview
+2025-02-22 20:49:06,362 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Prompt (attempt 1/3): 
+            Please identify the major components of CubeSat (nanosatellite) in the engineering based on hierarchical whole-part relationships.             
+            The number of components must be 6 and must be a list of strings.             
+            Please do not identify similar components that will work together under subsystem level since our interest is to identify the major components that form the core architecture of the system.             
+            Here is an example of the components for made-up system:             
+            final response = [ "component 1", "component 2", "component 3", "component 4", "component 5" ]             
+            IMPORTANT: THE FORMAT OF THE OUTPUT MUST BE AS A LIST OF STRINGS ONLY SIMILAR TO THE ONE ABOVE (NO LATEX, NO CODE, NO DESCRIPTION, OR OTHER ENCODINGS).              
+2025-02-22 20:49:09,387 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: ["On-Board Computer (OBC)", "Electrical Power System (EPS)", "Communication System", "Attitude Determination and Control System (ADCS)", "Payload", "Structural Frame"]
+2025-02-22 20:49:09,388 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix: ['On-Board Computer (OBC)', 'Electrical Power System (EPS)', 'Communication System', 'Attitude Determination and Control System (ADCS)', 'Payload', 'Structural Frame']
+2025-02-22 20:49:09,389 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Components: ['On-Board Computer (OBC)', 'Electrical Power System (EPS)', 'Communication System', 'Attitude Determination and Control System (ADCS)', 'Payload', 'Structural Frame']
+2025-02-22 20:49:11,196 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Valid
+2025-02-22 20:49:11,197 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Validation response: Valid
+2025-02-22 20:49:11,198 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Filtered validation response: Valid
+2025-02-22 20:49:11,199 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Component list validated successfully on attempt 1
+2025-02-22 20:49:11,200 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Components: ['On-Board Computer (OBC)', 'Electrical Power System (EPS)', 'Communication System', 'Attitude Determination and Control System (ADCS)', 'Payload', 'Structural Frame']
+2025-02-22 20:49:11,201 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-22 20:49:11,202 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Predicted Components: ['On-Board Computer (OBC)', 'Electrical Power System (EPS)', 'Communication System', 'Attitude Determination and Control System (ADCS)', 'Payload', 'Structural Frame']
+2025-02-22 20:49:11,203 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Number of components: 6
+2025-02-22 20:49:11,204 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Predicted components for query: ['On-Board Computer (OBC)', 'Electrical Power System (EPS)', 'Communication System', 'Attitude Determination and Control System (ADCS)', 'Payload', 'Structural Frame']
+2025-02-22 20:49:11,205 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Query: 
+        Please identify system-level hierarchical whole-part relationships between the components of CubeSat (nanosatellite), as listed below, and represent them in a Design Structure Matrix (DSM) format.          
+        The relationships should be articulated in plain English, capturing the essence of their interactions.         
+        Here is the list of subsystems/components to analyze: ['On-Board Computer (OBC)', 'Electrical Power System (EPS)', 'Communication System', 'Attitude Determination and Control System (ADCS)', 'Payload', 'Structural Frame']         
+        The DSM should clearly indicate the interactions between these components as 1 exist and 0 does not exist, considering both the presence and nature of these connections.         
+        Present the output in a square matrix format (number of rows and columns MUST be the same as the number of components = 6 for this example), with rows and columns labeled accordingly.         
+        Diagonal elements should be 1 in DSM matrix since each component interacts with itself.         
+        If you don't know the answer, just write 2 for the specific cell that you are unsure of. A worst case scenario of the **as a list of lists** shown below (diagonal elements are 1 and rest are 2). Don't make up an answer.         
+        final response = [[1, 2, 2, 2, 2, 2, 2],[2, 1, 2, 2, 2, 2, 2],[2, 2, 1, 2, 2, 2, 2],[2, 2, 2, 1, 2, 2, 2],[2, 2, 2, 2, 1, 2, 2],[2, 2, 2, 2, 2, 1, 2],[2, 2, 2, 2, 2, 2, 1]] for 7 components         
+        final response = [[1, 2, 2],[2, 1, 2],[2, 2, 1]] for 3 components         
+        IMPORTANT: Your response must **ONLY** contain a valid **as a list of lists** in the following example format 7x7 matrix.         
+        The below list of lists is just an example format of a response. **Replace** the values with your **actual analysis** while providing your response with parameter of 'final response'.        
+        final response = [[1, 0, 0, 0, 0, 0, 0],[0, 1, 0, 0, 0, 0, 0],[0, 0, 1, 0, 0, 0, 0],   [0, 0, 0, 1, 0, 0, 0],[0, 0, 0, 0, 1, 0, 0],[0, 0, 0, 0, 0, 1, 0],[0, 0, 0, 0, 0, 0, 1]] for 7 components         
+        final response = [[1, 0, 0],[0, 1, 0],[0, 0, 1]] for 3 components         
+        IMPORTANT: THE FORMAT OF THE OUTPUT MUST BE AS LIST OF LISTS ONLY SIMILAR TO THE ONE ABOVE (NO LATEX, CODE, OR OTHER ENCODINGS).
+        
+2025-02-22 20:49:15,255 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: final response = [[1, 1, 1, 1, 1, 1],
+                  [1, 1, 1, 0, 0, 1],
+                  [1, 1, 1, 1, 1, 0],
+                  [1, 0, 1, 1, 1, 1],
+                  [1, 0, 1, 1, 1, 1],
+                  [1, 1, 0, 1, 1, 1]]
+2025-02-22 20:49:15,257 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Response: final response = [[1, 1, 1, 1, 1, 1],
+                  [1, 1, 1, 0, 0, 1],
+                  [1, 1, 1, 1, 1, 0],
+                  [1, 0, 1, 1, 1, 1],
+                  [1, 0, 1, 1, 1, 1],
+                  [1, 1, 0, 1, 1, 1]]
+2025-02-22 20:49:15,258 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix: [[1, 1, 1, 1, 1, 1], [1, 1, 1, 0, 0, 1], [1, 1, 1, 1, 1, 0], [1, 0, 1, 1, 1, 1], [1, 0, 1, 1, 1, 1], [1, 1, 0, 1, 1, 1]]
+2025-02-22 20:49:15,259 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Final Matrix:
+[[1, 1, 1, 1, 1, 1], [1, 1, 1, 0, 0, 1], [1, 1, 1, 1, 1, 0], [1, 0, 1, 1, 1, 1], [1, 0, 1, 1, 1, 1], [1, 1, 0, 1, 1, 1]]
+2025-02-22 20:49:15,260 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-22 20:49:15,260 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix from response.
+2025-02-22 20:49:15,261 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - At run 1/5
+2025-02-22 20:49:15,262 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix: [[1, 1, 1, 1, 1, 1], [1, 1, 1, 0, 0, 1], [1, 1, 1, 1, 1, 0], [1, 0, 1, 1, 1, 1], [1, 0, 1, 1, 1, 1], [1, 1, 0, 1, 1, 1]]
+2025-02-22 20:49:15,264 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-22 20:49:25,275 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Run 2/5
+2025-02-22 20:49:25,311 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - DEBUG: Initializing LLMInference.
+2025-02-22 20:49:25,312 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Initialized LLM inference for system: CubeSat (nanosatellite)
+2025-02-22 20:49:25,313 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Initialized DSM for system: CubeSat (nanosatellite)
+2025-02-22 20:49:25,314 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Inference model: gpt-4-turbo-preview
+2025-02-22 20:49:25,315 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Predicted Components: ['On-Board Computer (OBC)', 'Electrical Power System (EPS)', 'Communication System', 'Attitude Determination and Control System (ADCS)', 'Payload', 'Structural Frame']
+2025-02-22 20:49:25,316 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Number of components: 6
+2025-02-22 20:49:25,317 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Predicted components for query: ['On-Board Computer (OBC)', 'Electrical Power System (EPS)', 'Communication System', 'Attitude Determination and Control System (ADCS)', 'Payload', 'Structural Frame']
+2025-02-22 20:49:25,318 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Query: 
+        Please identify system-level hierarchical whole-part relationships between the components of CubeSat (nanosatellite), as listed below, and represent them in a Design Structure Matrix (DSM) format.          
+        The relationships should be articulated in plain English, capturing the essence of their interactions.         
+        Here is the list of subsystems/components to analyze: ['On-Board Computer (OBC)', 'Electrical Power System (EPS)', 'Communication System', 'Attitude Determination and Control System (ADCS)', 'Payload', 'Structural Frame']         
+        The DSM should clearly indicate the interactions between these components as 1 exist and 0 does not exist, considering both the presence and nature of these connections.         
+        Present the output in a square matrix format (number of rows and columns MUST be the same as the number of components = 6 for this example), with rows and columns labeled accordingly.         
+        Diagonal elements should be 1 in DSM matrix since each component interacts with itself.         
+        If you don't know the answer, just write 2 for the specific cell that you are unsure of. A worst case scenario of the **as a list of lists** shown below (diagonal elements are 1 and rest are 2). Don't make up an answer.         
+        final response = [[1, 2, 2, 2, 2, 2, 2],[2, 1, 2, 2, 2, 2, 2],[2, 2, 1, 2, 2, 2, 2],[2, 2, 2, 1, 2, 2, 2],[2, 2, 2, 2, 1, 2, 2],[2, 2, 2, 2, 2, 1, 2],[2, 2, 2, 2, 2, 2, 1]] for 7 components         
+        final response = [[1, 2, 2],[2, 1, 2],[2, 2, 1]] for 3 components         
+        IMPORTANT: Your response must **ONLY** contain a valid **as a list of lists** in the following example format 7x7 matrix.         
+        The below list of lists is just an example format of a response. **Replace** the values with your **actual analysis** while providing your response with parameter of 'final response'.        
+        final response = [[1, 0, 0, 0, 0, 0, 0],[0, 1, 0, 0, 0, 0, 0],[0, 0, 1, 0, 0, 0, 0],   [0, 0, 0, 1, 0, 0, 0],[0, 0, 0, 0, 1, 0, 0],[0, 0, 0, 0, 0, 1, 0],[0, 0, 0, 0, 0, 0, 1]] for 7 components         
+        final response = [[1, 0, 0],[0, 1, 0],[0, 0, 1]] for 3 components         
+        IMPORTANT: THE FORMAT OF THE OUTPUT MUST BE AS LIST OF LISTS ONLY SIMILAR TO THE ONE ABOVE (NO LATEX, CODE, OR OTHER ENCODINGS).
+        
+2025-02-22 20:49:30,609 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: final response = [[1, 1, 1, 1, 1, 1],
+                  [1, 1, 1, 0, 0, 1],
+                  [1, 1, 1, 1, 1, 0],
+                  [1, 0, 1, 1, 1, 1],
+                  [1, 0, 1, 0, 1, 1],
+                  [1, 1, 0, 1, 1, 1]]
+2025-02-22 20:49:30,610 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Response: final response = [[1, 1, 1, 1, 1, 1],
+                  [1, 1, 1, 0, 0, 1],
+                  [1, 1, 1, 1, 1, 0],
+                  [1, 0, 1, 1, 1, 1],
+                  [1, 0, 1, 0, 1, 1],
+                  [1, 1, 0, 1, 1, 1]]
+2025-02-22 20:49:30,611 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix: [[1, 1, 1, 1, 1, 1], [1, 1, 1, 0, 0, 1], [1, 1, 1, 1, 1, 0], [1, 0, 1, 1, 1, 1], [1, 0, 1, 0, 1, 1], [1, 1, 0, 1, 1, 1]]
+2025-02-22 20:49:30,613 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Final Matrix:
+[[1, 1, 1, 1, 1, 1], [1, 1, 1, 0, 0, 1], [1, 1, 1, 1, 1, 0], [1, 0, 1, 1, 1, 1], [1, 0, 1, 0, 1, 1], [1, 1, 0, 1, 1, 1]]
+2025-02-22 20:49:30,614 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-22 20:49:30,615 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix from response.
+2025-02-22 20:49:30,615 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - At run 2/5
+2025-02-22 20:49:30,616 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix: [[1, 1, 1, 1, 1, 1], [1, 1, 1, 0, 0, 1], [1, 1, 1, 1, 1, 0], [1, 0, 1, 1, 1, 1], [1, 0, 1, 0, 1, 1], [1, 1, 0, 1, 1, 1]]
+2025-02-22 20:49:30,617 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-22 20:49:40,629 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Run 3/5
+2025-02-22 20:49:40,664 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - DEBUG: Initializing LLMInference.
+2025-02-22 20:49:40,665 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Initialized LLM inference for system: CubeSat (nanosatellite)
+2025-02-22 20:49:40,666 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Initialized DSM for system: CubeSat (nanosatellite)
+2025-02-22 20:49:40,667 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Inference model: gpt-4-turbo-preview
+2025-02-22 20:49:40,668 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Predicted Components: ['On-Board Computer (OBC)', 'Electrical Power System (EPS)', 'Communication System', 'Attitude Determination and Control System (ADCS)', 'Payload', 'Structural Frame']
+2025-02-22 20:49:40,669 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Number of components: 6
+2025-02-22 20:49:40,670 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Predicted components for query: ['On-Board Computer (OBC)', 'Electrical Power System (EPS)', 'Communication System', 'Attitude Determination and Control System (ADCS)', 'Payload', 'Structural Frame']
+2025-02-22 20:49:40,671 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Query: 
+        Please identify system-level hierarchical whole-part relationships between the components of CubeSat (nanosatellite), as listed below, and represent them in a Design Structure Matrix (DSM) format.          
+        The relationships should be articulated in plain English, capturing the essence of their interactions.         
+        Here is the list of subsystems/components to analyze: ['On-Board Computer (OBC)', 'Electrical Power System (EPS)', 'Communication System', 'Attitude Determination and Control System (ADCS)', 'Payload', 'Structural Frame']         
+        The DSM should clearly indicate the interactions between these components as 1 exist and 0 does not exist, considering both the presence and nature of these connections.         
+        Present the output in a square matrix format (number of rows and columns MUST be the same as the number of components = 6 for this example), with rows and columns labeled accordingly.         
+        Diagonal elements should be 1 in DSM matrix since each component interacts with itself.         
+        If you don't know the answer, just write 2 for the specific cell that you are unsure of. A worst case scenario of the **as a list of lists** shown below (diagonal elements are 1 and rest are 2). Don't make up an answer.         
+        final response = [[1, 2, 2, 2, 2, 2, 2],[2, 1, 2, 2, 2, 2, 2],[2, 2, 1, 2, 2, 2, 2],[2, 2, 2, 1, 2, 2, 2],[2, 2, 2, 2, 1, 2, 2],[2, 2, 2, 2, 2, 1, 2],[2, 2, 2, 2, 2, 2, 1]] for 7 components         
+        final response = [[1, 2, 2],[2, 1, 2],[2, 2, 1]] for 3 components         
+        IMPORTANT: Your response must **ONLY** contain a valid **as a list of lists** in the following example format 7x7 matrix.         
+        The below list of lists is just an example format of a response. **Replace** the values with your **actual analysis** while providing your response with parameter of 'final response'.        
+        final response = [[1, 0, 0, 0, 0, 0, 0],[0, 1, 0, 0, 0, 0, 0],[0, 0, 1, 0, 0, 0, 0],   [0, 0, 0, 1, 0, 0, 0],[0, 0, 0, 0, 1, 0, 0],[0, 0, 0, 0, 0, 1, 0],[0, 0, 0, 0, 0, 0, 1]] for 7 components         
+        final response = [[1, 0, 0],[0, 1, 0],[0, 0, 1]] for 3 components         
+        IMPORTANT: THE FORMAT OF THE OUTPUT MUST BE AS LIST OF LISTS ONLY SIMILAR TO THE ONE ABOVE (NO LATEX, CODE, OR OTHER ENCODINGS).
+        
+2025-02-22 20:49:45,860 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: final response = [[1, 1, 1, 1, 1, 1],
+                  [1, 1, 1, 0, 0, 1],
+                  [1, 1, 1, 1, 1, 0],
+                  [1, 0, 1, 1, 1, 1],
+                  [1, 0, 1, 1, 1, 1],
+                  [1, 1, 0, 1, 1, 1]]
+2025-02-22 20:49:45,861 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Response: final response = [[1, 1, 1, 1, 1, 1],
+                  [1, 1, 1, 0, 0, 1],
+                  [1, 1, 1, 1, 1, 0],
+                  [1, 0, 1, 1, 1, 1],
+                  [1, 0, 1, 1, 1, 1],
+                  [1, 1, 0, 1, 1, 1]]
+2025-02-22 20:49:45,863 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix: [[1, 1, 1, 1, 1, 1], [1, 1, 1, 0, 0, 1], [1, 1, 1, 1, 1, 0], [1, 0, 1, 1, 1, 1], [1, 0, 1, 1, 1, 1], [1, 1, 0, 1, 1, 1]]
+2025-02-22 20:49:45,864 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Final Matrix:
+[[1, 1, 1, 1, 1, 1], [1, 1, 1, 0, 0, 1], [1, 1, 1, 1, 1, 0], [1, 0, 1, 1, 1, 1], [1, 0, 1, 1, 1, 1], [1, 1, 0, 1, 1, 1]]
+2025-02-22 20:49:45,864 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-22 20:49:45,866 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix from response.
+2025-02-22 20:49:45,866 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - At run 3/5
+2025-02-22 20:49:45,868 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix: [[1, 1, 1, 1, 1, 1], [1, 1, 1, 0, 0, 1], [1, 1, 1, 1, 1, 0], [1, 0, 1, 1, 1, 1], [1, 0, 1, 1, 1, 1], [1, 1, 0, 1, 1, 1]]
+2025-02-22 20:49:45,868 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-22 20:49:55,880 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Run 4/5
+2025-02-22 20:49:55,916 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - DEBUG: Initializing LLMInference.
+2025-02-22 20:49:55,916 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Initialized LLM inference for system: CubeSat (nanosatellite)
+2025-02-22 20:49:55,917 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Initialized DSM for system: CubeSat (nanosatellite)
+2025-02-22 20:49:55,918 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Inference model: gpt-4-turbo-preview
+2025-02-22 20:49:55,919 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Predicted Components: ['On-Board Computer (OBC)', 'Electrical Power System (EPS)', 'Communication System', 'Attitude Determination and Control System (ADCS)', 'Payload', 'Structural Frame']
+2025-02-22 20:49:55,920 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Number of components: 6
+2025-02-22 20:49:55,921 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Predicted components for query: ['On-Board Computer (OBC)', 'Electrical Power System (EPS)', 'Communication System', 'Attitude Determination and Control System (ADCS)', 'Payload', 'Structural Frame']
+2025-02-22 20:49:55,922 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Query: 
+        Please identify system-level hierarchical whole-part relationships between the components of CubeSat (nanosatellite), as listed below, and represent them in a Design Structure Matrix (DSM) format.          
+        The relationships should be articulated in plain English, capturing the essence of their interactions.         
+        Here is the list of subsystems/components to analyze: ['On-Board Computer (OBC)', 'Electrical Power System (EPS)', 'Communication System', 'Attitude Determination and Control System (ADCS)', 'Payload', 'Structural Frame']         
+        The DSM should clearly indicate the interactions between these components as 1 exist and 0 does not exist, considering both the presence and nature of these connections.         
+        Present the output in a square matrix format (number of rows and columns MUST be the same as the number of components = 6 for this example), with rows and columns labeled accordingly.         
+        Diagonal elements should be 1 in DSM matrix since each component interacts with itself.         
+        If you don't know the answer, just write 2 for the specific cell that you are unsure of. A worst case scenario of the **as a list of lists** shown below (diagonal elements are 1 and rest are 2). Don't make up an answer.         
+        final response = [[1, 2, 2, 2, 2, 2, 2],[2, 1, 2, 2, 2, 2, 2],[2, 2, 1, 2, 2, 2, 2],[2, 2, 2, 1, 2, 2, 2],[2, 2, 2, 2, 1, 2, 2],[2, 2, 2, 2, 2, 1, 2],[2, 2, 2, 2, 2, 2, 1]] for 7 components         
+        final response = [[1, 2, 2],[2, 1, 2],[2, 2, 1]] for 3 components         
+        IMPORTANT: Your response must **ONLY** contain a valid **as a list of lists** in the following example format 7x7 matrix.         
+        The below list of lists is just an example format of a response. **Replace** the values with your **actual analysis** while providing your response with parameter of 'final response'.        
+        final response = [[1, 0, 0, 0, 0, 0, 0],[0, 1, 0, 0, 0, 0, 0],[0, 0, 1, 0, 0, 0, 0],   [0, 0, 0, 1, 0, 0, 0],[0, 0, 0, 0, 1, 0, 0],[0, 0, 0, 0, 0, 1, 0],[0, 0, 0, 0, 0, 0, 1]] for 7 components         
+        final response = [[1, 0, 0],[0, 1, 0],[0, 0, 1]] for 3 components         
+        IMPORTANT: THE FORMAT OF THE OUTPUT MUST BE AS LIST OF LISTS ONLY SIMILAR TO THE ONE ABOVE (NO LATEX, CODE, OR OTHER ENCODINGS).
+        
+2025-02-22 20:50:00,791 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: final response = [[1, 1, 1, 1, 1, 1],
+                  [1, 1, 1, 0, 0, 1],
+                  [1, 1, 1, 1, 1, 0],
+                  [1, 0, 1, 1, 1, 1],
+                  [1, 0, 1, 1, 1, 0],
+                  [1, 1, 0, 1, 0, 1]]
+2025-02-22 20:50:00,792 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Response: final response = [[1, 1, 1, 1, 1, 1],
+                  [1, 1, 1, 0, 0, 1],
+                  [1, 1, 1, 1, 1, 0],
+                  [1, 0, 1, 1, 1, 1],
+                  [1, 0, 1, 1, 1, 0],
+                  [1, 1, 0, 1, 0, 1]]
+2025-02-22 20:50:00,793 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix: [[1, 1, 1, 1, 1, 1], [1, 1, 1, 0, 0, 1], [1, 1, 1, 1, 1, 0], [1, 0, 1, 1, 1, 1], [1, 0, 1, 1, 1, 0], [1, 1, 0, 1, 0, 1]]
+2025-02-22 20:50:00,794 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Final Matrix:
+[[1, 1, 1, 1, 1, 1], [1, 1, 1, 0, 0, 1], [1, 1, 1, 1, 1, 0], [1, 0, 1, 1, 1, 1], [1, 0, 1, 1, 1, 0], [1, 1, 0, 1, 0, 1]]
+2025-02-22 20:50:00,795 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-22 20:50:00,795 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix from response.
+2025-02-22 20:50:00,796 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - At run 4/5
+2025-02-22 20:50:00,798 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix: [[1, 1, 1, 1, 1, 1], [1, 1, 1, 0, 0, 1], [1, 1, 1, 1, 1, 0], [1, 0, 1, 1, 1, 1], [1, 0, 1, 1, 1, 0], [1, 1, 0, 1, 0, 1]]
+2025-02-22 20:50:00,798 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-22 20:50:10,810 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Run 5/5
+2025-02-22 20:50:10,845 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - DEBUG: Initializing LLMInference.
+2025-02-22 20:50:10,846 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Initialized LLM inference for system: CubeSat (nanosatellite)
+2025-02-22 20:50:10,848 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Initialized DSM for system: CubeSat (nanosatellite)
+2025-02-22 20:50:10,848 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Inference model: gpt-4-turbo-preview
+2025-02-22 20:50:10,849 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Predicted Components: ['On-Board Computer (OBC)', 'Electrical Power System (EPS)', 'Communication System', 'Attitude Determination and Control System (ADCS)', 'Payload', 'Structural Frame']
+2025-02-22 20:50:10,850 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Number of components: 6
+2025-02-22 20:50:10,851 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Predicted components for query: ['On-Board Computer (OBC)', 'Electrical Power System (EPS)', 'Communication System', 'Attitude Determination and Control System (ADCS)', 'Payload', 'Structural Frame']
+2025-02-22 20:50:10,853 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Query: 
+        Please identify system-level hierarchical whole-part relationships between the components of CubeSat (nanosatellite), as listed below, and represent them in a Design Structure Matrix (DSM) format.          
+        The relationships should be articulated in plain English, capturing the essence of their interactions.         
+        Here is the list of subsystems/components to analyze: ['On-Board Computer (OBC)', 'Electrical Power System (EPS)', 'Communication System', 'Attitude Determination and Control System (ADCS)', 'Payload', 'Structural Frame']         
+        The DSM should clearly indicate the interactions between these components as 1 exist and 0 does not exist, considering both the presence and nature of these connections.         
+        Present the output in a square matrix format (number of rows and columns MUST be the same as the number of components = 6 for this example), with rows and columns labeled accordingly.         
+        Diagonal elements should be 1 in DSM matrix since each component interacts with itself.         
+        If you don't know the answer, just write 2 for the specific cell that you are unsure of. A worst case scenario of the **as a list of lists** shown below (diagonal elements are 1 and rest are 2). Don't make up an answer.         
+        final response = [[1, 2, 2, 2, 2, 2, 2],[2, 1, 2, 2, 2, 2, 2],[2, 2, 1, 2, 2, 2, 2],[2, 2, 2, 1, 2, 2, 2],[2, 2, 2, 2, 1, 2, 2],[2, 2, 2, 2, 2, 1, 2],[2, 2, 2, 2, 2, 2, 1]] for 7 components         
+        final response = [[1, 2, 2],[2, 1, 2],[2, 2, 1]] for 3 components         
+        IMPORTANT: Your response must **ONLY** contain a valid **as a list of lists** in the following example format 7x7 matrix.         
+        The below list of lists is just an example format of a response. **Replace** the values with your **actual analysis** while providing your response with parameter of 'final response'.        
+        final response = [[1, 0, 0, 0, 0, 0, 0],[0, 1, 0, 0, 0, 0, 0],[0, 0, 1, 0, 0, 0, 0],   [0, 0, 0, 1, 0, 0, 0],[0, 0, 0, 0, 1, 0, 0],[0, 0, 0, 0, 0, 1, 0],[0, 0, 0, 0, 0, 0, 1]] for 7 components         
+        final response = [[1, 0, 0],[0, 1, 0],[0, 0, 1]] for 3 components         
+        IMPORTANT: THE FORMAT OF THE OUTPUT MUST BE AS LIST OF LISTS ONLY SIMILAR TO THE ONE ABOVE (NO LATEX, CODE, OR OTHER ENCODINGS).
+        
+2025-02-22 20:50:16,980 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: final response = [[1, 1, 1, 1, 1, 1],
+                  [1, 1, 1, 0, 0, 1],
+                  [1, 1, 1, 1, 1, 0],
+                  [1, 0, 1, 1, 1, 1],
+                  [1, 0, 1, 0, 1, 1],
+                  [1, 1, 0, 1, 1, 1]]
+2025-02-22 20:50:16,981 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Response: final response = [[1, 1, 1, 1, 1, 1],
+                  [1, 1, 1, 0, 0, 1],
+                  [1, 1, 1, 1, 1, 0],
+                  [1, 0, 1, 1, 1, 1],
+                  [1, 0, 1, 0, 1, 1],
+                  [1, 1, 0, 1, 1, 1]]
+2025-02-22 20:50:16,982 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix: [[1, 1, 1, 1, 1, 1], [1, 1, 1, 0, 0, 1], [1, 1, 1, 1, 1, 0], [1, 0, 1, 1, 1, 1], [1, 0, 1, 0, 1, 1], [1, 1, 0, 1, 1, 1]]
+2025-02-22 20:50:16,983 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Final Matrix:
+[[1, 1, 1, 1, 1, 1], [1, 1, 1, 0, 0, 1], [1, 1, 1, 1, 1, 0], [1, 0, 1, 1, 1, 1], [1, 0, 1, 0, 1, 1], [1, 1, 0, 1, 1, 1]]
+2025-02-22 20:50:16,984 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-22 20:50:16,985 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix from response.
+2025-02-22 20:50:16,986 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - At run 5/5
+2025-02-22 20:50:16,987 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix: [[1, 1, 1, 1, 1, 1], [1, 1, 1, 0, 0, 1], [1, 1, 1, 1, 1, 0], [1, 0, 1, 1, 1, 1], [1, 0, 1, 0, 1, 1], [1, 1, 0, 1, 1, 1]]
+2025-02-22 20:50:16,988 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-22 20:50:26,999 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Duration of reference combination {}: 0:01:20.676607
+2025-02-22 20:50:27,000 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2025-02-22 20:50:27,001 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - 
+==================================================
+2025-02-22 20:50:27,002 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Average DSM Matrix for model: gpt-4-turbo-preview
+2025-02-22 20:50:27,003 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - End of log reference type(s): ['baseline']
+2025-02-22 20:50:27,004 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Saving results to: ../output/experiment_llm_gpt-4-turbo-preview_20250222-204906/llm_refs_baseline
+2025-02-22 20:50:27,008 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - 
+Average Matrix:
+                                                  On-Board Computer (OBC)  Electrical Power System (EPS)  Communication System  Attitude Determination and Control System (ADCS)  Payload  Structural Frame
+On-Board Computer (OBC)                                                 1                              1                     1                                                 1        1                 1
+Electrical Power System (EPS)                                           1                              1                     1                                                 0        0                 1
+Communication System                                                    1                              1                     1                                                 1        1                 0
+Attitude Determination and Control System (ADCS)                        1                              0                     1                                                 1        1                 1
+Payload                                                                 1                              0                     1                                                 1        1                 1
+Structural Frame                                                        1                              1                     0                                                 1        1                 1
+2025-02-22 20:50:27,009 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - 
+Components: ['On-Board Computer (OBC)', 'Electrical Power System (EPS)', 'Communication System', 'Attitude Determination and Control System (ADCS)', 'Payload', 'Structural Frame']
+2025-02-22 20:50:27,009 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - ==================================================
+
+2025-02-22 20:50:27,012 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Saved CSV to: ../output/experiment_llm_gpt-4-turbo-preview_20250222-204906/llm_refs_baseline/average_matrix_20250222-204906.csv
+2025-02-22 20:50:27,013 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Saved JSON to: ../output/experiment_llm_gpt-4-turbo-preview_20250222-204906/llm_refs_baseline/detailed_results_20250222-204906.json
+2025-02-22 20:50:27,277 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Saved visualization to: ../output/experiment_llm_gpt-4-turbo-preview_20250222-204906/llm_refs_baseline/average_matrix_20250222-204906.png
+2025-02-22 20:50:27,278 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Duration of experiment for gpt-4-turbo-preview in llm inference type: 0:01:21

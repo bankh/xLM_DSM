@@ -1,0 +1,58 @@
+2025-02-19 22:11:07,243 - DSM_None_None_ - INFO - 
+Best matches for each ground truth component:
+2025-02-19 22:11:07,246 - DSM_None_None_ - INFO - 
+Bit:
+2025-02-19 22:11:07,247 - DSM_None_None_ - INFO -   predicted_component  embedding_similarity
+5             Battery              0.425371
+2               Chuck              0.320521
+0               Motor              0.295605
+2025-02-19 22:11:07,250 - DSM_None_None_ - INFO - 
+Transmission:
+2025-02-19 22:11:07,251 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+8              Gearbox              0.524029
+7                Motor              0.450794
+10              Clutch              0.395486
+2025-02-19 22:11:07,254 - DSM_None_None_ - INFO - 
+Motor:
+2025-02-19 22:11:07,255 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+14               Motor              1.000000
+19             Battery              0.538682
+15             Gearbox              0.475674
+2025-02-19 22:11:07,257 - DSM_None_None_ - INFO - 
+Electrical System:
+2025-02-19 22:11:07,258 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+26             Battery              0.436050
+21               Motor              0.353539
+22             Gearbox              0.294475
+2025-02-19 22:11:07,261 - DSM_None_None_ - INFO - 
+Battery Holder:
+2025-02-19 22:11:07,262 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+33             Battery              0.647835
+29             Gearbox              0.319527
+28               Motor              0.319424
+2025-02-19 22:11:07,264 - DSM_None_None_ - INFO - 
+Housing:
+2025-02-19 22:11:07,265 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+41             Housing              1.000000
+36             Gearbox              0.247303
+38              Clutch              0.222673
+2025-02-19 22:11:07,268 - DSM_None_None_ - INFO - 
+External Environment:
+2025-02-19 22:11:07,269 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+47             Battery              0.265501
+48             Housing              0.254411
+42               Motor              0.201317
+2025-02-19 22:11:34,265 - DSM_None_None_ - INFO - System Context: power drill
+2025-02-19 22:11:34,267 - DSM_None_None_ - INFO - Similarity Threshold: 0.3
+2025-02-19 22:11:54,740 - DSM_None_None_ - INFO - 
+Removing invalid mapping:
+2025-02-19 22:11:54,742 - DSM_None_None_ - INFO - - External Environment -> 
+2025-02-19 22:11:54,745 - DSM_None_None_ - INFO - 
+Final Component Mapping (only valid matches):
+2025-02-19 22:11:54,746 - DSM_None_None_ - INFO -   Ground Truth Component Matched Predicted Component
+0                    Bit                       Chuck
+1           Transmission                     Gearbox
+2                  Motor                       Motor
+3      Electrical System                     Battery
+4         Battery Holder                     Battery
+5                Housing                     Housing

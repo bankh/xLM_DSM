@@ -1,0 +1,7 @@
+Ground Truth Component,Matched Predicted Component
+Power Subsystem,Power System
+Spacecraft,Payload
+"Guidance, Navigation, and Control (GNC) Subsystem",Attitude Determination and Control System (ADCS)
+Propulsion Subsystem,Structural and Thermal System
+Reaction Wheel,Communication System
+GNC Software,Command and Data Handling (C&DH)

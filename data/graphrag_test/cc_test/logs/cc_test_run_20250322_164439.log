@@ -1,0 +1,25 @@
+Running graphrag command...
+Command: python -m graphrag query --root ./ --method global --query Who is scrooge?
+
+
+creating llm client with {'api_key': 'REDACTED,len=164', 'type': "openai_chat", 'encoding_model': 'cl100k_base', 'model': 'gpt-4-turbo-preview', 'max_tokens': 4000, 'temperature': 0.0, 'top_p': 1.0, 'n': 1, 'frequency_penalty': 0.0, 'presence_penalty': 0.0, 'request_timeout': 180.0, 'api_base': None, 'api_version': None, 'organization': None, 'proxy': None, 'audience': None, 'deployment_name': None, 'model_supports_json': True, 'tokens_per_minute': 0, 'requests_per_minute': 0, 'max_retries': 10, 'max_retry_wait': 10.0, 'sleep_on_rate_limit_recommendation': True, 'concurrent_requests': 25, 'responses': None}
+
+SUCCESS: Global Search Response:
+### Overview of Ebenezer Scrooge
+
+Ebenezer Scrooge is a fictional character whose story is central to Charles Dickens' novella, "A Christmas Carol." He is initially portrayed as the epitome of a miser: a solitary individual whose life is characterized by greed and a lack of compassion for others. Scrooge's journey from a miserly existence to becoming a generous and caring individual is a core narrative arc that has captured the imagination of readers and audiences for generations [Data: Reports (14)].
+
+### The Transformation of Scrooge
+
+Scrooge's profound transformation is triggered by the supernatural visitations of his deceased business partner, Jacob Marley, and the subsequent appearances of three ghosts representing Christmases Past, Present, and Yet to Come. These spectral interventions lead Scrooge to reflect deeply on his life, his actions, and their impacts on those around him. Initially described as a "squeezing, wrenching, grasping, scraping, clutching, covetous old sinner," Scrooge's character undergoes a significant change, ultimately embracing the joy, warmth, and spirit of the holiday season [Data: Reports (14)].
+
+### The Catalysts for Change
+
+The catalysts for Scrooge's change are deeply rooted in the supernatural experiences orchestrated by Marley's ghost and the lessons imparted by the Ghosts of Christmas Past, Present, and Yet to Come. These experiences highlight themes of regret, redemption, and the profound impact of one's actions on the lives of others. Through these encounters, Scrooge is confronted with the consequences of his miserliness and is offered a glimpse into a future that could be altered by his immediate actions [Data: Reports (14)].
+
+### A New Dawn for Scrooge
+
+Awakening on Christmas Day, Scrooge is filled with a newfound eagerness to spread happiness and generosity, marking a complete reversal from his previous ways. This change underscores the narrative's moral that it is never too late to alter one's course and make amends for past behaviors. Scrooge's story is a powerful testament to the capacity for personal growth and the enduring value of generosity and community spirit [Data: Reports (14)].
+
+In summary, Ebenezer Scrooge's character arc from a miser to a benefactor is a compelling narrative of redemption and transformation, driven by supernatural interventions and a deep reflection on personal values and the impact of one's actions on society.
+Command completed and logged to logs/cc_test_run_20250322_164439.log

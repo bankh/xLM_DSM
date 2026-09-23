@@ -1,0 +1,299 @@
+2025-02-16 06:26:07,429 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Run 1/5
+2025-02-16 06:26:07,464 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - DEBUG: Initializing LLMInference.
+2025-02-16 06:26:07,465 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Initialized LLM inference for system: CubeSat
+2025-02-16 06:26:07,466 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Initialized DSM for system: CubeSat
+2025-02-16 06:26:07,467 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Inference model: gpt-4-turbo-preview
+2025-02-16 06:26:10,834 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: final response = [
+    [1, 1, 1, 1, 1, 1],
+    [1, 1, 0, 1, 1, 1],
+    [1, 0, 1, 1, 0, 0],
+    [1, 1, 1, 1, 0, 0],
+    [1, 1, 0, 0, 1, 1],
+    [1, 1, 0, 0, 1, 1]
+]
+2025-02-16 06:26:10,835 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Query: 
+    Please identify system-level proximity relationships (in contact) between the components of CubeSat (nanosatellite), as listed below, and represent them in a Design Structure Matrix (DSM) format.  
+    The relationships should be articulated in plain English, capturing the essence of their interactions. 
+    Here is the list of subsystems/components to analyze: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software'] 
+    The DSM should clearly indicate the interactions between these components as 1 exist and 0 does not exist, considering both the presence and nature of these connections.         
+    Present the output in a square matrix format (number of rows and columns MUST be the same as the number of components = 6 for this example), with rows and columns labeled accordingly. 
+    Diagonal elements should be 1 in DSM matrix since each component interacts with itself. 
+    If you don't know the answer, just write 2 for the specific cell that you are unsure of. A worst case scenario of the **as a list of lists** shown below (diagonal elements are 1 and rest are 2). Don't make up an answer.     final response = [
+        [1, 2, 2, 2, 2, 2],
+        [2, 1, 2, 2, 2, 2],
+        [2, 2, 1, 2, 2, 2],
+        [2, 2, 2, 1, 2, 2],
+        [2, 2, 2, 2, 1, 2],
+        [2, 2, 2, 2, 2, 1]
+    ]
+
+    IMPORTANT: Your response must **ONLY** contain a valid **as a list of lists** in the following example format 7x7 matrix.     
+    The below list of lists is just an example format of your response. **Replace** the values with your **actual analysis** while providing your response with parameter of 'final response'.    
+    final response = [
+        [1, 0, 0, 0, 0, 0],
+        [0, 1, 0, 0, 0, 0],
+        [0, 0, 1, 0, 0, 0],
+        [0, 0, 0, 1, 0, 0],
+        [0, 0, 0, 0, 1, 0],
+        [0, 0, 0, 0, 0, 1]
+    ]
+
+    IMPORTANT: THE FORMAT OF THE OUTPUT MUST BE AS LIST OF LISTS ONLY SIMILAR TO THE ONE ABOVE (NO LATEX, CODE, OR OTHER ENCODINGS).
+    
+2025-02-16 06:26:10,836 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Response: final response = [
+    [1, 1, 1, 1, 1, 1],
+    [1, 1, 0, 1, 1, 1],
+    [1, 0, 1, 1, 0, 0],
+    [1, 1, 1, 1, 0, 0],
+    [1, 1, 0, 0, 1, 1],
+    [1, 1, 0, 0, 1, 1]
+]
+2025-02-16 06:26:10,837 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix: [[1, 1, 1, 1, 1, 1], [1, 1, 0, 1, 1, 1], [1, 0, 1, 1, 0, 0], [1, 1, 1, 1, 0, 0], [1, 1, 0, 0, 1, 1], [1, 1, 0, 0, 1, 1]]
+2025-02-16 06:26:10,838 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix from response.
+2025-02-16 06:26:10,838 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - At run 1/5
+2025-02-16 06:26:10,839 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix: [[1, 1, 1, 1, 1, 1], [1, 1, 0, 1, 1, 1], [1, 0, 1, 1, 0, 0], [1, 1, 1, 1, 0, 0], [1, 1, 0, 0, 1, 1], [1, 1, 0, 0, 1, 1]]
+2025-02-16 06:26:10,841 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-16 06:26:20,852 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Run 2/5
+2025-02-16 06:26:20,887 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - DEBUG: Initializing LLMInference.
+2025-02-16 06:26:20,888 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Initialized LLM inference for system: CubeSat
+2025-02-16 06:26:20,889 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Initialized DSM for system: CubeSat
+2025-02-16 06:26:20,889 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Inference model: gpt-4-turbo-preview
+2025-02-16 06:26:25,900 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: final response = [
+    [1, 1, 1, 1, 1, 1],
+    [1, 1, 0, 1, 1, 1],
+    [1, 0, 1, 1, 0, 0],
+    [1, 1, 1, 1, 0, 0],
+    [1, 1, 0, 0, 1, 1],
+    [1, 1, 0, 0, 1, 1]
+]
+2025-02-16 06:26:25,901 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Query: 
+    Please identify system-level proximity relationships (in contact) between the components of CubeSat (nanosatellite), as listed below, and represent them in a Design Structure Matrix (DSM) format.  
+    The relationships should be articulated in plain English, capturing the essence of their interactions. 
+    Here is the list of subsystems/components to analyze: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software'] 
+    The DSM should clearly indicate the interactions between these components as 1 exist and 0 does not exist, considering both the presence and nature of these connections.         
+    Present the output in a square matrix format (number of rows and columns MUST be the same as the number of components = 6 for this example), with rows and columns labeled accordingly. 
+    Diagonal elements should be 1 in DSM matrix since each component interacts with itself. 
+    If you don't know the answer, just write 2 for the specific cell that you are unsure of. A worst case scenario of the **as a list of lists** shown below (diagonal elements are 1 and rest are 2). Don't make up an answer.     final response = [
+        [1, 2, 2, 2, 2, 2],
+        [2, 1, 2, 2, 2, 2],
+        [2, 2, 1, 2, 2, 2],
+        [2, 2, 2, 1, 2, 2],
+        [2, 2, 2, 2, 1, 2],
+        [2, 2, 2, 2, 2, 1]
+    ]
+
+    IMPORTANT: Your response must **ONLY** contain a valid **as a list of lists** in the following example format 7x7 matrix.     
+    The below list of lists is just an example format of your response. **Replace** the values with your **actual analysis** while providing your response with parameter of 'final response'.    
+    final response = [
+        [1, 0, 0, 0, 0, 0],
+        [0, 1, 0, 0, 0, 0],
+        [0, 0, 1, 0, 0, 0],
+        [0, 0, 0, 1, 0, 0],
+        [0, 0, 0, 0, 1, 0],
+        [0, 0, 0, 0, 0, 1]
+    ]
+
+    IMPORTANT: THE FORMAT OF THE OUTPUT MUST BE AS LIST OF LISTS ONLY SIMILAR TO THE ONE ABOVE (NO LATEX, CODE, OR OTHER ENCODINGS).
+    
+2025-02-16 06:26:25,920 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Response: final response = [
+    [1, 1, 1, 1, 1, 1],
+    [1, 1, 0, 1, 1, 1],
+    [1, 0, 1, 1, 0, 0],
+    [1, 1, 1, 1, 0, 0],
+    [1, 1, 0, 0, 1, 1],
+    [1, 1, 0, 0, 1, 1]
+]
+2025-02-16 06:26:25,921 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix: [[1, 1, 1, 1, 1, 1], [1, 1, 0, 1, 1, 1], [1, 0, 1, 1, 0, 0], [1, 1, 1, 1, 0, 0], [1, 1, 0, 0, 1, 1], [1, 1, 0, 0, 1, 1]]
+2025-02-16 06:26:25,922 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix from response.
+2025-02-16 06:26:25,923 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - At run 2/5
+2025-02-16 06:26:25,925 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix: [[1, 1, 1, 1, 1, 1], [1, 1, 0, 1, 1, 1], [1, 0, 1, 1, 0, 0], [1, 1, 1, 1, 0, 0], [1, 1, 0, 0, 1, 1], [1, 1, 0, 0, 1, 1]]
+2025-02-16 06:26:25,925 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-16 06:26:35,937 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Run 3/5
+2025-02-16 06:26:35,972 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - DEBUG: Initializing LLMInference.
+2025-02-16 06:26:35,973 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Initialized LLM inference for system: CubeSat
+2025-02-16 06:26:35,974 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Initialized DSM for system: CubeSat
+2025-02-16 06:26:35,975 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Inference model: gpt-4-turbo-preview
+2025-02-16 06:26:40,412 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: final response = [
+    [1, 1, 1, 1, 1, 1],
+    [1, 1, 0, 1, 1, 1],
+    [1, 0, 1, 1, 0, 0],
+    [1, 1, 1, 1, 0, 0],
+    [1, 1, 0, 0, 1, 1],
+    [1, 1, 0, 0, 1, 1]
+]
+2025-02-16 06:26:40,413 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Query: 
+    Please identify system-level proximity relationships (in contact) between the components of CubeSat (nanosatellite), as listed below, and represent them in a Design Structure Matrix (DSM) format.  
+    The relationships should be articulated in plain English, capturing the essence of their interactions. 
+    Here is the list of subsystems/components to analyze: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software'] 
+    The DSM should clearly indicate the interactions between these components as 1 exist and 0 does not exist, considering both the presence and nature of these connections.         
+    Present the output in a square matrix format (number of rows and columns MUST be the same as the number of components = 6 for this example), with rows and columns labeled accordingly. 
+    Diagonal elements should be 1 in DSM matrix since each component interacts with itself. 
+    If you don't know the answer, just write 2 for the specific cell that you are unsure of. A worst case scenario of the **as a list of lists** shown below (diagonal elements are 1 and rest are 2). Don't make up an answer.     final response = [
+        [1, 2, 2, 2, 2, 2],
+        [2, 1, 2, 2, 2, 2],
+        [2, 2, 1, 2, 2, 2],
+        [2, 2, 2, 1, 2, 2],
+        [2, 2, 2, 2, 1, 2],
+        [2, 2, 2, 2, 2, 1]
+    ]
+
+    IMPORTANT: Your response must **ONLY** contain a valid **as a list of lists** in the following example format 7x7 matrix.     
+    The below list of lists is just an example format of your response. **Replace** the values with your **actual analysis** while providing your response with parameter of 'final response'.    
+    final response = [
+        [1, 0, 0, 0, 0, 0],
+        [0, 1, 0, 0, 0, 0],
+        [0, 0, 1, 0, 0, 0],
+        [0, 0, 0, 1, 0, 0],
+        [0, 0, 0, 0, 1, 0],
+        [0, 0, 0, 0, 0, 1]
+    ]
+
+    IMPORTANT: THE FORMAT OF THE OUTPUT MUST BE AS LIST OF LISTS ONLY SIMILAR TO THE ONE ABOVE (NO LATEX, CODE, OR OTHER ENCODINGS).
+    
+2025-02-16 06:26:40,413 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Response: final response = [
+    [1, 1, 1, 1, 1, 1],
+    [1, 1, 0, 1, 1, 1],
+    [1, 0, 1, 1, 0, 0],
+    [1, 1, 1, 1, 0, 0],
+    [1, 1, 0, 0, 1, 1],
+    [1, 1, 0, 0, 1, 1]
+]
+2025-02-16 06:26:40,415 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix: [[1, 1, 1, 1, 1, 1], [1, 1, 0, 1, 1, 1], [1, 0, 1, 1, 0, 0], [1, 1, 1, 1, 0, 0], [1, 1, 0, 0, 1, 1], [1, 1, 0, 0, 1, 1]]
+2025-02-16 06:26:40,416 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix from response.
+2025-02-16 06:26:40,417 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - At run 3/5
+2025-02-16 06:26:40,418 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix: [[1, 1, 1, 1, 1, 1], [1, 1, 0, 1, 1, 1], [1, 0, 1, 1, 0, 0], [1, 1, 1, 1, 0, 0], [1, 1, 0, 0, 1, 1], [1, 1, 0, 0, 1, 1]]
+2025-02-16 06:26:40,419 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-16 06:26:50,430 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Run 4/5
+2025-02-16 06:26:50,466 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - DEBUG: Initializing LLMInference.
+2025-02-16 06:26:50,466 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Initialized LLM inference for system: CubeSat
+2025-02-16 06:26:50,468 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Initialized DSM for system: CubeSat
+2025-02-16 06:26:50,468 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Inference model: gpt-4-turbo-preview
+2025-02-16 06:26:54,166 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: final response = [
+    [1, 1, 1, 1, 1, 1],
+    [1, 1, 0, 1, 1, 1],
+    [1, 0, 1, 1, 0, 0],
+    [1, 1, 1, 1, 0, 0],
+    [1, 1, 0, 0, 1, 1],
+    [1, 1, 0, 0, 1, 1]
+]
+2025-02-16 06:26:54,167 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Query: 
+    Please identify system-level proximity relationships (in contact) between the components of CubeSat (nanosatellite), as listed below, and represent them in a Design Structure Matrix (DSM) format.  
+    The relationships should be articulated in plain English, capturing the essence of their interactions. 
+    Here is the list of subsystems/components to analyze: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software'] 
+    The DSM should clearly indicate the interactions between these components as 1 exist and 0 does not exist, considering both the presence and nature of these connections.         
+    Present the output in a square matrix format (number of rows and columns MUST be the same as the number of components = 6 for this example), with rows and columns labeled accordingly. 
+    Diagonal elements should be 1 in DSM matrix since each component interacts with itself. 
+    If you don't know the answer, just write 2 for the specific cell that you are unsure of. A worst case scenario of the **as a list of lists** shown below (diagonal elements are 1 and rest are 2). Don't make up an answer.     final response = [
+        [1, 2, 2, 2, 2, 2],
+        [2, 1, 2, 2, 2, 2],
+        [2, 2, 1, 2, 2, 2],
+        [2, 2, 2, 1, 2, 2],
+        [2, 2, 2, 2, 1, 2],
+        [2, 2, 2, 2, 2, 1]
+    ]
+
+    IMPORTANT: Your response must **ONLY** contain a valid **as a list of lists** in the following example format 7x7 matrix.     
+    The below list of lists is just an example format of your response. **Replace** the values with your **actual analysis** while providing your response with parameter of 'final response'.    
+    final response = [
+        [1, 0, 0, 0, 0, 0],
+        [0, 1, 0, 0, 0, 0],
+        [0, 0, 1, 0, 0, 0],
+        [0, 0, 0, 1, 0, 0],
+        [0, 0, 0, 0, 1, 0],
+        [0, 0, 0, 0, 0, 1]
+    ]
+
+    IMPORTANT: THE FORMAT OF THE OUTPUT MUST BE AS LIST OF LISTS ONLY SIMILAR TO THE ONE ABOVE (NO LATEX, CODE, OR OTHER ENCODINGS).
+    
+2025-02-16 06:26:54,168 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Response: final response = [
+    [1, 1, 1, 1, 1, 1],
+    [1, 1, 0, 1, 1, 1],
+    [1, 0, 1, 1, 0, 0],
+    [1, 1, 1, 1, 0, 0],
+    [1, 1, 0, 0, 1, 1],
+    [1, 1, 0, 0, 1, 1]
+]
+2025-02-16 06:26:54,169 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix: [[1, 1, 1, 1, 1, 1], [1, 1, 0, 1, 1, 1], [1, 0, 1, 1, 0, 0], [1, 1, 1, 1, 0, 0], [1, 1, 0, 0, 1, 1], [1, 1, 0, 0, 1, 1]]
+2025-02-16 06:26:54,169 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix from response.
+2025-02-16 06:26:54,170 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - At run 4/5
+2025-02-16 06:26:54,171 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix: [[1, 1, 1, 1, 1, 1], [1, 1, 0, 1, 1, 1], [1, 0, 1, 1, 0, 0], [1, 1, 1, 1, 0, 0], [1, 1, 0, 0, 1, 1], [1, 1, 0, 0, 1, 1]]
+2025-02-16 06:26:54,172 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-16 06:27:04,182 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Run 5/5
+2025-02-16 06:27:04,218 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - DEBUG: Initializing LLMInference.
+2025-02-16 06:27:04,219 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Initialized LLM inference for system: CubeSat
+2025-02-16 06:27:04,220 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Initialized DSM for system: CubeSat
+2025-02-16 06:27:04,221 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Inference model: gpt-4-turbo-preview
+2025-02-16 06:27:09,436 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: final response = [
+    [1, 1, 1, 1, 1, 1],
+    [1, 1, 0, 0, 1, 1],
+    [1, 0, 1, 1, 0, 0],
+    [1, 0, 1, 1, 0, 0],
+    [1, 1, 0, 0, 1, 1],
+    [1, 1, 0, 0, 1, 1]
+]
+2025-02-16 06:27:09,438 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Query: 
+    Please identify system-level proximity relationships (in contact) between the components of CubeSat (nanosatellite), as listed below, and represent them in a Design Structure Matrix (DSM) format.  
+    The relationships should be articulated in plain English, capturing the essence of their interactions. 
+    Here is the list of subsystems/components to analyze: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software'] 
+    The DSM should clearly indicate the interactions between these components as 1 exist and 0 does not exist, considering both the presence and nature of these connections.         
+    Present the output in a square matrix format (number of rows and columns MUST be the same as the number of components = 6 for this example), with rows and columns labeled accordingly. 
+    Diagonal elements should be 1 in DSM matrix since each component interacts with itself. 
+    If you don't know the answer, just write 2 for the specific cell that you are unsure of. A worst case scenario of the **as a list of lists** shown below (diagonal elements are 1 and rest are 2). Don't make up an answer.     final response = [
+        [1, 2, 2, 2, 2, 2],
+        [2, 1, 2, 2, 2, 2],
+        [2, 2, 1, 2, 2, 2],
+        [2, 2, 2, 1, 2, 2],
+        [2, 2, 2, 2, 1, 2],
+        [2, 2, 2, 2, 2, 1]
+    ]
+
+    IMPORTANT: Your response must **ONLY** contain a valid **as a list of lists** in the following example format 7x7 matrix.     
+    The below list of lists is just an example format of your response. **Replace** the values with your **actual analysis** while providing your response with parameter of 'final response'.    
+    final response = [
+        [1, 0, 0, 0, 0, 0],
+        [0, 1, 0, 0, 0, 0],
+        [0, 0, 1, 0, 0, 0],
+        [0, 0, 0, 1, 0, 0],
+        [0, 0, 0, 0, 1, 0],
+        [0, 0, 0, 0, 0, 1]
+    ]
+
+    IMPORTANT: THE FORMAT OF THE OUTPUT MUST BE AS LIST OF LISTS ONLY SIMILAR TO THE ONE ABOVE (NO LATEX, CODE, OR OTHER ENCODINGS).
+    
+2025-02-16 06:27:09,457 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Response: final response = [
+    [1, 1, 1, 1, 1, 1],
+    [1, 1, 0, 0, 1, 1],
+    [1, 0, 1, 1, 0, 0],
+    [1, 0, 1, 1, 0, 0],
+    [1, 1, 0, 0, 1, 1],
+    [1, 1, 0, 0, 1, 1]
+]
+2025-02-16 06:27:09,458 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix: [[1, 1, 1, 1, 1, 1], [1, 1, 0, 0, 1, 1], [1, 0, 1, 1, 0, 0], [1, 0, 1, 1, 0, 0], [1, 1, 0, 0, 1, 1], [1, 1, 0, 0, 1, 1]]
+2025-02-16 06:27:09,459 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix from response.
+2025-02-16 06:27:09,460 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - At run 5/5
+2025-02-16 06:27:09,461 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix: [[1, 1, 1, 1, 1, 1], [1, 1, 0, 0, 1, 1], [1, 0, 1, 1, 0, 0], [1, 0, 1, 1, 0, 0], [1, 1, 0, 0, 1, 1], [1, 1, 0, 0, 1, 1]]
+2025-02-16 06:27:09,462 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-16 06:27:19,473 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Duration of reference combination {}: 0:01:12.044812
+2025-02-16 06:27:19,475 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2025-02-16 06:27:19,476 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - 
+==================================================
+2025-02-16 06:27:19,477 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Average DSM Matrix for model: gpt-4-turbo-preview
+2025-02-16 06:27:19,478 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - End of log reference type(s): ['baseline']
+2025-02-16 06:27:19,480 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Saving results to: ../output/experiment_llm_gpt-4-turbo-preview_20250216-062607/llm_refs_baseline
+2025-02-16 06:27:19,484 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - 
+Average Matrix:
+                                                   Spacecraft  Guidance, Navigation, and Control (GNC) Subsystem  Propulsion Subsystem  Power Subsystem  Reaction Wheel  GNC Software
+Spacecraft                                                  1                                                  1                     1                1               1             1
+Guidance, Navigation, and Control (GNC) Subsystem           1                                                  1                     0                1               1             1
+Propulsion Subsystem                                        1                                                  0                     1                1               0             0
+Power Subsystem                                             1                                                  1                     1                1               0             0
+Reaction Wheel                                              1                                                  1                     0                0               1             1
+GNC Software                                                1                                                  1                     0                0               1             1
+2025-02-16 06:27:19,485 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - 
+Components: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software']
+2025-02-16 06:27:19,486 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - ==================================================
+
+2025-02-16 06:27:19,490 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Saved CSV to: ../output/experiment_llm_gpt-4-turbo-preview_20250216-062607/llm_refs_baseline/average_matrix_20250216-062607.csv
+2025-02-16 06:27:19,492 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Saved JSON to: ../output/experiment_llm_gpt-4-turbo-preview_20250216-062607/llm_refs_baseline/detailed_results_20250216-062607.json
+2025-02-16 06:27:19,763 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Saved visualization to: ../output/experiment_llm_gpt-4-turbo-preview_20250216-062607/llm_refs_baseline/average_matrix_20250216-062607.png
+2025-02-16 06:27:19,765 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Duration of experiment for gpt-4-turbo-preview in llm inference type: 0:01:12

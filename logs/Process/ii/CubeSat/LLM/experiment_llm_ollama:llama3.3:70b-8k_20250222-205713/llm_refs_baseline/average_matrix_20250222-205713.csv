@@ -1,0 +1,7 @@
+,Payload,Power System,Communication System,Propulsion System,Structural System,Control System
+Payload,1,1,1,0,1,1
+Power System,1,1,1,0,1,1
+Communication System,1,1,1,0,1,1
+Propulsion System,0,0,0,1,1,0
+Structural System,1,1,1,1,1,1
+Control System,1,1,1,0,1,1

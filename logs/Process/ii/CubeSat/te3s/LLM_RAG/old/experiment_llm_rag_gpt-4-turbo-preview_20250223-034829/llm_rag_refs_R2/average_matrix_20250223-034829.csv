@@ -1,0 +1,7 @@
+,structure,power system,command and data handling system,communication system,attitude determination and control system,payload
+structure,1,1,1,1,1,1
+power system,0,1,1,1,1,0
+command and data handling system,0,0,1,1,1,1
+communication system,0,0,0,1,1,1
+attitude determination and control system,0,0,1,0,1,1
+payload,0,0,0,0,0,1

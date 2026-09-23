@@ -1,0 +1,1025 @@
+Running graphrag command...
+Command: python -m graphrag query --method local --query Please identify system-level whole-part relationships between the components of CubeSat (nanosatellite), as listed below, and represent them in a Design Structure Matrix (DSM) format.  
+
+The relationships should be articulated in plain English, capturing the essence of their interactions. 
+
+Here is the list of subsystems/components to analyze: ['Spacecraft', 'GNC Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software'] 
+
+The DSM should clearly indicate the interactions between these components as 1 exist and 0 does not exist, considering both the presence and nature of these connections. 
+    
+Present the output in a square matrix format (number of rows and columns MUST be the same as the number of components = 6 for this example), with rows and columns labeled accordingly. 
+
+Diagonal elements should be 1 in DSM matrix since each component interacts with itself. 
+
+If you don't know the answer, just write 2 for the specific cell that you are unsure of. A worst case scenario of the **as a list of lists** shown below (diagonal elements are 1 and rest are 2). Don't make up an answer. 
+
+This is an example of the output format for 6 components (as 6x6 matrix)-based on our system-of-interest the size of the matrix can change. 
+
+{
+  "final_response": [[1, 2, 2, 2, 2, 2], [2, 1, 2, 2, 2, 2], [2, 2, 1, 2, 2, 2],[2, 2, 2, 1, 2, 2],[2, 2, 2, 2, 1, 2],[2, 2, 2, 2, 2, 1]]
+}
+
+IMPORTANT: Your response must **ONLY** contain a valid **as a list of lists** as json in the following example format 6x6 matrix. 
+
+The below list of lists is just an example format of your response. **Replace** the values with your **actual analysis** while providing your response with parameter of 'final response'.
+
+This is an example of the output format for 6 components (as 6x6 matrix)-based on our system-of-interest the size of the matrix can change. 
+
+IMPORTANT: Your response MUST be a valid JSON object in the following format:
+{
+  "final_response": [[1,0,0,0,0,0,0], [0,1,0,0,0,0,0], ...]
+} --root ./
+Using GPUs: 0,1,2,3,4,5
+╭──────────────────────────────────────────────────────────── Traceback (most recent call last) ─────────────────────────────────────────────────────────────╮
+│ /graphrag/graphrag/cli/main.py:437 in _query_cli                                                         │
+│                                                                                                                                                            │
+│   434 │                                                                                                                                                    │
+│   435 │   match method:                                                                                                                                    │
+│   436 │   │   case SearchType.LOCAL:                                                                                                                       │
+│ ❱ 437 │   │   │   run_local_search(                                                                                                                        │
+│   438 │   │   │   │   config_filepath=config,                                                                                                              │
+│   439 │   │   │   │   data_dir=data,                                                                                                                       │
+│   440 │   │   │   │   root_dir=root,                                                                                                                       │
+│                                                                                                                                                            │
+│ ╭─────────────────────────────────────────────────────────────────────── locals ───────────────────────────────────────────────────────────────────────╮   │
+│ │             community_level = 2                                                                                                                      │   │
+│ │                      config = None                                                                                                                   │   │
+│ │                        data = None                                                                                                                   │   │
+│ │ dynamic_community_selection = False                                                                                                                  │   │
+│ │                      method = <SearchType.LOCAL: 'local'>                                                                                            │   │
+│ │                       query = 'Please identify system-level whole-part relationships between the components of '+1904                                │   │
+│ │               response_type = 'Multiple Paragraphs'                                                                                                  │   │
+│ │                        root = PosixPath('/graphrag/ragtest/CS/auto_deepseek_r1_14b_5k_r2_r3-te3s') │   │
+│ │                   streaming = False                                                                                                                  │   │
+│ ╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯   │
+│                                                                                                                                                            │
+│ /graphrag/graphrag/cli/query.py:127 in run_local_search                                                  │
+│                                                                                                                                                            │
+│   124 │   config.storage.base_dir = str(data_dir) if data_dir else config.storage.base_dir                                                                 │
+│   125 │   resolve_paths(config)                                                                                                                            │
+│   126 │                                                                                                                                                    │
+│ ❱ 127 │   dataframe_dict = _resolve_output_files(                                                                                                          │
+│   128 │   │   config=config,                                                                                                                               │
+│   129 │   │   output_list=[                                                                                                                                │
+│   130 │   │   │   "create_final_nodes",                                                                                                                    │
+│                                                                                                                                                            │
+│ ╭──────────────────────────────────────────────────────────────────── locals ────────────────────────────────────────────────────────────────────╮         │
+│ │ community_level = 2                                                                                                                            │         │
+│ │          config = GraphRagConfig(                                                                                                              │         │
+│ │                   │   llm=LLMParameters(                                                                                                       │         │
+│ │                   │   │   api_key='ollama',                                                                                                    │         │
+│ │                   │   │   type="openai_chat",                                                                                                  │         │
+│ │                   │   │   encoding_model='cl100k_base',                                                                                        │         │
+│ │                   │   │   model='deepseek-r1:14b-5k',                                                                                          │         │
+│ │                   │   │   max_tokens=4000,                                                                                                     │         │
+│ │                   │   │   temperature=0.0,                                                                                                     │         │
+│ │                   │   │   top_p=1.0,                                                                                                           │         │
+│ │                   │   │   n=1,                                                                                                                 │         │
+│ │                   │   │   frequency_penalty=0.0,                                                                                               │         │
+│ │                   │   │   presence_penalty=0.0,                                                                                                │         │
+│ │                   │   │   request_timeout=1200.0,                                                                                              │         │
+│ │                   │   │   api_base='http://localhost:11434/v1',                                                                                │         │
+│ │                   │   │   api_version=None,                                                                                                    │         │
+│ │                   │   │   organization=None,                                                                                                   │         │
+│ │                   │   │   proxy=None,                                                                                                          │         │
+│ │                   │   │   audience=None,                                                                                                       │         │
+│ │                   │   │   deployment_name=None,                                                                                                │         │
+│ │                   │   │   model_supports_json=True,                                                                                            │         │
+│ │                   │   │   tokens_per_minute=0,                                                                                                 │         │
+│ │                   │   │   requests_per_minute=0,                                                                                               │         │
+│ │                   │   │   max_retries=10,                                                                                                      │         │
+│ │                   │   │   max_retry_wait=10.0,                                                                                                 │         │
+│ │                   │   │   sleep_on_rate_limit_recommendation=True,                                                                             │         │
+│ │                   │   │   concurrent_requests=2,                                                                                               │         │
+│ │                   │   │   responses=None                                                                                                       │         │
+│ │                   │   ),                                                                                                                       │         │
+│ │                   │   parallelization=ParallelizationParameters(stagger=0.3, num_threads=50),                                                  │         │
+│ │                   │   async_mode=<AsyncType.Threaded: 'threaded'>,                                                                             │         │
+│ │                   │   root_dir='/graphrag/ragtest/CS/auto_deep'+25,                          │         │
+│ │                   │   reporting=ReportingConfig(                                                                                               │         │
+│ │                   │   │   type="file",                                                                                                         │         │
+│ │                   │   │   base_dir='/graphrag/ragtest/CS/auto_deep'+30,                      │         │
+│ │                   │   │   connection_string=None,                                                                                              │         │
+│ │                   │   │   container_name=None,                                                                                                 │         │
+│ │                   │   │   storage_account_blob_url=None                                                                                        │         │
+│ │                   │   ),                                                                                                                       │         │
+│ │                   │   storage=StorageConfig(                                                                                                   │         │
+│ │                   │   │   type="file",                                                                                                         │         │
+│ │                   │   │   base_dir='/graphrag/ragtest/CS/auto_deep'+32,                      │         │
+│ │                   │   │   connection_string=None,                                                                                              │         │
+│ │                   │   │   container_name=None,                                                                                                 │         │
+│ │                   │   │   storage_account_blob_url=None,                                                                                       │         │
+│ │                   │   │   cosmosdb_account_url=None                                                                                            │         │
+│ │                   │   ),                                                                                                                       │         │
+│ │                   │   update_index_storage=None,                                                                                               │         │
+│ │                   │   cache=CacheConfig(                                                                                                       │         │
+│ │                   │   │   type="file",                                                                                                         │         │
+│ │                   │   │   base_dir='cache',                                                                                                    │         │
+│ │                   │   │   connection_string=None,                                                                                              │         │
+│ │                   │   │   container_name=None,                                                                                                 │         │
+│ │                   │   │   storage_account_blob_url=None,                                                                                       │         │
+│ │                   │   │   cosmosdb_account_url=None                                                                                            │         │
+│ │                   │   ),                                                                                                                       │         │
+│ │                   │   input=InputConfig(                                                                                                       │         │
+│ │                   │   │   type="file",                                                                                                         │         │
+│ │                   │   │   file_type="text",                                                                                                    │         │
+│ │                   │   │   base_dir='input',                                                                                                    │         │
+│ │                   │   │   connection_string=None,                                                                                              │         │
+│ │                   │   │   storage_account_blob_url=None,                                                                                       │         │
+│ │                   │   │   container_name=None,                                                                                                 │         │
+│ │                   │   │   encoding='utf-8',                                                                                                    │         │
+│ │                   │   │   file_pattern='.*\\.txt$',                                                                                            │         │
+│ │                   │   │   file_filter=None,                                                                                                    │         │
+│ │                   │   │   source_column=None,                                                                                                  │         │
+│ │                   │   │   timestamp_column=None,                                                                                               │         │
+│ │                   │   │   timestamp_format=None,                                                                                               │         │
+│ │                   │   │   text_column='text',                                                                                                  │         │
+│ │                   │   │   title_column=None,                                                                                                   │         │
+│ │                   │   │   document_attribute_columns=[]                                                                                        │         │
+│ │                   │   ),                                                                                                                       │         │
+│ │                   │   embed_graph=EmbedGraphConfig(                                                                                            │         │
+│ │                   │   │   enabled=False,                                                                                                       │         │
+│ │                   │   │   dimensions=1536,                                                                                                     │         │
+│ │                   │   │   num_walks=10,                                                                                                        │         │
+│ │                   │   │   walk_length=40,                                                                                                      │         │
+│ │                   │   │   window_size=2,                                                                                                       │         │
+│ │                   │   │   iterations=3,                                                                                                        │         │
+│ │                   │   │   random_seed=597832,                                                                                                  │         │
+│ │                   │   │   use_lcc=True                                                                                                         │         │
+│ │                   │   ),                                                                                                                       │         │
+│ │                   │   embeddings=TextEmbeddingConfig(                                                                                          │         │
+│ │                   │   │   llm=LLMParameters(                                                                                                   │         │
+│ │                   │   │   │   api_key=''+84,                   │         │
+│ │                   │   │   │   type="openai_embedding",                                                                                         │         │
+│ │                   │   │   │   encoding_model='cl100k_base',                                                                                    │         │
+│ │                   │   │   │   model='text-embedding-3-small',                                                                                  │         │
+│ │                   │   │   │   max_tokens=4000,                                                                                                 │         │
+│ │                   │   │   │   temperature=0,                                                                                                   │         │
+│ │                   │   │   │   top_p=1,                                                                                                         │         │
+│ │                   │   │   │   n=1,                                                                                                             │         │
+│ │                   │   │   │   frequency_penalty=0.0,                                                                                           │         │
+│ │                   │   │   │   presence_penalty=0.0,                                                                                            │         │
+│ │                   │   │   │   request_timeout=180.0,                                                                                           │         │
+│ │                   │   │   │   api_base=None,                                                                                                   │         │
+│ │                   │   │   │   api_version=None,                                                                                                │         │
+│ │                   │   │   │   organization=None,                                                                                               │         │
+│ │                   │   │   │   proxy=None,                                                                                                      │         │
+│ │                   │   │   │   audience=None,                                                                                                   │         │
+│ │                   │   │   │   deployment_name=None,                                                                                            │         │
+│ │                   │   │   │   model_supports_json=None,                                                                                        │         │
+│ │                   │   │   │   tokens_per_minute=0,                                                                                             │         │
+│ │                   │   │   │   requests_per_minute=0,                                                                                           │         │
+│ │                   │   │   │   max_retries=10,                                                                                                  │         │
+│ │                   │   │   │   max_retry_wait=10.0,                                                                                             │         │
+│ │                   │   │   │   sleep_on_rate_limit_recommendation=True,                                                                         │         │
+│ │                   │   │   │   concurrent_requests=1,                                                                                           │         │
+│ │                   │   │   │   responses=None                                                                                                   │         │
+│ │                   │   │   ),                                                                                                                   │         │
+│ │                   │   │   parallelization=ParallelizationParameters(stagger=0.3, num_threads=50),                                              │         │
+│ │                   │   │   async_mode=<AsyncType.Threaded: 'threaded'>,                                                                         │         │
+│ │                   │   │   batch_size=16,                                                                                                       │         │
+│ │                   │   │   batch_max_tokens=8191,                                                                                               │         │
+│ │                   │   │   target="required",                                                                                                   │         │
+│ │                   │   │   skip=[],                                                                                                             │         │
+│ │                   │   │   vector_store={                                                                                                       │         │
+│ │                   │   │   │   'type': 'lancedb',                                                                                               │         │
+│ │                   │   │   │   'db_uri': '/graphrag/ragtest/CS/auto_deep'+40,                 │         │
+│ │                   │   │   │   'collection_name': 'default',                                                                                    │         │
+│ │                   │   │   │   'overwrite': True                                                                                                │         │
+│ │                   │   │   },                                                                                                                   │         │
+│ │                   │   │   strategy=None                                                                                                        │         │
+│ │                   │   ),                                                                                                                       │         │
+│ │                   │   chunks=ChunkingConfig(                                                                                                   │         │
+│ │                   │   │   size=1200,                                                                                                           │         │
+│ │                   │   │   overlap=150,                                                                                                         │         │
+│ │                   │   │   group_by_columns=['id'],                                                                                             │         │
+│ │                   │   │   strategy="tokens",                                                                                                   │         │
+│ │                   │   │   encoding_model='cl100k_base'                                                                                         │         │
+│ │                   │   ),                                                                                                                       │         │
+│ │                   │   snapshots=SnapshotsConfig(embeddings=False, graphml=True, transient=False),                                              │         │
+│ │                   │   entity_extraction=EntityExtractionConfig(                                                                                │         │
+│ │                   │   │   llm=LLMParameters(                                                                                                   │         │
+│ │                   │   │   │   api_key='ollama',                                                                                                │         │
+│ │                   │   │   │   type="openai_chat",                                                                                              │         │
+│ │                   │   │   │   encoding_model='cl100k_base',                                                                                    │         │
+│ │                   │   │   │   model='deepseek-r1:14b-5k',                                                                                      │         │
+│ │                   │   │   │   max_tokens=4000,                                                                                                 │         │
+│ │                   │   │   │   temperature=0.0,                                                                                                 │         │
+│ │                   │   │   │   top_p=1.0,                                                                                                       │         │
+│ │                   │   │   │   n=1,                                                                                                             │         │
+│ │                   │   │   │   frequency_penalty=0.0,                                                                                           │         │
+│ │                   │   │   │   presence_penalty=0.0,                                                                                            │         │
+│ │                   │   │   │   request_timeout=1200.0,                                                                                          │         │
+│ │                   │   │   │   api_base='http://localhost:11434/v1',                                                                            │         │
+│ │                   │   │   │   api_version=None,                                                                                                │         │
+│ │                   │   │   │   organization=None,                                                                                               │         │
+│ │                   │   │   │   proxy=None,                                                                                                      │         │
+│ │                   │   │   │   audience=None,                                                                                                   │         │
+│ │                   │   │   │   deployment_name=None,                                                                                            │         │
+│ │                   │   │   │   model_supports_json=True,                                                                                        │         │
+│ │                   │   │   │   tokens_per_minute=0,                                                                                             │         │
+│ │                   │   │   │   requests_per_minute=0,                                                                                           │         │
+│ │                   │   │   │   max_retries=10,                                                                                                  │         │
+│ │                   │   │   │   max_retry_wait=10.0,                                                                                             │         │
+│ │                   │   │   │   sleep_on_rate_limit_recommendation=True,                                                                         │         │
+│ │                   │   │   │   concurrent_requests=2,                                                                                           │         │
+│ │                   │   │   │   responses=None                                                                                                   │         │
+│ │                   │   │   ),                                                                                                                   │         │
+│ │                   │   │   parallelization=ParallelizationParameters(stagger=0.3, num_threads=50),                                              │         │
+│ │                   │   │   async_mode=<AsyncType.Threaded: 'threaded'>,                                                                         │         │
+│ │                   │   │   prompt='prompts/entity_extraction.txt',                                                                              │         │
+│ │                   │   │   entity_types=['organization', 'person', 'geo', 'event'],                                                             │         │
+│ │                   │   │   max_gleanings=1,                                                                                                     │         │
+│ │                   │   │   strategy=None,                                                                                                       │         │
+│ │                   │   │   encoding_model='cl100k_base'                                                                                         │         │
+│ │                   │   ),                                                                                                                       │         │
+│ │                   │   summarize_descriptions=SummarizeDescriptionsConfig(                                                                      │         │
+│ │                   │   │   llm=LLMParameters(                                                                                                   │         │
+│ │                   │   │   │   api_key='ollama',                                                                                                │         │
+│ │                   │   │   │   type="openai_chat",                                                                                              │         │
+│ │                   │   │   │   encoding_model='cl100k_base',                                                                                    │         │
+│ │                   │   │   │   model='deepseek-r1:14b-5k',                                                                                      │         │
+│ │                   │   │   │   max_tokens=4000,                                                                                                 │         │
+│ │                   │   │   │   temperature=0.0,                                                                                                 │         │
+│ │                   │   │   │   top_p=1.0,                                                                                                       │         │
+│ │                   │   │   │   n=1,                                                                                                             │         │
+│ │                   │   │   │   frequency_penalty=0.0,                                                                                           │         │
+│ │                   │   │   │   presence_penalty=0.0,                                                                                            │         │
+│ │                   │   │   │   request_timeout=1200.0,                                                                                          │         │
+│ │                   │   │   │   api_base='http://localhost:11434/v1',                                                                            │         │
+│ │                   │   │   │   api_version=None,                                                                                                │         │
+│ │                   │   │   │   organization=None,                                                                                               │         │
+│ │                   │   │   │   proxy=None,                                                                                                      │         │
+│ │                   │   │   │   audience=None,                                                                                                   │         │
+│ │                   │   │   │   deployment_name=None,                                                                                            │         │
+│ │                   │   │   │   model_supports_json=True,                                                                                        │         │
+│ │                   │   │   │   tokens_per_minute=0,                                                                                             │         │
+│ │                   │   │   │   requests_per_minute=0,                                                                                           │         │
+│ │                   │   │   │   max_retries=10,                                                                                                  │         │
+│ │                   │   │   │   max_retry_wait=10.0,                                                                                             │         │
+│ │                   │   │   │   sleep_on_rate_limit_recommendation=True,                                                                         │         │
+│ │                   │   │   │   concurrent_requests=2,                                                                                           │         │
+│ │                   │   │   │   responses=None                                                                                                   │         │
+│ │                   │   │   ),                                                                                                                   │         │
+│ │                   │   │   parallelization=ParallelizationParameters(stagger=0.3, num_threads=50),                                              │         │
+│ │                   │   │   async_mode=<AsyncType.Threaded: 'threaded'>,                                                                         │         │
+│ │                   │   │   prompt='prompts/summarize_descriptions.txt',                                                                         │         │
+│ │                   │   │   max_length=500,                                                                                                      │         │
+│ │                   │   │   strategy=None                                                                                                        │         │
+│ │                   │   ),                                                                                                                       │         │
+│ │                   │   community_reports=CommunityReportsConfig(                                                                                │         │
+│ │                   │   │   llm=LLMParameters(                                                                                                   │         │
+│ │                   │   │   │   api_key='ollama',                                                                                                │         │
+│ │                   │   │   │   type="openai_chat",                                                                                              │         │
+│ │                   │   │   │   encoding_model='cl100k_base',                                                                                    │         │
+│ │                   │   │   │   model='deepseek-r1:14b-5k',                                                                                      │         │
+│ │                   │   │   │   max_tokens=4000,                                                                                                 │         │
+│ │                   │   │   │   temperature=0.0,                                                                                                 │         │
+│ │                   │   │   │   top_p=1.0,                                                                                                       │         │
+│ │                   │   │   │   n=1,                                                                                                             │         │
+│ │                   │   │   │   frequency_penalty=0.0,                                                                                           │         │
+│ │                   │   │   │   presence_penalty=0.0,                                                                                            │         │
+│ │                   │   │   │   request_timeout=1200.0,                                                                                          │         │
+│ │                   │   │   │   api_base='http://localhost:11434/v1',                                                                            │         │
+│ │                   │   │   │   api_version=None,                                                                                                │         │
+│ │                   │   │   │   organization=None,                                                                                               │         │
+│ │                   │   │   │   proxy=None,                                                                                                      │         │
+│ │                   │   │   │   audience=None,                                                                                                   │         │
+│ │                   │   │   │   deployment_name=None,                                                                                            │         │
+│ │                   │   │   │   model_supports_json=True,                                                                                        │         │
+│ │                   │   │   │   tokens_per_minute=0,                                                                                             │         │
+│ │                   │   │   │   requests_per_minute=0,                                                                                           │         │
+│ │                   │   │   │   max_retries=10,                                                                                                  │         │
+│ │                   │   │   │   max_retry_wait=10.0,                                                                                             │         │
+│ │                   │   │   │   sleep_on_rate_limit_recommendation=True,                                                                         │         │
+│ │                   │   │   │   concurrent_requests=2,                                                                                           │         │
+│ │                   │   │   │   responses=None                                                                                                   │         │
+│ │                   │   │   ),                                                                                                                   │         │
+│ │                   │   │   parallelization=ParallelizationParameters(stagger=0.3, num_threads=50),                                              │         │
+│ │                   │   │   async_mode=<AsyncType.Threaded: 'threaded'>,                                                                         │         │
+│ │                   │   │   prompt='prompts/community_report.txt',                                                                               │         │
+│ │                   │   │   max_length=2000,                                                                                                     │         │
+│ │                   │   │   max_input_length=8000,                                                                                               │         │
+│ │                   │   │   strategy=None                                                                                                        │         │
+│ │                   │   ),                                                                                                                       │         │
+│ │                   │   claim_extraction=ClaimExtractionConfig(                                                                                  │         │
+│ │                   │   │   llm=LLMParameters(                                                                                                   │         │
+│ │                   │   │   │   api_key='ollama',                                                                                                │         │
+│ │                   │   │   │   type="openai_chat",                                                                                              │         │
+│ │                   │   │   │   encoding_model='cl100k_base',                                                                                    │         │
+│ │                   │   │   │   model='deepseek-r1:14b-5k',                                                                                      │         │
+│ │                   │   │   │   max_tokens=4000,                                                                                                 │         │
+│ │                   │   │   │   temperature=0.0,                                                                                                 │         │
+│ │                   │   │   │   top_p=1.0,                                                                                                       │         │
+│ │                   │   │   │   n=1,                                                                                                             │         │
+│ │                   │   │   │   frequency_penalty=0.0,                                                                                           │         │
+│ │                   │   │   │   presence_penalty=0.0,                                                                                            │         │
+│ │                   │   │   │   request_timeout=1200.0,                                                                                          │         │
+│ │                   │   │   │   api_base='http://localhost:11434/v1',                                                                            │         │
+│ │                   │   │   │   api_version=None,                                                                                                │         │
+│ │                   │   │   │   organization=None,                                                                                               │         │
+│ │                   │   │   │   proxy=None,                                                                                                      │         │
+│ │                   │   │   │   audience=None,                                                                                                   │         │
+│ │                   │   │   │   deployment_name=None,                                                                                            │         │
+│ │                   │   │   │   model_supports_json=True,                                                                                        │         │
+│ │                   │   │   │   tokens_per_minute=0,                                                                                             │         │
+│ │                   │   │   │   requests_per_minute=0,                                                                                           │         │
+│ │                   │   │   │   max_retries=10,                                                                                                  │         │
+│ │                   │   │   │   max_retry_wait=10.0,                                                                                             │         │
+│ │                   │   │   │   sleep_on_rate_limit_recommendation=True,                                                                         │         │
+│ │                   │   │   │   concurrent_requests=2,                                                                                           │         │
+│ │                   │   │   │   responses=None                                                                                                   │         │
+│ │                   │   │   ),                                                                                                                   │         │
+│ │                   │   │   parallelization=ParallelizationParameters(stagger=0.3, num_threads=50),                                              │         │
+│ │                   │   │   async_mode=<AsyncType.Threaded: 'threaded'>,                                                                         │         │
+│ │                   │   │   enabled=False,                                                                                                       │         │
+│ │                   │   │   prompt='prompts/claim_extraction.txt',                                                                               │         │
+│ │                   │   │   description='Any claims or facts that could be relevant to information discovery.',                                  │         │
+│ │                   │   │   max_gleanings=1,                                                                                                     │         │
+│ │                   │   │   strategy=None,                                                                                                       │         │
+│ │                   │   │   encoding_model='cl100k_base'                                                                                         │         │
+│ │                   │   ),                                                                                                                       │         │
+│ │                   │   cluster_graph=ClusterGraphConfig(max_cluster_size=10, use_lcc=True, seed=3735928559),                                    │         │
+│ │                   │   umap=UmapConfig(enabled=False),                                                                                          │         │
+│ │                   │   local_search=LocalSearchConfig(                                                                                          │         │
+│ │                   │   │   prompt='prompts/local_search_system_prompt.txt',                                                                     │         │
+│ │                   │   │   text_unit_prop=0.5,                                                                                                  │         │
+│ │                   │   │   community_prop=0.15,                                                                                                 │         │
+│ │                   │   │   conversation_history_max_turns=5,                                                                                    │         │
+│ │                   │   │   top_k_entities=10,                                                                                                   │         │
+│ │                   │   │   top_k_relationships=10,                                                                                              │         │
+│ │                   │   │   temperature=0.0,                                                                                                     │         │
+│ │                   │   │   top_p=1.0,                                                                                                           │         │
+│ │                   │   │   n=1,                                                                                                                 │         │
+│ │                   │   │   max_tokens=12000,                                                                                                    │         │
+│ │                   │   │   llm_max_tokens=2000                                                                                                  │         │
+│ │                   │   ),                                                                                                                       │         │
+│ │                   │   global_search=GlobalSearchConfig(                                                                                        │         │
+│ │                   │   │   map_prompt='prompts/global_search_map_system_prompt.txt',                                                            │         │
+│ │                   │   │   reduce_prompt='prompts/global_search_reduce_system_prompt.txt',                                                      │         │
+│ │                   │   │   knowledge_prompt='prompts/global_search_knowledge_system_prompt.txt',                                                │         │
+│ │                   │   │   temperature=0.0,                                                                                                     │         │
+│ │                   │   │   top_p=1.0,                                                                                                           │         │
+│ │                   │   │   n=1,                                                                                                                 │         │
+│ │                   │   │   max_tokens=12000,                                                                                                    │         │
+│ │                   │   │   data_max_tokens=12000,                                                                                               │         │
+│ │                   │   │   map_max_tokens=1000,                                                                                                 │         │
+│ │                   │   │   reduce_max_tokens=2000,                                                                                              │         │
+│ │                   │   │   concurrency=32,                                                                                                      │         │
+│ │                   │   │   dynamic_search_llm='gpt-4o-mini',                                                                                    │         │
+│ │                   │   │   dynamic_search_threshold=1,                                                                                          │         │
+│ │                   │   │   dynamic_search_keep_parent=False,                                                                                    │         │
+│ │                   │   │   dynamic_search_num_repeats=1,                                                                                        │         │
+│ │                   │   │   dynamic_search_use_summary=False,                                                                                    │         │
+│ │                   │   │   dynamic_search_concurrent_coroutines=16,                                                                             │         │
+│ │                   │   │   dynamic_search_max_level=2                                                                                           │         │
+│ │                   │   ),                                                                                                                       │         │
+│ │                   │   drift_search=DRIFTSearchConfig(                                                                                          │         │
+│ │                   │   │   prompt='prompts/drift_search_system_prompt.txt',                                                                     │         │
+│ │                   │   │   temperature=0.0,                                                                                                     │         │
+│ │                   │   │   top_p=1.0,                                                                                                           │         │
+│ │                   │   │   n=3,                                                                                                                 │         │
+│ │                   │   │   max_tokens=12000,                                                                                                    │         │
+│ │                   │   │   data_max_tokens=12000,                                                                                               │         │
+│ │                   │   │   concurrency=32,                                                                                                      │         │
+│ │                   │   │   drift_k_followups=20,                                                                                                │         │
+│ │                   │   │   primer_folds=5,                                                                                                      │         │
+│ │                   │   │   primer_llm_max_tokens=12000,                                                                                         │         │
+│ │                   │   │   n_depth=3,                                                                                                           │         │
+│ │                   │   │   local_search_text_unit_prop=0.9,                                                                                     │         │
+│ │                   │   │   local_search_community_prop=0.1,                                                                                     │         │
+│ │                   │   │   local_search_top_k_mapped_entities=10,                                                                               │         │
+│ │                   │   │   local_search_top_k_relationships=10,                                                                                 │         │
+│ │                   │   │   local_search_max_data_tokens=12000,                                                                                  │         │
+│ │                   │   │   local_search_temperature=0.0,                                                                                        │         │
+│ │                   │   │   local_search_top_p=1.0,                                                                                              │         │
+│ │                   │   │   local_search_n=1,                                                                                                    │         │
+│ │                   │   │   local_search_llm_max_gen_tokens=2000                                                                                 │         │
+│ │                   │   ),                                                                                                                       │         │
+│ │                   │   basic_search=BasicSearchConfig(                                                                                          │         │
+│ │                   │   │   prompt='prompts/basic_search_system_prompt.txt',                                                                     │         │
+│ │                   │   │   text_unit_prop=0.5,                                                                                                  │         │
+│ │                   │   │   conversation_history_max_turns=5,                                                                                    │         │
+│ │                   │   │   temperature=0.0,                                                                                                     │         │
+│ │                   │   │   top_p=1.0,                                                                                                           │         │
+│ │                   │   │   n=1,                                                                                                                 │         │
+│ │                   │   │   max_tokens=12000,                                                                                                    │         │
+│ │                   │   │   llm_max_tokens=2000                                                                                                  │         │
+│ │                   │   ),                                                                                                                       │         │
+│ │                   │   encoding_model='cl100k_base',                                                                                            │         │
+│ │                   │   skip_workflows=[]                                                                                                        │         │
+│ │                   )                                                                                                                            │         │
+│ │ config_filepath = None                                                                                                                         │         │
+│ │        data_dir = None                                                                                                                         │         │
+│ │           query = 'Please identify system-level whole-part relationships between the components of '+1904                                      │         │
+│ │   response_type = 'Multiple Paragraphs'                                                                                                        │         │
+│ │            root = PosixPath('/graphrag/ragtest/CS/auto_deepseek_r1_14b_5k_r2_r3-te3s')       │         │
+│ │        root_dir = PosixPath('/graphrag/ragtest/CS/auto_deepseek_r1_14b_5k_r2_r3-te3s')       │         │
+│ │       streaming = False                                                                                                                        │         │
+│ ╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯         │
+│                                                                                                                                                            │
+│ /graphrag/graphrag/cli/query.py:336 in _resolve_output_files                                             │
+│                                                                                                                                                            │
+│   333 │   │   storage_type=storage_config["type"], kwargs=storage_config                                                                                   │
+│   334 │   )                                                                                                                                                │
+│   335 │   for name in output_list:                                                                                                                         │
+│ ❱ 336 │   │   df_value = asyncio.run(load_table_from_storage(name=name, storage=storage_obj))                                                              │
+│   337 │   │   dataframe_dict[name] = df_value                                                                                                              │
+│   338 │                                                                                                                                                    │
+│   339 │   # for optional output files, set the dict entry to None instead of erroring out if i                                                             │
+│                                                                                                                                                            │
+│ ╭──────────────────────────────────────────────────────────────────────── locals ────────────────────────────────────────────────────────────────────────╮ │
+│ │          config = GraphRagConfig(                                                                                                                      │ │
+│ │                   │   llm=LLMParameters(                                                                                                               │ │
+│ │                   │   │   api_key='ollama',                                                                                                            │ │
+│ │                   │   │   type="openai_chat",                                                                                                          │ │
+│ │                   │   │   encoding_model='cl100k_base',                                                                                                │ │
+│ │                   │   │   model='deepseek-r1:14b-5k',                                                                                                  │ │
+│ │                   │   │   max_tokens=4000,                                                                                                             │ │
+│ │                   │   │   temperature=0.0,                                                                                                             │ │
+│ │                   │   │   top_p=1.0,                                                                                                                   │ │
+│ │                   │   │   n=1,                                                                                                                         │ │
+│ │                   │   │   frequency_penalty=0.0,                                                                                                       │ │
+│ │                   │   │   presence_penalty=0.0,                                                                                                        │ │
+│ │                   │   │   request_timeout=1200.0,                                                                                                      │ │
+│ │                   │   │   api_base='http://localhost:11434/v1',                                                                                        │ │
+│ │                   │   │   api_version=None,                                                                                                            │ │
+│ │                   │   │   organization=None,                                                                                                           │ │
+│ │                   │   │   proxy=None,                                                                                                                  │ │
+│ │                   │   │   audience=None,                                                                                                               │ │
+│ │                   │   │   deployment_name=None,                                                                                                        │ │
+│ │                   │   │   model_supports_json=True,                                                                                                    │ │
+│ │                   │   │   tokens_per_minute=0,                                                                                                         │ │
+│ │                   │   │   requests_per_minute=0,                                                                                                       │ │
+│ │                   │   │   max_retries=10,                                                                                                              │ │
+│ │                   │   │   max_retry_wait=10.0,                                                                                                         │ │
+│ │                   │   │   sleep_on_rate_limit_recommendation=True,                                                                                     │ │
+│ │                   │   │   concurrent_requests=2,                                                                                                       │ │
+│ │                   │   │   responses=None                                                                                                               │ │
+│ │                   │   ),                                                                                                                               │ │
+│ │                   │   parallelization=ParallelizationParameters(stagger=0.3, num_threads=50),                                                          │ │
+│ │                   │   async_mode=<AsyncType.Threaded: 'threaded'>,                                                                                     │ │
+│ │                   │   root_dir='/graphrag/ragtest/CS/auto_deep'+25,                                  │ │
+│ │                   │   reporting=ReportingConfig(                                                                                                       │ │
+│ │                   │   │   type="file",                                                                                                                 │ │
+│ │                   │   │   base_dir='/graphrag/ragtest/CS/auto_deep'+30,                              │ │
+│ │                   │   │   connection_string=None,                                                                                                      │ │
+│ │                   │   │   container_name=None,                                                                                                         │ │
+│ │                   │   │   storage_account_blob_url=None                                                                                                │ │
+│ │                   │   ),                                                                                                                               │ │
+│ │                   │   storage=StorageConfig(                                                                                                           │ │
+│ │                   │   │   type="file",                                                                                                                 │ │
+│ │                   │   │   base_dir='/graphrag/ragtest/CS/auto_deep'+32,                              │ │
+│ │                   │   │   connection_string=None,                                                                                                      │ │
+│ │                   │   │   container_name=None,                                                                                                         │ │
+│ │                   │   │   storage_account_blob_url=None,                                                                                               │ │
+│ │                   │   │   cosmosdb_account_url=None                                                                                                    │ │
+│ │                   │   ),                                                                                                                               │ │
+│ │                   │   update_index_storage=None,                                                                                                       │ │
+│ │                   │   cache=CacheConfig(                                                                                                               │ │
+│ │                   │   │   type="file",                                                                                                                 │ │
+│ │                   │   │   base_dir='cache',                                                                                                            │ │
+│ │                   │   │   connection_string=None,                                                                                                      │ │
+│ │                   │   │   container_name=None,                                                                                                         │ │
+│ │                   │   │   storage_account_blob_url=None,                                                                                               │ │
+│ │                   │   │   cosmosdb_account_url=None                                                                                                    │ │
+│ │                   │   ),                                                                                                                               │ │
+│ │                   │   input=InputConfig(                                                                                                               │ │
+│ │                   │   │   type="file",                                                                                                                 │ │
+│ │                   │   │   file_type="text",                                                                                                            │ │
+│ │                   │   │   base_dir='input',                                                                                                            │ │
+│ │                   │   │   connection_string=None,                                                                                                      │ │
+│ │                   │   │   storage_account_blob_url=None,                                                                                               │ │
+│ │                   │   │   container_name=None,                                                                                                         │ │
+│ │                   │   │   encoding='utf-8',                                                                                                            │ │
+│ │                   │   │   file_pattern='.*\\.txt$',                                                                                                    │ │
+│ │                   │   │   file_filter=None,                                                                                                            │ │
+│ │                   │   │   source_column=None,                                                                                                          │ │
+│ │                   │   │   timestamp_column=None,                                                                                                       │ │
+│ │                   │   │   timestamp_format=None,                                                                                                       │ │
+│ │                   │   │   text_column='text',                                                                                                          │ │
+│ │                   │   │   title_column=None,                                                                                                           │ │
+│ │                   │   │   document_attribute_columns=[]                                                                                                │ │
+│ │                   │   ),                                                                                                                               │ │
+│ │                   │   embed_graph=EmbedGraphConfig(                                                                                                    │ │
+│ │                   │   │   enabled=False,                                                                                                               │ │
+│ │                   │   │   dimensions=1536,                                                                                                             │ │
+│ │                   │   │   num_walks=10,                                                                                                                │ │
+│ │                   │   │   walk_length=40,                                                                                                              │ │
+│ │                   │   │   window_size=2,                                                                                                               │ │
+│ │                   │   │   iterations=3,                                                                                                                │ │
+│ │                   │   │   random_seed=597832,                                                                                                          │ │
+│ │                   │   │   use_lcc=True                                                                                                                 │ │
+│ │                   │   ),                                                                                                                               │ │
+│ │                   │   embeddings=TextEmbeddingConfig(                                                                                                  │ │
+│ │                   │   │   llm=LLMParameters(                                                                                                           │ │
+│ │                   │   │   │   api_key=''+84,                           │ │
+│ │                   │   │   │   type="openai_embedding",                                                                                                 │ │
+│ │                   │   │   │   encoding_model='cl100k_base',                                                                                            │ │
+│ │                   │   │   │   model='text-embedding-3-small',                                                                                          │ │
+│ │                   │   │   │   max_tokens=4000,                                                                                                         │ │
+│ │                   │   │   │   temperature=0,                                                                                                           │ │
+│ │                   │   │   │   top_p=1,                                                                                                                 │ │
+│ │                   │   │   │   n=1,                                                                                                                     │ │
+│ │                   │   │   │   frequency_penalty=0.0,                                                                                                   │ │
+│ │                   │   │   │   presence_penalty=0.0,                                                                                                    │ │
+│ │                   │   │   │   request_timeout=180.0,                                                                                                   │ │
+│ │                   │   │   │   api_base=None,                                                                                                           │ │
+│ │                   │   │   │   api_version=None,                                                                                                        │ │
+│ │                   │   │   │   organization=None,                                                                                                       │ │
+│ │                   │   │   │   proxy=None,                                                                                                              │ │
+│ │                   │   │   │   audience=None,                                                                                                           │ │
+│ │                   │   │   │   deployment_name=None,                                                                                                    │ │
+│ │                   │   │   │   model_supports_json=None,                                                                                                │ │
+│ │                   │   │   │   tokens_per_minute=0,                                                                                                     │ │
+│ │                   │   │   │   requests_per_minute=0,                                                                                                   │ │
+│ │                   │   │   │   max_retries=10,                                                                                                          │ │
+│ │                   │   │   │   max_retry_wait=10.0,                                                                                                     │ │
+│ │                   │   │   │   sleep_on_rate_limit_recommendation=True,                                                                                 │ │
+│ │                   │   │   │   concurrent_requests=1,                                                                                                   │ │
+│ │                   │   │   │   responses=None                                                                                                           │ │
+│ │                   │   │   ),                                                                                                                           │ │
+│ │                   │   │   parallelization=ParallelizationParameters(stagger=0.3, num_threads=50),                                                      │ │
+│ │                   │   │   async_mode=<AsyncType.Threaded: 'threaded'>,                                                                                 │ │
+│ │                   │   │   batch_size=16,                                                                                                               │ │
+│ │                   │   │   batch_max_tokens=8191,                                                                                                       │ │
+│ │                   │   │   target="required",                                                                                                           │ │
+│ │                   │   │   skip=[],                                                                                                                     │ │
+│ │                   │   │   vector_store={                                                                                                               │ │
+│ │                   │   │   │   'type': 'lancedb',                                                                                                       │ │
+│ │                   │   │   │   'db_uri': '/graphrag/ragtest/CS/auto_deep'+40,                         │ │
+│ │                   │   │   │   'collection_name': 'default',                                                                                            │ │
+│ │                   │   │   │   'overwrite': True                                                                                                        │ │
+│ │                   │   │   },                                                                                                                           │ │
+│ │                   │   │   strategy=None                                                                                                                │ │
+│ │                   │   ),                                                                                                                               │ │
+│ │                   │   chunks=ChunkingConfig(size=1200, overlap=150, group_by_columns=['id'], strategy="tokens", encoding_model='cl100k_base'),         │ │
+│ │                   │   snapshots=SnapshotsConfig(embeddings=False, graphml=True, transient=False),                                                      │ │
+│ │                   │   entity_extraction=EntityExtractionConfig(                                                                                        │ │
+│ │                   │   │   llm=LLMParameters(                                                                                                           │ │
+│ │                   │   │   │   api_key='ollama',                                                                                                        │ │
+│ │                   │   │   │   type="openai_chat",                                                                                                      │ │
+│ │                   │   │   │   encoding_model='cl100k_base',                                                                                            │ │
+│ │                   │   │   │   model='deepseek-r1:14b-5k',                                                                                              │ │
+│ │                   │   │   │   max_tokens=4000,                                                                                                         │ │
+│ │                   │   │   │   temperature=0.0,                                                                                                         │ │
+│ │                   │   │   │   top_p=1.0,                                                                                                               │ │
+│ │                   │   │   │   n=1,                                                                                                                     │ │
+│ │                   │   │   │   frequency_penalty=0.0,                                                                                                   │ │
+│ │                   │   │   │   presence_penalty=0.0,                                                                                                    │ │
+│ │                   │   │   │   request_timeout=1200.0,                                                                                                  │ │
+│ │                   │   │   │   api_base='http://localhost:11434/v1',                                                                                    │ │
+│ │                   │   │   │   api_version=None,                                                                                                        │ │
+│ │                   │   │   │   organization=None,                                                                                                       │ │
+│ │                   │   │   │   proxy=None,                                                                                                              │ │
+│ │                   │   │   │   audience=None,                                                                                                           │ │
+│ │                   │   │   │   deployment_name=None,                                                                                                    │ │
+│ │                   │   │   │   model_supports_json=True,                                                                                                │ │
+│ │                   │   │   │   tokens_per_minute=0,                                                                                                     │ │
+│ │                   │   │   │   requests_per_minute=0,                                                                                                   │ │
+│ │                   │   │   │   max_retries=10,                                                                                                          │ │
+│ │                   │   │   │   max_retry_wait=10.0,                                                                                                     │ │
+│ │                   │   │   │   sleep_on_rate_limit_recommendation=True,                                                                                 │ │
+│ │                   │   │   │   concurrent_requests=2,                                                                                                   │ │
+│ │                   │   │   │   responses=None                                                                                                           │ │
+│ │                   │   │   ),                                                                                                                           │ │
+│ │                   │   │   parallelization=ParallelizationParameters(stagger=0.3, num_threads=50),                                                      │ │
+│ │                   │   │   async_mode=<AsyncType.Threaded: 'threaded'>,                                                                                 │ │
+│ │                   │   │   prompt='prompts/entity_extraction.txt',                                                                                      │ │
+│ │                   │   │   entity_types=['organization', 'person', 'geo', 'event'],                                                                     │ │
+│ │                   │   │   max_gleanings=1,                                                                                                             │ │
+│ │                   │   │   strategy=None,                                                                                                               │ │
+│ │                   │   │   encoding_model='cl100k_base'                                                                                                 │ │
+│ │                   │   ),                                                                                                                               │ │
+│ │                   │   summarize_descriptions=SummarizeDescriptionsConfig(                                                                              │ │
+│ │                   │   │   llm=LLMParameters(                                                                                                           │ │
+│ │                   │   │   │   api_key='ollama',                                                                                                        │ │
+│ │                   │   │   │   type="openai_chat",                                                                                                      │ │
+│ │                   │   │   │   encoding_model='cl100k_base',                                                                                            │ │
+│ │                   │   │   │   model='deepseek-r1:14b-5k',                                                                                              │ │
+│ │                   │   │   │   max_tokens=4000,                                                                                                         │ │
+│ │                   │   │   │   temperature=0.0,                                                                                                         │ │
+│ │                   │   │   │   top_p=1.0,                                                                                                               │ │
+│ │                   │   │   │   n=1,                                                                                                                     │ │
+│ │                   │   │   │   frequency_penalty=0.0,                                                                                                   │ │
+│ │                   │   │   │   presence_penalty=0.0,                                                                                                    │ │
+│ │                   │   │   │   request_timeout=1200.0,                                                                                                  │ │
+│ │                   │   │   │   api_base='http://localhost:11434/v1',                                                                                    │ │
+│ │                   │   │   │   api_version=None,                                                                                                        │ │
+│ │                   │   │   │   organization=None,                                                                                                       │ │
+│ │                   │   │   │   proxy=None,                                                                                                              │ │
+│ │                   │   │   │   audience=None,                                                                                                           │ │
+│ │                   │   │   │   deployment_name=None,                                                                                                    │ │
+│ │                   │   │   │   model_supports_json=True,                                                                                                │ │
+│ │                   │   │   │   tokens_per_minute=0,                                                                                                     │ │
+│ │                   │   │   │   requests_per_minute=0,                                                                                                   │ │
+│ │                   │   │   │   max_retries=10,                                                                                                          │ │
+│ │                   │   │   │   max_retry_wait=10.0,                                                                                                     │ │
+│ │                   │   │   │   sleep_on_rate_limit_recommendation=True,                                                                                 │ │
+│ │                   │   │   │   concurrent_requests=2,                                                                                                   │ │
+│ │                   │   │   │   responses=None                                                                                                           │ │
+│ │                   │   │   ),                                                                                                                           │ │
+│ │                   │   │   parallelization=ParallelizationParameters(stagger=0.3, num_threads=50),                                                      │ │
+│ │                   │   │   async_mode=<AsyncType.Threaded: 'threaded'>,                                                                                 │ │
+│ │                   │   │   prompt='prompts/summarize_descriptions.txt',                                                                                 │ │
+│ │                   │   │   max_length=500,                                                                                                              │ │
+│ │                   │   │   strategy=None                                                                                                                │ │
+│ │                   │   ),                                                                                                                               │ │
+│ │                   │   community_reports=CommunityReportsConfig(                                                                                        │ │
+│ │                   │   │   llm=LLMParameters(                                                                                                           │ │
+│ │                   │   │   │   api_key='ollama',                                                                                                        │ │
+│ │                   │   │   │   type="openai_chat",                                                                                                      │ │
+│ │                   │   │   │   encoding_model='cl100k_base',                                                                                            │ │
+│ │                   │   │   │   model='deepseek-r1:14b-5k',                                                                                              │ │
+│ │                   │   │   │   max_tokens=4000,                                                                                                         │ │
+│ │                   │   │   │   temperature=0.0,                                                                                                         │ │
+│ │                   │   │   │   top_p=1.0,                                                                                                               │ │
+│ │                   │   │   │   n=1,                                                                                                                     │ │
+│ │                   │   │   │   frequency_penalty=0.0,                                                                                                   │ │
+│ │                   │   │   │   presence_penalty=0.0,                                                                                                    │ │
+│ │                   │   │   │   request_timeout=1200.0,                                                                                                  │ │
+│ │                   │   │   │   api_base='http://localhost:11434/v1',                                                                                    │ │
+│ │                   │   │   │   api_version=None,                                                                                                        │ │
+│ │                   │   │   │   organization=None,                                                                                                       │ │
+│ │                   │   │   │   proxy=None,                                                                                                              │ │
+│ │                   │   │   │   audience=None,                                                                                                           │ │
+│ │                   │   │   │   deployment_name=None,                                                                                                    │ │
+│ │                   │   │   │   model_supports_json=True,                                                                                                │ │
+│ │                   │   │   │   tokens_per_minute=0,                                                                                                     │ │
+│ │                   │   │   │   requests_per_minute=0,                                                                                                   │ │
+│ │                   │   │   │   max_retries=10,                                                                                                          │ │
+│ │                   │   │   │   max_retry_wait=10.0,                                                                                                     │ │
+│ │                   │   │   │   sleep_on_rate_limit_recommendation=True,                                                                                 │ │
+│ │                   │   │   │   concurrent_requests=2,                                                                                                   │ │
+│ │                   │   │   │   responses=None                                                                                                           │ │
+│ │                   │   │   ),                                                                                                                           │ │
+│ │                   │   │   parallelization=ParallelizationParameters(stagger=0.3, num_threads=50),                                                      │ │
+│ │                   │   │   async_mode=<AsyncType.Threaded: 'threaded'>,                                                                                 │ │
+│ │                   │   │   prompt='prompts/community_report.txt',                                                                                       │ │
+│ │                   │   │   max_length=2000,                                                                                                             │ │
+│ │                   │   │   max_input_length=8000,                                                                                                       │ │
+│ │                   │   │   strategy=None                                                                                                                │ │
+│ │                   │   ),                                                                                                                               │ │
+│ │                   │   claim_extraction=ClaimExtractionConfig(                                                                                          │ │
+│ │                   │   │   llm=LLMParameters(                                                                                                           │ │
+│ │                   │   │   │   api_key='ollama',                                                                                                        │ │
+│ │                   │   │   │   type="openai_chat",                                                                                                      │ │
+│ │                   │   │   │   encoding_model='cl100k_base',                                                                                            │ │
+│ │                   │   │   │   model='deepseek-r1:14b-5k',                                                                                              │ │
+│ │                   │   │   │   max_tokens=4000,                                                                                                         │ │
+│ │                   │   │   │   temperature=0.0,                                                                                                         │ │
+│ │                   │   │   │   top_p=1.0,                                                                                                               │ │
+│ │                   │   │   │   n=1,                                                                                                                     │ │
+│ │                   │   │   │   frequency_penalty=0.0,                                                                                                   │ │
+│ │                   │   │   │   presence_penalty=0.0,                                                                                                    │ │
+│ │                   │   │   │   request_timeout=1200.0,                                                                                                  │ │
+│ │                   │   │   │   api_base='http://localhost:11434/v1',                                                                                    │ │
+│ │                   │   │   │   api_version=None,                                                                                                        │ │
+│ │                   │   │   │   organization=None,                                                                                                       │ │
+│ │                   │   │   │   proxy=None,                                                                                                              │ │
+│ │                   │   │   │   audience=None,                                                                                                           │ │
+│ │                   │   │   │   deployment_name=None,                                                                                                    │ │
+│ │                   │   │   │   model_supports_json=True,                                                                                                │ │
+│ │                   │   │   │   tokens_per_minute=0,                                                                                                     │ │
+│ │                   │   │   │   requests_per_minute=0,                                                                                                   │ │
+│ │                   │   │   │   max_retries=10,                                                                                                          │ │
+│ │                   │   │   │   max_retry_wait=10.0,                                                                                                     │ │
+│ │                   │   │   │   sleep_on_rate_limit_recommendation=True,                                                                                 │ │
+│ │                   │   │   │   concurrent_requests=2,                                                                                                   │ │
+│ │                   │   │   │   responses=None                                                                                                           │ │
+│ │                   │   │   ),                                                                                                                           │ │
+│ │                   │   │   parallelization=ParallelizationParameters(stagger=0.3, num_threads=50),                                                      │ │
+│ │                   │   │   async_mode=<AsyncType.Threaded: 'threaded'>,                                                                                 │ │
+│ │                   │   │   enabled=False,                                                                                                               │ │
+│ │                   │   │   prompt='prompts/claim_extraction.txt',                                                                                       │ │
+│ │                   │   │   description='Any claims or facts that could be relevant to information discovery.',                                          │ │
+│ │                   │   │   max_gleanings=1,                                                                                                             │ │
+│ │                   │   │   strategy=None,                                                                                                               │ │
+│ │                   │   │   encoding_model='cl100k_base'                                                                                                 │ │
+│ │                   │   ),                                                                                                                               │ │
+│ │                   │   cluster_graph=ClusterGraphConfig(max_cluster_size=10, use_lcc=True, seed=3735928559),                                            │ │
+│ │                   │   umap=UmapConfig(enabled=False),                                                                                                  │ │
+│ │                   │   local_search=LocalSearchConfig(                                                                                                  │ │
+│ │                   │   │   prompt='prompts/local_search_system_prompt.txt',                                                                             │ │
+│ │                   │   │   text_unit_prop=0.5,                                                                                                          │ │
+│ │                   │   │   community_prop=0.15,                                                                                                         │ │
+│ │                   │   │   conversation_history_max_turns=5,                                                                                            │ │
+│ │                   │   │   top_k_entities=10,                                                                                                           │ │
+│ │                   │   │   top_k_relationships=10,                                                                                                      │ │
+│ │                   │   │   temperature=0.0,                                                                                                             │ │
+│ │                   │   │   top_p=1.0,                                                                                                                   │ │
+│ │                   │   │   n=1,                                                                                                                         │ │
+│ │                   │   │   max_tokens=12000,                                                                                                            │ │
+│ │                   │   │   llm_max_tokens=2000                                                                                                          │ │
+│ │                   │   ),                                                                                                                               │ │
+│ │                   │   global_search=GlobalSearchConfig(                                                                                                │ │
+│ │                   │   │   map_prompt='prompts/global_search_map_system_prompt.txt',                                                                    │ │
+│ │                   │   │   reduce_prompt='prompts/global_search_reduce_system_prompt.txt',                                                              │ │
+│ │                   │   │   knowledge_prompt='prompts/global_search_knowledge_system_prompt.txt',                                                        │ │
+│ │                   │   │   temperature=0.0,                                                                                                             │ │
+│ │                   │   │   top_p=1.0,                                                                                                                   │ │
+│ │                   │   │   n=1,                                                                                                                         │ │
+│ │                   │   │   max_tokens=12000,                                                                                                            │ │
+│ │                   │   │   data_max_tokens=12000,                                                                                                       │ │
+│ │                   │   │   map_max_tokens=1000,                                                                                                         │ │
+│ │                   │   │   reduce_max_tokens=2000,                                                                                                      │ │
+│ │                   │   │   concurrency=32,                                                                                                              │ │
+│ │                   │   │   dynamic_search_llm='gpt-4o-mini',                                                                                            │ │
+│ │                   │   │   dynamic_search_threshold=1,                                                                                                  │ │
+│ │                   │   │   dynamic_search_keep_parent=False,                                                                                            │ │
+│ │                   │   │   dynamic_search_num_repeats=1,                                                                                                │ │
+│ │                   │   │   dynamic_search_use_summary=False,                                                                                            │ │
+│ │                   │   │   dynamic_search_concurrent_coroutines=16,                                                                                     │ │
+│ │                   │   │   dynamic_search_max_level=2                                                                                                   │ │
+│ │                   │   ),                                                                                                                               │ │
+│ │                   │   drift_search=DRIFTSearchConfig(                                                                                                  │ │
+│ │                   │   │   prompt='prompts/drift_search_system_prompt.txt',                                                                             │ │
+│ │                   │   │   temperature=0.0,                                                                                                             │ │
+│ │                   │   │   top_p=1.0,                                                                                                                   │ │
+│ │                   │   │   n=3,                                                                                                                         │ │
+│ │                   │   │   max_tokens=12000,                                                                                                            │ │
+│ │                   │   │   data_max_tokens=12000,                                                                                                       │ │
+│ │                   │   │   concurrency=32,                                                                                                              │ │
+│ │                   │   │   drift_k_followups=20,                                                                                                        │ │
+│ │                   │   │   primer_folds=5,                                                                                                              │ │
+│ │                   │   │   primer_llm_max_tokens=12000,                                                                                                 │ │
+│ │                   │   │   n_depth=3,                                                                                                                   │ │
+│ │                   │   │   local_search_text_unit_prop=0.9,                                                                                             │ │
+│ │                   │   │   local_search_community_prop=0.1,                                                                                             │ │
+│ │                   │   │   local_search_top_k_mapped_entities=10,                                                                                       │ │
+│ │                   │   │   local_search_top_k_relationships=10,                                                                                         │ │
+│ │                   │   │   local_search_max_data_tokens=12000,                                                                                          │ │
+│ │                   │   │   local_search_temperature=0.0,                                                                                                │ │
+│ │                   │   │   local_search_top_p=1.0,                                                                                                      │ │
+│ │                   │   │   local_search_n=1,                                                                                                            │ │
+│ │                   │   │   local_search_llm_max_gen_tokens=2000                                                                                         │ │
+│ │                   │   ),                                                                                                                               │ │
+│ │                   │   basic_search=BasicSearchConfig(                                                                                                  │ │
+│ │                   │   │   prompt='prompts/basic_search_system_prompt.txt',                                                                             │ │
+│ │                   │   │   text_unit_prop=0.5,                                                                                                          │ │
+│ │                   │   │   conversation_history_max_turns=5,                                                                                            │ │
+│ │                   │   │   temperature=0.0,                                                                                                             │ │
+│ │                   │   │   top_p=1.0,                                                                                                                   │ │
+│ │                   │   │   n=1,                                                                                                                         │ │
+│ │                   │   │   max_tokens=12000,                                                                                                            │ │
+│ │                   │   │   llm_max_tokens=2000                                                                                                          │ │
+│ │                   │   ),                                                                                                                               │ │
+│ │                   │   encoding_model='cl100k_base',                                                                                                    │ │
+│ │                   │   skip_workflows=[]                                                                                                                │ │
+│ │                   )                                                                                                                                    │ │
+│ │  dataframe_dict = {}                                                                                                                                   │ │
+│ │            name = 'create_final_nodes'                                                                                                                 │ │
+│ │   optional_list = ['create_final_covariates']                                                                                                          │ │
+│ │     output_list = [                                                                                                                                    │ │
+│ │                   │   'create_final_nodes',                                                                                                            │ │
+│ │                   │   'create_final_community_reports',                                                                                                │ │
+│ │                   │   'create_final_text_units',                                                                                                       │ │
+│ │                   │   'create_final_relationships',                                                                                                    │ │
+│ │                   │   'create_final_entities'                                                                                                          │ │
+│ │                   ]                                                                                                                                    │ │
+│ │ pipeline_config = PipelineConfig(                                                                                                                      │ │
+│ │                   │   extends=None,                                                                                                                    │ │
+│ │                   │   input=PipelineTextInputConfig(                                                                                                   │ │
+│ │                   │   │   file_type="text",                                                                                                            │ │
+│ │                   │   │   type="file",                                                                                                                 │ │
+│ │                   │   │   connection_string=None,                                                                                                      │ │
+│ │                   │   │   storage_account_blob_url=None,                                                                                               │ │
+│ │                   │   │   container_name=None,                                                                                                         │ │
+│ │                   │   │   base_dir='input',                                                                                                            │ │
+│ │                   │   │   file_pattern='.*\\.txt$',                                                                                                    │ │
+│ │                   │   │   file_filter=None,                                                                                                            │ │
+│ │                   │   │   encoding='utf-8',                                                                                                            │ │
+│ │                   │   │   title_text_length=None                                                                                                       │ │
+│ │                   │   ),                                                                                                                               │ │
+│ │                   │   reporting=PipelineFileReportingConfig(                                                                                           │ │
+│ │                   │   │   type="file",                                                                                                                 │ │
+│ │                   │   │   base_dir='/graphrag/ragtest/CS/auto_deep'+30                               │ │
+│ │                   │   ),                                                                                                                               │ │
+│ │                   │   storage=PipelineFileStorageConfig(                                                                                               │ │
+│ │                   │   │   type="file",                                                                                                                 │ │
+│ │                   │   │   base_dir='/graphrag/ragtest/CS/auto_deep'+32                               │ │
+│ │                   │   ),                                                                                                                               │ │
+│ │                   │   update_index_storage=None,                                                                                                       │ │
+│ │                   │   cache=PipelineFileCacheConfig(type="file", base_dir='cache'),                                                                    │ │
+│ │                   │   root_dir='/graphrag/ragtest/CS/auto_deep'+25,                                  │ │
+│ │                   │   workflows=[                                                                                                                      │ │
+│ │                   │   │   PipelineWorkflowReference(name='create_final_documents', config={'document_attribute_columns': []}),                         │ │
+│ │                   │   │   PipelineWorkflowReference(                                                                                                   │ │
+│ │                   │   │   │   name='create_base_text_units',                                                                                           │ │
+│ │                   │   │   │   config={                                                                                                                 │ │
+│ │                   │   │   │   │   'chunks': ChunkingConfig(                                                                                            │ │
+│ │                   │   │   │   │   │   size=1200,                                                                                                       │ │
+│ │                   │   │   │   │   │   overlap=150,                                                                                                     │ │
+│ │                   │   │   │   │   │   group_by_columns=['id'],                                                                                         │ │
+│ │                   │   │   │   │   │   strategy="tokens",                                                                                               │ │
+│ │                   │   │   │   │   │   encoding_model='cl100k_base'                                                                                     │ │
+│ │                   │   │   │   │   ),                                                                                                                   │ │
+│ │                   │   │   │   │   'snapshot_transient': False                                                                                          │ │
+│ │                   │   │   │   }                                                                                                                        │ │
+│ │                   │   │   ),                                                                                                                           │ │
+│ │                   │   │   PipelineWorkflowReference(name='create_final_text_units', config={'covariates_enabled': False}),                             │ │
+│ │                   │   │   PipelineWorkflowReference(                                                                                                   │ │
+│ │                   │   │   │   name='extract_graph',                                                                                                    │ │
+│ │                   │   │   │   config={                                                                                                                 │ │
+│ │                   │   │   │   │   'snapshot_graphml': True,                                                                                            │ │
+│ │                   │   │   │   │   'snapshot_transient': False,                                                                                         │ │
+│ │                   │   │   │   │   'entity_extract': {                                                                                                  │ │
+│ │                   │   │   │   │   │   'stagger': 0.3,                                                                                                  │ │
+│ │                   │   │   │   │   │   'num_threads': 50,                                                                                               │ │
+│ │                   │   │   │   │   │   'async_mode': <AsyncType.Threaded: 'threaded'>,                                                                  │ │
+│ │                   │   │   │   │   │   'strategy': {                                                                                                    │ │
+│ │                   │   │   │   │   │   │   'type': "graph_intelligence",                                                                                │ │
+│ │                   │   │   │   │   │   │   'llm': {                                                                                                     │ │
+│ │                   │   │   │   │   │   │   │   'api_key': 'ollama',                                                                                     │ │
+│ │                   │   │   │   │   │   │   │   'type': "openai_chat",                                                                                   │ │
+│ │                   │   │   │   │   │   │   │   'encoding_model': 'cl100k_base',                                                                         │ │
+│ │                   │   │   │   │   │   │   │   'model': 'deepseek-r1:14b-5k',                                                                           │ │
+│ │                   │   │   │   │   │   │   │   'max_tokens': 4000,                                                                                      │ │
+│ │                   │   │   │   │   │   │   │   'temperature': 0.0,                                                                                      │ │
+│ │                   │   │   │   │   │   │   │   'top_p': 1.0,                                                                                            │ │
+│ │                   │   │   │   │   │   │   │   'n': 1,                                                                                                  │ │
+│ │                   │   │   │   │   │   │   │   'frequency_penalty': 0.0,                                                                                │ │
+│ │                   │   │   │   │   │   │   │   'presence_penalty': 0.0,                                                                                 │ │
+│ │                   │   │   │   │   │   │   │   ... +15                                                                                                  │ │
+│ │                   │   │   │   │   │   │   },                                                                                                           │ │
+│ │                   │   │   │   │   │   │   'stagger': 0.3,                                                                                              │ │
+│ │                   │   │   │   │   │   │   'num_threads': 50,                                                                                           │ │
+│ │                   │   │   │   │   │   │   'extraction_prompt': '\n-Goal-\nGiven a text document that is potentially relevant to this activity and      │ │
+│ │                   '+25355,                                                                                                                             │ │
+│ │                   │   │   │   │   │   │   'max_gleanings': 1,                                                                                          │ │
+│ │                   │   │   │   │   │   │   'encoding_name': 'cl100k_base'                                                                               │ │
+│ │                   │   │   │   │   │   },                                                                                                               │ │
+│ │                   │   │   │   │   │   'entity_types': ['organization', 'person', 'geo', 'event']                                                       │ │
+│ │                   │   │   │   │   },                                                                                                                   │ │
+│ │                   │   │   │   │   'summarize_descriptions': {                                                                                          │ │
+│ │                   │   │   │   │   │   'stagger': 0.3,                                                                                                  │ │
+│ │                   │   │   │   │   │   'num_threads': 50,                                                                                               │ │
+│ │                   │   │   │   │   │   'async_mode': <AsyncType.Threaded: 'threaded'>,                                                                  │ │
+│ │                   │   │   │   │   │   'strategy': {                                                                                                    │ │
+│ │                   │   │   │   │   │   │   'type': "graph_intelligence",                                                                                │ │
+│ │                   │   │   │   │   │   │   'llm': {                                                                                                     │ │
+│ │                   │   │   │   │   │   │   │   'api_key': 'ollama',                                                                                     │ │
+│ │                   │   │   │   │   │   │   │   'type': "openai_chat",                                                                                   │ │
+│ │                   │   │   │   │   │   │   │   'encoding_model': 'cl100k_base',                                                                         │ │
+│ │                   │   │   │   │   │   │   │   'model': 'deepseek-r1:14b-5k',                                                                           │ │
+│ │                   │   │   │   │   │   │   │   'max_tokens': 4000,                                                                                      │ │
+│ │                   │   │   │   │   │   │   │   'temperature': 0.0,                                                                                      │ │
+│ │                   │   │   │   │   │   │   │   'top_p': 1.0,                                                                                            │ │
+│ │                   │   │   │   │   │   │   │   'n': 1,                                                                                                  │ │
+│ │                   │   │   │   │   │   │   │   'frequency_penalty': 0.0,                                                                                │ │
+│ │                   │   │   │   │   │   │   │   'presence_penalty': 0.0,                                                                                 │ │
+│ │                   │   │   │   │   │   │   │   ... +15                                                                                                  │ │
+│ │                   │   │   │   │   │   │   },                                                                                                           │ │
+│ │                   │   │   │   │   │   │   'stagger': 0.3,                                                                                              │ │
+│ │                   │   │   │   │   │   │   'num_threads': 50,                                                                                           │ │
+│ │                   │   │   │   │   │   │   'summarize_prompt': '\nYou are an expert in Social Network Analysis (SNA) with a specialization in           │ │
+│ │                   sys'+1329,                                                                                                                           │ │
+│ │                   │   │   │   │   │   │   'max_summary_length': 500                                                                                    │ │
+│ │                   │   │   │   │   │   }                                                                                                                │ │
+│ │                   │   │   │   │   }                                                                                                                    │ │
+│ │                   │   │   │   }                                                                                                                        │ │
+│ │                   │   │   ),                                                                                                                           │ │
+│ │                   │   │   PipelineWorkflowReference(                                                                                                   │ │
+│ │                   │   │   │   name='compute_communities',                                                                                              │ │
+│ │                   │   │   │   config={                                                                                                                 │ │
+│ │                   │   │   │   │   'cluster_graph': ClusterGraphConfig(max_cluster_size=10, use_lcc=True, seed=3735928559),                             │ │
+│ │                   │   │   │   │   'snapshot_transient': False                                                                                          │ │
+│ │                   │   │   │   }                                                                                                                        │ │
+│ │                   │   │   ),                                                                                                                           │ │
+│ │                   │   │   PipelineWorkflowReference(name='create_final_entities', config={}),                                                          │ │
+│ │                   │   │   PipelineWorkflowReference(name='create_final_relationships', config={}),                                                     │ │
+│ │                   │   │   PipelineWorkflowReference(                                                                                                   │ │
+│ │                   │   │   │   name='create_final_nodes',                                                                                               │ │
+│ │                   │   │   │   config={                                                                                                                 │ │
+│ │                   │   │   │   │   'layout_enabled': False,                                                                                             │ │
+│ │                   │   │   │   │   'embed_graph': EmbedGraphConfig(                                                                                     │ │
+│ │                   │   │   │   │   │   enabled=False,                                                                                                   │ │
+│ │                   │   │   │   │   │   dimensions=1536,                                                                                                 │ │
+│ │                   │   │   │   │   │   num_walks=10,                                                                                                    │ │
+│ │                   │   │   │   │   │   walk_length=40,                                                                                                  │ │
+│ │                   │   │   │   │   │   window_size=2,                                                                                                   │ │
+│ │                   │   │   │   │   │   iterations=3,                                                                                                    │ │
+│ │                   │   │   │   │   │   random_seed=597832,                                                                                              │ │
+│ │                   │   │   │   │   │   use_lcc=True                                                                                                     │ │
+│ │                   │   │   │   │   )                                                                                                                    │ │
+│ │                   │   │   │   }                                                                                                                        │ │
+│ │                   │   │   ),                                                                                                                           │ │
+│ │                   │   │   PipelineWorkflowReference(name='create_final_communities', config=None),                                                     │ │
+│ │                   │   │   PipelineWorkflowReference(                                                                                                   │ │
+│ │                   │   │   │   name='create_final_community_reports',                                                                                   │ │
+│ │                   │   │   │   config={                                                                                                                 │ │
+│ │                   │   │   │   │   'covariates_enabled': False,                                                                                         │ │
+│ │                   │   │   │   │   'create_community_reports': {                                                                                        │ │
+│ │                   │   │   │   │   │   'stagger': 0.3,                                                                                                  │ │
+│ │                   │   │   │   │   │   'num_threads': 50,                                                                                               │ │
+│ │                   │   │   │   │   │   'async_mode': <AsyncType.Threaded: 'threaded'>,                                                                  │ │
+│ │                   │   │   │   │   │   'strategy': {                                                                                                    │ │
+│ │                   │   │   │   │   │   │   'type': "graph_intelligence",                                                                                │ │
+│ │                   │   │   │   │   │   │   'llm': {                                                                                                     │ │
+│ │                   │   │   │   │   │   │   │   'api_key': 'ollama',                                                                                     │ │
+│ │                   │   │   │   │   │   │   │   'type': "openai_chat",                                                                                   │ │
+│ │                   │   │   │   │   │   │   │   'encoding_model': 'cl100k_base',                                                                         │ │
+│ │                   │   │   │   │   │   │   │   'model': 'deepseek-r1:14b-5k',                                                                           │ │
+│ │                   │   │   │   │   │   │   │   'max_tokens': 4000,                                                                                      │ │
+│ │                   │   │   │   │   │   │   │   'temperature': 0.0,                                                                                      │ │
+│ │                   │   │   │   │   │   │   │   'top_p': 1.0,                                                                                            │ │
+│ │                   │   │   │   │   │   │   │   'n': 1,                                                                                                  │ │
+│ │                   │   │   │   │   │   │   │   'frequency_penalty': 0.0,                                                                                │ │
+│ │                   │   │   │   │   │   │   │   'presence_penalty': 0.0,                                                                                 │ │
+│ │                   │   │   │   │   │   │   │   ... +15                                                                                                  │ │
+│ │                   │   │   │   │   │   │   },                                                                                                           │ │
+│ │                   │   │   │   │   │   │   'stagger': 0.3,                                                                                              │ │
+│ │                   │   │   │   │   │   │   'num_threads': 50,                                                                                           │ │
+│ │                   │   │   │   │   │   │   'extraction_prompt': '\nYou are an expert in Social Network Analysis (SNA) with a specialization in          │ │
+│ │                   sys'+8851,                                                                                                                           │ │
+│ │                   │   │   │   │   │   │   'max_report_length': 2000,                                                                                   │ │
+│ │                   │   │   │   │   │   │   'max_input_length': 8000                                                                                     │ │
+│ │                   │   │   │   │   │   }                                                                                                                │ │
+│ │                   │   │   │   │   }                                                                                                                    │ │
+│ │                   │   │   │   }                                                                                                                        │ │
+│ │                   │   │   ),                                                                                                                           │ │
+│ │                   │   │   ... +1                                                                                                                       │ │
+│ │                   │   ]                                                                                                                                │ │
+│ │                   )                                                                                                                                    │ │
+│ │  storage_config = {'type': "file", 'base_dir': '/graphrag/ragtest/CS/auto_deep'+32}                  │ │
+│ │     storage_obj = <graphrag.storage.file_pipeline_storage.FilePipelineStorage object at 0x73cf015db690>                                                │ │
+│ ╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯ │
+│                                                                                                                                                            │
+│ /lib/python3.11/asyncio/runners.py:190 in run                                                                          │
+│                                                                                                                                                            │
+│   187 │   │   │   "asyncio.run() cannot be called from a running event loop")                                                                              │
+│   188 │                                                                                                                                                    │
+│   189 │   with Runner(debug=debug) as runner:                                                                                                              │
+│ ❱ 190 │   │   return runner.run(main)                                                                                                                      │
+│   191                                                                                                                                                      │
+│   192                                                                                                                                                      │
+│   193 def _cancel_all_tasks(loop):                                                                                                                         │
+│                                                                                                                                                            │
+│ ╭─────────────────────────────── locals ────────────────────────────────╮                                                                                  │
+│ │  debug = None                                                         │                                                                                  │
+│ │   main = <coroutine object load_table_from_storage at 0x73cee81887b0> │                                                                                  │
+│ │ runner = <asyncio.runners.Runner object at 0x73cf03f43d10>            │                                                                                  │
+│ ╰───────────────────────────────────────────────────────────────────────╯                                                                                  │
+│                                                                                                                                                            │
+│ /lib/python3.11/asyncio/runners.py:118 in run                                                                          │
+│                                                                                                                                                            │
+│   115 │   │                                                                                                                                                │
+│   116 │   │   self._interrupt_count = 0                                                                                                                    │
+│   117 │   │   try:                                                                                                                                         │
+│ ❱ 118 │   │   │   return self._loop.run_until_complete(task)                                                                                               │
+│   119 │   │   except exceptions.CancelledError:                                                                                                            │
+│   120 │   │   │   if self._interrupt_count > 0:                                                                                                            │
+│   121 │   │   │   │   uncancel = getattr(task, "uncancel", None)                                                                                           │
+│                                                                                                                                                            │
+│ ╭──────────────────────────────────────────────────────────────────────── locals ────────────────────────────────────────────────────────────────────────╮ │
+│ │        context = <_contextvars.Context object at 0x73cee8fef580>                                                                                       │ │
+│ │           coro = <coroutine object load_table_from_storage at 0x73cee81887b0>                                                                          │ │
+│ │           self = <asyncio.runners.Runner object at 0x73cf03f43d10>                                                                                     │ │
+│ │ sigint_handler = functools.partial(<bound method Runner._on_sigint of <asyncio.runners.Runner object at 0x73cf03f43d10>>, main_task=<Task finished     │ │
+│ │                  name='Task-1' coro=<load_table_from_storage() done, defined at                                                                        │ │
+│ │                  /graphrag/utils/storage.py:16> exception=ValueError('Could not find                                                                        │ │
+│ │                  create_final_nodes.parquet in storage!')>)                                                                                            │ │
+│ │           task = <Task finished name='Task-1' coro=<load_table_from_storage() done, defined at                                                         │ │
+│ │                  /graphrag/utils/storage.py:16> exception=ValueError('Could not find                                                                        │ │
+│ │                  create_final_nodes.parquet in storage!')>                                                                                             │ │
+│ ╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯ │
+│                                                                                                                                                            │
+│ /lib/python3.11/asyncio/base_events.py:654 in run_until_complete                                                       │
+│                                                                                                                                                            │
+│    651 │   │   if not future.done():                                                                                                                       │
+│    652 │   │   │   raise RuntimeError('Event loop stopped before Future completed.')                                                                       │
+│    653 │   │                                                                                                                                               │
+│ ❱  654 │   │   return future.result()                                                                                                                      │
+│    655 │                                                                                                                                                   │
+│    656 │   def stop(self):                                                                                                                                 │
+│    657 │   │   """Stop running the event loop.                                                                                                             │
+│                                                                                                                                                            │
+│ ╭──────────────────────────────────────────────────────────────────────── locals ────────────────────────────────────────────────────────────────────────╮ │
+│ │   future = <Task finished name='Task-1' coro=<load_table_from_storage() done, defined at                                                               │ │
+│ │            /graphrag/utils/storage.py:16> exception=ValueError('Could not find              │ │
+│ │            create_final_nodes.parquet in storage!')>                                                                                                   │ │
+│ │ new_task = False                                                                                                                                       │ │
+│ │     self = <_UnixSelectorEventLoop running=False closed=True debug=False>                                                                              │ │
+│ ╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯ │
+│                                                                                                                                                            │
+│ /graphrag/utils/storage.py:21 in load_table_from_storage                                        │
+│                                                                                                                                                            │
+│   18 │   filename = f"{name}.parquet"                                                                                                                      │
+│   19 │   if not await storage.has(filename):                                                                                                               │
+│   20 │   │   msg = f"Could not find {filename} in storage!"                                                                                                │
+│ ❱ 21 │   │   raise ValueError(msg)                                                                                                                         │
+│   22 │   try:                                                                                                                                              │
+│   23 │   │   log.info("reading table from storage: %s", filename)                                                                                          │
+│   24 │   │   return pd.read_parquet(BytesIO(await storage.get(filename, as_bytes=True)))                                                                   │
+│                                                                                                                                                            │
+│ ╭───────────────────────────────────────────── locals ─────────────────────────────────────────────╮                                                       │
+│ │ filename = 'create_final_nodes.parquet'                                                          │                                                       │
+│ │      msg = 'Could not find create_final_nodes.parquet in storage!'                               │                                                       │
+│ │     name = 'create_final_nodes'                                                                  │                                                       │
+│ │  storage = <graphrag.storage.file_pipeline_storage.FilePipelineStorage object at 0x73cf015db690> │                                                       │
+│ ╰──────────────────────────────────────────────────────────────────────────────────────────────────╯                                                       │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+ValueError: Could not find create_final_nodes.parquet in storage!
+
+
+Command completed and logged to logs/cc_test_run_20250402_232906.log

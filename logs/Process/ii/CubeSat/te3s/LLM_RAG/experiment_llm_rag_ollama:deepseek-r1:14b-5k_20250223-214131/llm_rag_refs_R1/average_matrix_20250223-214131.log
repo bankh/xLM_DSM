@@ -1,0 +1,1065 @@
+2025-02-24 05:01:00,364 - DSM_None_None_ - INFO - Product: CubeSat
+2025-02-24 05:01:00,365 - DSM_None_None_ - INFO - Model: ollama:deepseek-r1:14b-5k
+2025-02-24 05:01:00,365 - DSM_None_None_ - INFO - Type: LLM_RAG
+2025-02-24 05:01:00,366 - DSM_None_None_ - INFO - Reference: R1
+2025-02-24 05:01:01,601 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-02-24 05:01:01,602 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_ollama:deepseek-r1:14b-5k_20250223-214131/llm_rag_refs_R1/average_matrix_20250223-214131.csv
+2025-02-24 05:01:01,602 - DSM_None_None_ - INFO - Extracted model: deepseek-r1:14b-5k
+2025-02-24 05:01:01,603 - DSM_None_None_ - INFO - Creating similarity matrix text
+2025-02-24 05:01:01,615 - DSM_None_None_ - INFO - Creating prompt
+2025-02-24 05:01:01,616 - DSM_None_None_ - INFO - Attempting to use model: deepseek-r1:14b-5k
+2025-02-24 05:01:01,616 - DSM_None_None_ - INFO - Using Ollama path
+2025-02-24 05:01:01,617 - DSM_None_None_ - INFO - Model name: deepseek-r1:14b-5k
+2025-02-24 05:01:01,618 - DSM_None_None_ - INFO - Prompt length: 2100
+2025-02-24 05:03:49,473 - DSM_None_None_ - INFO - Response status code: 200
+2025-02-24 05:03:49,474 - DSM_None_None_ - INFO - API call succeeded
+2025-02-24 05:03:49,476 - DSM_None_None_ - INFO - Got response: <think>
+Okay, so I need to figure out how to optimally map each ground truth component to a predicte...
+2025-02-24 05:03:49,477 - DSM_None_None_ - INFO - 
+Initial LLM Suggested Mappings:
+2025-02-24 05:03:49,478 - DSM_None_None_ - INFO - Ground Truth Components: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software']
+2025-02-24 05:03:49,479 - DSM_None_None_ - INFO - Predicted Components: ['Structure/Chassis', 'Power System', 'Communication System', 'Onboard Computer', 'Attitude Control System', 'Payload']
+2025-02-24 05:03:49,481 - DSM_None_None_ - ERROR - No valid component mappings found
+2025-02-24 05:28:26,319 - DSM_None_None_ - INFO - Product: CubeSat
+2025-02-24 05:28:26,320 - DSM_None_None_ - INFO - Model: ollama:deepseek-r1:14b-5k
+2025-02-24 05:28:26,321 - DSM_None_None_ - INFO - Type: LLM_RAG
+2025-02-24 05:28:26,322 - DSM_None_None_ - INFO - Reference: R1
+2025-02-24 05:28:26,977 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-02-24 05:28:26,978 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_ollama:deepseek-r1:14b-5k_20250223-214131/llm_rag_refs_R1/average_matrix_20250223-214131.csv
+2025-02-24 05:28:26,979 - DSM_None_None_ - INFO - Extracted model: deepseek-r1:14b-5k
+2025-02-24 05:28:26,979 - DSM_None_None_ - INFO - Creating similarity matrix text
+2025-02-24 05:28:26,990 - DSM_None_None_ - INFO - Creating prompt
+2025-02-24 05:28:26,991 - DSM_None_None_ - INFO - Attempting to use model: deepseek-r1:14b-5k
+2025-02-24 05:28:26,992 - DSM_None_None_ - INFO - Using Ollama path
+2025-02-24 05:28:26,992 - DSM_None_None_ - INFO - Model name: deepseek-r1:14b-5k
+2025-02-24 05:28:26,993 - DSM_None_None_ - INFO - Prompt length: 2100
+2025-02-24 05:29:45,267 - DSM_None_None_ - INFO - Response status code: 200
+2025-02-24 05:29:45,268 - DSM_None_None_ - INFO - API call succeeded
+2025-02-24 05:29:45,270 - DSM_None_None_ - INFO - Got response: <think>
+Okay, so I have to figure out how to optimally map the ground truth components to the predic...
+2025-02-24 05:29:45,271 - DSM_None_None_ - INFO - 
+Initial LLM Suggested Mappings:
+2025-02-24 05:29:45,271 - DSM_None_None_ - INFO - Ground Truth Components: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software']
+2025-02-24 05:29:45,273 - DSM_None_None_ - INFO - Predicted Components: ['Structure/Chassis', 'Power System', 'Communication System', 'Onboard Computer', 'Attitude Control System', 'Payload']
+2025-02-24 05:29:45,274 - DSM_None_None_ - INFO - 
+Checking mapping: Spacecraft -> Structure/Chassis
+2025-02-24 05:29:45,275 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 05:29:45,276 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 05:29:45,277 - DSM_None_None_ - INFO - 
+Checking mapping: Guidance, Navigation, and Control (GNC) Subsystem -> Attitude Control System
+2025-02-24 05:29:45,278 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 05:29:45,279 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 05:29:45,280 - DSM_None_None_ - INFO - 
+Checking mapping: Propulsion Subsystem -> Communication System
+2025-02-24 05:29:45,281 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 05:29:45,282 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 05:29:45,283 - DSM_None_None_ - INFO - 
+Checking mapping: Power Subsystem -> Power System
+2025-02-24 05:29:45,284 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 05:29:45,284 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 05:29:45,285 - DSM_None_None_ - INFO - 
+Checking mapping: Reaction Wheel -> Payload
+2025-02-24 05:29:45,286 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 05:29:45,287 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 05:29:45,288 - DSM_None_None_ - INFO - 
+Checking mapping: GNC Software -> Onboard Computer
+2025-02-24 05:29:45,289 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 05:29:45,290 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 05:29:46,969 - DSM_None_None_ - INFO - 
+Results for ollama:deepseek-r1:14b-5k:
+2025-02-24 05:29:46,971 - DSM_None_None_ - INFO - 
+Raw Metrics:
+2025-02-24 05:29:46,971 - DSM_None_None_ - INFO - accuracy: 0.5556
+2025-02-24 05:29:46,972 - DSM_None_None_ - INFO - precision: 0.5556
+2025-02-24 05:29:46,973 - DSM_None_None_ - INFO - recall: 1.0000
+2025-02-24 05:29:46,973 - DSM_None_None_ - INFO - f1_score: 0.7143
+2025-02-24 05:29:46,974 - DSM_None_None_ - INFO - edit_distance: 16.0000
+2025-02-24 05:29:46,974 - DSM_None_None_ - INFO - spectral_distance: 3.1995
+2025-02-24 05:29:46,975 - DSM_None_None_ - INFO - 
+Aligned Metrics:
+2025-02-24 05:29:46,976 - DSM_None_None_ - INFO - accuracy: 0.6000
+2025-02-24 05:29:46,976 - DSM_None_None_ - INFO - precision: 0.6000
+2025-02-24 05:29:46,977 - DSM_None_None_ - INFO - recall: 1.0000
+2025-02-24 05:29:46,977 - DSM_None_None_ - INFO - f1_score: 0.7500
+2025-02-24 05:29:46,978 - DSM_None_None_ - INFO - edit_distance: 10.0000
+2025-02-24 05:29:46,979 - DSM_None_None_ - INFO - spectral_distance: 2.5634
+2025-02-24 05:29:46,979 - DSM_None_None_ - INFO - 
+Component Mapping:
+2025-02-24 05:29:46,981 - DSM_None_None_ - INFO -                               Ground Truth Component Matched Predicted Component
+0                                         Spacecraft           Structure/Chassis
+1  Guidance, Navigation, and Control (GNC) Subsystem     Attitude Control System
+2                               Propulsion Subsystem        Communication System
+3                                    Power Subsystem                Power System
+4                                       GNC Software            Onboard Computer
+2025-02-24 07:16:46,681 - DSM_None_None_ - INFO - Product: CubeSat
+2025-02-24 07:16:46,682 - DSM_None_None_ - INFO - Model: ollama:deepseek-r1:14b-5k
+2025-02-24 07:16:46,683 - DSM_None_None_ - INFO - Type: LLM_RAG
+2025-02-24 07:16:46,684 - DSM_None_None_ - INFO - Reference: R1
+2025-02-24 07:16:47,748 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-02-24 07:16:47,749 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_ollama:deepseek-r1:14b-5k_20250223-214131/llm_rag_refs_R1/average_matrix_20250223-214131.csv
+2025-02-24 07:16:47,749 - DSM_None_None_ - INFO - Extracted model: deepseek-r1:14b-5k
+2025-02-24 07:16:47,750 - DSM_None_None_ - INFO - Creating similarity matrix text
+2025-02-24 07:16:47,761 - DSM_None_None_ - INFO - Creating prompt
+2025-02-24 07:16:47,762 - DSM_None_None_ - INFO - Attempting to use model: deepseek-r1:14b-5k
+2025-02-24 07:16:47,763 - DSM_None_None_ - INFO - Using Ollama path
+2025-02-24 07:16:47,763 - DSM_None_None_ - INFO - Model name: deepseek-r1:14b-5k
+2025-02-24 07:16:47,764 - DSM_None_None_ - INFO - Prompt length: 2100
+2025-02-24 07:21:47,913 - DSM_None_None_ - INFO - Response status code: 500
+2025-02-24 07:21:47,914 - DSM_None_None_ - ERROR - API call failed: {"error":"timed out waiting for llama runner to start - progress 0.00 - "}
+2025-02-24 07:21:47,915 - DSM_None_None_ - ERROR - Error getting matches: Error code: 500 - {'error': 'timed out waiting for llama runner to start - progress 0.00 - '}
+2025-02-24 07:21:47,918 - DSM_None_None_ - ERROR - No valid component mappings found
+2025-02-24 16:41:53,668 - DSM_None_None_ - INFO - Product: CubeSat
+2025-02-24 16:41:53,669 - DSM_None_None_ - INFO - Model: ollama:deepseek-r1:14b-5k
+2025-02-24 16:41:53,670 - DSM_None_None_ - INFO - Type: LLM_RAG
+2025-02-24 16:41:53,671 - DSM_None_None_ - INFO - Reference: R1
+2025-02-24 16:41:54,748 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-02-24 16:41:54,749 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_ollama:deepseek-r1:14b-5k_20250223-214131/llm_rag_refs_R1/average_matrix_20250223-214131.csv
+2025-02-24 16:41:54,750 - DSM_None_None_ - INFO - Extracted model: deepseek-r1:14b-5k
+2025-02-24 16:41:54,750 - DSM_None_None_ - INFO - Creating similarity matrix text
+2025-02-24 16:41:54,762 - DSM_None_None_ - INFO - Creating prompt
+2025-02-24 16:41:54,763 - DSM_None_None_ - INFO - Attempting to use model: deepseek-r1:14b-5k
+2025-02-24 16:41:54,764 - DSM_None_None_ - INFO - Using Ollama path
+2025-02-24 16:41:54,764 - DSM_None_None_ - INFO - Model name: deepseek-r1:14b-5k
+2025-02-24 16:41:54,766 - DSM_None_None_ - INFO - Prompt length: 2100
+2025-02-24 16:43:10,876 - DSM_None_None_ - INFO - Response status code: 200
+2025-02-24 16:43:10,877 - DSM_None_None_ - INFO - API call succeeded
+2025-02-24 16:43:10,879 - DSM_None_None_ - INFO - Got response: <think>
+Okay, so I need to figure out how to optimally map the ground truth components to the predic...
+2025-02-24 16:43:10,880 - DSM_None_None_ - INFO - 
+Initial LLM Suggested Mappings:
+2025-02-24 16:43:10,880 - DSM_None_None_ - INFO - Ground Truth Components: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software']
+2025-02-24 16:43:10,882 - DSM_None_None_ - INFO - Predicted Components: ['Structure/Chassis', 'Power System', 'Communication System', 'Onboard Computer', 'Attitude Control System', 'Payload']
+2025-02-24 16:43:10,883 - DSM_None_None_ - INFO - 
+Checking mapping: Spacecraft -> Payload
+2025-02-24 16:43:10,883 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 16:43:10,884 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 16:43:10,885 - DSM_None_None_ - INFO - 
+Checking mapping: Guidance, Navigation, and Control (GNC) Subsystem -> Attitude Control System
+2025-02-24 16:43:10,886 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 16:43:10,886 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 16:43:10,887 - DSM_None_None_ - INFO - 
+Checking mapping: Propulsion Subsystem -> Structure/Chassis
+2025-02-24 16:43:10,887 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 16:43:10,888 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 16:43:10,889 - DSM_None_None_ - INFO - 
+Checking mapping: Power Subsystem -> Power System
+2025-02-24 16:43:10,889 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 16:43:10,891 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 16:43:10,892 - DSM_None_None_ - INFO - 
+Checking mapping: Reaction Wheel -> Communication System
+2025-02-24 16:43:10,892 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 16:43:10,893 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 16:43:10,893 - DSM_None_None_ - INFO - 
+Checking mapping: GNC Software -> Onboard Computer
+2025-02-24 16:43:10,894 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 16:43:10,895 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 16:43:12,505 - DSM_None_None_ - INFO - 
+Results for ollama:deepseek-r1:14b-5k:
+2025-02-24 16:43:12,506 - DSM_None_None_ - INFO - 
+Raw Metrics:
+2025-02-24 16:43:12,507 - DSM_None_None_ - INFO - accuracy: 0.5556
+2025-02-24 16:43:12,508 - DSM_None_None_ - INFO - precision: 0.5556
+2025-02-24 16:43:12,508 - DSM_None_None_ - INFO - recall: 1.0000
+2025-02-24 16:43:12,509 - DSM_None_None_ - INFO - f1_score: 0.7143
+2025-02-24 16:43:12,509 - DSM_None_None_ - INFO - edit_distance: 16.0000
+2025-02-24 16:43:12,510 - DSM_None_None_ - INFO - spectral_distance: 3.1995
+2025-02-24 16:43:12,510 - DSM_None_None_ - INFO - 
+Aligned Metrics:
+2025-02-24 16:43:12,511 - DSM_None_None_ - INFO - accuracy: 0.5556
+2025-02-24 16:43:12,511 - DSM_None_None_ - INFO - precision: 0.5556
+2025-02-24 16:43:12,512 - DSM_None_None_ - INFO - recall: 1.0000
+2025-02-24 16:43:12,512 - DSM_None_None_ - INFO - f1_score: 0.7143
+2025-02-24 16:43:12,513 - DSM_None_None_ - INFO - edit_distance: 16.0000
+2025-02-24 16:43:12,513 - DSM_None_None_ - INFO - spectral_distance: 3.1995
+2025-02-24 16:43:12,514 - DSM_None_None_ - INFO - 
+Component Mapping:
+2025-02-24 16:43:12,515 - DSM_None_None_ - INFO -                               Ground Truth Component Matched Predicted Component
+0                                         Spacecraft                     Payload
+1  Guidance, Navigation, and Control (GNC) Subsystem     Attitude Control System
+2                               Propulsion Subsystem           Structure/Chassis
+3                                    Power Subsystem                Power System
+4                                     Reaction Wheel        Communication System
+5                                       GNC Software            Onboard Computer
+2025-02-24 16:43:12,516 - DSM_None_None_ - INFO - Resetting GPUs...
+2025-02-24 19:14:45,790 - DSM_None_None_ - INFO - Resetting GPUs...
+2025-02-24 19:15:33,790 - DSM_None_None_ - INFO - Product: CubeSat
+2025-02-24 19:15:33,791 - DSM_None_None_ - INFO - Model: ollama:deepseek-r1:14b-5k
+2025-02-24 19:15:33,792 - DSM_None_None_ - INFO - Type: LLM_RAG
+2025-02-24 19:15:33,793 - DSM_None_None_ - INFO - Reference: R1
+2025-02-24 19:15:35,077 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-02-24 19:15:35,078 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_ollama:deepseek-r1:14b-5k_20250223-214131/llm_rag_refs_R1/average_matrix_20250223-214131.csv
+2025-02-24 19:15:35,079 - DSM_None_None_ - INFO - Extracted model: deepseek-r1:14b-5k
+2025-02-24 19:15:35,079 - DSM_None_None_ - INFO - Creating similarity matrix text
+2025-02-24 19:15:35,092 - DSM_None_None_ - INFO - Creating prompt
+2025-02-24 19:15:35,093 - DSM_None_None_ - INFO - Attempting to use model: deepseek-r1:14b-5k
+2025-02-24 19:15:35,094 - DSM_None_None_ - INFO - Using Ollama path
+2025-02-24 19:15:35,095 - DSM_None_None_ - INFO - Model name: deepseek-r1:14b-5k
+2025-02-24 19:15:35,096 - DSM_None_None_ - INFO - Prompt length: 2100
+2025-02-24 19:17:30,877 - DSM_None_None_ - INFO - Response status code: 200
+2025-02-24 19:17:30,878 - DSM_None_None_ - INFO - API call succeeded
+2025-02-24 19:17:30,880 - DSM_None_None_ - INFO - Got response: <think>
+Okay, so I've got to figure out how to map these ground truth components to the predicted on...
+2025-02-24 19:17:30,881 - DSM_None_None_ - INFO - 
+Initial LLM Suggested Mappings:
+2025-02-24 19:17:30,881 - DSM_None_None_ - INFO - Ground Truth Components: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software']
+2025-02-24 19:17:30,881 - DSM_None_None_ - INFO - Predicted Components: ['Structure/Chassis', 'Power System', 'Communication System', 'Onboard Computer', 'Attitude Control System', 'Payload']
+2025-02-24 19:17:30,882 - DSM_None_None_ - INFO - 
+Checking mapping: Spacecraft -> Payload
+2025-02-24 19:17:30,882 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 19:17:30,883 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 19:17:30,883 - DSM_None_None_ - INFO - 
+Checking mapping: Guidance, Navigation, and Control (GNC) Subsystem -> Attitude Control System
+2025-02-24 19:17:30,884 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 19:17:30,884 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 19:17:30,884 - DSM_None_None_ - INFO - 
+Checking mapping: Propulsion Subsystem -> Structure/Chassis
+2025-02-24 19:17:30,885 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 19:17:30,885 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 19:17:30,886 - DSM_None_None_ - INFO - 
+Checking mapping: Power Subsystem -> Power System
+2025-02-24 19:17:30,886 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 19:17:30,887 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 19:17:30,887 - DSM_None_None_ - INFO - 
+Checking mapping: Reaction Wheel -> Communication System
+2025-02-24 19:17:30,888 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 19:17:30,888 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 19:17:30,889 - DSM_None_None_ - INFO - 
+Checking mapping: GNC Software -> Onboard Computer
+2025-02-24 19:17:30,889 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 19:17:30,889 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 19:17:32,555 - DSM_None_None_ - INFO - 
+Results for ollama:deepseek-r1:14b-5k:
+2025-02-24 19:17:32,556 - DSM_None_None_ - INFO - 
+Raw Metrics:
+2025-02-24 19:17:32,557 - DSM_None_None_ - INFO - accuracy: 0.5556
+2025-02-24 19:17:32,557 - DSM_None_None_ - INFO - precision: 0.5556
+2025-02-24 19:17:32,558 - DSM_None_None_ - INFO - recall: 1.0000
+2025-02-24 19:17:32,558 - DSM_None_None_ - INFO - f1_score: 0.7143
+2025-02-24 19:17:32,559 - DSM_None_None_ - INFO - edit_distance: 16.0000
+2025-02-24 19:17:32,560 - DSM_None_None_ - INFO - spectral_distance: 3.1995
+2025-02-24 19:17:32,560 - DSM_None_None_ - INFO - 
+Aligned Metrics:
+2025-02-24 19:17:32,561 - DSM_None_None_ - INFO - accuracy: 0.5556
+2025-02-24 19:17:32,561 - DSM_None_None_ - INFO - precision: 0.5556
+2025-02-24 19:17:32,562 - DSM_None_None_ - INFO - recall: 1.0000
+2025-02-24 19:17:32,563 - DSM_None_None_ - INFO - f1_score: 0.7143
+2025-02-24 19:17:32,565 - DSM_None_None_ - INFO - edit_distance: 16.0000
+2025-02-24 19:17:32,566 - DSM_None_None_ - INFO - spectral_distance: 3.1995
+2025-02-24 19:17:32,566 - DSM_None_None_ - INFO - 
+Component Mapping:
+2025-02-24 19:17:32,568 - DSM_None_None_ - INFO -                               Ground Truth Component Matched Predicted Component
+0                                         Spacecraft                     Payload
+1  Guidance, Navigation, and Control (GNC) Subsystem     Attitude Control System
+2                               Propulsion Subsystem           Structure/Chassis
+3                                    Power Subsystem                Power System
+4                                     Reaction Wheel        Communication System
+5                                       GNC Software            Onboard Computer
+2025-02-24 22:16:04,312 - DSM_None_None_ - INFO - Resetting GPUs...
+2025-02-24 22:16:51,065 - DSM_None_None_ - INFO - Product: CubeSat
+2025-02-24 22:16:51,067 - DSM_None_None_ - INFO - Model: ollama:deepseek-r1:14b-5k
+2025-02-24 22:16:51,068 - DSM_None_None_ - INFO - Type: LLM_RAG
+2025-02-24 22:16:51,068 - DSM_None_None_ - INFO - Reference: R1
+2025-02-24 22:16:52,516 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-02-24 22:16:52,517 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_ollama:deepseek-r1:14b-5k_20250223-214131/llm_rag_refs_R1/average_matrix_20250223-214131.csv
+2025-02-24 22:16:52,517 - DSM_None_None_ - INFO - Extracted model: deepseek-r1:14b-5k
+2025-02-24 22:16:52,518 - DSM_None_None_ - INFO - Creating similarity matrix text
+2025-02-24 22:16:52,530 - DSM_None_None_ - INFO - Creating prompt
+2025-02-24 22:16:52,531 - DSM_None_None_ - INFO - Attempting to use model: deepseek-r1:14b-5k
+2025-02-24 22:16:52,532 - DSM_None_None_ - INFO - Using Ollama path
+2025-02-24 22:16:52,532 - DSM_None_None_ - INFO - Model name: deepseek-r1:14b-5k
+2025-02-24 22:16:52,533 - DSM_None_None_ - INFO - Prompt length: 2100
+2025-02-24 22:17:49,518 - DSM_None_None_ - INFO - Response status code: 200
+2025-02-24 22:17:49,519 - DSM_None_None_ - INFO - API call succeeded
+2025-02-24 22:17:49,520 - DSM_None_None_ - INFO - Got response: <think>
+Okay, so I have to figure out the optimal one-to-one mapping between the ground truth compon...
+2025-02-24 22:17:49,521 - DSM_None_None_ - INFO - 
+Initial LLM Suggested Mappings:
+2025-02-24 22:17:49,522 - DSM_None_None_ - INFO - Ground Truth Components: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software']
+2025-02-24 22:17:49,523 - DSM_None_None_ - INFO - Predicted Components: ['Structure/Chassis', 'Power System', 'Communication System', 'Onboard Computer', 'Attitude Control System', 'Payload']
+2025-02-24 22:17:49,525 - DSM_None_None_ - INFO - 
+Checking mapping: Spacecraft -> Payload
+2025-02-24 22:17:49,526 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 22:17:49,527 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 22:17:49,527 - DSM_None_None_ - INFO - 
+Checking mapping: Guidance, Navigation, and Control (GNC) Subsystem -> Attitude Control System
+2025-02-24 22:17:49,529 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 22:17:49,530 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 22:17:49,531 - DSM_None_None_ - INFO - 
+Checking mapping: Propulsion Subsystem -> Structure/Chassis
+2025-02-24 22:17:49,531 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 22:17:49,532 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 22:17:49,533 - DSM_None_None_ - INFO - 
+Checking mapping: Power Subsystem -> Power System
+2025-02-24 22:17:49,534 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 22:17:49,534 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 22:17:49,535 - DSM_None_None_ - INFO - 
+Checking mapping: Reaction Wheel -> Communication System
+2025-02-24 22:17:49,536 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 22:17:49,537 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 22:17:49,538 - DSM_None_None_ - INFO - 
+Checking mapping: GNC Software -> Onboard Computer
+2025-02-24 22:17:49,539 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 22:17:49,540 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 22:17:51,245 - DSM_None_None_ - INFO - 
+Results for ollama:deepseek-r1:14b-5k:
+2025-02-24 22:17:51,246 - DSM_None_None_ - INFO - 
+Raw Metrics:
+2025-02-24 22:17:51,247 - DSM_None_None_ - INFO - accuracy: 0.5556
+2025-02-24 22:17:51,248 - DSM_None_None_ - INFO - precision: 0.5556
+2025-02-24 22:17:51,248 - DSM_None_None_ - INFO - recall: 1.0000
+2025-02-24 22:17:51,249 - DSM_None_None_ - INFO - f1_score: 0.7143
+2025-02-24 22:17:51,249 - DSM_None_None_ - INFO - edit_distance: 16.0000
+2025-02-24 22:17:51,250 - DSM_None_None_ - INFO - spectral_distance: 3.1995
+2025-02-24 22:17:51,251 - DSM_None_None_ - INFO - 
+Aligned Metrics:
+2025-02-24 22:17:51,251 - DSM_None_None_ - INFO - accuracy: 0.5556
+2025-02-24 22:17:51,252 - DSM_None_None_ - INFO - precision: 0.5556
+2025-02-24 22:17:51,252 - DSM_None_None_ - INFO - recall: 1.0000
+2025-02-24 22:17:51,255 - DSM_None_None_ - INFO - f1_score: 0.7143
+2025-02-24 22:17:51,255 - DSM_None_None_ - INFO - edit_distance: 16.0000
+2025-02-24 22:17:51,256 - DSM_None_None_ - INFO - spectral_distance: 3.1995
+2025-02-24 22:17:51,257 - DSM_None_None_ - INFO - 
+Component Mapping:
+2025-02-24 22:17:51,259 - DSM_None_None_ - INFO -                               Ground Truth Component Matched Predicted Component
+0                                         Spacecraft                     Payload
+1  Guidance, Navigation, and Control (GNC) Subsystem     Attitude Control System
+2                               Propulsion Subsystem           Structure/Chassis
+3                                    Power Subsystem                Power System
+4                                     Reaction Wheel        Communication System
+5                                       GNC Software            Onboard Computer
+2025-02-24 23:24:51,360 - DSM_None_None_ - INFO - Resetting GPUs...
+2025-02-24 23:25:38,354 - DSM_None_None_ - INFO - Product: CubeSat
+2025-02-24 23:25:38,356 - DSM_None_None_ - INFO - Model: ollama:deepseek-r1:14b-5k
+2025-02-24 23:25:38,357 - DSM_None_None_ - INFO - Type: LLM_RAG
+2025-02-24 23:25:38,357 - DSM_None_None_ - INFO - Reference: R1
+2025-02-24 23:25:39,252 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-02-24 23:25:39,253 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_ollama:deepseek-r1:14b-5k_20250223-214131/llm_rag_refs_R1/average_matrix_20250223-214131.csv
+2025-02-24 23:25:39,253 - DSM_None_None_ - INFO - Extracted model: deepseek-r1:14b-5k
+2025-02-24 23:25:39,254 - DSM_None_None_ - INFO - Creating similarity matrix text
+2025-02-24 23:25:39,265 - DSM_None_None_ - INFO - Creating prompt
+2025-02-24 23:25:39,267 - DSM_None_None_ - INFO - Attempting to use model: deepseek-r1:14b-5k
+2025-02-24 23:25:39,267 - DSM_None_None_ - INFO - Using Ollama path
+2025-02-24 23:25:39,268 - DSM_None_None_ - INFO - Model name: deepseek-r1:14b-5k
+2025-02-24 23:25:39,269 - DSM_None_None_ - INFO - Prompt length: 2100
+2025-02-24 23:26:08,373 - DSM_None_None_ - INFO - Response status code: 500
+2025-02-24 23:26:08,374 - DSM_None_None_ - ERROR - API call failed: {"error":"an error was encountered while running the model: unexpected EOF"}
+2025-02-24 23:26:08,393 - DSM_None_None_ - ERROR - Error getting matches: Error code: 500 - {'error': 'an error was encountered while running the model: unexpected EOF'}
+2025-02-24 23:26:08,396 - DSM_None_None_ - ERROR - No valid component mappings found
+2025-02-24 23:33:46,158 - DSM_None_None_ - INFO - Resetting GPUs...
+2025-02-24 23:34:36,601 - DSM_None_None_ - INFO - Product: CubeSat
+2025-02-24 23:34:36,602 - DSM_None_None_ - INFO - Model: ollama:deepseek-r1:14b-5k
+2025-02-24 23:34:36,603 - DSM_None_None_ - INFO - Type: LLM_RAG
+2025-02-24 23:34:36,604 - DSM_None_None_ - INFO - Reference: R1
+2025-02-24 23:34:37,388 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-02-24 23:34:37,390 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_ollama:deepseek-r1:14b-5k_20250223-214131/llm_rag_refs_R1/average_matrix_20250223-214131.csv
+2025-02-24 23:34:37,390 - DSM_None_None_ - INFO - Extracted model: deepseek-r1:14b-5k
+2025-02-24 23:34:37,391 - DSM_None_None_ - INFO - Creating similarity matrix text
+2025-02-24 23:34:37,402 - DSM_None_None_ - INFO - Creating prompt
+2025-02-24 23:34:37,403 - DSM_None_None_ - INFO - Attempting to use model: deepseek-r1:14b-5k
+2025-02-24 23:34:37,404 - DSM_None_None_ - INFO - Using Ollama path
+2025-02-24 23:34:37,405 - DSM_None_None_ - INFO - Model name: deepseek-r1:14b-5k
+2025-02-24 23:34:37,405 - DSM_None_None_ - INFO - Prompt length: 2100
+2025-02-24 23:35:23,325 - DSM_None_None_ - INFO - Response status code: 200
+2025-02-24 23:35:23,327 - DSM_None_None_ - INFO - API call succeeded
+2025-02-24 23:35:23,328 - DSM_None_None_ - INFO - Got response: <think>
+Okay, so I'm trying to figure out how to optimally match these ground truth components with ...
+2025-02-24 23:35:23,329 - DSM_None_None_ - INFO - 
+Initial LLM Suggested Mappings:
+2025-02-24 23:35:23,329 - DSM_None_None_ - INFO - Ground Truth Components: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software']
+2025-02-24 23:35:23,330 - DSM_None_None_ - INFO - Predicted Components: ['Structure/Chassis', 'Power System', 'Communication System', 'Onboard Computer', 'Attitude Control System', 'Payload']
+2025-02-24 23:35:23,331 - DSM_None_None_ - INFO - 
+Checking mapping: Spacecraft -> Payload
+2025-02-24 23:35:23,331 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 23:35:23,332 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 23:35:23,332 - DSM_None_None_ - INFO - 
+Checking mapping: Guidance, Navigation, and Control (GNC) Subsystem -> Attitude Control System
+2025-02-24 23:35:23,333 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 23:35:23,334 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 23:35:23,334 - DSM_None_None_ - INFO - 
+Checking mapping: Power Subsystem -> Power System
+2025-02-24 23:35:23,335 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 23:35:23,335 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 23:35:23,336 - DSM_None_None_ - INFO - 
+Checking mapping: Propulsion Subsystem -> Structure/Chassis
+2025-02-24 23:35:23,339 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 23:35:23,339 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 23:35:23,340 - DSM_None_None_ - INFO - 
+Checking mapping: Reaction Wheel -> Communication System
+2025-02-24 23:35:23,341 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 23:35:23,341 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 23:35:23,342 - DSM_None_None_ - INFO - 
+Checking mapping: GNC Software -> Onboard Computer
+2025-02-24 23:35:23,342 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 23:35:23,343 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 23:35:24,536 - DSM_None_None_ - INFO - Saved plot to ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_ollama:deepseek-r1:14b-5k_20250223-214131/llm_rag_refs_R1/plots/metrics_comparison.png
+2025-02-24 23:35:27,349 - DSM_None_None_ - INFO - Saved plot to ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_ollama:deepseek-r1:14b-5k_20250223-214131/llm_rag_refs_R1/plots/matrices_comparison.png
+2025-02-24 23:35:27,870 - DSM_None_None_ - INFO - 
+Results for ollama:deepseek-r1:14b-5k:
+2025-02-24 23:35:27,871 - DSM_None_None_ - INFO - 
+Raw Metrics:
+2025-02-24 23:35:27,872 - DSM_None_None_ - INFO - accuracy: 0.5556
+2025-02-24 23:35:27,873 - DSM_None_None_ - INFO - precision: 0.5556
+2025-02-24 23:35:27,874 - DSM_None_None_ - INFO - recall: 1.0000
+2025-02-24 23:35:27,875 - DSM_None_None_ - INFO - f1_score: 0.7143
+2025-02-24 23:35:27,875 - DSM_None_None_ - INFO - edit_distance: 16.0000
+2025-02-24 23:35:27,876 - DSM_None_None_ - INFO - spectral_distance: 3.1995
+2025-02-24 23:35:27,876 - DSM_None_None_ - INFO - 
+Aligned Metrics:
+2025-02-24 23:35:27,877 - DSM_None_None_ - INFO - accuracy: 0.5556
+2025-02-24 23:35:27,878 - DSM_None_None_ - INFO - precision: 0.5556
+2025-02-24 23:35:27,878 - DSM_None_None_ - INFO - recall: 1.0000
+2025-02-24 23:35:27,879 - DSM_None_None_ - INFO - f1_score: 0.7143
+2025-02-24 23:35:27,880 - DSM_None_None_ - INFO - edit_distance: 16.0000
+2025-02-24 23:35:27,880 - DSM_None_None_ - INFO - spectral_distance: 3.1995
+2025-02-24 23:35:27,881 - DSM_None_None_ - INFO - 
+Component Mapping:
+2025-02-24 23:35:27,882 - DSM_None_None_ - INFO -                               Ground Truth Component Matched Predicted Component
+0                                         Spacecraft                     Payload
+1  Guidance, Navigation, and Control (GNC) Subsystem     Attitude Control System
+2                                    Power Subsystem                Power System
+3                               Propulsion Subsystem           Structure/Chassis
+4                                     Reaction Wheel        Communication System
+5                                       GNC Software            Onboard Computer
+2025-02-25 01:06:33,777 - DSM_None_None_ - INFO - Resetting GPUs...
+2025-02-25 01:07:20,612 - DSM_None_None_ - INFO - Product: CubeSat
+2025-02-25 01:07:20,613 - DSM_None_None_ - INFO - Model: ollama:deepseek-r1:14b-5k
+2025-02-25 01:07:20,614 - DSM_None_None_ - INFO - Type: LLM_RAG
+2025-02-25 01:07:20,615 - DSM_None_None_ - INFO - Reference: R1
+2025-02-25 01:07:21,366 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-02-25 01:07:21,367 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_ollama:deepseek-r1:14b-5k_20250223-214131/llm_rag_refs_R1/average_matrix_20250223-214131.csv
+2025-02-25 01:07:21,368 - DSM_None_None_ - INFO - Extracted model: deepseek-r1:14b-5k
+2025-02-25 01:07:21,369 - DSM_None_None_ - INFO - Creating similarity matrix text
+2025-02-25 01:07:21,380 - DSM_None_None_ - INFO - Creating prompt
+2025-02-25 01:07:21,381 - DSM_None_None_ - INFO - Attempting to use model: deepseek-r1:14b-5k
+2025-02-25 01:07:21,382 - DSM_None_None_ - INFO - Using Ollama path
+2025-02-25 01:07:21,383 - DSM_None_None_ - INFO - Model name: deepseek-r1:14b-5k
+2025-02-25 01:07:21,383 - DSM_None_None_ - INFO - Prompt length: 2164
+2025-02-25 01:08:05,933 - DSM_None_None_ - INFO - Response status code: 200
+2025-02-25 01:08:05,934 - DSM_None_None_ - INFO - API call succeeded
+2025-02-25 01:08:05,935 - DSM_None_None_ - INFO - Got response: <think>
+Alright, let's tackle this problem step by step. The goal is to map each ground truth compon...
+2025-02-25 01:08:05,936 - DSM_None_None_ - INFO - 
+Initial LLM Suggested Mappings:
+2025-02-25 01:08:05,937 - DSM_None_None_ - INFO - Ground Truth Components: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software']
+2025-02-25 01:08:05,939 - DSM_None_None_ - INFO - Predicted Components: ['Structure/Chassis', 'Power System', 'Communication System', 'Onboard Computer', 'Attitude Control System', 'Payload']
+2025-02-25 01:08:05,940 - DSM_None_None_ - INFO - 
+Checking mapping: Spacecraft -> Payload
+2025-02-25 01:08:05,941 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 01:08:05,941 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 01:08:05,943 - DSM_None_None_ - INFO - 
+Checking mapping: Guidance, Navigation, and Control (GNC) Subsystem -> Attitude Control System
+2025-02-25 01:08:05,944 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 01:08:05,945 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 01:08:05,946 - DSM_None_None_ - INFO - 
+Checking mapping: Propulsion Subsystem -> Structure/Chassis
+2025-02-25 01:08:05,947 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 01:08:05,948 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 01:08:05,948 - DSM_None_None_ - INFO - 
+Checking mapping: Power Subsystem -> Power System
+2025-02-25 01:08:05,949 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 01:08:05,950 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 01:08:05,951 - DSM_None_None_ - INFO - 
+Checking mapping: Reaction Wheel -> Communication System
+2025-02-25 01:08:05,952 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 01:08:05,953 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 01:08:05,954 - DSM_None_None_ - INFO - 
+Checking mapping: GNC Software -> Onboard Computer
+2025-02-25 01:08:05,955 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 01:08:05,956 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 01:08:07,187 - DSM_None_None_ - INFO - Saved plot to ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_ollama:deepseek-r1:14b-5k_20250223-214131/llm_rag_refs_R1/plots/metrics_comparison.png
+2025-02-25 01:08:10,104 - DSM_None_None_ - INFO - Saved plot to ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_ollama:deepseek-r1:14b-5k_20250223-214131/llm_rag_refs_R1/plots/matrices_comparison.png
+2025-02-25 01:08:10,614 - DSM_None_None_ - INFO - 
+Results for ollama:deepseek-r1:14b-5k:
+2025-02-25 01:08:10,615 - DSM_None_None_ - INFO - 
+Raw Metrics:
+2025-02-25 01:08:10,616 - DSM_None_None_ - INFO - accuracy: 0.5556
+2025-02-25 01:08:10,617 - DSM_None_None_ - INFO - precision: 0.5556
+2025-02-25 01:08:10,617 - DSM_None_None_ - INFO - recall: 1.0000
+2025-02-25 01:08:10,618 - DSM_None_None_ - INFO - f1_score: 0.7143
+2025-02-25 01:08:10,619 - DSM_None_None_ - INFO - edit_distance: 16.0000
+2025-02-25 01:08:10,619 - DSM_None_None_ - INFO - spectral_distance: 3.1995
+2025-02-25 01:08:10,620 - DSM_None_None_ - INFO - 
+Aligned Metrics:
+2025-02-25 01:08:10,620 - DSM_None_None_ - INFO - accuracy: 0.5556
+2025-02-25 01:08:10,621 - DSM_None_None_ - INFO - precision: 0.5556
+2025-02-25 01:08:10,622 - DSM_None_None_ - INFO - recall: 1.0000
+2025-02-25 01:08:10,622 - DSM_None_None_ - INFO - f1_score: 0.7143
+2025-02-25 01:08:10,623 - DSM_None_None_ - INFO - edit_distance: 16.0000
+2025-02-25 01:08:10,624 - DSM_None_None_ - INFO - spectral_distance: 3.1995
+2025-02-25 01:08:10,624 - DSM_None_None_ - INFO - 
+Component Mapping:
+2025-02-25 01:08:10,626 - DSM_None_None_ - INFO -                               Ground Truth Component Matched Predicted Component
+0                                         Spacecraft                     Payload
+1  Guidance, Navigation, and Control (GNC) Subsystem     Attitude Control System
+2                               Propulsion Subsystem           Structure/Chassis
+3                                    Power Subsystem                Power System
+4                                     Reaction Wheel        Communication System
+5                                       GNC Software            Onboard Computer
+2025-02-25 03:46:23,802 - DSM_None_None_ - INFO - Resetting GPUs...
+2025-02-25 03:47:10,577 - DSM_None_None_ - INFO - Product: CubeSat
+2025-02-25 03:47:10,578 - DSM_None_None_ - INFO - Model: ollama:deepseek-r1:14b-5k
+2025-02-25 03:47:10,579 - DSM_None_None_ - INFO - Type: LLM_RAG
+2025-02-25 03:47:10,580 - DSM_None_None_ - INFO - Reference: R1
+2025-02-25 03:47:11,303 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-02-25 03:47:11,304 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_ollama:deepseek-r1:14b-5k_20250223-214131/llm_rag_refs_R1/average_matrix_20250223-214131.csv
+2025-02-25 03:47:11,304 - DSM_None_None_ - INFO - Extracted model: deepseek-r1:14b-5k
+2025-02-25 03:47:11,305 - DSM_None_None_ - INFO - Creating similarity matrix text
+2025-02-25 03:47:11,316 - DSM_None_None_ - INFO - Creating prompt
+2025-02-25 03:47:11,317 - DSM_None_None_ - INFO - Prompt: 
+Given these components from a cubesat, determine the optimal one-to-one mapping between ground truth and predicted components:
+
+    Ground Truth Components: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software']
+    Predicted Components: ['Structure/Chassis', 'Power System', 'Communication System', 'Onboard Computer', 'Attitude Control System', 'Payload']
+
+    Available matches (above 0.3 similarity threshold):
+    
+Spacecraft potential matches:
+- Structure/Chassis (similarity: 0.317)
+- Onboard Computer (similarity: 0.332)
+- Payload (similarity: 0.340)
+
+Guidance, Navigation, and Control (GNC) Subsystem potential matches:
+- Communication System (similarity: 0.391)
+- Onboard Computer (similarity: 0.394)
+- Attitude Control System (similarity: 0.449)
+
+Propulsion Subsystem potential matches:
+- Structure/Chassis (similarity: 0.359)
+- Power System (similarity: 0.460)
+- Communication System (similarity: 0.326)
+- Onboard Computer (similarity: 0.333)
+- Attitude Control System (similarity: 0.403)
+- Payload (similarity: 0.340)
+
+Power Subsystem potential matches:
+- Structure/Chassis (similarity: 0.313)
+- Power System (similarity: 0.786)
+- Communication System (similarity: 0.414)
+- Onboard Computer (similarity: 0.311)
+- Attitude Control System (similarity: 0.301)
+- Payload (similarity: 0.321)
+
+Reaction Wheel potential matches:
+- Structure/Chassis (similarity: 0.326)
+- Power System (similarity: 0.305)
+- Communication System (similarity: 0.338)
+
+GNC Software potential matches:
+- Onboard Computer (similarity: 0.355)
+
+
+    Task:
+    1. Consider ALL components simultaneously to find the optimal global matching
+    2. Each predicted component can only be matched ONCE
+    3. Each ground truth component should get at most one match
+    4. Consider:
+    - Similarity scores
+    - Functional equivalence
+    - System-level relationships
+    - Overall system coherence
+
+    Return in this format:
+    MAPPINGS:
+    [ground truth 1] -> [predicted 1]
+    [ground truth 2] -> [predicted 2]
+    ...
+    REASON: [brief explanation of the overall matching strategy]
+2025-02-25 03:47:11,319 - DSM_None_None_ - INFO - Attempting to use model: deepseek-r1:14b-5k
+2025-02-25 03:47:11,319 - DSM_None_None_ - INFO - Using Ollama path
+2025-02-25 03:47:11,320 - DSM_None_None_ - INFO - Model name: deepseek-r1:14b-5k
+2025-02-25 03:47:11,321 - DSM_None_None_ - INFO - Prompt length: 2154
+2025-02-25 03:48:55,320 - DSM_None_None_ - INFO - Response status code: 200
+2025-02-25 03:48:55,321 - DSM_None_None_ - INFO - API call succeeded
+2025-02-25 03:48:55,323 - DSM_None_None_ - INFO - Got response: <think>
+Okay, so I have to figure out how to optimally map the ground truth components from a cubesa...
+2025-02-25 03:48:55,324 - DSM_None_None_ - INFO - 
+Initial LLM Suggested Mappings:
+2025-02-25 03:48:55,325 - DSM_None_None_ - INFO - Ground Truth Components: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software']
+2025-02-25 03:48:55,326 - DSM_None_None_ - INFO - Predicted Components: ['Structure/Chassis', 'Power System', 'Communication System', 'Onboard Computer', 'Attitude Control System', 'Payload']
+2025-02-25 03:48:55,327 - DSM_None_None_ - INFO - 
+Checking mapping: Spacecraft -> Payload
+2025-02-25 03:48:55,328 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 03:48:55,329 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 03:48:55,330 - DSM_None_None_ - INFO - 
+Checking mapping: Guidance, Navigation, and Control (GNC) Subsystem -> Attitude Control System
+2025-02-25 03:48:55,331 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 03:48:55,332 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 03:48:55,333 - DSM_None_None_ - INFO - 
+Checking mapping: Power Subsystem -> Power System
+2025-02-25 03:48:55,333 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 03:48:55,334 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 03:48:55,335 - DSM_None_None_ - INFO - 
+Checking mapping: Propulsion Subsystem -> Structure/Chassis
+2025-02-25 03:48:55,336 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 03:48:55,337 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 03:48:55,337 - DSM_None_None_ - INFO - 
+Checking mapping: Reaction Wheel -> Communication System
+2025-02-25 03:48:55,338 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 03:48:55,339 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 03:48:55,342 - DSM_None_None_ - INFO - 
+Checking mapping: GNC Software -> Onboard Computer
+2025-02-25 03:48:55,343 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 03:48:55,344 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 03:48:56,578 - DSM_None_None_ - INFO - Saved plot to ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_ollama:deepseek-r1:14b-5k_20250223-214131/llm_rag_refs_R1/plots/metrics_comparison.png
+2025-02-25 03:48:59,531 - DSM_None_None_ - INFO - Saved plot to ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_ollama:deepseek-r1:14b-5k_20250223-214131/llm_rag_refs_R1/plots/matrices_comparison.png
+2025-02-25 03:49:00,058 - DSM_None_None_ - INFO - 
+Results for ollama:deepseek-r1:14b-5k:
+2025-02-25 03:49:00,058 - DSM_None_None_ - INFO - 
+Raw Metrics:
+2025-02-25 03:49:00,059 - DSM_None_None_ - INFO - accuracy: 0.5556
+2025-02-25 03:49:00,059 - DSM_None_None_ - INFO - precision: 0.5556
+2025-02-25 03:49:00,059 - DSM_None_None_ - INFO - recall: 1.0000
+2025-02-25 03:49:00,060 - DSM_None_None_ - INFO - f1_score: 0.7143
+2025-02-25 03:49:00,060 - DSM_None_None_ - INFO - edit_distance: 16.0000
+2025-02-25 03:49:00,061 - DSM_None_None_ - INFO - spectral_distance: 3.1995
+2025-02-25 03:49:00,061 - DSM_None_None_ - INFO - 
+Aligned Metrics:
+2025-02-25 03:49:00,062 - DSM_None_None_ - INFO - accuracy: 0.5556
+2025-02-25 03:49:00,062 - DSM_None_None_ - INFO - precision: 0.5556
+2025-02-25 03:49:00,062 - DSM_None_None_ - INFO - recall: 1.0000
+2025-02-25 03:49:00,063 - DSM_None_None_ - INFO - f1_score: 0.7143
+2025-02-25 03:49:00,064 - DSM_None_None_ - INFO - edit_distance: 16.0000
+2025-02-25 03:49:00,064 - DSM_None_None_ - INFO - spectral_distance: 3.1995
+2025-02-25 03:49:00,064 - DSM_None_None_ - INFO - 
+Component Mapping:
+2025-02-25 03:49:00,066 - DSM_None_None_ - INFO -                               Ground Truth Component Matched Predicted Component
+0                                         Spacecraft                     Payload
+1  Guidance, Navigation, and Control (GNC) Subsystem     Attitude Control System
+2                                    Power Subsystem                Power System
+3                               Propulsion Subsystem           Structure/Chassis
+4                                     Reaction Wheel        Communication System
+5                                       GNC Software            Onboard Computer
+2025-02-25 04:23:32,091 - DSM_None_None_ - INFO - Resetting GPUs...
+2025-02-25 04:24:18,746 - DSM_None_None_ - INFO - Product: CubeSat
+2025-02-25 04:24:18,748 - DSM_None_None_ - INFO - Model: ollama:deepseek-r1:14b-5k
+2025-02-25 04:24:18,749 - DSM_None_None_ - INFO - Type: LLM_RAG
+2025-02-25 04:24:18,750 - DSM_None_None_ - INFO - Reference: R1
+2025-02-25 04:24:19,662 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-02-25 04:24:19,663 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_ollama:deepseek-r1:14b-5k_20250223-214131/llm_rag_refs_R1/average_matrix_20250223-214131.csv
+2025-02-25 04:24:19,664 - DSM_None_None_ - INFO - Extracted model: deepseek-r1:14b-5k
+2025-02-25 04:24:19,664 - DSM_None_None_ - INFO - Creating similarity matrix text
+2025-02-25 04:24:19,676 - DSM_None_None_ - INFO - Creating prompt
+2025-02-25 04:24:19,677 - DSM_None_None_ - INFO - Prompt: 
+Given these components from a cubesat, determine the optimal one-to-one mapping between ground truth and predicted major components:
+
+    Ground Truth Components: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software']
+    Predicted Major Components: ['Structure/Chassis', 'Power System', 'Communication System', 'Onboard Computer', 'Attitude Control System', 'Payload']
+
+    Available matches (above 0.3 similarity threshold):
+    
+Spacecraft potential matches:
+- Structure/Chassis (similarity: 0.317)
+- Onboard Computer (similarity: 0.332)
+- Payload (similarity: 0.340)
+
+Guidance, Navigation, and Control (GNC) Subsystem potential matches:
+- Communication System (similarity: 0.391)
+- Onboard Computer (similarity: 0.394)
+- Attitude Control System (similarity: 0.449)
+
+Propulsion Subsystem potential matches:
+- Structure/Chassis (similarity: 0.359)
+- Power System (similarity: 0.460)
+- Communication System (similarity: 0.326)
+- Onboard Computer (similarity: 0.333)
+- Attitude Control System (similarity: 0.403)
+- Payload (similarity: 0.340)
+
+Power Subsystem potential matches:
+- Structure/Chassis (similarity: 0.313)
+- Power System (similarity: 0.786)
+- Communication System (similarity: 0.414)
+- Onboard Computer (similarity: 0.311)
+- Attitude Control System (similarity: 0.301)
+- Payload (similarity: 0.321)
+
+Reaction Wheel potential matches:
+- Structure/Chassis (similarity: 0.326)
+- Power System (similarity: 0.305)
+- Communication System (similarity: 0.338)
+
+GNC Software potential matches:
+- Onboard Computer (similarity: 0.355)
+
+
+    Task:
+    1. Consider ALL major components simultaneously to find the optimal global matching
+    2. Each predicted component can only be matched ONCE
+    3. Each ground truth component should get at most one match
+    4. Consider:
+    - Similarity scores
+    - Functional equivalence at the core architecture level
+    - System-level relationships (not subsystem relationships)
+    - Overall coherence of the cubesat
+
+    Return in this format:
+    MAPPINGS:
+    [ground truth 1] -> [predicted 1]
+    [ground truth 2] -> [predicted 2]
+    ...
+    REASON: [brief explanation of the overall matching strategy focused on major component identification]
+2025-02-25 04:24:19,678 - DSM_None_None_ - INFO - Attempting to use model: deepseek-r1:14b-5k
+2025-02-25 04:24:19,679 - DSM_None_None_ - INFO - Using Ollama path
+2025-02-25 04:24:19,679 - DSM_None_None_ - INFO - Model name: deepseek-r1:14b-5k
+2025-02-25 04:24:19,680 - DSM_None_None_ - INFO - Prompt length: 2283
+2025-02-25 04:25:01,675 - DSM_None_None_ - INFO - Response status code: 200
+2025-02-25 04:25:01,676 - DSM_None_None_ - INFO - API call succeeded
+2025-02-25 04:25:01,677 - DSM_None_None_ - INFO - Got response: <think>
+Okay, so I need to figure out how to optimally map the ground truth components from a cubesa...
+2025-02-25 04:25:01,678 - DSM_None_None_ - INFO - 
+Initial LLM Suggested Mappings:
+2025-02-25 04:25:01,678 - DSM_None_None_ - INFO - Ground Truth Components: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software']
+2025-02-25 04:25:01,679 - DSM_None_None_ - INFO - Predicted Components: ['Structure/Chassis', 'Power System', 'Communication System', 'Onboard Computer', 'Attitude Control System', 'Payload']
+2025-02-25 04:25:01,680 - DSM_None_None_ - INFO - 
+Checking mapping: Spacecraft -> Payload
+2025-02-25 04:25:01,681 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 04:25:01,682 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 04:25:01,683 - DSM_None_None_ - INFO - 
+Checking mapping: Guidance, Navigation, and Control (GNC) Subsystem -> Attitude Control System
+2025-02-25 04:25:01,684 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 04:25:01,685 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 04:25:01,686 - DSM_None_None_ - INFO - 
+Checking mapping: Propulsion Subsystem -> Power System
+2025-02-25 04:25:01,687 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 04:25:01,688 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 04:25:01,689 - DSM_None_None_ - INFO - 
+Checking mapping: Power Subsystem -> Communication System
+2025-02-25 04:25:01,689 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 04:25:01,690 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 04:25:01,691 - DSM_None_None_ - INFO - 
+Checking mapping: Reaction Wheel -> Structure/Chassis
+2025-02-25 04:25:01,692 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 04:25:01,693 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 04:25:01,694 - DSM_None_None_ - INFO - 
+Checking mapping: GNC Software -> Onboard Computer
+2025-02-25 04:25:01,695 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 04:25:01,696 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 04:25:02,913 - DSM_None_None_ - INFO - Saved plot to ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_ollama:deepseek-r1:14b-5k_20250223-214131/llm_rag_refs_R1/plots/metrics_comparison.png
+2025-02-25 04:25:05,729 - DSM_None_None_ - INFO - Saved plot to ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_ollama:deepseek-r1:14b-5k_20250223-214131/llm_rag_refs_R1/plots/matrices_comparison.png
+2025-02-25 04:25:06,233 - DSM_None_None_ - INFO - 
+Results for ollama:deepseek-r1:14b-5k:
+2025-02-25 04:25:06,234 - DSM_None_None_ - INFO - 
+Raw Metrics:
+2025-02-25 04:25:06,235 - DSM_None_None_ - INFO - accuracy: 0.5556
+2025-02-25 04:25:06,235 - DSM_None_None_ - INFO - precision: 0.5556
+2025-02-25 04:25:06,236 - DSM_None_None_ - INFO - recall: 1.0000
+2025-02-25 04:25:06,236 - DSM_None_None_ - INFO - f1_score: 0.7143
+2025-02-25 04:25:06,236 - DSM_None_None_ - INFO - edit_distance: 16.0000
+2025-02-25 04:25:06,237 - DSM_None_None_ - INFO - spectral_distance: 3.1995
+2025-02-25 04:25:06,237 - DSM_None_None_ - INFO - 
+Aligned Metrics:
+2025-02-25 04:25:06,238 - DSM_None_None_ - INFO - accuracy: 0.5556
+2025-02-25 04:25:06,238 - DSM_None_None_ - INFO - precision: 0.5556
+2025-02-25 04:25:06,238 - DSM_None_None_ - INFO - recall: 1.0000
+2025-02-25 04:25:06,239 - DSM_None_None_ - INFO - f1_score: 0.7143
+2025-02-25 04:25:06,239 - DSM_None_None_ - INFO - edit_distance: 16.0000
+2025-02-25 04:25:06,240 - DSM_None_None_ - INFO - spectral_distance: 3.1995
+2025-02-25 04:25:06,240 - DSM_None_None_ - INFO - 
+Component Mapping:
+2025-02-25 04:25:06,241 - DSM_None_None_ - INFO -                               Ground Truth Component Matched Predicted Component
+0                                         Spacecraft                     Payload
+1  Guidance, Navigation, and Control (GNC) Subsystem     Attitude Control System
+2                               Propulsion Subsystem                Power System
+3                                    Power Subsystem        Communication System
+4                                     Reaction Wheel           Structure/Chassis
+5                                       GNC Software            Onboard Computer
+2025-02-25 05:10:00,226 - DSM_None_None_ - INFO - Resetting GPUs...
+2025-02-25 05:10:46,945 - DSM_None_None_ - INFO - Product: CubeSat
+2025-02-25 05:10:46,947 - DSM_None_None_ - INFO - Model: ollama:deepseek-r1:14b-5k
+2025-02-25 05:10:46,947 - DSM_None_None_ - INFO - Type: LLM_RAG
+2025-02-25 05:10:46,948 - DSM_None_None_ - INFO - Reference: R1
+2025-02-25 05:10:48,232 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-02-25 05:10:48,233 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_ollama:deepseek-r1:14b-5k_20250223-214131/llm_rag_refs_R1/average_matrix_20250223-214131.csv
+2025-02-25 05:10:48,234 - DSM_None_None_ - INFO - Extracted model: deepseek-r1:14b-5k
+2025-02-25 05:10:48,235 - DSM_None_None_ - INFO - Creating similarity matrix text
+2025-02-25 05:10:48,246 - DSM_None_None_ - INFO - Creating prompt
+2025-02-25 05:10:48,247 - DSM_None_None_ - INFO - Attempting to use model: deepseek-r1:14b-5k
+2025-02-25 05:10:48,248 - DSM_None_None_ - INFO - Using Ollama path
+2025-02-25 05:10:48,249 - DSM_None_None_ - INFO - Model name: deepseek-r1:14b-5k
+2025-02-25 05:10:48,250 - DSM_None_None_ - INFO - Prompt length: 2283
+2025-02-25 05:11:33,832 - DSM_None_None_ - INFO - Response status code: 200
+2025-02-25 05:11:33,833 - DSM_None_None_ - INFO - API call succeeded
+2025-02-25 05:11:33,835 - DSM_None_None_ - INFO - Got response: <think>
+Okay, I need to figure out how to optimally map each ground truth component from the cubesat...
+2025-02-25 05:11:33,841 - DSM_None_None_ - INFO - Final mappings: {'Spacecraft': 'Payload', 'Guidance, Navigation, and Control (GNC) Subsystem': 'Attitude Control System', 'Propulsion Subsystem': 'Power System', 'Power Subsystem': 'Communication System', 'Reaction Wheel': 'Structure/Chassis', 'GNC Software': 'Onboard Computer'}
+2025-02-25 05:11:35,125 - DSM_None_None_ - INFO - Saved plot to ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_ollama:deepseek-r1:14b-5k_20250223-214131/llm_rag_refs_R1/plots/metrics_comparison.png
+2025-02-25 05:11:38,136 - DSM_None_None_ - INFO - Saved plot to ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_ollama:deepseek-r1:14b-5k_20250223-214131/llm_rag_refs_R1/plots/matrices_comparison.png
+2025-02-25 05:11:38,654 - DSM_None_None_ - INFO - 
+Results for ollama:deepseek-r1:14b-5k:
+2025-02-25 05:11:38,655 - DSM_None_None_ - INFO - 
+Raw Metrics:
+2025-02-25 05:11:38,656 - DSM_None_None_ - INFO - accuracy: 0.5556
+2025-02-25 05:11:38,656 - DSM_None_None_ - INFO - precision: 0.5556
+2025-02-25 05:11:38,657 - DSM_None_None_ - INFO - recall: 1.0000
+2025-02-25 05:11:38,658 - DSM_None_None_ - INFO - f1_score: 0.7143
+2025-02-25 05:11:38,659 - DSM_None_None_ - INFO - edit_distance: 16.0000
+2025-02-25 05:11:38,660 - DSM_None_None_ - INFO - spectral_distance: 3.1995
+2025-02-25 05:11:38,660 - DSM_None_None_ - INFO - 
+Aligned Metrics:
+2025-02-25 05:11:38,661 - DSM_None_None_ - INFO - accuracy: 0.5556
+2025-02-25 05:11:38,662 - DSM_None_None_ - INFO - precision: 0.5556
+2025-02-25 05:11:38,662 - DSM_None_None_ - INFO - recall: 1.0000
+2025-02-25 05:11:38,663 - DSM_None_None_ - INFO - f1_score: 0.7143
+2025-02-25 05:11:38,663 - DSM_None_None_ - INFO - edit_distance: 16.0000
+2025-02-25 05:11:38,664 - DSM_None_None_ - INFO - spectral_distance: 3.1995
+2025-02-25 05:11:38,665 - DSM_None_None_ - INFO - 
+Component Mapping:
+2025-02-25 05:11:38,666 - DSM_None_None_ - INFO -                               Ground Truth Component Matched Predicted Component
+0                                         Spacecraft                     Payload
+1  Guidance, Navigation, and Control (GNC) Subsystem     Attitude Control System
+2                               Propulsion Subsystem                Power System
+3                                    Power Subsystem        Communication System
+4                                     Reaction Wheel           Structure/Chassis
+5                                       GNC Software            Onboard Computer
+2025-02-25 05:45:25,624 - DSM_None_None_ - INFO - Resetting GPUs...
+2025-02-25 05:46:12,257 - DSM_None_None_ - INFO - Product: CubeSat
+2025-02-25 05:46:12,258 - DSM_None_None_ - INFO - Model: ollama:deepseek-r1:14b-5k
+2025-02-25 05:46:12,259 - DSM_None_None_ - INFO - Type: LLM_RAG
+2025-02-25 05:46:12,260 - DSM_None_None_ - INFO - Reference: R1
+2025-02-25 05:46:13,393 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-02-25 05:46:13,394 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_ollama:deepseek-r1:14b-5k_20250223-214131/llm_rag_refs_R1/average_matrix_20250223-214131.csv
+2025-02-25 05:46:13,394 - DSM_None_None_ - INFO - Extracted model: deepseek-r1:14b-5k
+2025-02-25 05:46:13,395 - DSM_None_None_ - INFO - Creating similarity matrix text
+2025-02-25 05:46:13,407 - DSM_None_None_ - INFO - Creating prompt
+2025-02-25 05:46:13,408 - DSM_None_None_ - INFO - Prompt: 
+You are an expert matching engine for cubesat systems. Your task is to determine the optimal one-to-one mapping between ground truth major components and predicted major components. Use the provided similarity scores and domain-specific rules to guide your decision.
+
+Ground Truth Components:
+['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software']
+
+Predicted Major Components:
+['Structure/Chassis', 'Power System', 'Communication System', 'Onboard Computer', 'Attitude Control System', 'Payload']
+
+Available Matches (only list those with similarity scores above 0.3):
+
+Spacecraft potential matches:
+- Structure/Chassis (similarity: 0.317)
+- Onboard Computer (similarity: 0.332)
+- Payload (similarity: 0.340)
+
+Guidance, Navigation, and Control (GNC) Subsystem potential matches:
+- Communication System (similarity: 0.391)
+- Onboard Computer (similarity: 0.394)
+- Attitude Control System (similarity: 0.449)
+
+Propulsion Subsystem potential matches:
+- Structure/Chassis (similarity: 0.359)
+- Power System (similarity: 0.460)
+- Communication System (similarity: 0.326)
+- Onboard Computer (similarity: 0.333)
+- Attitude Control System (similarity: 0.403)
+- Payload (similarity: 0.340)
+
+Power Subsystem potential matches:
+- Structure/Chassis (similarity: 0.313)
+- Power System (similarity: 0.786)
+- Communication System (similarity: 0.414)
+- Onboard Computer (similarity: 0.311)
+- Attitude Control System (similarity: 0.301)
+- Payload (similarity: 0.321)
+
+Reaction Wheel potential matches:
+- Structure/Chassis (similarity: 0.326)
+- Power System (similarity: 0.305)
+- Communication System (similarity: 0.338)
+
+GNC Software potential matches:
+- Onboard Computer (similarity: 0.355)
+
+
+Instructions:
+1. Evaluate each pairing based on:
+   - Embedding similarity scores.
+   - Functional equivalence at the core architecture level.
+   - System-level whole-part relationships.
+   - Overall coherence within the cubesat.
+2. Each predicted component may only be matched once.
+3. Each ground truth component may receive at most one match.
+4. Do not include any text other than what is specified below.
+
+Output Format (exactly as shown):
+--------------------------------------------------
+MAPPINGS:
+[ground truth 1] -> [predicted 1]
+[ground truth 2] -> [predicted 2]
+...
+REASON: [a brief explanation (one or two sentences) summarizing your mapping strategy]
+--------------------------------------------------
+
+Ensure that your output does not include additional headers, footers, or commentary. Your answer must strictly conform to this format.
+
+2025-02-25 05:46:13,409 - DSM_None_None_ - INFO - Attempting to use model: deepseek-r1:14b-5k
+2025-02-25 05:46:13,410 - DSM_None_None_ - INFO - Using Ollama path
+2025-02-25 05:46:13,411 - DSM_None_None_ - INFO - Model name: deepseek-r1:14b-5k
+2025-02-25 05:46:13,412 - DSM_None_None_ - INFO - Prompt length: 2617
+2025-02-25 05:48:17,873 - DSM_None_None_ - INFO - Response status code: 200
+2025-02-25 05:48:17,874 - DSM_None_None_ - INFO - API call succeeded
+2025-02-25 05:48:17,876 - DSM_None_None_ - INFO - Got response: <think>
+Alright, so I'm trying to figure out the optimal one-to-one mapping between the ground truth...
+2025-02-25 05:48:17,877 - DSM_None_None_ - INFO - 
+Initial LLM Suggested Mappings:
+2025-02-25 05:48:17,878 - DSM_None_None_ - INFO - Ground Truth Components: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software']
+2025-02-25 05:48:17,879 - DSM_None_None_ - INFO - Predicted Components: ['Structure/Chassis', 'Power System', 'Communication System', 'Onboard Computer', 'Attitude Control System', 'Payload']
+2025-02-25 05:48:17,880 - DSM_None_None_ - INFO - 
+Checking mapping: Spacecraft -> Structure/Chassis
+2025-02-25 05:48:17,881 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 05:48:17,882 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 05:48:17,883 - DSM_None_None_ - INFO - 
+Checking mapping: Guidance, Navigation, and Control (GNC) Subsystem -> Attitude Control System
+2025-02-25 05:48:17,884 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 05:48:17,885 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 05:48:17,886 - DSM_None_None_ - INFO - 
+Checking mapping: Propulsion Subsystem -> Structure/Chassis
+2025-02-25 05:48:17,887 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 05:48:17,887 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 05:48:17,889 - DSM_None_None_ - INFO - 
+Checking mapping: Power Subsystem -> Power System
+2025-02-25 05:48:17,889 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 05:48:17,890 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 05:48:17,891 - DSM_None_None_ - INFO - 
+Checking mapping: Reaction Wheel -> Communication System
+2025-02-25 05:48:17,892 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 05:48:17,893 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 05:48:17,894 - DSM_None_None_ - INFO - 
+Checking mapping: GNC Software -> Onboard Computer
+2025-02-25 05:48:17,894 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 05:48:17,895 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 05:48:19,136 - DSM_None_None_ - INFO - Saved plot to ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_ollama:deepseek-r1:14b-5k_20250223-214131/llm_rag_refs_R1/plots/metrics_comparison.png
+2025-02-25 05:48:21,967 - DSM_None_None_ - INFO - Saved plot to ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_ollama:deepseek-r1:14b-5k_20250223-214131/llm_rag_refs_R1/plots/matrices_comparison.png
+2025-02-25 05:48:22,493 - DSM_None_None_ - INFO - 
+Results for ollama:deepseek-r1:14b-5k:
+2025-02-25 05:48:22,495 - DSM_None_None_ - INFO - 
+Raw Metrics:
+2025-02-25 05:48:22,496 - DSM_None_None_ - INFO - accuracy: 0.5556
+2025-02-25 05:48:22,496 - DSM_None_None_ - INFO - precision: 0.5556
+2025-02-25 05:48:22,497 - DSM_None_None_ - INFO - recall: 1.0000
+2025-02-25 05:48:22,497 - DSM_None_None_ - INFO - f1_score: 0.7143
+2025-02-25 05:48:22,498 - DSM_None_None_ - INFO - edit_distance: 16.0000
+2025-02-25 05:48:22,499 - DSM_None_None_ - INFO - spectral_distance: 3.1995
+2025-02-25 05:48:22,499 - DSM_None_None_ - INFO - 
+Aligned Metrics:
+2025-02-25 05:48:22,500 - DSM_None_None_ - INFO - accuracy: 0.5556
+2025-02-25 05:48:22,501 - DSM_None_None_ - INFO - precision: 0.5556
+2025-02-25 05:48:22,501 - DSM_None_None_ - INFO - recall: 1.0000
+2025-02-25 05:48:22,502 - DSM_None_None_ - INFO - f1_score: 0.7143
+2025-02-25 05:48:22,502 - DSM_None_None_ - INFO - edit_distance: 16.0000
+2025-02-25 05:48:22,503 - DSM_None_None_ - INFO - spectral_distance: 3.1995
+2025-02-25 05:48:22,504 - DSM_None_None_ - INFO - 
+Component Mapping:
+2025-02-25 05:48:22,505 - DSM_None_None_ - INFO -                               Ground Truth Component Matched Predicted Component
+0                                         Spacecraft           Structure/Chassis
+1  Guidance, Navigation, and Control (GNC) Subsystem     Attitude Control System
+2                               Propulsion Subsystem           Structure/Chassis
+3                                    Power Subsystem                Power System
+4                                     Reaction Wheel        Communication System
+5                                       GNC Software            Onboard Computer
+2025-02-25 06:14:01,664 - DSM_None_None_ - INFO - Resetting GPUs...
+2025-02-25 07:08:55,828 - DSM_None_None_ - INFO - Resetting GPUs...
+2025-02-25 07:09:42,489 - DSM_None_None_ - INFO - Product: CubeSat
+2025-02-25 07:09:42,490 - DSM_None_None_ - INFO - Model: ollama:deepseek-r1:14b-5k
+2025-02-25 07:09:42,491 - DSM_None_None_ - INFO - Type: LLM_RAG
+2025-02-25 07:09:42,492 - DSM_None_None_ - INFO - Reference: R1
+2025-02-25 07:09:43,088 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-02-25 07:09:43,088 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_ollama:deepseek-r1:14b-5k_20250223-214131/llm_rag_refs_R1/average_matrix_20250223-214131.csv
+2025-02-25 07:09:43,089 - DSM_None_None_ - INFO - Extracted model: deepseek-r1:14b-5k
+2025-02-25 07:09:43,096 - DSM_None_None_ - INFO - Automatic high-similarity match: Power Subsystem -> Power System (similarity: 0.786)
+2025-02-25 07:09:43,109 - DSM_None_None_ - INFO - Prompt: 
+You are an expert matching engine for cubesat systems. Your task is to determine the optimal one-to-one mapping between remaining ground truth and predicted major components.
+
+Remaining Ground Truth Components:
+['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Reaction Wheel', 'GNC Software']
+
+Remaining Predicted Components:
+['Structure/Chassis', 'Communication System', 'Onboard Computer', 'Attitude Control System', 'Payload']
+
+Note: The following components have already been automatically matched due to high similarity (>0.8):
+['Power Subsystem -> Power System']
+
+Available Matches for Remaining Components (above 0.3 similarity threshold):
+
+Spacecraft potential matches:
+- Structure/Chassis (similarity: 0.317)
+- Onboard Computer (similarity: 0.332)
+- Payload (similarity: 0.340)
+
+Guidance, Navigation, and Control (GNC) Subsystem potential matches:
+- Communication System (similarity: 0.391)
+- Onboard Computer (similarity: 0.394)
+- Attitude Control System (similarity: 0.449)
+
+Propulsion Subsystem potential matches:
+- Structure/Chassis (similarity: 0.359)
+- Communication System (similarity: 0.326)
+- Onboard Computer (similarity: 0.333)
+- Attitude Control System (similarity: 0.403)
+- Payload (similarity: 0.340)
+
+Reaction Wheel potential matches:
+- Structure/Chassis (similarity: 0.326)
+- Communication System (similarity: 0.338)
+
+GNC Software potential matches:
+- Onboard Computer (similarity: 0.355)
+
+
+Instructions:
+1. Evaluate each pairing based on:
+   - Embedding similarity scores
+   - Functional equivalence at the core architecture level
+   - System-level whole-part relationships
+   - Overall coherence within the cubesat
+2. Each predicted component may only be matched once
+3. Each ground truth component may receive at most one match
+4. Do not include any text other than what is specified below
+5. Only match the remaining components - do not rematch already matched components
+
+Output Format (exactly as shown):
+--------------------------------------------------
+MAPPINGS:
+[ground truth 1] -> [predicted 1]
+[ground truth 2] -> [predicted 2]
+...
+REASON: [brief explanation focusing on functional equivalence]
+--------------------------------------------------
+2025-02-25 07:09:43,110 - DSM_None_None_ - INFO - Attempting to use model: deepseek-r1:14b-5k
+2025-02-25 07:09:43,111 - DSM_None_None_ - INFO - Using Ollama path
+2025-02-25 07:09:43,111 - DSM_None_None_ - INFO - Model name: deepseek-r1:14b-5k
+2025-02-25 07:09:43,112 - DSM_None_None_ - INFO - Prompt length: 2226
+2025-02-25 07:10:46,014 - DSM_None_None_ - INFO - Response status code: 200
+2025-02-25 07:10:46,016 - DSM_None_None_ - INFO - API call succeeded
+2025-02-25 07:10:46,017 - DSM_None_None_ - INFO - Got response: <think>
+Okay, so I need to figure out the optimal one-to-one mapping between the remaining ground tr...
+2025-02-25 07:10:46,018 - DSM_None_None_ - INFO - 
+Final Mappings:
+2025-02-25 07:10:46,019 - DSM_None_None_ - INFO - Automatic high-similarity matches: {'Power Subsystem': 'Power System'}
+2025-02-25 07:10:46,020 - DSM_None_None_ - INFO - LLM-suggested matches: {'Spacecraft': 'Payload', 'Guidance, Navigation, and Control (GNC) Subsystem': 'Attitude Control System', 'Propulsion Subsystem': 'Structure/Chassis', 'Reaction Wheel': 'Communication System', 'GNC Software': 'Onboard Computer'}
+2025-02-25 07:10:46,022 - DSM_None_None_ - INFO - Initial mapping: {'Power Subsystem': 'Power System', 'Spacecraft': 'Payload', 'Guidance, Navigation, and Control (GNC) Subsystem': 'Attitude Control System', 'Propulsion Subsystem': 'Structure/Chassis', 'Reaction Wheel': 'Communication System', 'GNC Software': 'Onboard Computer'}
+2025-02-25 07:10:47,254 - DSM_None_None_ - INFO - Saved plot to ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_ollama:deepseek-r1:14b-5k_20250223-214131/llm_rag_refs_R1/plots/metrics_comparison.png
+2025-02-25 07:10:50,083 - DSM_None_None_ - INFO - Saved plot to ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_ollama:deepseek-r1:14b-5k_20250223-214131/llm_rag_refs_R1/plots/matrices_comparison.png
+2025-02-25 07:10:50,616 - DSM_None_None_ - INFO - 
+Results for ollama:deepseek-r1:14b-5k:
+2025-02-25 07:10:50,618 - DSM_None_None_ - INFO - 
+Raw Metrics:
+2025-02-25 07:10:50,619 - DSM_None_None_ - INFO - accuracy: 0.5556
+2025-02-25 07:10:50,619 - DSM_None_None_ - INFO - precision: 0.5556
+2025-02-25 07:10:50,620 - DSM_None_None_ - INFO - recall: 1.0000
+2025-02-25 07:10:50,621 - DSM_None_None_ - INFO - f1_score: 0.7143
+2025-02-25 07:10:50,621 - DSM_None_None_ - INFO - edit_distance: 16.0000
+2025-02-25 07:10:50,622 - DSM_None_None_ - INFO - spectral_distance: 3.1995
+2025-02-25 07:10:50,623 - DSM_None_None_ - INFO - 
+Aligned Metrics:
+2025-02-25 07:10:50,623 - DSM_None_None_ - INFO - accuracy: 0.5556
+2025-02-25 07:10:50,624 - DSM_None_None_ - INFO - precision: 0.5556
+2025-02-25 07:10:50,624 - DSM_None_None_ - INFO - recall: 1.0000
+2025-02-25 07:10:50,625 - DSM_None_None_ - INFO - f1_score: 0.7143
+2025-02-25 07:10:50,626 - DSM_None_None_ - INFO - edit_distance: 16.0000
+2025-02-25 07:10:50,626 - DSM_None_None_ - INFO - spectral_distance: 3.1995
+2025-02-25 07:10:50,627 - DSM_None_None_ - INFO - 
+Component Mapping:
+2025-02-25 07:10:50,628 - DSM_None_None_ - INFO -                               Ground Truth Component Matched Predicted Component
+0                                    Power Subsystem                Power System
+1                                         Spacecraft                     Payload
+2  Guidance, Navigation, and Control (GNC) Subsystem     Attitude Control System
+3                               Propulsion Subsystem           Structure/Chassis
+4                                     Reaction Wheel        Communication System
+5                                       GNC Software            Onboard Computer

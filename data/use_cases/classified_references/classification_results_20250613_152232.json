@@ -1,0 +1,98 @@
+[
+  {
+    "reference_id": "ref_1",
+    "title": "[2021 Capelletti] R2-Cubesat from Mission Design to Operations",
+    "classification": "R2",
+    "confidence": 1,
+    "reasoning": "The reference is a handbook on CubeSats from mission design to operations. It is edited by experts in the field and includes contributions from multiple authors. The content type suggests that it contains formal and normative knowledge, which aligns with category R2. This type of document typically provides standardized information or guidelines for a specific industry or domain.",
+    "original_info": {
+      "id": "ref_1",
+      "title": "[2021 Capelletti] R2-Cubesat from Mission Design to Operations",
+      "authors": "",
+      "source": "reference_pdfs",
+      "year": "",
+      "description": "",
+      "file_path": "../data/use_cases/Spacecraft-CubeSat/reference_pdfs/[2021 Capelletti] R2-Cubesat from Mission Design to Operations.pdf"
+    }
+  },
+  {
+    "reference_id": "ref_2",
+    "title": "[2013 Asundi] R1-CubeSat_mission_a_systems_engineering_approach",
+    "classification": "R1",
+    "confidence": 0.95,
+    "reasoning": "The reference is a research paper or expert report, as indicated by the author's affiliation with Tuskegee University and the University of Florida, which are academic institutions. The content type is technical and appears to be peer-reviewed, given that it is published in 2013 and references NASA's Systems Engineering Handbook. Additionally, the authors are identified as experts in their respective fields.",
+    "original_info": {
+      "id": "ref_2",
+      "title": "[2013 Asundi] R1-CubeSat_mission_a_systems_engineering_approach",
+      "authors": "",
+      "source": "reference_pdfs",
+      "year": "",
+      "description": "",
+      "file_path": "../data/use_cases/Spacecraft-CubeSat/reference_pdfs/[2013 Asundi] R1-CubeSat_mission_a_systems_engineering_approach.pdf"
+    }
+  },
+  {
+    "reference_id": "ref_3",
+    "title": "[2023 Girardello] R1-GreatCUBE+_conceptual design tool for CubeSats design",
+    "classification": "R1",
+    "confidence": 0.95,
+    "reasoning": "The reference is a research paper published in the CEAS Space Journal, which is a peer-reviewed academic publication. The authors are listed as experts in their field, and the content of the paper discusses technical aspects related to CubeSats design, which falls under expert knowledge (R1).",
+    "original_info": {
+      "id": "ref_3",
+      "title": "[2023 Girardello] R1-GreatCUBE+_conceptual design tool for CubeSats design",
+      "authors": "",
+      "source": "reference_pdfs",
+      "year": "",
+      "description": "",
+      "file_path": "../data/use_cases/Spacecraft-CubeSat/reference_pdfs/[2023 Girardello] R1-GreatCUBE+_conceptual design tool for CubeSats design.pdf"
+    }
+  },
+  {
+    "reference_id": "ref_4",
+    "title": "[2012 Eppinger_Browning] R2-Design Structure Matrix Methods and Applications",
+    "classification": "R2",
+    "confidence": 1,
+    "reasoning": "The reference is classified as R2 because it appears to be a formal and normative knowledge source. The title suggests that the document discusses methods and applications of a design structure matrix, which implies an academic or technical focus. Additionally, the authors are listed, indicating that they may have expertise in the field, further supporting the classification as R2. The content type is also consistent with this category, as it seems to be a structured approach to design methodologies.",
+    "original_info": {
+      "id": "ref_4",
+      "title": "[2012 Eppinger_Browning] R2-Design Structure Matrix Methods and Applications",
+      "authors": "",
+      "source": "reference_pdfs",
+      "year": "",
+      "description": "",
+      "file_path": "../data/use_cases/Spacecraft-CubeSat/reference_pdfs/[2012 Eppinger_Browning] R2-Design Structure Matrix Methods and Applications.pdf"
+    }
+  },
+  {
+    "reference_id": "ref_5",
+    "title": "[2024 Autodesk_Instructables] R3-HyperDuino-based CubeSat _ 6 with Pictures) - Instructables",
+    "classification": "R3",
+    "confidence": 1.0,
+    "reasoning": "The reference is a user-generated guide on building a CubeSat based on the HyperDuino platform, which suggests it falls under non-expert knowledge as it is intended for individuals who may not have expert knowledge in this field. The content is informal and appears to be aimed at hobbyists or DIY enthusiasts rather than professionals or experts.",
+    "original_info": {
+      "id": "ref_5",
+      "title": "[2024 Autodesk_Instructables] R3-HyperDuino-based CubeSat _ 6 with Pictures) - Instructables",
+      "authors": "",
+      "source": "reference_pdfs",
+      "year": "",
+      "description": "",
+      "file_path": "../data/use_cases/Spacecraft-CubeSat/reference_pdfs/[2024 Autodesk_Instructables] R3-HyperDuino-based CubeSat _ 6 with Pictures) - Instructables.pdf"
+    }
+  },
+  {
+    "reference_id": "ref_6",
+    "title": "[2024 Autodesk_Instructables] R3-Launch-Ready SSTV CubeSat _ 7 with Pictures) - Instructables",
+    "classification": "R3",
+    "confidence": 1.0,
+    "reasoning": "The reference is a user-generated guide on building a satellite, which falls under the non-expert knowledge category. It is not peer-reviewed or from an authoritative source, but rather a DIY tutorial created by a community member. The content is informal and intended for individuals interested in space technology and satellite construction.",
+    "original_info": {
+      "id": "ref_6",
+      "title": "[2024 Autodesk_Instructables] R3-Launch-Ready SSTV CubeSat _ 7 with Pictures) - Instructables",
+      "authors": "",
+      "source": "reference_pdfs",
+      "year": "",
+      "description": "",
+      "file_path": "../data/use_cases/Spacecraft-CubeSat/reference_pdfs/[2024 Autodesk_Instructables] R3-Launch-Ready SSTV CubeSat _ 7 with Pictures) - Instructables.pdf"
+    }
+  }
+]

@@ -1,0 +1,128 @@
+2025-06-13 15:16:43,389 - __main__ - INFO - Initialized LLM with model: llava:13b
+2025-06-13 15:16:43,390 - __main__ - INFO - Initialized embeddings with model: nomic-embed-text
+2025-06-13 15:16:43,391 - __main__ - INFO - Built DataFrame from direct inputs with 6 references
+2025-06-13 15:16:43,391 - __main__ - INFO - Starting reference classification process
+2025-06-13 15:16:43,391 - __main__ - INFO - Starting classification of 6 references
+2025-06-13 15:16:43,393 - __main__ - INFO - Processing reference 1/6: [2021 Capelletti] R2-Cubesat from Mission Design to Operations
+2025-06-13 15:16:43,806 - __main__ - WARNING - Attempt 1 failed for reference [2021 Capelletti] R2-Cubesat from Mission Design to Operations: Ollama call failed with status code 400. Details: {"error":"illegal base64 data at input byte 4"}
+2025-06-13 15:16:43,843 - __main__ - WARNING - Attempt 2 failed for reference [2021 Capelletti] R2-Cubesat from Mission Design to Operations: Ollama call failed with status code 400. Details: {"error":"illegal base64 data at input byte 4"}
+2025-06-13 15:16:43,876 - __main__ - WARNING - Attempt 3 failed for reference [2021 Capelletti] R2-Cubesat from Mission Design to Operations: Ollama call failed with status code 400. Details: {"error":"illegal base64 data at input byte 4"}
+2025-06-13 15:16:43,876 - __main__ - INFO - Processing reference 2/6: [2013 Asundi] R1-CubeSat_mission_a_systems_engineering_approach
+2025-06-13 15:16:43,982 - __main__ - WARNING - Attempt 1 failed for reference [2013 Asundi] R1-CubeSat_mission_a_systems_engineering_approach: Ollama call failed with status code 400. Details: {"error":"illegal base64 data at input byte 4"}
+2025-06-13 15:16:44,055 - __main__ - WARNING - Attempt 2 failed for reference [2013 Asundi] R1-CubeSat_mission_a_systems_engineering_approach: Ollama call failed with status code 400. Details: {"error":"illegal base64 data at input byte 4"}
+2025-06-13 15:16:44,129 - __main__ - WARNING - Attempt 3 failed for reference [2013 Asundi] R1-CubeSat_mission_a_systems_engineering_approach: Ollama call failed with status code 400. Details: {"error":"illegal base64 data at input byte 4"}
+2025-06-13 15:16:44,130 - __main__ - INFO - Processing reference 3/6: [2023 Girardello] R1-GreatCUBE+_conceptual design tool for CubeSats design
+2025-06-13 15:16:44,217 - __main__ - WARNING - Attempt 1 failed for reference [2023 Girardello] R1-GreatCUBE+_conceptual design tool for CubeSats design: Ollama call failed with status code 400. Details: {"error":"illegal base64 data at input byte 4"}
+2025-06-13 15:16:44,277 - __main__ - WARNING - Attempt 2 failed for reference [2023 Girardello] R1-GreatCUBE+_conceptual design tool for CubeSats design: Ollama call failed with status code 400. Details: {"error":"illegal base64 data at input byte 4"}
+2025-06-13 15:16:44,337 - __main__ - WARNING - Attempt 3 failed for reference [2023 Girardello] R1-GreatCUBE+_conceptual design tool for CubeSats design: Ollama call failed with status code 400. Details: {"error":"illegal base64 data at input byte 4"}
+2025-06-13 15:16:44,337 - __main__ - INFO - Processing reference 4/6: [2012 Eppinger_Browning] R2-Design Structure Matrix Methods and Applications
+2025-06-13 15:16:44,365 - __main__ - WARNING - Attempt 1 failed for reference [2012 Eppinger_Browning] R2-Design Structure Matrix Methods and Applications: Ollama call failed with status code 400. Details: {"error":"illegal base64 data at input byte 4"}
+2025-06-13 15:16:44,390 - __main__ - WARNING - Attempt 2 failed for reference [2012 Eppinger_Browning] R2-Design Structure Matrix Methods and Applications: Ollama call failed with status code 400. Details: {"error":"illegal base64 data at input byte 4"}
+2025-06-13 15:16:44,416 - __main__ - WARNING - Attempt 3 failed for reference [2012 Eppinger_Browning] R2-Design Structure Matrix Methods and Applications: Ollama call failed with status code 400. Details: {"error":"illegal base64 data at input byte 4"}
+2025-06-13 15:16:44,416 - __main__ - INFO - Processing reference 5/6: [2024 Autodesk_Instructables] R3-HyperDuino-based CubeSat _ 6 with Pictures) - Instructables
+2025-06-13 15:16:44,556 - __main__ - WARNING - Attempt 1 failed for reference [2024 Autodesk_Instructables] R3-HyperDuino-based CubeSat _ 6 with Pictures) - Instructables: Ollama call failed with status code 400. Details: {"error":"illegal base64 data at input byte 4"}
+2025-06-13 15:16:44,679 - __main__ - WARNING - Attempt 2 failed for reference [2024 Autodesk_Instructables] R3-HyperDuino-based CubeSat _ 6 with Pictures) - Instructables: Ollama call failed with status code 400. Details: {"error":"illegal base64 data at input byte 4"}
+2025-06-13 15:16:44,797 - __main__ - WARNING - Attempt 3 failed for reference [2024 Autodesk_Instructables] R3-HyperDuino-based CubeSat _ 6 with Pictures) - Instructables: Ollama call failed with status code 400. Details: {"error":"illegal base64 data at input byte 4"}
+2025-06-13 15:16:44,797 - __main__ - INFO - Processing reference 6/6: [2024 Autodesk_Instructables] R3-Launch-Ready SSTV CubeSat _ 7 with Pictures) - Instructables
+2025-06-13 15:16:44,903 - __main__ - WARNING - Attempt 1 failed for reference [2024 Autodesk_Instructables] R3-Launch-Ready SSTV CubeSat _ 7 with Pictures) - Instructables: Ollama call failed with status code 400. Details: {"error":"illegal base64 data at input byte 4"}
+2025-06-13 15:16:44,995 - __main__ - WARNING - Attempt 2 failed for reference [2024 Autodesk_Instructables] R3-Launch-Ready SSTV CubeSat _ 7 with Pictures) - Instructables: Ollama call failed with status code 400. Details: {"error":"illegal base64 data at input byte 4"}
+2025-06-13 15:16:45,083 - __main__ - WARNING - Attempt 3 failed for reference [2024 Autodesk_Instructables] R3-Launch-Ready SSTV CubeSat _ 7 with Pictures) - Instructables: Ollama call failed with status code 400. Details: {"error":"illegal base64 data at input byte 4"}
+2025-06-13 15:16:45,084 - __main__ - INFO - Saved detailed results to: classified_references/classification_results_20250913_151645.json
+2025-06-13 15:16:45,093 - __main__ - INFO - Saved summary to: classified_references/classification_summary_20250913_151645.csv
+2025-06-13 15:16:45,093 - __main__ - INFO - Classification Statistics:
+2025-06-13 15:16:45,093 - __main__ - INFO - Total references: 6
+2025-06-13 15:16:45,093 - __main__ - INFO - R1 (Expert Knowledge): 0 (0.0%)
+2025-06-13 15:16:45,093 - __main__ - INFO - R2 (Formal/Normative): 0 (0.0%)
+2025-06-13 15:16:45,093 - __main__ - INFO - R3 (Non-expert): 0 (0.0%)
+2025-06-13 15:16:45,093 - __main__ - INFO - Errors: 6 (100.0%)
+2025-06-13 15:16:45,093 - __main__ - INFO - Unknown: 0 (0.0%)
+2025-06-13 15:16:45,093 - __main__ - INFO - Statistics saved to: classified_references/classification_statistics_20250913_151645.json
+2025-06-13 15:16:45,093 - __main__ - INFO - Classification process completed successfully
+2025-06-13 15:16:45,093 - __main__ - INFO - Results saved to: classified_references
+2025-06-13 15:18:18,441 - __main__ - INFO - Initialized LLM with model: llava:13b
+2025-06-13 15:18:18,442 - __main__ - INFO - Initialized embeddings with model: nomic-embed-text
+2025-06-13 15:18:18,443 - __main__ - INFO - Built DataFrame from direct inputs with 6 references
+2025-06-13 15:18:18,443 - __main__ - INFO - Starting reference classification process
+2025-06-13 15:18:18,443 - __main__ - INFO - Starting classification of 6 references
+2025-06-13 15:18:18,444 - __main__ - INFO - Processing reference 1/6: [2021 Capelletti] R2-Cubesat from Mission Design to Operations
+2025-06-13 15:18:18,836 - __main__ - WARNING - Attempt 1 failed for reference [2021 Capelletti] R2-Cubesat from Mission Design to Operations: Ollama call failed with status code 404. Maybe your model is not found and you should pull the model with `ollama pull llava:13b`.
+2025-06-13 15:18:18,873 - __main__ - WARNING - Attempt 2 failed for reference [2021 Capelletti] R2-Cubesat from Mission Design to Operations: Ollama call failed with status code 404. Maybe your model is not found and you should pull the model with `ollama pull llava:13b`.
+2025-06-13 15:18:18,907 - __main__ - WARNING - Attempt 3 failed for reference [2021 Capelletti] R2-Cubesat from Mission Design to Operations: Ollama call failed with status code 404. Maybe your model is not found and you should pull the model with `ollama pull llava:13b`.
+2025-06-13 15:18:18,908 - __main__ - INFO - Processing reference 2/6: [2013 Asundi] R1-CubeSat_mission_a_systems_engineering_approach
+2025-06-13 15:18:19,026 - __main__ - WARNING - Attempt 1 failed for reference [2013 Asundi] R1-CubeSat_mission_a_systems_engineering_approach: Ollama call failed with status code 404. Maybe your model is not found and you should pull the model with `ollama pull llava:13b`.
+2025-06-13 15:18:19,107 - __main__ - WARNING - Attempt 2 failed for reference [2013 Asundi] R1-CubeSat_mission_a_systems_engineering_approach: Ollama call failed with status code 404. Maybe your model is not found and you should pull the model with `ollama pull llava:13b`.
+2025-06-13 15:18:19,191 - __main__ - WARNING - Attempt 3 failed for reference [2013 Asundi] R1-CubeSat_mission_a_systems_engineering_approach: Ollama call failed with status code 404. Maybe your model is not found and you should pull the model with `ollama pull llava:13b`.
+2025-06-13 15:18:19,192 - __main__ - INFO - Processing reference 3/6: [2023 Girardello] R1-GreatCUBE+_conceptual design tool for CubeSats design
+2025-06-13 15:18:19,285 - __main__ - WARNING - Attempt 1 failed for reference [2023 Girardello] R1-GreatCUBE+_conceptual design tool for CubeSats design: Ollama call failed with status code 404. Maybe your model is not found and you should pull the model with `ollama pull llava:13b`.
+2025-06-13 15:18:19,351 - __main__ - WARNING - Attempt 2 failed for reference [2023 Girardello] R1-GreatCUBE+_conceptual design tool for CubeSats design: Ollama call failed with status code 404. Maybe your model is not found and you should pull the model with `ollama pull llava:13b`.
+2025-06-13 15:18:19,419 - __main__ - WARNING - Attempt 3 failed for reference [2023 Girardello] R1-GreatCUBE+_conceptual design tool for CubeSats design: Ollama call failed with status code 404. Maybe your model is not found and you should pull the model with `ollama pull llava:13b`.
+2025-06-13 15:18:19,420 - __main__ - INFO - Processing reference 4/6: [2012 Eppinger_Browning] R2-Design Structure Matrix Methods and Applications
+2025-06-13 15:18:19,451 - __main__ - WARNING - Attempt 1 failed for reference [2012 Eppinger_Browning] R2-Design Structure Matrix Methods and Applications: Ollama call failed with status code 404. Maybe your model is not found and you should pull the model with `ollama pull llava:13b`.
+2025-06-13 15:18:19,477 - __main__ - WARNING - Attempt 2 failed for reference [2012 Eppinger_Browning] R2-Design Structure Matrix Methods and Applications: Ollama call failed with status code 404. Maybe your model is not found and you should pull the model with `ollama pull llava:13b`.
+2025-06-13 15:18:19,504 - __main__ - WARNING - Attempt 3 failed for reference [2012 Eppinger_Browning] R2-Design Structure Matrix Methods and Applications: Ollama call failed with status code 404. Maybe your model is not found and you should pull the model with `ollama pull llava:13b`.
+2025-06-13 15:18:19,505 - __main__ - INFO - Processing reference 5/6: [2024 Autodesk_Instructables] R3-HyperDuino-based CubeSat _ 6 with Pictures) - Instructables
+2025-06-13 15:18:19,677 - __main__ - WARNING - Attempt 1 failed for reference [2024 Autodesk_Instructables] R3-HyperDuino-based CubeSat _ 6 with Pictures) - Instructables: Ollama call failed with status code 404. Maybe your model is not found and you should pull the model with `ollama pull llava:13b`.
+2025-06-13 15:18:19,827 - __main__ - WARNING - Attempt 2 failed for reference [2024 Autodesk_Instructables] R3-HyperDuino-based CubeSat _ 6 with Pictures) - Instructables: Ollama call failed with status code 404. Maybe your model is not found and you should pull the model with `ollama pull llava:13b`.
+2025-06-13 15:18:19,978 - __main__ - WARNING - Attempt 3 failed for reference [2024 Autodesk_Instructables] R3-HyperDuino-based CubeSat _ 6 with Pictures) - Instructables: Ollama call failed with status code 404. Maybe your model is not found and you should pull the model with `ollama pull llava:13b`.
+2025-06-13 15:18:19,979 - __main__ - INFO - Processing reference 6/6: [2024 Autodesk_Instructables] R3-Launch-Ready SSTV CubeSat _ 7 with Pictures) - Instructables
+2025-06-13 15:18:20,098 - __main__ - WARNING - Attempt 1 failed for reference [2024 Autodesk_Instructables] R3-Launch-Ready SSTV CubeSat _ 7 with Pictures) - Instructables: Ollama call failed with status code 404. Maybe your model is not found and you should pull the model with `ollama pull llava:13b`.
+2025-06-13 15:18:20,204 - __main__ - WARNING - Attempt 2 failed for reference [2024 Autodesk_Instructables] R3-Launch-Ready SSTV CubeSat _ 7 with Pictures) - Instructables: Ollama call failed with status code 404. Maybe your model is not found and you should pull the model with `ollama pull llava:13b`.
+2025-06-13 15:18:20,317 - __main__ - WARNING - Attempt 3 failed for reference [2024 Autodesk_Instructables] R3-Launch-Ready SSTV CubeSat _ 7 with Pictures) - Instructables: Ollama call failed with status code 404. Maybe your model is not found and you should pull the model with `ollama pull llava:13b`.
+2025-06-13 15:18:20,318 - __main__ - INFO - Saved detailed results to: classified_references/classification_results_20250913_151820.json
+2025-06-13 15:18:20,324 - __main__ - INFO - Saved summary to: classified_references/classification_summary_20250913_151820.csv
+2025-06-13 15:18:20,324 - __main__ - INFO - Classification Statistics:
+2025-06-13 15:18:20,324 - __main__ - INFO - Total references: 6
+2025-06-13 15:18:20,324 - __main__ - INFO - R1 (Expert Knowledge): 0 (0.0%)
+2025-06-13 15:18:20,324 - __main__ - INFO - R2 (Formal/Normative): 0 (0.0%)
+2025-06-13 15:18:20,324 - __main__ - INFO - R3 (Non-expert): 0 (0.0%)
+2025-06-13 15:18:20,324 - __main__ - INFO - Errors: 6 (100.0%)
+2025-06-13 15:18:20,324 - __main__ - INFO - Unknown: 0 (0.0%)
+2025-06-13 15:18:20,324 - __main__ - INFO - Statistics saved to: classified_references/classification_statistics_20250913_151820.json
+2025-06-13 15:18:20,324 - __main__ - INFO - Classification process completed successfully
+2025-06-13 15:18:20,324 - __main__ - INFO - Results saved to: classified_references
+2025-06-13 15:19:46,277 - __main__ - INFO - Initialized LLM with model: llava:7b
+2025-06-13 15:19:46,277 - __main__ - INFO - Initialized embeddings with model: nomic-embed-text
+2025-06-13 15:19:46,278 - __main__ - INFO - Built DataFrame from direct inputs with 6 references
+2025-06-13 15:19:46,278 - __main__ - INFO - Starting reference classification process
+2025-06-13 15:19:46,279 - __main__ - INFO - Starting classification of 6 references
+2025-06-13 15:19:46,281 - __main__ - INFO - Processing reference 1/6: [2021 Capelletti] R2-Cubesat from Mission Design to Operations
+2025-06-13 15:19:54,755 - __main__ - INFO - Processing reference 2/6: [2013 Asundi] R1-CubeSat_mission_a_systems_engineering_approach
+2025-06-13 15:19:56,529 - __main__ - INFO - Processing reference 3/6: [2023 Girardello] R1-GreatCUBE+_conceptual design tool for CubeSats design
+2025-06-13 15:19:58,347 - __main__ - INFO - Processing reference 4/6: [2012 Eppinger_Browning] R2-Design Structure Matrix Methods and Applications
+2025-06-13 15:20:00,364 - __main__ - INFO - Processing reference 5/6: [2024 Autodesk_Instructables] R3-HyperDuino-based CubeSat _ 6 with Pictures) - Instructables
+2025-06-13 15:20:02,359 - __main__ - INFO - Processing reference 6/6: [2024 Autodesk_Instructables] R3-Launch-Ready SSTV CubeSat _ 7 with Pictures) - Instructables
+2025-06-13 15:20:02,788 - __main__ - INFO - Saved detailed results to: classified_references/classification_results_20250913_152002.json
+2025-06-13 15:20:02,794 - __main__ - INFO - Saved summary to: classified_references/classification_summary_20250913_152002.csv
+2025-06-13 15:20:02,795 - __main__ - INFO - Classification Statistics:
+2025-06-13 15:20:02,795 - __main__ - INFO - Total references: 6
+2025-06-13 15:20:02,795 - __main__ - INFO - R1 (Expert Knowledge): 2 (33.3%)
+2025-06-13 15:20:02,795 - __main__ - INFO - R2 (Formal/Normative): 2 (33.3%)
+2025-06-13 15:20:02,795 - __main__ - INFO - R3 (Non-expert): 2 (33.3%)
+2025-06-13 15:20:02,795 - __main__ - INFO - Errors: 0 (0.0%)
+2025-06-13 15:20:02,795 - __main__ - INFO - Unknown: 0 (0.0%)
+2025-06-13 15:20:02,795 - __main__ - INFO - Statistics saved to: classified_references/classification_statistics_20250913_152002.json
+2025-06-13 15:20:02,795 - __main__ - INFO - Classification process completed successfully
+2025-06-13 15:20:02,795 - __main__ - INFO - Results saved to: classified_references
+2025-06-13 15:22:20,350 - __main__ - INFO - Initialized LLM with model: llava:7b
+2025-06-13 15:22:20,351 - __main__ - INFO - Initialized embeddings with model: nomic-embed-text
+2025-06-13 15:22:20,352 - __main__ - INFO - Built DataFrame from direct inputs with 6 references
+2025-06-13 15:22:20,353 - __main__ - INFO - Starting reference classification process
+2025-06-13 15:22:20,353 - __main__ - INFO - Starting classification of 6 references
+2025-06-13 15:22:20,355 - __main__ - INFO - Processing reference 1/6: [2021 Capelletti] R2-Cubesat from Mission Design to Operations
+2025-06-13 15:22:22,706 - __main__ - INFO - Processing reference 2/6: [2013 Asundi] R1-CubeSat_mission_a_systems_engineering_approach
+2025-06-13 15:22:24,828 - __main__ - INFO - Processing reference 3/6: [2023 Girardello] R1-GreatCUBE+_conceptual design tool for CubeSats design
+2025-06-13 15:22:26,655 - __main__ - INFO - Processing reference 4/6: [2012 Eppinger_Browning] R2-Design Structure Matrix Methods and Applications
+2025-06-13 15:22:28,612 - __main__ - INFO - Processing reference 5/6: [2024 Autodesk_Instructables] R3-HyperDuino-based CubeSat _ 6 with Pictures) - Instructables
+2025-06-13 15:22:30,663 - __main__ - INFO - Processing reference 6/6: [2024 Autodesk_Instructables] R3-Launch-Ready SSTV CubeSat _ 7 with Pictures) - Instructables
+2025-06-13 15:22:32,558 - __main__ - INFO - Saved detailed results to: ../data/use_cases/classified_references/classification_results_20250913_152232.json
+2025-06-13 15:22:32,563 - __main__ - INFO - Saved summary to: ../data/use_cases/classified_references/classification_summary_20250913_152232.csv
+2025-06-13 15:22:32,563 - __main__ - INFO - Classification Statistics:
+2025-06-13 15:22:32,563 - __main__ - INFO - Total references: 6
+2025-06-13 15:22:32,563 - __main__ - INFO - R1 (Expert Knowledge): 2 (33.3%)
+2025-06-13 15:22:32,563 - __main__ - INFO - R2 (Formal/Normative): 2 (33.3%)
+2025-06-13 15:22:32,563 - __main__ - INFO - R3 (Non-expert): 2 (33.3%)
+2025-06-13 15:22:32,563 - __main__ - INFO - Errors: 0 (0.0%)
+2025-06-13 15:22:32,563 - __main__ - INFO - Unknown: 0 (0.0%)
+2025-06-13 15:22:32,563 - __main__ - INFO - Statistics saved to: ../data/use_cases/classified_references/classification_statistics_20250913_152232.json
+2025-06-13 15:22:32,563 - __main__ - INFO - Classification process completed successfully
+2025-06-13 15:22:32,563 - __main__ - INFO - Results saved to: ../data/use_cases/classified_references

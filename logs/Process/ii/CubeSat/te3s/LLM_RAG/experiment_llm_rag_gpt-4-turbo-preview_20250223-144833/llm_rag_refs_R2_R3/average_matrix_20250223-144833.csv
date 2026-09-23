@@ -1,0 +1,7 @@
+,primary structure,secondary structure,payload,power system,communication system,on-board computer
+primary structure,1,1,1,1,1,1
+secondary structure,0,1,0,0,0,0
+payload,0,0,1,1,1,1
+power system,0,0,0,1,0,1
+communication system,0,0,0,1,1,1
+on-board computer,0,0,0,1,1,1

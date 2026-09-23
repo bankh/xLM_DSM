@@ -1,0 +1,58 @@
+Running graphrag command...
+Command: python -m graphrag query --method local --query Please identify system-level proximity relationships between the components of power screwdriver, as listed below, and represent them in a Design Structure Matrix (DSM) format.  
+
+The relationships should be articulated in plain English, capturing the essence of their interactions. 
+
+Here is the list of subsystems/components to analyze: ['Bit', 'Transmission', 'Motor', 'Electrical System', 'Battery Holder', 'Housing', 'External Environment'] 
+
+The DSM should clearly indicate the interactions between these components as 1 exist and 0 does not exist, considering both the presence and nature of these connections. 
+    
+Present the output in a square matrix format (number of rows and columns MUST be the same as the number of components = 7 for this example), with rows and columns labeled accordingly. 
+
+Diagonal elements should be 1 in DSM matrix since each component interacts with itself. 
+
+If you don't know the answer, just write 2 for the specific cell that you are unsure of. A worst case scenario of the **as a list of lists** shown below (diagonal elements are 1 and rest are 2). Don't make up an answer. 
+
+This is an example of the output format for 7 components (as 7x7 matrix)-based on our system-of-interest the size of the matrix can change. 
+
+{
+  "final_response": [[1, 2, 2, 2, 2, 2, 2], [2, 1, 2, 2, 2, 2, 2], [2, 2, 1, 2, 2, 2, 2],[2, 2, 2, 1, 2, 2, 2],[2, 2, 2, 2, 1, 2, 2],[2, 2, 2, 2, 2, 1, 2],[2, 2, 2, 2, 2, 2, 1]]
+}
+
+IMPORTANT: Your response must **ONLY** contain a valid **as a list of lists** as json in the following example format 7x7 matrix. 
+
+The below list of lists is just an example format of your response. **Replace** the values with your **actual analysis** while providing your response with parameter of 'final response'.
+
+This is an example of the output format for 7 components (as 7x7 matrix)-based on our system-of-interest the size of the matrix can change. 
+
+IMPORTANT: Your response MUST be a valid JSON object in the following format:
+{
+  "final_response": [[1,0,0,0,0,0,0], [0,1,0,0,0,0,0], ...]
+} --root ./
+
+
+
+INFO: Vector Store Args: {
+    "type": "lancedb",
+    "db_uri": "/ragtest/PS/auto_gpt4tp_r2_r3-te3s/output/lancedb",
+    "container_name": "==== REDACTED ====",
+    "overwrite": true
+}
+creating llm client with {'api_key': 'REDACTED,len=164', 'type': "openai_chat", 'encoding_model': 'cl100k_base', 'model': 'gpt-4-turbo-preview', 'max_tokens': 4000, 'temperature': 0.0, 'top_p': 1.0, 'n': 1, 'frequency_penalty': 0.0, 'presence_penalty': 0.0, 'request_timeout': 180.0, 'api_base': None, 'api_version': None, 'organization': None, 'proxy': None, 'audience': None, 'deployment_name': None, 'model_supports_json': True, 'tokens_per_minute': 0, 'requests_per_minute': 0, 'max_retries': 10, 'max_retry_wait': 10.0, 'sleep_on_rate_limit_recommendation': True, 'concurrent_requests': 25, 'responses': None}
+creating embedding llm client with {'api_key': 'REDACTED,len=164', 'type': "openai_embedding", 'encoding_model': 'cl100k_base', 'model': 'text-embedding-3-small', 'max_tokens': 4000, 'temperature': 0, 'top_p': 1, 'n': 1, 'frequency_penalty': 0.0, 'presence_penalty': 0.0, 'request_timeout': 180.0, 'api_base': None, 'api_version': None, 'organization': None, 'proxy': None, 'audience': None, 'deployment_name': None, 'model_supports_json': None, 'tokens_per_minute': 0, 'requests_per_minute': 0, 'max_retries': 10, 'max_retry_wait': 10.0, 'sleep_on_rate_limit_recommendation': True, 'concurrent_requests': 25, 'responses': None}
+
+SUCCESS: Local Search Response:
+```json
+{
+  "final_response": [
+    [1, 1, 0, 0, 0, 0, 0],
+    [1, 1, 1, 1, 0, 1, 0],
+    [0, 1, 1, 1, 0, 1, 0],
+    [0, 1, 1, 1, 1, 1, 0],
+    [0, 0, 0, 1, 1, 1, 0],
+    [0, 1, 1, 1, 1, 1, 1],
+    [0, 0, 0, 0, 0, 1, 1]
+  ]
+}
+```
+Command completed and logged to logs/cc_test_run_20250329_232802.log

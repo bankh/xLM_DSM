@@ -1,0 +1,7 @@
+,Structural Frame,Power System,Command and Data Handling (C&DH),Communication System,Attitude Determination and Control System (ADCS),Payload
+Structural Frame,1,1,1,1,1,1
+Power System,0,1,1,1,0,0
+Command and Data Handling (C&DH),0,0,1,1,1,1
+Communication System,0,0,0,1,1,1
+Attitude Determination and Control System (ADCS),0,0,1,0,1,0
+Payload,0,0,0,1,0,1

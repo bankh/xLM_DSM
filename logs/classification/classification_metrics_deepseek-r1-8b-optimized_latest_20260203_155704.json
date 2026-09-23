@@ -1,0 +1,37 @@
+{
+  "accuracy": 1.0,
+  "n_with_ground_truth": 7,
+  "n_total": 7,
+  "confusion_matrix": {
+    "R1": {
+      "R1": 2,
+      "R2": 0,
+      "R3": 0
+    },
+    "R2": {
+      "R1": 0,
+      "R2": 2,
+      "R3": 0
+    },
+    "R3": {
+      "R1": 0,
+      "R2": 0,
+      "R3": 3
+    }
+  },
+  "precision_per_class": {
+    "R1": 1.0,
+    "R2": 1.0,
+    "R3": 1.0
+  },
+  "recall_per_class": {
+    "R1": 1.0,
+    "R2": 1.0,
+    "R3": 1.0
+  },
+  "f1_per_class": {
+    "R1": 1.0,
+    "R2": 1.0,
+    "R3": 1.0
+  }
+}

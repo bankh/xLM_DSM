@@ -1,0 +1,101 @@
+2025-02-24 04:50:49,193 - DSM_None_None_ - INFO - Product: CubeSat
+2025-02-24 04:50:49,194 - DSM_None_None_ - INFO - Model: gpt-4o-2024-11-20
+2025-02-24 04:50:49,194 - DSM_None_None_ - INFO - Type: LLM
+2025-02-24 04:50:50,181 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-02-24 04:50:50,182 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/CubeSat/LLM/experiment_llm_gpt-4o-2024-11-20_20250222-205055/llm_refs_baseline/average_matrix_20250222-205055.csv
+2025-02-24 04:50:50,182 - DSM_None_None_ - INFO - Extracted model: gpt-4o-2024-11-20
+2025-02-24 04:50:50,183 - DSM_None_None_ - INFO - Creating similarity matrix text
+2025-02-24 04:50:50,194 - DSM_None_None_ - INFO - Creating prompt
+2025-02-24 04:50:50,195 - DSM_None_None_ - INFO - Attempting to use model: gpt-4o-2024-11-20
+2025-02-24 04:50:57,151 - DSM_None_None_ - INFO - 
+Initial LLM Suggested Mappings:
+2025-02-24 04:50:57,152 - DSM_None_None_ - INFO - Ground Truth Components: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software']
+2025-02-24 04:50:57,153 - DSM_None_None_ - INFO - Predicted Components: ['Structure', 'Power System', 'Communication System', 'Payload', 'Attitude Determination and Control System', 'On-Board Computer']
+2025-02-24 04:50:57,156 - DSM_None_None_ - ERROR - No valid component mappings found
+2025-02-24 05:19:52,123 - DSM_None_None_ - INFO - Product: CubeSat
+2025-02-24 05:19:52,125 - DSM_None_None_ - INFO - Model: gpt-4o-2024-11-20
+2025-02-24 05:19:52,125 - DSM_None_None_ - INFO - Type: LLM
+2025-02-24 05:19:52,672 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-02-24 05:19:52,673 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/CubeSat/LLM/experiment_llm_gpt-4o-2024-11-20_20250222-205055/llm_refs_baseline/average_matrix_20250222-205055.csv
+2025-02-24 05:19:52,673 - DSM_None_None_ - INFO - Extracted model: gpt-4o-2024-11-20
+2025-02-24 05:19:52,674 - DSM_None_None_ - INFO - Creating similarity matrix text
+2025-02-24 05:19:52,685 - DSM_None_None_ - INFO - Creating prompt
+2025-02-24 05:19:52,686 - DSM_None_None_ - INFO - Attempting to use model: gpt-4o-2024-11-20
+2025-02-24 05:19:59,950 - DSM_None_None_ - INFO - 
+Initial LLM Suggested Mappings:
+2025-02-24 05:19:59,951 - DSM_None_None_ - INFO - Ground Truth Components: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software']
+2025-02-24 05:19:59,952 - DSM_None_None_ - INFO - Predicted Components: ['Structure', 'Power System', 'Communication System', 'Payload', 'Attitude Determination and Control System', 'On-Board Computer']
+2025-02-24 05:19:59,954 - DSM_None_None_ - ERROR - No valid component mappings found
+2025-02-24 07:05:22,487 - DSM_None_None_ - INFO - Product: CubeSat
+2025-02-24 07:05:22,488 - DSM_None_None_ - INFO - Model: gpt-4o-2024-11-20
+2025-02-24 07:05:22,489 - DSM_None_None_ - INFO - Type: LLM
+2025-02-24 07:05:23,586 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-02-24 07:05:23,587 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/CubeSat/LLM/experiment_llm_gpt-4o-2024-11-20_20250222-205055/llm_refs_baseline/average_matrix_20250222-205055.csv
+2025-02-24 07:05:23,588 - DSM_None_None_ - INFO - Extracted model: gpt-4o-2024-11-20
+2025-02-24 07:05:23,588 - DSM_None_None_ - INFO - Creating similarity matrix text
+2025-02-24 07:05:23,600 - DSM_None_None_ - INFO - Creating prompt
+2025-02-24 07:05:23,602 - DSM_None_None_ - INFO - Attempting to use model: gpt-4o-2024-11-20
+2025-02-24 07:05:32,527 - DSM_None_None_ - INFO - 
+Initial LLM Suggested Mappings:
+2025-02-24 07:05:32,528 - DSM_None_None_ - INFO - Ground Truth Components: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software']
+2025-02-24 07:05:32,529 - DSM_None_None_ - INFO - Predicted Components: ['Structure', 'Power System', 'Communication System', 'Payload', 'Attitude Determination and Control System', 'On-Board Computer']
+2025-02-24 07:05:32,533 - DSM_None_None_ - ERROR - No valid component mappings found
+2025-02-24 16:23:04,732 - DSM_None_None_ - INFO - Product: CubeSat
+2025-02-24 16:23:04,733 - DSM_None_None_ - INFO - Model: gpt-4o-2024-11-20
+2025-02-24 16:23:04,734 - DSM_None_None_ - INFO - Type: LLM
+2025-02-24 16:23:05,752 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-02-24 16:23:05,753 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/CubeSat/LLM/experiment_llm_gpt-4o-2024-11-20_20250222-205055/llm_refs_baseline/average_matrix_20250222-205055.csv
+2025-02-24 16:23:05,754 - DSM_None_None_ - INFO - Extracted model: gpt-4o-2024-11-20
+2025-02-24 16:23:05,754 - DSM_None_None_ - INFO - Creating similarity matrix text
+2025-02-24 16:23:05,768 - DSM_None_None_ - INFO - Creating prompt
+2025-02-24 16:23:05,769 - DSM_None_None_ - INFO - Attempting to use model: gpt-4o-2024-11-20
+2025-02-24 16:23:12,805 - DSM_None_None_ - INFO - 
+Initial LLM Suggested Mappings:
+2025-02-24 16:23:12,806 - DSM_None_None_ - INFO - Ground Truth Components: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software']
+2025-02-24 16:23:12,807 - DSM_None_None_ - INFO - Predicted Components: ['Structure', 'Power System', 'Communication System', 'Payload', 'Attitude Determination and Control System', 'On-Board Computer']
+2025-02-24 16:23:12,810 - DSM_None_None_ - ERROR - No valid component mappings found
+2025-02-24 22:37:55,932 - DSM_None_None_ - INFO - Resetting GPUs...
+2025-02-24 22:38:42,684 - DSM_None_None_ - INFO - Product: CubeSat
+2025-02-24 22:38:42,685 - DSM_None_None_ - INFO - Model: gpt-4o-2024-11-20
+2025-02-24 22:38:42,686 - DSM_None_None_ - INFO - Type: LLM
+2025-02-24 22:38:44,331 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-02-24 22:38:44,332 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/CubeSat/LLM/experiment_llm_gpt-4o-2024-11-20_20250222-205055/llm_refs_baseline/average_matrix_20250222-205055.csv
+2025-02-24 22:38:44,333 - DSM_None_None_ - INFO - Extracted model: gpt-4o-2024-11-20
+2025-02-24 22:38:44,334 - DSM_None_None_ - INFO - Creating similarity matrix text
+2025-02-24 22:38:44,345 - DSM_None_None_ - INFO - Creating prompt
+2025-02-24 22:38:44,346 - DSM_None_None_ - INFO - Attempting to use model: gpt-4o-2024-11-20
+2025-02-24 22:38:53,705 - DSM_None_None_ - INFO - 
+Initial LLM Suggested Mappings:
+2025-02-24 22:38:53,706 - DSM_None_None_ - INFO - Ground Truth Components: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software']
+2025-02-24 22:38:53,707 - DSM_None_None_ - INFO - Predicted Components: ['Structure', 'Power System', 'Communication System', 'Payload', 'Attitude Determination and Control System', 'On-Board Computer']
+2025-02-24 22:38:53,709 - DSM_None_None_ - ERROR - No valid component mappings found
+2025-02-24 23:09:15,345 - DSM_None_None_ - INFO - Resetting GPUs...
+2025-02-24 23:10:02,125 - DSM_None_None_ - INFO - Product: CubeSat
+2025-02-24 23:10:02,126 - DSM_None_None_ - INFO - Model: gpt-4o-2024-11-20
+2025-02-24 23:10:02,127 - DSM_None_None_ - INFO - Type: LLM
+2025-02-24 23:10:03,100 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-02-24 23:10:03,101 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/CubeSat/LLM/experiment_llm_gpt-4o-2024-11-20_20250222-205055/llm_refs_baseline/average_matrix_20250222-205055.csv
+2025-02-24 23:10:03,101 - DSM_None_None_ - INFO - Extracted model: gpt-4o-2024-11-20
+2025-02-24 23:10:03,101 - DSM_None_None_ - INFO - Creating similarity matrix text
+2025-02-24 23:10:03,113 - DSM_None_None_ - INFO - Creating prompt
+2025-02-24 23:10:03,114 - DSM_None_None_ - INFO - Attempting to use model: gpt-4o-2024-11-20
+2025-02-24 23:10:12,068 - DSM_None_None_ - INFO - 
+Initial LLM Suggested Mappings:
+2025-02-24 23:10:12,069 - DSM_None_None_ - INFO - Ground Truth Components: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software']
+2025-02-24 23:10:12,071 - DSM_None_None_ - INFO - Predicted Components: ['Structure', 'Power System', 'Communication System', 'Payload', 'Attitude Determination and Control System', 'On-Board Computer']
+2025-02-24 23:10:12,074 - DSM_None_None_ - ERROR - No valid component mappings found
+2025-02-24 23:20:38,340 - DSM_None_None_ - INFO - Resetting GPUs...
+2025-02-24 23:21:25,020 - DSM_None_None_ - INFO - Product: CubeSat
+2025-02-24 23:21:25,021 - DSM_None_None_ - INFO - Model: gpt-4o-2024-11-20
+2025-02-24 23:21:25,022 - DSM_None_None_ - INFO - Type: LLM
+2025-02-24 23:21:26,413 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-02-24 23:21:26,414 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/CubeSat/LLM/experiment_llm_gpt-4o-2024-11-20_20250222-205055/llm_refs_baseline/average_matrix_20250222-205055.csv
+2025-02-24 23:21:26,415 - DSM_None_None_ - INFO - Extracted model: gpt-4o-2024-11-20
+2025-02-24 23:21:26,415 - DSM_None_None_ - INFO - Creating similarity matrix text
+2025-02-24 23:21:26,427 - DSM_None_None_ - INFO - Creating prompt
+2025-02-24 23:21:26,428 - DSM_None_None_ - INFO - Attempting to use model: gpt-4o-2024-11-20
+2025-02-24 23:21:33,086 - DSM_None_None_ - INFO - 
+Initial LLM Suggested Mappings:
+2025-02-24 23:21:33,087 - DSM_None_None_ - INFO - Ground Truth Components: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software']
+2025-02-24 23:21:33,088 - DSM_None_None_ - INFO - Predicted Components: ['Structure', 'Power System', 'Communication System', 'Payload', 'Attitude Determination and Control System', 'On-Board Computer']
+2025-02-24 23:21:33,091 - DSM_None_None_ - ERROR - No valid component mappings found

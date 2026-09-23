@@ -1,0 +1,183 @@
+Running graphrag command...
+Command: python -m graphrag index --root ./
+
+Logging enabled at /ragtest/auto_deepseek_r1_14b_5k-te3s_r1_r2/logs/indexing-engine.log
+Running standard indexing.
+🚀 create_base_text_units
+                                                   id  ... n_tokens
+0   c73c30d3220f504c3ad92b0fea99ee5cb73f2b42e7fb46...  ...     1200
+1   89925f4d47f332e2e68e517c070059da5dc333734cd2e4...  ...     1200
+2   821992a547348da6ed21855b22320893d0b8375f6e8743...  ...     1200
+3   eaa954da30b585975ffc355937b35623df648123c194b0...  ...     1200
+4   18fdda25487ca969bb1503accd84ea09d544a7bb0c7b7f...  ...     1200
+5   59c7b8eafc50d4a1ab6dec43dfe68b6d2e71bc1ca108a8...  ...     1200
+6   581ecbad65302a20fa0203cd646a0503fd2920b5505587...  ...     1200
+7   14ca471c5cb34d5310fab01df179624d51045543014e8f...  ...     1200
+8   6043fa0886007ae6dc91dabd13632dd668540b3bff0c04...  ...     1200
+9   d7aba746bd6ba82ed1c8685b438bfa701537f7b0e8c3be...  ...     1200
+10  af39f5a97365004b7b7b31f453388776660a3d7d8bc432...  ...     1200
+11  001c18e20517d537dcb3fff9d974411aa95fa9a57315f0...  ...     1200
+12  701e54501d866a9dac8ce218b6114eefca9dd41ddc3104...  ...     1200
+13  df067e3b2c0895ca267c8c27af3230390a25a907d5095c...  ...     1200
+14  d80f45ea7c1685f40e766d7857c1ec73e701de5195c667...  ...     1200
+15  5991034acd2a41dc50250ca8cba79eaa05babe70627dfc...  ...     1200
+16  f544eb87afbbede3332c194c75971af88fef418049fd70...  ...     1200
+17  0d899be909e5bcb0149c2fa73df6a2d66c861ce355223a...  ...     1200
+18  c08b46c1259c747b2b1b62219f8628ad8aa9dd2aaf4d50...  ...     1200
+19  5ca52dc41c777c89c3a7d7454c665708422ee8a72711a3...  ...     1200
+20  5cd049526aad9a84fc443bc1bbccf5a8fa02daf81e11b8...  ...     1200
+21  136d376e970686acbcfdff197a420511acc9c74b8c80e8...  ...     1200
+22  398aa5adec07dc79a513cf1b00c680af7953e5baeaee0a...  ...     1200
+23  ad7c07041be616b12f80968221fd214bfe72c554fd1cd7...  ...     1200
+24  49ab2ea7df02f5515aa350c12ff23cb2027517293a8c8b...  ...     1200
+25  2c96e16dfc45823639c04965abe015739949d4b28cff52...  ...     1200
+26  d8c81a58ba581d22f5573cf3b18dc160b1cb0775988634...  ...     1200
+27  cdf490e494834bbbfdb5b23deae57b566fbca322797521...  ...     1200
+28  e779326dc6b09502113474a9885dfc6a738431c055eaa3...  ...     1200
+29  9c9ae22726f557be755ecb820150535cbb209e0aac19aa...  ...     1200
+30  de9a118b4f6793462984ba6858dc47fbc0518341526ad0...  ...     1200
+31  47c15bd065a538648c7a1e8218c27af1364a6c5c587e9c...  ...     1200
+32  1de435935bcc3356066d25f57e340d04f210adb50b94e5...  ...     1200
+33  285471b37c0330abe975f75ba5a8d3c01ccb8bbad38e32...  ...     1200
+34  792c9b239d414bf8c4f49a245b1f990bc7e692069c654b...  ...     1200
+35  2aadc91e11c4127cef425c1627bb8e71c289683af9d6cd...  ...     1200
+36  61fa0e9f39599ced3e90f0e33235cb935806413a3250d6...  ...     1200
+37  8a83e6d23450243c577cf6d8cace811d4cc91b83f15a8e...  ...     1200
+38  f6da9a7b6d54239316321299adc6e448e9f1f45237e699...  ...     1200
+39  14425b98950e5ff3ba3e1a361ef884770e98c6ffd0cc15...  ...     1200
+40  3170dcf03741ddab7bed55300b21979dfd172c36d39814...  ...      471
+
+[41 rows x 4 columns]
+🚀 create_final_documents
+                                                  id  ...                                      text_unit_ids
+0  ee21c577f921b50f97bcad44daaa22c4d64160ab340bd8...  ...  [c73c30d3220f504c3ad92b0fea99ee5cb73f2b42e7fb4...
+
+[1 rows x 5 columns]
+🚀 extract_graph
+None
+🚀 compute_communities
+   level  community  parent                title
+0      0          0      -1  BEARING COMPARTMENT
+0      0          0      -1    ROTATIONAL ENERGY
+🚀 create_final_entities
+                                      id  ...                                      text_unit_ids
+0   0858c9ab-1db0-48f5-8b03-3c1523489bd9  ...  [3170dcf03741ddab7bed55300b21979dfd172c36d3981...
+1   09b97e8e-ddf3-416c-92f7-7d7069d5d8ad  ...  [3170dcf03741ddab7bed55300b21979dfd172c36d3981...
+2   705d6e02-1c88-4d98-af8e-31bbea72983d  ...  [3170dcf03741ddab7bed55300b21979dfd172c36d3981...
+3   b48ab866-efd6-4783-9548-d1ce218b46b9  ...  [3170dcf03741ddab7bed55300b21979dfd172c36d3981...
+4   4986e32f-7f09-43ef-9e5f-ae484ad909d1  ...  [3170dcf03741ddab7bed55300b21979dfd172c36d3981...
+5   99218fe6-ddd9-4d12-995f-4bfc93b6b646  ...  [3170dcf03741ddab7bed55300b21979dfd172c36d3981...
+6   a3cee2df-9c52-4b16-beb3-af978f6dd09d  ...  [3170dcf03741ddab7bed55300b21979dfd172c36d3981...
+7   3b3e3cd2-0993-4907-aab2-cbd641bb7171  ...  [3170dcf03741ddab7bed55300b21979dfd172c36d3981...
+8   48e78ef1-67bb-4250-a8a6-8c1a694ef6dd  ...  [3170dcf03741ddab7bed55300b21979dfd172c36d3981...
+9   695d0b69-cb1b-4809-9843-4ac7a3aaf4e5  ...  [3170dcf03741ddab7bed55300b21979dfd172c36d3981...
+10  d2c09fe8-d71e-41b8-a555-ec33e6a84951  ...  [3170dcf03741ddab7bed55300b21979dfd172c36d3981...
+11  99866273-2143-4df9-b857-86b465be91ad  ...  [3170dcf03741ddab7bed55300b21979dfd172c36d3981...
+12  9a095fb9-f14d-4766-b8f2-0cac352b04c4  ...  [3170dcf03741ddab7bed55300b21979dfd172c36d3981...
+
+[13 rows x 6 columns]
+🚀 create_final_relationships
+                                     id  ...                                      text_unit_ids
+0  f66b4fc8-7187-4e94-a2dd-d687714c9358  ...  [3170dcf03741ddab7bed55300b21979dfd172c36d3981...
+1  373f9ea0-decd-47da-a938-a5877f0bbfd1  ...  [3170dcf03741ddab7bed55300b21979dfd172c36d3981...
+2  780e64c0-2133-4922-990e-80bc244606ed  ...  [3170dcf03741ddab7bed55300b21979dfd172c36d3981...
+3  49bd71e5-8927-4e91-b4b6-83e5110a80ce  ...  [3170dcf03741ddab7bed55300b21979dfd172c36d3981...
+
+[4 rows x 8 columns]
+🚀 create_final_nodes
+                                      id  human_readable_id  ...    x    y
+0   0858c9ab-1db0-48f5-8b03-3c1523489bd9                  0  ...  0.0  0.0
+1   09b97e8e-ddf3-416c-92f7-7d7069d5d8ad                  1  ...  0.0  0.0
+2   705d6e02-1c88-4d98-af8e-31bbea72983d                  2  ...  0.0  0.0
+3   b48ab866-efd6-4783-9548-d1ce218b46b9                  3  ...  0.0  0.0
+4   4986e32f-7f09-43ef-9e5f-ae484ad909d1                  4  ...  NaN  NaN
+5   99218fe6-ddd9-4d12-995f-4bfc93b6b646                  5  ...  NaN  NaN
+6   a3cee2df-9c52-4b16-beb3-af978f6dd09d                  6  ...  0.0  0.0
+7   3b3e3cd2-0993-4907-aab2-cbd641bb7171                  7  ...  0.0  0.0
+8   48e78ef1-67bb-4250-a8a6-8c1a694ef6dd                  8  ...  0.0  0.0
+9   695d0b69-cb1b-4809-9843-4ac7a3aaf4e5                  9  ...  0.0  0.0
+10  d2c09fe8-d71e-41b8-a555-ec33e6a84951                 10  ...  NaN  NaN
+11  99866273-2143-4df9-b857-86b465be91ad                 11  ...  NaN  NaN
+12  9a095fb9-f14d-4766-b8f2-0cac352b04c4                 12  ...  NaN  NaN
+
+[13 rows x 8 columns]
+🚀 create_final_communities
+                                     id human_readable_id  ...      period  size
+0  991ae484-b1df-4151-802c-4ef903be0eff                 0  ...  2025-03-24     2
+
+[1 rows x 11 columns]
+🚀 create_final_text_units
+                                                   id  ...                                   relationship_ids
+0   c73c30d3220f504c3ad92b0fea99ee5cb73f2b42e7fb46...  ...                                               None
+1   89925f4d47f332e2e68e517c070059da5dc333734cd2e4...  ...                                               None
+2   821992a547348da6ed21855b22320893d0b8375f6e8743...  ...                                               None
+3   eaa954da30b585975ffc355937b35623df648123c194b0...  ...                                               None
+4   18fdda25487ca969bb1503accd84ea09d544a7bb0c7b7f...  ...                                               None
+5   59c7b8eafc50d4a1ab6dec43dfe68b6d2e71bc1ca108a8...  ...                                               None
+6   581ecbad65302a20fa0203cd646a0503fd2920b5505587...  ...                                               None
+7   14ca471c5cb34d5310fab01df179624d51045543014e8f...  ...                                               None
+8   6043fa0886007ae6dc91dabd13632dd668540b3bff0c04...  ...                                               None
+9   d7aba746bd6ba82ed1c8685b438bfa701537f7b0e8c3be...  ...                                               None
+10  af39f5a97365004b7b7b31f453388776660a3d7d8bc432...  ...                                               None
+11  001c18e20517d537dcb3fff9d974411aa95fa9a57315f0...  ...                                               None
+12  701e54501d866a9dac8ce218b6114eefca9dd41ddc3104...  ...                                               None
+13  df067e3b2c0895ca267c8c27af3230390a25a907d5095c...  ...                                               None
+14  d80f45ea7c1685f40e766d7857c1ec73e701de5195c667...  ...                                               None
+15  5991034acd2a41dc50250ca8cba79eaa05babe70627dfc...  ...                                               None
+16  f544eb87afbbede3332c194c75971af88fef418049fd70...  ...                                               None
+17  0d899be909e5bcb0149c2fa73df6a2d66c861ce355223a...  ...                                               None
+18  c08b46c1259c747b2b1b62219f8628ad8aa9dd2aaf4d50...  ...                                               None
+19  5ca52dc41c777c89c3a7d7454c665708422ee8a72711a3...  ...                                               None
+20  5cd049526aad9a84fc443bc1bbccf5a8fa02daf81e11b8...  ...                                               None
+21  136d376e970686acbcfdff197a420511acc9c74b8c80e8...  ...                                               None
+22  398aa5adec07dc79a513cf1b00c680af7953e5baeaee0a...  ...                                               None
+23  ad7c07041be616b12f80968221fd214bfe72c554fd1cd7...  ...                                               None
+24  49ab2ea7df02f5515aa350c12ff23cb2027517293a8c8b...  ...                                               None
+25  2c96e16dfc45823639c04965abe015739949d4b28cff52...  ...                                               None
+26  d8c81a58ba581d22f5573cf3b18dc160b1cb0775988634...  ...                                               None
+27  cdf490e494834bbbfdb5b23deae57b566fbca322797521...  ...                                               None
+28  e779326dc6b09502113474a9885dfc6a738431c055eaa3...  ...                                               None
+29  9c9ae22726f557be755ecb820150535cbb209e0aac19aa...  ...                                               None
+30  de9a118b4f6793462984ba6858dc47fbc0518341526ad0...  ...                                               None
+31  47c15bd065a538648c7a1e8218c27af1364a6c5c587e9c...  ...                                               None
+32  1de435935bcc3356066d25f57e340d04f210adb50b94e5...  ...                                               None
+33  285471b37c0330abe975f75ba5a8d3c01ccb8bbad38e32...  ...                                               None
+34  792c9b239d414bf8c4f49a245b1f990bc7e692069c654b...  ...                                               None
+35  2aadc91e11c4127cef425c1627bb8e71c289683af9d6cd...  ...                                               None
+36  61fa0e9f39599ced3e90f0e33235cb935806413a3250d6...  ...                                               None
+37  8a83e6d23450243c577cf6d8cace811d4cc91b83f15a8e...  ...                                               None
+38  f6da9a7b6d54239316321299adc6e448e9f1f45237e699...  ...                                               None
+39  14425b98950e5ff3ba3e1a361ef884770e98c6ffd0cc15...  ...                                               None
+40  3170dcf03741ddab7bed55300b21979dfd172c36d39814...  ...  [f66b4fc8-7187-4e94-a2dd-d687714c9358, 373f9ea...
+
+[41 rows x 7 columns]
+/graphrag/index/flows/create_final_community_reports.py:126: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  input.loc[:, NODE_DETAILS] = input.loc[
+🚀 create_final_community_reports
+                                 id  human_readable_id  ...      period  size
+0  fb3497696b734d28be53e816b2c0e284                  0  ...  2025-03-24     2
+
+[1 rows x 14 columns]
+[2025-03-24T15:09:12Z WARN  lance::dataset::write::insert] No existing dataset at /ragtest/auto_deepseek_r1_14b_5k-te3s_r1_r2/output/lancedb/default-community-full_content.lance, it will be created
+[2025-03-24T15:09:12Z WARN  lance::dataset::write::insert] No existing dataset at /ragtest/auto_deepseek_r1_14b_5k-te3s_r1_r2/output/lancedb/default-entity-description.lance, it will be created
+[2025-03-24T15:09:30Z WARN  lance::dataset::write::insert] No existing dataset at /ragtest/auto_deepseek_r1_14b_5k-te3s_r1_r2/output/lancedb/default-text_unit-text.lance, it will be created
+🚀 generate_text_embeddings
+None
+⠋ GraphRAG Indexer 
+├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00
+├── create_base_text_units ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00
+├── create_final_documents ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00
+├── extract_graph ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00
+├── compute_communities ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00
+├── create_final_entities ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00
+├── create_final_relationships ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00
+├── create_final_nodes ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00
+├── create_final_communities ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00
+├── create_final_text_units ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00
+├── create_final_community_reports ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00
+├── generate_text_embeddings ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00🚀 All workflows completed successfully.
+Command completed and logged to logs/cc_test_run_20250324_135811.log

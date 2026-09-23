@@ -1,0 +1,114 @@
+[
+  {
+    "reference_id": "ref_1",
+    "title": "[2014 Sinha] R1-Structural Complexity and Its Implications for Design of CPSs",
+    "classification": "R1",
+    "confidence": 0.95,
+    "reasoning": "The reference appears to be a PhD thesis with original research on structural complexity for CPS design.",
+    "original_info": {
+      "id": "ref_1",
+      "title": "[2014 Sinha] R1-Structural Complexity and Its Implications for Design of CPSs",
+      "authors": "",
+      "source": "reference_pdfs",
+      "year": "",
+      "description": "",
+      "file_path": "../data/use_cases/powerscrewdriver/reference_pdfs/[2014 Sinha] R1-Structural Complexity and Its Implications for Design of CPSs.pdf"
+    }
+  },
+  {
+    "reference_id": "ref_2",
+    "title": "[1986 Christoforo] R3-The Complete Book of Portable Power Tool Techniques",
+    "classification": "R3",
+    "confidence": 0.75,
+    "reasoning": "The title suggests a comprehensive guide focused on techniques rather than original research or formal textbook.",
+    "original_info": {
+      "id": "ref_2",
+      "title": "[1986 Christoforo] R3-The Complete Book of Portable Power Tool Techniques",
+      "authors": "",
+      "source": "reference_pdfs",
+      "year": "",
+      "description": "",
+      "file_path": "../data/use_cases/powerscrewdriver/reference_pdfs/[1986 Christoforo] R3-The Complete Book of Portable Power Tool Techniques.pdf"
+    }
+  },
+  {
+    "reference_id": "ref_3",
+    "title": "[2012 Tilstra] R1-A HDDSM for the Quantitative Assessment of Product Architecture",
+    "classification": "R1",
+    "confidence": 0.95,
+    "reasoning": "The paper introduces an evolved product representation model (HDDSM) with new quantitative assessment capabilities for product architecture.",
+    "original_info": {
+      "id": "ref_3",
+      "title": "[2012 Tilstra] R1-A HDDSM for the Quantitative Assessment of Product Architecture",
+      "authors": "",
+      "source": "reference_pdfs",
+      "year": "",
+      "description": "",
+      "file_path": "../data/use_cases/powerscrewdriver/reference_pdfs/[2012 Tilstra] R1-A HDDSM for the Quantitative Assessment of Product Architecture.pdf"
+    }
+  },
+  {
+    "reference_id": "ref_4",
+    "title": "[2012 Eppinger_Browning] R2-Design Structure Matrix Methods and Applications",
+    "classification": "R2",
+    "confidence": 0.95,
+    "reasoning": "The title explicitly contains 'Methods and Applications', which is a strong indicator for textbooks or handbooks under the R2 category.",
+    "original_info": {
+      "id": "ref_4",
+      "title": "[2012 Eppinger_Browning] R2-Design Structure Matrix Methods and Applications",
+      "authors": "",
+      "source": "reference_pdfs",
+      "year": "",
+      "description": "",
+      "file_path": "../data/use_cases/powerscrewdriver/reference_pdfs/[2012 Eppinger_Browning] R2-Design Structure Matrix Methods and Applications.pdf"
+    }
+  },
+  {
+    "reference_id": "ref_5",
+    "title": "[2006 Thiel] R3-David Thiels Power Tool Maintenance",
+    "classification": "R3",
+    "confidence": 0.95,
+    "reasoning": "The title suggests practical guidance on power tool maintenance likely aimed at practitioners or hobbyists.",
+    "original_info": {
+      "id": "ref_5",
+      "title": "[2006 Thiel] R3-David Thiels Power Tool Maintenance",
+      "authors": "",
+      "source": "reference_pdfs",
+      "year": "",
+      "description": "",
+      "file_path": "../data/use_cases/powerscrewdriver/reference_pdfs/[2006 Thiel] R3-David Thiels Power Tool Maintenance.pdf"
+    }
+  },
+  {
+    "reference_id": "ref_6",
+    "title": "[2007 Joshi] R2-Machine Tools Handbook  Design And Operation",
+    "classification": "R2",
+    "confidence": 0.95,
+    "reasoning": "Title explicitly contains 'Handbook', indicating it is a synthesis of established methods.",
+    "original_info": {
+      "id": "ref_6",
+      "title": "[2007 Joshi] R2-Machine Tools Handbook  Design And Operation",
+      "authors": "",
+      "source": "reference_pdfs",
+      "year": "",
+      "description": "",
+      "file_path": "../data/use_cases/powerscrewdriver/reference_pdfs/[2007 Joshi] R2-Machine Tools Handbook  Design And Operation.pdf"
+    }
+  },
+  {
+    "reference_id": "ref_7",
+    "title": "[BCITO] R3-BCATS Power Tools",
+    "classification": "R3",
+    "confidence": 0.95,
+    "reasoning": "The extracted text describes a unit standard for portable power tool maintenance from an industry training body (BCITO), fitting the definition of vocational qualification material.",
+    "original_info": {
+      "id": "ref_7",
+      "title": "[BCITO] R3-BCATS Power Tools",
+      "authors": "",
+      "source": "reference_pdfs",
+      "year": "",
+      "description": "",
+      "file_path": "../data/use_cases/powerscrewdriver/reference_pdfs/[BCITO] R3-BCATS Power Tools.pdf"
+    }
+  }
+]

@@ -1,0 +1,251 @@
+
+-Goal-
+Given a text document that is potentially relevant to this activity and a list of entity types, identify all entities of those types from the text and all relationships among the identified entities.
+
+-Steps-
+1. Identify all entities. For each identified entity, extract the following information:
+- entity_name: Name of the entity, capitalized
+- entity_type: One of the following types: [system architects, major component, interfaces, interaction types, subsystems, interfaces, modular subsystems, engineering managers, dependency types, DSM model attributes, analytical methods, system elements, product architecture, change propagation, product family, interaction basis, system architecture, technology risk DSM, change propagation model, product architecture DSM examples, DSM applications, system modeling, system decomposition, system integration, system interactions, system interfaces, system elements relationships]
+- entity_description: Comprehensive description of the entity's attributes and activities
+Format each entity as ("entity"{tuple_delimiter}<entity_name>{tuple_delimiter}<entity_type>{tuple_delimiter}<entity_description>)
+
+2. From the entities identified in step 1, identify all pairs of (source_entity, target_entity) that are *clearly related* to each other.
+For each pair of related entities, extract the following information:
+- source_entity: name of the source entity, as identified in step 1
+- target_entity: name of the target entity, as identified in step 1
+- relationship_description: explanation as to why you think the source entity and the target entity are related to each other
+- relationship_strength: an integer score between 1 to 10, indicating strength of the relationship between the source entity and target entity
+Format each relationship as ("relationship"{tuple_delimiter}<source_entity>{tuple_delimiter}<target_entity>{tuple_delimiter}<relationship_description>{tuple_delimiter}<relationship_strength>)
+
+3. Return output in English as a single list of all the entities and relationships identified in steps 1 and 2. Use **{record_delimiter}** as the list delimiter.
+
+4. If you have to translate into English, just translate the descriptions, nothing else!
+
+5. When finished, output {completion_delimiter}.
+
+-Examples-
+######################
+
+Example 1:
+
+entity_types: [system architects, major component, interfaces, interaction types, subsystems, interfaces, modular subsystems, engineering managers, dependency types, DSM model attributes, analytical methods, system elements, product architecture, change propagation, product family, interaction basis, system architecture, technology risk DSM, change propagation model, product architecture DSM examples, DSM applications, system modeling, system decomposition, system integration, system interactions, system interfaces, system elements relationships]
+text:
+ Design and Management master's program at the time interviewed system architects responsible for each major component in the PW4098 engine To reliably capture as many direct dependencies as possible, he asked about interfaces between components based on known interactions of five types: spatial adjacency, energy flows heat, material flows, structural connectivity, and information flows data and control Subsequent analysis and interpreta­ tion of the DSM model was done jointly with Manuel Sosa, a doctoral student at MIT at the
+The binary DSM model displayed in figure 3.2.2 shows the decomposition of the PW4098 engine into its eight subsystems and 54 Interfaces are indicated in the DSM using red shaded cells between pairs of
+The DSM model identified six of the subsystems as somewhat modular, in that each subsystem primarily had interfaces among components within the These modular subsystems (listed starting from the front of the engine and from the top of the matrix) are the fan, low-pressure compressor, high-pressure compressor, combustion chamber, high-pressure turbine, and low-pressure The DSM also showed that the remaining two, more spatially distributed, subsystems were more functionally integrative across the These distributed subsystems are the mechanical components and the externals and They tended to have more interfaces among components of different subsystems and relatively few interfaces within each See Sosa et (2003) for details and statistical tests of this Identifying the pattern of component interfaces both within and across subsystems helped the engineering managers at Pratt & Whitney to better manage the highly complex challenge of system Their system engineering practice had been largely focused on the interactions inside the modular Based on this analysis, they were able to focus more attention on the component interfaces across the
+Figure 3.8.3 A portion of the clustered DSM, showing two of the
+showed tightly bound modules, whereas the other less-dense modules showed move­ ment outside their layer and sometimes formed smaller clusters within their layer (inter­ nal In contrast, manual manipulation suggested that certain components within the services and skin layers) could be combined with the structural layer, and certain subcategories within different layers clustered well together foundation and More important, we noted that components with a similar dependency pattern behaved in complementary The iterative clustering identified four dependency types among the components based on a statistical quantification of dependencies relative to a com­ ponent's layer both inside and outside: high dependencies inside and outside of the layer high dependencies inside of the layer and low dependencies outside
+of the next Here we begin by adopting the original DSM convention with inputs in rows (IR) and outputs in Later we also present examples using the opposite inputs in columns (IC) convention which stems from W charts and IDEFO The simple DSM in figure 1.3a is called a binary DSM because the off-diagonal marks indicate merely the presence or absence of an The binary DSM representation can be extended in a great variety of ways by including further attributes of the interac­ tions, such as the number of interactions and/or the importance, impact, or strength of each-which might be represented by using one or more numerical values, symbols, shad­ ings, or colors instead of just the binary marks in each of the off-diagonal This extended form of DSM is called a numerical Figure 1.4 shows two Addi­ tional attributes of the elements themselves may also be included by adding more columns to the left of the square matrix to describe, for example, the type, owner, or status of each Additional attributes of the interactions, such as their names, requirements, are usually kept in separate repositories but may be linked to the DSM cells by numerical identification numbers or DSM models can be partitioned or rearranged using a variety of analytical methods, the most common of which are clustering and sequencing, as shown in figures 1.5a and b, Clustering analysis applies primarily to the kinds of interaction networks found in product and organization architecture DSM models, where interaction marks are largely symmetric about the diagonal, as described in chapters Sequencing analy­ sis applies primarily to the kinds of directional or temporal interaction networks found in process DSM models, as described in chapters
+Figure 1.4 The numerical DSM representation using values (a) or colors (b) to represent strength or type of
+Figure 1.5 DSM partitioning analysis commonly entails clustering (a) or sequencing (b) based on the interactions con, tained in the To illustrate clustering and sequencing, the interaction data in these two are the same and are different than those in figures 1.3 and
+The term DSM has its basis in using a matrix to model the design and structure (archi­ tecture) of a Over the years, other terms have also been applied using the DSM initials dependency structure matrix, dependency system model, deliverable source map, and other combinations of such Most of these alternative terms sprang from a desire to emphasize a particular aspect of a DSM model, such as its ability to model or map dependencies between elements in a
+In this book, we adopt the name DSM as a unifying term for a wide variety of square matrix models, even though some of these predate the term Our main criterion is that DSM is a square matrix, with the rows and columns identically labeled and ordered, and where the off-diagonal elements indicate relationships between the on-diagonal Later, in chapter 8, we describe a rectangular matrix called a domain mapping matrix (DMM) used to link DSM matrices across Many matrix-based methods have their origins in a branch of mathematics called graph theory, which has tended to focus on analytical Insights from graph theory continue to provide an impor­ tant source of extensions to DSM analysis
+System Architecture
+Figure 1.2 Some of the complex systems modeled using DSM: electronics systems (see examples 3.3, 3.9, 7.2, 7.8, 7.9, 9.10), buildings see examples
+------------------------
+output:
+("entity"{tuple_delimiter}SYSTEM ARCHITECTS{tuple_delimiter}system architects{tuple_delimiter}Individuals responsible for each major component in the PW4098 engine)
+{record_delimiter}
+("entity"{tuple_delimiter}PW4098 ENGINE{tuple_delimiter}major component{tuple_delimiter}The engine being analyzed for direct dependencies and interfaces between components)
+{record_delimiter}
+("entity"{tuple_delimiter}INTERFACES{tuple_delimiter}interfaces{tuple_delimiter}Connections between components based on spatial adjacency, energy flows, material flows, structural connectivity, and information flows)
+{record_delimiter}
+("entity"{tuple_delimiter}DSM MODEL{tuple_delimiter}DSM model attributes{tuple_delimiter}Displays the decomposition of the PW4098 engine into subsystems and interfaces, using red shaded cells to indicate interfaces in the DSM)
+{record_delimiter}
+("entity"{tuple_delimiter}MODULAR SUBSYSTEMS{tuple_delimiter}modular subsystems{tuple_delimiter}Subsystems primarily having interfaces among components within the subsystem, including the fan, low-pressure compressor, high-pressure compressor, combustion chamber, high-pressure turbine, and low-pressure turbine)
+{record_delimiter}
+("entity"{tuple_delimiter}DISTRIBUTED SUBSYSTEMS{tuple_delimiter}subsystems{tuple_delimiter}Subsystems more functionally integrative across the engine, including mechanical components and externals)
+{record_delimiter}
+("entity"{tuple_delimiter}ENGINEERING MANAGERS{tuple_delimiter}engineering managers{tuple_delimiter}Individuals at Pratt & Whitney managing the complex challenge of system integration)
+{record_delimiter}
+("entity"{tuple_delimiter}DEPENDENCY TYPES{tuple_delimiter}dependency types{tuple_delimiter}Four dependency types identified among components based on statistical quantification of dependencies)
+{record_delimiter}
+("entity"{tuple_delimiter}ANALYTICAL METHODS{tuple_delimiter}analytical methods{tuple_delimiter}Methods used for partitioning or rearranging DSM models, including clustering and sequencing)
+{record_delimiter}
+("entity"{tuple_delimiter}SYSTEM ARCHITECTURE{tuple_delimiter}system architecture{tuple_delimiter}The design and structure of systems modeled using DSM, including electronics systems and buildings)
+{record_delimiter}
+("relationship"{tuple_delimiter}SYSTEM ARCHITECTS{tuple_delimiter}PW4098 ENGINE{tuple_delimiter}System architects are responsible for designing and managing each major component of the PW4098 engine{tuple_delimiter}9)
+{record_delimiter}
+("relationship"{tuple_delimiter}PW4098 ENGINE{tuple_delimiter}INTERFACES{tuple_delimiter}The PW4098 engine's design includes various interfaces between components based on different interaction types{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}INTERFACES{tuple_delimiter}DSM MODEL{tuple_delimiter}Interfaces are indicated in the DSM model to show connections between components{tuple_delimiter}10)
+{record_delimiter}
+("relationship"{tuple_delimiter}DSM MODEL{tuple_delimiter}MODULAR SUBSYSTEMS{tuple_delimiter}The DSM model identifies modular subsystems within the PW4098 engine{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}MODULAR SUBSYSTEMS{tuple_delimiter}DISTRIBUTED SUBSYSTEMS{tuple_delimiter}Modular subsystems contrast with distributed subsystems in terms of component interfaces{tuple_delimiter}6)
+{record_delimiter}
+("relationship"{tuple_delimiter}ENGINEERING MANAGERS{tuple_delimiter}MODULAR SUBSYSTEMS{tuple_delimiter}Engineering managers focus on managing interactions within modular subsystems{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}ENGINEERING MANAGERS{tuple_delimiter}DISTRIBUTED SUBSYSTEMS{tuple_delimiter}Engineering managers adjust focus based on analysis to include component interfaces across distributed subsystems{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}DEPENDENCY TYPES{tuple_delimiter}ANALYTICAL METHODS{tuple_delimiter}Dependency types are identified through analytical methods like clustering and sequencing in DSM analysis{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}SYSTEM ARCHITECTURE{tuple_delimiter}SYSTEM ARCHITECTS{tuple_delimiter}System architects design the system architecture modeled using DSM{tuple_delimiter}9)
+{completion_delimiter}
+#############################
+
+
+Example 2:
+
+entity_types: [system architects, major component, interfaces, interaction types, subsystems, interfaces, modular subsystems, engineering managers, dependency types, DSM model attributes, analytical methods, system elements, product architecture, change propagation, product family, interaction basis, system architecture, technology risk DSM, change propagation model, product architecture DSM examples, DSM applications, system modeling, system decomposition, system integration, system interactions, system interfaces, system elements relationships]
+text:
+ a DSM model of product architecture is to support the study of product variety and product change, via analysis, benchmarking, and metric formulation Research in change propagation, for example, is focused on the interconnection of elements in a DSM Eckert et al (2004) discuss the roles of elements as change multipliers, carriers, or absorbers in terms of change propagation Suh et al (2007) use a DSM-style ‘change propagation matrix’ to create a ﬂexible platform for an automotive structural frame that can be used in different market segments Martin and Ishii (2002) use a DSM-style ‘coupling matrix’ to study the speciﬁcations between the components in a water cooler product to manage variety in subsequent product offerings Hsiao and Liu (2005) study the interactions between the parts in a drip coffee maker to manage the variety between different products in a product family Alizon et al (2007) stack the DSMs of variants in a product family to identify common interactions and modules Luh et al (2011) use a DSM of an existing product to optimise the design process and product architecture for a new family of power line communication products Hölttä et al (2005) use a DSM model of a product to generate a quantitative metric describing the modularity of the system and compare it with other measures of modularity While a component DSM provides valuable insight for the analysis and redesign of an embod- ied product, other similar tools may be more appropriate for other design tasks For example, a multi-domain matrix supports management of the product development process by mapping dependencies between different types of system elements (e g components, people, and data), in a form that is similar to the hierarchical modelling strategy introduced in this article, but without the formalised interaction detail (Maurer and Lindemann 2008) Hubka, Andreasen, Ferreirinha, and colleagues created a chromosome model for supporting design; it hierarchically decomposes a system into functions, organs that carry the functions and behaviour, and ‘wirk’ structures and parts that embody those organs (cf an overview by Andreasen (2011)) Like the work presented in this article, the chromosome approach supports hierarchically decomposing and modelling a product, but it lacks the structured DSM foundation and the standardised set of interactions presented in this article for populating it Albers et al (2011) introduce a Contact and Channel approach for modelling and managing interrelationships between function and form during an iterative design process, beginning with a rough concept Like the work presented in this article, they build upon a standardised functional basis (Hirtz et al 2002) and incorporate capabilities for hierarchically modelling systems at different levels of abstraction, but the work presented in this article utilises a DSM-based modelling approach, rather than a graphical approach, and focuses more strongly on analysing the architectures of existing products, which requires expanding the functional basis
+1.4 A new and evolved product representation: the high-deﬁnition design structure matrix
+In this article, the high-deﬁnition design structure matrix (HDDSM) is introduced for modelling product architecture As part of the HDDSM, interactions are categorised with an interaction basis that deﬁnes the types of interactions that may exist within a product architecture Using this standardised set of interactions, the practitioner is required to assess only the existence of pre-deﬁned interactions, rather than their degree of signiﬁcance, thereby limiting the amount of judgment required of the practitioner and enhancing the repeatability of the model An efﬁcient method for constructing the HDDSM is also provided, which allows practitioners to increase (or decrease) the level of Element Detail with minimal effort and to construct a DSM in stages, from system-level models with low levels of Element Detail to component-level models with high levels of Element Detail
+With its high levels of standardisation and Interaction and Element Detail, the HDDSM supports the creation and implementation of a variety of metrics related to product change Metrics are
+45
+A Brief History of DSM
+Conclusion
+References
+Analyzing the Product Architecture DSM
+Overview
+3 Product Architecture DSM Examples
+Types of DSM Models
+Applying the Product Architecture DSM
+Matrix-Based Tools for Modeling System Architectures
+Figure 2.2 Systems Engineering V (adapted from Department of
+Structure of This Book
+What Is the DSM?
+The Complex World of Systems
+Example 3.3 Xerox Digital Printing Technology Infusion
+Example 3.8 Building Schools for the Future
+Background
+References
+Example 3.7 Johnson & Johnson Clinical Chemistry Analyzer
+References
+Example 3.2 Pratt & Whitney Jet Engine
+Example 3.1 Ford Climate Control System
+Example 3.6 AgustaWestland Helicopter Change Propagation
+Example 3.9 Kodak Single-Use Camera
+Building a Product Architecture DSM
+Example 3.5 Mozilla Software Redesign Effort
+Example 3.4 NASA Mars Pathfinder Technology Readiness
+TRF NASA TRL Definition TRL 1 Actual system "flight proven" through successful mission operations 9 2 Actual system completed and "flight qualified" through test and demonstration 8 2 System prototype in a space environment 7 3 System/subsystem model or prototype demonstration in a relevant environment 6 4 Component and/or breadboard validation in relevant environment 5 4 Component and/or breadboard validation in laboratory environment 4 5 Analytical and experimental critical function and lor characteristic proof-of-concept 3 5 Technology concept and/or application formulated 2 5 Basic principles observed and reported 1
+Printing is a process for reproducing text and images, typically with ink on physical paper using a printing system It is an essential part of publishing and transaction printing and is often carried out as an industrial process There are different methodologies/processes
+------------------------
+output:
+("entity"{tuple_delimiter}DSM Model Of Product Architecture{tuple_delimiter}DSM model attributes{tuple_delimiter}Supports the study of product variety and product change through analysis, benchmarking, and metric formulation)
+{record_delimiter}
+("entity"{tuple_delimiter}Change Propagation{tuple_delimiter}change propagation{tuple_delimiter}Focused on the interconnection of elements in a DSM to understand how changes in one element can affect others)
+{record_delimiter}
+("entity"{tuple_delimiter}High-Definition Design Structure Matrix (HDDSM){tuple_delimiter}DSM model attributes{tuple_delimiter}Introduced for modelling product architecture with high levels of standardisation and interaction and element detail)
+{record_delimiter}
+("entity"{tuple_delimiter}Product Architecture DSM Examples{tuple_delimiter}product architecture DSM examples{tuple_delimiter}Illustrates the application of DSM in analyzing and designing product architectures)
+{record_delimiter}
+("entity"{tuple_delimiter}Matrix-Based Tools{tuple_delimiter}analytical methods{tuple_delimiter}For modeling system architectures, including DSM and other matrix-based approaches)
+{record_delimiter}
+("entity"{tuple_delimiter}Interaction Basis{tuple_delimiter}interaction basis{tuple_delimiter}Defines the types of interactions that may exist within a product architecture for the HDDSM)
+{record_delimiter}
+("relationship"{tuple_delimiter}DSM Model Of Product Architecture{tuple_delimiter}Change Propagation{tuple_delimiter}The DSM model of product architecture is used to study change propagation among product elements{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}High-Definition Design Structure Matrix (HDDSM){tuple_delimiter}Interaction Basis{tuple_delimiter}HDDSM categorizes interactions with an interaction basis to define types of interactions within product architecture{tuple_delimiter}9)
+{record_delimiter}
+("relationship"{tuple_delimiter}High-Definition Design Structure Matrix (HDDSM){tuple_delimiter}Product Architecture DSM Examples{tuple_delimiter}HDDSM is a tool for modeling product architecture, as illustrated in product architecture DSM examples{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}Matrix-Based Tools{tuple_delimiter}Product Architecture DSM Examples{tuple_delimiter}Matrix-based tools, including DSM, are used for analyzing and designing product architectures, as shown in DSM examples{tuple_delimiter}6)
+{completion_delimiter}
+#############################
+
+
+Example 3:
+
+entity_types: [system architects, major component, interfaces, interaction types, subsystems, interfaces, modular subsystems, engineering managers, dependency types, DSM model attributes, analytical methods, system elements, product architecture, change propagation, product family, interaction basis, system architecture, technology risk DSM, change propagation model, product architecture DSM examples, DSM applications, system modeling, system decomposition, system integration, system interactions, system interfaces, system elements relationships]
+text:
+0.25 Hydraulic energy 0.2 Rotational energy 0.15
+Connection type Interface factor, 1/c(k) Mechanical Connection 0.05 Electric Energy 0.10 Rotational Energy 0.10
+Fig 5.18: Aggregation of a Typical Bearing Compartment
+10!
+Table 1 Interaction basis for HDDSM General Speciﬁc Abbreviation Informationa,b Statusa SI Controla CI Materiala,b Humana HM Gasa GM Liquida LM Solida SM Plasmaa PM Mixturea MM Energya,b Humana HE Acoustica AE Biologicala BE Chemicala CE Electricala EE Electromagnetica EME Hydraulica HYE Mechanicala ME Magnetica MAG Pneumatica PE Radioactivea NE Thermala TE Strain energy SE Spatialb Proximity P Alignment A Movement Translational LRM Rotational RRM aUsedinﬂowsetoffunctionalbasis(Hirtz etal.2002) bUsedinrelatedDSMresearch(suchasPimmlerandEppinger1994,Helmeretal.2010)
+Fig 5.7: Innovage powered screwdriver [Tilstra, 2010]
+Connection type Interface factor, 1/c(k) Physical Connection 0.07 Mass 0.10 Energy 0.15 Information 0.18
+System
+Table 5.14: Comparison of two engine architectures
+Fig 5.20: Schematic of old and new aircraft engines
+9)
+DSM
+Examples
+Journal
+of
+Engineering
+Design
+FN:Fan LPC: Low-Pressure Compressor HPC: High-Pressure Compressor CC: Combustion Chamber HPT: High-Pressure Turbine LPT: Low-Pressure Turbine MC: Mechanical Components EC: Externals and Controls
++<&!
+165
+158
+177
+171
+169
+167
+168
+162
+172
+173
+157
+176
+156
+184
+183
+170
+163
+182
+179
+155
+181
+154
+166
+178
+151
+159
+185
+180
+161
+160
+152
+164
+175
+150
+174
+Team
+!
+773
+
+------------------------
+output:
+("entity"{tuple_delimiter}Hydraulic Energy{tuple_delimiter}interaction types{tuple_delimiter}A form of energy related to the movement and storage of water and fluids, often used in system design for power transmission and control systems)
+{record_delimiter}
+("entity"{tuple_delimiter}Rotational Energy{tuple_delimiter}interaction types{tuple_delimiter}Energy associated with the rotation of an object, significant in mechanical and electrical system designs where rotational motion is key)
+{record_delimiter}
+("entity"{tuple_delimiter}Mechanical Connection{tuple_delimiter}interfaces{tuple_delimiter}A type of interface focusing on the physical and functional connections between mechanical components in a system)
+{record_delimiter}
+("entity"{tuple_delimiter}Electric Energy{tuple_delimiter}interaction types{tuple_delimiter}Energy derived from electric potential or kinetic energy, crucial in the design of electrical systems and components)
+{record_delimiter}
+("entity"{tuple_delimiter}Bearing Compartment{tuple_delimiter}major component{tuple_delimiter}A major component in machinery that houses bearings, allowing for rotational or linear movement in a controlled manner)
+{record_delimiter}
+("entity"{tuple_delimiter}HDDSM{tuple_delimiter}system modeling{tuple_delimiter}A specific method or model used in system design to analyze or simulate the hierarchical decomposition of systems)
+{record_delimiter}
+("entity"{tuple_delimiter}Innovage Powered Screwdriver{tuple_delimiter}product family{tuple_delimiter}A product within the Innovage brand, representing a line of electrically powered tools designed for driving screws)
+{record_delimiter}
+("entity"{tuple_delimiter}Physical Connection{tuple_delimiter}interfaces{tuple_delimiter}An interface type that emphasizes the tangible connections between system components, such as connectors, cables, and mechanical links)
+{record_delimiter}
+("entity"{tuple_delimiter}Engine Architectures{tuple_delimiter}system architecture{tuple_delimiter}The structural design and layout of engine components and systems, detailing how they are interconnected and function together)
+{record_delimiter}
+("entity"{tuple_delimiter}Aircraft Engines{tuple_delimiter}major component{tuple_delimiter}Critical components of an aircraft's propulsion system, designed to generate mechanical power to produce thrust for flight)
+{record_delimiter}
+("relationship"{tuple_delimiter}Hydraulic Energy{tuple_delimiter}Mechanical Connection{tuple_delimiter}Hydraulic energy can be transmitted through mechanical connections in system designs{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}Rotational Energy{tuple_delimiter}Bearing Compartment{tuple_delimiter}Rotational energy is a key factor in the design and function of bearing compartments{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}Electric Energy{tuple_delimiter}Physical Connection{tuple_delimiter}Electric energy is distributed within systems through physical connections{tuple_delimiter}9)
+{record_delimiter}
+("relationship"{tuple_delimiter}Engine Architectures{tuple_delimiter}Aircraft Engines{tuple_delimiter}Engine architectures are fundamental to the design and operation of aircraft engines{tuple_delimiter}10)
+{completion_delimiter}
+#############################
+
+
+
+-Real Data-
+######################
+entity_types: [system architects, major component, interfaces, interaction types, subsystems, interfaces, modular subsystems, engineering managers, dependency types, DSM model attributes, analytical methods, system elements, product architecture, change propagation, product family, interaction basis, system architecture, technology risk DSM, change propagation model, product architecture DSM examples, DSM applications, system modeling, system decomposition, system integration, system interactions, system interfaces, system elements relationships]
+text: {input_text}
+######################
+output:

@@ -1,0 +1,319 @@
+2025-02-16 06:29:16,857 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Run 1/5
+2025-02-16 06:29:16,893 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - DEBUG: Initializing LLMInference.
+2025-02-16 06:29:16,894 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Initialized LLM inference for system: CubeSat
+2025-02-16 06:29:16,895 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Initialized DSM for system: CubeSat
+2025-02-16 06:29:16,896 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Inference model: ollama:mixtral:8x22b_6k
+2025-02-16 06:30:23,230 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - LLM Response:  Based on the components and their typical interactions in a CubeSat system, here is the Design Structure Matrix:
+
+final response = [
+    [1, 1, 1, 1, 1, 1],   # The spacecraft interacts with all other subsystems/components.
+    [1, 1, 1, 1, 1, 1],   # GNC Subsystem interacts with Spacecraft, Propulsion, Power, Reaction Wheel and its own software.
+    [1, 1, 1, 0, 0, 0],   # The propulsion subsystem interacts with the spacecraft and GNC but not directly with power or reaction wheel.
+    [1, 1, 0, 1, 1, 0],   # Power Subsystem interacts with Spacecraft, GNC, and Reaction Wheel (which it powers).
+    [1, 1, 0, 1, 1, 0],   # The reaction wheel is controlled by the GNC subsystem and powered by the power subsystem.
+    [1, 1, 0, 0, 0, 1]    # GNC Software interacts with Spacecraft and GNC Subsystem but not directly with other components.
+]
+2025-02-16 06:30:23,232 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Query: 
+    Please identify system-level proximity relationships (in contact) between the components of CubeSat (nanosatellite), as listed below, and represent them in a Design Structure Matrix (DSM) format.  
+    The relationships should be articulated in plain English, capturing the essence of their interactions. 
+    Here is the list of subsystems/components to analyze: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software'] 
+    The DSM should clearly indicate the interactions between these components as 1 exist and 0 does not exist, considering both the presence and nature of these connections.         
+    Present the output in a square matrix format (number of rows and columns MUST be the same as the number of components = 6 for this example), with rows and columns labeled accordingly. 
+    Diagonal elements should be 1 in DSM matrix since each component interacts with itself. 
+    If you don't know the answer, just write 2 for the specific cell that you are unsure of. A worst case scenario of the **as a list of lists** shown below (diagonal elements are 1 and rest are 2). Don't make up an answer.     final response = [
+        [1, 2, 2, 2, 2, 2],
+        [2, 1, 2, 2, 2, 2],
+        [2, 2, 1, 2, 2, 2],
+        [2, 2, 2, 1, 2, 2],
+        [2, 2, 2, 2, 1, 2],
+        [2, 2, 2, 2, 2, 1]
+    ]
+
+    IMPORTANT: Your response must **ONLY** contain a valid **as a list of lists** in the following example format 7x7 matrix.     
+    The below list of lists is just an example format of your response. **Replace** the values with your **actual analysis** while providing your response with parameter of 'final response'.    
+    final response = [
+        [1, 0, 0, 0, 0, 0],
+        [0, 1, 0, 0, 0, 0],
+        [0, 0, 1, 0, 0, 0],
+        [0, 0, 0, 1, 0, 0],
+        [0, 0, 0, 0, 1, 0],
+        [0, 0, 0, 0, 0, 1]
+    ]
+
+    IMPORTANT: THE FORMAT OF THE OUTPUT MUST BE AS LIST OF LISTS ONLY SIMILAR TO THE ONE ABOVE (NO LATEX, CODE, OR OTHER ENCODINGS).
+    
+2025-02-16 06:30:23,232 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Response:  Based on the components and their typical interactions in a CubeSat system, here is the Design Structure Matrix:
+
+final response = [
+    [1, 1, 1, 1, 1, 1],   # The spacecraft interacts with all other subsystems/components.
+    [1, 1, 1, 1, 1, 1],   # GNC Subsystem interacts with Spacecraft, Propulsion, Power, Reaction Wheel and its own software.
+    [1, 1, 1, 0, 0, 0],   # The propulsion subsystem interacts with the spacecraft and GNC but not directly with power or reaction wheel.
+    [1, 1, 0, 1, 1, 0],   # Power Subsystem interacts with Spacecraft, GNC, and Reaction Wheel (which it powers).
+    [1, 1, 0, 1, 1, 0],   # The reaction wheel is controlled by the GNC subsystem and powered by the power subsystem.
+    [1, 1, 0, 0, 0, 1]    # GNC Software interacts with Spacecraft and GNC Subsystem but not directly with other components.
+]
+2025-02-16 06:30:23,233 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Matrix: [[1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 0, 0, 0], [1, 1, 0, 1, 1, 0], [1, 1, 0, 1, 1, 0], [1, 1, 0, 0, 0, 1]]
+2025-02-16 06:30:23,234 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Matrix from response.
+2025-02-16 06:30:23,234 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - At run 1/5
+2025-02-16 06:30:23,235 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Matrix: [[1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 0, 0, 0], [1, 1, 0, 1, 1, 0], [1, 1, 0, 1, 1, 0], [1, 1, 0, 0, 0, 1]]
+2025-02-16 06:30:23,235 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - --------------------------------------------------
+2025-02-16 06:30:33,247 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Run 2/5
+2025-02-16 06:30:33,283 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - DEBUG: Initializing LLMInference.
+2025-02-16 06:30:33,284 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Initialized LLM inference for system: CubeSat
+2025-02-16 06:30:33,285 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Initialized DSM for system: CubeSat
+2025-02-16 06:30:33,285 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Inference model: ollama:mixtral:8x22b_6k
+2025-02-16 06:31:01,979 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - LLM Response:  Based on the components and their typical interactions in a CubeSat system, here is the Design Structure Matrix:
+
+final response = [
+    [1, 1, 1, 1, 1, 1],   # Spacecraft interacts with all subsystems/components
+    [1, 1, 1, 1, 1, 1],   # GNC Subsystem interacts with Spacecraft, Propulsion, Power, Reaction Wheel and its own software
+    [1, 1, 1, 0, 0, 0],   # Propulsion Subsystem interacts with Spacecraft and GNC Subsystem but not directly with the other components
+    [1, 1, 0, 1, 1, 0],   # Power Subsystem interacts with Spacecraft, GNC Subsystem, Reaction Wheel (as it provides power to them)
+    [1, 1, 0, 1, 1, 0],   # Reaction Wheel interacts with Spacecraft, GNC Subsystem and Power Subsystem
+    [1, 1, 0, 0, 0, 1]    # GNC Software interacts with the Spacecraft and its own subsystem (GNC) but not directly with other components
+]
+2025-02-16 06:31:01,980 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Query: 
+    Please identify system-level proximity relationships (in contact) between the components of CubeSat (nanosatellite), as listed below, and represent them in a Design Structure Matrix (DSM) format.  
+    The relationships should be articulated in plain English, capturing the essence of their interactions. 
+    Here is the list of subsystems/components to analyze: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software'] 
+    The DSM should clearly indicate the interactions between these components as 1 exist and 0 does not exist, considering both the presence and nature of these connections.         
+    Present the output in a square matrix format (number of rows and columns MUST be the same as the number of components = 6 for this example), with rows and columns labeled accordingly. 
+    Diagonal elements should be 1 in DSM matrix since each component interacts with itself. 
+    If you don't know the answer, just write 2 for the specific cell that you are unsure of. A worst case scenario of the **as a list of lists** shown below (diagonal elements are 1 and rest are 2). Don't make up an answer.     final response = [
+        [1, 2, 2, 2, 2, 2],
+        [2, 1, 2, 2, 2, 2],
+        [2, 2, 1, 2, 2, 2],
+        [2, 2, 2, 1, 2, 2],
+        [2, 2, 2, 2, 1, 2],
+        [2, 2, 2, 2, 2, 1]
+    ]
+
+    IMPORTANT: Your response must **ONLY** contain a valid **as a list of lists** in the following example format 7x7 matrix.     
+    The below list of lists is just an example format of your response. **Replace** the values with your **actual analysis** while providing your response with parameter of 'final response'.    
+    final response = [
+        [1, 0, 0, 0, 0, 0],
+        [0, 1, 0, 0, 0, 0],
+        [0, 0, 1, 0, 0, 0],
+        [0, 0, 0, 1, 0, 0],
+        [0, 0, 0, 0, 1, 0],
+        [0, 0, 0, 0, 0, 1]
+    ]
+
+    IMPORTANT: THE FORMAT OF THE OUTPUT MUST BE AS LIST OF LISTS ONLY SIMILAR TO THE ONE ABOVE (NO LATEX, CODE, OR OTHER ENCODINGS).
+    
+2025-02-16 06:31:01,981 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Response:  Based on the components and their typical interactions in a CubeSat system, here is the Design Structure Matrix:
+
+final response = [
+    [1, 1, 1, 1, 1, 1],   # Spacecraft interacts with all subsystems/components
+    [1, 1, 1, 1, 1, 1],   # GNC Subsystem interacts with Spacecraft, Propulsion, Power, Reaction Wheel and its own software
+    [1, 1, 1, 0, 0, 0],   # Propulsion Subsystem interacts with Spacecraft and GNC Subsystem but not directly with the other components
+    [1, 1, 0, 1, 1, 0],   # Power Subsystem interacts with Spacecraft, GNC Subsystem, Reaction Wheel (as it provides power to them)
+    [1, 1, 0, 1, 1, 0],   # Reaction Wheel interacts with Spacecraft, GNC Subsystem and Power Subsystem
+    [1, 1, 0, 0, 0, 1]    # GNC Software interacts with the Spacecraft and its own subsystem (GNC) but not directly with other components
+]
+2025-02-16 06:31:01,982 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Matrix: [[1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 0, 0, 0], [1, 1, 0, 1, 1, 0], [1, 1, 0, 1, 1, 0], [1, 1, 0, 0, 0, 1]]
+2025-02-16 06:31:01,983 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Matrix from response.
+2025-02-16 06:31:01,984 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - At run 2/5
+2025-02-16 06:31:01,985 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Matrix: [[1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 0, 0, 0], [1, 1, 0, 1, 1, 0], [1, 1, 0, 1, 1, 0], [1, 1, 0, 0, 0, 1]]
+2025-02-16 06:31:01,987 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - --------------------------------------------------
+2025-02-16 06:31:11,998 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Run 3/5
+2025-02-16 06:31:12,034 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - DEBUG: Initializing LLMInference.
+2025-02-16 06:31:12,035 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Initialized LLM inference for system: CubeSat
+2025-02-16 06:31:12,036 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Initialized DSM for system: CubeSat
+2025-02-16 06:31:12,037 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Inference model: ollama:mixtral:8x22b_6k
+2025-02-16 06:31:40,781 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - LLM Response:  Based on the components and their typical interactions in a CubeSat system, here is the Design Structure Matrix:
+
+final response = [
+    [1, 1, 1, 1, 1, 1],   # Spacecraft interacts with all subsystems/components
+    [1, 1, 1, 1, 1, 1],   # GNC Subsystem interacts with Spacecraft, Propulsion, Power, Reaction Wheel and its own software
+    [1, 1, 1, 0, 0, 0],   # Propulsion Subsystem interacts with Spacecraft and GNC Subsystem but not directly with the other components
+    [1, 1, 0, 1, 1, 0],   # Power Subsystem interacts with Spacecraft, GNC Subsystem, Reaction Wheel (as it provides power to them)
+    [1, 1, 0, 1, 1, 0],   # Reaction Wheel interacts with Spacecraft, GNC Subsystem and Power Subsystem
+    [1, 1, 0, 0, 0, 1]    # GNC Software interacts with the Spacecraft and its own subsystem (GNC) but not directly with other components
+]
+2025-02-16 06:31:40,782 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Query: 
+    Please identify system-level proximity relationships (in contact) between the components of CubeSat (nanosatellite), as listed below, and represent them in a Design Structure Matrix (DSM) format.  
+    The relationships should be articulated in plain English, capturing the essence of their interactions. 
+    Here is the list of subsystems/components to analyze: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software'] 
+    The DSM should clearly indicate the interactions between these components as 1 exist and 0 does not exist, considering both the presence and nature of these connections.         
+    Present the output in a square matrix format (number of rows and columns MUST be the same as the number of components = 6 for this example), with rows and columns labeled accordingly. 
+    Diagonal elements should be 1 in DSM matrix since each component interacts with itself. 
+    If you don't know the answer, just write 2 for the specific cell that you are unsure of. A worst case scenario of the **as a list of lists** shown below (diagonal elements are 1 and rest are 2). Don't make up an answer.     final response = [
+        [1, 2, 2, 2, 2, 2],
+        [2, 1, 2, 2, 2, 2],
+        [2, 2, 1, 2, 2, 2],
+        [2, 2, 2, 1, 2, 2],
+        [2, 2, 2, 2, 1, 2],
+        [2, 2, 2, 2, 2, 1]
+    ]
+
+    IMPORTANT: Your response must **ONLY** contain a valid **as a list of lists** in the following example format 7x7 matrix.     
+    The below list of lists is just an example format of your response. **Replace** the values with your **actual analysis** while providing your response with parameter of 'final response'.    
+    final response = [
+        [1, 0, 0, 0, 0, 0],
+        [0, 1, 0, 0, 0, 0],
+        [0, 0, 1, 0, 0, 0],
+        [0, 0, 0, 1, 0, 0],
+        [0, 0, 0, 0, 1, 0],
+        [0, 0, 0, 0, 0, 1]
+    ]
+
+    IMPORTANT: THE FORMAT OF THE OUTPUT MUST BE AS LIST OF LISTS ONLY SIMILAR TO THE ONE ABOVE (NO LATEX, CODE, OR OTHER ENCODINGS).
+    
+2025-02-16 06:31:40,783 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Response:  Based on the components and their typical interactions in a CubeSat system, here is the Design Structure Matrix:
+
+final response = [
+    [1, 1, 1, 1, 1, 1],   # Spacecraft interacts with all subsystems/components
+    [1, 1, 1, 1, 1, 1],   # GNC Subsystem interacts with Spacecraft, Propulsion, Power, Reaction Wheel and its own software
+    [1, 1, 1, 0, 0, 0],   # Propulsion Subsystem interacts with Spacecraft and GNC Subsystem but not directly with the other components
+    [1, 1, 0, 1, 1, 0],   # Power Subsystem interacts with Spacecraft, GNC Subsystem, Reaction Wheel (as it provides power to them)
+    [1, 1, 0, 1, 1, 0],   # Reaction Wheel interacts with Spacecraft, GNC Subsystem and Power Subsystem
+    [1, 1, 0, 0, 0, 1]    # GNC Software interacts with the Spacecraft and its own subsystem (GNC) but not directly with other components
+]
+2025-02-16 06:31:40,784 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Matrix: [[1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 0, 0, 0], [1, 1, 0, 1, 1, 0], [1, 1, 0, 1, 1, 0], [1, 1, 0, 0, 0, 1]]
+2025-02-16 06:31:40,785 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Matrix from response.
+2025-02-16 06:31:40,786 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - At run 3/5
+2025-02-16 06:31:40,788 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Matrix: [[1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 0, 0, 0], [1, 1, 0, 1, 1, 0], [1, 1, 0, 1, 1, 0], [1, 1, 0, 0, 0, 1]]
+2025-02-16 06:31:40,788 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - --------------------------------------------------
+2025-02-16 06:31:50,799 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Run 4/5
+2025-02-16 06:31:50,837 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - DEBUG: Initializing LLMInference.
+2025-02-16 06:31:50,838 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Initialized LLM inference for system: CubeSat
+2025-02-16 06:31:50,839 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Initialized DSM for system: CubeSat
+2025-02-16 06:31:50,840 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Inference model: ollama:mixtral:8x22b_6k
+2025-02-16 06:32:19,198 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - LLM Response:  Based on the components and their typical interactions in a CubeSat system, here is the Design Structure Matrix:
+
+final response = [
+    [1, 1, 1, 1, 1, 1],   # Spacecraft interacts with all subsystems/components
+    [1, 1, 1, 1, 1, 1],   # GNC Subsystem interacts with Spacecraft, Propulsion, Power, Reaction Wheel and its own software
+    [1, 1, 1, 0, 0, 0],   # Propulsion Subsystem interacts with Spacecraft and GNC Subsystem but not directly with the other components
+    [1, 1, 0, 1, 1, 0],   # Power Subsystem interacts with Spacecraft, GNC Subsystem, Reaction Wheel (as it provides power to them)
+    [1, 1, 0, 1, 1, 0],   # Reaction Wheel interacts with Spacecraft, GNC Subsystem and Power Subsystem
+    [1, 1, 0, 0, 0, 1]    # GNC Software interacts with the Spacecraft and its own subsystem (GNC) but not directly with other components
+]
+2025-02-16 06:32:19,199 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Query: 
+    Please identify system-level proximity relationships (in contact) between the components of CubeSat (nanosatellite), as listed below, and represent them in a Design Structure Matrix (DSM) format.  
+    The relationships should be articulated in plain English, capturing the essence of their interactions. 
+    Here is the list of subsystems/components to analyze: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software'] 
+    The DSM should clearly indicate the interactions between these components as 1 exist and 0 does not exist, considering both the presence and nature of these connections.         
+    Present the output in a square matrix format (number of rows and columns MUST be the same as the number of components = 6 for this example), with rows and columns labeled accordingly. 
+    Diagonal elements should be 1 in DSM matrix since each component interacts with itself. 
+    If you don't know the answer, just write 2 for the specific cell that you are unsure of. A worst case scenario of the **as a list of lists** shown below (diagonal elements are 1 and rest are 2). Don't make up an answer.     final response = [
+        [1, 2, 2, 2, 2, 2],
+        [2, 1, 2, 2, 2, 2],
+        [2, 2, 1, 2, 2, 2],
+        [2, 2, 2, 1, 2, 2],
+        [2, 2, 2, 2, 1, 2],
+        [2, 2, 2, 2, 2, 1]
+    ]
+
+    IMPORTANT: Your response must **ONLY** contain a valid **as a list of lists** in the following example format 7x7 matrix.     
+    The below list of lists is just an example format of your response. **Replace** the values with your **actual analysis** while providing your response with parameter of 'final response'.    
+    final response = [
+        [1, 0, 0, 0, 0, 0],
+        [0, 1, 0, 0, 0, 0],
+        [0, 0, 1, 0, 0, 0],
+        [0, 0, 0, 1, 0, 0],
+        [0, 0, 0, 0, 1, 0],
+        [0, 0, 0, 0, 0, 1]
+    ]
+
+    IMPORTANT: THE FORMAT OF THE OUTPUT MUST BE AS LIST OF LISTS ONLY SIMILAR TO THE ONE ABOVE (NO LATEX, CODE, OR OTHER ENCODINGS).
+    
+2025-02-16 06:32:19,200 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Response:  Based on the components and their typical interactions in a CubeSat system, here is the Design Structure Matrix:
+
+final response = [
+    [1, 1, 1, 1, 1, 1],   # Spacecraft interacts with all subsystems/components
+    [1, 1, 1, 1, 1, 1],   # GNC Subsystem interacts with Spacecraft, Propulsion, Power, Reaction Wheel and its own software
+    [1, 1, 1, 0, 0, 0],   # Propulsion Subsystem interacts with Spacecraft and GNC Subsystem but not directly with the other components
+    [1, 1, 0, 1, 1, 0],   # Power Subsystem interacts with Spacecraft, GNC Subsystem, Reaction Wheel (as it provides power to them)
+    [1, 1, 0, 1, 1, 0],   # Reaction Wheel interacts with Spacecraft, GNC Subsystem and Power Subsystem
+    [1, 1, 0, 0, 0, 1]    # GNC Software interacts with the Spacecraft and its own subsystem (GNC) but not directly with other components
+]
+2025-02-16 06:32:19,202 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Matrix: [[1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 0, 0, 0], [1, 1, 0, 1, 1, 0], [1, 1, 0, 1, 1, 0], [1, 1, 0, 0, 0, 1]]
+2025-02-16 06:32:19,203 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Matrix from response.
+2025-02-16 06:32:19,204 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - At run 4/5
+2025-02-16 06:32:19,204 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Matrix: [[1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 0, 0, 0], [1, 1, 0, 1, 1, 0], [1, 1, 0, 1, 1, 0], [1, 1, 0, 0, 0, 1]]
+2025-02-16 06:32:19,205 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - --------------------------------------------------
+2025-02-16 06:32:29,216 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Run 5/5
+2025-02-16 06:32:29,261 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - DEBUG: Initializing LLMInference.
+2025-02-16 06:32:29,262 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Initialized LLM inference for system: CubeSat
+2025-02-16 06:32:29,263 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Initialized DSM for system: CubeSat
+2025-02-16 06:32:29,264 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Inference model: ollama:mixtral:8x22b_6k
+2025-02-16 06:32:57,942 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - LLM Response:  Based on the components and their typical interactions in a CubeSat system, here is the Design Structure Matrix:
+
+final response = [
+    [1, 1, 1, 1, 1, 1],   # Spacecraft interacts with all subsystems/components
+    [1, 1, 1, 1, 1, 1],   # GNC Subsystem interacts with Spacecraft, Propulsion, Power, Reaction Wheel and its own software
+    [1, 1, 1, 0, 0, 0],   # Propulsion Subsystem interacts with Spacecraft and GNC Subsystem but not directly with the other components
+    [1, 1, 0, 1, 1, 0],   # Power Subsystem interacts with Spacecraft, GNC Subsystem, Reaction Wheel (as it provides power to them)
+    [1, 1, 0, 1, 1, 0],   # Reaction Wheel interacts with Spacecraft, GNC Subsystem and Power Subsystem
+    [1, 1, 0, 0, 0, 1]    # GNC Software interacts with the Spacecraft and its own subsystem (GNC) but not directly with other components
+]
+2025-02-16 06:32:57,943 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Query: 
+    Please identify system-level proximity relationships (in contact) between the components of CubeSat (nanosatellite), as listed below, and represent them in a Design Structure Matrix (DSM) format.  
+    The relationships should be articulated in plain English, capturing the essence of their interactions. 
+    Here is the list of subsystems/components to analyze: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software'] 
+    The DSM should clearly indicate the interactions between these components as 1 exist and 0 does not exist, considering both the presence and nature of these connections.         
+    Present the output in a square matrix format (number of rows and columns MUST be the same as the number of components = 6 for this example), with rows and columns labeled accordingly. 
+    Diagonal elements should be 1 in DSM matrix since each component interacts with itself. 
+    If you don't know the answer, just write 2 for the specific cell that you are unsure of. A worst case scenario of the **as a list of lists** shown below (diagonal elements are 1 and rest are 2). Don't make up an answer.     final response = [
+        [1, 2, 2, 2, 2, 2],
+        [2, 1, 2, 2, 2, 2],
+        [2, 2, 1, 2, 2, 2],
+        [2, 2, 2, 1, 2, 2],
+        [2, 2, 2, 2, 1, 2],
+        [2, 2, 2, 2, 2, 1]
+    ]
+
+    IMPORTANT: Your response must **ONLY** contain a valid **as a list of lists** in the following example format 7x7 matrix.     
+    The below list of lists is just an example format of your response. **Replace** the values with your **actual analysis** while providing your response with parameter of 'final response'.    
+    final response = [
+        [1, 0, 0, 0, 0, 0],
+        [0, 1, 0, 0, 0, 0],
+        [0, 0, 1, 0, 0, 0],
+        [0, 0, 0, 1, 0, 0],
+        [0, 0, 0, 0, 1, 0],
+        [0, 0, 0, 0, 0, 1]
+    ]
+
+    IMPORTANT: THE FORMAT OF THE OUTPUT MUST BE AS LIST OF LISTS ONLY SIMILAR TO THE ONE ABOVE (NO LATEX, CODE, OR OTHER ENCODINGS).
+    
+2025-02-16 06:32:57,944 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Response:  Based on the components and their typical interactions in a CubeSat system, here is the Design Structure Matrix:
+
+final response = [
+    [1, 1, 1, 1, 1, 1],   # Spacecraft interacts with all subsystems/components
+    [1, 1, 1, 1, 1, 1],   # GNC Subsystem interacts with Spacecraft, Propulsion, Power, Reaction Wheel and its own software
+    [1, 1, 1, 0, 0, 0],   # Propulsion Subsystem interacts with Spacecraft and GNC Subsystem but not directly with the other components
+    [1, 1, 0, 1, 1, 0],   # Power Subsystem interacts with Spacecraft, GNC Subsystem, Reaction Wheel (as it provides power to them)
+    [1, 1, 0, 1, 1, 0],   # Reaction Wheel interacts with Spacecraft, GNC Subsystem and Power Subsystem
+    [1, 1, 0, 0, 0, 1]    # GNC Software interacts with the Spacecraft and its own subsystem (GNC) but not directly with other components
+]
+2025-02-16 06:32:57,945 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Matrix: [[1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 0, 0, 0], [1, 1, 0, 1, 1, 0], [1, 1, 0, 1, 1, 0], [1, 1, 0, 0, 0, 1]]
+2025-02-16 06:32:57,946 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Matrix from response.
+2025-02-16 06:32:57,947 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - At run 5/5
+2025-02-16 06:32:57,948 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Matrix: [[1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 0, 0, 0], [1, 1, 0, 1, 1, 0], [1, 1, 0, 1, 1, 0], [1, 1, 0, 0, 0, 1]]
+2025-02-16 06:32:57,948 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - --------------------------------------------------
+2025-02-16 06:33:07,959 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Duration of reference combination {}: 0:03:51.102226
+2025-02-16 06:33:07,961 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2025-02-16 06:33:07,962 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - 
+==================================================
+2025-02-16 06:33:07,963 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Average DSM Matrix for model: ollama:mixtral:8x22b_6k
+2025-02-16 06:33:07,963 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - End of log reference type(s): ['baseline']
+2025-02-16 06:33:07,965 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Saving results to: ../output/experiment_llm_ollama:mixtral:8x22b_6k_20250216-062916/llm_refs_baseline
+2025-02-16 06:33:07,969 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - 
+Average Matrix:
+                                                   Spacecraft  Guidance, Navigation, and Control (GNC) Subsystem  Propulsion Subsystem  Power Subsystem  Reaction Wheel  GNC Software
+Spacecraft                                                  1                                                  1                     1                1               1             1
+Guidance, Navigation, and Control (GNC) Subsystem           1                                                  1                     1                1               1             1
+Propulsion Subsystem                                        1                                                  1                     1                0               0             0
+Power Subsystem                                             1                                                  1                     0                1               1             0
+Reaction Wheel                                              1                                                  1                     0                1               1             0
+GNC Software                                                1                                                  1                     0                0               0             1
+2025-02-16 06:33:07,970 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - 
+Components: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software']
+2025-02-16 06:33:07,971 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - ==================================================
+
+2025-02-16 06:33:07,973 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Saved CSV to: ../output/experiment_llm_ollama:mixtral:8x22b_6k_20250216-062916/llm_refs_baseline/average_matrix_20250216-062916.csv
+2025-02-16 06:33:07,975 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Saved JSON to: ../output/experiment_llm_ollama:mixtral:8x22b_6k_20250216-062916/llm_refs_baseline/detailed_results_20250216-062916.json
+2025-02-16 06:33:08,241 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Saved visualization to: ../output/experiment_llm_ollama:mixtral:8x22b_6k_20250216-062916/llm_refs_baseline/average_matrix_20250216-062916.png
+2025-02-16 06:33:08,242 - DSM_MultiModelExp_llm_ollama:mixtral:8x22b_6k - INFO - Duration of experiment for ollama:mixtral:8x22b_6k in llm inference type: 0:03:52

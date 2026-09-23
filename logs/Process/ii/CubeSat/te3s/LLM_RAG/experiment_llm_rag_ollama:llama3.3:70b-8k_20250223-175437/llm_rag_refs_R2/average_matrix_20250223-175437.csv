@@ -1,0 +1,7 @@
+,Power System,Communication System,Navigation System,Computer System,Mechanical Structure,Thermal Control System
+Power System,1,1,0,1,1,0
+Communication System,1,1,0,1,0,0
+Navigation System,0,0,1,0,0,1
+Computer System,1,1,0,1,1,1
+Mechanical Structure,1,0,0,1,1,1
+Thermal Control System,0,0,1,1,1,1

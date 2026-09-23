@@ -1,0 +1,570 @@
+2025-02-21 07:39:58,666 - DSM_None_None_ - INFO - Initial Data Shapes:
+2025-02-21 07:39:58,667 - DSM_None_None_ - INFO - Product data shape: (7, 7)
+2025-02-21 07:39:58,668 - DSM_None_None_ - INFO - Predicted data shape: (7, 7)
+2025-02-21 07:39:58,668 - DSM_None_None_ - INFO - Product Data Components:
+2025-02-21 07:39:58,669 - DSM_None_None_ - INFO - ['Bit', 'Transmission', 'Motor', 'Electrical System', 'Battery Holder', 'Housing', 'External Environment']
+2025-02-21 07:39:58,670 - DSM_None_None_ - INFO - Predicted Data Components:
+2025-02-21 07:39:58,670 - DSM_None_None_ - INFO - ['Motor', 'Battery Pack', 'Gear System', 'Chuck/Bit Holder', 'Trigger Switch', 'Housing', 'Control Circuitry']
+2025-02-21 07:39:58,671 - DSM_None_None_ - INFO - Component Counts:
+2025-02-21 07:39:58,672 - DSM_None_None_ - INFO - Ground Truth Components: 7
+2025-02-21 07:39:58,672 - DSM_None_None_ - INFO - Predicted Components: 7
+2025-02-21 07:39:58,673 - DSM_None_None_ - INFO - All Unique Components: 12
+2025-02-21 07:39:59,558 - DSM_None_None_ - INFO - 
+Embeddings Created:
+2025-02-21 07:39:59,559 - DSM_None_None_ - INFO - Number of embeddings: 12
+2025-02-21 07:40:00,444 - DSM_None_None_ - INFO - 
+Best matches for each ground truth component:
+2025-02-21 07:40:00,445 - DSM_None_None_ - INFO - 
+Bit:
+2025-02-21 07:40:00,446 - DSM_None_None_ - INFO -   predicted_component  embedding_similarity
+3    Chuck/Bit Holder              0.483967
+0               Motor              0.295605
+1        Battery Pack              0.276195
+2025-02-21 07:40:00,449 - DSM_None_None_ - INFO - 
+Transmission:
+2025-02-21 07:40:00,451 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+9          Gear System              0.463897
+7                Motor              0.450794
+11      Trigger Switch              0.373139
+2025-02-21 07:40:00,454 - DSM_None_None_ - INFO - 
+Motor:
+2025-02-21 07:40:00,455 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+14               Motor              1.000000
+16         Gear System              0.470935
+20   Control Circuitry              0.380178
+2025-02-21 07:40:00,458 - DSM_None_None_ - INFO - 
+Electrical System:
+2025-02-21 07:40:00,459 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+27   Control Circuitry              0.539423
+23         Gear System              0.449893
+22        Battery Pack              0.383829
+2025-02-21 07:40:00,462 - DSM_None_None_ - INFO - 
+Battery Holder:
+2025-02-21 07:40:00,463 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+29        Battery Pack              0.759982
+31    Chuck/Bit Holder              0.409580
+34   Control Circuitry              0.365353
+2025-02-21 07:40:00,465 - DSM_None_None_ - INFO - 
+Housing:
+2025-02-21 07:40:00,466 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+40             Housing              1.000000
+37         Gear System              0.261725
+41   Control Circuitry              0.234603
+2025-02-21 07:40:00,470 - DSM_None_None_ - INFO - 
+External Environment:
+2025-02-21 07:40:00,471 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+47             Housing              0.254419
+43        Battery Pack              0.246513
+44         Gear System              0.228946
+2025-02-21 07:40:04,940 - DSM_None_None_ - INFO - System Context: power drill
+2025-02-21 07:40:04,941 - DSM_None_None_ - INFO - Similarity Threshold: 0.3
+2025-02-21 07:40:04,942 - DSM_None_None_ - INFO - 
+Initial LLM Suggested Mappings:
+2025-02-21 07:40:04,944 - DSM_None_None_ - INFO - Ground Truth Components: ['Bit', 'Transmission', 'Motor', 'Electrical System', 'Battery Holder', 'Housing', 'External Environment']
+2025-02-21 07:40:04,945 - DSM_None_None_ - INFO - Predicted Components: ['Motor', 'Battery Pack', 'Gear System', 'Chuck/Bit Holder', 'Trigger Switch', 'Housing', 'Control Circuitry']
+2025-02-21 07:40:04,945 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-02-21 07:40:04,946 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/PowerDrill/te3s/LLM_RAG/experiment_llm_rag_ollama:deepseek-r1:14b-5k_20250221-054412/llm_rag_refs_R2/average_matrix_20250221-054412.csv
+2025-02-21 07:40:04,947 - DSM_None_None_ - INFO - Extracted model: deepseek-r1:14b-5k
+2025-02-21 07:40:04,948 - DSM_None_None_ - INFO - Creating similarity matrix text
+2025-02-21 07:40:04,981 - DSM_None_None_ - INFO - Creating prompt
+2025-02-21 07:40:04,982 - DSM_None_None_ - INFO - Attempting to use model: deepseek-r1:14b-5k
+2025-02-21 07:40:04,983 - DSM_None_None_ - INFO - Using Ollama path
+2025-02-21 07:40:04,984 - DSM_None_None_ - INFO - Model name: deepseek-r1:14b-5k
+2025-02-21 07:40:04,985 - DSM_None_None_ - INFO - Prompt length: 1787
+2025-02-21 07:40:24,982 - DSM_None_None_ - INFO - Response status code: 200
+2025-02-21 07:40:24,984 - DSM_None_None_ - INFO - API call succeeded
+2025-02-21 07:40:24,985 - DSM_None_None_ - INFO - Got response: <think>
+Okay, I'm trying to figure out how to optimally match the ground truth components with the p...
+2025-02-21 07:40:24,986 - DSM_None_None_ - INFO - 
+Initial LLM Suggested Mappings:
+2025-02-21 07:40:24,987 - DSM_None_None_ - INFO - Ground Truth Components: ['Bit', 'Transmission', 'Motor', 'Electrical System', 'Battery Holder', 'Housing', 'External Environment']
+2025-02-21 07:40:24,988 - DSM_None_None_ - INFO - Predicted Components: ['Motor', 'Battery Pack', 'Gear System', 'Chuck/Bit Holder', 'Trigger Switch', 'Housing', 'Control Circuitry']
+2025-02-21 07:40:24,989 - DSM_None_None_ - INFO - 
+Checking mapping: Bit -> Chuck/Bit Holder
+2025-02-21 07:40:24,990 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-21 07:40:24,991 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-21 07:40:24,992 - DSM_None_None_ - INFO - 
+Checking mapping: Transmission -> Gear System
+2025-02-21 07:40:24,993 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-21 07:40:24,993 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-21 07:40:24,995 - DSM_None_None_ - INFO - 
+Checking mapping: Motor -> Motor
+2025-02-21 07:40:24,996 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-21 07:40:24,996 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-21 07:40:24,997 - DSM_None_None_ - INFO - 
+Checking mapping: Electrical System -> Control Circuitry
+2025-02-21 07:40:24,998 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-21 07:40:24,999 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-21 07:40:25,000 - DSM_None_None_ - INFO - 
+Checking mapping: Battery Holder -> Battery Pack
+2025-02-21 07:40:25,001 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-21 07:40:25,002 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-21 07:40:25,003 - DSM_None_None_ - INFO - 
+Checking mapping: Housing -> Housing
+2025-02-21 07:40:25,003 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-21 07:40:25,005 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-21 07:40:25,012 - DSM_None_None_ - INFO - Final Component Mapping (only valid matches):
+2025-02-21 07:40:25,013 - DSM_None_None_ - INFO -   Ground Truth Component Matched Predicted Component
+0                    Bit            Chuck/Bit Holder
+1           Transmission                 Gear System
+2                  Motor                       Motor
+3      Electrical System           Control Circuitry
+4         Battery Holder                Battery Pack
+5                Housing                     Housing
+2025-02-21 07:40:25,017 - DSM_None_None_ - INFO - Evaluation complete. Visualizations generated.
+2025-02-21 19:42:12,075 - DSM_None_None_ - INFO - Initial Data Shapes:
+2025-02-21 19:42:12,076 - DSM_None_None_ - INFO - Product data shape: (7, 7)
+2025-02-21 19:42:12,077 - DSM_None_None_ - INFO - Predicted data shape: (7, 7)
+2025-02-21 19:42:12,077 - DSM_None_None_ - INFO - Product Data Components:
+2025-02-21 19:42:12,079 - DSM_None_None_ - INFO - ['Bit', 'Transmission', 'Motor', 'Electrical System', 'Battery Holder', 'Housing', 'External Environment']
+2025-02-21 19:42:12,079 - DSM_None_None_ - INFO - Predicted Data Components:
+2025-02-21 19:42:12,080 - DSM_None_None_ - INFO - ['Motor', 'Battery Pack', 'Gear System', 'Chuck/Bit Holder', 'Trigger Switch', 'Housing', 'Control Circuitry']
+2025-02-21 19:42:12,081 - DSM_None_None_ - INFO - Component Counts:
+2025-02-21 19:42:12,082 - DSM_None_None_ - INFO - Ground Truth Components: 7
+2025-02-21 19:42:12,083 - DSM_None_None_ - INFO - Predicted Components: 7
+2025-02-21 19:42:12,084 - DSM_None_None_ - INFO - All Unique Components: 12
+2025-02-21 19:42:12,916 - DSM_None_None_ - INFO - 
+Embeddings Created:
+2025-02-21 19:42:12,917 - DSM_None_None_ - INFO - Number of embeddings: 12
+2025-02-21 19:42:13,854 - DSM_None_None_ - INFO - 
+Best matches for each ground truth component:
+2025-02-21 19:42:13,856 - DSM_None_None_ - INFO - 
+Bit:
+2025-02-21 19:42:13,857 - DSM_None_None_ - INFO -   predicted_component  embedding_similarity
+3    Chuck/Bit Holder              0.483995
+0               Motor              0.295605
+1        Battery Pack              0.276195
+2025-02-21 19:42:13,861 - DSM_None_None_ - INFO - 
+Transmission:
+2025-02-21 19:42:13,862 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+9          Gear System              0.463897
+7                Motor              0.450794
+11      Trigger Switch              0.373129
+2025-02-21 19:42:13,865 - DSM_None_None_ - INFO - 
+Motor:
+2025-02-21 19:42:13,866 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+14               Motor              1.000000
+16         Gear System              0.470935
+20   Control Circuitry              0.380178
+2025-02-21 19:42:13,869 - DSM_None_None_ - INFO - 
+Electrical System:
+2025-02-21 19:42:13,870 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+27   Control Circuitry              0.539423
+23         Gear System              0.449893
+22        Battery Pack              0.383829
+2025-02-21 19:42:13,873 - DSM_None_None_ - INFO - 
+Battery Holder:
+2025-02-21 19:42:13,874 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+29        Battery Pack              0.759982
+31    Chuck/Bit Holder              0.409602
+34   Control Circuitry              0.365353
+2025-02-21 19:42:13,876 - DSM_None_None_ - INFO - 
+Housing:
+2025-02-21 19:42:13,877 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+40             Housing              1.000000
+37         Gear System              0.261725
+41   Control Circuitry              0.234603
+2025-02-21 19:42:13,880 - DSM_None_None_ - INFO - 
+External Environment:
+2025-02-21 19:42:13,881 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+47             Housing              0.254411
+43        Battery Pack              0.246532
+44         Gear System              0.228954
+2025-02-21 19:42:14,044 - DSM_None_None_ - INFO - System Context: power drill
+2025-02-21 19:42:14,046 - DSM_None_None_ - INFO - Similarity Threshold: 0.3
+2025-02-21 19:42:14,046 - DSM_None_None_ - INFO - 
+Initial LLM Suggested Mappings:
+2025-02-21 19:42:14,047 - DSM_None_None_ - INFO - Ground Truth Components: ['Bit', 'Transmission', 'Motor', 'Electrical System', 'Battery Holder', 'Housing', 'External Environment']
+2025-02-21 19:42:14,047 - DSM_None_None_ - INFO - Predicted Components: ['Motor', 'Battery Pack', 'Gear System', 'Chuck/Bit Holder', 'Trigger Switch', 'Housing', 'Control Circuitry']
+2025-02-21 19:42:14,048 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-02-21 19:42:14,050 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/PowerDrill/te3s/LLM_RAG/experiment_llm_rag_ollama:deepseek-r1:14b-5k_20250221-054412/llm_rag_refs_R2/average_matrix_20250221-054412.csv
+2025-02-21 19:42:14,050 - DSM_None_None_ - INFO - Extracted model: deepseek-r1:14b-5k
+2025-02-21 19:42:14,051 - DSM_None_None_ - INFO - Creating similarity matrix text
+2025-02-21 19:42:14,067 - DSM_None_None_ - INFO - Creating prompt
+2025-02-21 19:42:14,068 - DSM_None_None_ - INFO - Attempting to use model: deepseek-r1:14b-5k
+2025-02-21 19:42:14,069 - DSM_None_None_ - INFO - Using Ollama path
+2025-02-21 19:42:14,108 - DSM_None_None_ - INFO - Model name: deepseek-r1:14b-5k
+2025-02-21 19:42:14,109 - DSM_None_None_ - INFO - Prompt length: 1787
+2025-02-21 19:42:42,319 - DSM_None_None_ - INFO - Response status code: 200
+2025-02-21 19:42:42,320 - DSM_None_None_ - INFO - API call succeeded
+2025-02-21 19:42:42,321 - DSM_None_None_ - INFO - Got response: <think>
+Okay, so I need to figure out how to optimally map each ground truth component from a power ...
+2025-02-21 19:42:42,321 - DSM_None_None_ - INFO - 
+Initial LLM Suggested Mappings:
+2025-02-21 19:42:42,322 - DSM_None_None_ - INFO - Ground Truth Components: ['Bit', 'Transmission', 'Motor', 'Electrical System', 'Battery Holder', 'Housing', 'External Environment']
+2025-02-21 19:42:42,323 - DSM_None_None_ - INFO - Predicted Components: ['Motor', 'Battery Pack', 'Gear System', 'Chuck/Bit Holder', 'Trigger Switch', 'Housing', 'Control Circuitry']
+2025-02-21 19:42:42,324 - DSM_None_None_ - INFO - 
+Checking mapping: Bit -> Chuck/Bit Holder
+2025-02-21 19:42:42,325 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-21 19:42:42,326 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-21 19:42:42,327 - DSM_None_None_ - INFO - 
+Checking mapping: Transmission -> Gear System
+2025-02-21 19:42:42,327 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-21 19:42:42,328 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-21 19:42:42,329 - DSM_None_None_ - INFO - 
+Checking mapping: Motor -> Motor
+2025-02-21 19:42:42,330 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-21 19:42:42,331 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-21 19:42:42,331 - DSM_None_None_ - INFO - 
+Checking mapping: Electrical System -> Control Circuitry
+2025-02-21 19:42:42,332 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-21 19:42:42,333 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-21 19:42:42,334 - DSM_None_None_ - INFO - 
+Checking mapping: Battery Holder -> Battery Pack
+2025-02-21 19:42:42,334 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-21 19:42:42,335 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-21 19:42:42,336 - DSM_None_None_ - INFO - 
+Checking mapping: Housing -> Housing
+2025-02-21 19:42:42,337 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-21 19:42:42,338 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-21 19:42:42,342 - DSM_None_None_ - INFO - Final Component Mapping (only valid matches):
+2025-02-21 19:42:42,342 - DSM_None_None_ - INFO -   Ground Truth Component Matched Predicted Component
+0                    Bit            Chuck/Bit Holder
+1           Transmission                 Gear System
+2                  Motor                       Motor
+3      Electrical System           Control Circuitry
+4         Battery Holder                Battery Pack
+5                Housing                     Housing
+2025-02-21 19:42:42,344 - DSM_None_None_ - INFO - Evaluation complete. Visualizations generated.
+2025-02-21 19:43:07,879 - DSM_None_None_ - INFO - Initial Data Shapes:
+2025-02-21 19:43:07,880 - DSM_None_None_ - INFO - Product data shape: (7, 7)
+2025-02-21 19:43:07,881 - DSM_None_None_ - INFO - Predicted data shape: (7, 7)
+2025-02-21 19:43:07,882 - DSM_None_None_ - INFO - Product Data Components:
+2025-02-21 19:43:07,883 - DSM_None_None_ - INFO - ['Bit', 'Transmission', 'Motor', 'Electrical System', 'Battery Holder', 'Housing', 'External Environment']
+2025-02-21 19:43:07,884 - DSM_None_None_ - INFO - Predicted Data Components:
+2025-02-21 19:43:07,885 - DSM_None_None_ - INFO - ['Motor', 'Battery Pack', 'Gear System', 'Chuck/Bit Holder', 'Trigger Switch', 'Housing', 'Control Circuitry']
+2025-02-21 19:43:07,886 - DSM_None_None_ - INFO - Component Counts:
+2025-02-21 19:43:07,887 - DSM_None_None_ - INFO - Ground Truth Components: 7
+2025-02-21 19:43:07,888 - DSM_None_None_ - INFO - Predicted Components: 7
+2025-02-21 19:43:07,889 - DSM_None_None_ - INFO - All Unique Components: 12
+2025-02-21 19:43:08,881 - DSM_None_None_ - INFO - 
+Embeddings Created:
+2025-02-21 19:43:08,882 - DSM_None_None_ - INFO - Number of embeddings: 12
+2025-02-21 19:43:09,829 - DSM_None_None_ - INFO - 
+Best matches for each ground truth component:
+2025-02-21 19:43:09,831 - DSM_None_None_ - INFO - 
+Bit:
+2025-02-21 19:43:09,832 - DSM_None_None_ - INFO -   predicted_component  embedding_similarity
+3    Chuck/Bit Holder              0.483995
+0               Motor              0.295605
+1        Battery Pack              0.276195
+2025-02-21 19:43:09,836 - DSM_None_None_ - INFO - 
+Transmission:
+2025-02-21 19:43:09,837 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+9          Gear System              0.463897
+7                Motor              0.450794
+11      Trigger Switch              0.373129
+2025-02-21 19:43:09,840 - DSM_None_None_ - INFO - 
+Motor:
+2025-02-21 19:43:09,841 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+14               Motor              1.000000
+16         Gear System              0.470935
+20   Control Circuitry              0.380178
+2025-02-21 19:43:09,844 - DSM_None_None_ - INFO - 
+Electrical System:
+2025-02-21 19:43:09,845 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+27   Control Circuitry              0.539415
+23         Gear System              0.449984
+22        Battery Pack              0.383894
+2025-02-21 19:43:09,848 - DSM_None_None_ - INFO - 
+Battery Holder:
+2025-02-21 19:43:09,849 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+29        Battery Pack              0.759982
+31    Chuck/Bit Holder              0.409602
+34   Control Circuitry              0.365353
+2025-02-21 19:43:09,852 - DSM_None_None_ - INFO - 
+Housing:
+2025-02-21 19:43:09,853 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+40             Housing              1.000000
+37         Gear System              0.261725
+41   Control Circuitry              0.234603
+2025-02-21 19:43:09,856 - DSM_None_None_ - INFO - 
+External Environment:
+2025-02-21 19:43:09,857 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+47             Housing              0.254411
+43        Battery Pack              0.246532
+44         Gear System              0.228954
+2025-02-21 19:43:10,019 - DSM_None_None_ - INFO - System Context: power drill
+2025-02-21 19:43:10,021 - DSM_None_None_ - INFO - Similarity Threshold: 0.3
+2025-02-21 19:43:10,022 - DSM_None_None_ - INFO - 
+Initial LLM Suggested Mappings:
+2025-02-21 19:43:10,023 - DSM_None_None_ - INFO - Ground Truth Components: ['Bit', 'Transmission', 'Motor', 'Electrical System', 'Battery Holder', 'Housing', 'External Environment']
+2025-02-21 19:43:10,023 - DSM_None_None_ - INFO - Predicted Components: ['Motor', 'Battery Pack', 'Gear System', 'Chuck/Bit Holder', 'Trigger Switch', 'Housing', 'Control Circuitry']
+2025-02-21 19:43:10,024 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-02-21 19:43:10,024 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/PowerDrill/te3s/LLM_RAG/experiment_llm_rag_ollama:deepseek-r1:14b-5k_20250221-054412/llm_rag_refs_R2/average_matrix_20250221-054412.csv
+2025-02-21 19:43:10,025 - DSM_None_None_ - INFO - Extracted model: deepseek-r1:14b-5k
+2025-02-21 19:43:10,026 - DSM_None_None_ - INFO - Creating similarity matrix text
+2025-02-21 19:43:10,042 - DSM_None_None_ - INFO - Creating prompt
+2025-02-21 19:43:10,044 - DSM_None_None_ - INFO - Attempting to use model: deepseek-r1:14b-5k
+2025-02-21 19:43:10,045 - DSM_None_None_ - INFO - Using Ollama path
+2025-02-21 19:43:10,084 - DSM_None_None_ - INFO - Model name: deepseek-r1:14b-5k
+2025-02-21 19:43:10,084 - DSM_None_None_ - INFO - Prompt length: 1787
+2025-02-21 19:43:25,428 - DSM_None_None_ - INFO - Response status code: 200
+2025-02-21 19:43:25,429 - DSM_None_None_ - INFO - API call succeeded
+2025-02-21 19:43:25,430 - DSM_None_None_ - INFO - Got response: <think>
+Okay, so I need to figure out the optimal one-to-one mapping between the ground truth compon...
+2025-02-21 19:43:25,431 - DSM_None_None_ - INFO - 
+Initial LLM Suggested Mappings:
+2025-02-21 19:43:25,432 - DSM_None_None_ - INFO - Ground Truth Components: ['Bit', 'Transmission', 'Motor', 'Electrical System', 'Battery Holder', 'Housing', 'External Environment']
+2025-02-21 19:43:25,432 - DSM_None_None_ - INFO - Predicted Components: ['Motor', 'Battery Pack', 'Gear System', 'Chuck/Bit Holder', 'Trigger Switch', 'Housing', 'Control Circuitry']
+2025-02-21 19:43:25,433 - DSM_None_None_ - INFO - 
+Checking mapping: Bit -> Chuck/Bit Holder
+2025-02-21 19:43:25,434 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-21 19:43:25,434 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-21 19:43:25,435 - DSM_None_None_ - INFO - 
+Checking mapping: Transmission -> Gear System
+2025-02-21 19:43:25,437 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-21 19:43:25,437 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-21 19:43:25,438 - DSM_None_None_ - INFO - 
+Checking mapping: Motor -> Motor
+2025-02-21 19:43:25,439 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-21 19:43:25,440 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-21 19:43:25,440 - DSM_None_None_ - INFO - 
+Checking mapping: Electrical System -> Control Circuitry
+2025-02-21 19:43:25,442 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-21 19:43:25,442 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-21 19:43:25,443 - DSM_None_None_ - INFO - 
+Checking mapping: Battery Holder -> Battery Pack
+2025-02-21 19:43:25,444 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-21 19:43:25,445 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-21 19:43:25,446 - DSM_None_None_ - INFO - 
+Checking mapping: Housing -> Housing
+2025-02-21 19:43:25,446 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-21 19:43:25,447 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-21 19:43:25,455 - DSM_None_None_ - INFO - Final Component Mapping (only valid matches):
+2025-02-21 19:43:25,455 - DSM_None_None_ - INFO -   Ground Truth Component Matched Predicted Component
+0                    Bit            Chuck/Bit Holder
+1           Transmission                 Gear System
+2                  Motor                       Motor
+3      Electrical System           Control Circuitry
+4         Battery Holder                Battery Pack
+5                Housing                     Housing
+2025-02-21 19:43:25,459 - DSM_None_None_ - INFO - Evaluation complete. Visualizations generated.
+2025-02-21 19:44:47,916 - DSM_None_None_ - INFO - Initial Data Shapes:
+2025-02-21 19:44:47,917 - DSM_None_None_ - INFO - Product data shape: (7, 7)
+2025-02-21 19:44:47,918 - DSM_None_None_ - INFO - Predicted data shape: (7, 7)
+2025-02-21 19:44:47,919 - DSM_None_None_ - INFO - Product Data Components:
+2025-02-21 19:44:47,919 - DSM_None_None_ - INFO - ['Bit', 'Transmission', 'Motor', 'Electrical System', 'Battery Holder', 'Housing', 'External Environment']
+2025-02-21 19:44:47,920 - DSM_None_None_ - INFO - Predicted Data Components:
+2025-02-21 19:44:47,921 - DSM_None_None_ - INFO - ['Motor', 'Battery Pack', 'Gear System', 'Chuck/Bit Holder', 'Trigger Switch', 'Housing', 'Control Circuitry']
+2025-02-21 19:44:47,922 - DSM_None_None_ - INFO - Component Counts:
+2025-02-21 19:44:47,923 - DSM_None_None_ - INFO - Ground Truth Components: 7
+2025-02-21 19:44:47,923 - DSM_None_None_ - INFO - Predicted Components: 7
+2025-02-21 19:44:47,924 - DSM_None_None_ - INFO - All Unique Components: 12
+2025-02-21 19:44:48,864 - DSM_None_None_ - INFO - 
+Embeddings Created:
+2025-02-21 19:44:48,866 - DSM_None_None_ - INFO - Number of embeddings: 12
+2025-02-21 19:44:49,824 - DSM_None_None_ - INFO - 
+Best matches for each ground truth component:
+2025-02-21 19:44:49,826 - DSM_None_None_ - INFO - 
+Bit:
+2025-02-21 19:44:49,827 - DSM_None_None_ - INFO -   predicted_component  embedding_similarity
+3    Chuck/Bit Holder              0.483967
+0               Motor              0.295605
+1        Battery Pack              0.276242
+2025-02-21 19:44:49,831 - DSM_None_None_ - INFO - 
+Transmission:
+2025-02-21 19:44:49,833 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+9          Gear System              0.463897
+7                Motor              0.450794
+11      Trigger Switch              0.373139
+2025-02-21 19:44:49,836 - DSM_None_None_ - INFO - 
+Motor:
+2025-02-21 19:44:49,837 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+14               Motor              1.000000
+16         Gear System              0.470935
+20   Control Circuitry              0.380220
+2025-02-21 19:44:49,840 - DSM_None_None_ - INFO - 
+Electrical System:
+2025-02-21 19:44:49,841 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+27   Control Circuitry              0.539386
+23         Gear System              0.449893
+22        Battery Pack              0.383882
+2025-02-21 19:44:49,844 - DSM_None_None_ - INFO - 
+Battery Holder:
+2025-02-21 19:44:49,845 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+29        Battery Pack              0.760011
+31    Chuck/Bit Holder              0.409580
+34   Control Circuitry              0.365353
+2025-02-21 19:44:49,848 - DSM_None_None_ - INFO - 
+Housing:
+2025-02-21 19:44:49,849 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+40             Housing              1.000000
+37         Gear System              0.261712
+41   Control Circuitry              0.234633
+2025-02-21 19:44:49,852 - DSM_None_None_ - INFO - 
+External Environment:
+2025-02-21 19:44:49,853 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+47             Housing              0.254379
+43        Battery Pack              0.246463
+44         Gear System              0.228946
+2025-02-21 19:44:50,019 - DSM_None_None_ - INFO - System Context: power drill
+2025-02-21 19:44:50,021 - DSM_None_None_ - INFO - Similarity Threshold: 0.3
+2025-02-21 19:44:50,022 - DSM_None_None_ - INFO - 
+Initial LLM Suggested Mappings:
+2025-02-21 19:44:50,023 - DSM_None_None_ - INFO - Ground Truth Components: ['Bit', 'Transmission', 'Motor', 'Electrical System', 'Battery Holder', 'Housing', 'External Environment']
+2025-02-21 19:44:50,023 - DSM_None_None_ - INFO - Predicted Components: ['Motor', 'Battery Pack', 'Gear System', 'Chuck/Bit Holder', 'Trigger Switch', 'Housing', 'Control Circuitry']
+2025-02-21 19:44:50,024 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-02-21 19:44:50,025 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/PowerDrill/te3s/LLM_RAG/experiment_llm_rag_ollama:deepseek-r1:14b-5k_20250221-054412/llm_rag_refs_R2/average_matrix_20250221-054412.csv
+2025-02-21 19:44:50,026 - DSM_None_None_ - INFO - Extracted model: deepseek-r1:14b-5k
+2025-02-21 19:44:50,026 - DSM_None_None_ - INFO - Creating similarity matrix text
+2025-02-21 19:44:50,042 - DSM_None_None_ - INFO - Creating prompt
+2025-02-21 19:44:50,045 - DSM_None_None_ - INFO - Attempting to use model: deepseek-r1:14b-5k
+2025-02-21 19:44:50,045 - DSM_None_None_ - INFO - Using Ollama path
+2025-02-21 19:44:50,084 - DSM_None_None_ - INFO - Model name: deepseek-r1:14b-5k
+2025-02-21 19:44:50,085 - DSM_None_None_ - INFO - Prompt length: 1787
+2025-02-21 19:45:22,165 - DSM_None_None_ - INFO - Response status code: 200
+2025-02-21 19:45:22,166 - DSM_None_None_ - INFO - API call succeeded
+2025-02-21 19:45:22,167 - DSM_None_None_ - INFO - Got response: <think>
+Okay, so I'm trying to figure out how to optimally map the ground truth components from a po...
+2025-02-21 19:45:22,168 - DSM_None_None_ - INFO - 
+Initial LLM Suggested Mappings:
+2025-02-21 19:45:22,169 - DSM_None_None_ - INFO - Ground Truth Components: ['Bit', 'Transmission', 'Motor', 'Electrical System', 'Battery Holder', 'Housing', 'External Environment']
+2025-02-21 19:45:22,169 - DSM_None_None_ - INFO - Predicted Components: ['Motor', 'Battery Pack', 'Gear System', 'Chuck/Bit Holder', 'Trigger Switch', 'Housing', 'Control Circuitry']
+2025-02-21 19:45:22,170 - DSM_None_None_ - INFO - 
+Checking mapping: Bit -> Chuck/Bit Holder
+2025-02-21 19:45:22,172 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-21 19:45:22,172 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-21 19:45:22,173 - DSM_None_None_ - INFO - 
+Checking mapping: Transmission -> Gear System
+2025-02-21 19:45:22,175 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-21 19:45:22,176 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-21 19:45:22,176 - DSM_None_None_ - INFO - 
+Checking mapping: Motor -> Motor
+2025-02-21 19:45:22,177 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-21 19:45:22,178 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-21 19:45:22,179 - DSM_None_None_ - INFO - 
+Checking mapping: Electrical System -> Control Circuitry
+2025-02-21 19:45:22,180 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-21 19:45:22,181 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-21 19:45:22,182 - DSM_None_None_ - INFO - 
+Checking mapping: Battery Holder -> Battery Pack
+2025-02-21 19:45:22,182 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-21 19:45:22,183 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-21 19:45:22,184 - DSM_None_None_ - INFO - 
+Checking mapping: Housing -> Housing
+2025-02-21 19:45:22,185 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-21 19:45:22,186 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-21 19:45:22,193 - DSM_None_None_ - INFO - Final Component Mapping (only valid matches):
+2025-02-21 19:45:22,194 - DSM_None_None_ - INFO -   Ground Truth Component Matched Predicted Component
+0                    Bit            Chuck/Bit Holder
+1           Transmission                 Gear System
+2                  Motor                       Motor
+3      Electrical System           Control Circuitry
+4         Battery Holder                Battery Pack
+5                Housing                     Housing
+2025-02-21 19:45:22,198 - DSM_None_None_ - INFO - Evaluation complete. Visualizations generated.
+2025-02-21 21:04:46,742 - DSM_None_None_ - INFO - Initial Data Shapes:
+2025-02-21 21:04:46,743 - DSM_None_None_ - INFO - Product data shape: (7, 7)
+2025-02-21 21:04:46,744 - DSM_None_None_ - INFO - Predicted data shape: (7, 7)
+2025-02-21 21:04:46,745 - DSM_None_None_ - INFO - Product Data Components:
+2025-02-21 21:04:46,747 - DSM_None_None_ - INFO - ['Bit', 'Transmission', 'Motor', 'Electrical System', 'Battery Holder', 'Housing', 'External Environment']
+2025-02-21 21:04:46,747 - DSM_None_None_ - INFO - Predicted Data Components:
+2025-02-21 21:04:46,748 - DSM_None_None_ - INFO - ['Motor', 'Battery Pack', 'Gear System', 'Chuck/Bit Holder', 'Trigger Switch', 'Housing', 'Control Circuitry']
+2025-02-21 21:04:46,749 - DSM_None_None_ - INFO - Component Counts:
+2025-02-21 21:04:46,750 - DSM_None_None_ - INFO - Ground Truth Components: 7
+2025-02-21 21:04:46,751 - DSM_None_None_ - INFO - Predicted Components: 7
+2025-02-21 21:04:46,752 - DSM_None_None_ - INFO - All Unique Components: 12
+2025-02-21 21:04:47,413 - DSM_None_None_ - INFO - 
+Embeddings Created:
+2025-02-21 21:04:47,414 - DSM_None_None_ - INFO - Number of embeddings: 12
+2025-02-21 21:04:48,361 - DSM_None_None_ - INFO - 
+Best matches for each ground truth component:
+2025-02-21 21:04:48,363 - DSM_None_None_ - INFO - 
+Bit:
+2025-02-21 21:04:48,365 - DSM_None_None_ - INFO -   predicted_component  embedding_similarity
+3    Chuck/Bit Holder              0.483995
+0               Motor              0.295605
+1        Battery Pack              0.276195
+2025-02-21 21:04:48,368 - DSM_None_None_ - INFO - 
+Transmission:
+2025-02-21 21:04:48,370 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+9          Gear System              0.463897
+7                Motor              0.450794
+11      Trigger Switch              0.373129
+2025-02-21 21:04:48,372 - DSM_None_None_ - INFO - 
+Motor:
+2025-02-21 21:04:48,373 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+14               Motor              1.000000
+16         Gear System              0.470935
+20   Control Circuitry              0.380178
+2025-02-21 21:04:48,376 - DSM_None_None_ - INFO - 
+Electrical System:
+2025-02-21 21:04:48,378 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+27   Control Circuitry              0.539423
+23         Gear System              0.449893
+22        Battery Pack              0.383829
+2025-02-21 21:04:48,381 - DSM_None_None_ - INFO - 
+Battery Holder:
+2025-02-21 21:04:48,382 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+29        Battery Pack              0.759982
+31    Chuck/Bit Holder              0.409602
+34   Control Circuitry              0.365353
+2025-02-21 21:04:48,385 - DSM_None_None_ - INFO - 
+Housing:
+2025-02-21 21:04:48,386 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+40             Housing              1.000000
+37         Gear System              0.261725
+41   Control Circuitry              0.234603
+2025-02-21 21:04:48,388 - DSM_None_None_ - INFO - 
+External Environment:
+2025-02-21 21:04:48,389 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+47             Housing              0.254411
+43        Battery Pack              0.246532
+44         Gear System              0.228954
+2025-02-21 21:04:48,555 - DSM_None_None_ - INFO - System Context: power drill
+2025-02-21 21:04:48,557 - DSM_None_None_ - INFO - Similarity Threshold: 0.3
+2025-02-21 21:04:48,557 - DSM_None_None_ - INFO - 
+Initial LLM Suggested Mappings:
+2025-02-21 21:04:48,558 - DSM_None_None_ - INFO - Ground Truth Components: ['Bit', 'Transmission', 'Motor', 'Electrical System', 'Battery Holder', 'Housing', 'External Environment']
+2025-02-21 21:04:48,559 - DSM_None_None_ - INFO - Predicted Components: ['Motor', 'Battery Pack', 'Gear System', 'Chuck/Bit Holder', 'Trigger Switch', 'Housing', 'Control Circuitry']
+2025-02-21 21:04:48,559 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-02-21 21:04:48,560 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/PowerDrill/te3s/LLM_RAG/experiment_llm_rag_ollama:deepseek-r1:14b-5k_20250221-054412/llm_rag_refs_R2/average_matrix_20250221-054412.csv
+2025-02-21 21:04:48,560 - DSM_None_None_ - INFO - Extracted model: deepseek-r1:14b-5k
+2025-02-21 21:04:48,561 - DSM_None_None_ - INFO - Creating similarity matrix text
+2025-02-21 21:04:48,577 - DSM_None_None_ - INFO - Creating prompt
+2025-02-21 21:04:48,579 - DSM_None_None_ - INFO - Attempting to use model: deepseek-r1:14b-5k
+2025-02-21 21:04:48,580 - DSM_None_None_ - INFO - Using Ollama path
+2025-02-21 21:04:48,618 - DSM_None_None_ - INFO - Model name: deepseek-r1:14b-5k
+2025-02-21 21:04:48,619 - DSM_None_None_ - INFO - Prompt length: 1787
+2025-02-21 21:05:16,459 - DSM_None_None_ - INFO - Response status code: 200
+2025-02-21 21:05:16,460 - DSM_None_None_ - INFO - API call succeeded
+2025-02-21 21:05:16,461 - DSM_None_None_ - INFO - Got response: <think>
+Okay, I'm trying to figure out how to optimally map the ground truth components from a power...
+2025-02-21 21:05:16,462 - DSM_None_None_ - INFO - 
+Initial LLM Suggested Mappings:
+2025-02-21 21:05:16,462 - DSM_None_None_ - INFO - Ground Truth Components: ['Bit', 'Transmission', 'Motor', 'Electrical System', 'Battery Holder', 'Housing', 'External Environment']
+2025-02-21 21:05:16,463 - DSM_None_None_ - INFO - Predicted Components: ['Motor', 'Battery Pack', 'Gear System', 'Chuck/Bit Holder', 'Trigger Switch', 'Housing', 'Control Circuitry']
+2025-02-21 21:05:16,464 - DSM_None_None_ - INFO - 
+Checking mapping: Bit -> Chuck/Bit Holder
+2025-02-21 21:05:16,465 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-21 21:05:16,465 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-21 21:05:16,467 - DSM_None_None_ - INFO - 
+Checking mapping: Transmission -> Gear System
+2025-02-21 21:05:16,468 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-21 21:05:16,469 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-21 21:05:16,470 - DSM_None_None_ - INFO - 
+Checking mapping: Motor -> Motor
+2025-02-21 21:05:16,471 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-21 21:05:16,472 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-21 21:05:16,473 - DSM_None_None_ - INFO - 
+Checking mapping: Electrical System -> Control Circuitry
+2025-02-21 21:05:16,474 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-21 21:05:16,475 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-21 21:05:16,475 - DSM_None_None_ - INFO - 
+Checking mapping: Battery Holder -> Battery Pack
+2025-02-21 21:05:16,476 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-21 21:05:16,477 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-21 21:05:16,478 - DSM_None_None_ - INFO - 
+Checking mapping: Housing -> Housing
+2025-02-21 21:05:16,479 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-21 21:05:16,480 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-21 21:05:16,487 - DSM_None_None_ - INFO - Final Component Mapping (only valid matches):
+2025-02-21 21:05:16,488 - DSM_None_None_ - INFO -   Ground Truth Component Matched Predicted Component
+0                    Bit            Chuck/Bit Holder
+1           Transmission                 Gear System
+2                  Motor                       Motor
+3      Electrical System           Control Circuitry
+4         Battery Holder                Battery Pack
+5                Housing                     Housing
+2025-02-21 21:05:16,491 - DSM_None_None_ - INFO - Evaluation complete. Visualizations generated.

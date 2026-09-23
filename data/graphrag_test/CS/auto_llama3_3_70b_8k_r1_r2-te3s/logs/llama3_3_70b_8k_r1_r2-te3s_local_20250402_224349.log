@@ -1,0 +1,80 @@
+Running graphrag command...
+Command: python -m graphrag query --method local --query Please identify system-level whole-part relationships between the components of CubeSat (nanosatellite), as listed below, and represent them in a Design Structure Matrix (DSM) format.  
+
+The relationships should be articulated in plain English, capturing the essence of their interactions. 
+
+Here is the list of subsystems/components to analyze: ['Spacecraft', 'GNC Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software'] 
+
+The DSM should clearly indicate the interactions between these components as 1 exist and 0 does not exist, considering both the presence and nature of these connections. 
+    
+Present the output in a square matrix format (number of rows and columns MUST be the same as the number of components = 6 for this example), with rows and columns labeled accordingly. 
+
+Diagonal elements should be 1 in DSM matrix since each component interacts with itself. 
+
+If you don't know the answer, just write 2 for the specific cell that you are unsure of. A worst case scenario of the **as a list of lists** shown below (diagonal elements are 1 and rest are 2). Don't make up an answer. 
+
+This is an example of the output format for 6 components (as 6x6 matrix)-based on our system-of-interest the size of the matrix can change. 
+
+{
+  "final_response": [[1, 2, 2, 2, 2, 2], [2, 1, 2, 2, 2, 2], [2, 2, 1, 2, 2, 2],[2, 2, 2, 1, 2, 2],[2, 2, 2, 2, 1, 2],[2, 2, 2, 2, 2, 1]]
+}
+
+IMPORTANT: Your response must **ONLY** contain a valid **as a list of lists** as json in the following example format 6x6 matrix. 
+
+The below list of lists is just an example format of your response. **Replace** the values with your **actual analysis** while providing your response with parameter of 'final response'.
+
+This is an example of the output format for 6 components (as 6x6 matrix)-based on our system-of-interest the size of the matrix can change. 
+
+IMPORTANT: Your response MUST be a valid JSON object in the following format:
+{
+  "final_response": [[1,0,0,0,0,0,0], [0,1,0,0,0,0,0], ...]
+} --root ./
+Using GPUs: 0,1,2,3,4,5
+
+
+
+INFO: Vector Store Args: {
+    "type": "lancedb",
+    "db_uri": "/ragtest/CS/auto_llama3_3_70b_8k_r1_r2-te3s/output/lancedb",
+    "collection_name": "default",
+    "overwrite": true
+}
+creating llm client with {'api_key': 'REDACTED,len=6', 'type': "openai_chat", 'encoding_model': 'cl100k_base', 'model': 'llama3.3:70b-8k', 'max_tokens': 4000, 'temperature': 0.0, 'top_p': 1.0, 'n': 1, 'frequency_penalty': 0.0, 'presence_penalty': 0.0, 'request_timeout': 1200.0, 'api_base': 'http://localhost:11434/v1', 'api_version': None, 'organization': None, 'proxy': None, 'audience': None, 'deployment_name': None, 'model_supports_json': True, 'tokens_per_minute': 0, 'requests_per_minute': 0, 'max_retries': 10, 'max_retry_wait': 10.0, 'sleep_on_rate_limit_recommendation': True, 'concurrent_requests': 2, 'responses': None}
+creating embedding llm client with {'api_key': 'REDACTED,len=164', 'type': "openai_embedding", 'encoding_model': 'cl100k_base', 'model': 'text-embedding-3-small', 'max_tokens': 4000, 'temperature': 0, 'top_p': 1, 'n': 1, 'frequency_penalty': 0.0, 'presence_penalty': 0.0, 'request_timeout': 180.0, 'api_base': None, 'api_version': None, 'organization': None, 'proxy': None, 'audience': None, 'deployment_name': None, 'model_supports_json': None, 'tokens_per_minute': 0, 'requests_per_minute': 0, 'max_retries': 10, 'max_retry_wait': 10.0, 'sleep_on_rate_limit_recommendation': True, 'concurrent_requests': 1, 'responses': None}
+
+SUCCESS: Local Search Response:
+To accurately represent the system-level whole-part relationships between the components of a CubeSat (nanosatellite) in a Design Structure Matrix (DSM) format, we need to understand the interactions and dependencies among these components. The list includes 'Spacecraft', 'GNC Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', and 'GNC Software'. Here's an analysis of their relationships:
+
+- **Spacecraft**: This is the overall system that encompasses all other subsystems. It interacts with every component as they are all part of it.
+- **GNC Subsystem (Guidance, Navigation, and Control)**: This subsystem relies on the 'GNC Software' for its operation and interacts with the 'Reaction Wheel' for control purposes. It also needs power from the 'Power Subsystem'.
+- **Propulsion Subsystem**: This subsystem is responsible for moving the spacecraft and requires power from the 'Power Subsystem'. It might interact with the GNC Subsystem for navigation and control during maneuvers.
+- **Power Subsystem**: Provides power to all subsystems that require it, including the GNC Subsystem and Propulsion Subsystem.
+- **Reaction Wheel**: A component used by the GNC Subsystem for attitude control. It interacts with the GNC Subsystem and requires power from the Power Subsystem.
+- **GNC Software**: Runs on the GNC Subsystem and is essential for its operation, providing the necessary guidance, navigation, and control algorithms.
+
+Given these interactions:
+
+- The Spacecraft interacts with all subsystems (including itself).
+- The GNC Subsystem interacts with the GNC Software, Reaction Wheel, Power Subsystem, and Spacecraft.
+- The Propulsion Subsystem interacts with the Power Subsystem, GNC Subsystem, and Spacecraft.
+- The Power Subsystem interacts with the GNC Subsystem, Propulsion Subsystem, Reaction Wheel, and Spacecraft.
+- The Reaction Wheel interacts with the GNC Subsystem, Power Subsystem, and Spacecraft.
+- The GNC Software interacts with the GNC Subsystem and indirectly with other components through it, including the Spacecraft.
+
+Representing these relationships in a DSM:
+
+```json
+{
+  "final_response": [
+    [1, 1, 1, 1, 1, 1],
+    [1, 1, 1, 1, 1, 1],
+    [1, 1, 1, 1, 0, 0],
+    [1, 1, 1, 1, 1, 0],
+    [1, 1, 0, 1, 1, 0],
+    [1, 1, 0, 0, 0, 1]
+  ]
+}
+```
+
+This representation captures the essence of how each component interacts with others within the CubeSat system. Note that while the GNC Software is crucial for the operation of the GNC Subsystem, its interactions are primarily encapsulated within that subsystem, hence the direct interaction is mainly considered between the GNC Subsystem and other components. The '1's indicate an interaction or dependency, and '0's indicate no direct interaction as per the analysis provided.
+Command completed and logged to logs/cc_test_run_20250402_224349.log

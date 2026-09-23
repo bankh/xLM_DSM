@@ -1,0 +1,8 @@
+,Motor,Gearbox,Chuck,Clutch,Trigger Switch,Battery,Housing
+Motor,1,1,1,0,1,1,0
+Gearbox,1,1,1,0,1,1,0
+Chuck,1,1,1,1,0,1,0
+Clutch,0,0,1,1,0,0,0
+Trigger Switch,1,1,0,0,1,1,0
+Battery,1,1,1,0,1,1,0
+Housing,0,0,0,0,0,0,1

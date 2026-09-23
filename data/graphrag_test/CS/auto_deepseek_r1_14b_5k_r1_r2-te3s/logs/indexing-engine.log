@@ -1,0 +1,1863 @@
+23:36:45,181 graphrag.cli.index INFO Logging enabled at /ragtest/CS/auto_deepseek_r1_14b_5k_r1_r2-te3s/logs/indexing-engine.log
+23:36:45,183 graphrag.cli.index INFO Starting pipeline run for: 20250401-233645, dry_run=False
+23:36:45,184 graphrag.cli.index INFO Using default configuration: {
+    "llm": {
+        "api_key": "==== REDACTED ====",
+        "type": "openai_chat",
+        "encoding_model": "cl100k_base",
+        "model": "deepseek-r1:14b-5k",
+        "max_tokens": 4000,
+        "temperature": 0.0,
+        "top_p": 1.0,
+        "n": 1,
+        "frequency_penalty": 0.0,
+        "presence_penalty": 0.0,
+        "request_timeout": 1200.0,
+        "api_base": "http://localhost:11434/v1",
+        "api_version": null,
+        "proxy": null,
+        "audience": null,
+        "deployment_name": null,
+        "model_supports_json": true,
+        "tokens_per_minute": 0,
+        "requests_per_minute": 0,
+        "max_retries": 10,
+        "max_retry_wait": 10.0,
+        "sleep_on_rate_limit_recommendation": true,
+        "concurrent_requests": 2,
+        "responses": null
+    },
+    "parallelization": {
+        "stagger": 0.3,
+        "num_threads": 50
+    },
+    "async_mode": "threaded",
+    "root_dir": "/ragtest/CS/auto_deepseek_r1_14b_5k_r1_r2-te3s",
+    "reporting": {
+        "type": "file",
+        "base_dir": "/ragtest/CS/auto_deepseek_r1_14b_5k_r1_r2-te3s/logs",
+        "storage_account_blob_url": null
+    },
+    "storage": {
+        "type": "file",
+        "base_dir": "/ragtest/CS/auto_deepseek_r1_14b_5k_r1_r2-te3s/output",
+        "storage_account_blob_url": null,
+        "cosmosdb_account_url": null
+    },
+    "update_index_storage": null,
+    "cache": {
+        "type": "file",
+        "base_dir": "cache",
+        "storage_account_blob_url": null,
+        "cosmosdb_account_url": null
+    },
+    "input": {
+        "type": "file",
+        "file_type": "text",
+        "base_dir": "input",
+        "storage_account_blob_url": null,
+        "encoding": "utf-8",
+        "file_pattern": ".*\\.txt$",
+        "file_filter": null,
+        "source_column": null,
+        "timestamp_column": null,
+        "timestamp_format": null,
+        "text_column": "text",
+        "title_column": null,
+        "document_attribute_columns": []
+    },
+    "embed_graph": {
+        "enabled": false,
+        "dimensions": 1536,
+        "num_walks": 10,
+        "walk_length": 40,
+        "window_size": 2,
+        "iterations": 3,
+        "random_seed": 597832,
+        "use_lcc": true
+    },
+    "embeddings": {
+        "llm": {
+            "api_key": "==== REDACTED ====",
+            "type": "openai_embedding",
+            "encoding_model": "cl100k_base",
+            "model": "text-embedding-3-small",
+            "max_tokens": 4000,
+            "temperature": 0,
+            "top_p": 1,
+            "n": 1,
+            "frequency_penalty": 0.0,
+            "presence_penalty": 0.0,
+            "request_timeout": 180.0,
+            "api_base": null,
+            "api_version": null,
+            "proxy": null,
+            "audience": null,
+            "deployment_name": null,
+            "model_supports_json": null,
+            "tokens_per_minute": 0,
+            "requests_per_minute": 0,
+            "max_retries": 10,
+            "max_retry_wait": 10.0,
+            "sleep_on_rate_limit_recommendation": true,
+            "concurrent_requests": 1,
+            "responses": null
+        },
+        "parallelization": {
+            "stagger": 0.3,
+            "num_threads": 50
+        },
+        "async_mode": "threaded",
+        "batch_size": 16,
+        "batch_max_tokens": 8191,
+        "target": "required",
+        "skip": [],
+        "vector_store": {
+            "type": "lancedb",
+            "db_uri": "/ragtest/CS/auto_deepseek_r1_14b_5k_r1_r2-te3s/output/lancedb",
+            "collection_name": "default",
+            "overwrite": true
+        },
+        "strategy": null
+    },
+    "chunks": {
+        "size": 1200,
+        "overlap": 150,
+        "group_by_columns": [
+            "id"
+        ],
+        "strategy": "tokens",
+        "encoding_model": "cl100k_base"
+    },
+    "snapshots": {
+        "embeddings": false,
+        "graphml": true,
+        "transient": false
+    },
+    "entity_extraction": {
+        "llm": {
+            "api_key": "==== REDACTED ====",
+            "type": "openai_chat",
+            "encoding_model": "cl100k_base",
+            "model": "deepseek-r1:14b-5k",
+            "max_tokens": 4000,
+            "temperature": 0.0,
+            "top_p": 1.0,
+            "n": 1,
+            "frequency_penalty": 0.0,
+            "presence_penalty": 0.0,
+            "request_timeout": 1200.0,
+            "api_base": "http://localhost:11434/v1",
+            "api_version": null,
+            "proxy": null,
+            "audience": null,
+            "deployment_name": null,
+            "model_supports_json": true,
+            "tokens_per_minute": 0,
+            "requests_per_minute": 0,
+            "max_retries": 10,
+            "max_retry_wait": 10.0,
+            "sleep_on_rate_limit_recommendation": true,
+            "concurrent_requests": 2,
+            "responses": null
+        },
+        "parallelization": {
+            "stagger": 0.3,
+            "num_threads": 50
+        },
+        "async_mode": "threaded",
+        "prompt": "prompts/entity_extraction.txt",
+        "entity_types": [
+            "organization",
+            "person",
+            "geo",
+            "event"
+        ],
+        "max_gleanings": 1,
+        "strategy": null,
+        "encoding_model": "cl100k_base"
+    },
+    "summarize_descriptions": {
+        "llm": {
+            "api_key": "==== REDACTED ====",
+            "type": "openai_chat",
+            "encoding_model": "cl100k_base",
+            "model": "deepseek-r1:14b-5k",
+            "max_tokens": 4000,
+            "temperature": 0.0,
+            "top_p": 1.0,
+            "n": 1,
+            "frequency_penalty": 0.0,
+            "presence_penalty": 0.0,
+            "request_timeout": 1200.0,
+            "api_base": "http://localhost:11434/v1",
+            "api_version": null,
+            "proxy": null,
+            "audience": null,
+            "deployment_name": null,
+            "model_supports_json": true,
+            "tokens_per_minute": 0,
+            "requests_per_minute": 0,
+            "max_retries": 10,
+            "max_retry_wait": 10.0,
+            "sleep_on_rate_limit_recommendation": true,
+            "concurrent_requests": 2,
+            "responses": null
+        },
+        "parallelization": {
+            "stagger": 0.3,
+            "num_threads": 50
+        },
+        "async_mode": "threaded",
+        "prompt": "prompts/summarize_descriptions.txt",
+        "max_length": 500,
+        "strategy": null
+    },
+    "community_reports": {
+        "llm": {
+            "api_key": "==== REDACTED ====",
+            "type": "openai_chat",
+            "encoding_model": "cl100k_base",
+            "model": "deepseek-r1:14b-5k",
+            "max_tokens": 4000,
+            "temperature": 0.0,
+            "top_p": 1.0,
+            "n": 1,
+            "frequency_penalty": 0.0,
+            "presence_penalty": 0.0,
+            "request_timeout": 1200.0,
+            "api_base": "http://localhost:11434/v1",
+            "api_version": null,
+            "proxy": null,
+            "audience": null,
+            "deployment_name": null,
+            "model_supports_json": true,
+            "tokens_per_minute": 0,
+            "requests_per_minute": 0,
+            "max_retries": 10,
+            "max_retry_wait": 10.0,
+            "sleep_on_rate_limit_recommendation": true,
+            "concurrent_requests": 2,
+            "responses": null
+        },
+        "parallelization": {
+            "stagger": 0.3,
+            "num_threads": 50
+        },
+        "async_mode": "threaded",
+        "prompt": "prompts/community_report.txt",
+        "max_length": 2000,
+        "max_input_length": 8000,
+        "strategy": null
+    },
+    "claim_extraction": {
+        "llm": {
+            "api_key": "==== REDACTED ====",
+            "type": "openai_chat",
+            "encoding_model": "cl100k_base",
+            "model": "deepseek-r1:14b-5k",
+            "max_tokens": 4000,
+            "temperature": 0.0,
+            "top_p": 1.0,
+            "n": 1,
+            "frequency_penalty": 0.0,
+            "presence_penalty": 0.0,
+            "request_timeout": 1200.0,
+            "api_base": "http://localhost:11434/v1",
+            "api_version": null,
+            "proxy": null,
+            "audience": null,
+            "deployment_name": null,
+            "model_supports_json": true,
+            "tokens_per_minute": 0,
+            "requests_per_minute": 0,
+            "max_retries": 10,
+            "max_retry_wait": 10.0,
+            "sleep_on_rate_limit_recommendation": true,
+            "concurrent_requests": 2,
+            "responses": null
+        },
+        "parallelization": {
+            "stagger": 0.3,
+            "num_threads": 50
+        },
+        "async_mode": "threaded",
+        "enabled": false,
+        "prompt": "prompts/claim_extraction.txt",
+        "description": "Any claims or facts that could be relevant to information discovery.",
+        "max_gleanings": 1,
+        "strategy": null,
+        "encoding_model": "cl100k_base"
+    },
+    "cluster_graph": {
+        "max_cluster_size": 10,
+        "use_lcc": true,
+        "seed": 3735928559
+    },
+    "umap": {
+        "enabled": false
+    },
+    "local_search": {
+        "prompt": "prompts/local_search_system_prompt.txt",
+        "text_unit_prop": 0.5,
+        "community_prop": 0.15,
+        "conversation_history_max_turns": 5,
+        "top_k_entities": 10,
+        "top_k_relationships": 10,
+        "temperature": 0.0,
+        "top_p": 1.0,
+        "n": 1,
+        "max_tokens": 12000,
+        "llm_max_tokens": 2000
+    },
+    "global_search": {
+        "map_prompt": "prompts/global_search_map_system_prompt.txt",
+        "reduce_prompt": "prompts/global_search_reduce_system_prompt.txt",
+        "knowledge_prompt": "prompts/global_search_knowledge_system_prompt.txt",
+        "temperature": 0.0,
+        "top_p": 1.0,
+        "n": 1,
+        "max_tokens": 12000,
+        "data_max_tokens": 12000,
+        "map_max_tokens": 1000,
+        "reduce_max_tokens": 2000,
+        "concurrency": 32,
+        "dynamic_search_llm": "gpt-4o-mini",
+        "dynamic_search_threshold": 1,
+        "dynamic_search_keep_parent": false,
+        "dynamic_search_num_repeats": 1,
+        "dynamic_search_use_summary": false,
+        "dynamic_search_concurrent_coroutines": 16,
+        "dynamic_search_max_level": 2
+    },
+    "drift_search": {
+        "prompt": "prompts/drift_search_system_prompt.txt",
+        "temperature": 0.0,
+        "top_p": 1.0,
+        "n": 3,
+        "max_tokens": 12000,
+        "data_max_tokens": 12000,
+        "concurrency": 32,
+        "drift_k_followups": 20,
+        "primer_folds": 5,
+        "primer_llm_max_tokens": 12000,
+        "n_depth": 3,
+        "local_search_text_unit_prop": 0.9,
+        "local_search_community_prop": 0.1,
+        "local_search_top_k_mapped_entities": 10,
+        "local_search_top_k_relationships": 10,
+        "local_search_max_data_tokens": 12000,
+        "local_search_temperature": 0.0,
+        "local_search_top_p": 1.0,
+        "local_search_n": 1,
+        "local_search_llm_max_gen_tokens": 2000
+    },
+    "basic_search": {
+        "prompt": "prompts/basic_search_system_prompt.txt",
+        "text_unit_prop": 0.5,
+        "conversation_history_max_turns": 5,
+        "temperature": 0.0,
+        "top_p": 1.0,
+        "n": 1,
+        "max_tokens": 12000,
+        "llm_max_tokens": 2000
+    },
+    "encoding_model": "cl100k_base",
+    "skip_workflows": []
+}
+23:36:45,184 graphrag.storage.file_pipeline_storage INFO Creating file storage at /ragtest/CS/auto_deepseek_r1_14b_5k_r1_r2-te3s/output
+23:36:45,185 graphrag.index.input.factory INFO loading input from root_dir=input
+23:36:45,185 graphrag.index.input.factory INFO using file storage for input
+23:36:45,185 graphrag.storage.file_pipeline_storage INFO search /ragtest/CS/auto_deepseek_r1_14b_5k_r1_r2-te3s/input for files matching .*\.txt$
+23:36:45,185 graphrag.index.input.text INFO found text files from input, found [('CS_r1_r2_DocumentLabeler_transcriptions.txt', {})]
+23:36:45,192 graphrag.index.input.text INFO Found 1 files, loading 1
+23:36:45,193 graphrag.index.run.run_workflows INFO Final # of rows loaded: 1
+23:36:45,206 graphrag.utils.storage INFO reading table from storage: input.parquet
+23:36:46,204 graphrag.utils.storage INFO reading table from storage: input.parquet
+23:36:46,216 graphrag.utils.storage INFO reading table from storage: create_base_text_units.parquet
+23:36:46,255 graphrag.utils.storage INFO reading table from storage: create_base_text_units.parquet
+23:38:54,0 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+23:41:04,169 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+23:45:12,882 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+23:46:37,361 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+23:48:09,718 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+23:49:21,249 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+23:50:47,538 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+23:52:23,850 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+23:53:23,498 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+23:54:07,262 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+23:55:31,530 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+23:57:38,19 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+23:58:16,246 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+00:00:31,82 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+00:01:03,370 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+00:02:14,796 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+00:03:21,506 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+00:04:35,566 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+00:05:32,962 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+00:07:31,885 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+00:08:36,659 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+00:10:48,654 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+00:11:06,124 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+00:13:15,253 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+00:15:38,4 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+00:16:34,795 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+00:20:01,428 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+00:21:56,700 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+00:22:53,96 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+00:24:11,884 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+00:25:10,963 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+00:26:50,883 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+00:27:03,487 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+00:29:25,434 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+00:32:35,712 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+00:33:51,111 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+00:36:00,572 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+00:36:23,328 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+00:38:22,640 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+00:38:46,774 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+00:41:16,800 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+00:43:18,149 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+00:43:49,206 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+00:46:59,953 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+00:49:50,924 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+00:50:56,124 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+00:52:59,727 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+00:53:45,153 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+00:55:52,269 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+00:56:15,681 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+00:57:24,68 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+00:58:16,779 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:00:48,652 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:01:18,906 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:02:32,992 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:02:42,951 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:03:23,34 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:03:56,770 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:04:36,492 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:04:46,512 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:05:30,331 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:05:59,964 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:07:14,822 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:08:20,541 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:08:22,533 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:08:53,850 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:09:02,283 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:09:43,234 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:10:04,333 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:11:05,164 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:11:13,677 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:12:27,11 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:12:50,457 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:13:40,144 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:15:17,713 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:16:28,200 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:17:02,403 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:18:07,195 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:19:35,691 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:21:45,592 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:21:51,251 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:22:11,523 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:22:40,736 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:23:09,230 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:24:46,988 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:25:54,151 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:26:44,660 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:27:06,99 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:28:34,977 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:28:48,567 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:30:06,768 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:30:10,131 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:31:15,434 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:32:23,217 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:35:25,569 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:37:18,636 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:37:25,441 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:38:28,799 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:38:42,604 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:39:54,383 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:40:47,653 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:42:09,136 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:43:22,193 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:43:53,70 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:46:05,657 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:46:34,621 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:48:48,754 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:49:11,461 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:51:35,437 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:53:39,815 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:56:06,533 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:56:37,50 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+01:58:49,911 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+02:01:19,983 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+02:03:23,148 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+02:03:44,170 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+02:05:17,711 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+02:05:37,368 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+02:07:50,557 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+02:08:48,33 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+02:10:22,115 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+02:12:47,764 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+02:14:12,950 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+02:16:05,584 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+02:17:23,368 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+02:18:34,901 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+02:19:15,29 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+02:20:38,49 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+02:22:35,454 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+02:24:56,514 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+02:27:29,286 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+02:27:58,278 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+02:29:57,630 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+02:30:18,147 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+02:32:06,197 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+02:32:31,303 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+02:35:14,282 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+02:37:34,151 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+02:41:57,126 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+02:42:29,894 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+02:43:36,175 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+02:44:25,58 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+02:46:13,155 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+02:46:40,11 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+02:48:52,28 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+02:49:12,19 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+02:50:50,284 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+02:51:36,547 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+02:52:52,898 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+02:53:21,150 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+02:54:15,732 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+02:54:29,83 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+02:55:23,374 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+02:55:44,159 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+02:56:11,78 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+02:56:48,492 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+02:57:02,474 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+02:58:01,408 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+02:58:13,151 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:00:37,550 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:00:45,497 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:02:01,22 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:02:27,158 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:03:32,571 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:04:23,479 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:05:49,905 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:07:21,401 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:08:50,166 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:09:06,419 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:10:10,304 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:10:20,529 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:11:24,686 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:11:52,447 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:13:02,867 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:13:14,490 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:14:05,32 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:14:09,35 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:14:53,264 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:15:35,881 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:16:01,254 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:16:44,623 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:17:40,497 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:17:43,170 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:18:20,148 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:18:23,379 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:19:14,190 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:19:19,794 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:20:15,666 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:20:56,365 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:21:29,167 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:22:50,124 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:24:37,816 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:25:06,481 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:26:10,155 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:26:13,608 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:26:42,345 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:27:30,464 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:28:03,303 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:29:09,526 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:29:33,0 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:31:39,303 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:32:05,536 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:34:28,950 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:35:31,421 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:37:54,651 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:38:33,706 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:40:12,169 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:40:39,855 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:12,46 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:42:44,92 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:44:16,771 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:44:26,358 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:46:11,676 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:47:53,312 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:49:09,137 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:50:39,191 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:53:36,600 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:54:44,844 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:57:13,949 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:57:25,746 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:58:44,466 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+03:59:54,215 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:01:30,997 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:01:52,308 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:03:17,845 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:03:54,986 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:06:30,549 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:08:44,26 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:09:42,313 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:10:58,568 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:12:06,93 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:13:18,540 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:14:13,854 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:15:45,704 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:17:28,142 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:19:05,171 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:19:41,22 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:21:41,409 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:23:25,712 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:24:33,31 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:25:54,468 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:27:58,816 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:28:20,927 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:31:51,959 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:32:56,426 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:34:31,702 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:36:05,282 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:37:30,233 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:39:03,118 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:39:18,34 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:40:05,560 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:40:11,490 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:41:20,385 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:41:33,971 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:42:43,36 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:43:42,454 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:43:58,361 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:45:30,992 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:45:49,728 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:46:37,819 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:46:46,805 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:47:23,68 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:47:28,736 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:48:24,967 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:48:50,267 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:50:08,748 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:51:12,548 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:52:57,637 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:53:10,635 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:53:59,369 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:54:10,79 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:54:38,135 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:55:00,837 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:55:46,409 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:55:51,880 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:56:38,312 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:57:36,121 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:58:14,902 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:59:06,759 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+04:59:08,332 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+05:00:24,524 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+05:00:42,308 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+05:00:52,536 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+05:01:22,97 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+05:02:16,816 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+05:02:29,247 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+05:02:43,223 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+05:03:14,694 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+05:04:27,718 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+05:04:31,936 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+05:05:25,204 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+05:06:06,548 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+05:06:46,73 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+05:07:23,946 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+05:08:51,748 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+05:09:32,583 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+05:10:11,308 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+05:11:04,566 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+05:11:23,315 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+05:12:07,858 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+05:13:39,709 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+05:15:40,469 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+05:16:13,681 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+05:17:27,953 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+05:18:22,759 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+05:19:40,768 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+05:20:17,110 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+05:23:40,915 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+05:24:05,343 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+05:26:26,146 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+05:26:46,759 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+05:29:00,944 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+05:29:13,564 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+05:31:52,38 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+05:32:20,71 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+05:33:58,347 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+05:34:40,871 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+05:36:26,631 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+05:37:05,965 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+05:40:09,38 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+05:40:27,609 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+05:42:45,72 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+05:43:12,460 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+05:45:46,666 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+05:45:59,974 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+05:48:36,514 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+05:48:49,86 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+05:50:54,629 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+05:54:43,300 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+05:57:20,178 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+05:57:25,488 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+05:59:33,342 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:03:00,212 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:04:47,940 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:05:05,208 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:06:52,301 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:07:08,845 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:09:38,448 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:10:20,249 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:11:48,732 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:13:56,552 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:14:25,416 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:17:13,445 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:17:26,603 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:19:55,586 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:22:10,250 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:23:08,580 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:25:45,826 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:26:40,662 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:29:04,972 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:30:45,868 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:31:51,43 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:32:03,310 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:32:39,233 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:32:42,19 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:33:08,29 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:34:49,330 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:34:49,410 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:35:37,398 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:35:49,380 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:36:50,837 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:37:12,876 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:37:57,888 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:38:33,349 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:38:53,856 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:39:27,336 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:39:37,488 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:40:06,444 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:41:11,564 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:41:49,940 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:42:42,574 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:42:53,710 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:43:35,135 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:43:39,935 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:44:28,955 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:44:32,683 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:45:32,633 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:46:09,759 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:47:22,407 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:47:49,382 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:49:18,723 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:49:43,871 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:52:00,201 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:53:20,514 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:53:53,776 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:54:23,70 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:54:56,533 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:55:01,357 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:56:01,954 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:56:29,39 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:57:59,664 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:58:23,515 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:59:08,26 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+06:59:17,679 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+07:00:22,921 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+07:01:27,657 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+07:01:58,210 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+07:03:47,728 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+07:05:28,446 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+07:07:53,296 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+07:09:50,822 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+07:10:30,637 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+07:11:58,165 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+07:13:19,489 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+07:15:35,930 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+07:15:48,733 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+07:18:26,656 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+07:18:57,620 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+07:20:35,987 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+07:21:10,148 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+07:23:09,795 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+07:23:24,425 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+07:25:34,169 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+07:26:51,146 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+07:27:55,0 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+07:29:17,201 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+07:30:03,243 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+07:31:38,540 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+07:32:49,116 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+07:34:31,518 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+07:35:33,945 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+07:36:42,529 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+07:38:21,416 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+07:40:52,818 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+07:45:11,623 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+07:46:04,450 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+07:46:53,602 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+07:48:43,198 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+07:48:58,995 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+07:51:23,102 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+07:52:14,273 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+07:54:53,360 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+07:55:10,602 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+07:57:51,494 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+07:58:07,494 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:00:02,76 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:00:19,444 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:02:56,399 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:03:52,740 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:06:18,421 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:06:33,511 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:08:19,19 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:08:55,245 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:10:15,821 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:11:48,145 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:12:23,659 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:13:32,304 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:14:04,160 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:14:48,224 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:15:42,885 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:16:23,682 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:16:57,222 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:17:30,642 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:17:51,859 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:18:36,794 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:18:41,702 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:19:49,439 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:19:54,296 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:20:35,479 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:21:03,957 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:21:31,363 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:22:00,815 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:22:56,436 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:23:39,918 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:25:34,600 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:25:41,240 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:27:10,74 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:27:17,913 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:28:08,210 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:28:48,903 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:29:02,198 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:33:11,781 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:34:08,674 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:35:01,351 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:36:03,412 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:36:24,887 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:37:22,958 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:38:38,780 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:38:59,222 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:40:12,684 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:40:33,949 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:41:38,433 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:41:56,816 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:42:22,649 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:43:30,39 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:43:54,838 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:45:06,597 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:45:37,95 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:46:16,185 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:46:34,705 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:47:16,15 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:48:26,225 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:48:35,135 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:48:57,859 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:49:12,268 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:49:14,695 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:49:27,202 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:49:28,15 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:49:34,792 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:49:41,831 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:49:50,303 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:49:57,323 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:50:05,789 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:50:09,480 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:50:16,546 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:50:22,353 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:50:32,376 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:50:37,867 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:50:45,184 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:50:53,449 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:50:58,770 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:51:06,220 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:51:14,324 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:51:21,692 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:51:29,825 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:51:37,204 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:51:42,46 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:51:52,917 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:51:54,194 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:52:05,952 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:52:07,251 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:52:21,715 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:52:23,260 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:52:38,176 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:52:39,395 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:52:52,444 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:52:54,966 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:53:03,340 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:53:10,571 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:53:19,296 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:53:23,768 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:53:34,116 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:53:37,274 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:53:44,225 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:53:50,666 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:53:56,834 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:54:04,978 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:54:09,427 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:54:17,908 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:54:24,863 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:54:30,430 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:54:35,625 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:54:40,273 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:54:50,29 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:54:52,116 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:55:00,649 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:55:07,580 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:55:13,553 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:55:15,778 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:55:28,891 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:55:29,288 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:55:41,59 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:55:44,389 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:55:51,609 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:56:02,850 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:56:07,481 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:56:13,698 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:56:17,435 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:56:25,586 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:56:27,686 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:56:37,393 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:56:44,458 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:56:52,296 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:56:59,504 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:57:04,818 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:57:12,722 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:57:20,602 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:57:23,761 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:57:29,272 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:57:33,140 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:57:38,407 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:57:46,483 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:57:54,16 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:57:57,367 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:58:09,205 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:58:09,677 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:58:19,907 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:58:20,421 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:58:28,971 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:58:31,847 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:58:39,905 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:58:42,596 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:58:55,967 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:58:56,393 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:59:07,932 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:59:09,129 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:59:17,490 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:59:17,535 graphrag.utils.storage INFO reading table from storage: base_relationship_edges.parquet
+08:59:25,552 graphrag.utils.storage INFO reading table from storage: base_entity_nodes.parquet
+08:59:25,571 graphrag.utils.storage INFO reading table from storage: base_relationship_edges.parquet
+08:59:25,593 graphrag.utils.storage INFO reading table from storage: base_entity_nodes.parquet
+08:59:25,599 graphrag.utils.storage INFO reading table from storage: base_relationship_edges.parquet
+08:59:25,605 graphrag.utils.storage INFO reading table from storage: base_communities.parquet
+08:59:25,628 graphrag.utils.storage INFO reading table from storage: base_entity_nodes.parquet
+08:59:25,634 graphrag.utils.storage INFO reading table from storage: base_relationship_edges.parquet
+08:59:25,639 graphrag.utils.storage INFO reading table from storage: base_communities.parquet
+08:59:25,707 graphrag.utils.storage INFO reading table from storage: create_base_text_units.parquet
+08:59:25,720 graphrag.utils.storage INFO reading table from storage: create_final_entities.parquet
+08:59:25,726 graphrag.utils.storage INFO reading table from storage: create_final_relationships.parquet
+08:59:25,766 graphrag.utils.storage INFO reading table from storage: create_final_nodes.parquet
+08:59:25,770 graphrag.utils.storage INFO reading table from storage: create_final_relationships.parquet
+08:59:25,775 graphrag.utils.storage INFO reading table from storage: create_final_entities.parquet
+08:59:25,780 graphrag.utils.storage INFO reading table from storage: create_final_communities.parquet
+08:59:25,794 graphrag.index.operations.summarize_communities.prepare_community_reports INFO Number of nodes at level=2 => 10
+08:59:25,820 graphrag.index.operations.summarize_communities.prepare_community_reports INFO Number of nodes at level=1 => 242
+08:59:26,157 graphrag.index.operations.summarize_communities.prepare_community_reports INFO Number of nodes at level=0 => 267
+08:59:50,212 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+08:59:59,184 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:00:09,523 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:00:31,589 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:01:11,470 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:01:43,577 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:01:51,725 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:02:11,265 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:02:24,346 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:02:45,170 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:03:17,506 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:03:31,702 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:04:13,667 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:04:41,451 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:05:13,736 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:05:23,596 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:06:19,233 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:06:57,485 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:07:07,964 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:07:35,368 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:07:52,372 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:08:09,986 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:08:43,950 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:09:13,86 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:09:30,993 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:09:52,663 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:10:42,39 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:11:19,252 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:11:48,571 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:13:04,349 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:13:08,790 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:13:56,751 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:14:13,864 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:14:29,137 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:15:03,83 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:15:20,521 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:15:57,153 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:16:34,48 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:17:27,885 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:18:29,165 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:18:39,686 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:19:30,584 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:19:51,303 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:20:19,459 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:20:36,644 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:20:51,9 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:21:29,494 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:21:48,816 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:22:07,941 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:22:58,738 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:23:27,285 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:23:33,324 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:23:33,329 graphrag.index.operations.summarize_communities.community_reports_extractor.community_reports_extractor ERROR error generating community report
+Traceback (most recent call last):
+  File "/lib/python3.11/site-packages/fnllm/services/json.py", line 205, in _read_model_from_json
+    return json_model.model_validate(value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/pydantic/main.py", line 627, in model_validate
+    return cls.__pydantic_validator__.validate_python(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for CommunityReportResponse
+findings
+  Field required [type=missing, input_value={'title': 'GOMSPACE and S...cation technologies.'}]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/lib/python3.11/site-packages/fnllm/services/json.py", line 162, in invoke_json
+    return await self.try_receive_json(delegate, prompt, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/fnllm/services/json.py", line 181, in try_receive_json
+    model = self._read_model_from_json(raw_json, json_model)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/fnllm/services/json.py", line 208, in _read_model_from_json
+    raise FailedToGenerateValidJsonError(msg) from err
+fnllm.services.errors.FailedToGenerateValidJsonError: JSON response does not match the expected model, response={'title': 'GOMSPACE and Satellite Communication Protocols', 'summary': 'GOMSPACE is a company specializing in communication systems and products tailored for satellite operations. Their offerings adhere to specific communication protocols, ensuring effective and reliable solutions within the space sector.', 'rating': 8.5, 'rating_explanation': "The relevance of GOMSPACE's role in satellite communication is highly significant as it directly impacts mission-critical operations.", 'relationships': [{'source': 'GOMSPACE', 'target': 'COMMUNICATION PROTOCOLS', 'description': 'GomSpace supplies communication products that adhere to specific protocols for satellite operations.'}, {'source': 'GOMSPACE', 'target': 'SAT COMMUNICATION TECHNOLOGIES', 'description': 'Gomspace provides communication systems and solutions, linking the company to satellite communication technologies.'}]}.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/lib/python3.11/site-packages/fnllm/base/base.py", line 112, in __call__
+    return await self._invoke(prompt, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/fnllm/base/base.py", line 128, in _invoke
+    return await self._decorated_target(prompt, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/fnllm/services/json.py", line 70, in invoke
+    return await this.invoke_json(delegate, prompt, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/fnllm/services/json.py", line 166, in invoke_json
+    raise FailedToGenerateValidJsonError from error
+fnllm.services.errors.FailedToGenerateValidJsonError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/graphrag/index/operations/summarize_communities/community_reports_extractor/community_reports_extractor.py", line 80, in __call__
+    response = await self._llm(
+               ^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/fnllm/openai/llm/chat.py", line 83, in __call__
+    return await self._text_chat_llm(prompt, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/fnllm/openai/llm/features/tools_parsing.py", line 120, in __call__
+    return await self._delegate(prompt, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/fnllm/base/base.py", line 116, in __call__
+    await self._events.on_error(
+  File "/graphrag/index/llm/load_llm.py", line 52, in on_error
+    self._on_error(error, traceback, arguments)
+  File "/graphrag/index/llm/load_llm.py", line 169, in on_error
+    callbacks.error("Error Invoking LLM", error, stack, details)
+  File "/graphrag/callbacks/workflow_callbacks_manager.py", line 51, in error
+    callback.error(message, cause, stack, details)
+  File "/graphrag/callbacks/file_workflow_callbacks.py", line 37, in error
+    json.dumps(
+  File "/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/lib/python3.11/json/encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "/lib/python3.11/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/lib/python3.11/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/lib/python3.11/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/lib/python3.11/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/lib/python3.11/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "/lib/python3.11/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ModelMetaclass is not JSON serializable
+09:23:33,334 graphrag.callbacks.file_workflow_callbacks INFO Community Report Extraction Error details=None
+09:23:33,334 graphrag.index.operations.summarize_communities.strategies WARNING No report found for community: 33
+09:23:57,964 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:23:57,969 graphrag.index.operations.summarize_communities.community_reports_extractor.community_reports_extractor ERROR error generating community report
+Traceback (most recent call last):
+  File "/lib/python3.11/site-packages/fnllm/services/json.py", line 205, in _read_model_from_json
+    return json_model.model_validate(value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/pydantic/main.py", line 627, in model_validate
+    return cls.__pydantic_validator__.validate_python(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 5 validation errors for CommunityReportResponse
+title
+  Field required [type=missing, input_value={'entities': [{'title': '...for mission success.'}]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+summary
+  Field required [type=missing, input_value={'entities': [{'title': '...for mission success.'}]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+findings
+  Field required [type=missing, input_value={'entities': [{'title': '...for mission success.'}]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+rating
+  Field required [type=missing, input_value={'entities': [{'title': '...for mission success.'}]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+rating_explanation
+  Field required [type=missing, input_value={'entities': [{'title': '...for mission success.'}]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/lib/python3.11/site-packages/fnllm/services/json.py", line 162, in invoke_json
+    return await self.try_receive_json(delegate, prompt, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/fnllm/services/json.py", line 181, in try_receive_json
+    model = self._read_model_from_json(raw_json, json_model)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/fnllm/services/json.py", line 208, in _read_model_from_json
+    raise FailedToGenerateValidJsonError(msg) from err
+fnllm.services.errors.FailedToGenerateValidJsonError: JSON response does not match the expected model, response={'entities': [{'title': 'TuPOD', 'type': 'satellite_deployment', 'description': 'A satellite project focused on deploying components or subsystems for space missions.'}, {'title': 'RAX-2', 'type': 'cubesat_specifications', 'description': 'A CubeSat project involving radar and communication systems.'}, {'title': 'OBDH', 'type': 'system_components', 'description': 'On-Board Data Handling system for managing satellite data transmission.'}, {'title': 'Phoenix', 'type': 'satellite_deployment', 'description': 'A satellite project adhering to CubeSat specifications and involving thermal analysis tools.'}, {'title': 'SPENVIS', 'type': 'space_environment_simulation', 'description': 'An open-source tool for radiation analysis in space environments.'}, {'title': 'Aeronautics', 'type': 'aerospace_technology', 'description': 'The field of aerospace engineering and technology.'}], 'relationships': [{'source': 'TuPOD', 'target': 'RAX-2', 'description': 'TuPOD is used in the RAX-2 project for deploying specific satellite components or subsystems.'}, {'source': 'OBDH', 'target': 'Phoenix', 'description': 'The OBDH system is integral to the Phoenix satellite, managing data transmission effectively.'}, {'source': 'SPENVIS', 'target': 'GAL1', 'description': 'SPENVIS provides radiation analysis support for the GAL1 CubeSat project, ensuring component longevity.'}, {'source': 'Netherlands', 'target': 'RAX-2', 'description': 'The Netherlands contributes to the RAX-2 satellite deployment through collaboration or funding.'}, {'source': 'GAL1', 'target': 'Saratoga', 'description': 'GAL1 and Saratoga are both CubeSat projects, sharing common design methodologies for mission success.'}]}.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/lib/python3.11/site-packages/fnllm/base/base.py", line 112, in __call__
+    return await self._invoke(prompt, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/fnllm/base/base.py", line 128, in _invoke
+    return await self._decorated_target(prompt, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/fnllm/services/json.py", line 70, in invoke
+    return await this.invoke_json(delegate, prompt, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/fnllm/services/json.py", line 166, in invoke_json
+    raise FailedToGenerateValidJsonError from error
+fnllm.services.errors.FailedToGenerateValidJsonError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/graphrag/index/operations/summarize_communities/community_reports_extractor/community_reports_extractor.py", line 80, in __call__
+    response = await self._llm(
+               ^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/fnllm/openai/llm/chat.py", line 83, in __call__
+    return await self._text_chat_llm(prompt, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/fnllm/openai/llm/features/tools_parsing.py", line 120, in __call__
+    return await self._delegate(prompt, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/fnllm/base/base.py", line 116, in __call__
+    await self._events.on_error(
+  File "/graphrag/index/llm/load_llm.py", line 52, in on_error
+    self._on_error(error, traceback, arguments)
+  File "/graphrag/index/llm/load_llm.py", line 169, in on_error
+    callbacks.error("Error Invoking LLM", error, stack, details)
+  File "/graphrag/callbacks/workflow_callbacks_manager.py", line 51, in error
+    callback.error(message, cause, stack, details)
+  File "/graphrag/callbacks/file_workflow_callbacks.py", line 37, in error
+    json.dumps(
+  File "/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/lib/python3.11/json/encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "/lib/python3.11/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/lib/python3.11/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/lib/python3.11/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/lib/python3.11/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/lib/python3.11/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "/lib/python3.11/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ModelMetaclass is not JSON serializable
+09:23:57,973 graphrag.callbacks.file_workflow_callbacks INFO Community Report Extraction Error details=None
+09:23:57,973 graphrag.index.operations.summarize_communities.strategies WARNING No report found for community: 52
+09:25:40,891 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:26:47,317 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:27:14,269 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:29:57,94 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:30:48,10 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:31:39,577 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:32:41,284 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:33:34,63 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:34:27,779 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:34:50,7 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:36:21,222 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:36:28,457 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:38:08,770 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:39:34,940 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:40:06,178 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:40:54,47 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:41:47,556 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:42:44,204 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:43:34,157 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:44:38,463 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:45:44,162 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:48:37,113 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:49:18,633 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:49:52,729 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:50:42,86 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:50:42,91 graphrag.index.operations.summarize_communities.community_reports_extractor.community_reports_extractor ERROR error generating community report
+Traceback (most recent call last):
+  File "/lib/python3.11/site-packages/fnllm/services/json.py", line 205, in _read_model_from_json
+    return json_model.model_validate(value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/pydantic/main.py", line 627, in model_validate
+    return cls.__pydantic_validator__.validate_python(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 5 validation errors for CommunityReportResponse
+title
+  Field required [type=missing, input_value={'entities': {'system-com...': 'Thermal Testing'}]}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+summary
+  Field required [type=missing, input_value={'entities': {'system-com...': 'Thermal Testing'}]}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+findings
+  Field required [type=missing, input_value={'entities': {'system-com...': 'Thermal Testing'}]}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+rating
+  Field required [type=missing, input_value={'entities': {'system-com...': 'Thermal Testing'}]}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+rating_explanation
+  Field required [type=missing, input_value={'entities': {'system-com...': 'Thermal Testing'}]}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/lib/python3.11/site-packages/fnllm/services/json.py", line 162, in invoke_json
+    return await self.try_receive_json(delegate, prompt, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/fnllm/services/json.py", line 181, in try_receive_json
+    model = self._read_model_from_json(raw_json, json_model)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/fnllm/services/json.py", line 208, in _read_model_from_json
+    raise FailedToGenerateValidJsonError(msg) from err
+fnllm.services.errors.FailedToGenerateValidJsonError: JSON response does not match the expected model, response={'entities': {'system-components': ['CubeSat', 'EPS Regulator', 'Battery Power Pack'], 'design-methodologies': ['Additive Manufacturing', 'CFRP'], 'testing-procedures': ['TVAC', 'EMC'], 'energy-storage': ['Li-ion Batteries', 'Gel Batteries'], 'power-generation': ['Solar Panels', 'Solar Arrays'], 'satellite-deployment': ['MAI-400']}, 'relationships': {'relates-to': [{'from': 'CubeSat', 'to': 'Power System'}, {'from': 'EPS Regulator', 'to': 'Battery Technology'}, {'from': 'CFRP', 'to': 'Structural Integrity'}], 'uses': [{'from': 'Additive Manufacturing', 'to': 'Design Flexibility'}, {'from': 'TVAC', 'to': 'Thermal Testing'}]}}.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/lib/python3.11/site-packages/fnllm/base/base.py", line 112, in __call__
+    return await self._invoke(prompt, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/fnllm/base/base.py", line 128, in _invoke
+    return await self._decorated_target(prompt, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/fnllm/services/json.py", line 70, in invoke
+    return await this.invoke_json(delegate, prompt, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/fnllm/services/json.py", line 166, in invoke_json
+    raise FailedToGenerateValidJsonError from error
+fnllm.services.errors.FailedToGenerateValidJsonError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/graphrag/index/operations/summarize_communities/community_reports_extractor/community_reports_extractor.py", line 80, in __call__
+    response = await self._llm(
+               ^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/fnllm/openai/llm/chat.py", line 83, in __call__
+    return await self._text_chat_llm(prompt, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/fnllm/openai/llm/features/tools_parsing.py", line 120, in __call__
+    return await self._delegate(prompt, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/fnllm/base/base.py", line 116, in __call__
+    await self._events.on_error(
+  File "/graphrag/index/llm/load_llm.py", line 52, in on_error
+    self._on_error(error, traceback, arguments)
+  File "/graphrag/index/llm/load_llm.py", line 169, in on_error
+    callbacks.error("Error Invoking LLM", error, stack, details)
+  File "/graphrag/callbacks/workflow_callbacks_manager.py", line 51, in error
+    callback.error(message, cause, stack, details)
+  File "/graphrag/callbacks/file_workflow_callbacks.py", line 37, in error
+    json.dumps(
+  File "/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/lib/python3.11/json/encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "/lib/python3.11/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/lib/python3.11/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/lib/python3.11/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/lib/python3.11/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/lib/python3.11/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "/lib/python3.11/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ModelMetaclass is not JSON serializable
+09:50:42,95 graphrag.callbacks.file_workflow_callbacks INFO Community Report Extraction Error details=None
+09:50:42,95 graphrag.index.operations.summarize_communities.strategies WARNING No report found for community: 5
+09:51:23,124 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:51:23,129 graphrag.index.operations.summarize_communities.community_reports_extractor.community_reports_extractor ERROR error generating community report
+Traceback (most recent call last):
+  File "/lib/python3.11/site-packages/fnllm/services/json.py", line 205, in _read_model_from_json
+    return json_model.model_validate(value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/pydantic/main.py", line 627, in model_validate
+    return cls.__pydantic_validator__.validate_python(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 5 validation errors for CommunityReportResponse
+title
+  Field required [type=missing, input_value={'entities': [{'name': 'G...t data transmission.'}]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+summary
+  Field required [type=missing, input_value={'entities': [{'name': 'G...t data transmission.'}]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+findings
+  Field required [type=missing, input_value={'entities': [{'name': 'G...t data transmission.'}]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+rating
+  Field required [type=missing, input_value={'entities': [{'name': 'G...t data transmission.'}]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+rating_explanation
+  Field required [type=missing, input_value={'entities': [{'name': 'G...t data transmission.'}]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/lib/python3.11/site-packages/fnllm/services/json.py", line 162, in invoke_json
+    return await self.try_receive_json(delegate, prompt, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/fnllm/services/json.py", line 181, in try_receive_json
+    model = self._read_model_from_json(raw_json, json_model)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/fnllm/services/json.py", line 208, in _read_model_from_json
+    raise FailedToGenerateValidJsonError(msg) from err
+fnllm.services.errors.FailedToGenerateValidJsonError: JSON response does not match the expected model, response={'entities': [{'name': 'GPS', 'type': 'system-components', 'description': 'A satellite-based system that provides precise timing and location data.'}, {'name': 'SYRLINKS', 'type': 'communication-protocols', 'description': 'A company specializing in satellite communication solutions, utilizing 10BASE-T standards for robust data transmission.'}, {'name': '10BASE-T', 'type': 'networking-standards', 'description': 'A networking standard used for Ethernet over twisted pair cables, operating at 10 Mbps.'}], 'relationships': [{'from': 'SYRLINKS', 'to': 'GPS', 'description': 'Syrlinks provides GPS technology that integrates with satellite communication systems.'}, {'from': 'SYRLINKS', 'to': '10BASE-T', 'description': 'Syrlinks utilizes 10BASE-T standards in their satellite communication solutions for efficient data transmission.'}]}.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/lib/python3.11/site-packages/fnllm/base/base.py", line 112, in __call__
+    return await self._invoke(prompt, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/fnllm/base/base.py", line 128, in _invoke
+    return await self._decorated_target(prompt, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/fnllm/services/json.py", line 70, in invoke
+    return await this.invoke_json(delegate, prompt, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/fnllm/services/json.py", line 166, in invoke_json
+    raise FailedToGenerateValidJsonError from error
+fnllm.services.errors.FailedToGenerateValidJsonError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/graphrag/index/operations/summarize_communities/community_reports_extractor/community_reports_extractor.py", line 80, in __call__
+    response = await self._llm(
+               ^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/fnllm/openai/llm/chat.py", line 83, in __call__
+    return await self._text_chat_llm(prompt, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/fnllm/openai/llm/features/tools_parsing.py", line 120, in __call__
+    return await self._delegate(prompt, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/fnllm/base/base.py", line 116, in __call__
+    await self._events.on_error(
+  File "/graphrag/index/llm/load_llm.py", line 52, in on_error
+    self._on_error(error, traceback, arguments)
+  File "/graphrag/index/llm/load_llm.py", line 169, in on_error
+    callbacks.error("Error Invoking LLM", error, stack, details)
+  File "/graphrag/callbacks/workflow_callbacks_manager.py", line 51, in error
+    callback.error(message, cause, stack, details)
+  File "/graphrag/callbacks/file_workflow_callbacks.py", line 37, in error
+    json.dumps(
+  File "/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/lib/python3.11/json/encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "/lib/python3.11/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/lib/python3.11/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/lib/python3.11/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/lib/python3.11/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/lib/python3.11/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "/lib/python3.11/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ModelMetaclass is not JSON serializable
+09:51:23,133 graphrag.callbacks.file_workflow_callbacks INFO Community Report Extraction Error details=None
+09:51:23,133 graphrag.index.operations.summarize_communities.strategies WARNING No report found for community: 7
+09:54:21,804 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:54:21,809 graphrag.index.operations.summarize_communities.community_reports_extractor.community_reports_extractor ERROR error generating community report
+Traceback (most recent call last):
+  File "/lib/python3.11/site-packages/fnllm/services/json.py", line 205, in _read_model_from_json
+    return json_model.model_validate(value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/pydantic/main.py", line 627, in model_validate
+    return cls.__pydantic_validator__.validate_python(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 3 validation errors for CommunityReportResponse
+findings
+  Field required [type=missing, input_value={'title': 'CubeSat Propul...satellite operations'}]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+rating
+  Field required [type=missing, input_value={'title': 'CubeSat Propul...satellite operations'}]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+rating_explanation
+  Field required [type=missing, input_value={'title': 'CubeSat Propul...satellite operations'}]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/lib/python3.11/site-packages/fnllm/services/json.py", line 162, in invoke_json
+    return await self.try_receive_json(delegate, prompt, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/fnllm/services/json.py", line 181, in try_receive_json
+    model = self._read_model_from_json(raw_json, json_model)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/fnllm/services/json.py", line 208, in _read_model_from_json
+    raise FailedToGenerateValidJsonError(msg) from err
+fnllm.services.errors.FailedToGenerateValidJsonError: JSON response does not match the expected model, response={'title': 'CubeSat Propulsion and Attitude Control Systems', 'summary': 'The CubeSat community is characterized by its reliance on advanced propulsion systems and attitude control mechanisms. Sensors play a pivotal role in collecting environmental data essential for CubeSat operations. Orbit determination is closely tied to propulsion systems, which enable necessary orbital adjustments. The ADCS system manages satellite orientation, supported by onboard software and subsystems like magnetorquers and inertial measurement units. Thermal analysis ensures optimal performance under varying space conditions.', 'nodes': ['SENSORS', 'CUBESAT', 'ORBIT DETERMINATION', 'PROPULSION SYSTEMS', 'THRUST', 'ATTITUDE CONTROL SYSTEM', 'ELECTRIC PROPULSION (EP)', 'MAI400', 'CHEMICAL', 'ADN', 'R236FA', 'BUTANE/', 'IODINE', 'HPGP', 'ADCS', 'ANSYS', 'SPACECRAFT', 'TLES', 'GEO', 'LEO', 'ONBOARD SOFTWARE', 'MAGNETORQUERS', 'MAGNETIC CONTROLLER', 'INERTIAL MEASUREMENT UNITS', 'THERMAL ANALYSIS'], 'edges': [{'source': 'SENSORS', 'target': 'CUBESAT', 'description': 'Sensors are integral to CubeSat operations, providing data for navigation and environmental monitoring'}, {'source': 'ORBIT DETERMINATION', 'target': 'PROPULSION SYSTEMS', 'description': 'Orbit determination relies on propulsion systems for adjustments, ensuring the satellite remains in its intended path'}, {'source': 'PROPULSION SYSTEMS', 'target': 'THRUST', 'description': 'Thrust from propulsion systems enables CubeSats to adjust their orbital parameters as required for mission success.'}, {'source': 'PROPULSION SYSTEMS', 'target': 'ATTITUDE CONTROL SYSTEM', 'description': 'Attitude control systems use propulsion mechanisms to orient the satellite correctly in space'}, {'source': 'ELECTRIC PROPULSION (EP)', 'target': 'PROPULSION SYSTEMS', 'description': 'Electric Propulsion is a method used in propulsion systems for spacecraft maneuvering'}, {'source': 'ELECTRIC PROPULSION', 'target': 'PROPULSION SYSTEMS', 'description': 'Electric propulsion is a key component of propulsion systems, enabling precise spacecraft maneuvering'}, {'source': 'MAI400', 'target': 'PROPULSION SYSTEMS', 'description': "The MAI400 monopropellant propulsion system is a key component for CubeSat's maneuvering and orbital adjustments"}, {'source': 'CHEMICAL', 'target': 'PROPULSION SYSTEMS', 'description': 'Chemical propulsion is a common method for spacecraft maneuvering due to its reliability and efficiency'}, {'source': 'ADN', 'target': 'PROPULSION SYSTEMS', 'description': 'ADN is used as a propellant in satellite propulsion systems for precise control and maneuvering'}, {'source': 'R236FA', 'target': 'PROPULSION SYSTEMS', 'description': 'R236fa is a type of fuel used in satellite propulsion systems to provide thrust and adjust orbital parameters'}, {'source': 'BUTANE/', 'target': 'PROPULSION SYSTEMS', 'description': 'Butane-based fuels are utilized in satellite thrusters for attitude control and orbital maneuvers'}, {'source': 'IODINE', 'target': 'PROPULSION SYSTEMS', 'description': 'Iodine-based propellants are used in satellite thrusters for efficient and precise control of satellite orientation'}, {'source': 'HPGP', 'target': 'PROPULSION SYSTEMS', 'description': 'High-Power Green Propulsion is utilized in satellite missions for efficient and environmentally friendly propulsion'}, {'source': 'ADCS', 'target': 'ATTITUDE CONTROL', 'description': 'The ADCS system manages the orientation of the CubeSat to optimize solar panel exposure and communication with ground stations.'}, {'source': 'ANSYS', 'target': 'STRUCTURAL DESIGNS', 'description': 'ANSYS software is utilized in structural analysis to optimize CubeSat designs, ensuring they can withstand space environment challenges'}, {'source': 'SPACECRAFT', 'target': 'ORBIT DETERMINATION', 'description': 'Orbital mechanics are fundamental in determining and maintaining spacecraft trajectories'}, {'source': 'TLES', 'target': 'ORBIT DETERMINATION', 'description': 'TLEs are used to determine the orbit of satellites, enabling accurate tracking and prediction of their positions'}, {'source': 'GEO', 'target': 'ORBIT DETERMINATION', 'description': 'Geostationary Earth Orbit (GEO) is a specific orbit determined for satellites requiring stationary positioning relative to Earth'}, {'source': 'LEO', 'target': 'ORBIT DETERMINATION', 'description': 'Low Earth Orbit (LEO) is a common orbit for CubeSats, facilitating missions requiring reduced travel time and energy expenditure'}, {'source': 'ONBOARD SOFTWARE', 'target': 'ATTITUDE CONTROL', 'description': 'Onboard software interfaces with attitude control subsystems to execute orientation commands and algorithms'}, {'source': 'ATTITUDE CONTROL', 'target': 'MAGNETORQUERS', 'description': 'Magnetorquers are integral to attitude control, providing magnetic torque for orientation adjustments'}, {'source': 'MAGNETIC CONTROLLER', 'target': 'ATTITUDE CONTROL', 'description': "The Magnetic Controller is a critical component in CubeSat's attitude control system for maintaining orientation"}, {'source': 'ADCS', 'target': 'INERTIAL MEASUREMENT UNITS', 'description': "Inertial measurement units provide data necessary for the ADCS to maintain the satellite's orientation"}, {'source': 'ADCS', 'target': 'THERMAL ANALYSIS', 'description': 'Thermal management strategies are crucial for ADCS to prevent temperature fluctuations affecting satellite operations'}]}.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/lib/python3.11/site-packages/fnllm/base/base.py", line 112, in __call__
+    return await self._invoke(prompt, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/fnllm/base/base.py", line 128, in _invoke
+    return await self._decorated_target(prompt, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/fnllm/services/json.py", line 70, in invoke
+    return await this.invoke_json(delegate, prompt, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/fnllm/services/json.py", line 166, in invoke_json
+    raise FailedToGenerateValidJsonError from error
+fnllm.services.errors.FailedToGenerateValidJsonError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/graphrag/index/operations/summarize_communities/community_reports_extractor/community_reports_extractor.py", line 80, in __call__
+    response = await self._llm(
+               ^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/fnllm/openai/llm/chat.py", line 83, in __call__
+    return await self._text_chat_llm(prompt, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/fnllm/openai/llm/features/tools_parsing.py", line 120, in __call__
+    return await self._delegate(prompt, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/fnllm/base/base.py", line 116, in __call__
+    await self._events.on_error(
+  File "/graphrag/index/llm/load_llm.py", line 52, in on_error
+    self._on_error(error, traceback, arguments)
+  File "/graphrag/index/llm/load_llm.py", line 169, in on_error
+    callbacks.error("Error Invoking LLM", error, stack, details)
+  File "/graphrag/callbacks/workflow_callbacks_manager.py", line 51, in error
+    callback.error(message, cause, stack, details)
+  File "/graphrag/callbacks/file_workflow_callbacks.py", line 37, in error
+    json.dumps(
+  File "/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/lib/python3.11/json/encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "/lib/python3.11/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/lib/python3.11/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/lib/python3.11/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/lib/python3.11/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/lib/python3.11/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "/lib/python3.11/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ModelMetaclass is not JSON serializable
+09:54:21,814 graphrag.callbacks.file_workflow_callbacks INFO Community Report Extraction Error details=None
+09:54:21,814 graphrag.index.operations.summarize_communities.strategies WARNING No report found for community: 1
+09:54:38,636 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:54:38,641 graphrag.index.operations.summarize_communities.community_reports_extractor.community_reports_extractor ERROR error generating community report
+Traceback (most recent call last):
+  File "/lib/python3.11/site-packages/fnllm/services/json.py", line 192, in _parse_json_string
+    return json.loads(value) if value else None
+           ^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting ':' delimiter: line 49 column 1 (char 81)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/lib/python3.11/site-packages/fnllm/services/json.py", line 162, in invoke_json
+    return await self.try_receive_json(delegate, prompt, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/fnllm/services/json.py", line 180, in try_receive_json
+    raw_json = self._parse_json_string(json_string)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/fnllm/services/json.py", line 195, in _parse_json_string
+    raise FailedToGenerateValidJsonError(msg) from err
+fnllm.services.errors.FailedToGenerateValidJsonError: JSON response is not a valid JSON, response={""
+
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/lib/python3.11/site-packages/fnllm/base/base.py", line 112, in __call__
+    return await self._invoke(prompt, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/fnllm/base/base.py", line 128, in _invoke
+    return await self._decorated_target(prompt, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/fnllm/services/json.py", line 70, in invoke
+    return await this.invoke_json(delegate, prompt, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/fnllm/services/json.py", line 166, in invoke_json
+    raise FailedToGenerateValidJsonError from error
+fnllm.services.errors.FailedToGenerateValidJsonError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/graphrag/index/operations/summarize_communities/community_reports_extractor/community_reports_extractor.py", line 80, in __call__
+    response = await self._llm(
+               ^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/fnllm/openai/llm/chat.py", line 83, in __call__
+    return await self._text_chat_llm(prompt, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/fnllm/openai/llm/features/tools_parsing.py", line 120, in __call__
+    return await self._delegate(prompt, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/fnllm/base/base.py", line 116, in __call__
+    await self._events.on_error(
+  File "/graphrag/index/llm/load_llm.py", line 52, in on_error
+    self._on_error(error, traceback, arguments)
+  File "/graphrag/index/llm/load_llm.py", line 169, in on_error
+    callbacks.error("Error Invoking LLM", error, stack, details)
+  File "/graphrag/callbacks/workflow_callbacks_manager.py", line 51, in error
+    callback.error(message, cause, stack, details)
+  File "/graphrag/callbacks/file_workflow_callbacks.py", line 37, in error
+    json.dumps(
+  File "/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/lib/python3.11/json/encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "/lib/python3.11/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/lib/python3.11/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/lib/python3.11/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/lib/python3.11/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/lib/python3.11/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "/lib/python3.11/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ModelMetaclass is not JSON serializable
+09:54:38,645 graphrag.callbacks.file_workflow_callbacks INFO Community Report Extraction Error details=None
+09:54:38,645 graphrag.index.operations.summarize_communities.strategies WARNING No report found for community: 9
+09:55:19,190 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:57:08,759 httpx INFO HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+09:57:08,765 graphrag.index.operations.summarize_communities.community_reports_extractor.community_reports_extractor ERROR error generating community report
+Traceback (most recent call last):
+  File "/lib/python3.11/site-packages/fnllm/services/json.py", line 205, in _read_model_from_json
+    return json_model.model_validate(value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/pydantic/main.py", line 627, in model_validate
+    return cls.__pydantic_validator__.validate_python(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 5 validation errors for CommunityReportResponse
+title
+  Field required [type=missing, input_value={'entities': {'MISSION RE...eration efficiency'}]}}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+summary
+  Field required [type=missing, input_value={'entities': {'MISSION RE...eration efficiency'}]}}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+findings
+  Field required [type=missing, input_value={'entities': {'MISSION RE...eration efficiency'}]}}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+rating
+  Field required [type=missing, input_value={'entities': {'MISSION RE...eration efficiency'}]}}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+rating_explanation
+  Field required [type=missing, input_value={'entities': {'MISSION RE...eration efficiency'}]}}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/lib/python3.11/site-packages/fnllm/services/json.py", line 162, in invoke_json
+    return await self.try_receive_json(delegate, prompt, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/fnllm/services/json.py", line 181, in try_receive_json
+    model = self._read_model_from_json(raw_json, json_model)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/fnllm/services/json.py", line 208, in _read_model_from_json
+    raise FailedToGenerateValidJsonError(msg) from err
+fnllm.services.errors.FailedToGenerateValidJsonError: JSON response does not match the expected model, response={'entities': {'MISSION REQUIREMENTS': {'description': 'The essential objectives and criteria that a satellite must meet to successfully fulfill its intended functions in space. These requirements encompass various aspects such as power systems, communication capabilities, disaster monitoring, orbit transfer, phases of missions, and the integration of CubeSat technology.', 'relationships': [{'source': 'CUBESAT', 'target': 'MISSION REQUIREMENTS', 'description': 'CubeSats are designed to meet specific mission requirements, ensuring they can successfully carry out their intended functions in space'}, {'source': 'NASA', 'target': 'MISSION REQUIREMENTS', 'description': 'NASA manages various CubeSat projects that align with mission requirements for satellite deployment and operation.'}]}, 'CUBESAT': {'description': 'Small satellites used in space research and education, characterized by their compact size and relatively low cost. They are designed to meet specific mission requirements and incorporate essential components like On-Board Computers (OBC) for data processing and subsystem management.', 'relationships': [{'source': 'MISSION REQUIREMENTS', 'target': 'CUBESAT', 'description': 'CubeSats are designed to meet specific mission requirements, ensuring they can successfully carry out their intended functions in space'}, {'source': 'HTV', 'target': 'CUBESAT', 'description': 'HTV incorporates CubeSat technology for its missions, indicating a direct relationship between the two'}]}, 'JAXA': {'description': 'The Japanese Aerospace Exploration Agency, known for its involvement in advanced satellite projects. JAXA employs cutting-edge solar array technology to enhance power generation efficiency in its satellite designs.', 'relationships': [{'source': 'SOLAR ARRAYS', 'target': 'JAXA', 'description': 'JAXA employs advanced solar array technology in its satellite designs to enhance power generation efficiency'}]}, 'HTV': {'description': "A specific mission or project involving CubeSat technology, demonstrating JAXA's integration of such systems into their space exploration efforts.", 'relationships': [{'source': 'HTV', 'target': 'CUBESAT', 'description': 'HTV incorporates CubeSat technology for its missions, indicating a direct relationship between the two'}]}, 'OSNSAT': {'description': 'A satellite project that incorporates 10BASE-T protocol for efficient data transmission within its system.', 'relationships': [{'source': 'OSNSAT', 'target': '10BASE-T', 'description': 'OSNSat incorporates 10BASE-T protocol for efficient data transmission within the satellite system'}]}, 'ORBIT': {'description': 'The path a satellite follows around Earth, determined by its velocity and altitude. It influences communication capabilities and operational strategies of satellites.', 'relationships': [{'source': 'ORBIT', 'target': 'SYSTEM COMPONENTS', 'description': 'The orbit defines the path a CubeSat follows around Earth, influencing its communication and operational capabilities'}]}, 'BIOSENTINEL': {'description': 'A satellite project focused on studying radiation effects on biological samples during deep-space travel.', 'relationships': [{'source': 'BIOSENTINEL', 'target': 'MISSION REQUIREMENTS', 'description': "BioSentinel's mission requirements focus on studying radiation effects on biological samples during deep-space travel"}]}, 'DISASTER MONITORING': {'description': 'A requirement for satellites to observe and respond to natural disasters, ensuring timely data collection and communication.', 'relationships': [{'source': 'DISASTER MONITORING', 'target': 'MISSION REQUIREMENTS', 'description': 'Disaster monitoring is a key mission requirement for satellites designed to observe and respond to natural disasters'}]}, 'ORBIT TRANSFER': {'description': 'The process of moving a satellite from one orbit to another, essential for mission success.', 'relationships': [{'source': 'ORBIT TRANSFER', 'target': 'MISSION REQUIREMENTS', 'description': 'Orbit transfer is a critical aspect of mission planning, ensuring satellites reach their operational orbits'}]}, 'PHASE': {'description': 'A specific phase of a mission or project, indicating progress or stages in the development process.', 'relationships': [{'source': 'PHASE', 'target': 'MISSION REQUIREMENTS', 'description': 'Phases represent specific stages of a mission or project, indicating progress or compliance with mission requirements'}]}, '通信能力': {'description': 'The communication capabilities required for CubeSats to transmit data and receive commands, ensuring effective mission operations.', 'relationships': [{'source': '通信能力', 'target': 'MISSION REQUIREMENTS', 'description': '通信能力 is a primary mission requirement for CubeSats to ensure data transmission and command reception'}]}, 'SPACE RELEASE: 1994': {'description': 'A specific mission or release related to space exploration, potentially involving CubeSat technology.', 'relationships': [{'source': 'SPACE RELEASE: 1994', 'target': 'MISSION REQUIREMENTS', 'description': 'This mission or release is part of space exploration objectives, likely involving CubeSat technology for data collection and communication'}]}, 'FUTURES': {'description': 'A reference to future missions or objectives in space exploration, potentially involving CubeSat technology.', 'relationships': [{'source': 'FUTURES', 'target': 'MISSION REQUIREMENTS', 'description': 'Future missions aim to expand the capabilities of satellite systems, including advancements in CubeSat technology and deployment strategies'}]}, 'LOOMEO': {'description': 'A specific mission or project name related to satellite deployment or space exploration.', 'relationships': [{'source': 'LOOMEO', 'target': 'MISSION REQUIREMENTS', 'description': 'The Loomeo mission focuses on specific objectives in space exploration, potentially involving CubeSats for data transmission and environmental monitoring'}]}, '10BASE-T': {'description': 'A protocol used for efficient data transmission within satellite systems.', 'relationships': [{'source': 'OSNSAT', 'target': '10BASE-T', 'description': 'OSNSat incorporates 10BASE-T protocol for efficient data transmission within the satellite system'}]}, 'SYSTEM COMPONENTS': {'description': 'Various subsystems and components that make up a satellite, including power systems, communication modules, and control systems.', 'relationships': [{'source': 'ORBIT', 'target': 'SYSTEM COMPONENTS', 'description': 'The orbit defines the path a CubeSat follows around Earth, influencing its communication and operational capabilities'}]}, 'POWER SYSTEMS': {'description': 'Components responsible for generating, storing, and distributing electrical power within a satellite. Solar arrays are critical to these systems as they convert sunlight into electrical energy.', 'relationships': [{'source': 'SOLAR ARRAYS', 'target': 'POWER SYSTEMS', 'description': 'Solar arrays are a critical component of power systems, providing renewable energy for satellite operations'}]}, 'SOLAR ARRAYS': {'description': 'Components that convert sunlight into electrical energy, serving as the primary power generation system for satellites. They are essential for meeting mission requirements related to power supply.', 'relationships': [{'source': 'SOLAR ARRAYS', 'target': 'POWER SYSTEMS', 'description': 'Solar arrays are a critical component of power systems, providing renewable energy for satellite operations'}, {'source': 'JAXA', 'target': 'SOLAR ARRAYS', 'description': 'JAXA employs advanced solar array technology in its satellite designs to enhance power generation efficiency'}]}}}.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/lib/python3.11/site-packages/fnllm/base/base.py", line 112, in __call__
+    return await self._invoke(prompt, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/fnllm/base/base.py", line 128, in _invoke
+    return await self._decorated_target(prompt, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/fnllm/services/json.py", line 70, in invoke
+    return await this.invoke_json(delegate, prompt, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/fnllm/services/json.py", line 166, in invoke_json
+    raise FailedToGenerateValidJsonError from error
+fnllm.services.errors.FailedToGenerateValidJsonError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/graphrag/index/operations/summarize_communities/community_reports_extractor/community_reports_extractor.py", line 80, in __call__
+    response = await self._llm(
+               ^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/fnllm/openai/llm/chat.py", line 83, in __call__
+    return await self._text_chat_llm(prompt, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/fnllm/openai/llm/features/tools_parsing.py", line 120, in __call__
+    return await self._delegate(prompt, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/site-packages/fnllm/base/base.py", line 116, in __call__
+    await self._events.on_error(
+  File "/graphrag/index/llm/load_llm.py", line 52, in on_error
+    self._on_error(error, traceback, arguments)
+  File "/graphrag/index/llm/load_llm.py", line 169, in on_error
+    callbacks.error("Error Invoking LLM", error, stack, details)
+  File "/graphrag/callbacks/workflow_callbacks_manager.py", line 51, in error
+    callback.error(message, cause, stack, details)
+  File "/graphrag/callbacks/file_workflow_callbacks.py", line 37, in error
+    json.dumps(
+  File "/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/lib/python3.11/json/encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "/lib/python3.11/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/lib/python3.11/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/lib/python3.11/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/lib/python3.11/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/lib/python3.11/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "/lib/python3.11/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ModelMetaclass is not JSON serializable
+09:57:08,770 graphrag.callbacks.file_workflow_callbacks INFO Community Report Extraction Error details=None
+09:57:08,770 graphrag.index.operations.summarize_communities.strategies WARNING No report found for community: 4
+09:57:08,854 graphrag.utils.storage INFO reading table from storage: create_final_documents.parquet
+09:57:08,867 graphrag.utils.storage INFO reading table from storage: create_final_relationships.parquet
+09:57:08,875 graphrag.utils.storage INFO reading table from storage: create_final_text_units.parquet
+09:57:08,889 graphrag.utils.storage INFO reading table from storage: create_final_entities.parquet
+09:57:08,896 graphrag.utils.storage INFO reading table from storage: create_final_community_reports.parquet
+09:57:08,909 graphrag.index.flows.generate_text_embeddings INFO Creating embeddings
+09:57:08,910 graphrag.index.operations.embed_text.embed_text INFO using vector store lancedb with container_name default for embedding entity.description: default-entity-description
+09:57:08,981 graphrag.index.operations.embed_text.strategies.openai INFO embedding 491 inputs via 491 snippets using 31 batches. max_batch_size=16, max_tokens=8191
+09:57:10,135 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:11,393 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:12,403 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:13,163 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:13,618 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:15,210 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:16,267 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:16,784 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:17,793 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:18,472 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:19,19 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:19,891 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:20,920 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:21,300 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:22,33 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:22,817 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:23,531 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:24,236 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:25,32 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:25,818 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:26,843 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:27,465 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:27,890 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:28,287 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:29,263 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:29,798 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:30,988 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:31,435 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:31,919 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:32,306 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:32,824 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:33,80 graphrag.index.operations.embed_text.embed_text INFO using vector store lancedb with container_name default for embedding text_unit.text: default-text_unit-text
+09:57:33,413 graphrag.index.operations.embed_text.strategies.openai INFO embedding 247 inputs via 247 snippets using 41 batches. max_batch_size=16, max_tokens=8191
+09:57:34,627 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:35,0 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:35,591 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:37,665 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:38,622 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:39,169 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:39,670 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:39,976 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:40,494 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:41,110 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:41,672 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:42,67 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:42,598 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:43,186 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:43,505 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:44,47 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:44,542 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:44,969 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:45,434 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:45,723 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:46,216 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:46,619 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:46,979 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:47,447 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:47,812 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:48,219 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:48,722 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:49,174 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:49,554 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:50,79 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:50,562 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:51,153 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:51,948 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:52,576 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:53,7 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:55,775 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:56,68 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:57,82 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:57,476 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:58,6 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:58,486 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:58,660 graphrag.index.operations.embed_text.embed_text INFO using vector store lancedb with container_name default for embedding community.full_content: default-community-full_content
+09:57:58,694 graphrag.index.operations.embed_text.strategies.openai INFO embedding 52 inputs via 52 snippets using 4 batches. max_batch_size=16, max_tokens=8191
+09:57:59,40 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:57:59,595 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:58:00,196 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:58:00,809 httpx INFO HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+09:58:00,888 graphrag.cli.index INFO All workflows completed successfully.

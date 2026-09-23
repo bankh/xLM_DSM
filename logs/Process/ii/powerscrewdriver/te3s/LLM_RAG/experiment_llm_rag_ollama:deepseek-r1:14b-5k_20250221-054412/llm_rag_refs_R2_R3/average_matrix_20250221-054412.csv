@@ -1,0 +1,8 @@
+,Motor,Power Source (Battery/Cord),Transmission System (Gears/Belts),Chuck/Bit Holder,Handle and Trigger Assembly,Screw Clamping Mechanism,Circuitry and Controls
+Motor,1,1,1,0,0,0,1
+Power Source (Battery/Cord),1,1,0,0,0,0,1
+Transmission System (Gears/Belts),1,0,1,1,0,1,0
+Chuck/Bit Holder,0,0,1,1,0,1,0
+Handle and Trigger Assembly,0,0,0,0,1,0,1
+Screw Clamping Mechanism,0,0,1,1,0,1,0
+Circuitry and Controls,1,1,1,0,1,0,1

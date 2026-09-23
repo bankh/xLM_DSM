@@ -1,0 +1,8 @@
+,Clip,Ring Gear,Housing,Motor,Battery,Switch,Gearbox
+Clip,1,1,1,1,0,0,1
+Ring Gear,1,1,1,0,0,0,1
+Housing,1,1,1,0,0,0,1
+Motor,1,0,0,1,1,1,1
+Battery,0,0,0,1,1,1,0
+Switch,0,0,0,1,1,1,0
+Gearbox,1,1,1,1,0,0,1

@@ -1,0 +1,8 @@
+,motor,gear system,chuck,battery,switch,housing,LED light
+motor,1,1,0,1,1,1,1
+gear system,1,1,1,0,0,1,0
+chuck,0,1,1,0,0,1,0
+battery,1,0,0,1,1,1,0
+switch,1,0,0,1,1,1,1
+housing,1,1,1,1,1,1,1
+LED light,1,0,0,0,1,1,1

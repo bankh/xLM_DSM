@@ -1,0 +1,294 @@
+2025-02-22 20:50:55,578 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Run 1/5
+2025-02-22 20:50:55,615 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - DEBUG: Initializing LLMInference.
+2025-02-22 20:50:55,616 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Initialized LLM inference for system: CubeSat (nanosatellite)
+2025-02-22 20:50:55,616 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Initialized DSM for system: CubeSat (nanosatellite)
+2025-02-22 20:50:55,618 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Inference model: gpt-4o-2024-11-20
+2025-02-22 20:50:55,618 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Prompt (attempt 1/3): 
+            Please identify the major components of CubeSat (nanosatellite) in the engineering based on hierarchical whole-part relationships.             
+            The number of components must be 6 and must be a list of strings.             
+            Please do not identify similar components that will work together under subsystem level since our interest is to identify the major components that form the core architecture of the system.             
+            Here is an example of the components for made-up system:             
+            final response = [ "component 1", "component 2", "component 3", "component 4", "component 5" ]             
+            IMPORTANT: THE FORMAT OF THE OUTPUT MUST BE AS A LIST OF STRINGS ONLY SIMILAR TO THE ONE ABOVE (NO LATEX, NO CODE, NO DESCRIPTION, OR OTHER ENCODINGS).              
+2025-02-22 20:50:56,559 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: ["Structure", "Power System", "Communication System", "Payload", "Attitude Determination and Control System", "On-Board Computer"]
+2025-02-22 20:50:56,560 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Matrix: ['Structure', 'Power System', 'Communication System', 'Payload', 'Attitude Determination and Control System', 'On-Board Computer']
+2025-02-22 20:50:56,561 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Components: ['Structure', 'Power System', 'Communication System', 'Payload', 'Attitude Determination and Control System', 'On-Board Computer']
+2025-02-22 20:50:57,242 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: Valid
+2025-02-22 20:50:57,243 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Validation response: Valid
+2025-02-22 20:50:57,244 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Filtered validation response: Valid
+2025-02-22 20:50:57,245 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Component list validated successfully on attempt 1
+2025-02-22 20:50:57,246 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Components: ['Structure', 'Power System', 'Communication System', 'Payload', 'Attitude Determination and Control System', 'On-Board Computer']
+2025-02-22 20:50:57,247 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-22 20:50:57,247 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Predicted Components: ['Structure', 'Power System', 'Communication System', 'Payload', 'Attitude Determination and Control System', 'On-Board Computer']
+2025-02-22 20:50:57,248 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Number of components: 6
+2025-02-22 20:50:57,249 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Predicted components for query: ['Structure', 'Power System', 'Communication System', 'Payload', 'Attitude Determination and Control System', 'On-Board Computer']
+2025-02-22 20:50:57,249 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Query: 
+        Please identify system-level hierarchical whole-part relationships between the components of CubeSat (nanosatellite), as listed below, and represent them in a Design Structure Matrix (DSM) format.          
+        The relationships should be articulated in plain English, capturing the essence of their interactions.         
+        Here is the list of subsystems/components to analyze: ['Structure', 'Power System', 'Communication System', 'Payload', 'Attitude Determination and Control System', 'On-Board Computer']         
+        The DSM should clearly indicate the interactions between these components as 1 exist and 0 does not exist, considering both the presence and nature of these connections.         
+        Present the output in a square matrix format (number of rows and columns MUST be the same as the number of components = 6 for this example), with rows and columns labeled accordingly.         
+        Diagonal elements should be 1 in DSM matrix since each component interacts with itself.         
+        If you don't know the answer, just write 2 for the specific cell that you are unsure of. A worst case scenario of the **as a list of lists** shown below (diagonal elements are 1 and rest are 2). Don't make up an answer.         
+        final response = [[1, 2, 2, 2, 2, 2, 2],[2, 1, 2, 2, 2, 2, 2],[2, 2, 1, 2, 2, 2, 2],[2, 2, 2, 1, 2, 2, 2],[2, 2, 2, 2, 1, 2, 2],[2, 2, 2, 2, 2, 1, 2],[2, 2, 2, 2, 2, 2, 1]] for 7 components         
+        final response = [[1, 2, 2],[2, 1, 2],[2, 2, 1]] for 3 components         
+        IMPORTANT: Your response must **ONLY** contain a valid **as a list of lists** in the following example format 7x7 matrix.         
+        The below list of lists is just an example format of a response. **Replace** the values with your **actual analysis** while providing your response with parameter of 'final response'.        
+        final response = [[1, 0, 0, 0, 0, 0, 0],[0, 1, 0, 0, 0, 0, 0],[0, 0, 1, 0, 0, 0, 0],   [0, 0, 0, 1, 0, 0, 0],[0, 0, 0, 0, 1, 0, 0],[0, 0, 0, 0, 0, 1, 0],[0, 0, 0, 0, 0, 0, 1]] for 7 components         
+        final response = [[1, 0, 0],[0, 1, 0],[0, 0, 1]] for 3 components         
+        IMPORTANT: THE FORMAT OF THE OUTPUT MUST BE AS LIST OF LISTS ONLY SIMILAR TO THE ONE ABOVE (NO LATEX, CODE, OR OTHER ENCODINGS).
+        
+2025-02-22 20:51:00,080 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: Based on the hierarchical whole-part relationships and interactions between the CubeSat components, here is the Design Structure Matrix (DSM) in the requested format:
+
+final response = [[1, 1, 1, 1, 1, 1],  
+                  [1, 1, 1, 1, 1, 1],  
+                  [1, 1, 1, 1, 1, 1],  
+                  [1, 1, 1, 1, 1, 1],  
+                  [1, 1, 1, 1, 1, 1],  
+                  [1, 1, 1, 1, 1, 1]]
+2025-02-22 20:51:00,081 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Response: Based on the hierarchical whole-part relationships and interactions between the CubeSat components, here is the Design Structure Matrix (DSM) in the requested format:
+
+final response = [[1, 1, 1, 1, 1, 1],  
+                  [1, 1, 1, 1, 1, 1],  
+                  [1, 1, 1, 1, 1, 1],  
+                  [1, 1, 1, 1, 1, 1],  
+                  [1, 1, 1, 1, 1, 1],  
+                  [1, 1, 1, 1, 1, 1]]
+2025-02-22 20:51:00,082 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Matrix: [[1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1]]
+2025-02-22 20:51:00,083 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Final Matrix:
+[[1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1]]
+2025-02-22 20:51:00,084 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-22 20:51:00,086 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Matrix from response.
+2025-02-22 20:51:00,086 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - At run 1/5
+2025-02-22 20:51:00,087 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Matrix: [[1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1]]
+2025-02-22 20:51:00,088 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-22 20:51:10,099 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Run 2/5
+2025-02-22 20:51:10,135 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - DEBUG: Initializing LLMInference.
+2025-02-22 20:51:10,136 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Initialized LLM inference for system: CubeSat (nanosatellite)
+2025-02-22 20:51:10,137 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Initialized DSM for system: CubeSat (nanosatellite)
+2025-02-22 20:51:10,138 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Inference model: gpt-4o-2024-11-20
+2025-02-22 20:51:10,139 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Predicted Components: ['Structure', 'Power System', 'Communication System', 'Payload', 'Attitude Determination and Control System', 'On-Board Computer']
+2025-02-22 20:51:10,140 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Number of components: 6
+2025-02-22 20:51:10,140 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Predicted components for query: ['Structure', 'Power System', 'Communication System', 'Payload', 'Attitude Determination and Control System', 'On-Board Computer']
+2025-02-22 20:51:10,141 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Query: 
+        Please identify system-level hierarchical whole-part relationships between the components of CubeSat (nanosatellite), as listed below, and represent them in a Design Structure Matrix (DSM) format.          
+        The relationships should be articulated in plain English, capturing the essence of their interactions.         
+        Here is the list of subsystems/components to analyze: ['Structure', 'Power System', 'Communication System', 'Payload', 'Attitude Determination and Control System', 'On-Board Computer']         
+        The DSM should clearly indicate the interactions between these components as 1 exist and 0 does not exist, considering both the presence and nature of these connections.         
+        Present the output in a square matrix format (number of rows and columns MUST be the same as the number of components = 6 for this example), with rows and columns labeled accordingly.         
+        Diagonal elements should be 1 in DSM matrix since each component interacts with itself.         
+        If you don't know the answer, just write 2 for the specific cell that you are unsure of. A worst case scenario of the **as a list of lists** shown below (diagonal elements are 1 and rest are 2). Don't make up an answer.         
+        final response = [[1, 2, 2, 2, 2, 2, 2],[2, 1, 2, 2, 2, 2, 2],[2, 2, 1, 2, 2, 2, 2],[2, 2, 2, 1, 2, 2, 2],[2, 2, 2, 2, 1, 2, 2],[2, 2, 2, 2, 2, 1, 2],[2, 2, 2, 2, 2, 2, 1]] for 7 components         
+        final response = [[1, 2, 2],[2, 1, 2],[2, 2, 1]] for 3 components         
+        IMPORTANT: Your response must **ONLY** contain a valid **as a list of lists** in the following example format 7x7 matrix.         
+        The below list of lists is just an example format of a response. **Replace** the values with your **actual analysis** while providing your response with parameter of 'final response'.        
+        final response = [[1, 0, 0, 0, 0, 0, 0],[0, 1, 0, 0, 0, 0, 0],[0, 0, 1, 0, 0, 0, 0],   [0, 0, 0, 1, 0, 0, 0],[0, 0, 0, 0, 1, 0, 0],[0, 0, 0, 0, 0, 1, 0],[0, 0, 0, 0, 0, 0, 1]] for 7 components         
+        final response = [[1, 0, 0],[0, 1, 0],[0, 0, 1]] for 3 components         
+        IMPORTANT: THE FORMAT OF THE OUTPUT MUST BE AS LIST OF LISTS ONLY SIMILAR TO THE ONE ABOVE (NO LATEX, CODE, OR OTHER ENCODINGS).
+        
+2025-02-22 20:51:15,904 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: Based on the hierarchical whole-part relationships and interactions between the CubeSat components, here is the Design Structure Matrix (DSM) in the required format:
+
+**final response** = [[1, 1, 1, 1, 1, 1],  
+                      [1, 1, 1, 0, 1, 1],  
+                      [1, 1, 1, 1, 1, 1],  
+                      [1, 0, 1, 1, 1, 1],  
+                      [1, 1, 1, 1, 1, 1],  
+                      [1, 1, 1, 1, 1, 1]]
+2025-02-22 20:51:15,906 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Response: Based on the hierarchical whole-part relationships and interactions between the CubeSat components, here is the Design Structure Matrix (DSM) in the required format:
+
+**final response** = [[1, 1, 1, 1, 1, 1],  
+                      [1, 1, 1, 0, 1, 1],  
+                      [1, 1, 1, 1, 1, 1],  
+                      [1, 0, 1, 1, 1, 1],  
+                      [1, 1, 1, 1, 1, 1],  
+                      [1, 1, 1, 1, 1, 1]]
+2025-02-22 20:51:15,924 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Matrix: [[1, 1, 1, 1, 1, 1], [1, 1, 1, 0, 1, 1], [1, 1, 1, 1, 1, 1], [1, 0, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1]]
+2025-02-22 20:51:15,925 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Final Matrix:
+[[1, 1, 1, 1, 1, 1], [1, 1, 1, 0, 1, 1], [1, 1, 1, 1, 1, 1], [1, 0, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1]]
+2025-02-22 20:51:15,926 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-22 20:51:15,927 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Matrix from response.
+2025-02-22 20:51:15,928 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - At run 2/5
+2025-02-22 20:51:15,928 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Matrix: [[1, 1, 1, 1, 1, 1], [1, 1, 1, 0, 1, 1], [1, 1, 1, 1, 1, 1], [1, 0, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1]]
+2025-02-22 20:51:15,929 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-22 20:51:25,940 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Run 3/5
+2025-02-22 20:51:25,976 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - DEBUG: Initializing LLMInference.
+2025-02-22 20:51:25,976 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Initialized LLM inference for system: CubeSat (nanosatellite)
+2025-02-22 20:51:25,977 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Initialized DSM for system: CubeSat (nanosatellite)
+2025-02-22 20:51:25,978 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Inference model: gpt-4o-2024-11-20
+2025-02-22 20:51:25,979 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Predicted Components: ['Structure', 'Power System', 'Communication System', 'Payload', 'Attitude Determination and Control System', 'On-Board Computer']
+2025-02-22 20:51:25,980 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Number of components: 6
+2025-02-22 20:51:25,980 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Predicted components for query: ['Structure', 'Power System', 'Communication System', 'Payload', 'Attitude Determination and Control System', 'On-Board Computer']
+2025-02-22 20:51:25,981 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Query: 
+        Please identify system-level hierarchical whole-part relationships between the components of CubeSat (nanosatellite), as listed below, and represent them in a Design Structure Matrix (DSM) format.          
+        The relationships should be articulated in plain English, capturing the essence of their interactions.         
+        Here is the list of subsystems/components to analyze: ['Structure', 'Power System', 'Communication System', 'Payload', 'Attitude Determination and Control System', 'On-Board Computer']         
+        The DSM should clearly indicate the interactions between these components as 1 exist and 0 does not exist, considering both the presence and nature of these connections.         
+        Present the output in a square matrix format (number of rows and columns MUST be the same as the number of components = 6 for this example), with rows and columns labeled accordingly.         
+        Diagonal elements should be 1 in DSM matrix since each component interacts with itself.         
+        If you don't know the answer, just write 2 for the specific cell that you are unsure of. A worst case scenario of the **as a list of lists** shown below (diagonal elements are 1 and rest are 2). Don't make up an answer.         
+        final response = [[1, 2, 2, 2, 2, 2, 2],[2, 1, 2, 2, 2, 2, 2],[2, 2, 1, 2, 2, 2, 2],[2, 2, 2, 1, 2, 2, 2],[2, 2, 2, 2, 1, 2, 2],[2, 2, 2, 2, 2, 1, 2],[2, 2, 2, 2, 2, 2, 1]] for 7 components         
+        final response = [[1, 2, 2],[2, 1, 2],[2, 2, 1]] for 3 components         
+        IMPORTANT: Your response must **ONLY** contain a valid **as a list of lists** in the following example format 7x7 matrix.         
+        The below list of lists is just an example format of a response. **Replace** the values with your **actual analysis** while providing your response with parameter of 'final response'.        
+        final response = [[1, 0, 0, 0, 0, 0, 0],[0, 1, 0, 0, 0, 0, 0],[0, 0, 1, 0, 0, 0, 0],   [0, 0, 0, 1, 0, 0, 0],[0, 0, 0, 0, 1, 0, 0],[0, 0, 0, 0, 0, 1, 0],[0, 0, 0, 0, 0, 0, 1]] for 7 components         
+        final response = [[1, 0, 0],[0, 1, 0],[0, 0, 1]] for 3 components         
+        IMPORTANT: THE FORMAT OF THE OUTPUT MUST BE AS LIST OF LISTS ONLY SIMILAR TO THE ONE ABOVE (NO LATEX, CODE, OR OTHER ENCODINGS).
+        
+2025-02-22 20:51:31,997 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: Based on the hierarchical whole-part relationships and interactions between the CubeSat components, here is the Design Structure Matrix (DSM) in the required format:
+
+**final response** = [[1, 1, 1, 1, 1, 1],  
+                      [1, 1, 1, 0, 1, 1],  
+                      [1, 1, 1, 1, 1, 1],  
+                      [1, 0, 1, 1, 1, 1],  
+                      [1, 1, 1, 1, 1, 1],  
+                      [1, 1, 1, 1, 1, 1]]
+2025-02-22 20:51:31,999 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Response: Based on the hierarchical whole-part relationships and interactions between the CubeSat components, here is the Design Structure Matrix (DSM) in the required format:
+
+**final response** = [[1, 1, 1, 1, 1, 1],  
+                      [1, 1, 1, 0, 1, 1],  
+                      [1, 1, 1, 1, 1, 1],  
+                      [1, 0, 1, 1, 1, 1],  
+                      [1, 1, 1, 1, 1, 1],  
+                      [1, 1, 1, 1, 1, 1]]
+2025-02-22 20:51:32,000 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Matrix: [[1, 1, 1, 1, 1, 1], [1, 1, 1, 0, 1, 1], [1, 1, 1, 1, 1, 1], [1, 0, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1]]
+2025-02-22 20:51:32,000 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Final Matrix:
+[[1, 1, 1, 1, 1, 1], [1, 1, 1, 0, 1, 1], [1, 1, 1, 1, 1, 1], [1, 0, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1]]
+2025-02-22 20:51:32,001 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-22 20:51:32,002 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Matrix from response.
+2025-02-22 20:51:32,002 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - At run 3/5
+2025-02-22 20:51:32,003 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Matrix: [[1, 1, 1, 1, 1, 1], [1, 1, 1, 0, 1, 1], [1, 1, 1, 1, 1, 1], [1, 0, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1]]
+2025-02-22 20:51:32,004 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-22 20:51:42,015 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Run 4/5
+2025-02-22 20:51:42,052 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - DEBUG: Initializing LLMInference.
+2025-02-22 20:51:42,053 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Initialized LLM inference for system: CubeSat (nanosatellite)
+2025-02-22 20:51:42,054 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Initialized DSM for system: CubeSat (nanosatellite)
+2025-02-22 20:51:42,055 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Inference model: gpt-4o-2024-11-20
+2025-02-22 20:51:42,056 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Predicted Components: ['Structure', 'Power System', 'Communication System', 'Payload', 'Attitude Determination and Control System', 'On-Board Computer']
+2025-02-22 20:51:42,057 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Number of components: 6
+2025-02-22 20:51:42,057 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Predicted components for query: ['Structure', 'Power System', 'Communication System', 'Payload', 'Attitude Determination and Control System', 'On-Board Computer']
+2025-02-22 20:51:42,059 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Query: 
+        Please identify system-level hierarchical whole-part relationships between the components of CubeSat (nanosatellite), as listed below, and represent them in a Design Structure Matrix (DSM) format.          
+        The relationships should be articulated in plain English, capturing the essence of their interactions.         
+        Here is the list of subsystems/components to analyze: ['Structure', 'Power System', 'Communication System', 'Payload', 'Attitude Determination and Control System', 'On-Board Computer']         
+        The DSM should clearly indicate the interactions between these components as 1 exist and 0 does not exist, considering both the presence and nature of these connections.         
+        Present the output in a square matrix format (number of rows and columns MUST be the same as the number of components = 6 for this example), with rows and columns labeled accordingly.         
+        Diagonal elements should be 1 in DSM matrix since each component interacts with itself.         
+        If you don't know the answer, just write 2 for the specific cell that you are unsure of. A worst case scenario of the **as a list of lists** shown below (diagonal elements are 1 and rest are 2). Don't make up an answer.         
+        final response = [[1, 2, 2, 2, 2, 2, 2],[2, 1, 2, 2, 2, 2, 2],[2, 2, 1, 2, 2, 2, 2],[2, 2, 2, 1, 2, 2, 2],[2, 2, 2, 2, 1, 2, 2],[2, 2, 2, 2, 2, 1, 2],[2, 2, 2, 2, 2, 2, 1]] for 7 components         
+        final response = [[1, 2, 2],[2, 1, 2],[2, 2, 1]] for 3 components         
+        IMPORTANT: Your response must **ONLY** contain a valid **as a list of lists** in the following example format 7x7 matrix.         
+        The below list of lists is just an example format of a response. **Replace** the values with your **actual analysis** while providing your response with parameter of 'final response'.        
+        final response = [[1, 0, 0, 0, 0, 0, 0],[0, 1, 0, 0, 0, 0, 0],[0, 0, 1, 0, 0, 0, 0],   [0, 0, 0, 1, 0, 0, 0],[0, 0, 0, 0, 1, 0, 0],[0, 0, 0, 0, 0, 1, 0],[0, 0, 0, 0, 0, 0, 1]] for 7 components         
+        final response = [[1, 0, 0],[0, 1, 0],[0, 0, 1]] for 3 components         
+        IMPORTANT: THE FORMAT OF THE OUTPUT MUST BE AS LIST OF LISTS ONLY SIMILAR TO THE ONE ABOVE (NO LATEX, CODE, OR OTHER ENCODINGS).
+        
+2025-02-22 20:51:45,182 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: Based on the hierarchical whole-part relationships and interactions between the CubeSat components, here is the Design Structure Matrix (DSM) in the required format:
+
+final response = [[1, 1, 1, 1, 1, 1],  
+                  [1, 1, 1, 0, 1, 1],  
+                  [1, 1, 1, 1, 1, 1],  
+                  [1, 0, 1, 1, 0, 1],  
+                  [1, 1, 1, 0, 1, 1],  
+                  [1, 1, 1, 1, 1, 1]]
+2025-02-22 20:51:45,183 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Response: Based on the hierarchical whole-part relationships and interactions between the CubeSat components, here is the Design Structure Matrix (DSM) in the required format:
+
+final response = [[1, 1, 1, 1, 1, 1],  
+                  [1, 1, 1, 0, 1, 1],  
+                  [1, 1, 1, 1, 1, 1],  
+                  [1, 0, 1, 1, 0, 1],  
+                  [1, 1, 1, 0, 1, 1],  
+                  [1, 1, 1, 1, 1, 1]]
+2025-02-22 20:51:45,184 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Matrix: [[1, 1, 1, 1, 1, 1], [1, 1, 1, 0, 1, 1], [1, 1, 1, 1, 1, 1], [1, 0, 1, 1, 0, 1], [1, 1, 1, 0, 1, 1], [1, 1, 1, 1, 1, 1]]
+2025-02-22 20:51:45,185 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Final Matrix:
+[[1, 1, 1, 1, 1, 1], [1, 1, 1, 0, 1, 1], [1, 1, 1, 1, 1, 1], [1, 0, 1, 1, 0, 1], [1, 1, 1, 0, 1, 1], [1, 1, 1, 1, 1, 1]]
+2025-02-22 20:51:45,186 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-22 20:51:45,187 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Matrix from response.
+2025-02-22 20:51:45,188 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - At run 4/5
+2025-02-22 20:51:45,189 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Matrix: [[1, 1, 1, 1, 1, 1], [1, 1, 1, 0, 1, 1], [1, 1, 1, 1, 1, 1], [1, 0, 1, 1, 0, 1], [1, 1, 1, 0, 1, 1], [1, 1, 1, 1, 1, 1]]
+2025-02-22 20:51:45,190 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-22 20:51:55,201 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Run 5/5
+2025-02-22 20:51:55,237 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - DEBUG: Initializing LLMInference.
+2025-02-22 20:51:55,238 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Initialized LLM inference for system: CubeSat (nanosatellite)
+2025-02-22 20:51:55,239 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Initialized DSM for system: CubeSat (nanosatellite)
+2025-02-22 20:51:55,240 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Inference model: gpt-4o-2024-11-20
+2025-02-22 20:51:55,241 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Predicted Components: ['Structure', 'Power System', 'Communication System', 'Payload', 'Attitude Determination and Control System', 'On-Board Computer']
+2025-02-22 20:51:55,242 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Number of components: 6
+2025-02-22 20:51:55,243 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Predicted components for query: ['Structure', 'Power System', 'Communication System', 'Payload', 'Attitude Determination and Control System', 'On-Board Computer']
+2025-02-22 20:51:55,244 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Query: 
+        Please identify system-level hierarchical whole-part relationships between the components of CubeSat (nanosatellite), as listed below, and represent them in a Design Structure Matrix (DSM) format.          
+        The relationships should be articulated in plain English, capturing the essence of their interactions.         
+        Here is the list of subsystems/components to analyze: ['Structure', 'Power System', 'Communication System', 'Payload', 'Attitude Determination and Control System', 'On-Board Computer']         
+        The DSM should clearly indicate the interactions between these components as 1 exist and 0 does not exist, considering both the presence and nature of these connections.         
+        Present the output in a square matrix format (number of rows and columns MUST be the same as the number of components = 6 for this example), with rows and columns labeled accordingly.         
+        Diagonal elements should be 1 in DSM matrix since each component interacts with itself.         
+        If you don't know the answer, just write 2 for the specific cell that you are unsure of. A worst case scenario of the **as a list of lists** shown below (diagonal elements are 1 and rest are 2). Don't make up an answer.         
+        final response = [[1, 2, 2, 2, 2, 2, 2],[2, 1, 2, 2, 2, 2, 2],[2, 2, 1, 2, 2, 2, 2],[2, 2, 2, 1, 2, 2, 2],[2, 2, 2, 2, 1, 2, 2],[2, 2, 2, 2, 2, 1, 2],[2, 2, 2, 2, 2, 2, 1]] for 7 components         
+        final response = [[1, 2, 2],[2, 1, 2],[2, 2, 1]] for 3 components         
+        IMPORTANT: Your response must **ONLY** contain a valid **as a list of lists** in the following example format 7x7 matrix.         
+        The below list of lists is just an example format of a response. **Replace** the values with your **actual analysis** while providing your response with parameter of 'final response'.        
+        final response = [[1, 0, 0, 0, 0, 0, 0],[0, 1, 0, 0, 0, 0, 0],[0, 0, 1, 0, 0, 0, 0],   [0, 0, 0, 1, 0, 0, 0],[0, 0, 0, 0, 1, 0, 0],[0, 0, 0, 0, 0, 1, 0],[0, 0, 0, 0, 0, 0, 1]] for 7 components         
+        final response = [[1, 0, 0],[0, 1, 0],[0, 0, 1]] for 3 components         
+        IMPORTANT: THE FORMAT OF THE OUTPUT MUST BE AS LIST OF LISTS ONLY SIMILAR TO THE ONE ABOVE (NO LATEX, CODE, OR OTHER ENCODINGS).
+        
+2025-02-22 20:51:59,806 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: Based on the hierarchical whole-part relationships and interactions between the CubeSat components, here is the Design Structure Matrix (DSM) in the required format:
+
+**Components:** ['Structure', 'Power System', 'Communication System', 'Payload', 'Attitude Determination and Control System', 'On-Board Computer']
+
+**Final response:**
+```
+final response = [
+    [1, 1, 0, 1, 1, 1],  # Structure interacts with Power System, Payload, Attitude Determination and Control System, and On-Board Computer
+    [1, 1, 1, 1, 1, 1],  # Power System interacts with all other components
+    [0, 1, 1, 1, 1, 1],  # Communication System interacts with Power System, Payload, Attitude Determination and Control System, and On-Board Computer
+    [1, 1, 1, 1, 1, 1],  # Payload interacts with all other components
+    [1, 1, 1, 1, 1, 1],  # Attitude Determination and Control System interacts with all other components
+    [1, 1, 1, 1, 1, 1]   # On-Board Computer interacts with all other components
+]
+```
+2025-02-22 20:51:59,808 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Response: Based on the hierarchical whole-part relationships and interactions between the CubeSat components, here is the Design Structure Matrix (DSM) in the required format:
+
+**Components:** ['Structure', 'Power System', 'Communication System', 'Payload', 'Attitude Determination and Control System', 'On-Board Computer']
+
+**Final response:**
+```
+final response = [
+    [1, 1, 0, 1, 1, 1],  # Structure interacts with Power System, Payload, Attitude Determination and Control System, and On-Board Computer
+    [1, 1, 1, 1, 1, 1],  # Power System interacts with all other components
+    [0, 1, 1, 1, 1, 1],  # Communication System interacts with Power System, Payload, Attitude Determination and Control System, and On-Board Computer
+    [1, 1, 1, 1, 1, 1],  # Payload interacts with all other components
+    [1, 1, 1, 1, 1, 1],  # Attitude Determination and Control System interacts with all other components
+    [1, 1, 1, 1, 1, 1]   # On-Board Computer interacts with all other components
+]
+```
+2025-02-22 20:51:59,809 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Matrix: [[1, 1, 0, 1, 1, 1], [1, 1, 1, 1, 1, 1], [0, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1]]
+2025-02-22 20:51:59,810 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Final Matrix:
+[[1, 1, 0, 1, 1, 1], [1, 1, 1, 1, 1, 1], [0, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1]]
+2025-02-22 20:51:59,811 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-22 20:51:59,812 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Matrix from response.
+2025-02-22 20:51:59,813 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - At run 5/5
+2025-02-22 20:51:59,814 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Matrix: [[1, 1, 0, 1, 1, 1], [1, 1, 1, 1, 1, 1], [0, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1]]
+2025-02-22 20:51:59,815 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-22 20:52:09,826 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Duration of reference combination {}: 0:01:14.248228
+2025-02-22 20:52:09,827 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2025-02-22 20:52:09,828 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - 
+==================================================
+2025-02-22 20:52:09,829 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Average DSM Matrix for model: gpt-4o-2024-11-20
+2025-02-22 20:52:09,830 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - End of log reference type(s): ['baseline']
+2025-02-22 20:52:09,832 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Saving results to: ../output/experiment_llm_gpt-4o-2024-11-20_20250222-205055/llm_refs_baseline
+2025-02-22 20:52:09,836 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - 
+Average Matrix:
+                                           Structure  Power System  Communication System  Payload  Attitude Determination and Control System  On-Board Computer
+Structure                                          1             1                     1        1                                          1                  1
+Power System                                       1             1                     1        0                                          1                  1
+Communication System                               1             1                     1        1                                          1                  1
+Payload                                            1             0                     1        1                                          1                  1
+Attitude Determination and Control System          1             1                     1        1                                          1                  1
+On-Board Computer                                  1             1                     1        1                                          1                  1
+2025-02-22 20:52:09,837 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - 
+Components: ['Structure', 'Power System', 'Communication System', 'Payload', 'Attitude Determination and Control System', 'On-Board Computer']
+2025-02-22 20:52:09,838 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - ==================================================
+
+2025-02-22 20:52:09,840 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Saved CSV to: ../output/experiment_llm_gpt-4o-2024-11-20_20250222-205055/llm_refs_baseline/average_matrix_20250222-205055.csv
+2025-02-22 20:52:09,842 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Saved JSON to: ../output/experiment_llm_gpt-4o-2024-11-20_20250222-205055/llm_refs_baseline/detailed_results_20250222-205055.json
+2025-02-22 20:52:10,099 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Saved visualization to: ../output/experiment_llm_gpt-4o-2024-11-20_20250222-205055/llm_refs_baseline/average_matrix_20250222-205055.png
+2025-02-22 20:52:10,100 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Duration of experiment for gpt-4o-2024-11-20 in llm inference type: 0:01:15

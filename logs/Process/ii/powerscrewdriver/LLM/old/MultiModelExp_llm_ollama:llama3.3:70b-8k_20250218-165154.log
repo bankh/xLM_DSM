@@ -1,0 +1,1045 @@
+2025-02-18 16:51:54,524 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Run 1/5
+2025-02-18 16:51:54,559 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - DEBUG: Initializing LLMInference.
+2025-02-18 16:51:54,560 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Initialized LLM inference for system: power screwdriver
+2025-02-18 16:51:54,561 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Initialized DSM for system: power screwdriver
+2025-02-18 16:51:54,562 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Inference model: ollama:llama3.3:70b-8k
+2025-02-18 16:51:54,563 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Prompt (attempt 1/3): 
+            Please identify the major components of power screwdriver in the engineering based on proximity relationships.             
+            The number of components must not exceed 7 (can be equal) and must be a list of strings.             
+            Please do not identify similar components that will work together under subsystem level since our interest is to identify the major components that form the core architecture of the system.             
+            Here is an example of the components for made-up system:             
+            system_components = [ "component 1", "component 2", "component 3", "component 4", "component 5" ]             
+            IMPORTANT: THE FORMAT OF THE OUTPUT MUST BE AS A LIST OF STRINGS ONLY SIMILAR TO THE ONE ABOVE (NO LATEX, NO CODE, NO DESCRIPTION, OR OTHER ENCODINGS).              
+2025-02-18 16:52:29,722 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: system_components = [ "Motor", "Battery", "Gearbox", "Chuck", "Handle", "Switch", "Circuit" ]
+2025-02-18 16:52:29,723 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Matrix: ['Motor', 'Battery', 'Gearbox', 'Chuck', 'Handle', 'Switch', 'Circuit']
+2025-02-18 16:52:29,725 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Components: ['Motor', 'Battery', 'Gearbox', 'Chuck', 'Handle', 'Switch', 'Circuit']
+2025-02-18 16:52:30,830 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Valid
+2025-02-18 16:52:30,832 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Validation response: Valid
+2025-02-18 16:52:30,833 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Component list validated successfully on attempt 1
+2025-02-18 16:52:30,834 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Components: ['Motor', 'Battery', 'Gearbox', 'Chuck', 'Handle', 'Switch', 'Circuit']
+2025-02-18 16:52:30,835 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-18 16:52:30,836 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Motor -> Motor: 1
+2025-02-18 16:52:31,723 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:52:31,730 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Motor -> Battery
+2025-02-18 16:52:31,731 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:52:31,732 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Motor -> Battery: 1
+2025-02-18 16:52:32,623 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:52:32,624 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Motor -> Gearbox
+2025-02-18 16:52:32,625 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:52:32,626 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Motor -> Gearbox: 1
+2025-02-18 16:52:33,516 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:52:33,517 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Motor -> Chuck
+2025-02-18 16:52:33,518 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:52:33,519 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Motor -> Chuck: 1
+2025-02-18 16:52:34,404 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:52:34,405 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Motor -> Handle
+2025-02-18 16:52:34,406 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:52:34,407 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Motor -> Handle: 1
+2025-02-18 16:52:35,288 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:52:35,289 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Motor -> Switch
+2025-02-18 16:52:35,290 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:52:35,291 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Motor -> Switch: 1
+2025-02-18 16:52:36,193 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:52:36,194 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Motor -> Circuit
+2025-02-18 16:52:36,195 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:52:36,196 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Motor -> Circuit: 1
+2025-02-18 16:52:36,197 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Row 1 complete: [1, 1, 1, 1, 1, 1, 1]
+2025-02-18 16:52:36,199 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-18 16:52:37,088 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:52:37,089 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Battery -> Motor
+2025-02-18 16:52:37,108 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:52:37,109 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Battery -> Motor: 1
+2025-02-18 16:52:37,109 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Battery -> Battery: 1
+2025-02-18 16:52:37,995 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:52:37,996 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Battery -> Gearbox
+2025-02-18 16:52:37,997 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:52:37,998 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Battery -> Gearbox: 1
+2025-02-18 16:52:38,882 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:52:38,883 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Battery -> Chuck
+2025-02-18 16:52:38,884 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:52:38,885 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Battery -> Chuck: 1
+2025-02-18 16:52:39,778 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:52:39,779 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Battery -> Handle
+2025-02-18 16:52:39,780 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:52:39,781 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Battery -> Handle: 1
+2025-02-18 16:52:40,665 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:52:40,666 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Battery -> Switch
+2025-02-18 16:52:40,667 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:52:40,668 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Battery -> Switch: 1
+2025-02-18 16:52:41,549 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:52:41,550 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Battery -> Circuit
+2025-02-18 16:52:41,551 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:52:41,553 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Battery -> Circuit: 1
+2025-02-18 16:52:41,553 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Row 2 complete: [1, 1, 1, 1, 1, 1, 1]
+2025-02-18 16:52:41,555 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-18 16:52:42,435 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:52:42,437 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Gearbox -> Motor
+2025-02-18 16:52:42,456 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:52:42,457 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Gearbox -> Motor: 1
+2025-02-18 16:52:43,338 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:52:43,339 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Gearbox -> Battery
+2025-02-18 16:52:43,340 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:52:43,340 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Gearbox -> Battery: 1
+2025-02-18 16:52:43,341 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Gearbox -> Gearbox: 1
+2025-02-18 16:52:44,224 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:52:44,225 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Gearbox -> Chuck
+2025-02-18 16:52:44,227 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:52:44,228 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Gearbox -> Chuck: 1
+2025-02-18 16:52:45,110 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:52:45,111 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Gearbox -> Handle
+2025-02-18 16:52:45,112 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:52:45,113 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Gearbox -> Handle: 1
+2025-02-18 16:52:46,021 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:52:46,022 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Gearbox -> Switch
+2025-02-18 16:52:46,023 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:52:46,024 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Gearbox -> Switch: 1
+2025-02-18 16:52:46,917 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:52:46,918 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Gearbox -> Circuit
+2025-02-18 16:52:46,919 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:52:46,920 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Gearbox -> Circuit: 1
+2025-02-18 16:52:46,921 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Row 3 complete: [1, 1, 1, 1, 1, 1, 1]
+2025-02-18 16:52:46,923 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-18 16:52:47,814 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:52:47,815 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Chuck -> Motor
+2025-02-18 16:52:47,834 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:52:47,835 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Chuck -> Motor: 1
+2025-02-18 16:52:48,720 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:52:48,722 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Chuck -> Battery
+2025-02-18 16:52:48,723 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:52:48,724 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Chuck -> Battery: 1
+2025-02-18 16:52:49,623 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:52:49,624 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Chuck -> Gearbox
+2025-02-18 16:52:49,625 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:52:49,626 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Chuck -> Gearbox: 1
+2025-02-18 16:52:49,627 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Chuck -> Chuck: 1
+2025-02-18 16:52:50,520 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:52:50,521 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Chuck -> Handle
+2025-02-18 16:52:50,522 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:52:50,523 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Chuck -> Handle: 1
+2025-02-18 16:52:51,414 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:52:51,415 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Chuck -> Switch
+2025-02-18 16:52:51,416 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:52:51,417 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Chuck -> Switch: 1
+2025-02-18 16:52:52,306 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: No
+2025-02-18 16:52:52,308 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Chuck -> Circuit
+2025-02-18 16:52:52,308 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: No
+2025-02-18 16:52:52,309 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Chuck -> Circuit: 0
+2025-02-18 16:52:52,310 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Row 4 complete: [1, 1, 1, 1, 1, 1, 0]
+2025-02-18 16:52:52,311 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-18 16:52:53,205 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:52:53,206 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Handle -> Motor
+2025-02-18 16:52:53,207 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:52:53,225 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Handle -> Motor: 1
+2025-02-18 16:52:54,117 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:52:54,118 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Handle -> Battery
+2025-02-18 16:52:54,119 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:52:54,120 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Handle -> Battery: 1
+2025-02-18 16:52:55,015 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:52:55,016 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Handle -> Gearbox
+2025-02-18 16:52:55,017 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:52:55,017 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Handle -> Gearbox: 1
+2025-02-18 16:52:55,897 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:52:55,898 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Handle -> Chuck
+2025-02-18 16:52:55,899 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:52:55,900 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Handle -> Chuck: 1
+2025-02-18 16:52:55,902 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Handle -> Handle: 1
+2025-02-18 16:52:56,793 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:52:56,794 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Handle -> Switch
+2025-02-18 16:52:56,795 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:52:56,796 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Handle -> Switch: 1
+2025-02-18 16:52:57,689 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:52:57,690 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Handle -> Circuit
+2025-02-18 16:52:57,691 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:52:57,692 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Handle -> Circuit: 1
+2025-02-18 16:52:57,693 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Row 5 complete: [1, 1, 1, 1, 1, 1, 1]
+2025-02-18 16:52:57,694 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-18 16:52:58,582 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:52:58,584 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Switch -> Motor
+2025-02-18 16:52:58,603 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:52:58,604 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Switch -> Motor: 1
+2025-02-18 16:52:59,480 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:52:59,481 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Switch -> Battery
+2025-02-18 16:52:59,482 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:52:59,483 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Switch -> Battery: 1
+2025-02-18 16:53:00,368 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:53:00,369 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Switch -> Gearbox
+2025-02-18 16:53:00,370 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:53:00,371 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Switch -> Gearbox: 1
+2025-02-18 16:53:01,253 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:53:01,254 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Switch -> Chuck
+2025-02-18 16:53:01,255 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:53:01,256 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Switch -> Chuck: 1
+2025-02-18 16:53:02,142 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:53:02,143 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Switch -> Handle
+2025-02-18 16:53:02,143 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:53:02,144 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Switch -> Handle: 1
+2025-02-18 16:53:02,145 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Switch -> Switch: 1
+2025-02-18 16:53:03,027 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:53:03,028 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Switch -> Circuit
+2025-02-18 16:53:03,029 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:53:03,030 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Switch -> Circuit: 1
+2025-02-18 16:53:03,031 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Row 6 complete: [1, 1, 1, 1, 1, 1, 1]
+2025-02-18 16:53:03,032 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-18 16:53:03,900 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:53:03,901 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Circuit -> Motor
+2025-02-18 16:53:03,920 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:53:03,921 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Circuit -> Motor: 1
+2025-02-18 16:53:04,818 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:53:04,819 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Circuit -> Battery
+2025-02-18 16:53:04,820 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:53:04,821 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Circuit -> Battery: 1
+2025-02-18 16:53:05,704 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:53:05,705 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Circuit -> Gearbox
+2025-02-18 16:53:05,706 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:53:05,707 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Circuit -> Gearbox: 1
+2025-02-18 16:53:06,586 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:53:06,587 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Circuit -> Chuck
+2025-02-18 16:53:06,588 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:53:06,589 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Circuit -> Chuck: 1
+2025-02-18 16:53:07,469 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:53:07,470 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Circuit -> Handle
+2025-02-18 16:53:07,471 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:53:07,472 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Circuit -> Handle: 1
+2025-02-18 16:53:08,359 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:53:08,360 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Circuit -> Switch
+2025-02-18 16:53:08,361 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:53:08,362 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Circuit -> Switch: 1
+2025-02-18 16:53:08,363 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Circuit -> Circuit: 1
+2025-02-18 16:53:08,365 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Row 7 complete: [1, 1, 1, 1, 1, 1, 1]
+2025-02-18 16:53:08,365 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-18 16:53:08,366 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Final Matrix:
+[[1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 0], [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1]]
+2025-02-18 16:53:08,367 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-18 16:53:08,369 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Matrix from response.
+2025-02-18 16:53:08,370 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - At run 1/5
+2025-02-18 16:53:08,371 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Matrix: [[1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 0], [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1]]
+2025-02-18 16:53:08,372 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-18 16:53:18,383 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Run 2/5
+2025-02-18 16:53:18,418 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - DEBUG: Initializing LLMInference.
+2025-02-18 16:53:18,419 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Initialized LLM inference for system: power screwdriver
+2025-02-18 16:53:18,420 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Initialized DSM for system: power screwdriver
+2025-02-18 16:53:18,421 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Inference model: ollama:llama3.3:70b-8k
+2025-02-18 16:53:18,423 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Motor -> Motor: 1
+2025-02-18 16:53:19,331 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:53:19,332 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Motor -> Battery
+2025-02-18 16:53:19,333 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:53:19,334 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Motor -> Battery: 1
+2025-02-18 16:53:20,223 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:53:20,224 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Motor -> Gearbox
+2025-02-18 16:53:20,225 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:53:20,226 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Motor -> Gearbox: 1
+2025-02-18 16:53:21,107 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:53:21,108 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Motor -> Chuck
+2025-02-18 16:53:21,109 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:53:21,109 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Motor -> Chuck: 1
+2025-02-18 16:53:21,993 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:53:21,994 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Motor -> Handle
+2025-02-18 16:53:21,995 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:53:21,995 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Motor -> Handle: 1
+2025-02-18 16:53:22,868 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:53:22,869 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Motor -> Switch
+2025-02-18 16:53:22,870 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:53:22,872 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Motor -> Switch: 1
+2025-02-18 16:53:23,751 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:53:23,751 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Motor -> Circuit
+2025-02-18 16:53:23,771 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:53:23,772 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Motor -> Circuit: 1
+2025-02-18 16:53:23,772 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Row 1 complete: [1, 1, 1, 1, 1, 1, 1]
+2025-02-18 16:53:23,773 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-18 16:53:24,659 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:53:24,660 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Battery -> Motor
+2025-02-18 16:53:24,661 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:53:24,661 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Battery -> Motor: 1
+2025-02-18 16:53:24,662 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Battery -> Battery: 1
+2025-02-18 16:53:25,549 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:53:25,550 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Battery -> Gearbox
+2025-02-18 16:53:25,552 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:53:25,553 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Battery -> Gearbox: 1
+2025-02-18 16:53:26,436 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:53:26,437 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Battery -> Chuck
+2025-02-18 16:53:26,438 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:53:26,439 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Battery -> Chuck: 1
+2025-02-18 16:53:27,324 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:53:27,325 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Battery -> Handle
+2025-02-18 16:53:27,326 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:53:27,326 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Battery -> Handle: 1
+2025-02-18 16:53:28,205 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:53:28,206 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Battery -> Switch
+2025-02-18 16:53:28,207 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:53:28,208 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Battery -> Switch: 1
+2025-02-18 16:53:29,098 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:53:29,099 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Battery -> Circuit
+2025-02-18 16:53:29,118 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:53:29,119 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Battery -> Circuit: 1
+2025-02-18 16:53:29,120 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Row 2 complete: [1, 1, 1, 1, 1, 1, 1]
+2025-02-18 16:53:29,121 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-18 16:53:30,009 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:53:30,010 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Gearbox -> Motor
+2025-02-18 16:53:30,011 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:53:30,012 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Gearbox -> Motor: 1
+2025-02-18 16:53:30,897 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:53:30,898 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Gearbox -> Battery
+2025-02-18 16:53:30,899 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:53:30,899 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Gearbox -> Battery: 1
+2025-02-18 16:53:30,901 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Gearbox -> Gearbox: 1
+2025-02-18 16:53:31,785 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:53:31,786 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Gearbox -> Chuck
+2025-02-18 16:53:31,787 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:53:31,788 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Gearbox -> Chuck: 1
+2025-02-18 16:53:32,675 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:53:32,676 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Gearbox -> Handle
+2025-02-18 16:53:32,677 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:53:32,678 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Gearbox -> Handle: 1
+2025-02-18 16:53:33,570 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:53:33,571 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Gearbox -> Switch
+2025-02-18 16:53:33,572 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:53:33,573 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Gearbox -> Switch: 1
+2025-02-18 16:53:34,456 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:53:34,457 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Gearbox -> Circuit
+2025-02-18 16:53:34,476 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:53:34,478 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Gearbox -> Circuit: 1
+2025-02-18 16:53:34,478 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Row 3 complete: [1, 1, 1, 1, 1, 1, 1]
+2025-02-18 16:53:34,480 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-18 16:53:35,366 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:53:35,367 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Chuck -> Motor
+2025-02-18 16:53:35,368 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:53:35,369 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Chuck -> Motor: 1
+2025-02-18 16:53:36,254 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:53:36,255 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Chuck -> Battery
+2025-02-18 16:53:36,256 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:53:36,257 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Chuck -> Battery: 1
+2025-02-18 16:53:37,145 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:53:37,146 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Chuck -> Gearbox
+2025-02-18 16:53:37,147 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:53:37,148 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Chuck -> Gearbox: 1
+2025-02-18 16:53:37,148 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Chuck -> Chuck: 1
+2025-02-18 16:53:38,034 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:53:38,035 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Chuck -> Handle
+2025-02-18 16:53:38,036 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:53:38,037 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Chuck -> Handle: 1
+2025-02-18 16:53:38,929 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:53:38,931 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Chuck -> Switch
+2025-02-18 16:53:38,931 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:53:38,932 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Chuck -> Switch: 1
+2025-02-18 16:53:39,818 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: No
+2025-02-18 16:53:39,819 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Chuck -> Circuit
+2025-02-18 16:53:39,838 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: No
+2025-02-18 16:53:39,839 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Chuck -> Circuit: 0
+2025-02-18 16:53:39,840 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Row 4 complete: [1, 1, 1, 1, 1, 1, 0]
+2025-02-18 16:53:39,841 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-18 16:53:40,731 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:53:40,732 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Handle -> Motor
+2025-02-18 16:53:40,733 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:53:40,734 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Handle -> Motor: 1
+2025-02-18 16:53:41,622 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:53:41,623 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Handle -> Battery
+2025-02-18 16:53:41,624 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:53:41,625 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Handle -> Battery: 1
+2025-02-18 16:53:42,509 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:53:42,510 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Handle -> Gearbox
+2025-02-18 16:53:42,511 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:53:42,512 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Handle -> Gearbox: 1
+2025-02-18 16:53:43,395 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:53:43,396 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Handle -> Chuck
+2025-02-18 16:53:43,397 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:53:43,398 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Handle -> Chuck: 1
+2025-02-18 16:53:43,399 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Handle -> Handle: 1
+2025-02-18 16:53:44,285 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:53:44,286 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Handle -> Switch
+2025-02-18 16:53:44,286 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:53:44,287 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Handle -> Switch: 1
+2025-02-18 16:53:45,171 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:53:45,172 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Handle -> Circuit
+2025-02-18 16:53:45,191 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:53:45,192 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Handle -> Circuit: 1
+2025-02-18 16:53:45,193 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Row 5 complete: [1, 1, 1, 1, 1, 1, 1]
+2025-02-18 16:53:45,194 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-18 16:53:46,083 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:53:46,083 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Switch -> Motor
+2025-02-18 16:53:46,084 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:53:46,085 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Switch -> Motor: 1
+2025-02-18 16:53:46,964 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:53:46,965 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Switch -> Battery
+2025-02-18 16:53:46,966 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:53:46,967 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Switch -> Battery: 1
+2025-02-18 16:53:47,847 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:53:47,848 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Switch -> Gearbox
+2025-02-18 16:53:47,849 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:53:47,849 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Switch -> Gearbox: 1
+2025-02-18 16:53:48,727 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:53:48,728 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Switch -> Chuck
+2025-02-18 16:53:48,729 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:53:48,730 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Switch -> Chuck: 1
+2025-02-18 16:53:49,610 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:53:49,611 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Switch -> Handle
+2025-02-18 16:53:49,612 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:53:49,613 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Switch -> Handle: 1
+2025-02-18 16:53:49,613 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Switch -> Switch: 1
+2025-02-18 16:53:50,500 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:53:50,501 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Switch -> Circuit
+2025-02-18 16:53:50,501 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:53:50,520 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Switch -> Circuit: 1
+2025-02-18 16:53:50,521 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Row 6 complete: [1, 1, 1, 1, 1, 1, 1]
+2025-02-18 16:53:50,521 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-18 16:53:51,401 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:53:51,402 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Circuit -> Motor
+2025-02-18 16:53:51,403 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:53:51,404 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Circuit -> Motor: 1
+2025-02-18 16:53:52,291 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:53:52,291 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Circuit -> Battery
+2025-02-18 16:53:52,292 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:53:52,293 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Circuit -> Battery: 1
+2025-02-18 16:53:53,178 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:53:53,180 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Circuit -> Gearbox
+2025-02-18 16:53:53,181 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:53:53,181 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Circuit -> Gearbox: 1
+2025-02-18 16:53:54,069 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:53:54,070 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Circuit -> Chuck
+2025-02-18 16:53:54,071 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:53:54,072 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Circuit -> Chuck: 1
+2025-02-18 16:53:54,952 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:53:54,953 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Circuit -> Handle
+2025-02-18 16:53:54,954 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:53:54,955 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Circuit -> Handle: 1
+2025-02-18 16:53:55,839 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:53:55,839 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Circuit -> Switch
+2025-02-18 16:53:55,859 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:53:55,860 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Circuit -> Switch: 1
+2025-02-18 16:53:55,860 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Circuit -> Circuit: 1
+2025-02-18 16:53:55,862 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Row 7 complete: [1, 1, 1, 1, 1, 1, 1]
+2025-02-18 16:53:55,863 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-18 16:53:55,863 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Final Matrix:
+[[1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 0], [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1]]
+2025-02-18 16:53:55,865 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-18 16:53:55,865 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Matrix from response.
+2025-02-18 16:53:55,866 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - At run 2/5
+2025-02-18 16:53:55,867 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Matrix: [[1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 0], [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1]]
+2025-02-18 16:53:55,867 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-18 16:54:05,879 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Run 3/5
+2025-02-18 16:54:05,915 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - DEBUG: Initializing LLMInference.
+2025-02-18 16:54:05,916 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Initialized LLM inference for system: power screwdriver
+2025-02-18 16:54:05,917 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Initialized DSM for system: power screwdriver
+2025-02-18 16:54:05,918 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Inference model: ollama:llama3.3:70b-8k
+2025-02-18 16:54:05,919 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Motor -> Motor: 1
+2025-02-18 16:54:06,800 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:54:06,801 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Motor -> Battery
+2025-02-18 16:54:06,802 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:54:06,803 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Motor -> Battery: 1
+2025-02-18 16:54:07,683 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:54:07,684 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Motor -> Gearbox
+2025-02-18 16:54:07,685 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:54:07,685 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Motor -> Gearbox: 1
+2025-02-18 16:54:08,565 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:54:08,566 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Motor -> Chuck
+2025-02-18 16:54:08,567 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:54:08,568 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Motor -> Chuck: 1
+2025-02-18 16:54:09,453 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:54:09,454 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Motor -> Handle
+2025-02-18 16:54:09,455 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:54:09,457 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Motor -> Handle: 1
+2025-02-18 16:54:10,340 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:54:10,341 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Motor -> Switch
+2025-02-18 16:54:10,342 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:54:10,343 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Motor -> Switch: 1
+2025-02-18 16:54:11,228 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:54:11,229 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Motor -> Circuit
+2025-02-18 16:54:11,249 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:54:11,249 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Motor -> Circuit: 1
+2025-02-18 16:54:11,250 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Row 1 complete: [1, 1, 1, 1, 1, 1, 1]
+2025-02-18 16:54:11,252 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-18 16:54:12,137 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:54:12,139 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Battery -> Motor
+2025-02-18 16:54:12,139 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:54:12,140 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Battery -> Motor: 1
+2025-02-18 16:54:12,141 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Battery -> Battery: 1
+2025-02-18 16:54:13,032 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:54:13,033 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Battery -> Gearbox
+2025-02-18 16:54:13,034 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:54:13,035 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Battery -> Gearbox: 1
+2025-02-18 16:54:13,913 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:54:13,914 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Battery -> Chuck
+2025-02-18 16:54:13,915 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:54:13,916 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Battery -> Chuck: 1
+2025-02-18 16:54:14,801 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:54:14,802 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Battery -> Handle
+2025-02-18 16:54:14,803 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:54:14,804 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Battery -> Handle: 1
+2025-02-18 16:54:15,685 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:54:15,686 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Battery -> Switch
+2025-02-18 16:54:15,687 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:54:15,688 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Battery -> Switch: 1
+2025-02-18 16:54:16,576 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:54:16,577 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Battery -> Circuit
+2025-02-18 16:54:16,596 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:54:16,597 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Battery -> Circuit: 1
+2025-02-18 16:54:16,598 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Row 2 complete: [1, 1, 1, 1, 1, 1, 1]
+2025-02-18 16:54:16,599 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-18 16:54:17,478 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:54:17,479 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Gearbox -> Motor
+2025-02-18 16:54:17,480 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:54:17,481 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Gearbox -> Motor: 1
+2025-02-18 16:54:18,365 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:54:18,366 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Gearbox -> Battery
+2025-02-18 16:54:18,367 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:54:18,368 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Gearbox -> Battery: 1
+2025-02-18 16:54:18,368 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Gearbox -> Gearbox: 1
+2025-02-18 16:54:19,252 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:54:19,253 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Gearbox -> Chuck
+2025-02-18 16:54:19,254 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:54:19,255 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Gearbox -> Chuck: 1
+2025-02-18 16:54:20,138 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:54:20,139 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Gearbox -> Handle
+2025-02-18 16:54:20,140 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:54:20,141 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Gearbox -> Handle: 1
+2025-02-18 16:54:21,025 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:54:21,026 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Gearbox -> Switch
+2025-02-18 16:54:21,027 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:54:21,028 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Gearbox -> Switch: 1
+2025-02-18 16:54:21,909 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:54:21,910 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Gearbox -> Circuit
+2025-02-18 16:54:21,928 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:54:21,929 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Gearbox -> Circuit: 1
+2025-02-18 16:54:21,931 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Row 3 complete: [1, 1, 1, 1, 1, 1, 1]
+2025-02-18 16:54:21,931 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-18 16:54:22,813 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:54:22,814 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Chuck -> Motor
+2025-02-18 16:54:22,815 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:54:22,816 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Chuck -> Motor: 1
+2025-02-18 16:54:23,669 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:54:23,670 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Chuck -> Battery
+2025-02-18 16:54:23,671 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:54:23,672 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Chuck -> Battery: 1
+2025-02-18 16:54:24,559 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:54:24,560 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Chuck -> Gearbox
+2025-02-18 16:54:24,561 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:54:24,562 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Chuck -> Gearbox: 1
+2025-02-18 16:54:24,563 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Chuck -> Chuck: 1
+2025-02-18 16:54:25,444 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:54:25,446 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Chuck -> Handle
+2025-02-18 16:54:25,446 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:54:25,447 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Chuck -> Handle: 1
+2025-02-18 16:54:26,336 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:54:26,337 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Chuck -> Switch
+2025-02-18 16:54:26,338 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:54:26,339 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Chuck -> Switch: 1
+2025-02-18 16:54:27,216 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: No
+2025-02-18 16:54:27,217 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Chuck -> Circuit
+2025-02-18 16:54:27,236 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: No
+2025-02-18 16:54:27,237 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Chuck -> Circuit: 0
+2025-02-18 16:54:27,238 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Row 4 complete: [1, 1, 1, 1, 1, 1, 0]
+2025-02-18 16:54:27,239 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-18 16:54:28,126 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:54:28,127 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Handle -> Motor
+2025-02-18 16:54:28,127 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:54:28,128 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Handle -> Motor: 1
+2025-02-18 16:54:29,015 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:54:29,016 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Handle -> Battery
+2025-02-18 16:54:29,016 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:54:29,018 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Handle -> Battery: 1
+2025-02-18 16:54:29,902 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:54:29,903 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Handle -> Gearbox
+2025-02-18 16:54:29,904 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:54:29,905 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Handle -> Gearbox: 1
+2025-02-18 16:54:30,787 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:54:30,788 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Handle -> Chuck
+2025-02-18 16:54:30,789 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:54:30,790 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Handle -> Chuck: 1
+2025-02-18 16:54:30,791 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Handle -> Handle: 1
+2025-02-18 16:54:31,677 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:54:31,678 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Handle -> Switch
+2025-02-18 16:54:31,680 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:54:31,681 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Handle -> Switch: 1
+2025-02-18 16:54:32,565 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:54:32,566 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Handle -> Circuit
+2025-02-18 16:54:32,567 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:54:32,568 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Handle -> Circuit: 1
+2025-02-18 16:54:32,568 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Row 5 complete: [1, 1, 1, 1, 1, 1, 1]
+2025-02-18 16:54:32,569 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-18 16:54:33,451 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:54:33,452 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Switch -> Motor
+2025-02-18 16:54:33,453 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:54:33,454 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Switch -> Motor: 1
+2025-02-18 16:54:34,326 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:54:34,327 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Switch -> Battery
+2025-02-18 16:54:34,328 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:54:34,328 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Switch -> Battery: 1
+2025-02-18 16:54:35,214 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:54:35,215 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Switch -> Gearbox
+2025-02-18 16:54:35,216 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:54:35,217 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Switch -> Gearbox: 1
+2025-02-18 16:54:36,101 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:54:36,102 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Switch -> Chuck
+2025-02-18 16:54:36,103 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:54:36,104 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Switch -> Chuck: 1
+2025-02-18 16:54:36,987 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:54:36,988 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Switch -> Handle
+2025-02-18 16:54:36,989 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:54:36,990 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Switch -> Handle: 1
+2025-02-18 16:54:36,991 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Switch -> Switch: 1
+2025-02-18 16:54:37,868 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:54:37,869 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Switch -> Circuit
+2025-02-18 16:54:37,889 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:54:37,889 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Switch -> Circuit: 1
+2025-02-18 16:54:37,890 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Row 6 complete: [1, 1, 1, 1, 1, 1, 1]
+2025-02-18 16:54:37,892 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-18 16:54:38,773 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:54:38,774 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Circuit -> Motor
+2025-02-18 16:54:38,775 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:54:38,776 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Circuit -> Motor: 1
+2025-02-18 16:54:39,658 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:54:39,659 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Circuit -> Battery
+2025-02-18 16:54:39,660 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:54:39,660 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Circuit -> Battery: 1
+2025-02-18 16:54:40,555 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:54:40,556 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Circuit -> Gearbox
+2025-02-18 16:54:40,557 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:54:40,558 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Circuit -> Gearbox: 1
+2025-02-18 16:54:41,438 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:54:41,439 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Circuit -> Chuck
+2025-02-18 16:54:41,440 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:54:41,441 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Circuit -> Chuck: 1
+2025-02-18 16:54:42,325 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:54:42,326 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Circuit -> Handle
+2025-02-18 16:54:42,328 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:54:42,329 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Circuit -> Handle: 1
+2025-02-18 16:54:43,209 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:54:43,210 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Circuit -> Switch
+2025-02-18 16:54:43,230 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:54:43,230 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Circuit -> Switch: 1
+2025-02-18 16:54:43,231 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Circuit -> Circuit: 1
+2025-02-18 16:54:43,232 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Row 7 complete: [1, 1, 1, 1, 1, 1, 1]
+2025-02-18 16:54:43,233 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-18 16:54:43,234 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Final Matrix:
+[[1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 0], [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1]]
+2025-02-18 16:54:43,234 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-18 16:54:43,235 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Matrix from response.
+2025-02-18 16:54:43,236 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - At run 3/5
+2025-02-18 16:54:43,237 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Matrix: [[1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 0], [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1]]
+2025-02-18 16:54:43,237 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-18 16:54:53,248 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Run 4/5
+2025-02-18 16:54:53,284 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - DEBUG: Initializing LLMInference.
+2025-02-18 16:54:53,285 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Initialized LLM inference for system: power screwdriver
+2025-02-18 16:54:53,286 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Initialized DSM for system: power screwdriver
+2025-02-18 16:54:53,287 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Inference model: ollama:llama3.3:70b-8k
+2025-02-18 16:54:53,287 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Motor -> Motor: 1
+2025-02-18 16:54:54,174 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:54:54,175 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Motor -> Battery
+2025-02-18 16:54:54,176 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:54:54,177 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Motor -> Battery: 1
+2025-02-18 16:54:55,061 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:54:55,062 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Motor -> Gearbox
+2025-02-18 16:54:55,062 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:54:55,063 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Motor -> Gearbox: 1
+2025-02-18 16:54:55,948 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:54:55,949 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Motor -> Chuck
+2025-02-18 16:54:55,949 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:54:55,950 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Motor -> Chuck: 1
+2025-02-18 16:54:56,827 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:54:56,828 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Motor -> Handle
+2025-02-18 16:54:56,829 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:54:56,830 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Motor -> Handle: 1
+2025-02-18 16:54:57,717 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:54:57,718 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Motor -> Switch
+2025-02-18 16:54:57,719 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:54:57,719 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Motor -> Switch: 1
+2025-02-18 16:54:58,604 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:54:58,605 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Motor -> Circuit
+2025-02-18 16:54:58,624 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:54:58,625 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Motor -> Circuit: 1
+2025-02-18 16:54:58,626 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Row 1 complete: [1, 1, 1, 1, 1, 1, 1]
+2025-02-18 16:54:58,626 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-18 16:54:59,507 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:54:59,508 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Battery -> Motor
+2025-02-18 16:54:59,509 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:54:59,510 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Battery -> Motor: 1
+2025-02-18 16:54:59,511 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Battery -> Battery: 1
+2025-02-18 16:55:00,394 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:55:00,395 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Battery -> Gearbox
+2025-02-18 16:55:00,396 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:55:00,398 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Battery -> Gearbox: 1
+2025-02-18 16:55:01,282 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:55:01,283 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Battery -> Chuck
+2025-02-18 16:55:01,284 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:55:01,284 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Battery -> Chuck: 1
+2025-02-18 16:55:02,168 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:55:02,169 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Battery -> Handle
+2025-02-18 16:55:02,170 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:55:02,171 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Battery -> Handle: 1
+2025-02-18 16:55:03,055 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:55:03,056 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Battery -> Switch
+2025-02-18 16:55:03,057 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:55:03,058 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Battery -> Switch: 1
+2025-02-18 16:55:03,942 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:55:03,943 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Battery -> Circuit
+2025-02-18 16:55:03,963 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:55:03,963 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Battery -> Circuit: 1
+2025-02-18 16:55:03,964 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Row 2 complete: [1, 1, 1, 1, 1, 1, 1]
+2025-02-18 16:55:03,965 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-18 16:55:04,850 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:55:04,851 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Gearbox -> Motor
+2025-02-18 16:55:04,852 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:55:04,852 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Gearbox -> Motor: 1
+2025-02-18 16:55:05,736 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:55:05,737 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Gearbox -> Battery
+2025-02-18 16:55:05,738 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:55:05,739 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Gearbox -> Battery: 1
+2025-02-18 16:55:05,739 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Gearbox -> Gearbox: 1
+2025-02-18 16:55:06,615 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:55:06,616 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Gearbox -> Chuck
+2025-02-18 16:55:06,616 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:55:06,617 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Gearbox -> Chuck: 1
+2025-02-18 16:55:07,507 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:55:07,508 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Gearbox -> Handle
+2025-02-18 16:55:07,509 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:55:07,511 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Gearbox -> Handle: 1
+2025-02-18 16:55:08,394 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:55:08,396 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Gearbox -> Switch
+2025-02-18 16:55:08,397 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:55:08,397 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Gearbox -> Switch: 1
+2025-02-18 16:55:09,283 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:55:09,284 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Gearbox -> Circuit
+2025-02-18 16:55:09,303 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:55:09,303 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Gearbox -> Circuit: 1
+2025-02-18 16:55:09,304 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Row 3 complete: [1, 1, 1, 1, 1, 1, 1]
+2025-02-18 16:55:09,305 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-18 16:55:10,185 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:55:10,186 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Chuck -> Motor
+2025-02-18 16:55:10,187 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:55:10,188 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Chuck -> Motor: 1
+2025-02-18 16:55:11,073 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:55:11,074 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Chuck -> Battery
+2025-02-18 16:55:11,075 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:55:11,076 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Chuck -> Battery: 1
+2025-02-18 16:55:11,958 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:55:11,959 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Chuck -> Gearbox
+2025-02-18 16:55:11,960 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:55:11,961 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Chuck -> Gearbox: 1
+2025-02-18 16:55:11,962 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Chuck -> Chuck: 1
+2025-02-18 16:55:12,849 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:55:12,850 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Chuck -> Handle
+2025-02-18 16:55:12,851 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:55:12,852 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Chuck -> Handle: 1
+2025-02-18 16:55:13,735 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:55:13,735 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Chuck -> Switch
+2025-02-18 16:55:13,736 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:55:13,737 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Chuck -> Switch: 1
+2025-02-18 16:55:14,615 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: No
+2025-02-18 16:55:14,616 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Chuck -> Circuit
+2025-02-18 16:55:14,617 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: No
+2025-02-18 16:55:14,618 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Chuck -> Circuit: 0
+2025-02-18 16:55:14,619 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Row 4 complete: [1, 1, 1, 1, 1, 1, 0]
+2025-02-18 16:55:14,620 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-18 16:55:15,507 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:55:15,508 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Handle -> Motor
+2025-02-18 16:55:15,509 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:55:15,510 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Handle -> Motor: 1
+2025-02-18 16:55:16,395 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:55:16,396 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Handle -> Battery
+2025-02-18 16:55:16,397 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:55:16,398 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Handle -> Battery: 1
+2025-02-18 16:55:17,280 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:55:17,281 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Handle -> Gearbox
+2025-02-18 16:55:17,282 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:55:17,283 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Handle -> Gearbox: 1
+2025-02-18 16:55:18,167 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:55:18,168 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Handle -> Chuck
+2025-02-18 16:55:18,168 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:55:18,169 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Handle -> Chuck: 1
+2025-02-18 16:55:18,170 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Handle -> Handle: 1
+2025-02-18 16:55:19,057 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:55:19,058 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Handle -> Switch
+2025-02-18 16:55:19,059 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:55:19,060 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Handle -> Switch: 1
+2025-02-18 16:55:19,941 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:55:19,942 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Handle -> Circuit
+2025-02-18 16:55:19,961 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:55:19,962 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Handle -> Circuit: 1
+2025-02-18 16:55:19,963 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Row 5 complete: [1, 1, 1, 1, 1, 1, 1]
+2025-02-18 16:55:19,964 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-18 16:55:20,839 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:55:20,840 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Switch -> Motor
+2025-02-18 16:55:20,841 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:55:20,842 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Switch -> Motor: 1
+2025-02-18 16:55:21,727 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:55:21,728 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Switch -> Battery
+2025-02-18 16:55:21,729 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:55:21,730 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Switch -> Battery: 1
+2025-02-18 16:55:22,613 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:55:22,614 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Switch -> Gearbox
+2025-02-18 16:55:22,615 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:55:22,616 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Switch -> Gearbox: 1
+2025-02-18 16:55:23,501 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:55:23,502 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Switch -> Chuck
+2025-02-18 16:55:23,503 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:55:23,504 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Switch -> Chuck: 1
+2025-02-18 16:55:24,390 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:55:24,391 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Switch -> Handle
+2025-02-18 16:55:24,392 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:55:24,392 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Switch -> Handle: 1
+2025-02-18 16:55:24,393 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Switch -> Switch: 1
+2025-02-18 16:55:25,268 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:55:25,269 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Switch -> Circuit
+2025-02-18 16:55:25,288 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:55:25,289 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Switch -> Circuit: 1
+2025-02-18 16:55:25,290 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Row 6 complete: [1, 1, 1, 1, 1, 1, 1]
+2025-02-18 16:55:25,290 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-18 16:55:26,177 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:55:26,178 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Circuit -> Motor
+2025-02-18 16:55:26,179 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:55:26,180 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Circuit -> Motor: 1
+2025-02-18 16:55:27,065 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:55:27,066 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Circuit -> Battery
+2025-02-18 16:55:27,067 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:55:27,068 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Circuit -> Battery: 1
+2025-02-18 16:55:27,954 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:55:27,955 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Circuit -> Gearbox
+2025-02-18 16:55:27,956 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:55:27,956 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Circuit -> Gearbox: 1
+2025-02-18 16:55:28,840 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:55:28,841 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Circuit -> Chuck
+2025-02-18 16:55:28,842 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:55:28,843 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Circuit -> Chuck: 1
+2025-02-18 16:55:29,726 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:55:29,727 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Circuit -> Handle
+2025-02-18 16:55:29,728 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:55:29,729 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Circuit -> Handle: 1
+2025-02-18 16:55:30,613 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:55:30,614 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Circuit -> Switch
+2025-02-18 16:55:30,634 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:55:30,635 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Circuit -> Switch: 1
+2025-02-18 16:55:30,635 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Circuit -> Circuit: 1
+2025-02-18 16:55:30,637 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Row 7 complete: [1, 1, 1, 1, 1, 1, 1]
+2025-02-18 16:55:30,638 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-18 16:55:30,639 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Final Matrix:
+[[1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 0], [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1]]
+2025-02-18 16:55:30,639 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-18 16:55:30,641 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Matrix from response.
+2025-02-18 16:55:30,641 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - At run 4/5
+2025-02-18 16:55:30,642 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Matrix: [[1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 0], [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1]]
+2025-02-18 16:55:30,643 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-18 16:55:40,654 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Run 5/5
+2025-02-18 16:55:40,690 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - DEBUG: Initializing LLMInference.
+2025-02-18 16:55:40,691 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Initialized LLM inference for system: power screwdriver
+2025-02-18 16:55:40,692 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Initialized DSM for system: power screwdriver
+2025-02-18 16:55:40,692 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Inference model: ollama:llama3.3:70b-8k
+2025-02-18 16:55:40,694 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Motor -> Motor: 1
+2025-02-18 16:55:41,580 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:55:41,581 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Motor -> Battery
+2025-02-18 16:55:41,582 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:55:41,583 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Motor -> Battery: 1
+2025-02-18 16:55:42,463 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:55:42,465 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Motor -> Gearbox
+2025-02-18 16:55:42,465 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:55:42,466 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Motor -> Gearbox: 1
+2025-02-18 16:55:43,348 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:55:43,349 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Motor -> Chuck
+2025-02-18 16:55:43,350 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:55:43,351 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Motor -> Chuck: 1
+2025-02-18 16:55:44,232 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:55:44,233 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Motor -> Handle
+2025-02-18 16:55:44,234 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:55:44,235 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Motor -> Handle: 1
+2025-02-18 16:55:45,118 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:55:45,119 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Motor -> Switch
+2025-02-18 16:55:45,120 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:55:45,121 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Motor -> Switch: 1
+2025-02-18 16:55:45,999 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:55:46,000 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Motor -> Circuit
+2025-02-18 16:55:46,019 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:55:46,020 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Motor -> Circuit: 1
+2025-02-18 16:55:46,021 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Row 1 complete: [1, 1, 1, 1, 1, 1, 1]
+2025-02-18 16:55:46,023 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-18 16:55:46,908 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:55:46,909 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Battery -> Motor
+2025-02-18 16:55:46,910 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:55:46,911 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Battery -> Motor: 1
+2025-02-18 16:55:46,912 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Battery -> Battery: 1
+2025-02-18 16:55:47,796 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:55:47,797 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Battery -> Gearbox
+2025-02-18 16:55:47,798 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:55:47,799 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Battery -> Gearbox: 1
+2025-02-18 16:55:48,685 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:55:48,686 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Battery -> Chuck
+2025-02-18 16:55:48,687 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:55:48,687 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Battery -> Chuck: 1
+2025-02-18 16:55:49,573 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:55:49,574 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Battery -> Handle
+2025-02-18 16:55:49,575 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:55:49,576 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Battery -> Handle: 1
+2025-02-18 16:55:50,457 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:55:50,458 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Battery -> Switch
+2025-02-18 16:55:50,459 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:55:50,459 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Battery -> Switch: 1
+2025-02-18 16:55:51,345 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:55:51,346 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Battery -> Circuit
+2025-02-18 16:55:51,365 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:55:51,366 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Battery -> Circuit: 1
+2025-02-18 16:55:51,368 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Row 2 complete: [1, 1, 1, 1, 1, 1, 1]
+2025-02-18 16:55:51,368 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-18 16:55:52,253 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:55:52,254 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Gearbox -> Motor
+2025-02-18 16:55:52,255 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:55:52,256 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Gearbox -> Motor: 1
+2025-02-18 16:55:53,135 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:55:53,136 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Gearbox -> Battery
+2025-02-18 16:55:53,137 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:55:53,138 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Gearbox -> Battery: 1
+2025-02-18 16:55:53,139 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Gearbox -> Gearbox: 1
+2025-02-18 16:55:54,023 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:55:54,024 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Gearbox -> Chuck
+2025-02-18 16:55:54,025 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:55:54,026 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Gearbox -> Chuck: 1
+2025-02-18 16:55:54,909 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:55:54,910 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Gearbox -> Handle
+2025-02-18 16:55:54,911 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:55:54,912 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Gearbox -> Handle: 1
+2025-02-18 16:55:55,797 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:55:55,798 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Gearbox -> Switch
+2025-02-18 16:55:55,799 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:55:55,800 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Gearbox -> Switch: 1
+2025-02-18 16:55:56,676 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:55:56,677 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Gearbox -> Circuit
+2025-02-18 16:55:56,696 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:55:56,697 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Gearbox -> Circuit: 1
+2025-02-18 16:55:56,698 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Row 3 complete: [1, 1, 1, 1, 1, 1, 1]
+2025-02-18 16:55:56,698 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-18 16:55:57,583 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:55:57,584 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Chuck -> Motor
+2025-02-18 16:55:57,585 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:55:57,586 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Chuck -> Motor: 1
+2025-02-18 16:55:58,467 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:55:58,468 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Chuck -> Battery
+2025-02-18 16:55:58,469 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:55:58,470 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Chuck -> Battery: 1
+2025-02-18 16:55:59,355 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:55:59,356 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Chuck -> Gearbox
+2025-02-18 16:55:59,357 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:55:59,359 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Chuck -> Gearbox: 1
+2025-02-18 16:55:59,359 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Chuck -> Chuck: 1
+2025-02-18 16:56:00,232 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:56:00,233 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Chuck -> Handle
+2025-02-18 16:56:00,235 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:56:00,235 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Chuck -> Handle: 1
+2025-02-18 16:56:01,123 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:56:01,124 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Chuck -> Switch
+2025-02-18 16:56:01,125 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:56:01,126 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Chuck -> Switch: 1
+2025-02-18 16:56:02,007 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: No
+2025-02-18 16:56:02,008 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Chuck -> Circuit
+2025-02-18 16:56:02,027 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: No
+2025-02-18 16:56:02,028 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Chuck -> Circuit: 0
+2025-02-18 16:56:02,029 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Row 4 complete: [1, 1, 1, 1, 1, 1, 0]
+2025-02-18 16:56:02,030 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-18 16:56:02,920 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:56:02,921 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Handle -> Motor
+2025-02-18 16:56:02,922 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:56:02,923 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Handle -> Motor: 1
+2025-02-18 16:56:03,804 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:56:03,805 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Handle -> Battery
+2025-02-18 16:56:03,806 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:56:03,807 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Handle -> Battery: 1
+2025-02-18 16:56:04,695 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:56:04,696 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Handle -> Gearbox
+2025-02-18 16:56:04,697 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:56:04,698 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Handle -> Gearbox: 1
+2025-02-18 16:56:05,580 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:56:05,582 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Handle -> Chuck
+2025-02-18 16:56:05,582 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:56:05,583 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Handle -> Chuck: 1
+2025-02-18 16:56:05,584 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Handle -> Handle: 1
+2025-02-18 16:56:06,466 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:56:06,467 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Handle -> Switch
+2025-02-18 16:56:06,468 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:56:06,469 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Handle -> Switch: 1
+2025-02-18 16:56:07,349 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:56:07,350 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Handle -> Circuit
+2025-02-18 16:56:07,369 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:56:07,370 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Handle -> Circuit: 1
+2025-02-18 16:56:07,371 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Row 5 complete: [1, 1, 1, 1, 1, 1, 1]
+2025-02-18 16:56:07,372 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-18 16:56:08,255 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:56:08,256 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Switch -> Motor
+2025-02-18 16:56:08,257 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:56:08,258 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Switch -> Motor: 1
+2025-02-18 16:56:09,140 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:56:09,142 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Switch -> Battery
+2025-02-18 16:56:09,142 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:56:09,143 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Switch -> Battery: 1
+2025-02-18 16:56:10,027 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:56:10,028 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Switch -> Gearbox
+2025-02-18 16:56:10,029 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:56:10,031 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Switch -> Gearbox: 1
+2025-02-18 16:56:10,906 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:56:10,907 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Switch -> Chuck
+2025-02-18 16:56:10,907 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:56:10,909 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Switch -> Chuck: 1
+2025-02-18 16:56:11,789 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:56:11,790 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Switch -> Handle
+2025-02-18 16:56:11,791 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:56:11,792 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Switch -> Handle: 1
+2025-02-18 16:56:11,793 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Switch -> Switch: 1
+2025-02-18 16:56:12,679 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:56:12,679 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Switch -> Circuit
+2025-02-18 16:56:12,699 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:56:12,700 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Switch -> Circuit: 1
+2025-02-18 16:56:12,701 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Row 6 complete: [1, 1, 1, 1, 1, 1, 1]
+2025-02-18 16:56:12,702 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-18 16:56:13,586 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:56:13,587 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Circuit -> Motor
+2025-02-18 16:56:13,588 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:56:13,589 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Circuit -> Motor: 1
+2025-02-18 16:56:14,463 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:56:14,464 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Circuit -> Battery
+2025-02-18 16:56:14,465 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:56:14,465 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Circuit -> Battery: 1
+2025-02-18 16:56:15,349 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:56:15,350 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Circuit -> Gearbox
+2025-02-18 16:56:15,351 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:56:15,351 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Circuit -> Gearbox: 1
+2025-02-18 16:56:16,233 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:56:16,234 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Circuit -> Chuck
+2025-02-18 16:56:16,235 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:56:16,235 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Circuit -> Chuck: 1
+2025-02-18 16:56:17,117 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:56:17,118 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Circuit -> Handle
+2025-02-18 16:56:17,119 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:56:17,120 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Circuit -> Handle: 1
+2025-02-18 16:56:17,996 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Yes
+2025-02-18 16:56:17,997 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Identifying proximity relationship: Circuit -> Switch
+2025-02-18 16:56:18,016 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Answer: Yes
+2025-02-18 16:56:18,017 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Circuit -> Switch: 1
+2025-02-18 16:56:18,018 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Relationship Circuit -> Circuit: 1
+2025-02-18 16:56:18,019 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Row 7 complete: [1, 1, 1, 1, 1, 1, 1]
+2025-02-18 16:56:18,020 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-18 16:56:18,021 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Final Matrix:
+[[1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 0], [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1]]
+2025-02-18 16:56:18,022 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-18 16:56:18,023 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Matrix from response.
+2025-02-18 16:56:18,024 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - At run 5/5
+2025-02-18 16:56:18,025 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Matrix: [[1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 0], [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1]]
+2025-02-18 16:56:18,026 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-18 16:56:28,037 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Duration of reference combination {}: 0:04:33.513641
+2025-02-18 16:56:28,039 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2025-02-18 16:56:28,040 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - 
+==================================================
+2025-02-18 16:56:28,041 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Average DSM Matrix for model: ollama:llama3.3:70b-8k
+2025-02-18 16:56:28,042 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - End of log reference type(s): ['baseline']
+2025-02-18 16:56:28,043 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Saving results to: ../output/experiment_llm_ollama:llama3.3:70b-8k_20250218-165154/llm_refs_baseline
+2025-02-18 16:56:28,047 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - 
+Average Matrix:
+         Motor  Battery  Gearbox  Chuck  Handle  Switch  Circuit
+Motor        1        1        1      1       1       1        1
+Battery      1        1        1      1       1       1        1
+Gearbox      1        1        1      1       1       1        1
+Chuck        1        1        1      1       1       1        0
+Handle       1        1        1      1       1       1        1
+Switch       1        1        1      1       1       1        1
+Circuit      1        1        1      1       1       1        1
+2025-02-18 16:56:28,048 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - 
+Components: ['Motor', 'Battery', 'Gearbox', 'Chuck', 'Handle', 'Switch', 'Circuit']
+2025-02-18 16:56:28,050 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - ==================================================
+
+2025-02-18 16:56:28,052 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Saved CSV to: ../output/experiment_llm_ollama:llama3.3:70b-8k_20250218-165154/llm_refs_baseline/average_matrix_20250218-165154.csv
+2025-02-18 16:56:28,054 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Saved JSON to: ../output/experiment_llm_ollama:llama3.3:70b-8k_20250218-165154/llm_refs_baseline/detailed_results_20250218-165154.json
+2025-02-18 16:56:28,321 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Saved visualization to: ../output/experiment_llm_ollama:llama3.3:70b-8k_20250218-165154/llm_refs_baseline/average_matrix_20250218-165154.png
+2025-02-18 16:56:28,322 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Duration of experiment for ollama:llama3.3:70b-8k in llm inference type: 0:04:34

@@ -1,0 +1,8 @@
+,Motor,Gearbox,Clutch,Chuck,Trigger,Battery or Power Cord,Handle
+Motor,1,1,0,1,1,1,1
+Gearbox,1,1,1,0,0,0,0
+Clutch,0,1,1,0,0,0,0
+Chuck,1,0,0,1,0,0,0
+Trigger,1,0,0,0,1,0,1
+Battery or Power Cord,1,0,0,0,0,1,0
+Handle,1,0,0,0,1,0,1

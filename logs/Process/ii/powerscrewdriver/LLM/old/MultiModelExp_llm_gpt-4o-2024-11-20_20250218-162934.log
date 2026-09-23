@@ -1,0 +1,1045 @@
+2025-02-18 16:29:34,051 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Run 1/5
+2025-02-18 16:29:34,086 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - DEBUG: Initializing LLMInference.
+2025-02-18 16:29:34,087 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Initialized LLM inference for system: power screwdriver
+2025-02-18 16:29:34,088 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Initialized DSM for system: power screwdriver
+2025-02-18 16:29:34,090 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Inference model: gpt-4o-2024-11-20
+2025-02-18 16:29:34,090 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Prompt (attempt 1/3): 
+            Please identify the major components of power screwdriver in the engineering based on proximity relationships.             
+            The number of components must not exceed 7 (can be equal) and must be a list of strings.             
+            Please do not identify similar components that will work together under subsystem level since our interest is to identify the major components that form the core architecture of the system.             
+            Here is an example of the components for made-up system:             
+            system_components = [ "component 1", "component 2", "component 3", "component 4", "component 5" ]             
+            IMPORTANT: THE FORMAT OF THE OUTPUT MUST BE AS A LIST OF STRINGS ONLY SIMILAR TO THE ONE ABOVE (NO LATEX, NO CODE, NO DESCRIPTION, OR OTHER ENCODINGS).              
+2025-02-18 16:29:34,870 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: ["Motor", "Gearbox", "Chuck", "Trigger Mechanism", "Battery Pack", "Housing", "Control Circuitry"]
+2025-02-18 16:29:34,871 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Matrix: ['Motor', 'Gearbox', 'Chuck', 'Trigger Mechanism', 'Battery Pack', 'Housing', 'Control Circuitry']
+2025-02-18 16:29:34,872 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Components: ['Motor', 'Gearbox', 'Chuck', 'Trigger Mechanism', 'Battery Pack', 'Housing', 'Control Circuitry']
+2025-02-18 16:29:35,305 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: Valid
+2025-02-18 16:29:35,306 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Validation response: Valid
+2025-02-18 16:29:35,307 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Component list validated successfully on attempt 1
+2025-02-18 16:29:35,308 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Components: ['Motor', 'Gearbox', 'Chuck', 'Trigger Mechanism', 'Battery Pack', 'Housing', 'Control Circuitry']
+2025-02-18 16:29:35,309 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-18 16:29:35,310 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Motor -> Motor: 1
+2025-02-18 16:29:35,632 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: Yes
+2025-02-18 16:29:35,633 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Motor -> Gearbox
+2025-02-18 16:29:35,634 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: Yes
+2025-02-18 16:29:35,634 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Motor -> Gearbox: 1
+2025-02-18 16:29:36,010 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: Yes
+2025-02-18 16:29:36,011 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Motor -> Chuck
+2025-02-18 16:29:36,011 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: Yes
+2025-02-18 16:29:36,012 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Motor -> Chuck: 1
+2025-02-18 16:29:36,426 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:29:36,427 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Motor -> Trigger Mechanism
+2025-02-18 16:29:36,427 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:29:36,428 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Motor -> Trigger Mechanism: 2
+2025-02-18 16:29:36,745 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: Yes
+2025-02-18 16:29:36,746 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Motor -> Battery Pack
+2025-02-18 16:29:36,747 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: Yes
+2025-02-18 16:29:36,748 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Motor -> Battery Pack: 1
+2025-02-18 16:29:38,505 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:29:38,506 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Motor -> Housing
+2025-02-18 16:29:38,507 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:29:38,508 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Motor -> Housing: 2
+2025-02-18 16:29:39,233 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:29:39,234 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Motor -> Control Circuitry
+2025-02-18 16:29:39,242 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:29:39,243 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Motor -> Control Circuitry: 2
+2025-02-18 16:29:39,244 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Row 1 complete: [1, 1, 1, 2, 1, 2, 2]
+2025-02-18 16:29:39,245 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-18 16:29:39,749 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: Yes
+2025-02-18 16:29:39,750 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Gearbox -> Motor
+2025-02-18 16:29:39,751 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: Yes
+2025-02-18 16:29:39,752 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Gearbox -> Motor: 1
+2025-02-18 16:29:39,752 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Gearbox -> Gearbox: 1
+2025-02-18 16:29:40,275 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:29:40,276 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Gearbox -> Chuck
+2025-02-18 16:29:40,277 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:29:40,277 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Gearbox -> Chuck: 2
+2025-02-18 16:29:41,033 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:29:41,034 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Gearbox -> Trigger Mechanism
+2025-02-18 16:29:41,035 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:29:41,036 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Gearbox -> Trigger Mechanism: 2
+2025-02-18 16:29:41,734 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:29:41,735 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Gearbox -> Battery Pack
+2025-02-18 16:29:41,735 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:29:41,736 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Gearbox -> Battery Pack: 2
+2025-02-18 16:29:42,203 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:29:42,204 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Gearbox -> Housing
+2025-02-18 16:29:42,205 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:29:42,206 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Gearbox -> Housing: 2
+2025-02-18 16:29:42,841 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:29:42,841 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Gearbox -> Control Circuitry
+2025-02-18 16:29:42,843 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:29:42,844 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Gearbox -> Control Circuitry: 2
+2025-02-18 16:29:42,844 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Row 2 complete: [1, 1, 2, 2, 2, 2, 2]
+2025-02-18 16:29:42,846 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-18 16:29:43,267 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:29:43,268 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Chuck -> Motor
+2025-02-18 16:29:43,269 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:29:43,269 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Chuck -> Motor: 2
+2025-02-18 16:29:43,837 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:29:43,838 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Chuck -> Gearbox
+2025-02-18 16:29:43,839 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:29:43,840 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Chuck -> Gearbox: 2
+2025-02-18 16:29:43,841 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Chuck -> Chuck: 1
+2025-02-18 16:29:44,532 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:29:44,533 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Chuck -> Trigger Mechanism
+2025-02-18 16:29:44,552 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:29:44,553 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Chuck -> Trigger Mechanism: 2
+2025-02-18 16:29:45,036 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:29:45,037 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Chuck -> Battery Pack
+2025-02-18 16:29:45,038 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:29:45,039 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Chuck -> Battery Pack: 2
+2025-02-18 16:29:45,580 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:29:45,581 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Chuck -> Housing
+2025-02-18 16:29:45,582 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:29:45,582 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Chuck -> Housing: 2
+2025-02-18 16:29:46,141 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:29:46,142 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Chuck -> Control Circuitry
+2025-02-18 16:29:46,143 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:29:46,144 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Chuck -> Control Circuitry: 2
+2025-02-18 16:29:46,145 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Row 3 complete: [2, 2, 1, 2, 2, 2, 2]
+2025-02-18 16:29:46,146 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-18 16:29:46,697 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:29:46,698 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Trigger Mechanism -> Motor
+2025-02-18 16:29:46,699 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:29:46,700 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Trigger Mechanism -> Motor: 2
+2025-02-18 16:29:48,177 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:29:48,178 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Trigger Mechanism -> Gearbox
+2025-02-18 16:29:48,179 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:29:48,180 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Trigger Mechanism -> Gearbox: 2
+2025-02-18 16:29:48,949 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:29:48,950 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Trigger Mechanism -> Chuck
+2025-02-18 16:29:48,951 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:29:48,952 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Trigger Mechanism -> Chuck: 2
+2025-02-18 16:29:48,953 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Trigger Mechanism -> Trigger Mechanism: 1
+2025-02-18 16:29:49,676 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:29:49,677 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Trigger Mechanism -> Battery Pack
+2025-02-18 16:29:49,696 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:29:49,697 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Trigger Mechanism -> Battery Pack: 2
+2025-02-18 16:29:50,449 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:29:50,450 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Trigger Mechanism -> Housing
+2025-02-18 16:29:50,451 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:29:50,452 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Trigger Mechanism -> Housing: 2
+2025-02-18 16:29:50,913 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:29:50,914 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Trigger Mechanism -> Control Circuitry
+2025-02-18 16:29:50,915 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:29:50,916 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Trigger Mechanism -> Control Circuitry: 2
+2025-02-18 16:29:50,917 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Row 4 complete: [2, 2, 2, 1, 2, 2, 2]
+2025-02-18 16:29:50,917 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-18 16:29:51,359 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:29:51,360 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Battery Pack -> Motor
+2025-02-18 16:29:51,361 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:29:51,362 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Battery Pack -> Motor: 2
+2025-02-18 16:29:51,815 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:29:51,816 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Battery Pack -> Gearbox
+2025-02-18 16:29:51,817 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:29:51,818 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Battery Pack -> Gearbox: 2
+2025-02-18 16:29:52,360 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:29:52,361 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Battery Pack -> Chuck
+2025-02-18 16:29:52,362 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:29:52,363 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Battery Pack -> Chuck: 2
+2025-02-18 16:29:52,799 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:29:52,800 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Battery Pack -> Trigger Mechanism
+2025-02-18 16:29:52,801 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:29:52,802 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Battery Pack -> Trigger Mechanism: 2
+2025-02-18 16:29:52,803 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Battery Pack -> Battery Pack: 1
+2025-02-18 16:29:53,297 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:29:53,298 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Battery Pack -> Housing
+2025-02-18 16:29:53,299 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:29:53,300 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Battery Pack -> Housing: 2
+2025-02-18 16:29:53,811 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: Yes
+2025-02-18 16:29:53,812 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Battery Pack -> Control Circuitry
+2025-02-18 16:29:53,813 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: Yes
+2025-02-18 16:29:53,814 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Battery Pack -> Control Circuitry: 1
+2025-02-18 16:29:53,814 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Row 5 complete: [2, 2, 2, 2, 1, 2, 1]
+2025-02-18 16:29:53,816 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-18 16:29:54,428 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:29:54,429 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Housing -> Motor
+2025-02-18 16:29:54,430 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:29:54,431 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Housing -> Motor: 2
+2025-02-18 16:29:55,033 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:29:55,034 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Housing -> Gearbox
+2025-02-18 16:29:55,035 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:29:55,053 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Housing -> Gearbox: 2
+2025-02-18 16:29:55,510 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:29:55,511 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Housing -> Chuck
+2025-02-18 16:29:55,512 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:29:55,513 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Housing -> Chuck: 2
+2025-02-18 16:29:56,028 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:29:56,029 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Housing -> Trigger Mechanism
+2025-02-18 16:29:56,030 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:29:56,031 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Housing -> Trigger Mechanism: 2
+2025-02-18 16:29:56,526 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:29:56,527 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Housing -> Battery Pack
+2025-02-18 16:29:56,528 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:29:56,529 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Housing -> Battery Pack: 2
+2025-02-18 16:29:56,529 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Housing -> Housing: 1
+2025-02-18 16:29:57,078 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:29:57,079 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Housing -> Control Circuitry
+2025-02-18 16:29:57,080 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:29:57,081 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Housing -> Control Circuitry: 2
+2025-02-18 16:29:57,082 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Row 6 complete: [2, 2, 2, 2, 2, 1, 2]
+2025-02-18 16:29:57,083 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-18 16:29:57,776 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:29:57,777 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Control Circuitry -> Motor
+2025-02-18 16:29:57,778 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:29:57,779 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Control Circuitry -> Motor: 2
+2025-02-18 16:29:58,452 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:29:58,453 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Control Circuitry -> Gearbox
+2025-02-18 16:29:58,454 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:29:58,454 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Control Circuitry -> Gearbox: 2
+2025-02-18 16:29:59,321 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:29:59,322 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Control Circuitry -> Chuck
+2025-02-18 16:29:59,323 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:29:59,324 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Control Circuitry -> Chuck: 2
+2025-02-18 16:29:59,990 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:29:59,991 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Control Circuitry -> Trigger Mechanism
+2025-02-18 16:29:59,991 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:29:59,992 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Control Circuitry -> Trigger Mechanism: 2
+2025-02-18 16:30:00,788 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:30:00,789 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Control Circuitry -> Battery Pack
+2025-02-18 16:30:00,790 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:30:00,791 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Control Circuitry -> Battery Pack: 2
+2025-02-18 16:30:01,870 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:30:01,871 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Control Circuitry -> Housing
+2025-02-18 16:30:01,871 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:30:01,873 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Control Circuitry -> Housing: 2
+2025-02-18 16:30:01,874 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Control Circuitry -> Control Circuitry: 1
+2025-02-18 16:30:01,874 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Row 7 complete: [2, 2, 2, 2, 2, 2, 1]
+2025-02-18 16:30:01,876 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-18 16:30:01,876 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Final Matrix:
+[[1, 1, 1, 2, 1, 2, 2], [1, 1, 2, 2, 2, 2, 2], [2, 2, 1, 2, 2, 2, 2], [2, 2, 2, 1, 2, 2, 2], [2, 2, 2, 2, 1, 2, 1], [2, 2, 2, 2, 2, 1, 2], [2, 2, 2, 2, 2, 2, 1]]
+2025-02-18 16:30:01,877 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-18 16:30:01,878 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Matrix from response.
+2025-02-18 16:30:01,879 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - At run 1/5
+2025-02-18 16:30:01,880 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Matrix: [[1, 1, 1, 2, 1, 2, 2], [1, 1, 2, 2, 2, 2, 2], [2, 2, 1, 2, 2, 2, 2], [2, 2, 2, 1, 2, 2, 2], [2, 2, 2, 2, 1, 2, 1], [2, 2, 2, 2, 2, 1, 2], [2, 2, 2, 2, 2, 2, 1]]
+2025-02-18 16:30:01,881 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-18 16:30:11,892 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Run 2/5
+2025-02-18 16:30:11,927 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - DEBUG: Initializing LLMInference.
+2025-02-18 16:30:11,928 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Initialized LLM inference for system: power screwdriver
+2025-02-18 16:30:11,929 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Initialized DSM for system: power screwdriver
+2025-02-18 16:30:11,930 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Inference model: gpt-4o-2024-11-20
+2025-02-18 16:30:11,931 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Motor -> Motor: 1
+2025-02-18 16:30:12,480 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: Yes
+2025-02-18 16:30:12,481 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Motor -> Gearbox
+2025-02-18 16:30:12,482 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: Yes
+2025-02-18 16:30:12,483 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Motor -> Gearbox: 1
+2025-02-18 16:30:13,070 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: Yes
+2025-02-18 16:30:13,071 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Motor -> Chuck
+2025-02-18 16:30:13,072 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: Yes
+2025-02-18 16:30:13,073 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Motor -> Chuck: 1
+2025-02-18 16:30:13,719 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: Yes
+2025-02-18 16:30:13,720 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Motor -> Trigger Mechanism
+2025-02-18 16:30:13,721 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: Yes
+2025-02-18 16:30:13,722 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Motor -> Trigger Mechanism: 1
+2025-02-18 16:30:14,025 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: Yes
+2025-02-18 16:30:14,026 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Motor -> Battery Pack
+2025-02-18 16:30:14,027 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: Yes
+2025-02-18 16:30:14,028 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Motor -> Battery Pack: 1
+2025-02-18 16:30:14,598 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:30:14,598 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Motor -> Housing
+2025-02-18 16:30:14,599 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:30:14,601 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Motor -> Housing: 2
+2025-02-18 16:30:15,026 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:30:15,027 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Motor -> Control Circuitry
+2025-02-18 16:30:15,028 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:30:15,029 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Motor -> Control Circuitry: 2
+2025-02-18 16:30:15,030 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Row 1 complete: [1, 1, 1, 1, 1, 2, 2]
+2025-02-18 16:30:15,031 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-18 16:30:15,386 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: Yes
+2025-02-18 16:30:15,387 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Gearbox -> Motor
+2025-02-18 16:30:15,388 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: Yes
+2025-02-18 16:30:15,389 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Gearbox -> Motor: 1
+2025-02-18 16:30:15,390 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Gearbox -> Gearbox: 1
+2025-02-18 16:30:16,004 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:30:16,005 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Gearbox -> Chuck
+2025-02-18 16:30:16,006 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:30:16,007 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Gearbox -> Chuck: 2
+2025-02-18 16:30:16,614 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:30:16,615 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Gearbox -> Trigger Mechanism
+2025-02-18 16:30:16,616 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:30:16,617 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Gearbox -> Trigger Mechanism: 2
+2025-02-18 16:30:17,301 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:30:17,302 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Gearbox -> Battery Pack
+2025-02-18 16:30:17,321 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:30:17,322 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Gearbox -> Battery Pack: 2
+2025-02-18 16:30:17,746 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:30:17,747 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Gearbox -> Housing
+2025-02-18 16:30:17,748 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:30:17,749 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Gearbox -> Housing: 2
+2025-02-18 16:30:18,426 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:30:18,427 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Gearbox -> Control Circuitry
+2025-02-18 16:30:18,428 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:30:18,429 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Gearbox -> Control Circuitry: 2
+2025-02-18 16:30:18,430 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Row 2 complete: [1, 1, 2, 2, 2, 2, 2]
+2025-02-18 16:30:18,431 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-18 16:30:19,055 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:30:19,055 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Chuck -> Motor
+2025-02-18 16:30:19,056 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:30:19,057 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Chuck -> Motor: 2
+2025-02-18 16:30:19,677 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:30:19,678 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Chuck -> Gearbox
+2025-02-18 16:30:19,678 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:30:19,679 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Chuck -> Gearbox: 2
+2025-02-18 16:30:19,680 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Chuck -> Chuck: 1
+2025-02-18 16:30:20,143 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:30:20,144 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Chuck -> Trigger Mechanism
+2025-02-18 16:30:20,145 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:30:20,146 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Chuck -> Trigger Mechanism: 2
+2025-02-18 16:30:20,648 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:30:20,649 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Chuck -> Battery Pack
+2025-02-18 16:30:20,650 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:30:20,650 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Chuck -> Battery Pack: 2
+2025-02-18 16:30:21,853 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:30:21,854 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Chuck -> Housing
+2025-02-18 16:30:21,855 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:30:21,856 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Chuck -> Housing: 2
+2025-02-18 16:30:22,500 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:30:22,501 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Chuck -> Control Circuitry
+2025-02-18 16:30:22,520 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:30:22,521 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Chuck -> Control Circuitry: 2
+2025-02-18 16:30:22,522 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Row 3 complete: [2, 2, 1, 2, 2, 2, 2]
+2025-02-18 16:30:22,523 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-18 16:30:23,148 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:30:23,149 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Trigger Mechanism -> Motor
+2025-02-18 16:30:23,150 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:30:23,151 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Trigger Mechanism -> Motor: 2
+2025-02-18 16:30:23,557 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:30:23,558 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Trigger Mechanism -> Gearbox
+2025-02-18 16:30:23,559 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:30:23,560 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Trigger Mechanism -> Gearbox: 2
+2025-02-18 16:30:24,030 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:30:24,031 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Trigger Mechanism -> Chuck
+2025-02-18 16:30:24,032 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:30:24,033 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Trigger Mechanism -> Chuck: 2
+2025-02-18 16:30:24,034 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Trigger Mechanism -> Trigger Mechanism: 1
+2025-02-18 16:30:24,648 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:30:24,649 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Trigger Mechanism -> Battery Pack
+2025-02-18 16:30:24,650 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:30:24,651 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Trigger Mechanism -> Battery Pack: 2
+2025-02-18 16:30:26,842 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:30:26,843 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Trigger Mechanism -> Housing
+2025-02-18 16:30:26,844 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:30:26,845 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Trigger Mechanism -> Housing: 2
+2025-02-18 16:30:28,146 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:30:28,147 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Trigger Mechanism -> Control Circuitry
+2025-02-18 16:30:28,166 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:30:28,167 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Trigger Mechanism -> Control Circuitry: 2
+2025-02-18 16:30:28,167 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Row 4 complete: [2, 2, 2, 1, 2, 2, 2]
+2025-02-18 16:30:28,169 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-18 16:30:28,761 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:30:28,762 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Battery Pack -> Motor
+2025-02-18 16:30:28,763 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:30:28,764 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Battery Pack -> Motor: 2
+2025-02-18 16:30:29,461 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:30:29,462 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Battery Pack -> Gearbox
+2025-02-18 16:30:29,463 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:30:29,463 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Battery Pack -> Gearbox: 2
+2025-02-18 16:30:30,102 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:30:30,103 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Battery Pack -> Chuck
+2025-02-18 16:30:30,104 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:30:30,105 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Battery Pack -> Chuck: 2
+2025-02-18 16:30:30,956 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:30:30,956 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Battery Pack -> Trigger Mechanism
+2025-02-18 16:30:30,957 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:30:30,958 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Battery Pack -> Trigger Mechanism: 2
+2025-02-18 16:30:30,959 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Battery Pack -> Battery Pack: 1
+2025-02-18 16:30:31,463 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:30:31,464 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Battery Pack -> Housing
+2025-02-18 16:30:31,465 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:30:31,466 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Battery Pack -> Housing: 2
+2025-02-18 16:30:32,304 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: Yes
+2025-02-18 16:30:32,305 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Battery Pack -> Control Circuitry
+2025-02-18 16:30:32,306 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: Yes
+2025-02-18 16:30:32,307 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Battery Pack -> Control Circuitry: 1
+2025-02-18 16:30:32,307 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Row 5 complete: [2, 2, 2, 2, 1, 2, 1]
+2025-02-18 16:30:32,309 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-18 16:30:32,939 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:30:32,940 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Housing -> Motor
+2025-02-18 16:30:32,941 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:30:32,942 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Housing -> Motor: 2
+2025-02-18 16:30:33,476 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:30:33,477 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Housing -> Gearbox
+2025-02-18 16:30:33,496 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:30:33,497 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Housing -> Gearbox: 2
+2025-02-18 16:30:34,223 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:30:34,224 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Housing -> Chuck
+2025-02-18 16:30:34,225 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:30:34,226 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Housing -> Chuck: 2
+2025-02-18 16:30:34,738 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:30:34,739 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Housing -> Trigger Mechanism
+2025-02-18 16:30:34,740 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:30:34,740 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Housing -> Trigger Mechanism: 2
+2025-02-18 16:30:35,306 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:30:35,307 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Housing -> Battery Pack
+2025-02-18 16:30:35,308 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:30:35,309 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Housing -> Battery Pack: 2
+2025-02-18 16:30:35,310 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Housing -> Housing: 1
+2025-02-18 16:30:35,832 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:30:35,833 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Housing -> Control Circuitry
+2025-02-18 16:30:35,834 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:30:35,835 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Housing -> Control Circuitry: 2
+2025-02-18 16:30:35,836 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Row 6 complete: [2, 2, 2, 2, 2, 1, 2]
+2025-02-18 16:30:35,837 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-18 16:30:36,297 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:30:36,298 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Control Circuitry -> Motor
+2025-02-18 16:30:36,299 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:30:36,300 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Control Circuitry -> Motor: 2
+2025-02-18 16:30:36,948 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:30:36,949 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Control Circuitry -> Gearbox
+2025-02-18 16:30:36,950 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:30:36,951 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Control Circuitry -> Gearbox: 2
+2025-02-18 16:30:37,599 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:30:37,600 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Control Circuitry -> Chuck
+2025-02-18 16:30:37,601 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:30:37,602 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Control Circuitry -> Chuck: 2
+2025-02-18 16:30:38,079 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:30:38,080 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Control Circuitry -> Trigger Mechanism
+2025-02-18 16:30:38,081 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:30:38,082 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Control Circuitry -> Trigger Mechanism: 2
+2025-02-18 16:30:38,603 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:30:38,604 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Control Circuitry -> Battery Pack
+2025-02-18 16:30:38,623 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:30:38,624 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Control Circuitry -> Battery Pack: 2
+2025-02-18 16:30:39,112 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:30:39,113 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Control Circuitry -> Housing
+2025-02-18 16:30:39,114 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:30:39,115 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Control Circuitry -> Housing: 2
+2025-02-18 16:30:39,116 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Control Circuitry -> Control Circuitry: 1
+2025-02-18 16:30:39,117 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Row 7 complete: [2, 2, 2, 2, 2, 2, 1]
+2025-02-18 16:30:39,118 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-18 16:30:39,119 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Final Matrix:
+[[1, 1, 1, 1, 1, 2, 2], [1, 1, 2, 2, 2, 2, 2], [2, 2, 1, 2, 2, 2, 2], [2, 2, 2, 1, 2, 2, 2], [2, 2, 2, 2, 1, 2, 1], [2, 2, 2, 2, 2, 1, 2], [2, 2, 2, 2, 2, 2, 1]]
+2025-02-18 16:30:39,120 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-18 16:30:39,121 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Matrix from response.
+2025-02-18 16:30:39,122 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - At run 2/5
+2025-02-18 16:30:39,123 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Matrix: [[1, 1, 1, 1, 1, 2, 2], [1, 1, 2, 2, 2, 2, 2], [2, 2, 1, 2, 2, 2, 2], [2, 2, 2, 1, 2, 2, 2], [2, 2, 2, 2, 1, 2, 1], [2, 2, 2, 2, 2, 1, 2], [2, 2, 2, 2, 2, 2, 1]]
+2025-02-18 16:30:39,124 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-18 16:30:49,135 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Run 3/5
+2025-02-18 16:30:49,169 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - DEBUG: Initializing LLMInference.
+2025-02-18 16:30:49,170 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Initialized LLM inference for system: power screwdriver
+2025-02-18 16:30:49,171 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Initialized DSM for system: power screwdriver
+2025-02-18 16:30:49,172 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Inference model: gpt-4o-2024-11-20
+2025-02-18 16:30:49,173 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Motor -> Motor: 1
+2025-02-18 16:30:49,955 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: Yes
+2025-02-18 16:30:49,956 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Motor -> Gearbox
+2025-02-18 16:30:49,957 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: Yes
+2025-02-18 16:30:49,958 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Motor -> Gearbox: 1
+2025-02-18 16:30:50,312 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: Yes
+2025-02-18 16:30:50,313 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Motor -> Chuck
+2025-02-18 16:30:50,314 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: Yes
+2025-02-18 16:30:50,315 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Motor -> Chuck: 1
+2025-02-18 16:30:50,997 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:30:50,998 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Motor -> Trigger Mechanism
+2025-02-18 16:30:50,999 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:30:51,000 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Motor -> Trigger Mechanism: 2
+2025-02-18 16:30:51,322 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: Yes
+2025-02-18 16:30:51,323 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Motor -> Battery Pack
+2025-02-18 16:30:51,324 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: Yes
+2025-02-18 16:30:51,325 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Motor -> Battery Pack: 1
+2025-02-18 16:30:52,026 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:30:52,027 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Motor -> Housing
+2025-02-18 16:30:52,028 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:30:52,028 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Motor -> Housing: 2
+2025-02-18 16:30:52,554 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: Yes
+2025-02-18 16:30:52,554 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Motor -> Control Circuitry
+2025-02-18 16:30:52,555 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: Yes
+2025-02-18 16:30:52,556 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Motor -> Control Circuitry: 1
+2025-02-18 16:30:52,557 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Row 1 complete: [1, 1, 1, 2, 1, 2, 1]
+2025-02-18 16:30:52,558 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-18 16:30:52,947 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: Yes
+2025-02-18 16:30:52,947 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Gearbox -> Motor
+2025-02-18 16:30:52,948 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: Yes
+2025-02-18 16:30:52,949 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Gearbox -> Motor: 1
+2025-02-18 16:30:52,949 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Gearbox -> Gearbox: 1
+2025-02-18 16:30:53,500 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:30:53,501 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Gearbox -> Chuck
+2025-02-18 16:30:53,502 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:30:53,502 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Gearbox -> Chuck: 2
+2025-02-18 16:30:54,004 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:30:54,005 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Gearbox -> Trigger Mechanism
+2025-02-18 16:30:54,006 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:30:54,007 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Gearbox -> Trigger Mechanism: 2
+2025-02-18 16:30:54,632 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:30:54,633 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Gearbox -> Battery Pack
+2025-02-18 16:30:54,652 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:30:54,653 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Gearbox -> Battery Pack: 2
+2025-02-18 16:30:55,129 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:30:55,130 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Gearbox -> Housing
+2025-02-18 16:30:55,131 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:30:55,132 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Gearbox -> Housing: 2
+2025-02-18 16:30:55,599 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:30:55,600 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Gearbox -> Control Circuitry
+2025-02-18 16:30:55,601 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:30:55,601 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Gearbox -> Control Circuitry: 2
+2025-02-18 16:30:55,603 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Row 2 complete: [1, 1, 2, 2, 2, 2, 2]
+2025-02-18 16:30:55,604 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-18 16:30:56,358 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:30:56,359 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Chuck -> Motor
+2025-02-18 16:30:56,360 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:30:56,361 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Chuck -> Motor: 2
+2025-02-18 16:30:56,977 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:30:56,978 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Chuck -> Gearbox
+2025-02-18 16:30:56,979 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:30:56,979 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Chuck -> Gearbox: 2
+2025-02-18 16:30:56,981 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Chuck -> Chuck: 1
+2025-02-18 16:30:57,444 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:30:57,445 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Chuck -> Trigger Mechanism
+2025-02-18 16:30:57,446 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:30:57,446 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Chuck -> Trigger Mechanism: 2
+2025-02-18 16:30:57,900 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:30:57,900 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Chuck -> Battery Pack
+2025-02-18 16:30:57,901 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:30:57,903 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Chuck -> Battery Pack: 2
+2025-02-18 16:30:58,606 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:30:58,607 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Chuck -> Housing
+2025-02-18 16:30:58,608 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:30:58,609 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Chuck -> Housing: 2
+2025-02-18 16:30:59,821 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:30:59,822 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Chuck -> Control Circuitry
+2025-02-18 16:30:59,823 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:30:59,841 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Chuck -> Control Circuitry: 2
+2025-02-18 16:30:59,842 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Row 3 complete: [2, 2, 1, 2, 2, 2, 2]
+2025-02-18 16:30:59,843 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-18 16:31:00,396 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:31:00,396 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Trigger Mechanism -> Motor
+2025-02-18 16:31:00,397 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:31:00,398 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Trigger Mechanism -> Motor: 2
+2025-02-18 16:31:01,351 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:31:01,352 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Trigger Mechanism -> Gearbox
+2025-02-18 16:31:01,353 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:31:01,354 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Trigger Mechanism -> Gearbox: 2
+2025-02-18 16:31:02,065 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:31:02,066 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Trigger Mechanism -> Chuck
+2025-02-18 16:31:02,067 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:31:02,068 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Trigger Mechanism -> Chuck: 2
+2025-02-18 16:31:02,069 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Trigger Mechanism -> Trigger Mechanism: 1
+2025-02-18 16:31:02,743 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:31:02,744 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Trigger Mechanism -> Battery Pack
+2025-02-18 16:31:02,745 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:31:02,746 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Trigger Mechanism -> Battery Pack: 2
+2025-02-18 16:31:03,656 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:31:03,657 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Trigger Mechanism -> Housing
+2025-02-18 16:31:03,658 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:31:03,659 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Trigger Mechanism -> Housing: 2
+2025-02-18 16:31:04,314 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:31:04,315 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Trigger Mechanism -> Control Circuitry
+2025-02-18 16:31:04,315 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:31:04,316 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Trigger Mechanism -> Control Circuitry: 2
+2025-02-18 16:31:04,318 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Row 4 complete: [2, 2, 2, 1, 2, 2, 2]
+2025-02-18 16:31:04,318 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-18 16:31:04,794 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:31:04,795 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Battery Pack -> Motor
+2025-02-18 16:31:04,796 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:31:04,797 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Battery Pack -> Motor: 2
+2025-02-18 16:31:06,194 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:31:06,195 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Battery Pack -> Gearbox
+2025-02-18 16:31:06,195 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:31:06,197 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Battery Pack -> Gearbox: 2
+2025-02-18 16:31:06,932 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:31:06,933 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Battery Pack -> Chuck
+2025-02-18 16:31:06,934 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:31:06,935 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Battery Pack -> Chuck: 2
+2025-02-18 16:31:07,409 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:31:07,410 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Battery Pack -> Trigger Mechanism
+2025-02-18 16:31:07,411 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:31:07,412 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Battery Pack -> Trigger Mechanism: 2
+2025-02-18 16:31:07,413 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Battery Pack -> Battery Pack: 1
+2025-02-18 16:31:08,173 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:31:08,174 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Battery Pack -> Housing
+2025-02-18 16:31:08,175 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:31:08,176 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Battery Pack -> Housing: 2
+2025-02-18 16:31:08,702 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: Yes
+2025-02-18 16:31:08,703 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Battery Pack -> Control Circuitry
+2025-02-18 16:31:08,704 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: Yes
+2025-02-18 16:31:08,704 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Battery Pack -> Control Circuitry: 1
+2025-02-18 16:31:08,706 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Row 5 complete: [2, 2, 2, 2, 1, 2, 1]
+2025-02-18 16:31:08,707 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-18 16:31:09,183 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:31:09,184 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Housing -> Motor
+2025-02-18 16:31:09,185 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:31:09,185 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Housing -> Motor: 2
+2025-02-18 16:31:09,789 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:31:09,790 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Housing -> Gearbox
+2025-02-18 16:31:09,791 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:31:09,792 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Housing -> Gearbox: 2
+2025-02-18 16:31:10,351 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:31:10,352 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Housing -> Chuck
+2025-02-18 16:31:10,353 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:31:10,354 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Housing -> Chuck: 2
+2025-02-18 16:31:10,968 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:31:10,969 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Housing -> Trigger Mechanism
+2025-02-18 16:31:10,970 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:31:10,971 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Housing -> Trigger Mechanism: 2
+2025-02-18 16:31:11,558 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:31:11,559 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Housing -> Battery Pack
+2025-02-18 16:31:11,578 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:31:11,579 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Housing -> Battery Pack: 2
+2025-02-18 16:31:11,580 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Housing -> Housing: 1
+2025-02-18 16:31:12,313 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:31:12,314 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Housing -> Control Circuitry
+2025-02-18 16:31:12,315 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:31:12,316 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Housing -> Control Circuitry: 2
+2025-02-18 16:31:12,317 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Row 6 complete: [2, 2, 2, 2, 2, 1, 2]
+2025-02-18 16:31:12,318 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-18 16:31:12,832 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:31:12,833 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Control Circuitry -> Motor
+2025-02-18 16:31:12,834 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:31:12,835 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Control Circuitry -> Motor: 2
+2025-02-18 16:31:13,352 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:31:13,353 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Control Circuitry -> Gearbox
+2025-02-18 16:31:13,354 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:31:13,355 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Control Circuitry -> Gearbox: 2
+2025-02-18 16:31:14,070 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:31:14,071 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Control Circuitry -> Chuck
+2025-02-18 16:31:14,072 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:31:14,073 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Control Circuitry -> Chuck: 2
+2025-02-18 16:31:14,799 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:31:14,800 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Control Circuitry -> Trigger Mechanism
+2025-02-18 16:31:14,801 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:31:14,802 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Control Circuitry -> Trigger Mechanism: 2
+2025-02-18 16:31:15,467 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:31:15,468 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Control Circuitry -> Battery Pack
+2025-02-18 16:31:15,469 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:31:15,470 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Control Circuitry -> Battery Pack: 2
+2025-02-18 16:31:16,311 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:31:16,312 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Control Circuitry -> Housing
+2025-02-18 16:31:16,313 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:31:16,314 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Control Circuitry -> Housing: 2
+2025-02-18 16:31:16,315 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Control Circuitry -> Control Circuitry: 1
+2025-02-18 16:31:16,316 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Row 7 complete: [2, 2, 2, 2, 2, 2, 1]
+2025-02-18 16:31:16,317 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-18 16:31:16,318 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Final Matrix:
+[[1, 1, 1, 2, 1, 2, 1], [1, 1, 2, 2, 2, 2, 2], [2, 2, 1, 2, 2, 2, 2], [2, 2, 2, 1, 2, 2, 2], [2, 2, 2, 2, 1, 2, 1], [2, 2, 2, 2, 2, 1, 2], [2, 2, 2, 2, 2, 2, 1]]
+2025-02-18 16:31:16,319 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-18 16:31:16,320 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Matrix from response.
+2025-02-18 16:31:16,321 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - At run 3/5
+2025-02-18 16:31:16,322 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Matrix: [[1, 1, 1, 2, 1, 2, 1], [1, 1, 2, 2, 2, 2, 2], [2, 2, 1, 2, 2, 2, 2], [2, 2, 2, 1, 2, 2, 2], [2, 2, 2, 2, 1, 2, 1], [2, 2, 2, 2, 2, 1, 2], [2, 2, 2, 2, 2, 2, 1]]
+2025-02-18 16:31:16,323 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-18 16:31:26,334 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Run 4/5
+2025-02-18 16:31:26,369 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - DEBUG: Initializing LLMInference.
+2025-02-18 16:31:26,370 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Initialized LLM inference for system: power screwdriver
+2025-02-18 16:31:26,371 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Initialized DSM for system: power screwdriver
+2025-02-18 16:31:26,372 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Inference model: gpt-4o-2024-11-20
+2025-02-18 16:31:26,372 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Motor -> Motor: 1
+2025-02-18 16:31:27,386 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: Yes
+2025-02-18 16:31:27,387 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Motor -> Gearbox
+2025-02-18 16:31:27,388 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: Yes
+2025-02-18 16:31:27,389 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Motor -> Gearbox: 1
+2025-02-18 16:31:29,227 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:31:29,228 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Motor -> Chuck
+2025-02-18 16:31:29,229 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:31:29,230 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Motor -> Chuck: 2
+2025-02-18 16:31:29,821 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: Yes
+2025-02-18 16:31:29,822 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Motor -> Trigger Mechanism
+2025-02-18 16:31:29,823 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: Yes
+2025-02-18 16:31:29,824 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Motor -> Trigger Mechanism: 1
+2025-02-18 16:31:30,250 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: Yes
+2025-02-18 16:31:30,251 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Motor -> Battery Pack
+2025-02-18 16:31:30,252 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: Yes
+2025-02-18 16:31:30,253 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Motor -> Battery Pack: 1
+2025-02-18 16:31:30,716 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:31:30,717 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Motor -> Housing
+2025-02-18 16:31:30,718 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:31:30,718 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Motor -> Housing: 2
+2025-02-18 16:31:31,095 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: Yes
+2025-02-18 16:31:31,095 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Motor -> Control Circuitry
+2025-02-18 16:31:31,096 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: Yes
+2025-02-18 16:31:31,098 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Motor -> Control Circuitry: 1
+2025-02-18 16:31:31,098 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Row 1 complete: [1, 1, 2, 1, 1, 2, 1]
+2025-02-18 16:31:31,099 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-18 16:31:31,508 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: Yes
+2025-02-18 16:31:31,509 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Gearbox -> Motor
+2025-02-18 16:31:31,528 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: Yes
+2025-02-18 16:31:31,529 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Gearbox -> Motor: 1
+2025-02-18 16:31:31,530 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Gearbox -> Gearbox: 1
+2025-02-18 16:31:32,184 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:31:32,185 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Gearbox -> Chuck
+2025-02-18 16:31:32,186 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:31:32,188 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Gearbox -> Chuck: 2
+2025-02-18 16:31:32,650 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:31:32,651 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Gearbox -> Trigger Mechanism
+2025-02-18 16:31:32,652 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:31:32,653 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Gearbox -> Trigger Mechanism: 2
+2025-02-18 16:31:33,198 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:31:33,199 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Gearbox -> Battery Pack
+2025-02-18 16:31:33,200 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:31:33,201 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Gearbox -> Battery Pack: 2
+2025-02-18 16:31:33,717 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:31:33,718 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Gearbox -> Housing
+2025-02-18 16:31:33,719 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:31:33,720 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Gearbox -> Housing: 2
+2025-02-18 16:31:34,210 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:31:34,211 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Gearbox -> Control Circuitry
+2025-02-18 16:31:34,212 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:31:34,214 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Gearbox -> Control Circuitry: 2
+2025-02-18 16:31:34,215 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Row 2 complete: [1, 1, 2, 2, 2, 2, 2]
+2025-02-18 16:31:34,215 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-18 16:31:34,743 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:31:34,744 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Chuck -> Motor
+2025-02-18 16:31:34,745 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:31:34,746 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Chuck -> Motor: 2
+2025-02-18 16:31:35,776 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:31:35,777 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Chuck -> Gearbox
+2025-02-18 16:31:35,778 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:31:35,779 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Chuck -> Gearbox: 2
+2025-02-18 16:31:35,780 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Chuck -> Chuck: 1
+2025-02-18 16:31:36,397 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:31:36,398 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Chuck -> Trigger Mechanism
+2025-02-18 16:31:36,399 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:31:36,400 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Chuck -> Trigger Mechanism: 2
+2025-02-18 16:31:36,949 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:31:36,950 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Chuck -> Battery Pack
+2025-02-18 16:31:36,969 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:31:36,970 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Chuck -> Battery Pack: 2
+2025-02-18 16:31:37,623 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:31:37,624 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Chuck -> Housing
+2025-02-18 16:31:37,625 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:31:37,625 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Chuck -> Housing: 2
+2025-02-18 16:31:38,464 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:31:38,465 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Chuck -> Control Circuitry
+2025-02-18 16:31:38,465 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:31:38,467 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Chuck -> Control Circuitry: 2
+2025-02-18 16:31:38,467 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Row 3 complete: [2, 2, 1, 2, 2, 2, 2]
+2025-02-18 16:31:38,468 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-18 16:31:38,895 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:31:38,896 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Trigger Mechanism -> Motor
+2025-02-18 16:31:38,897 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:31:38,898 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Trigger Mechanism -> Motor: 2
+2025-02-18 16:31:39,551 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:31:39,552 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Trigger Mechanism -> Gearbox
+2025-02-18 16:31:39,553 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:31:39,554 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Trigger Mechanism -> Gearbox: 2
+2025-02-18 16:31:40,169 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:31:40,170 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Trigger Mechanism -> Chuck
+2025-02-18 16:31:40,171 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:31:40,172 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Trigger Mechanism -> Chuck: 2
+2025-02-18 16:31:40,173 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Trigger Mechanism -> Trigger Mechanism: 1
+2025-02-18 16:31:40,759 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:31:40,760 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Trigger Mechanism -> Battery Pack
+2025-02-18 16:31:40,761 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:31:40,761 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Trigger Mechanism -> Battery Pack: 2
+2025-02-18 16:31:41,657 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:31:41,657 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Trigger Mechanism -> Housing
+2025-02-18 16:31:41,659 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:31:41,659 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Trigger Mechanism -> Housing: 2
+2025-02-18 16:31:42,668 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:31:42,669 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Trigger Mechanism -> Control Circuitry
+2025-02-18 16:31:42,670 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:31:42,671 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Trigger Mechanism -> Control Circuitry: 2
+2025-02-18 16:31:42,671 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Row 4 complete: [2, 2, 2, 1, 2, 2, 2]
+2025-02-18 16:31:42,673 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-18 16:31:46,953 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:31:46,954 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Battery Pack -> Motor
+2025-02-18 16:31:46,955 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:31:46,956 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Battery Pack -> Motor: 2
+2025-02-18 16:31:47,665 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:31:47,666 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Battery Pack -> Gearbox
+2025-02-18 16:31:47,685 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:31:47,686 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Battery Pack -> Gearbox: 2
+2025-02-18 16:31:48,904 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:31:48,905 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Battery Pack -> Chuck
+2025-02-18 16:31:48,906 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:31:48,906 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Battery Pack -> Chuck: 2
+2025-02-18 16:31:49,436 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:31:49,437 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Battery Pack -> Trigger Mechanism
+2025-02-18 16:31:49,438 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:31:49,438 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Battery Pack -> Trigger Mechanism: 2
+2025-02-18 16:31:49,440 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Battery Pack -> Battery Pack: 1
+2025-02-18 16:31:50,942 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:31:50,942 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Battery Pack -> Housing
+2025-02-18 16:31:50,943 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:31:50,944 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Battery Pack -> Housing: 2
+2025-02-18 16:31:51,258 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: Yes
+2025-02-18 16:31:51,259 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Battery Pack -> Control Circuitry
+2025-02-18 16:31:51,260 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: Yes
+2025-02-18 16:31:51,260 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Battery Pack -> Control Circuitry: 1
+2025-02-18 16:31:51,261 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Row 5 complete: [2, 2, 2, 2, 1, 2, 1]
+2025-02-18 16:31:51,263 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-18 16:31:51,837 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:31:51,837 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Housing -> Motor
+2025-02-18 16:31:51,838 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:31:51,839 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Housing -> Motor: 2
+2025-02-18 16:31:53,148 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:31:53,149 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Housing -> Gearbox
+2025-02-18 16:31:53,168 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:31:53,169 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Housing -> Gearbox: 2
+2025-02-18 16:31:53,970 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:31:53,971 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Housing -> Chuck
+2025-02-18 16:31:53,972 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:31:53,973 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Housing -> Chuck: 2
+2025-02-18 16:31:55,185 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:31:55,186 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Housing -> Trigger Mechanism
+2025-02-18 16:31:55,187 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:31:55,188 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Housing -> Trigger Mechanism: 2
+2025-02-18 16:32:01,377 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:32:01,378 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Housing -> Battery Pack
+2025-02-18 16:32:01,380 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:32:01,380 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Housing -> Battery Pack: 2
+2025-02-18 16:32:01,381 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Housing -> Housing: 1
+2025-02-18 16:32:01,957 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:32:01,958 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Housing -> Control Circuitry
+2025-02-18 16:32:01,959 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:32:01,960 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Housing -> Control Circuitry: 2
+2025-02-18 16:32:01,961 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Row 6 complete: [2, 2, 2, 2, 2, 1, 2]
+2025-02-18 16:32:01,962 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-18 16:32:02,379 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:32:02,380 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Control Circuitry -> Motor
+2025-02-18 16:32:02,381 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:32:02,382 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Control Circuitry -> Motor: 2
+2025-02-18 16:32:02,972 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:32:02,972 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Control Circuitry -> Gearbox
+2025-02-18 16:32:02,973 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:32:02,974 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Control Circuitry -> Gearbox: 2
+2025-02-18 16:32:03,688 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:32:03,689 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Control Circuitry -> Chuck
+2025-02-18 16:32:03,690 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:32:03,691 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Control Circuitry -> Chuck: 2
+2025-02-18 16:32:04,097 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:32:04,098 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Control Circuitry -> Trigger Mechanism
+2025-02-18 16:32:04,099 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:32:04,100 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Control Circuitry -> Trigger Mechanism: 2
+2025-02-18 16:32:04,693 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:32:04,694 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Control Circuitry -> Battery Pack
+2025-02-18 16:32:04,695 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:32:04,696 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Control Circuitry -> Battery Pack: 2
+2025-02-18 16:32:05,233 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:32:05,234 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Control Circuitry -> Housing
+2025-02-18 16:32:05,235 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:32:05,236 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Control Circuitry -> Housing: 2
+2025-02-18 16:32:05,236 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Control Circuitry -> Control Circuitry: 1
+2025-02-18 16:32:05,237 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Row 7 complete: [2, 2, 2, 2, 2, 2, 1]
+2025-02-18 16:32:05,238 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-18 16:32:05,240 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Final Matrix:
+[[1, 1, 2, 1, 1, 2, 1], [1, 1, 2, 2, 2, 2, 2], [2, 2, 1, 2, 2, 2, 2], [2, 2, 2, 1, 2, 2, 2], [2, 2, 2, 2, 1, 2, 1], [2, 2, 2, 2, 2, 1, 2], [2, 2, 2, 2, 2, 2, 1]]
+2025-02-18 16:32:05,241 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-18 16:32:05,242 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Matrix from response.
+2025-02-18 16:32:05,243 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - At run 4/5
+2025-02-18 16:32:05,244 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Matrix: [[1, 1, 2, 1, 1, 2, 1], [1, 1, 2, 2, 2, 2, 2], [2, 2, 1, 2, 2, 2, 2], [2, 2, 2, 1, 2, 2, 2], [2, 2, 2, 2, 1, 2, 1], [2, 2, 2, 2, 2, 1, 2], [2, 2, 2, 2, 2, 2, 1]]
+2025-02-18 16:32:05,244 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-18 16:32:15,256 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Run 5/5
+2025-02-18 16:32:15,291 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - DEBUG: Initializing LLMInference.
+2025-02-18 16:32:15,292 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Initialized LLM inference for system: power screwdriver
+2025-02-18 16:32:15,292 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Initialized DSM for system: power screwdriver
+2025-02-18 16:32:15,293 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Inference model: gpt-4o-2024-11-20
+2025-02-18 16:32:15,294 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Motor -> Motor: 1
+2025-02-18 16:32:15,934 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: Yes
+2025-02-18 16:32:15,935 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Motor -> Gearbox
+2025-02-18 16:32:15,936 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: Yes
+2025-02-18 16:32:15,937 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Motor -> Gearbox: 1
+2025-02-18 16:32:16,318 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: Yes
+2025-02-18 16:32:16,319 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Motor -> Chuck
+2025-02-18 16:32:16,320 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: Yes
+2025-02-18 16:32:16,321 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Motor -> Chuck: 1
+2025-02-18 16:32:16,813 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: Yes
+2025-02-18 16:32:16,814 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Motor -> Trigger Mechanism
+2025-02-18 16:32:16,815 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: Yes
+2025-02-18 16:32:16,816 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Motor -> Trigger Mechanism: 1
+2025-02-18 16:32:17,310 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: Yes
+2025-02-18 16:32:17,311 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Motor -> Battery Pack
+2025-02-18 16:32:17,312 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: Yes
+2025-02-18 16:32:17,313 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Motor -> Battery Pack: 1
+2025-02-18 16:32:17,862 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:32:17,863 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Motor -> Housing
+2025-02-18 16:32:17,864 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:32:17,865 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Motor -> Housing: 2
+2025-02-18 16:32:18,288 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:32:18,289 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Motor -> Control Circuitry
+2025-02-18 16:32:18,290 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:32:18,291 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Motor -> Control Circuitry: 2
+2025-02-18 16:32:18,291 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Row 1 complete: [1, 1, 1, 1, 1, 2, 2]
+2025-02-18 16:32:18,293 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-18 16:32:18,655 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: Yes
+2025-02-18 16:32:18,656 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Gearbox -> Motor
+2025-02-18 16:32:18,657 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: Yes
+2025-02-18 16:32:18,658 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Gearbox -> Motor: 1
+2025-02-18 16:32:18,659 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Gearbox -> Gearbox: 1
+2025-02-18 16:32:19,448 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:32:19,448 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Gearbox -> Chuck
+2025-02-18 16:32:19,449 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:32:19,450 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Gearbox -> Chuck: 2
+2025-02-18 16:32:19,936 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:32:19,937 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Gearbox -> Trigger Mechanism
+2025-02-18 16:32:19,938 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:32:19,939 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Gearbox -> Trigger Mechanism: 2
+2025-02-18 16:32:20,368 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:32:20,369 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Gearbox -> Battery Pack
+2025-02-18 16:32:20,388 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:32:20,389 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Gearbox -> Battery Pack: 2
+2025-02-18 16:32:20,831 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:32:20,832 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Gearbox -> Housing
+2025-02-18 16:32:20,833 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:32:20,834 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Gearbox -> Housing: 2
+2025-02-18 16:32:21,721 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:32:21,722 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Gearbox -> Control Circuitry
+2025-02-18 16:32:21,723 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:32:21,723 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Gearbox -> Control Circuitry: 2
+2025-02-18 16:32:21,724 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Row 2 complete: [1, 1, 2, 2, 2, 2, 2]
+2025-02-18 16:32:21,726 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-18 16:32:22,190 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:32:22,191 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Chuck -> Motor
+2025-02-18 16:32:22,192 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:32:22,193 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Chuck -> Motor: 2
+2025-02-18 16:32:22,569 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:32:22,570 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Chuck -> Gearbox
+2025-02-18 16:32:22,571 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:32:22,572 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Chuck -> Gearbox: 2
+2025-02-18 16:32:22,573 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Chuck -> Chuck: 1
+2025-02-18 16:32:23,183 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:32:23,184 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Chuck -> Trigger Mechanism
+2025-02-18 16:32:23,185 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:32:23,185 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Chuck -> Trigger Mechanism: 2
+2025-02-18 16:32:23,774 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:32:23,775 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Chuck -> Battery Pack
+2025-02-18 16:32:23,776 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:32:23,777 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Chuck -> Battery Pack: 2
+2025-02-18 16:32:24,423 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:32:24,424 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Chuck -> Housing
+2025-02-18 16:32:24,425 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:32:24,426 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Chuck -> Housing: 2
+2025-02-18 16:32:25,103 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:32:25,104 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Chuck -> Control Circuitry
+2025-02-18 16:32:25,105 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:32:25,106 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Chuck -> Control Circuitry: 2
+2025-02-18 16:32:25,107 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Row 3 complete: [2, 2, 1, 2, 2, 2, 2]
+2025-02-18 16:32:25,108 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-18 16:32:25,924 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:32:25,925 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Trigger Mechanism -> Motor
+2025-02-18 16:32:25,944 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:32:25,945 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Trigger Mechanism -> Motor: 2
+2025-02-18 16:32:26,680 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:32:26,681 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Trigger Mechanism -> Gearbox
+2025-02-18 16:32:26,682 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:32:26,683 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Trigger Mechanism -> Gearbox: 2
+2025-02-18 16:32:27,684 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:32:27,685 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Trigger Mechanism -> Chuck
+2025-02-18 16:32:27,686 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:32:27,687 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Trigger Mechanism -> Chuck: 2
+2025-02-18 16:32:27,687 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Trigger Mechanism -> Trigger Mechanism: 1
+2025-02-18 16:32:28,401 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:32:28,402 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Trigger Mechanism -> Battery Pack
+2025-02-18 16:32:28,403 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:32:28,404 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Trigger Mechanism -> Battery Pack: 2
+2025-02-18 16:32:29,180 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:32:29,181 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Trigger Mechanism -> Housing
+2025-02-18 16:32:29,182 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:32:29,183 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Trigger Mechanism -> Housing: 2
+2025-02-18 16:32:29,891 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:32:29,892 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Trigger Mechanism -> Control Circuitry
+2025-02-18 16:32:29,893 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:32:29,894 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Trigger Mechanism -> Control Circuitry: 2
+2025-02-18 16:32:29,895 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Row 4 complete: [2, 2, 2, 1, 2, 2, 2]
+2025-02-18 16:32:29,896 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-18 16:32:30,797 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: Yes
+2025-02-18 16:32:30,798 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Battery Pack -> Motor
+2025-02-18 16:32:30,798 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: Yes
+2025-02-18 16:32:30,799 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Battery Pack -> Motor: 1
+2025-02-18 16:32:31,366 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:32:31,367 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Battery Pack -> Gearbox
+2025-02-18 16:32:31,386 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:32:31,387 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Battery Pack -> Gearbox: 2
+2025-02-18 16:32:31,872 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:32:31,873 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Battery Pack -> Chuck
+2025-02-18 16:32:31,874 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:32:31,875 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Battery Pack -> Chuck: 2
+2025-02-18 16:32:35,130 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:32:35,131 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Battery Pack -> Trigger Mechanism
+2025-02-18 16:32:35,132 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:32:35,133 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Battery Pack -> Trigger Mechanism: 2
+2025-02-18 16:32:35,134 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Battery Pack -> Battery Pack: 1
+2025-02-18 16:32:35,843 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:32:35,844 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Battery Pack -> Housing
+2025-02-18 16:32:35,845 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:32:35,846 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Battery Pack -> Housing: 2
+2025-02-18 16:32:36,374 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: Yes
+2025-02-18 16:32:36,375 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Battery Pack -> Control Circuitry
+2025-02-18 16:32:36,394 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: Yes
+2025-02-18 16:32:36,395 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Battery Pack -> Control Circuitry: 1
+2025-02-18 16:32:36,396 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Row 5 complete: [1, 2, 2, 2, 1, 2, 1]
+2025-02-18 16:32:36,397 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-18 16:32:36,885 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:32:36,886 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Housing -> Motor
+2025-02-18 16:32:36,887 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:32:36,888 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Housing -> Motor: 2
+2025-02-18 16:32:37,402 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:32:37,403 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Housing -> Gearbox
+2025-02-18 16:32:37,403 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:32:37,404 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Housing -> Gearbox: 2
+2025-02-18 16:32:38,682 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:32:38,683 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Housing -> Chuck
+2025-02-18 16:32:38,684 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:32:38,685 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Housing -> Chuck: 2
+2025-02-18 16:32:39,266 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:32:39,267 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Housing -> Trigger Mechanism
+2025-02-18 16:32:39,268 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:32:39,268 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Housing -> Trigger Mechanism: 2
+2025-02-18 16:32:39,746 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:32:39,747 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Housing -> Battery Pack
+2025-02-18 16:32:39,748 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:32:39,748 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Housing -> Battery Pack: 2
+2025-02-18 16:32:39,750 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Housing -> Housing: 1
+2025-02-18 16:32:40,418 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:32:40,419 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Housing -> Control Circuitry
+2025-02-18 16:32:40,420 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:32:40,421 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Housing -> Control Circuitry: 2
+2025-02-18 16:32:40,422 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Row 6 complete: [2, 2, 2, 2, 2, 1, 2]
+2025-02-18 16:32:40,424 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-18 16:32:40,953 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:32:40,954 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Control Circuitry -> Motor
+2025-02-18 16:32:40,955 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:32:40,956 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Control Circuitry -> Motor: 2
+2025-02-18 16:32:41,469 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:32:41,470 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Control Circuitry -> Gearbox
+2025-02-18 16:32:41,489 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:32:41,490 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Control Circuitry -> Gearbox: 2
+2025-02-18 16:32:42,432 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:32:42,433 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Control Circuitry -> Chuck
+2025-02-18 16:32:42,434 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:32:42,435 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Control Circuitry -> Chuck: 2
+2025-02-18 16:32:42,928 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:32:42,929 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Control Circuitry -> Trigger Mechanism
+2025-02-18 16:32:42,930 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:32:42,931 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Control Circuitry -> Trigger Mechanism: 2
+2025-02-18 16:32:43,616 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:32:43,617 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Control Circuitry -> Battery Pack
+2025-02-18 16:32:43,617 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:32:43,619 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Control Circuitry -> Battery Pack: 2
+2025-02-18 16:32:44,267 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:32:44,268 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Identifying proximity relationship: Control Circuitry -> Housing
+2025-02-18 16:32:44,269 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:32:44,270 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Control Circuitry -> Housing: 2
+2025-02-18 16:32:44,270 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Relationship Control Circuitry -> Control Circuitry: 1
+2025-02-18 16:32:44,271 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Row 7 complete: [2, 2, 2, 2, 2, 2, 1]
+2025-02-18 16:32:44,272 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-18 16:32:44,272 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Final Matrix:
+[[1, 1, 1, 1, 1, 2, 2], [1, 1, 2, 2, 2, 2, 2], [2, 2, 1, 2, 2, 2, 2], [2, 2, 2, 1, 2, 2, 2], [1, 2, 2, 2, 1, 2, 1], [2, 2, 2, 2, 2, 1, 2], [2, 2, 2, 2, 2, 2, 1]]
+2025-02-18 16:32:44,273 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-18 16:32:44,273 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Matrix from response.
+2025-02-18 16:32:44,274 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - At run 5/5
+2025-02-18 16:32:44,275 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Matrix: [[1, 1, 1, 1, 1, 2, 2], [1, 1, 2, 2, 2, 2, 2], [2, 2, 1, 2, 2, 2, 2], [2, 2, 2, 1, 2, 2, 2], [1, 2, 2, 2, 1, 2, 1], [2, 2, 2, 2, 2, 1, 2], [2, 2, 2, 2, 2, 2, 1]]
+2025-02-18 16:32:44,275 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - --------------------------------------------------
+2025-02-18 16:32:54,286 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Duration of reference combination {}: 0:03:20.234822
+2025-02-18 16:32:54,287 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2025-02-18 16:32:54,288 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - 
+==================================================
+2025-02-18 16:32:54,288 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Average DSM Matrix for model: gpt-4o-2024-11-20
+2025-02-18 16:32:54,289 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - End of log reference type(s): ['baseline']
+2025-02-18 16:32:54,291 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Saving results to: ../output/experiment_llm_gpt-4o-2024-11-20_20250218-162934/llm_refs_baseline
+2025-02-18 16:32:54,293 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - 
+Average Matrix:
+                   Motor  Gearbox  Chuck  Trigger Mechanism  Battery Pack  Housing  Control Circuitry
+Motor                  1        1      1                  1             1        1                  1
+Gearbox                1        1      1                  1             1        1                  1
+Chuck                  1        1      1                  1             1        1                  1
+Trigger Mechanism      1        1      1                  1             1        1                  1
+Battery Pack           1        1      1                  1             1        1                  1
+Housing                1        1      1                  1             1        1                  1
+Control Circuitry      1        1      1                  1             1        1                  1
+2025-02-18 16:32:54,294 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - 
+Components: ['Motor', 'Gearbox', 'Chuck', 'Trigger Mechanism', 'Battery Pack', 'Housing', 'Control Circuitry']
+2025-02-18 16:32:54,294 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - ==================================================
+
+2025-02-18 16:32:54,296 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Saved CSV to: ../output/experiment_llm_gpt-4o-2024-11-20_20250218-162934/llm_refs_baseline/average_matrix_20250218-162934.csv
+2025-02-18 16:32:54,298 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Saved JSON to: ../output/experiment_llm_gpt-4o-2024-11-20_20250218-162934/llm_refs_baseline/detailed_results_20250218-162934.json
+2025-02-18 16:32:54,688 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Saved visualization to: ../output/experiment_llm_gpt-4o-2024-11-20_20250218-162934/llm_refs_baseline/average_matrix_20250218-162934.png
+2025-02-18 16:32:54,689 - DSM_MultiModelExp_llm_gpt-4o-2024-11-20 - INFO - Duration of experiment for gpt-4o-2024-11-20 in llm inference type: 0:03:20

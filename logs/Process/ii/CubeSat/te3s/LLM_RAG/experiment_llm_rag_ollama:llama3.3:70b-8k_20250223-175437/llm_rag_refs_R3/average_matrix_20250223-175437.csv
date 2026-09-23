@@ -1,0 +1,7 @@
+,Payload,Power System,Communication System,Structural System,Thermal Control System,Propulsion System
+Payload,1,1,1,1,0,0
+Power System,1,1,1,1,0,0
+Communication System,1,1,1,1,0,0
+Structural System,1,1,1,1,0,0
+Thermal Control System,0,0,0,0,1,0
+Propulsion System,0,0,0,0,0,1

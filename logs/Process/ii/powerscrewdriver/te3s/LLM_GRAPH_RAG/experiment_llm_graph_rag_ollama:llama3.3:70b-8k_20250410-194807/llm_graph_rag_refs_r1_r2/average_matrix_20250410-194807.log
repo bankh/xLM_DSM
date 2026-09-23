@@ -1,0 +1,595 @@
+2025-04-11 03:31:21,260 - DSM_None_None_ - INFO - Resetting GPUs...
+2025-04-11 03:31:43,096 - DSM_None_None_ - INFO - Running Analysis For:
+2025-04-11 03:31:43,097 - DSM_None_None_ - INFO -   Product: powerscrewdriver
+2025-04-11 03:31:43,098 - DSM_None_None_ - INFO -   Model: ollama:llama3.3:70b-8k
+2025-04-11 03:31:43,099 - DSM_None_None_ - INFO -   Type: LLM_GRAPH_RAG
+2025-04-11 03:31:43,100 - DSM_None_None_ - INFO -   Reference: r1_r2
+2025-04-11 03:31:43,101 - DSM_None_None_ - INFO -   Relationship: whole-part
+2025-04-11 03:31:43,102 - DSM_None_None_ - INFO -   Ground Truth Path: xLM_DSM_wip/logs/Process/gt_powerscrewdriver.csv
+2025-04-11 03:31:43,104 - DSM_None_None_ - INFO -   Avg Pred Path: xLM_DSM_wip/logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:llama3.3:70b-8k_20250410-194807/llm_graph_rag_refs_r1_r2/average_matrix_20250410-194807.csv
+2025-04-11 03:31:43,104 - DSM_None_None_ - INFO -   Indiv JSON Path: xLM_DSM_wip/logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:llama3.3:70b-8k_20250410-194807/llm_graph_rag_refs_r1_r2/average_matrix_20250410-194807.json
+2025-04-11 03:31:43,110 - DSM_None_None_ - INFO - Loading individual matrices from xLM_DSM_wip/logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:llama3.3:70b-8k_20250410-194807/llm_graph_rag_refs_r1_r2/average_matrix_20250410-194807.json
+2025-04-11 03:31:43,111 - DSM_None_None_ - INFO - Loaded 5 individual matrices.
+2025-04-11 03:31:43,112 - DSM_None_None_ - INFO - Calculating Raw Metrics...
+2025-04-11 03:31:43,164 - DSM_None_None_ - INFO - Calculated Raw Metrics Mean/StdDev from runs.
+2025-04-11 03:31:43,165 - DSM_None_None_ - INFO - Calculating Component Similarity based on Average Matrix...
+2025-04-11 03:31:43,823 - DSM_None_None_ - INFO - Attempting Component Mapping based on Average Matrix...
+2025-04-11 03:31:43,824 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-04-11 03:31:43,825 - DSM_None_None_ - INFO - Extracting model from path: xLM_DSM_wip/logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:llama3.3:70b-8k_20250410-194807/llm_graph_rag_refs_r1_r2/average_matrix_20250410-194807.csv
+2025-04-11 03:31:43,825 - DSM_None_None_ - INFO - Extracted model: llama3.3:70b-8k
+2025-04-11 03:31:43,831 - DSM_None_None_ - INFO - Automatic high-similarity match: Motor -> Motor (similarity: 1.000)
+2025-04-11 03:31:43,854 - DSM_None_None_ - INFO - Prompt: 
+You are an expert matching engine for cyber-physical system systems. Your task is to determine the optimal one-to-one mapping between remaining ground truth and predicted major components.
+
+Remaining Ground Truth Components:
+['Bit', 'Transmission', 'Electrical System', 'Battery Holder', 'Housing', 'External Environment']
+
+Remaining Predicted Components:
+['Battery', 'Gearbox', 'Chuck', 'Handle', 'Switch', 'Circuit Board']
+
+Note: The following components have already been automatically matched due to high similarity (>0.8):
+['Motor -> Motor']
+
+Available Matches for Remaining Components (above 0.3 similarity threshold):
+
+Bit potential matches:
+- Battery (similarity: 0.425)
+- Chuck (similarity: 0.321)
+- Handle (similarity: 0.403)
+- Switch (similarity: 0.401)
+
+Transmission potential matches:
+- Battery (similarity: 0.386)
+- Gearbox (similarity: 0.524)
+- Chuck (similarity: 0.310)
+- Handle (similarity: 0.407)
+- Switch (similarity: 0.535)
+
+Electrical System potential matches:
+- Battery (similarity: 0.436)
+- Switch (similarity: 0.321)
+- Circuit Board (similarity: 0.513)
+
+Battery Holder potential matches:
+- Battery (similarity: 0.648)
+- Gearbox (similarity: 0.320)
+- Handle (similarity: 0.380)
+- Circuit Board (similarity: 0.433)
+
+Housing potential matches:
+- Handle (similarity: 0.346)
+
+External Environment potential matches:
+
+
+Instructions:
+1. Evaluate each pairing based on:
+   - Embedding similarity scores
+   - Functional equivalence at the core architecture level
+   - System-level whole-part relationships
+   - Overall coherence within the cyber-physical system
+2. Each predicted component may only be matched once
+3. Each ground truth component may receive at most one match
+4. Do not include any text other than what is specified below
+5. Only match the remaining components - do not rematch already matched components
+
+Output Format (exactly as shown):
+--------------------------------------------------
+MAPPINGS:
+[ground truth 1] -> [predicted 1] 
+[ground truth 2] -> [predicted 2]
+...
+REASON: [brief explanation focusing on functional equivalence]
+--------------------------------------------------
+2025-04-11 03:31:43,855 - DSM_None_None_ - INFO - Attempting to use model: llama3.3:70b-8k
+2025-04-11 03:31:43,856 - DSM_None_None_ - INFO - Using Ollama path
+2025-04-11 03:31:43,856 - DSM_None_None_ - INFO - Model name: llama3.3:70b-8k
+2025-04-11 03:31:43,857 - DSM_None_None_ - INFO - Prompt length: 2118
+2025-04-11 03:32:10,305 - DSM_None_None_ - INFO - Response status code: 200
+2025-04-11 03:32:10,306 - DSM_None_None_ - INFO - API call succeeded
+2025-04-11 03:32:10,307 - DSM_None_None_ - INFO - Got response: --------------------------------------------------
+MAPPINGS:
+Bit -> Chuck 
+Transmission -> Gearbox 
+...
+2025-04-11 03:32:10,308 - DSM_None_None_ - INFO - 
+Final Mappings:
+2025-04-11 03:32:10,308 - DSM_None_None_ - INFO - Automatic high-similarity matches: {'Motor': 'Motor'}
+2025-04-11 03:32:10,309 - DSM_None_None_ - INFO - LLM-suggested matches: {'Bit': 'Chuck', 'Transmission': 'Gearbox', 'Electrical System': 'Circuit Board', 'Battery Holder': 'Battery', 'Housing': 'Handle', 'External Environment': 'Switch'}
+2025-04-11 03:32:10,310 - DSM_None_None_ - INFO - Initial mapping: {'Motor': 'Motor', 'Bit': 'Chuck', 'Transmission': 'Gearbox', 'Electrical System': 'Circuit Board', 'Battery Holder': 'Battery', 'Housing': 'Handle', 'External Environment': 'Switch'}
+2025-04-11 03:32:10,316 - DSM_None_None_ - INFO - Skipping mapping for GT 'External Environment' -> Pred 'Switch': Similarity 0.238 <= threshold 0.3.
+2025-04-11 03:32:10,317 - DSM_None_None_ - INFO - Component mapping successful.
+2025-04-11 03:32:10,318 - DSM_None_None_ - INFO - 
+Component Mapping:
+2025-04-11 03:32:10,320 - DSM_None_None_ - INFO -   Ground Truth Component Matched Predicted Component
+0                  Motor                       Motor
+1                    Bit                       Chuck
+2           Transmission                     Gearbox
+3      Electrical System               Circuit Board
+4         Battery Holder                     Battery
+5                Housing                      Handle
+2025-04-11 03:32:10,321 - DSM_None_None_ - INFO - Calculating Aligned Metrics...
+2025-04-11 03:32:10,323 - DSM_None_None_ - INFO - Calculating Aligned Metrics Mean/StdDev from runs...
+2025-04-11 03:32:10,364 - DSM_None_None_ - INFO - Calculated Aligned Metrics Mean/StdDev from runs.
+2025-04-11 03:32:10,364 - DSM_None_None_ - INFO - Calculating Aligned Average Predicted Matrix for heatmap...
+2025-04-11 03:32:10,365 - DSM_None_None_ - INFO - Generating plots...
+2025-04-11 03:32:10,366 - DSM_None_None_ - INFO - Plotting performance metrics...
+2025-04-11 03:32:10,902 - DSM_None_None_ - ERROR - Plotting failed: MetricBarPlotter class likely not defined or imported correctly. name 'logger' is not defined
+2025-04-11 03:32:10,903 - DSM_None_None_ - INFO - 
+--- Results Summary for ollama:llama3.3:70b-8k (r1_r2) ---
+2025-04-11 03:32:10,903 - DSM_None_None_ - INFO - 
+Raw Metrics (Mean ± StdDev):
+2025-04-11 03:32:10,904 - DSM_None_None_ - INFO -   accuracy: 0.5714 ± 0.0000
+2025-04-11 03:32:10,905 - DSM_None_None_ - INFO -   precision: 0.5714 ± 0.0000
+2025-04-11 03:32:10,905 - DSM_None_None_ - INFO -   recall: 0.5714 ± 0.0000
+2025-04-11 03:32:10,906 - DSM_None_None_ - INFO -   f1_score: 0.5714 ± 0.0000
+2025-04-11 03:32:10,907 - DSM_None_None_ - INFO -   edit_distance: 21.0000 ± 0.0000
+2025-04-11 03:32:10,907 - DSM_None_None_ - INFO -   spectral_distance: 0.8868 ± 0.0000
+2025-04-11 03:32:10,909 - DSM_None_None_ - INFO - 
+Aligned Metrics (Mean ± StdDev):
+2025-04-11 03:32:10,910 - DSM_None_None_ - INFO -   accuracy: 0.7778 ± 0.0000
+2025-04-11 03:32:10,910 - DSM_None_None_ - INFO -   precision: 0.7778 ± 0.0000
+2025-04-11 03:32:10,911 - DSM_None_None_ - INFO -   recall: 0.7778 ± 0.0000
+2025-04-11 03:32:10,911 - DSM_None_None_ - INFO -   f1_score: 0.7778 ± 0.0000
+2025-04-11 03:32:10,912 - DSM_None_None_ - INFO -   edit_distance: 8.0000 ± 0.0000
+2025-04-11 03:32:10,913 - DSM_None_None_ - INFO -   spectral_distance: 0.8002 ± 0.0000
+2025-04-11 03:32:10,913 - DSM_None_None_ - INFO - 
+Component Mapping (used for alignment):
+2025-04-11 03:32:10,915 - DSM_None_None_ - INFO -   Ground Truth Component Matched Predicted Component
+0                  Motor                       Motor
+1                    Bit                       Chuck
+2           Transmission                     Gearbox
+3      Electrical System               Circuit Board
+4         Battery Holder                     Battery
+5                Housing                      Handle
+2025-04-11 03:32:10,917 - DSM_None_None_ - INFO - --- End Results Summary ---
+2025-04-11 16:47:35,992 - DSM_None_None_ - INFO - Resetting GPUs...
+2025-04-11 16:47:57,896 - DSM_None_None_ - INFO - Running Analysis For:
+2025-04-11 16:47:57,897 - DSM_None_None_ - INFO -   Product: powerscrewdriver
+2025-04-11 16:47:57,898 - DSM_None_None_ - INFO -   Model: ollama:llama3.3:70b-8k
+2025-04-11 16:47:57,899 - DSM_None_None_ - INFO -   Type: LLM_GRAPH_RAG
+2025-04-11 16:47:57,900 - DSM_None_None_ - INFO -   Reference: r1_r2
+2025-04-11 16:47:57,902 - DSM_None_None_ - INFO -   Relationship: whole-part
+2025-04-11 16:47:57,902 - DSM_None_None_ - INFO -   Ground Truth Path: xLM_DSM_wip/logs/Process/gt_powerscrewdriver.csv
+2025-04-11 16:47:57,904 - DSM_None_None_ - INFO -   Avg Pred Path: xLM_DSM_wip/logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:llama3.3:70b-8k_20250410-194807/llm_graph_rag_refs_r1_r2/average_matrix_20250410-194807.csv
+2025-04-11 16:47:57,905 - DSM_None_None_ - INFO -   Indiv JSON Path: xLM_DSM_wip/logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:llama3.3:70b-8k_20250410-194807/llm_graph_rag_refs_r1_r2/average_matrix_20250410-194807.json
+2025-04-11 16:47:57,910 - DSM_None_None_ - INFO - Loading individual matrices from xLM_DSM_wip/logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:llama3.3:70b-8k_20250410-194807/llm_graph_rag_refs_r1_r2/average_matrix_20250410-194807.json
+2025-04-11 16:47:57,912 - DSM_None_None_ - INFO - Loaded 5 individual matrices.
+2025-04-11 16:47:57,912 - DSM_None_None_ - INFO - Calculating Raw Metrics...
+2025-04-11 16:47:57,966 - DSM_None_None_ - INFO - Calculated Raw Metrics Mean/StdDev from runs.
+2025-04-11 16:47:57,967 - DSM_None_None_ - INFO - Calculating Component Similarity based on Average Matrix...
+2025-04-11 16:47:59,027 - DSM_None_None_ - INFO - Attempting Component Mapping based on Average Matrix...
+2025-04-11 16:47:59,027 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-04-11 16:47:59,028 - DSM_None_None_ - INFO - Extracting model from path: xLM_DSM_wip/logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:llama3.3:70b-8k_20250410-194807/llm_graph_rag_refs_r1_r2/average_matrix_20250410-194807.csv
+2025-04-11 16:47:59,029 - DSM_None_None_ - INFO - Extracted model: llama3.3:70b-8k
+2025-04-11 16:47:59,034 - DSM_None_None_ - INFO - Automatic high-similarity match: Motor -> Motor (similarity: 1.000)
+2025-04-11 16:47:59,055 - DSM_None_None_ - INFO - Prompt: 
+You are an expert matching engine for cyber-physical system systems. Your task is to determine the optimal one-to-one mapping between remaining ground truth and predicted major components.
+
+Remaining Ground Truth Components:
+['Bit', 'Transmission', 'Electrical System', 'Battery Holder', 'Housing', 'External Environment']
+
+Remaining Predicted Components:
+['Battery', 'Gearbox', 'Chuck', 'Handle', 'Switch', 'Circuit Board']
+
+Note: The following components have already been automatically matched due to high similarity (>0.8):
+['Motor -> Motor']
+
+Available Matches for Remaining Components (above 0.3 similarity threshold):
+
+Bit potential matches:
+- Battery (similarity: 0.425)
+- Chuck (similarity: 0.321)
+- Handle (similarity: 0.403)
+- Switch (similarity: 0.402)
+
+Transmission potential matches:
+- Battery (similarity: 0.386)
+- Gearbox (similarity: 0.524)
+- Chuck (similarity: 0.310)
+- Handle (similarity: 0.407)
+- Switch (similarity: 0.535)
+
+Electrical System potential matches:
+- Battery (similarity: 0.436)
+- Switch (similarity: 0.321)
+- Circuit Board (similarity: 0.513)
+
+Battery Holder potential matches:
+- Battery (similarity: 0.648)
+- Gearbox (similarity: 0.320)
+- Handle (similarity: 0.380)
+- Circuit Board (similarity: 0.433)
+
+Housing potential matches:
+- Handle (similarity: 0.346)
+
+External Environment potential matches:
+
+
+Instructions:
+1. Evaluate each pairing based on:
+   - Embedding similarity scores
+   - Functional equivalence at the core architecture level
+   - System-level whole-part relationships
+   - Overall coherence within the cyber-physical system
+2. Each predicted component may only be matched once
+3. Each ground truth component may receive at most one match
+4. Do not include any text other than what is specified below
+5. Only match the remaining components - do not rematch already matched components
+
+Output Format (exactly as shown):
+--------------------------------------------------
+MAPPINGS:
+[ground truth 1] -> [predicted 1] 
+[ground truth 2] -> [predicted 2]
+...
+REASON: [brief explanation focusing on functional equivalence]
+--------------------------------------------------
+2025-04-11 16:47:59,056 - DSM_None_None_ - INFO - Attempting to use model: llama3.3:70b-8k
+2025-04-11 16:47:59,057 - DSM_None_None_ - INFO - Using Ollama path
+2025-04-11 16:47:59,057 - DSM_None_None_ - INFO - Model name: llama3.3:70b-8k
+2025-04-11 16:47:59,058 - DSM_None_None_ - INFO - Prompt length: 2118
+2025-04-11 16:48:24,292 - DSM_None_None_ - INFO - Response status code: 200
+2025-04-11 16:48:24,293 - DSM_None_None_ - INFO - API call succeeded
+2025-04-11 16:48:24,294 - DSM_None_None_ - INFO - Got response: --------------------------------------------------
+MAPPINGS:
+Bit -> Chuck 
+Transmission -> Gearbox 
+...
+2025-04-11 16:48:24,295 - DSM_None_None_ - INFO - 
+Final Mappings:
+2025-04-11 16:48:24,296 - DSM_None_None_ - INFO - Automatic high-similarity matches: {'Motor': 'Motor'}
+2025-04-11 16:48:24,297 - DSM_None_None_ - INFO - LLM-suggested matches: {'Bit': 'Chuck', 'Transmission': 'Gearbox', 'Electrical System': 'Circuit Board', 'Battery Holder': 'Battery', 'Housing': 'Handle', 'External Environment': 'Switch'}
+2025-04-11 16:48:24,298 - DSM_None_None_ - INFO - Initial mapping: {'Motor': 'Motor', 'Bit': 'Chuck', 'Transmission': 'Gearbox', 'Electrical System': 'Circuit Board', 'Battery Holder': 'Battery', 'Housing': 'Handle', 'External Environment': 'Switch'}
+2025-04-11 16:48:24,304 - DSM_None_None_ - INFO - Skipping mapping for GT 'External Environment' -> Pred 'Switch': Similarity 0.238 <= threshold 0.3.
+2025-04-11 16:48:24,306 - DSM_None_None_ - INFO - Component mapping successful.
+2025-04-11 16:48:24,307 - DSM_None_None_ - INFO - 
+Component Mapping:
+2025-04-11 16:48:24,309 - DSM_None_None_ - INFO -   Ground Truth Component Matched Predicted Component
+0                  Motor                       Motor
+1                    Bit                       Chuck
+2           Transmission                     Gearbox
+3      Electrical System               Circuit Board
+4         Battery Holder                     Battery
+5                Housing                      Handle
+2025-04-11 16:48:24,310 - DSM_None_None_ - INFO - Calculating Aligned Metrics...
+2025-04-11 16:48:24,313 - DSM_None_None_ - INFO - Calculating Aligned Metrics Mean/StdDev from runs...
+2025-04-11 16:48:24,365 - DSM_None_None_ - INFO - Calculated Aligned Metrics Mean/StdDev from runs.
+2025-04-11 16:48:24,365 - DSM_None_None_ - INFO - Calculating Aligned Average Predicted Matrix for heatmap...
+2025-04-11 16:48:24,367 - DSM_None_None_ - INFO - Generating plots...
+2025-04-11 16:48:24,367 - DSM_None_None_ - INFO - Plotting performance metrics...
+2025-04-11 16:48:24,921 - DSM_None_None_ - INFO - Saved plot to xLM_DSM_wip/logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:llama3.3:70b-8k_20250410-194807/llm_graph_rag_refs_r1_r2/plots/performance_metrics_with_stddev.png
+2025-04-11 16:48:25,038 - DSM_None_None_ - INFO - Plotting distance metrics...
+2025-04-11 16:48:25,485 - DSM_None_None_ - INFO - Saved plot to xLM_DSM_wip/logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:llama3.3:70b-8k_20250410-194807/llm_graph_rag_refs_r1_r2/plots/distance_metrics_with_stddev.png
+2025-04-11 16:48:25,592 - DSM_None_None_ - INFO - Plotting matrix comparison...
+2025-04-11 16:48:28,061 - DSM_None_None_ - INFO - Saved plot to xLM_DSM_wip/logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:llama3.3:70b-8k_20250410-194807/llm_graph_rag_refs_r1_r2/plots/matrices_comparison_avg.png
+2025-04-11 16:48:28,495 - DSM_None_None_ - INFO - Plots generated and saved.
+2025-04-11 16:48:28,496 - DSM_None_None_ - INFO - 
+--- Results Summary for ollama:llama3.3:70b-8k (r1_r2) ---
+2025-04-11 16:48:28,497 - DSM_None_None_ - INFO - 
+Raw Metrics (Mean ± StdDev):
+2025-04-11 16:48:28,498 - DSM_None_None_ - INFO -   accuracy: 0.5714 ± 0.0000
+2025-04-11 16:48:28,498 - DSM_None_None_ - INFO -   precision: 0.5714 ± 0.0000
+2025-04-11 16:48:28,499 - DSM_None_None_ - INFO -   recall: 0.5714 ± 0.0000
+2025-04-11 16:48:28,499 - DSM_None_None_ - INFO -   f1_score: 0.5714 ± 0.0000
+2025-04-11 16:48:28,500 - DSM_None_None_ - INFO -   edit_distance: 21.0000 ± 0.0000
+2025-04-11 16:48:28,501 - DSM_None_None_ - INFO -   spectral_distance: 0.8868 ± 0.0000
+2025-04-11 16:48:28,501 - DSM_None_None_ - INFO - 
+Aligned Metrics (Mean ± StdDev):
+2025-04-11 16:48:28,502 - DSM_None_None_ - INFO -   accuracy: 0.7778 ± 0.0000
+2025-04-11 16:48:28,502 - DSM_None_None_ - INFO -   precision: 0.7778 ± 0.0000
+2025-04-11 16:48:28,503 - DSM_None_None_ - INFO -   recall: 0.7778 ± 0.0000
+2025-04-11 16:48:28,504 - DSM_None_None_ - INFO -   f1_score: 0.7778 ± 0.0000
+2025-04-11 16:48:28,504 - DSM_None_None_ - INFO -   edit_distance: 8.0000 ± 0.0000
+2025-04-11 16:48:28,505 - DSM_None_None_ - INFO -   spectral_distance: 0.8002 ± 0.0000
+2025-04-11 16:48:28,506 - DSM_None_None_ - INFO - 
+Component Mapping (used for alignment):
+2025-04-11 16:48:28,507 - DSM_None_None_ - INFO -   Ground Truth Component Matched Predicted Component
+0                  Motor                       Motor
+1                    Bit                       Chuck
+2           Transmission                     Gearbox
+3      Electrical System               Circuit Board
+4         Battery Holder                     Battery
+5                Housing                      Handle
+2025-04-11 16:48:28,508 - DSM_None_None_ - INFO - --- End Results Summary ---
+2025-04-11 17:24:42,383 - DSM_None_None_ - INFO - Resetting GPUs...
+2025-04-11 17:25:04,185 - DSM_None_None_ - INFO - Running Analysis For:
+2025-04-11 17:25:04,187 - DSM_None_None_ - INFO -   Product: powerscrewdriver
+2025-04-11 17:25:04,188 - DSM_None_None_ - INFO -   Model: ollama:llama3.3:70b-8k
+2025-04-11 17:25:04,189 - DSM_None_None_ - INFO -   Type: LLM_GRAPH_RAG
+2025-04-11 17:25:04,189 - DSM_None_None_ - INFO -   Reference: r1_r2
+2025-04-11 17:25:04,190 - DSM_None_None_ - INFO -   Relationship: whole-part
+2025-04-11 17:25:04,191 - DSM_None_None_ - INFO -   Ground Truth Path: xLM_DSM_wip/logs/Process/gt_powerscrewdriver.csv
+2025-04-11 17:25:04,192 - DSM_None_None_ - INFO -   Avg Pred Path: xLM_DSM_wip/logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:llama3.3:70b-8k_20250410-194807/llm_graph_rag_refs_r1_r2/average_matrix_20250410-194807.csv
+2025-04-11 17:25:04,193 - DSM_None_None_ - INFO -   Indiv JSON Path: xLM_DSM_wip/logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:llama3.3:70b-8k_20250410-194807/llm_graph_rag_refs_r1_r2/average_matrix_20250410-194807.json
+2025-04-11 17:25:04,199 - DSM_None_None_ - INFO - Loading individual matrices from xLM_DSM_wip/logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:llama3.3:70b-8k_20250410-194807/llm_graph_rag_refs_r1_r2/average_matrix_20250410-194807.json
+2025-04-11 17:25:04,201 - DSM_None_None_ - INFO - Loaded 5 individual matrices.
+2025-04-11 17:25:04,201 - DSM_None_None_ - INFO - Calculating Raw Metrics...
+2025-04-11 17:25:04,256 - DSM_None_None_ - INFO - Calculated Raw Metrics Mean/StdDev from runs.
+2025-04-11 17:25:04,256 - DSM_None_None_ - INFO - Calculating Component Similarity based on Average Matrix...
+2025-04-11 17:25:05,787 - DSM_None_None_ - INFO - Attempting Component Mapping based on Average Matrix...
+2025-04-11 17:25:05,788 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-04-11 17:25:05,789 - DSM_None_None_ - INFO - Extracting model from path: xLM_DSM_wip/logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:llama3.3:70b-8k_20250410-194807/llm_graph_rag_refs_r1_r2/average_matrix_20250410-194807.csv
+2025-04-11 17:25:05,789 - DSM_None_None_ - INFO - Extracted model: llama3.3:70b-8k
+2025-04-11 17:25:05,794 - DSM_None_None_ - INFO - Automatic high-similarity match: Motor -> Motor (similarity: 1.000)
+2025-04-11 17:25:05,816 - DSM_None_None_ - INFO - Prompt: 
+You are an expert matching engine for cyber-physical system systems. Your task is to determine the optimal one-to-one mapping between remaining ground truth and predicted major components.
+
+Remaining Ground Truth Components:
+['Bit', 'Transmission', 'Electrical System', 'Battery Holder', 'Housing', 'External Environment']
+
+Remaining Predicted Components:
+['Battery', 'Gearbox', 'Chuck', 'Handle', 'Switch', 'Circuit Board']
+
+Note: The following components have already been automatically matched due to high similarity (>0.8):
+['Motor -> Motor']
+
+Available Matches for Remaining Components (above 0.3 similarity threshold):
+
+Bit potential matches:
+- Battery (similarity: 0.425)
+- Chuck (similarity: 0.321)
+- Handle (similarity: 0.403)
+- Switch (similarity: 0.402)
+
+Transmission potential matches:
+- Battery (similarity: 0.386)
+- Gearbox (similarity: 0.524)
+- Chuck (similarity: 0.310)
+- Handle (similarity: 0.407)
+- Switch (similarity: 0.535)
+
+Electrical System potential matches:
+- Battery (similarity: 0.436)
+- Switch (similarity: 0.321)
+- Circuit Board (similarity: 0.513)
+
+Battery Holder potential matches:
+- Battery (similarity: 0.648)
+- Gearbox (similarity: 0.319)
+- Handle (similarity: 0.380)
+- Circuit Board (similarity: 0.433)
+
+Housing potential matches:
+- Handle (similarity: 0.345)
+
+External Environment potential matches:
+
+
+Instructions:
+1. Evaluate each pairing based on:
+   - Embedding similarity scores
+   - Functional equivalence at the core architecture level
+   - System-level whole-part relationships
+   - Overall coherence within the cyber-physical system
+2. Each predicted component may only be matched once
+3. Each ground truth component may receive at most one match
+4. Do not include any text other than what is specified below
+5. Only match the remaining components - do not rematch already matched components
+
+Output Format (exactly as shown):
+--------------------------------------------------
+MAPPINGS:
+[ground truth 1] -> [predicted 1] 
+[ground truth 2] -> [predicted 2]
+...
+REASON: [brief explanation focusing on functional equivalence]
+--------------------------------------------------
+2025-04-11 17:25:05,816 - DSM_None_None_ - INFO - Attempting to use model: llama3.3:70b-8k
+2025-04-11 17:25:05,817 - DSM_None_None_ - INFO - Using Ollama path
+2025-04-11 17:25:05,818 - DSM_None_None_ - INFO - Model name: llama3.3:70b-8k
+2025-04-11 17:25:05,818 - DSM_None_None_ - INFO - Prompt length: 2118
+2025-04-11 17:25:34,108 - DSM_None_None_ - INFO - Response status code: 200
+2025-04-11 17:25:34,109 - DSM_None_None_ - INFO - API call succeeded
+2025-04-11 17:25:34,110 - DSM_None_None_ - INFO - Got response: --------------------------------------------------
+MAPPINGS:
+Bit -> Chuck 
+Transmission -> Gearbox 
+...
+2025-04-11 17:25:34,111 - DSM_None_None_ - INFO - 
+Final Mappings:
+2025-04-11 17:25:34,113 - DSM_None_None_ - INFO - Automatic high-similarity matches: {'Motor': 'Motor'}
+2025-04-11 17:25:34,114 - DSM_None_None_ - INFO - LLM-suggested matches: {'Bit': 'Chuck', 'Transmission': 'Gearbox', 'Electrical System': 'Circuit Board', 'Battery Holder': 'Battery', 'Housing': 'Handle', 'External Environment': 'Switch'}
+2025-04-11 17:25:34,115 - DSM_None_None_ - INFO - Initial mapping: {'Motor': 'Motor', 'Bit': 'Chuck', 'Transmission': 'Gearbox', 'Electrical System': 'Circuit Board', 'Battery Holder': 'Battery', 'Housing': 'Handle', 'External Environment': 'Switch'}
+2025-04-11 17:25:34,122 - DSM_None_None_ - INFO - Skipping mapping for GT 'External Environment' -> Pred 'Switch': Similarity 0.238 <= threshold 0.3.
+2025-04-11 17:25:34,123 - DSM_None_None_ - INFO - Component mapping successful.
+2025-04-11 17:25:34,124 - DSM_None_None_ - INFO - 
+Component Mapping:
+2025-04-11 17:25:34,127 - DSM_None_None_ - INFO -   Ground Truth Component Matched Predicted Component
+0                  Motor                       Motor
+1                    Bit                       Chuck
+2           Transmission                     Gearbox
+3      Electrical System               Circuit Board
+4         Battery Holder                     Battery
+5                Housing                      Handle
+2025-04-11 17:25:34,128 - DSM_None_None_ - INFO - Calculating Aligned Metrics...
+2025-04-11 17:25:34,130 - DSM_None_None_ - INFO - Calculating Aligned Metrics Mean/StdDev from runs...
+2025-04-11 17:25:34,182 - DSM_None_None_ - INFO - Calculated Aligned Metrics Mean/StdDev from runs.
+2025-04-11 17:25:34,183 - DSM_None_None_ - INFO - Calculating Aligned Average Predicted Matrix for heatmap...
+2025-04-11 17:25:34,184 - DSM_None_None_ - INFO - Generating plots...
+2025-04-11 17:25:34,184 - DSM_None_None_ - INFO - Plotting performance metrics...
+2025-04-11 17:25:34,777 - DSM_None_None_ - INFO - Saved plot to xLM_DSM_wip/logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:llama3.3:70b-8k_20250410-194807/llm_graph_rag_refs_r1_r2/plots/performance_metrics_with_stddev.png
+2025-04-11 17:25:34,901 - DSM_None_None_ - INFO - Plotting distance metrics...
+2025-04-11 17:25:35,391 - DSM_None_None_ - INFO - Saved plot to xLM_DSM_wip/logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:llama3.3:70b-8k_20250410-194807/llm_graph_rag_refs_r1_r2/plots/distance_metrics_with_stddev.png
+2025-04-11 17:25:35,498 - DSM_None_None_ - INFO - Plotting matrix comparison...
+2025-04-11 17:25:38,029 - DSM_None_None_ - INFO - Saved plot to xLM_DSM_wip/logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:llama3.3:70b-8k_20250410-194807/llm_graph_rag_refs_r1_r2/plots/matrices_comparison_avg.png
+2025-04-11 17:25:38,469 - DSM_None_None_ - INFO - Plots generated and saved.
+2025-04-11 17:25:38,470 - DSM_None_None_ - INFO - 
+--- Results Summary for ollama:llama3.3:70b-8k (r1_r2) ---
+2025-04-11 17:25:38,471 - DSM_None_None_ - INFO - 
+Raw Metrics (Mean ± StdDev):
+2025-04-11 17:25:38,472 - DSM_None_None_ - INFO -   accuracy: 0.5714 ± 0.0000
+2025-04-11 17:25:38,472 - DSM_None_None_ - INFO -   precision: 0.5714 ± 0.0000
+2025-04-11 17:25:38,474 - DSM_None_None_ - INFO -   recall: 0.5714 ± 0.0000
+2025-04-11 17:25:38,474 - DSM_None_None_ - INFO -   f1_score: 0.5714 ± 0.0000
+2025-04-11 17:25:38,475 - DSM_None_None_ - INFO -   edit_distance: 21.0000 ± 0.0000
+2025-04-11 17:25:38,475 - DSM_None_None_ - INFO -   spectral_distance: 0.8868 ± 0.0000
+2025-04-11 17:25:38,476 - DSM_None_None_ - INFO - 
+Aligned Metrics (Mean ± StdDev):
+2025-04-11 17:25:38,476 - DSM_None_None_ - INFO -   accuracy: 0.7778 ± 0.0000
+2025-04-11 17:25:38,477 - DSM_None_None_ - INFO -   precision: 0.7778 ± 0.0000
+2025-04-11 17:25:38,478 - DSM_None_None_ - INFO -   recall: 0.7778 ± 0.0000
+2025-04-11 17:25:38,478 - DSM_None_None_ - INFO -   f1_score: 0.7778 ± 0.0000
+2025-04-11 17:25:38,479 - DSM_None_None_ - INFO -   edit_distance: 8.0000 ± 0.0000
+2025-04-11 17:25:38,479 - DSM_None_None_ - INFO -   spectral_distance: 0.8002 ± 0.0000
+2025-04-11 17:25:38,480 - DSM_None_None_ - INFO - 
+Component Mapping (used for alignment):
+2025-04-11 17:25:38,482 - DSM_None_None_ - INFO -   Ground Truth Component Matched Predicted Component
+0                  Motor                       Motor
+1                    Bit                       Chuck
+2           Transmission                     Gearbox
+3      Electrical System               Circuit Board
+4         Battery Holder                     Battery
+5                Housing                      Handle
+2025-04-11 17:25:38,484 - DSM_None_None_ - INFO - --- End Results Summary ---
+2025-04-11 19:24:50,803 - DSM_None_None_ - INFO - Resetting GPUs...
+2025-04-11 19:25:12,821 - DSM_None_None_ - INFO - Running Analysis For:
+2025-04-11 19:25:12,822 - DSM_None_None_ - INFO -   Product: powerscrewdriver
+2025-04-11 19:25:12,823 - DSM_None_None_ - INFO -   Model: ollama:llama3.3:70b-8k
+2025-04-11 19:25:12,824 - DSM_None_None_ - INFO -   Type: LLM_GRAPH_RAG
+2025-04-11 19:25:12,825 - DSM_None_None_ - INFO -   Reference: r1_r2
+2025-04-11 19:25:12,827 - DSM_None_None_ - INFO -   Relationship: whole-part
+2025-04-11 19:25:12,828 - DSM_None_None_ - INFO -   Ground Truth Path: xLM_DSM_wip/logs/Process/gt_powerscrewdriver.csv
+2025-04-11 19:25:12,828 - DSM_None_None_ - INFO -   Avg Pred Path: xLM_DSM_wip/logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:llama3.3:70b-8k_20250410-194807/llm_graph_rag_refs_r1_r2/average_matrix_20250410-194807.csv
+2025-04-11 19:25:12,829 - DSM_None_None_ - INFO -   Indiv JSON Path: xLM_DSM_wip/logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:llama3.3:70b-8k_20250410-194807/llm_graph_rag_refs_r1_r2/average_matrix_20250410-194807.json
+2025-04-11 19:25:12,835 - DSM_None_None_ - INFO - Loading individual matrices from xLM_DSM_wip/logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:llama3.3:70b-8k_20250410-194807/llm_graph_rag_refs_r1_r2/average_matrix_20250410-194807.json
+2025-04-11 19:25:12,836 - DSM_None_None_ - INFO - Loaded 5 individual matrices.
+2025-04-11 19:25:12,837 - DSM_None_None_ - INFO - Calculating Raw Metrics...
+2025-04-11 19:25:12,898 - DSM_None_None_ - INFO - Calculated Raw Metrics Mean/StdDev from runs.
+2025-04-11 19:25:12,899 - DSM_None_None_ - INFO - Calculating Component Similarity based on Average Matrix...
+2025-04-11 19:25:14,606 - DSM_None_None_ - INFO - Attempting Component Mapping based on Average Matrix...
+2025-04-11 19:25:14,607 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-04-11 19:25:14,608 - DSM_None_None_ - INFO - Extracting model from path: xLM_DSM_wip/logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:llama3.3:70b-8k_20250410-194807/llm_graph_rag_refs_r1_r2/average_matrix_20250410-194807.csv
+2025-04-11 19:25:14,609 - DSM_None_None_ - INFO - Extracted model: llama3.3:70b-8k
+2025-04-11 19:25:14,614 - DSM_None_None_ - INFO - Automatic high-similarity match: Motor -> Motor (similarity: 1.000)
+2025-04-11 19:25:14,635 - DSM_None_None_ - INFO - Prompt: 
+You are an expert matching engine for cyber-physical system systems. Your task is to determine the optimal one-to-one mapping between remaining ground truth and predicted major components.
+
+Remaining Ground Truth Components:
+['Bit', 'Transmission', 'Electrical System', 'Battery Holder', 'Housing', 'External Environment']
+
+Remaining Predicted Components:
+['Battery', 'Gearbox', 'Chuck', 'Handle', 'Switch', 'Circuit Board']
+
+Note: The following components have already been automatically matched due to high similarity (>0.8):
+['Motor -> Motor']
+
+Available Matches for Remaining Components (above 0.3 similarity threshold):
+
+Bit potential matches:
+- Battery (similarity: 0.425)
+- Chuck (similarity: 0.321)
+- Handle (similarity: 0.403)
+- Switch (similarity: 0.401)
+
+Transmission potential matches:
+- Battery (similarity: 0.386)
+- Gearbox (similarity: 0.524)
+- Chuck (similarity: 0.310)
+- Handle (similarity: 0.407)
+- Switch (similarity: 0.535)
+
+Electrical System potential matches:
+- Battery (similarity: 0.436)
+- Switch (similarity: 0.321)
+- Circuit Board (similarity: 0.513)
+
+Battery Holder potential matches:
+- Battery (similarity: 0.648)
+- Gearbox (similarity: 0.320)
+- Handle (similarity: 0.381)
+- Circuit Board (similarity: 0.433)
+
+Housing potential matches:
+- Handle (similarity: 0.345)
+
+External Environment potential matches:
+
+
+Instructions:
+1. Evaluate each pairing based on:
+   - Embedding similarity scores
+   - Functional equivalence at the core architecture level
+   - System-level whole-part relationships
+   - Overall coherence within the cyber-physical system
+2. Each predicted component may only be matched once
+3. Each ground truth component may receive at most one match
+4. Do not include any text other than what is specified below
+5. Only match the remaining components - do not rematch already matched components
+
+Output Format (exactly as shown):
+--------------------------------------------------
+MAPPINGS:
+[ground truth 1] -> [predicted 1] 
+[ground truth 2] -> [predicted 2]
+...
+REASON: [brief explanation focusing on functional equivalence]
+--------------------------------------------------
+2025-04-11 19:25:14,636 - DSM_None_None_ - INFO - Attempting to use model: llama3.3:70b-8k
+2025-04-11 19:25:14,637 - DSM_None_None_ - INFO - Using Ollama path
+2025-04-11 19:25:14,638 - DSM_None_None_ - INFO - Model name: llama3.3:70b-8k
+2025-04-11 19:25:14,638 - DSM_None_None_ - INFO - Prompt length: 2118
+2025-04-11 19:25:40,405 - DSM_None_None_ - INFO - Response status code: 200
+2025-04-11 19:25:40,406 - DSM_None_None_ - INFO - API call succeeded
+2025-04-11 19:25:40,407 - DSM_None_None_ - INFO - Got response: --------------------------------------------------
+MAPPINGS:
+Bit -> Chuck 
+Transmission -> Gearbox 
+...
+2025-04-11 19:25:40,407 - DSM_None_None_ - INFO - 
+Final Mappings:
+2025-04-11 19:25:40,408 - DSM_None_None_ - INFO - Automatic high-similarity matches: {'Motor': 'Motor'}
+2025-04-11 19:25:40,410 - DSM_None_None_ - INFO - LLM-suggested matches: {'Bit': 'Chuck', 'Transmission': 'Gearbox', 'Electrical System': 'Circuit Board', 'Battery Holder': 'Battery', 'Housing': 'Handle', 'External Environment': 'Switch'}
+2025-04-11 19:25:40,410 - DSM_None_None_ - INFO - Initial mapping: {'Motor': 'Motor', 'Bit': 'Chuck', 'Transmission': 'Gearbox', 'Electrical System': 'Circuit Board', 'Battery Holder': 'Battery', 'Housing': 'Handle', 'External Environment': 'Switch'}
+2025-04-11 19:25:40,415 - DSM_None_None_ - INFO - Skipping mapping for GT 'External Environment' -> Pred 'Switch': Similarity 0.238 <= threshold 0.3.
+2025-04-11 19:25:40,416 - DSM_None_None_ - INFO - Component mapping successful.
+2025-04-11 19:25:40,417 - DSM_None_None_ - INFO - 
+Component Mapping:
+2025-04-11 19:25:40,420 - DSM_None_None_ - INFO -   Ground Truth Component Matched Predicted Component
+0                  Motor                       Motor
+1                    Bit                       Chuck
+2           Transmission                     Gearbox
+3      Electrical System               Circuit Board
+4         Battery Holder                     Battery
+5                Housing                      Handle
+2025-04-11 19:25:40,421 - DSM_None_None_ - INFO - Calculating Aligned Metrics...
+2025-04-11 19:25:40,422 - DSM_None_None_ - INFO - Calculating Aligned Metrics Mean/StdDev from runs...
+2025-04-11 19:25:40,471 - DSM_None_None_ - INFO - Calculated Aligned Metrics Mean/StdDev from runs.
+2025-04-11 19:25:40,472 - DSM_None_None_ - INFO - Calculating Aligned Average Predicted Matrix for heatmap...
+2025-04-11 19:25:40,473 - DSM_None_None_ - INFO - Generating plots...
+2025-04-11 19:25:40,474 - DSM_None_None_ - INFO - Plotting performance metrics...
+2025-04-11 19:25:41,059 - DSM_None_None_ - INFO - Saved plot to xLM_DSM_wip/logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:llama3.3:70b-8k_20250410-194807/llm_graph_rag_refs_r1_r2/plots/performance_metrics_with_stddev.png
+2025-04-11 19:25:41,185 - DSM_None_None_ - INFO - Plotting distance metrics...
+2025-04-11 19:25:41,696 - DSM_None_None_ - INFO - Saved plot to xLM_DSM_wip/logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:llama3.3:70b-8k_20250410-194807/llm_graph_rag_refs_r1_r2/plots/distance_metrics_with_stddev.png
+2025-04-11 19:25:41,802 - DSM_None_None_ - INFO - Plotting matrix comparison...
+2025-04-11 19:25:44,254 - DSM_None_None_ - INFO - Saved plot to xLM_DSM_wip/logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:llama3.3:70b-8k_20250410-194807/llm_graph_rag_refs_r1_r2/plots/matrices_comparison_avg.png
+2025-04-11 19:25:44,672 - DSM_None_None_ - INFO - Plots generated and saved.
+2025-04-11 19:25:44,673 - DSM_None_None_ - INFO - 
+--- Results Summary for ollama:llama3.3:70b-8k (r1_r2) ---
+2025-04-11 19:25:44,674 - DSM_None_None_ - INFO - 
+Raw Metrics (Mean ± StdDev):
+2025-04-11 19:25:44,675 - DSM_None_None_ - INFO -   accuracy: 0.5714 ± 0.0000
+2025-04-11 19:25:44,676 - DSM_None_None_ - INFO -   precision: 0.7097 ± 0.0000
+2025-04-11 19:25:44,677 - DSM_None_None_ - INFO -   recall: 0.6471 ± 0.0000
+2025-04-11 19:25:44,677 - DSM_None_None_ - INFO -   f1_score: 0.6769 ± 0.0000
+2025-04-11 19:25:44,678 - DSM_None_None_ - INFO -   edit_distance: 21.0000 ± 0.0000
+2025-04-11 19:25:44,679 - DSM_None_None_ - INFO -   spectral_distance: 0.8868 ± 0.0000
+2025-04-11 19:25:44,680 - DSM_None_None_ - INFO - 
+Aligned Metrics (Mean ± StdDev):
+2025-04-11 19:25:44,680 - DSM_None_None_ - INFO -   accuracy: 0.7778 ± 0.0000
+2025-04-11 19:25:44,681 - DSM_None_None_ - INFO -   precision: 0.8636 ± 0.0000
+2025-04-11 19:25:44,681 - DSM_None_None_ - INFO -   recall: 0.7917 ± 0.0000
+2025-04-11 19:25:44,682 - DSM_None_None_ - INFO -   f1_score: 0.8261 ± 0.0000
+2025-04-11 19:25:44,683 - DSM_None_None_ - INFO -   edit_distance: 8.0000 ± 0.0000
+2025-04-11 19:25:44,683 - DSM_None_None_ - INFO -   spectral_distance: 0.8002 ± 0.0000
+2025-04-11 19:25:44,684 - DSM_None_None_ - INFO - 
+Component Mapping (used for alignment):
+2025-04-11 19:25:44,687 - DSM_None_None_ - INFO -   Ground Truth Component Matched Predicted Component
+0                  Motor                       Motor
+1                    Bit                       Chuck
+2           Transmission                     Gearbox
+3      Electrical System               Circuit Board
+4         Battery Holder                     Battery
+5                Housing                      Handle
+2025-04-11 19:25:44,687 - DSM_None_None_ - INFO - --- End Results Summary ---

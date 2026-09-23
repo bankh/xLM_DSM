@@ -1,0 +1,8 @@
+,Motor,Transmission (Gears or Belts),Handle,Trigger Mechanism,Power Source (Battery or Cord),Bit Holder/Chuck,Control System (Speed and Direction)
+Motor,1,1,0,0,1,0,1
+Transmission (Gears or Belts),1,1,0,0,0,0,1
+Handle,0,0,1,1,0,0,1
+Trigger Mechanism,0,0,1,1,0,0,0
+Power Source (Battery or Cord),1,0,0,0,1,1,0
+Bit Holder/Chuck,0,0,0,0,1,1,0
+Control System (Speed and Direction),1,1,1,0,0,0,1

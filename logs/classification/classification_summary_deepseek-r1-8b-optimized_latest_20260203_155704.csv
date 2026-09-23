@@ -1,0 +1,8 @@
+reference_id,title,classification,confidence,reasoning
+ref_1,[2014 Sinha] R1-Structural Complexity and Its Implications for Design of CPSs,R1,0.95,The reference appears to be a PhD thesis with original research on structural complexity for CPS design.
+ref_2,[1986 Christoforo] R3-The Complete Book of Portable Power Tool Techniques,R3,0.75,The title suggests a comprehensive guide focused on techniques rather than original research or formal textbook.
+ref_3,[2012 Tilstra] R1-A HDDSM for the Quantitative Assessment of Product Architecture,R1,0.95,The paper introduces an evolved product representation model (HDDSM) with new quantitative assessment capabilities for product architecture.
+ref_4,[2012 Eppinger_Browning] R2-Design Structure Matrix Methods and Applications,R2,0.95,"The title explicitly contains 'Methods and Applications', which is a strong indicator for textbooks or handbooks under the R2 category."
+ref_5,[2006 Thiel] R3-David Thiels Power Tool Maintenance,R3,0.95,The title suggests practical guidance on power tool maintenance likely aimed at practitioners or hobbyists.
+ref_6,[2007 Joshi] R2-Machine Tools Handbook  Design And Operation,R2,0.95,"Title explicitly contains 'Handbook', indicating it is a synthesis of established methods."
+ref_7,[BCITO] R3-BCATS Power Tools,R3,0.95,"The extracted text describes a unit standard for portable power tool maintenance from an industry training body (BCITO), fitting the definition of vocational qualification material."

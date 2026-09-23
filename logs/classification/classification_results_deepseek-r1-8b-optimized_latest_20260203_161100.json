@@ -1,0 +1,98 @@
+[
+  {
+    "reference_id": "ref_1",
+    "title": "[2021 Capelletti] R2-Cubesat Hm Mission Design to Operations",
+    "classification": "R2",
+    "confidence": 0.95,
+    "reasoning": "The title explicitly contains 'Handbook', which directly classifies it under R2.",
+    "original_info": {
+      "id": "ref_1",
+      "title": "[2021 Capelletti] R2-Cubesat Hm Mission Design to Operations",
+      "authors": "",
+      "source": "reference_pdfs",
+      "year": "",
+      "description": "",
+      "file_path": "../data/use_cases/Spacecraft-CubeSat/reference_pdfs/[2021 Capelletti] R2-Cubesat Hm Mission Design to Operations.pdf"
+    }
+  },
+  {
+    "reference_id": "ref_2",
+    "title": "[2013 Asundi] R1-CubeSat_mission_a_systems_engineering_approach",
+    "classification": "R1",
+    "confidence": 0.95,
+    "reasoning": "The paper describes the development and application of a new systems engineering methodology specifically for CubeSat design.",
+    "original_info": {
+      "id": "ref_2",
+      "title": "[2013 Asundi] R1-CubeSat_mission_a_systems_engineering_approach",
+      "authors": "",
+      "source": "reference_pdfs",
+      "year": "",
+      "description": "",
+      "file_path": "../data/use_cases/Spacecraft-CubeSat/reference_pdfs/[2013 Asundi] R1-CubeSat_mission_a_systems_engineering_approach.pdf"
+    }
+  },
+  {
+    "reference_id": "ref_3",
+    "title": "[2012 Eppinger_Browning] R2-Design Structure Matrix Methods and Applications",
+    "classification": "R2",
+    "confidence": 0.95,
+    "reasoning": "The title explicitly includes 'Methods and Applications', which directly classifies it under R2 according to the decision rules.",
+    "original_info": {
+      "id": "ref_3",
+      "title": "[2012 Eppinger_Browning] R2-Design Structure Matrix Methods and Applications",
+      "authors": "",
+      "source": "reference_pdfs",
+      "year": "",
+      "description": "",
+      "file_path": "../data/use_cases/Spacecraft-CubeSat/reference_pdfs/[2012 Eppinger_Browning] R2-Design Structure Matrix Methods and Applications.pdf"
+    }
+  },
+  {
+    "reference_id": "ref_4",
+    "title": "[2024 Autodesk_Instructables] R3-HyperDuino-based CubeSat _ 6 with Pictures) - Instructables",
+    "classification": "R3",
+    "confidence": 0.95,
+    "reasoning": "The content is an Instructables guide aimed at hobbyists demonstrating a CubeSat project using accessible components.",
+    "original_info": {
+      "id": "ref_4",
+      "title": "[2024 Autodesk_Instructables] R3-HyperDuino-based CubeSat _ 6 with Pictures) - Instructables",
+      "authors": "",
+      "source": "reference_pdfs",
+      "year": "",
+      "description": "",
+      "file_path": "../data/use_cases/Spacecraft-CubeSat/reference_pdfs/[2024 Autodesk_Instructables] R3-HyperDuino-based CubeSat _ 6 with Pictures) - Instructables.pdf"
+    }
+  },
+  {
+    "reference_id": "ref_5",
+    "title": "[2023 Girardello] R1-GreatCUBE+_Cesign Tool for CubeSats Design",
+    "classification": "R1",
+    "confidence": 0.95,
+    "reasoning": "The paper describes the development of a novel software tool (GREATCUBE+) for CubeSat design, which aligns with R1's focus on original research and new methodologies.",
+    "original_info": {
+      "id": "ref_5",
+      "title": "[2023 Girardello] R1-GreatCUBE+_Cesign Tool for CubeSats Design",
+      "authors": "",
+      "source": "reference_pdfs",
+      "year": "",
+      "description": "",
+      "file_path": "../data/use_cases/Spacecraft-CubeSat/reference_pdfs/[2023 Girardello] R1-GreatCUBE+_Cesign Tool for CubeSats Design.pdf"
+    }
+  },
+  {
+    "reference_id": "ref_6",
+    "title": "[2024 Autodesk_Instructables] R3-Launch-Ready SSTV CubeSat _ 7 with Pictures) - Instructables",
+    "classification": "R3",
+    "confidence": 0.95,
+    "reasoning": "The reference describes a step-by-step guide for building a CubeSat using off-the-shelf components, targeting hobbyists and practitioners with practical knowledge.",
+    "original_info": {
+      "id": "ref_6",
+      "title": "[2024 Autodesk_Instructables] R3-Launch-Ready SSTV CubeSat _ 7 with Pictures) - Instructables",
+      "authors": "",
+      "source": "reference_pdfs",
+      "year": "",
+      "description": "",
+      "file_path": "../data/use_cases/Spacecraft-CubeSat/reference_pdfs/[2024 Autodesk_Instructables] R3-Launch-Ready SSTV CubeSat _ 7 with Pictures) - Instructables.pdf"
+    }
+  }
+]

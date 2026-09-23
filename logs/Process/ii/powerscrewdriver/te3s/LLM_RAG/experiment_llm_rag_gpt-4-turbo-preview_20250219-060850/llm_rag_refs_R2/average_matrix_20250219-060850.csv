@@ -1,0 +1,8 @@
+,motor,gear system,chuck,battery,switch,housing,control circuitry
+motor,1,1,0,1,1,1,1
+gear system,1,1,1,0,0,1,0
+chuck,0,1,1,0,0,1,0
+battery,1,0,0,1,1,1,1
+switch,1,0,0,1,1,1,1
+housing,1,1,1,1,1,1,1
+control circuitry,1,0,0,1,1,1,1

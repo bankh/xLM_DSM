@@ -1,0 +1,366 @@
+2025-02-20 04:28:45,539 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Run 1/5
+2025-02-20 04:28:45,577 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - DEBUG: Initializing LLMInference.
+2025-02-20 04:28:45,578 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Initialized LLM inference for system: power screwdriver
+2025-02-20 04:28:45,578 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Initialized DSM for system: power screwdriver
+2025-02-20 04:28:45,579 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Inference model: ollama:llama3.3:70b-8k
+2025-02-20 04:28:45,580 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Prompt (attempt 1/3): 
+            Please identify the major components of power screwdriver in the engineering based on proximity relationships.             
+            The number of components must not exceed 7 (can be equal) and must be a list of strings.             
+            Please do not identify similar components that will work together under subsystem level since our interest is to identify the major components that form the core architecture of the system.             
+            Here is an example of the components for made-up system:             
+            final response = [ "component 1", "component 2", "component 3", "component 4", "component 5" ]             
+            IMPORTANT: THE FORMAT OF THE OUTPUT MUST BE AS A LIST OF STRINGS ONLY SIMILAR TO THE ONE ABOVE (NO LATEX, NO CODE, NO DESCRIPTION, OR OTHER ENCODINGS).              
+2025-02-20 04:29:20,667 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: final response = [ "Motor", "Battery", "Gearbox", "Chuck", "Handle", "Switch", "Circuit Board" ]
+2025-02-20 04:29:20,669 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Matrix: ['Motor', 'Battery', 'Gearbox', 'Chuck', 'Handle', 'Switch', 'Circuit Board']
+2025-02-20 04:29:20,669 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Components: ['Motor', 'Battery', 'Gearbox', 'Chuck', 'Handle', 'Switch', 'Circuit Board']
+2025-02-20 04:29:21,767 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: Valid
+2025-02-20 04:29:21,768 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Validation response: Valid
+2025-02-20 04:29:21,769 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Filtered validation response: Valid
+2025-02-20 04:29:21,770 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Component list validated successfully on attempt 1
+2025-02-20 04:29:21,770 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Components: ['Motor', 'Battery', 'Gearbox', 'Chuck', 'Handle', 'Switch', 'Circuit Board']
+2025-02-20 04:29:21,772 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-20 04:29:21,772 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Predicted Components: ['Motor', 'Battery', 'Gearbox', 'Chuck', 'Handle', 'Switch', 'Circuit Board']
+2025-02-20 04:29:21,774 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Number of components: 7
+2025-02-20 04:29:21,774 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Predicted components for query: ['Motor', 'Battery', 'Gearbox', 'Chuck', 'Handle', 'Switch', 'Circuit Board']
+2025-02-20 04:29:21,776 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Query: 
+        Please identify system-level proximity relationships (in contact) between the components of Power Screwdriver, as listed below, and represent them in a Design Structure Matrix (DSM) format.  
+        The relationships should be articulated in plain English, capturing the essence of their interactions. 
+        Here is the list of subsystems/components to analyze: ['Motor', 'Battery', 'Gearbox', 'Chuck', 'Handle', 'Switch', 'Circuit Board'] 
+        The DSM should clearly indicate the interactions between these components as 1 exist and 0 does not exist, considering both the presence and nature of these connections.             
+        Present the output in a square matrix format (number of rows and columns MUST be the same as the number of components = 7 for this example), with rows and columns labeled accordingly. 
+        Diagonal elements should be 1 in DSM matrix since each component interacts with itself. 
+        If you don't know the answer, just write 2 for the specific cell that you are unsure of. A worst case scenario of the **as a list of lists** shown below (diagonal elements are 1 and rest are 2). Don't make up an answer.         final response = [
+            [1, 2, 2, 2, 2, 2, 2],
+            [2, 1, 2, 2, 2, 2, 2],
+            [2, 2, 1, 2, 2, 2, 2],
+            [2, 2, 2, 1, 2, 2, 2],
+            [2, 2, 2, 2, 1, 2, 2],
+            [2, 2, 2, 2, 2, 1, 2],
+            [2, 2, 2, 2, 2, 2, 1]
+        ]
+
+        IMPORTANT: Your response must **ONLY** contain a valid **as a list of lists** in the following example format 7x7 matrix.         
+        The below list of lists is just an example format of your response. **Replace** the values with your **actual analysis** while providing your response with parameter of 'final response'.        
+        final response = [
+            [1, 0, 0, 0, 0, 0, 0],
+            [0, 1, 0, 0, 0, 0, 0],
+            [0, 0, 1, 0, 0, 0, 0],
+            [0, 0, 0, 1, 0, 0, 0],
+            [0, 0, 0, 0, 1, 0, 0],
+            [0, 0, 0, 0, 0, 1, 0],
+            [0, 0, 0, 0, 0, 0, 1]
+        ]
+
+        IMPORTANT: THE FORMAT OF THE OUTPUT MUST BE AS LIST OF LISTS ONLY SIMILAR TO THE ONE ABOVE (NO LATEX, CODE, OR OTHER ENCODINGS).
+        
+2025-02-20 04:29:36,336 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: final response = [
+            [1, 1, 1, 0, 1, 1, 1],
+            [1, 1, 0, 0, 0, 0, 1],
+            [1, 0, 1, 1, 0, 0, 0],
+            [0, 0, 1, 1, 0, 0, 0],
+            [1, 0, 0, 0, 1, 1, 1],
+            [1, 0, 0, 0, 1, 1, 1],
+            [1, 1, 0, 0, 1, 1, 1]
+        ]
+2025-02-20 04:29:36,338 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Response: final response = [
+            [1, 1, 1, 0, 1, 1, 1],
+            [1, 1, 0, 0, 0, 0, 1],
+            [1, 0, 1, 1, 0, 0, 0],
+            [0, 0, 1, 1, 0, 0, 0],
+            [1, 0, 0, 0, 1, 1, 1],
+            [1, 0, 0, 0, 1, 1, 1],
+            [1, 1, 0, 0, 1, 1, 1]
+        ]
+2025-02-20 04:29:36,339 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Matrix: [[1, 1, 1, 0, 1, 1, 1], [1, 1, 0, 0, 0, 0, 1], [1, 0, 1, 1, 0, 0, 0], [0, 0, 1, 1, 0, 0, 0], [1, 0, 0, 0, 1, 1, 1], [1, 0, 0, 0, 1, 1, 1], [1, 1, 0, 0, 1, 1, 1]]
+2025-02-20 04:29:36,340 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Final Matrix:
+[[1, 1, 1, 0, 1, 1, 1], [1, 1, 0, 0, 0, 0, 1], [1, 0, 1, 1, 0, 0, 0], [0, 0, 1, 1, 0, 0, 0], [1, 0, 0, 0, 1, 1, 1], [1, 0, 0, 0, 1, 1, 1], [1, 1, 0, 0, 1, 1, 1]]
+2025-02-20 04:29:36,341 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-20 04:29:36,342 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Matrix from response.
+2025-02-20 04:29:36,342 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - At run 1/5
+2025-02-20 04:29:36,344 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Matrix: [[1, 1, 1, 0, 1, 1, 1], [1, 1, 0, 0, 0, 0, 1], [1, 0, 1, 1, 0, 0, 0], [0, 0, 1, 1, 0, 0, 0], [1, 0, 0, 0, 1, 1, 1], [1, 0, 0, 0, 1, 1, 1], [1, 1, 0, 0, 1, 1, 1]]
+2025-02-20 04:29:36,345 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-20 04:29:46,356 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Run 2/5
+2025-02-20 04:29:46,392 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - DEBUG: Initializing LLMInference.
+2025-02-20 04:29:46,393 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Initialized LLM inference for system: power screwdriver
+2025-02-20 04:29:46,394 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Initialized DSM for system: power screwdriver
+2025-02-20 04:29:46,395 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Inference model: ollama:llama3.3:70b-8k
+2025-02-20 04:29:46,396 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Predicted Components: ['Motor', 'Battery', 'Gearbox', 'Chuck', 'Handle', 'Switch', 'Circuit Board']
+2025-02-20 04:29:46,397 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Number of components: 7
+2025-02-20 04:29:46,398 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Predicted components for query: ['Motor', 'Battery', 'Gearbox', 'Chuck', 'Handle', 'Switch', 'Circuit Board']
+2025-02-20 04:29:46,399 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Query: 
+        Please identify system-level proximity relationships (in contact) between the components of Power Screwdriver, as listed below, and represent them in a Design Structure Matrix (DSM) format.  
+        The relationships should be articulated in plain English, capturing the essence of their interactions. 
+        Here is the list of subsystems/components to analyze: ['Motor', 'Battery', 'Gearbox', 'Chuck', 'Handle', 'Switch', 'Circuit Board'] 
+        The DSM should clearly indicate the interactions between these components as 1 exist and 0 does not exist, considering both the presence and nature of these connections.             
+        Present the output in a square matrix format (number of rows and columns MUST be the same as the number of components = 7 for this example), with rows and columns labeled accordingly. 
+        Diagonal elements should be 1 in DSM matrix since each component interacts with itself. 
+        If you don't know the answer, just write 2 for the specific cell that you are unsure of. A worst case scenario of the **as a list of lists** shown below (diagonal elements are 1 and rest are 2). Don't make up an answer.         final response = [
+            [1, 2, 2, 2, 2, 2, 2],
+            [2, 1, 2, 2, 2, 2, 2],
+            [2, 2, 1, 2, 2, 2, 2],
+            [2, 2, 2, 1, 2, 2, 2],
+            [2, 2, 2, 2, 1, 2, 2],
+            [2, 2, 2, 2, 2, 1, 2],
+            [2, 2, 2, 2, 2, 2, 1]
+        ]
+
+        IMPORTANT: Your response must **ONLY** contain a valid **as a list of lists** in the following example format 7x7 matrix.         
+        The below list of lists is just an example format of your response. **Replace** the values with your **actual analysis** while providing your response with parameter of 'final response'.        
+        final response = [
+            [1, 0, 0, 0, 0, 0, 0],
+            [0, 1, 0, 0, 0, 0, 0],
+            [0, 0, 1, 0, 0, 0, 0],
+            [0, 0, 0, 1, 0, 0, 0],
+            [0, 0, 0, 0, 1, 0, 0],
+            [0, 0, 0, 0, 0, 1, 0],
+            [0, 0, 0, 0, 0, 0, 1]
+        ]
+
+        IMPORTANT: THE FORMAT OF THE OUTPUT MUST BE AS LIST OF LISTS ONLY SIMILAR TO THE ONE ABOVE (NO LATEX, CODE, OR OTHER ENCODINGS).
+        
+2025-02-20 04:29:59,488 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: final response = [
+            [1, 1, 1, 0, 1, 1, 1],
+            [1, 1, 0, 0, 0, 0, 1],
+            [1, 0, 1, 1, 0, 0, 0],
+            [0, 0, 1, 1, 0, 0, 0],
+            [1, 0, 0, 0, 1, 1, 1],
+            [1, 0, 0, 0, 1, 1, 1],
+            [1, 1, 0, 0, 1, 1, 1]
+        ]
+2025-02-20 04:29:59,489 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Response: final response = [
+            [1, 1, 1, 0, 1, 1, 1],
+            [1, 1, 0, 0, 0, 0, 1],
+            [1, 0, 1, 1, 0, 0, 0],
+            [0, 0, 1, 1, 0, 0, 0],
+            [1, 0, 0, 0, 1, 1, 1],
+            [1, 0, 0, 0, 1, 1, 1],
+            [1, 1, 0, 0, 1, 1, 1]
+        ]
+2025-02-20 04:29:59,490 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Matrix: [[1, 1, 1, 0, 1, 1, 1], [1, 1, 0, 0, 0, 0, 1], [1, 0, 1, 1, 0, 0, 0], [0, 0, 1, 1, 0, 0, 0], [1, 0, 0, 0, 1, 1, 1], [1, 0, 0, 0, 1, 1, 1], [1, 1, 0, 0, 1, 1, 1]]
+2025-02-20 04:29:59,491 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Final Matrix:
+[[1, 1, 1, 0, 1, 1, 1], [1, 1, 0, 0, 0, 0, 1], [1, 0, 1, 1, 0, 0, 0], [0, 0, 1, 1, 0, 0, 0], [1, 0, 0, 0, 1, 1, 1], [1, 0, 0, 0, 1, 1, 1], [1, 1, 0, 0, 1, 1, 1]]
+2025-02-20 04:29:59,492 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-20 04:29:59,493 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Matrix from response.
+2025-02-20 04:29:59,494 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - At run 2/5
+2025-02-20 04:29:59,495 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Matrix: [[1, 1, 1, 0, 1, 1, 1], [1, 1, 0, 0, 0, 0, 1], [1, 0, 1, 1, 0, 0, 0], [0, 0, 1, 1, 0, 0, 0], [1, 0, 0, 0, 1, 1, 1], [1, 0, 0, 0, 1, 1, 1], [1, 1, 0, 0, 1, 1, 1]]
+2025-02-20 04:29:59,496 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-20 04:30:09,507 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Run 3/5
+2025-02-20 04:30:09,543 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - DEBUG: Initializing LLMInference.
+2025-02-20 04:30:09,544 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Initialized LLM inference for system: power screwdriver
+2025-02-20 04:30:09,545 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Initialized DSM for system: power screwdriver
+2025-02-20 04:30:09,546 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Inference model: ollama:llama3.3:70b-8k
+2025-02-20 04:30:09,547 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Predicted Components: ['Motor', 'Battery', 'Gearbox', 'Chuck', 'Handle', 'Switch', 'Circuit Board']
+2025-02-20 04:30:09,548 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Number of components: 7
+2025-02-20 04:30:09,549 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Predicted components for query: ['Motor', 'Battery', 'Gearbox', 'Chuck', 'Handle', 'Switch', 'Circuit Board']
+2025-02-20 04:30:09,550 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Query: 
+        Please identify system-level proximity relationships (in contact) between the components of Power Screwdriver, as listed below, and represent them in a Design Structure Matrix (DSM) format.  
+        The relationships should be articulated in plain English, capturing the essence of their interactions. 
+        Here is the list of subsystems/components to analyze: ['Motor', 'Battery', 'Gearbox', 'Chuck', 'Handle', 'Switch', 'Circuit Board'] 
+        The DSM should clearly indicate the interactions between these components as 1 exist and 0 does not exist, considering both the presence and nature of these connections.             
+        Present the output in a square matrix format (number of rows and columns MUST be the same as the number of components = 7 for this example), with rows and columns labeled accordingly. 
+        Diagonal elements should be 1 in DSM matrix since each component interacts with itself. 
+        If you don't know the answer, just write 2 for the specific cell that you are unsure of. A worst case scenario of the **as a list of lists** shown below (diagonal elements are 1 and rest are 2). Don't make up an answer.         final response = [
+            [1, 2, 2, 2, 2, 2, 2],
+            [2, 1, 2, 2, 2, 2, 2],
+            [2, 2, 1, 2, 2, 2, 2],
+            [2, 2, 2, 1, 2, 2, 2],
+            [2, 2, 2, 2, 1, 2, 2],
+            [2, 2, 2, 2, 2, 1, 2],
+            [2, 2, 2, 2, 2, 2, 1]
+        ]
+
+        IMPORTANT: Your response must **ONLY** contain a valid **as a list of lists** in the following example format 7x7 matrix.         
+        The below list of lists is just an example format of your response. **Replace** the values with your **actual analysis** while providing your response with parameter of 'final response'.        
+        final response = [
+            [1, 0, 0, 0, 0, 0, 0],
+            [0, 1, 0, 0, 0, 0, 0],
+            [0, 0, 1, 0, 0, 0, 0],
+            [0, 0, 0, 1, 0, 0, 0],
+            [0, 0, 0, 0, 1, 0, 0],
+            [0, 0, 0, 0, 0, 1, 0],
+            [0, 0, 0, 0, 0, 0, 1]
+        ]
+
+        IMPORTANT: THE FORMAT OF THE OUTPUT MUST BE AS LIST OF LISTS ONLY SIMILAR TO THE ONE ABOVE (NO LATEX, CODE, OR OTHER ENCODINGS).
+        
+2025-02-20 04:30:22,630 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: final response = [
+            [1, 1, 1, 0, 1, 1, 1],
+            [1, 1, 0, 0, 0, 0, 1],
+            [1, 0, 1, 1, 0, 0, 0],
+            [0, 0, 1, 1, 0, 0, 0],
+            [1, 0, 0, 0, 1, 1, 1],
+            [1, 0, 0, 0, 1, 1, 1],
+            [1, 1, 0, 0, 1, 1, 1]
+        ]
+2025-02-20 04:30:22,631 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Response: final response = [
+            [1, 1, 1, 0, 1, 1, 1],
+            [1, 1, 0, 0, 0, 0, 1],
+            [1, 0, 1, 1, 0, 0, 0],
+            [0, 0, 1, 1, 0, 0, 0],
+            [1, 0, 0, 0, 1, 1, 1],
+            [1, 0, 0, 0, 1, 1, 1],
+            [1, 1, 0, 0, 1, 1, 1]
+        ]
+2025-02-20 04:30:22,632 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Matrix: [[1, 1, 1, 0, 1, 1, 1], [1, 1, 0, 0, 0, 0, 1], [1, 0, 1, 1, 0, 0, 0], [0, 0, 1, 1, 0, 0, 0], [1, 0, 0, 0, 1, 1, 1], [1, 0, 0, 0, 1, 1, 1], [1, 1, 0, 0, 1, 1, 1]]
+2025-02-20 04:30:22,633 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Final Matrix:
+[[1, 1, 1, 0, 1, 1, 1], [1, 1, 0, 0, 0, 0, 1], [1, 0, 1, 1, 0, 0, 0], [0, 0, 1, 1, 0, 0, 0], [1, 0, 0, 0, 1, 1, 1], [1, 0, 0, 0, 1, 1, 1], [1, 1, 0, 0, 1, 1, 1]]
+2025-02-20 04:30:22,635 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-20 04:30:22,635 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Matrix from response.
+2025-02-20 04:30:22,636 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - At run 3/5
+2025-02-20 04:30:22,638 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Matrix: [[1, 1, 1, 0, 1, 1, 1], [1, 1, 0, 0, 0, 0, 1], [1, 0, 1, 1, 0, 0, 0], [0, 0, 1, 1, 0, 0, 0], [1, 0, 0, 0, 1, 1, 1], [1, 0, 0, 0, 1, 1, 1], [1, 1, 0, 0, 1, 1, 1]]
+2025-02-20 04:30:22,638 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-20 04:30:32,649 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Run 4/5
+2025-02-20 04:30:32,685 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - DEBUG: Initializing LLMInference.
+2025-02-20 04:30:32,686 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Initialized LLM inference for system: power screwdriver
+2025-02-20 04:30:32,687 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Initialized DSM for system: power screwdriver
+2025-02-20 04:30:32,688 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Inference model: ollama:llama3.3:70b-8k
+2025-02-20 04:30:32,689 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Predicted Components: ['Motor', 'Battery', 'Gearbox', 'Chuck', 'Handle', 'Switch', 'Circuit Board']
+2025-02-20 04:30:32,690 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Number of components: 7
+2025-02-20 04:30:32,691 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Predicted components for query: ['Motor', 'Battery', 'Gearbox', 'Chuck', 'Handle', 'Switch', 'Circuit Board']
+2025-02-20 04:30:32,692 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Query: 
+        Please identify system-level proximity relationships (in contact) between the components of Power Screwdriver, as listed below, and represent them in a Design Structure Matrix (DSM) format.  
+        The relationships should be articulated in plain English, capturing the essence of their interactions. 
+        Here is the list of subsystems/components to analyze: ['Motor', 'Battery', 'Gearbox', 'Chuck', 'Handle', 'Switch', 'Circuit Board'] 
+        The DSM should clearly indicate the interactions between these components as 1 exist and 0 does not exist, considering both the presence and nature of these connections.             
+        Present the output in a square matrix format (number of rows and columns MUST be the same as the number of components = 7 for this example), with rows and columns labeled accordingly. 
+        Diagonal elements should be 1 in DSM matrix since each component interacts with itself. 
+        If you don't know the answer, just write 2 for the specific cell that you are unsure of. A worst case scenario of the **as a list of lists** shown below (diagonal elements are 1 and rest are 2). Don't make up an answer.         final response = [
+            [1, 2, 2, 2, 2, 2, 2],
+            [2, 1, 2, 2, 2, 2, 2],
+            [2, 2, 1, 2, 2, 2, 2],
+            [2, 2, 2, 1, 2, 2, 2],
+            [2, 2, 2, 2, 1, 2, 2],
+            [2, 2, 2, 2, 2, 1, 2],
+            [2, 2, 2, 2, 2, 2, 1]
+        ]
+
+        IMPORTANT: Your response must **ONLY** contain a valid **as a list of lists** in the following example format 7x7 matrix.         
+        The below list of lists is just an example format of your response. **Replace** the values with your **actual analysis** while providing your response with parameter of 'final response'.        
+        final response = [
+            [1, 0, 0, 0, 0, 0, 0],
+            [0, 1, 0, 0, 0, 0, 0],
+            [0, 0, 1, 0, 0, 0, 0],
+            [0, 0, 0, 1, 0, 0, 0],
+            [0, 0, 0, 0, 1, 0, 0],
+            [0, 0, 0, 0, 0, 1, 0],
+            [0, 0, 0, 0, 0, 0, 1]
+        ]
+
+        IMPORTANT: THE FORMAT OF THE OUTPUT MUST BE AS LIST OF LISTS ONLY SIMILAR TO THE ONE ABOVE (NO LATEX, CODE, OR OTHER ENCODINGS).
+        
+2025-02-20 04:30:45,751 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: final response = [
+            [1, 1, 1, 0, 1, 1, 1],
+            [1, 1, 0, 0, 0, 0, 1],
+            [1, 0, 1, 1, 0, 0, 0],
+            [0, 0, 1, 1, 0, 0, 0],
+            [1, 0, 0, 0, 1, 1, 1],
+            [1, 0, 0, 0, 1, 1, 1],
+            [1, 1, 0, 0, 1, 1, 1]
+        ]
+2025-02-20 04:30:45,752 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Response: final response = [
+            [1, 1, 1, 0, 1, 1, 1],
+            [1, 1, 0, 0, 0, 0, 1],
+            [1, 0, 1, 1, 0, 0, 0],
+            [0, 0, 1, 1, 0, 0, 0],
+            [1, 0, 0, 0, 1, 1, 1],
+            [1, 0, 0, 0, 1, 1, 1],
+            [1, 1, 0, 0, 1, 1, 1]
+        ]
+2025-02-20 04:30:45,753 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Matrix: [[1, 1, 1, 0, 1, 1, 1], [1, 1, 0, 0, 0, 0, 1], [1, 0, 1, 1, 0, 0, 0], [0, 0, 1, 1, 0, 0, 0], [1, 0, 0, 0, 1, 1, 1], [1, 0, 0, 0, 1, 1, 1], [1, 1, 0, 0, 1, 1, 1]]
+2025-02-20 04:30:45,754 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Final Matrix:
+[[1, 1, 1, 0, 1, 1, 1], [1, 1, 0, 0, 0, 0, 1], [1, 0, 1, 1, 0, 0, 0], [0, 0, 1, 1, 0, 0, 0], [1, 0, 0, 0, 1, 1, 1], [1, 0, 0, 0, 1, 1, 1], [1, 1, 0, 0, 1, 1, 1]]
+2025-02-20 04:30:45,755 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-20 04:30:45,756 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Matrix from response.
+2025-02-20 04:30:45,757 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - At run 4/5
+2025-02-20 04:30:45,758 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Matrix: [[1, 1, 1, 0, 1, 1, 1], [1, 1, 0, 0, 0, 0, 1], [1, 0, 1, 1, 0, 0, 0], [0, 0, 1, 1, 0, 0, 0], [1, 0, 0, 0, 1, 1, 1], [1, 0, 0, 0, 1, 1, 1], [1, 1, 0, 0, 1, 1, 1]]
+2025-02-20 04:30:45,758 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-20 04:30:55,770 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Run 5/5
+2025-02-20 04:30:55,807 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - DEBUG: Initializing LLMInference.
+2025-02-20 04:30:55,808 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Initialized LLM inference for system: power screwdriver
+2025-02-20 04:30:55,809 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Initialized DSM for system: power screwdriver
+2025-02-20 04:30:55,810 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Inference model: ollama:llama3.3:70b-8k
+2025-02-20 04:30:55,811 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Predicted Components: ['Motor', 'Battery', 'Gearbox', 'Chuck', 'Handle', 'Switch', 'Circuit Board']
+2025-02-20 04:30:55,812 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Number of components: 7
+2025-02-20 04:30:55,813 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Predicted components for query: ['Motor', 'Battery', 'Gearbox', 'Chuck', 'Handle', 'Switch', 'Circuit Board']
+2025-02-20 04:30:55,814 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Query: 
+        Please identify system-level proximity relationships (in contact) between the components of Power Screwdriver, as listed below, and represent them in a Design Structure Matrix (DSM) format.  
+        The relationships should be articulated in plain English, capturing the essence of their interactions. 
+        Here is the list of subsystems/components to analyze: ['Motor', 'Battery', 'Gearbox', 'Chuck', 'Handle', 'Switch', 'Circuit Board'] 
+        The DSM should clearly indicate the interactions between these components as 1 exist and 0 does not exist, considering both the presence and nature of these connections.             
+        Present the output in a square matrix format (number of rows and columns MUST be the same as the number of components = 7 for this example), with rows and columns labeled accordingly. 
+        Diagonal elements should be 1 in DSM matrix since each component interacts with itself. 
+        If you don't know the answer, just write 2 for the specific cell that you are unsure of. A worst case scenario of the **as a list of lists** shown below (diagonal elements are 1 and rest are 2). Don't make up an answer.         final response = [
+            [1, 2, 2, 2, 2, 2, 2],
+            [2, 1, 2, 2, 2, 2, 2],
+            [2, 2, 1, 2, 2, 2, 2],
+            [2, 2, 2, 1, 2, 2, 2],
+            [2, 2, 2, 2, 1, 2, 2],
+            [2, 2, 2, 2, 2, 1, 2],
+            [2, 2, 2, 2, 2, 2, 1]
+        ]
+
+        IMPORTANT: Your response must **ONLY** contain a valid **as a list of lists** in the following example format 7x7 matrix.         
+        The below list of lists is just an example format of your response. **Replace** the values with your **actual analysis** while providing your response with parameter of 'final response'.        
+        final response = [
+            [1, 0, 0, 0, 0, 0, 0],
+            [0, 1, 0, 0, 0, 0, 0],
+            [0, 0, 1, 0, 0, 0, 0],
+            [0, 0, 0, 1, 0, 0, 0],
+            [0, 0, 0, 0, 1, 0, 0],
+            [0, 0, 0, 0, 0, 1, 0],
+            [0, 0, 0, 0, 0, 0, 1]
+        ]
+
+        IMPORTANT: THE FORMAT OF THE OUTPUT MUST BE AS LIST OF LISTS ONLY SIMILAR TO THE ONE ABOVE (NO LATEX, CODE, OR OTHER ENCODINGS).
+        
+2025-02-20 04:31:09,773 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: final response = [
+            [1, 1, 1, 0, 1, 1, 1],
+            [1, 1, 0, 0, 0, 0, 1],
+            [1, 0, 1, 1, 0, 0, 0],
+            [0, 0, 1, 1, 0, 0, 0],
+            [1, 0, 0, 0, 1, 1, 1],
+            [1, 0, 0, 0, 1, 1, 1],
+            [1, 1, 0, 0, 1, 1, 1]
+        ]
+2025-02-20 04:31:09,774 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Response: final response = [
+            [1, 1, 1, 0, 1, 1, 1],
+            [1, 1, 0, 0, 0, 0, 1],
+            [1, 0, 1, 1, 0, 0, 0],
+            [0, 0, 1, 1, 0, 0, 0],
+            [1, 0, 0, 0, 1, 1, 1],
+            [1, 0, 0, 0, 1, 1, 1],
+            [1, 1, 0, 0, 1, 1, 1]
+        ]
+2025-02-20 04:31:09,775 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Matrix: [[1, 1, 1, 0, 1, 1, 1], [1, 1, 0, 0, 0, 0, 1], [1, 0, 1, 1, 0, 0, 0], [0, 0, 1, 1, 0, 0, 0], [1, 0, 0, 0, 1, 1, 1], [1, 0, 0, 0, 1, 1, 1], [1, 1, 0, 0, 1, 1, 1]]
+2025-02-20 04:31:09,776 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Final Matrix:
+[[1, 1, 1, 0, 1, 1, 1], [1, 1, 0, 0, 0, 0, 1], [1, 0, 1, 1, 0, 0, 0], [0, 0, 1, 1, 0, 0, 0], [1, 0, 0, 0, 1, 1, 1], [1, 0, 0, 0, 1, 1, 1], [1, 1, 0, 0, 1, 1, 1]]
+2025-02-20 04:31:09,777 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-20 04:31:09,778 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Matrix from response.
+2025-02-20 04:31:09,779 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - At run 5/5
+2025-02-20 04:31:09,779 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Matrix: [[1, 1, 1, 0, 1, 1, 1], [1, 1, 0, 0, 0, 0, 1], [1, 0, 1, 1, 0, 0, 0], [0, 0, 1, 1, 0, 0, 0], [1, 0, 0, 0, 1, 1, 1], [1, 0, 0, 0, 1, 1, 1], [1, 1, 0, 0, 1, 1, 1]]
+2025-02-20 04:31:09,780 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-20 04:31:19,793 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Duration of reference combination {}: 0:02:34.254140
+2025-02-20 04:31:19,794 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2025-02-20 04:31:19,796 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - 
+==================================================
+2025-02-20 04:31:19,796 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Average DSM Matrix for model: ollama:llama3.3:70b-8k
+2025-02-20 04:31:19,797 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - End of log reference type(s): ['baseline']
+2025-02-20 04:31:19,799 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Saving results to: ../output/experiment_llm_ollama:llama3.3:70b-8k_20250220-042845/llm_refs_baseline
+2025-02-20 04:31:19,803 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - 
+Average Matrix:
+               Motor  Battery  Gearbox  Chuck  Handle  Switch  Circuit Board
+Motor              1        1        1      0       1       1              1
+Battery            1        1        0      0       0       0              1
+Gearbox            1        0        1      1       0       0              0
+Chuck              0        0        1      1       0       0              0
+Handle             1        0        0      0       1       1              1
+Switch             1        0        0      0       1       1              1
+Circuit Board      1        1        0      0       1       1              1
+2025-02-20 04:31:19,804 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - 
+Components: ['Motor', 'Battery', 'Gearbox', 'Chuck', 'Handle', 'Switch', 'Circuit Board']
+2025-02-20 04:31:19,823 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - ==================================================
+
+2025-02-20 04:31:19,826 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Saved CSV to: ../output/experiment_llm_ollama:llama3.3:70b-8k_20250220-042845/llm_refs_baseline/average_matrix_20250220-042845.csv
+2025-02-20 04:31:19,828 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Saved JSON to: ../output/experiment_llm_ollama:llama3.3:70b-8k_20250220-042845/llm_refs_baseline/detailed_results_20250220-042845.json
+2025-02-20 04:31:20,104 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Saved visualization to: ../output/experiment_llm_ollama:llama3.3:70b-8k_20250220-042845/llm_refs_baseline/average_matrix_20250220-042845.png
+2025-02-20 04:31:20,105 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Duration of experiment for ollama:llama3.3:70b-8k in llm inference type: 0:02:35

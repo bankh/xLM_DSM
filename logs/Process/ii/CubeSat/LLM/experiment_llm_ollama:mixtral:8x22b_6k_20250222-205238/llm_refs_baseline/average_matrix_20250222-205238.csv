@@ -1,0 +1,7 @@
+,Payload,Communication System,Power System,Attitude Determination and Control System,On-Board Computer,Structure
+Payload,1,1,1,1,1,1
+Communication System,1,1,1,1,1,0
+Power System,1,1,1,1,1,1
+Attitude Determination and Control System,1,1,1,1,1,1
+On-Board Computer,1,1,1,1,1,0
+Structure,1,0,1,1,0,1

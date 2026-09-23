@@ -1,0 +1,91 @@
+encoding_model: cl100k_base
+llm:
+  api_key: ollama
+  type: openai_chat
+  model: deepseek-r1:14b-5k
+  model_supports_json: true
+  api_base: http://localhost:11434/v1
+  tokens_per_minute: 0
+  requests_per_minute: 0
+  request_timeout: 1200.0
+  concurrent_requests: 2
+parallelization:
+  stagger: 0.3
+async_mode: threaded
+embeddings:
+  async_mode: threaded
+  vector_store:
+    type: lancedb
+    db_uri: output/lancedb
+    collection_name: default
+    overwrite: true
+  llm:
+    api_key: ${GRAPHRAG_API_KEY}
+    type: openai_embedding
+    model: text-embedding-3-small
+    concurrent_requests: 1
+    batch_size: 1
+    batch_max_tokens: 5120
+input:
+  type: file
+  file_type: text
+  base_dir: input
+  file_encoding: utf-8
+  file_pattern: .*\.txt$
+chunks:
+  size: 1200
+  overlap: 150
+  group_by_columns:
+  - id
+cache:
+  type: file
+  base_dir: cache
+reporting:
+  type: file
+  base_dir: logs
+storage:
+  type: file
+  base_dir: output
+update_index_storage: null
+skip_workflows: []
+entity_extraction:
+  prompt: prompts/entity_extraction.txt
+  entity_types:
+  - organization
+  - person
+  - geo
+  - event
+  max_gleanings: 1
+summarize_descriptions:
+  prompt: prompts/summarize_descriptions.txt
+  max_length: 500
+claim_extraction:
+  enabled: false
+  prompt: prompts/claim_extraction.txt
+  description: Any claims or facts that could be relevant to information discovery.
+  max_gleanings: 1
+community_reports:
+  prompt: prompts/community_report.txt
+  max_length: 2000
+  max_input_length: 8000
+cluster_graph:
+  max_cluster_size: 10
+embed_graph:
+  enabled: false
+umap:
+  enabled: false
+snapshots:
+  graphml: true
+  embeddings: false
+  transient: false
+local_search:
+  prompt: prompts/local_search_system_prompt.txt
+global_search:
+  map_prompt: prompts/global_search_map_system_prompt.txt
+  reduce_prompt: prompts/global_search_reduce_system_prompt.txt
+  knowledge_prompt: prompts/global_search_knowledge_system_prompt.txt
+drift_search:
+  prompt: prompts/drift_search_system_prompt.txt
+  reduce_prompt: prompts/drift_search_reduce_prompt.txt
+basic_search:
+  prompt: prompts/basic_search_system_prompt.txt

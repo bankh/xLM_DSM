@@ -1,0 +1,8 @@
+,Motor,Gearbox,Chuck,Handle,Battery,Switch,LED
+Motor,1,1,0,1,1,1,0
+Gearbox,1,1,1,0,0,1,0
+Chuck,0,1,1,0,0,0,0
+Handle,1,0,0,1,0,0,1
+Battery,1,0,0,0,1,0,0
+Switch,1,1,0,0,0,1,0
+LED,0,0,0,1,0,0,1

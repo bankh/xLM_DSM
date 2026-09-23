@@ -1,0 +1,299 @@
+2025-02-16 06:33:36,368 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Run 1/5
+2025-02-16 06:33:36,404 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - DEBUG: Initializing LLMInference.
+2025-02-16 06:33:36,404 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Initialized LLM inference for system: CubeSat
+2025-02-16 06:33:36,405 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Initialized DSM for system: CubeSat
+2025-02-16 06:33:36,406 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Inference model: ollama:llama3.3:70b-8k
+2025-02-16 06:34:18,844 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: final response = [
+        [1, 1, 1, 1, 1, 1],
+        [1, 1, 0, 0, 1, 1],
+        [1, 0, 1, 1, 0, 0],
+        [1, 0, 1, 1, 0, 0],
+        [1, 1, 0, 0, 1, 0],
+        [1, 1, 0, 0, 0, 1]
+    ]
+2025-02-16 06:34:18,846 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Query: 
+    Please identify system-level proximity relationships (in contact) between the components of CubeSat (nanosatellite), as listed below, and represent them in a Design Structure Matrix (DSM) format.  
+    The relationships should be articulated in plain English, capturing the essence of their interactions. 
+    Here is the list of subsystems/components to analyze: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software'] 
+    The DSM should clearly indicate the interactions between these components as 1 exist and 0 does not exist, considering both the presence and nature of these connections.         
+    Present the output in a square matrix format (number of rows and columns MUST be the same as the number of components = 6 for this example), with rows and columns labeled accordingly. 
+    Diagonal elements should be 1 in DSM matrix since each component interacts with itself. 
+    If you don't know the answer, just write 2 for the specific cell that you are unsure of. A worst case scenario of the **as a list of lists** shown below (diagonal elements are 1 and rest are 2). Don't make up an answer.     final response = [
+        [1, 2, 2, 2, 2, 2],
+        [2, 1, 2, 2, 2, 2],
+        [2, 2, 1, 2, 2, 2],
+        [2, 2, 2, 1, 2, 2],
+        [2, 2, 2, 2, 1, 2],
+        [2, 2, 2, 2, 2, 1]
+    ]
+
+    IMPORTANT: Your response must **ONLY** contain a valid **as a list of lists** in the following example format 7x7 matrix.     
+    The below list of lists is just an example format of your response. **Replace** the values with your **actual analysis** while providing your response with parameter of 'final response'.    
+    final response = [
+        [1, 0, 0, 0, 0, 0],
+        [0, 1, 0, 0, 0, 0],
+        [0, 0, 1, 0, 0, 0],
+        [0, 0, 0, 1, 0, 0],
+        [0, 0, 0, 0, 1, 0],
+        [0, 0, 0, 0, 0, 1]
+    ]
+
+    IMPORTANT: THE FORMAT OF THE OUTPUT MUST BE AS LIST OF LISTS ONLY SIMILAR TO THE ONE ABOVE (NO LATEX, CODE, OR OTHER ENCODINGS).
+    
+2025-02-16 06:34:18,846 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Response: final response = [
+        [1, 1, 1, 1, 1, 1],
+        [1, 1, 0, 0, 1, 1],
+        [1, 0, 1, 1, 0, 0],
+        [1, 0, 1, 1, 0, 0],
+        [1, 1, 0, 0, 1, 0],
+        [1, 1, 0, 0, 0, 1]
+    ]
+2025-02-16 06:34:18,847 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Matrix: [[1, 1, 1, 1, 1, 1], [1, 1, 0, 0, 1, 1], [1, 0, 1, 1, 0, 0], [1, 0, 1, 1, 0, 0], [1, 1, 0, 0, 1, 0], [1, 1, 0, 0, 0, 1]]
+2025-02-16 06:34:18,848 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Matrix from response.
+2025-02-16 06:34:18,848 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - At run 1/5
+2025-02-16 06:34:18,849 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Matrix: [[1, 1, 1, 1, 1, 1], [1, 1, 0, 0, 1, 1], [1, 0, 1, 1, 0, 0], [1, 0, 1, 1, 0, 0], [1, 1, 0, 0, 1, 0], [1, 1, 0, 0, 0, 1]]
+2025-02-16 06:34:18,850 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-16 06:34:28,860 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Run 2/5
+2025-02-16 06:34:28,896 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - DEBUG: Initializing LLMInference.
+2025-02-16 06:34:28,897 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Initialized LLM inference for system: CubeSat
+2025-02-16 06:34:28,898 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Initialized DSM for system: CubeSat
+2025-02-16 06:34:28,899 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Inference model: ollama:llama3.3:70b-8k
+2025-02-16 06:34:38,784 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: final response = [
+        [1, 1, 1, 1, 1, 1],
+        [1, 1, 0, 0, 1, 1],
+        [1, 0, 1, 1, 0, 0],
+        [1, 0, 1, 1, 0, 0],
+        [1, 1, 0, 0, 1, 0],
+        [1, 1, 0, 0, 0, 1]
+    ]
+2025-02-16 06:34:38,785 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Query: 
+    Please identify system-level proximity relationships (in contact) between the components of CubeSat (nanosatellite), as listed below, and represent them in a Design Structure Matrix (DSM) format.  
+    The relationships should be articulated in plain English, capturing the essence of their interactions. 
+    Here is the list of subsystems/components to analyze: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software'] 
+    The DSM should clearly indicate the interactions between these components as 1 exist and 0 does not exist, considering both the presence and nature of these connections.         
+    Present the output in a square matrix format (number of rows and columns MUST be the same as the number of components = 6 for this example), with rows and columns labeled accordingly. 
+    Diagonal elements should be 1 in DSM matrix since each component interacts with itself. 
+    If you don't know the answer, just write 2 for the specific cell that you are unsure of. A worst case scenario of the **as a list of lists** shown below (diagonal elements are 1 and rest are 2). Don't make up an answer.     final response = [
+        [1, 2, 2, 2, 2, 2],
+        [2, 1, 2, 2, 2, 2],
+        [2, 2, 1, 2, 2, 2],
+        [2, 2, 2, 1, 2, 2],
+        [2, 2, 2, 2, 1, 2],
+        [2, 2, 2, 2, 2, 1]
+    ]
+
+    IMPORTANT: Your response must **ONLY** contain a valid **as a list of lists** in the following example format 7x7 matrix.     
+    The below list of lists is just an example format of your response. **Replace** the values with your **actual analysis** while providing your response with parameter of 'final response'.    
+    final response = [
+        [1, 0, 0, 0, 0, 0],
+        [0, 1, 0, 0, 0, 0],
+        [0, 0, 1, 0, 0, 0],
+        [0, 0, 0, 1, 0, 0],
+        [0, 0, 0, 0, 1, 0],
+        [0, 0, 0, 0, 0, 1]
+    ]
+
+    IMPORTANT: THE FORMAT OF THE OUTPUT MUST BE AS LIST OF LISTS ONLY SIMILAR TO THE ONE ABOVE (NO LATEX, CODE, OR OTHER ENCODINGS).
+    
+2025-02-16 06:34:38,785 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Response: final response = [
+        [1, 1, 1, 1, 1, 1],
+        [1, 1, 0, 0, 1, 1],
+        [1, 0, 1, 1, 0, 0],
+        [1, 0, 1, 1, 0, 0],
+        [1, 1, 0, 0, 1, 0],
+        [1, 1, 0, 0, 0, 1]
+    ]
+2025-02-16 06:34:38,786 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Matrix: [[1, 1, 1, 1, 1, 1], [1, 1, 0, 0, 1, 1], [1, 0, 1, 1, 0, 0], [1, 0, 1, 1, 0, 0], [1, 1, 0, 0, 1, 0], [1, 1, 0, 0, 0, 1]]
+2025-02-16 06:34:38,787 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Matrix from response.
+2025-02-16 06:34:38,788 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - At run 2/5
+2025-02-16 06:34:38,788 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Matrix: [[1, 1, 1, 1, 1, 1], [1, 1, 0, 0, 1, 1], [1, 0, 1, 1, 0, 0], [1, 0, 1, 1, 0, 0], [1, 1, 0, 0, 1, 0], [1, 1, 0, 0, 0, 1]]
+2025-02-16 06:34:38,789 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-16 06:34:48,799 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Run 3/5
+2025-02-16 06:34:48,835 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - DEBUG: Initializing LLMInference.
+2025-02-16 06:34:48,836 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Initialized LLM inference for system: CubeSat
+2025-02-16 06:34:48,837 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Initialized DSM for system: CubeSat
+2025-02-16 06:34:48,837 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Inference model: ollama:llama3.3:70b-8k
+2025-02-16 06:34:58,679 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: final response = [
+        [1, 1, 1, 1, 1, 1],
+        [1, 1, 0, 0, 1, 1],
+        [1, 0, 1, 1, 0, 0],
+        [1, 0, 1, 1, 0, 0],
+        [1, 1, 0, 0, 1, 0],
+        [1, 1, 0, 0, 0, 1]
+    ]
+2025-02-16 06:34:58,680 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Query: 
+    Please identify system-level proximity relationships (in contact) between the components of CubeSat (nanosatellite), as listed below, and represent them in a Design Structure Matrix (DSM) format.  
+    The relationships should be articulated in plain English, capturing the essence of their interactions. 
+    Here is the list of subsystems/components to analyze: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software'] 
+    The DSM should clearly indicate the interactions between these components as 1 exist and 0 does not exist, considering both the presence and nature of these connections.         
+    Present the output in a square matrix format (number of rows and columns MUST be the same as the number of components = 6 for this example), with rows and columns labeled accordingly. 
+    Diagonal elements should be 1 in DSM matrix since each component interacts with itself. 
+    If you don't know the answer, just write 2 for the specific cell that you are unsure of. A worst case scenario of the **as a list of lists** shown below (diagonal elements are 1 and rest are 2). Don't make up an answer.     final response = [
+        [1, 2, 2, 2, 2, 2],
+        [2, 1, 2, 2, 2, 2],
+        [2, 2, 1, 2, 2, 2],
+        [2, 2, 2, 1, 2, 2],
+        [2, 2, 2, 2, 1, 2],
+        [2, 2, 2, 2, 2, 1]
+    ]
+
+    IMPORTANT: Your response must **ONLY** contain a valid **as a list of lists** in the following example format 7x7 matrix.     
+    The below list of lists is just an example format of your response. **Replace** the values with your **actual analysis** while providing your response with parameter of 'final response'.    
+    final response = [
+        [1, 0, 0, 0, 0, 0],
+        [0, 1, 0, 0, 0, 0],
+        [0, 0, 1, 0, 0, 0],
+        [0, 0, 0, 1, 0, 0],
+        [0, 0, 0, 0, 1, 0],
+        [0, 0, 0, 0, 0, 1]
+    ]
+
+    IMPORTANT: THE FORMAT OF THE OUTPUT MUST BE AS LIST OF LISTS ONLY SIMILAR TO THE ONE ABOVE (NO LATEX, CODE, OR OTHER ENCODINGS).
+    
+2025-02-16 06:34:58,681 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Response: final response = [
+        [1, 1, 1, 1, 1, 1],
+        [1, 1, 0, 0, 1, 1],
+        [1, 0, 1, 1, 0, 0],
+        [1, 0, 1, 1, 0, 0],
+        [1, 1, 0, 0, 1, 0],
+        [1, 1, 0, 0, 0, 1]
+    ]
+2025-02-16 06:34:58,682 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Matrix: [[1, 1, 1, 1, 1, 1], [1, 1, 0, 0, 1, 1], [1, 0, 1, 1, 0, 0], [1, 0, 1, 1, 0, 0], [1, 1, 0, 0, 1, 0], [1, 1, 0, 0, 0, 1]]
+2025-02-16 06:34:58,683 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Matrix from response.
+2025-02-16 06:34:58,684 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - At run 3/5
+2025-02-16 06:34:58,685 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Matrix: [[1, 1, 1, 1, 1, 1], [1, 1, 0, 0, 1, 1], [1, 0, 1, 1, 0, 0], [1, 0, 1, 1, 0, 0], [1, 1, 0, 0, 1, 0], [1, 1, 0, 0, 0, 1]]
+2025-02-16 06:34:58,686 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-16 06:35:08,697 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Run 4/5
+2025-02-16 06:35:08,735 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - DEBUG: Initializing LLMInference.
+2025-02-16 06:35:08,735 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Initialized LLM inference for system: CubeSat
+2025-02-16 06:35:08,737 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Initialized DSM for system: CubeSat
+2025-02-16 06:35:08,737 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Inference model: ollama:llama3.3:70b-8k
+2025-02-16 06:35:18,624 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: final response = [
+        [1, 1, 1, 1, 1, 1],
+        [1, 1, 0, 0, 1, 1],
+        [1, 0, 1, 1, 0, 0],
+        [1, 0, 1, 1, 0, 0],
+        [1, 1, 0, 0, 1, 0],
+        [1, 1, 0, 0, 0, 1]
+    ]
+2025-02-16 06:35:18,625 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Query: 
+    Please identify system-level proximity relationships (in contact) between the components of CubeSat (nanosatellite), as listed below, and represent them in a Design Structure Matrix (DSM) format.  
+    The relationships should be articulated in plain English, capturing the essence of their interactions. 
+    Here is the list of subsystems/components to analyze: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software'] 
+    The DSM should clearly indicate the interactions between these components as 1 exist and 0 does not exist, considering both the presence and nature of these connections.         
+    Present the output in a square matrix format (number of rows and columns MUST be the same as the number of components = 6 for this example), with rows and columns labeled accordingly. 
+    Diagonal elements should be 1 in DSM matrix since each component interacts with itself. 
+    If you don't know the answer, just write 2 for the specific cell that you are unsure of. A worst case scenario of the **as a list of lists** shown below (diagonal elements are 1 and rest are 2). Don't make up an answer.     final response = [
+        [1, 2, 2, 2, 2, 2],
+        [2, 1, 2, 2, 2, 2],
+        [2, 2, 1, 2, 2, 2],
+        [2, 2, 2, 1, 2, 2],
+        [2, 2, 2, 2, 1, 2],
+        [2, 2, 2, 2, 2, 1]
+    ]
+
+    IMPORTANT: Your response must **ONLY** contain a valid **as a list of lists** in the following example format 7x7 matrix.     
+    The below list of lists is just an example format of your response. **Replace** the values with your **actual analysis** while providing your response with parameter of 'final response'.    
+    final response = [
+        [1, 0, 0, 0, 0, 0],
+        [0, 1, 0, 0, 0, 0],
+        [0, 0, 1, 0, 0, 0],
+        [0, 0, 0, 1, 0, 0],
+        [0, 0, 0, 0, 1, 0],
+        [0, 0, 0, 0, 0, 1]
+    ]
+
+    IMPORTANT: THE FORMAT OF THE OUTPUT MUST BE AS LIST OF LISTS ONLY SIMILAR TO THE ONE ABOVE (NO LATEX, CODE, OR OTHER ENCODINGS).
+    
+2025-02-16 06:35:18,626 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Response: final response = [
+        [1, 1, 1, 1, 1, 1],
+        [1, 1, 0, 0, 1, 1],
+        [1, 0, 1, 1, 0, 0],
+        [1, 0, 1, 1, 0, 0],
+        [1, 1, 0, 0, 1, 0],
+        [1, 1, 0, 0, 0, 1]
+    ]
+2025-02-16 06:35:18,626 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Matrix: [[1, 1, 1, 1, 1, 1], [1, 1, 0, 0, 1, 1], [1, 0, 1, 1, 0, 0], [1, 0, 1, 1, 0, 0], [1, 1, 0, 0, 1, 0], [1, 1, 0, 0, 0, 1]]
+2025-02-16 06:35:18,627 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Matrix from response.
+2025-02-16 06:35:18,628 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - At run 4/5
+2025-02-16 06:35:18,628 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Matrix: [[1, 1, 1, 1, 1, 1], [1, 1, 0, 0, 1, 1], [1, 0, 1, 1, 0, 0], [1, 0, 1, 1, 0, 0], [1, 1, 0, 0, 1, 0], [1, 1, 0, 0, 0, 1]]
+2025-02-16 06:35:18,629 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-16 06:35:28,640 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Run 5/5
+2025-02-16 06:35:28,678 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - DEBUG: Initializing LLMInference.
+2025-02-16 06:35:28,678 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Initialized LLM inference for system: CubeSat
+2025-02-16 06:35:28,679 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Initialized DSM for system: CubeSat
+2025-02-16 06:35:28,680 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Inference model: ollama:llama3.3:70b-8k
+2025-02-16 06:35:38,530 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - LLM Response: final response = [
+        [1, 1, 1, 1, 1, 1],
+        [1, 1, 0, 0, 1, 1],
+        [1, 0, 1, 1, 0, 0],
+        [1, 0, 1, 1, 0, 0],
+        [1, 1, 0, 0, 1, 0],
+        [1, 1, 0, 0, 0, 1]
+    ]
+2025-02-16 06:35:38,532 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Query: 
+    Please identify system-level proximity relationships (in contact) between the components of CubeSat (nanosatellite), as listed below, and represent them in a Design Structure Matrix (DSM) format.  
+    The relationships should be articulated in plain English, capturing the essence of their interactions. 
+    Here is the list of subsystems/components to analyze: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software'] 
+    The DSM should clearly indicate the interactions between these components as 1 exist and 0 does not exist, considering both the presence and nature of these connections.         
+    Present the output in a square matrix format (number of rows and columns MUST be the same as the number of components = 6 for this example), with rows and columns labeled accordingly. 
+    Diagonal elements should be 1 in DSM matrix since each component interacts with itself. 
+    If you don't know the answer, just write 2 for the specific cell that you are unsure of. A worst case scenario of the **as a list of lists** shown below (diagonal elements are 1 and rest are 2). Don't make up an answer.     final response = [
+        [1, 2, 2, 2, 2, 2],
+        [2, 1, 2, 2, 2, 2],
+        [2, 2, 1, 2, 2, 2],
+        [2, 2, 2, 1, 2, 2],
+        [2, 2, 2, 2, 1, 2],
+        [2, 2, 2, 2, 2, 1]
+    ]
+
+    IMPORTANT: Your response must **ONLY** contain a valid **as a list of lists** in the following example format 7x7 matrix.     
+    The below list of lists is just an example format of your response. **Replace** the values with your **actual analysis** while providing your response with parameter of 'final response'.    
+    final response = [
+        [1, 0, 0, 0, 0, 0],
+        [0, 1, 0, 0, 0, 0],
+        [0, 0, 1, 0, 0, 0],
+        [0, 0, 0, 1, 0, 0],
+        [0, 0, 0, 0, 1, 0],
+        [0, 0, 0, 0, 0, 1]
+    ]
+
+    IMPORTANT: THE FORMAT OF THE OUTPUT MUST BE AS LIST OF LISTS ONLY SIMILAR TO THE ONE ABOVE (NO LATEX, CODE, OR OTHER ENCODINGS).
+    
+2025-02-16 06:35:38,532 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Response: final response = [
+        [1, 1, 1, 1, 1, 1],
+        [1, 1, 0, 0, 1, 1],
+        [1, 0, 1, 1, 0, 0],
+        [1, 0, 1, 1, 0, 0],
+        [1, 1, 0, 0, 1, 0],
+        [1, 1, 0, 0, 0, 1]
+    ]
+2025-02-16 06:35:38,533 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Matrix: [[1, 1, 1, 1, 1, 1], [1, 1, 0, 0, 1, 1], [1, 0, 1, 1, 0, 0], [1, 0, 1, 1, 0, 0], [1, 1, 0, 0, 1, 0], [1, 1, 0, 0, 0, 1]]
+2025-02-16 06:35:38,534 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Matrix from response.
+2025-02-16 06:35:38,534 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - At run 5/5
+2025-02-16 06:35:38,535 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Matrix: [[1, 1, 1, 1, 1, 1], [1, 1, 0, 0, 1, 1], [1, 0, 1, 1, 0, 0], [1, 0, 1, 1, 0, 0], [1, 1, 0, 0, 1, 0], [1, 1, 0, 0, 0, 1]]
+2025-02-16 06:35:38,536 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - --------------------------------------------------
+2025-02-16 06:35:48,546 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Duration of reference combination {}: 0:02:12.178705
+2025-02-16 06:35:48,548 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2025-02-16 06:35:48,549 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - 
+==================================================
+2025-02-16 06:35:48,550 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Average DSM Matrix for model: ollama:llama3.3:70b-8k
+2025-02-16 06:35:48,551 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - End of log reference type(s): ['baseline']
+2025-02-16 06:35:48,553 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Saving results to: ../output/experiment_llm_ollama:llama3.3:70b-8k_20250216-063336/llm_refs_baseline
+2025-02-16 06:35:48,556 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - 
+Average Matrix:
+                                                   Spacecraft  Guidance, Navigation, and Control (GNC) Subsystem  Propulsion Subsystem  Power Subsystem  Reaction Wheel  GNC Software
+Spacecraft                                                  1                                                  1                     1                1               1             1
+Guidance, Navigation, and Control (GNC) Subsystem           1                                                  1                     0                0               1             1
+Propulsion Subsystem                                        1                                                  0                     1                1               0             0
+Power Subsystem                                             1                                                  0                     1                1               0             0
+Reaction Wheel                                              1                                                  1                     0                0               1             0
+GNC Software                                                1                                                  1                     0                0               0             1
+2025-02-16 06:35:48,557 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - 
+Components: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software']
+2025-02-16 06:35:48,558 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - ==================================================
+
+2025-02-16 06:35:48,561 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Saved CSV to: ../output/experiment_llm_ollama:llama3.3:70b-8k_20250216-063336/llm_refs_baseline/average_matrix_20250216-063336.csv
+2025-02-16 06:35:48,562 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Saved JSON to: ../output/experiment_llm_ollama:llama3.3:70b-8k_20250216-063336/llm_refs_baseline/detailed_results_20250216-063336.json
+2025-02-16 06:35:48,972 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Saved visualization to: ../output/experiment_llm_ollama:llama3.3:70b-8k_20250216-063336/llm_refs_baseline/average_matrix_20250216-063336.png
+2025-02-16 06:35:48,973 - DSM_MultiModelExp_llm_ollama:llama3.3:70b-8k - INFO - Duration of experiment for ollama:llama3.3:70b-8k in llm inference type: 0:02:12

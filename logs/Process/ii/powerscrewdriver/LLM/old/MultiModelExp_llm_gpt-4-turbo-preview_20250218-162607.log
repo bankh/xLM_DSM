@@ -1,0 +1,1045 @@
+2025-02-18 16:26:07,786 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Run 1/5
+2025-02-18 16:26:07,823 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - DEBUG: Initializing LLMInference.
+2025-02-18 16:26:07,824 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Initialized LLM inference for system: power screwdriver
+2025-02-18 16:26:07,825 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Initialized DSM for system: power screwdriver
+2025-02-18 16:26:07,826 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Inference model: gpt-4-turbo-preview
+2025-02-18 16:26:07,827 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Prompt (attempt 1/3): 
+            Please identify the major components of power screwdriver in the engineering based on proximity relationships.             
+            The number of components must not exceed 7 (can be equal) and must be a list of strings.             
+            Please do not identify similar components that will work together under subsystem level since our interest is to identify the major components that form the core architecture of the system.             
+            Here is an example of the components for made-up system:             
+            system_components = [ "component 1", "component 2", "component 3", "component 4", "component 5" ]             
+            IMPORTANT: THE FORMAT OF THE OUTPUT MUST BE AS A LIST OF STRINGS ONLY SIMILAR TO THE ONE ABOVE (NO LATEX, NO CODE, NO DESCRIPTION, OR OTHER ENCODINGS).              
+2025-02-18 16:26:10,750 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: system_components = [ "Motor", "Gear System", "Chuck", "Battery", "Switch", "Housing", "Control Circuitry" ]
+2025-02-18 16:26:10,751 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix: ['Motor', 'Gear System', 'Chuck', 'Battery', 'Switch', 'Housing', 'Control Circuitry']
+2025-02-18 16:26:10,752 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Components: ['Motor', 'Gear System', 'Chuck', 'Battery', 'Switch', 'Housing', 'Control Circuitry']
+2025-02-18 16:26:11,964 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Valid
+2025-02-18 16:26:11,965 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Validation response: Valid
+2025-02-18 16:26:11,966 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Component list validated successfully on attempt 1
+2025-02-18 16:26:11,967 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Components: ['Motor', 'Gear System', 'Chuck', 'Battery', 'Switch', 'Housing', 'Control Circuitry']
+2025-02-18 16:26:11,968 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-18 16:26:11,969 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Motor -> Motor: 1
+2025-02-18 16:26:12,530 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:12,531 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Motor -> Gear System
+2025-02-18 16:26:12,532 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:12,533 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Motor -> Gear System: 1
+2025-02-18 16:26:12,959 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:12,960 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Motor -> Chuck
+2025-02-18 16:26:12,979 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:12,980 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Motor -> Chuck: 1
+2025-02-18 16:26:13,570 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:13,571 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Motor -> Battery
+2025-02-18 16:26:13,571 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:13,572 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Motor -> Battery: 1
+2025-02-18 16:26:14,213 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:14,214 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Motor -> Switch
+2025-02-18 16:26:14,215 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:14,216 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Motor -> Switch: 1
+2025-02-18 16:26:14,918 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:14,919 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Motor -> Housing
+2025-02-18 16:26:14,919 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:14,921 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Motor -> Housing: 1
+2025-02-18 16:26:15,529 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:15,530 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Motor -> Control Circuitry
+2025-02-18 16:26:15,530 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:15,531 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Motor -> Control Circuitry: 1
+2025-02-18 16:26:15,533 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Row 1 complete: [1, 1, 1, 1, 1, 1, 1]
+2025-02-18 16:26:15,533 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-18 16:26:16,038 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:16,038 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Gear System -> Motor
+2025-02-18 16:26:16,039 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:16,040 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Gear System -> Motor: 1
+2025-02-18 16:26:16,042 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Gear System -> Gear System: 1
+2025-02-18 16:26:16,611 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:16,612 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Gear System -> Chuck
+2025-02-18 16:26:16,613 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:16,614 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Gear System -> Chuck: 1
+2025-02-18 16:26:17,336 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: No
+2025-02-18 16:26:17,337 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Gear System -> Battery
+2025-02-18 16:26:17,338 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: No
+2025-02-18 16:26:17,339 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Gear System -> Battery: 0
+2025-02-18 16:26:17,943 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:17,944 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Gear System -> Switch
+2025-02-18 16:26:17,945 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:17,946 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Gear System -> Switch: 1
+2025-02-18 16:26:18,433 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:18,433 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Gear System -> Housing
+2025-02-18 16:26:18,435 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:18,436 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Gear System -> Housing: 1
+2025-02-18 16:26:19,007 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: No
+2025-02-18 16:26:19,008 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Gear System -> Control Circuitry
+2025-02-18 16:26:19,009 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: No
+2025-02-18 16:26:19,010 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Gear System -> Control Circuitry: 0
+2025-02-18 16:26:19,011 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Row 2 complete: [1, 1, 1, 0, 1, 1, 0]
+2025-02-18 16:26:19,012 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-18 16:26:19,641 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:19,642 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Chuck -> Motor
+2025-02-18 16:26:19,643 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:19,644 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Chuck -> Motor: 1
+2025-02-18 16:26:20,175 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:20,177 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Chuck -> Gear System
+2025-02-18 16:26:20,177 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:20,178 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Chuck -> Gear System: 1
+2025-02-18 16:26:20,179 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Chuck -> Chuck: 1
+2025-02-18 16:26:20,728 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:20,729 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Chuck -> Battery
+2025-02-18 16:26:20,730 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:20,731 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Chuck -> Battery: 1
+2025-02-18 16:26:21,438 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:21,439 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Chuck -> Switch
+2025-02-18 16:26:21,440 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:21,441 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Chuck -> Switch: 1
+2025-02-18 16:26:21,797 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:21,797 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Chuck -> Housing
+2025-02-18 16:26:21,799 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:21,800 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Chuck -> Housing: 1
+2025-02-18 16:26:22,272 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: No
+2025-02-18 16:26:22,272 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Chuck -> Control Circuitry
+2025-02-18 16:26:22,274 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: No
+2025-02-18 16:26:22,274 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Chuck -> Control Circuitry: 0
+2025-02-18 16:26:22,275 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Row 3 complete: [1, 1, 1, 1, 1, 1, 0]
+2025-02-18 16:26:22,277 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-18 16:26:22,857 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:22,858 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Battery -> Motor
+2025-02-18 16:26:22,859 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:22,860 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Battery -> Motor: 1
+2025-02-18 16:26:23,460 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:23,474 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Battery -> Gear System
+2025-02-18 16:26:23,475 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:23,476 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Battery -> Gear System: 1
+2025-02-18 16:26:23,992 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:23,993 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Battery -> Chuck
+2025-02-18 16:26:23,994 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:23,995 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Battery -> Chuck: 1
+2025-02-18 16:26:23,996 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Battery -> Battery: 1
+2025-02-18 16:26:24,513 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:24,514 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Battery -> Switch
+2025-02-18 16:26:24,515 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:24,516 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Battery -> Switch: 1
+2025-02-18 16:26:25,048 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:25,049 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Battery -> Housing
+2025-02-18 16:26:25,050 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:25,051 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Battery -> Housing: 1
+2025-02-18 16:26:25,482 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:25,483 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Battery -> Control Circuitry
+2025-02-18 16:26:25,484 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:25,485 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Battery -> Control Circuitry: 1
+2025-02-18 16:26:25,485 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Row 4 complete: [1, 1, 1, 1, 1, 1, 1]
+2025-02-18 16:26:25,486 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-18 16:26:25,903 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:25,904 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Switch -> Motor
+2025-02-18 16:26:25,905 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:25,906 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Switch -> Motor: 1
+2025-02-18 16:26:26,532 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:26,533 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Switch -> Gear System
+2025-02-18 16:26:26,534 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:26,535 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Switch -> Gear System: 1
+2025-02-18 16:26:27,301 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:26:27,302 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Switch -> Chuck
+2025-02-18 16:26:27,303 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:26:27,305 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Switch -> Chuck: 2
+2025-02-18 16:26:28,234 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:28,235 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Switch -> Battery
+2025-02-18 16:26:28,236 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:28,238 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Switch -> Battery: 1
+2025-02-18 16:26:28,239 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Switch -> Switch: 1
+2025-02-18 16:26:28,652 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:28,653 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Switch -> Housing
+2025-02-18 16:26:28,672 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:28,673 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Switch -> Housing: 1
+2025-02-18 16:26:29,114 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: No
+2025-02-18 16:26:29,115 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Switch -> Control Circuitry
+2025-02-18 16:26:29,116 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: No
+2025-02-18 16:26:29,117 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Switch -> Control Circuitry: 0
+2025-02-18 16:26:29,118 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Row 5 complete: [1, 1, 2, 1, 1, 1, 0]
+2025-02-18 16:26:29,119 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-18 16:26:29,515 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:29,515 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Housing -> Motor
+2025-02-18 16:26:29,517 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:29,517 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Housing -> Motor: 1
+2025-02-18 16:26:30,140 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:30,141 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Housing -> Gear System
+2025-02-18 16:26:30,142 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:30,143 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Housing -> Gear System: 1
+2025-02-18 16:26:30,548 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:30,549 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Housing -> Chuck
+2025-02-18 16:26:30,550 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:30,552 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Housing -> Chuck: 1
+2025-02-18 16:26:30,991 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:30,991 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Housing -> Battery
+2025-02-18 16:26:30,992 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:30,993 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Housing -> Battery: 1
+2025-02-18 16:26:31,394 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:31,395 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Housing -> Switch
+2025-02-18 16:26:31,396 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:31,397 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Housing -> Switch: 1
+2025-02-18 16:26:31,398 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Housing -> Housing: 1
+2025-02-18 16:26:31,955 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:31,956 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Housing -> Control Circuitry
+2025-02-18 16:26:31,957 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:31,957 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Housing -> Control Circuitry: 1
+2025-02-18 16:26:31,958 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Row 6 complete: [1, 1, 1, 1, 1, 1, 1]
+2025-02-18 16:26:31,959 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-18 16:26:32,364 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:32,365 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Control Circuitry -> Motor
+2025-02-18 16:26:32,366 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:32,367 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Control Circuitry -> Motor: 1
+2025-02-18 16:26:32,811 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:32,812 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Control Circuitry -> Gear System
+2025-02-18 16:26:32,813 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:32,814 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Control Circuitry -> Gear System: 1
+2025-02-18 16:26:33,335 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:33,336 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Control Circuitry -> Chuck
+2025-02-18 16:26:33,337 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:33,338 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Control Circuitry -> Chuck: 1
+2025-02-18 16:26:33,931 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:33,932 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Control Circuitry -> Battery
+2025-02-18 16:26:33,951 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:33,951 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Control Circuitry -> Battery: 1
+2025-02-18 16:26:34,320 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:34,321 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Control Circuitry -> Switch
+2025-02-18 16:26:34,322 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:34,323 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Control Circuitry -> Switch: 1
+2025-02-18 16:26:34,696 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:34,697 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Control Circuitry -> Housing
+2025-02-18 16:26:34,699 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:34,699 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Control Circuitry -> Housing: 1
+2025-02-18 16:26:34,700 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Control Circuitry -> Control Circuitry: 1
+2025-02-18 16:26:34,701 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Row 7 complete: [1, 1, 1, 1, 1, 1, 1]
+2025-02-18 16:26:34,702 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-18 16:26:34,703 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Final Matrix:
+[[1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 0, 1, 1, 0], [1, 1, 1, 1, 1, 1, 0], [1, 1, 1, 1, 1, 1, 1], [1, 1, 2, 1, 1, 1, 0], [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1]]
+2025-02-18 16:26:34,704 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-18 16:26:34,705 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix from response.
+2025-02-18 16:26:34,706 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - At run 1/5
+2025-02-18 16:26:34,707 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix: [[1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 0, 1, 1, 0], [1, 1, 1, 1, 1, 1, 0], [1, 1, 1, 1, 1, 1, 1], [1, 1, 2, 1, 1, 1, 0], [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1]]
+2025-02-18 16:26:34,708 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-18 16:26:44,720 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Run 2/5
+2025-02-18 16:26:44,756 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - DEBUG: Initializing LLMInference.
+2025-02-18 16:26:44,757 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Initialized LLM inference for system: power screwdriver
+2025-02-18 16:26:44,758 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Initialized DSM for system: power screwdriver
+2025-02-18 16:26:44,759 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Inference model: gpt-4-turbo-preview
+2025-02-18 16:26:44,759 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Motor -> Motor: 1
+2025-02-18 16:26:45,534 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:45,535 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Motor -> Gear System
+2025-02-18 16:26:45,536 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:45,537 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Motor -> Gear System: 1
+2025-02-18 16:26:46,248 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:46,249 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Motor -> Chuck
+2025-02-18 16:26:46,250 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:46,251 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Motor -> Chuck: 1
+2025-02-18 16:26:46,685 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:46,686 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Motor -> Battery
+2025-02-18 16:26:46,687 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:46,688 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Motor -> Battery: 1
+2025-02-18 16:26:47,197 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:47,198 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Motor -> Switch
+2025-02-18 16:26:47,199 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:47,199 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Motor -> Switch: 1
+2025-02-18 16:26:47,812 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:47,813 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Motor -> Housing
+2025-02-18 16:26:47,814 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:47,815 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Motor -> Housing: 1
+2025-02-18 16:26:48,293 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:48,294 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Motor -> Control Circuitry
+2025-02-18 16:26:48,295 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:48,296 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Motor -> Control Circuitry: 1
+2025-02-18 16:26:48,297 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Row 1 complete: [1, 1, 1, 1, 1, 1, 1]
+2025-02-18 16:26:48,298 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-18 16:26:48,938 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:48,939 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Gear System -> Motor
+2025-02-18 16:26:48,940 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:48,941 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Gear System -> Motor: 1
+2025-02-18 16:26:48,942 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Gear System -> Gear System: 1
+2025-02-18 16:26:49,458 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:49,459 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Gear System -> Chuck
+2025-02-18 16:26:49,460 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:49,461 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Gear System -> Chuck: 1
+2025-02-18 16:26:49,945 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:49,946 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Gear System -> Battery
+2025-02-18 16:26:49,965 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:49,966 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Gear System -> Battery: 1
+2025-02-18 16:26:50,453 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:50,454 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Gear System -> Switch
+2025-02-18 16:26:50,455 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:50,456 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Gear System -> Switch: 1
+2025-02-18 16:26:51,005 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:51,005 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Gear System -> Housing
+2025-02-18 16:26:51,006 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:51,007 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Gear System -> Housing: 1
+2025-02-18 16:26:51,609 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: No
+2025-02-18 16:26:51,610 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Gear System -> Control Circuitry
+2025-02-18 16:26:51,611 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: No
+2025-02-18 16:26:51,612 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Gear System -> Control Circuitry: 0
+2025-02-18 16:26:51,613 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Row 2 complete: [1, 1, 1, 1, 1, 1, 0]
+2025-02-18 16:26:51,613 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-18 16:26:52,090 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:52,091 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Chuck -> Motor
+2025-02-18 16:26:52,091 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:52,092 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Chuck -> Motor: 1
+2025-02-18 16:26:52,524 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:52,525 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Chuck -> Gear System
+2025-02-18 16:26:52,525 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:52,526 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Chuck -> Gear System: 1
+2025-02-18 16:26:52,528 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Chuck -> Chuck: 1
+2025-02-18 16:26:53,044 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:53,045 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Chuck -> Battery
+2025-02-18 16:26:53,046 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:53,047 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Chuck -> Battery: 1
+2025-02-18 16:26:53,428 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:53,429 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Chuck -> Switch
+2025-02-18 16:26:53,430 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:53,431 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Chuck -> Switch: 1
+2025-02-18 16:26:53,914 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:53,915 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Chuck -> Housing
+2025-02-18 16:26:53,916 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:53,916 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Chuck -> Housing: 1
+2025-02-18 16:26:54,363 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: No
+2025-02-18 16:26:54,365 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Chuck -> Control Circuitry
+2025-02-18 16:26:54,365 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: No
+2025-02-18 16:26:54,366 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Chuck -> Control Circuitry: 0
+2025-02-18 16:26:54,368 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Row 3 complete: [1, 1, 1, 1, 1, 1, 0]
+2025-02-18 16:26:54,369 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-18 16:26:54,835 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:54,836 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Battery -> Motor
+2025-02-18 16:26:54,837 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:54,838 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Battery -> Motor: 1
+2025-02-18 16:26:55,240 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:55,241 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Battery -> Gear System
+2025-02-18 16:26:55,260 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:55,261 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Battery -> Gear System: 1
+2025-02-18 16:26:55,729 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:55,730 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Battery -> Chuck
+2025-02-18 16:26:55,731 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:55,732 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Battery -> Chuck: 1
+2025-02-18 16:26:55,732 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Battery -> Battery: 1
+2025-02-18 16:26:56,118 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:56,119 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Battery -> Switch
+2025-02-18 16:26:56,119 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:56,120 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Battery -> Switch: 1
+2025-02-18 16:26:56,631 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:56,632 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Battery -> Housing
+2025-02-18 16:26:56,633 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:56,634 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Battery -> Housing: 1
+2025-02-18 16:26:57,222 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:57,224 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Battery -> Control Circuitry
+2025-02-18 16:26:57,224 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:57,225 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Battery -> Control Circuitry: 1
+2025-02-18 16:26:57,226 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Row 4 complete: [1, 1, 1, 1, 1, 1, 1]
+2025-02-18 16:26:57,227 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-18 16:26:57,639 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:57,640 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Switch -> Motor
+2025-02-18 16:26:57,641 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:57,642 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Switch -> Motor: 1
+2025-02-18 16:26:58,334 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:58,335 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Switch -> Gear System
+2025-02-18 16:26:58,336 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:58,337 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Switch -> Gear System: 1
+2025-02-18 16:26:59,091 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:26:59,092 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Switch -> Chuck
+2025-02-18 16:26:59,093 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:26:59,094 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Switch -> Chuck: 2
+2025-02-18 16:26:59,746 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:26:59,747 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Switch -> Battery
+2025-02-18 16:26:59,748 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:26:59,748 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Switch -> Battery: 1
+2025-02-18 16:26:59,750 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Switch -> Switch: 1
+2025-02-18 16:27:00,169 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:27:00,170 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Switch -> Housing
+2025-02-18 16:27:00,171 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:27:00,172 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Switch -> Housing: 1
+2025-02-18 16:27:00,715 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: No
+2025-02-18 16:27:00,716 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Switch -> Control Circuitry
+2025-02-18 16:27:00,735 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: No
+2025-02-18 16:27:00,736 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Switch -> Control Circuitry: 0
+2025-02-18 16:27:00,737 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Row 5 complete: [1, 1, 2, 1, 1, 1, 0]
+2025-02-18 16:27:00,738 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-18 16:27:01,425 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:27:01,426 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Housing -> Motor
+2025-02-18 16:27:01,427 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:27:01,427 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Housing -> Motor: 1
+2025-02-18 16:27:02,040 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:27:02,041 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Housing -> Gear System
+2025-02-18 16:27:02,042 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:27:02,043 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Housing -> Gear System: 1
+2025-02-18 16:27:02,623 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:27:02,624 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Housing -> Chuck
+2025-02-18 16:27:02,625 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:27:02,626 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Housing -> Chuck: 1
+2025-02-18 16:27:03,020 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:27:03,021 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Housing -> Battery
+2025-02-18 16:27:03,022 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:27:03,023 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Housing -> Battery: 1
+2025-02-18 16:27:03,561 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:27:03,562 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Housing -> Switch
+2025-02-18 16:27:03,563 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:27:03,563 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Housing -> Switch: 1
+2025-02-18 16:27:03,564 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Housing -> Housing: 1
+2025-02-18 16:27:04,054 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:27:04,055 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Housing -> Control Circuitry
+2025-02-18 16:27:04,056 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:27:04,057 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Housing -> Control Circuitry: 1
+2025-02-18 16:27:04,058 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Row 6 complete: [1, 1, 1, 1, 1, 1, 1]
+2025-02-18 16:27:04,059 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-18 16:27:04,533 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:27:04,534 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Control Circuitry -> Motor
+2025-02-18 16:27:04,535 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:27:04,535 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Control Circuitry -> Motor: 1
+2025-02-18 16:27:05,161 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:27:05,162 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Control Circuitry -> Gear System
+2025-02-18 16:27:05,163 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:27:05,163 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Control Circuitry -> Gear System: 1
+2025-02-18 16:27:05,820 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:27:05,821 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Control Circuitry -> Chuck
+2025-02-18 16:27:05,840 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:27:05,841 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Control Circuitry -> Chuck: 1
+2025-02-18 16:27:06,392 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:27:06,393 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Control Circuitry -> Battery
+2025-02-18 16:27:06,394 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:27:06,395 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Control Circuitry -> Battery: 1
+2025-02-18 16:27:06,814 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:27:06,815 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Control Circuitry -> Switch
+2025-02-18 16:27:06,816 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:27:06,817 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Control Circuitry -> Switch: 1
+2025-02-18 16:27:07,284 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:27:07,285 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Control Circuitry -> Housing
+2025-02-18 16:27:07,285 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:27:07,286 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Control Circuitry -> Housing: 1
+2025-02-18 16:27:07,288 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Control Circuitry -> Control Circuitry: 1
+2025-02-18 16:27:07,289 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Row 7 complete: [1, 1, 1, 1, 1, 1, 1]
+2025-02-18 16:27:07,290 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-18 16:27:07,291 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Final Matrix:
+[[1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 0], [1, 1, 1, 1, 1, 1, 0], [1, 1, 1, 1, 1, 1, 1], [1, 1, 2, 1, 1, 1, 0], [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1]]
+2025-02-18 16:27:07,292 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-18 16:27:07,292 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix from response.
+2025-02-18 16:27:07,294 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - At run 2/5
+2025-02-18 16:27:07,295 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix: [[1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 0], [1, 1, 1, 1, 1, 1, 0], [1, 1, 1, 1, 1, 1, 1], [1, 1, 2, 1, 1, 1, 0], [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1]]
+2025-02-18 16:27:07,295 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-18 16:27:17,307 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Run 3/5
+2025-02-18 16:27:17,342 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - DEBUG: Initializing LLMInference.
+2025-02-18 16:27:17,343 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Initialized LLM inference for system: power screwdriver
+2025-02-18 16:27:17,343 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Initialized DSM for system: power screwdriver
+2025-02-18 16:27:17,344 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Inference model: gpt-4-turbo-preview
+2025-02-18 16:27:17,345 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Motor -> Motor: 1
+2025-02-18 16:27:17,884 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:27:17,885 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Motor -> Gear System
+2025-02-18 16:27:17,886 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:27:17,887 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Motor -> Gear System: 1
+2025-02-18 16:27:18,327 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:27:18,328 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Motor -> Chuck
+2025-02-18 16:27:18,329 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:27:18,330 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Motor -> Chuck: 1
+2025-02-18 16:27:18,775 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:27:18,776 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Motor -> Battery
+2025-02-18 16:27:18,777 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:27:18,778 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Motor -> Battery: 1
+2025-02-18 16:27:19,277 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:27:19,278 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Motor -> Switch
+2025-02-18 16:27:19,279 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:27:19,280 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Motor -> Switch: 1
+2025-02-18 16:27:19,932 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:27:19,933 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Motor -> Housing
+2025-02-18 16:27:19,934 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:27:19,935 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Motor -> Housing: 1
+2025-02-18 16:27:20,501 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:27:20,502 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Motor -> Control Circuitry
+2025-02-18 16:27:20,503 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:27:20,504 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Motor -> Control Circuitry: 1
+2025-02-18 16:27:20,505 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Row 1 complete: [1, 1, 1, 1, 1, 1, 1]
+2025-02-18 16:27:20,506 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-18 16:27:21,137 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:27:21,138 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Gear System -> Motor
+2025-02-18 16:27:21,157 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:27:21,158 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Gear System -> Motor: 1
+2025-02-18 16:27:21,159 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Gear System -> Gear System: 1
+2025-02-18 16:27:21,650 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:27:21,650 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Gear System -> Chuck
+2025-02-18 16:27:21,651 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:27:21,653 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Gear System -> Chuck: 1
+2025-02-18 16:27:22,326 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:27:22,327 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Gear System -> Battery
+2025-02-18 16:27:22,328 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:27:22,329 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Gear System -> Battery: 1
+2025-02-18 16:27:22,847 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:27:22,847 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Gear System -> Switch
+2025-02-18 16:27:22,848 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:27:22,849 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Gear System -> Switch: 1
+2025-02-18 16:27:23,303 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:27:23,304 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Gear System -> Housing
+2025-02-18 16:27:23,305 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:27:23,306 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Gear System -> Housing: 1
+2025-02-18 16:27:23,857 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: No
+2025-02-18 16:27:23,858 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Gear System -> Control Circuitry
+2025-02-18 16:27:23,859 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: No
+2025-02-18 16:27:23,860 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Gear System -> Control Circuitry: 0
+2025-02-18 16:27:23,861 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Row 2 complete: [1, 1, 1, 1, 1, 1, 0]
+2025-02-18 16:27:23,862 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-18 16:27:24,350 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:27:24,351 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Chuck -> Motor
+2025-02-18 16:27:24,352 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:27:24,353 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Chuck -> Motor: 1
+2025-02-18 16:27:25,080 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:27:25,081 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Chuck -> Gear System
+2025-02-18 16:27:25,082 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:27:25,083 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Chuck -> Gear System: 1
+2025-02-18 16:27:25,084 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Chuck -> Chuck: 1
+2025-02-18 16:27:25,637 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:27:25,638 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Chuck -> Battery
+2025-02-18 16:27:25,638 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:27:25,639 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Chuck -> Battery: 1
+2025-02-18 16:27:26,144 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: No
+2025-02-18 16:27:26,145 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Chuck -> Switch
+2025-02-18 16:27:26,164 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: No
+2025-02-18 16:27:26,165 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Chuck -> Switch: 0
+2025-02-18 16:27:29,997 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:27:29,997 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Chuck -> Housing
+2025-02-18 16:27:29,999 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:27:30,000 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Chuck -> Housing: 1
+2025-02-18 16:27:30,675 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: No
+2025-02-18 16:27:30,676 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Chuck -> Control Circuitry
+2025-02-18 16:27:30,676 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: No
+2025-02-18 16:27:30,677 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Chuck -> Control Circuitry: 0
+2025-02-18 16:27:30,679 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Row 3 complete: [1, 1, 1, 1, 0, 1, 0]
+2025-02-18 16:27:30,680 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-18 16:27:31,190 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:27:31,191 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Battery -> Motor
+2025-02-18 16:27:31,210 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:27:31,211 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Battery -> Motor: 1
+2025-02-18 16:27:31,764 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:27:31,765 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Battery -> Gear System
+2025-02-18 16:27:31,766 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:27:31,767 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Battery -> Gear System: 1
+2025-02-18 16:27:32,276 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:27:32,277 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Battery -> Chuck
+2025-02-18 16:27:32,278 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:27:32,279 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Battery -> Chuck: 1
+2025-02-18 16:27:32,280 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Battery -> Battery: 1
+2025-02-18 16:27:32,865 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:27:32,866 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Battery -> Switch
+2025-02-18 16:27:32,867 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:27:32,867 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Battery -> Switch: 1
+2025-02-18 16:27:33,316 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:27:33,317 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Battery -> Housing
+2025-02-18 16:27:33,318 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:27:33,319 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Battery -> Housing: 1
+2025-02-18 16:27:33,829 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:27:33,830 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Battery -> Control Circuitry
+2025-02-18 16:27:33,830 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:27:33,831 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Battery -> Control Circuitry: 1
+2025-02-18 16:27:33,832 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Row 4 complete: [1, 1, 1, 1, 1, 1, 1]
+2025-02-18 16:27:33,833 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-18 16:27:34,278 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:27:34,279 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Switch -> Motor
+2025-02-18 16:27:34,280 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:27:34,281 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Switch -> Motor: 1
+2025-02-18 16:27:34,817 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:27:34,818 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Switch -> Gear System
+2025-02-18 16:27:34,818 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:27:34,819 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Switch -> Gear System: 1
+2025-02-18 16:27:35,772 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: I don't know. I need more information.
+2025-02-18 16:27:35,773 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Switch -> Chuck
+2025-02-18 16:27:35,773 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: I don't know. I need more information.
+2025-02-18 16:27:35,775 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Switch -> Chuck: 2
+2025-02-18 16:27:36,267 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:27:36,268 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Switch -> Battery
+2025-02-18 16:27:36,287 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:27:36,288 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Switch -> Battery: 1
+2025-02-18 16:27:36,289 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Switch -> Switch: 1
+2025-02-18 16:27:36,775 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:27:36,776 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Switch -> Housing
+2025-02-18 16:27:36,777 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:27:36,778 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Switch -> Housing: 1
+2025-02-18 16:27:37,263 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: No
+2025-02-18 16:27:37,264 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Switch -> Control Circuitry
+2025-02-18 16:27:37,265 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: No
+2025-02-18 16:27:37,266 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Switch -> Control Circuitry: 0
+2025-02-18 16:27:37,268 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Row 5 complete: [1, 1, 2, 1, 1, 1, 0]
+2025-02-18 16:27:37,269 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-18 16:27:37,863 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:27:37,863 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Housing -> Motor
+2025-02-18 16:27:37,864 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:27:37,865 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Housing -> Motor: 1
+2025-02-18 16:27:38,391 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:27:38,392 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Housing -> Gear System
+2025-02-18 16:27:38,393 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:27:38,394 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Housing -> Gear System: 1
+2025-02-18 16:27:38,909 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:27:38,910 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Housing -> Chuck
+2025-02-18 16:27:38,910 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:27:38,911 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Housing -> Chuck: 1
+2025-02-18 16:27:39,466 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:27:39,466 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Housing -> Battery
+2025-02-18 16:27:39,467 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:27:39,469 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Housing -> Battery: 1
+2025-02-18 16:27:40,010 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:27:40,011 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Housing -> Switch
+2025-02-18 16:27:40,012 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:27:40,013 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Housing -> Switch: 1
+2025-02-18 16:27:40,013 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Housing -> Housing: 1
+2025-02-18 16:27:40,465 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:27:40,466 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Housing -> Control Circuitry
+2025-02-18 16:27:40,467 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:27:40,468 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Housing -> Control Circuitry: 1
+2025-02-18 16:27:40,469 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Row 6 complete: [1, 1, 1, 1, 1, 1, 1]
+2025-02-18 16:27:40,470 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-18 16:27:41,022 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:27:41,023 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Control Circuitry -> Motor
+2025-02-18 16:27:41,023 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:27:41,024 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Control Circuitry -> Motor: 1
+2025-02-18 16:27:41,631 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:27:41,632 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Control Circuitry -> Gear System
+2025-02-18 16:27:41,651 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:27:41,652 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Control Circuitry -> Gear System: 1
+2025-02-18 16:27:42,148 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:27:42,149 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Control Circuitry -> Chuck
+2025-02-18 16:27:42,150 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:27:42,151 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Control Circuitry -> Chuck: 1
+2025-02-18 16:27:42,642 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:27:42,642 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Control Circuitry -> Battery
+2025-02-18 16:27:42,643 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:27:42,645 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Control Circuitry -> Battery: 1
+2025-02-18 16:27:43,223 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:27:43,223 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Control Circuitry -> Switch
+2025-02-18 16:27:43,224 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:27:43,225 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Control Circuitry -> Switch: 1
+2025-02-18 16:27:48,095 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:27:48,096 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Control Circuitry -> Housing
+2025-02-18 16:27:48,097 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:27:48,097 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Control Circuitry -> Housing: 1
+2025-02-18 16:27:48,098 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Control Circuitry -> Control Circuitry: 1
+2025-02-18 16:27:48,100 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Row 7 complete: [1, 1, 1, 1, 1, 1, 1]
+2025-02-18 16:27:48,101 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-18 16:27:48,102 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Final Matrix:
+[[1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 0], [1, 1, 1, 1, 0, 1, 0], [1, 1, 1, 1, 1, 1, 1], [1, 1, 2, 1, 1, 1, 0], [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1]]
+2025-02-18 16:27:48,103 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-18 16:27:48,103 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix from response.
+2025-02-18 16:27:48,104 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - At run 3/5
+2025-02-18 16:27:48,105 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix: [[1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 0], [1, 1, 1, 1, 0, 1, 0], [1, 1, 1, 1, 1, 1, 1], [1, 1, 2, 1, 1, 1, 0], [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1]]
+2025-02-18 16:27:48,106 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-18 16:27:58,117 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Run 4/5
+2025-02-18 16:27:58,153 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - DEBUG: Initializing LLMInference.
+2025-02-18 16:27:58,154 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Initialized LLM inference for system: power screwdriver
+2025-02-18 16:27:58,155 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Initialized DSM for system: power screwdriver
+2025-02-18 16:27:58,156 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Inference model: gpt-4-turbo-preview
+2025-02-18 16:27:58,157 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Motor -> Motor: 1
+2025-02-18 16:27:58,899 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:27:58,900 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Motor -> Gear System
+2025-02-18 16:27:58,901 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:27:58,902 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Motor -> Gear System: 1
+2025-02-18 16:27:59,307 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:27:59,307 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Motor -> Chuck
+2025-02-18 16:27:59,308 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:27:59,309 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Motor -> Chuck: 1
+2025-02-18 16:28:00,833 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:00,834 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Motor -> Battery
+2025-02-18 16:28:00,835 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:00,836 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Motor -> Battery: 1
+2025-02-18 16:28:01,377 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:01,378 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Motor -> Switch
+2025-02-18 16:28:01,379 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:01,380 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Motor -> Switch: 1
+2025-02-18 16:28:01,762 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:01,763 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Motor -> Housing
+2025-02-18 16:28:01,764 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:01,765 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Motor -> Housing: 1
+2025-02-18 16:28:02,216 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:02,216 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Motor -> Control Circuitry
+2025-02-18 16:28:02,217 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:02,218 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Motor -> Control Circuitry: 1
+2025-02-18 16:28:02,218 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Row 1 complete: [1, 1, 1, 1, 1, 1, 1]
+2025-02-18 16:28:02,219 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-18 16:28:02,776 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:02,777 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Gear System -> Motor
+2025-02-18 16:28:02,778 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:02,779 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Gear System -> Motor: 1
+2025-02-18 16:28:02,780 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Gear System -> Gear System: 1
+2025-02-18 16:28:03,189 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:03,190 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Gear System -> Chuck
+2025-02-18 16:28:03,209 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:03,210 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Gear System -> Chuck: 1
+2025-02-18 16:28:04,532 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:04,533 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Gear System -> Battery
+2025-02-18 16:28:04,534 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:04,535 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Gear System -> Battery: 1
+2025-02-18 16:28:05,076 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:05,076 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Gear System -> Switch
+2025-02-18 16:28:05,077 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:05,078 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Gear System -> Switch: 1
+2025-02-18 16:28:05,515 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:05,516 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Gear System -> Housing
+2025-02-18 16:28:05,517 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:05,517 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Gear System -> Housing: 1
+2025-02-18 16:28:06,152 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: No
+2025-02-18 16:28:06,153 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Gear System -> Control Circuitry
+2025-02-18 16:28:06,154 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: No
+2025-02-18 16:28:06,155 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Gear System -> Control Circuitry: 0
+2025-02-18 16:28:06,155 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Row 2 complete: [1, 1, 1, 1, 1, 1, 0]
+2025-02-18 16:28:06,157 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-18 16:28:06,545 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:06,546 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Chuck -> Motor
+2025-02-18 16:28:06,546 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:06,547 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Chuck -> Motor: 1
+2025-02-18 16:28:06,980 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:06,980 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Chuck -> Gear System
+2025-02-18 16:28:06,981 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:06,982 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Chuck -> Gear System: 1
+2025-02-18 16:28:06,983 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Chuck -> Chuck: 1
+2025-02-18 16:28:07,473 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:07,475 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Chuck -> Battery
+2025-02-18 16:28:07,475 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:07,477 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Chuck -> Battery: 1
+2025-02-18 16:28:08,240 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: No
+2025-02-18 16:28:08,240 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Chuck -> Switch
+2025-02-18 16:28:08,260 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: No
+2025-02-18 16:28:08,260 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Chuck -> Switch: 0
+2025-02-18 16:28:08,646 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:08,647 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Chuck -> Housing
+2025-02-18 16:28:08,648 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:08,649 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Chuck -> Housing: 1
+2025-02-18 16:28:09,260 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: No
+2025-02-18 16:28:09,261 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Chuck -> Control Circuitry
+2025-02-18 16:28:09,262 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: No
+2025-02-18 16:28:09,263 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Chuck -> Control Circuitry: 0
+2025-02-18 16:28:09,263 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Row 3 complete: [1, 1, 1, 1, 0, 1, 0]
+2025-02-18 16:28:09,265 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-18 16:28:09,654 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:09,655 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Battery -> Motor
+2025-02-18 16:28:09,656 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:09,657 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Battery -> Motor: 1
+2025-02-18 16:28:10,140 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:10,141 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Battery -> Gear System
+2025-02-18 16:28:10,142 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:10,143 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Battery -> Gear System: 1
+2025-02-18 16:28:10,548 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:10,549 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Battery -> Chuck
+2025-02-18 16:28:10,550 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:10,551 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Battery -> Chuck: 1
+2025-02-18 16:28:10,551 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Battery -> Battery: 1
+2025-02-18 16:28:10,938 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:10,939 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Battery -> Switch
+2025-02-18 16:28:10,940 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:10,941 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Battery -> Switch: 1
+2025-02-18 16:28:11,397 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:11,397 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Battery -> Housing
+2025-02-18 16:28:11,398 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:11,399 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Battery -> Housing: 1
+2025-02-18 16:28:11,757 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:11,758 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Battery -> Control Circuitry
+2025-02-18 16:28:11,758 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:11,759 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Battery -> Control Circuitry: 1
+2025-02-18 16:28:11,759 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Row 4 complete: [1, 1, 1, 1, 1, 1, 1]
+2025-02-18 16:28:11,760 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-18 16:28:12,158 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:12,158 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Switch -> Motor
+2025-02-18 16:28:12,159 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:12,160 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Switch -> Motor: 1
+2025-02-18 16:28:12,559 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:12,560 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Switch -> Gear System
+2025-02-18 16:28:12,561 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:12,562 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Switch -> Gear System: 1
+2025-02-18 16:28:12,951 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: No
+2025-02-18 16:28:12,951 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Switch -> Chuck
+2025-02-18 16:28:12,952 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: No
+2025-02-18 16:28:12,953 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Switch -> Chuck: 0
+2025-02-18 16:28:13,422 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:13,423 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Switch -> Battery
+2025-02-18 16:28:13,442 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:13,443 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Switch -> Battery: 1
+2025-02-18 16:28:13,444 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Switch -> Switch: 1
+2025-02-18 16:28:14,028 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:14,028 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Switch -> Housing
+2025-02-18 16:28:14,029 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:14,030 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Switch -> Housing: 1
+2025-02-18 16:28:14,770 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: No
+2025-02-18 16:28:14,771 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Switch -> Control Circuitry
+2025-02-18 16:28:14,772 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: No
+2025-02-18 16:28:14,772 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Switch -> Control Circuitry: 0
+2025-02-18 16:28:14,773 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Row 5 complete: [1, 1, 0, 1, 1, 1, 0]
+2025-02-18 16:28:14,775 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-18 16:28:15,175 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:15,175 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Housing -> Motor
+2025-02-18 16:28:15,176 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:15,177 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Housing -> Motor: 1
+2025-02-18 16:28:15,765 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:15,766 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Housing -> Gear System
+2025-02-18 16:28:15,767 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:15,768 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Housing -> Gear System: 1
+2025-02-18 16:28:16,218 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:16,219 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Housing -> Chuck
+2025-02-18 16:28:16,220 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:16,221 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Housing -> Chuck: 1
+2025-02-18 16:28:16,931 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:16,931 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Housing -> Battery
+2025-02-18 16:28:16,932 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:16,933 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Housing -> Battery: 1
+2025-02-18 16:28:17,374 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:17,375 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Housing -> Switch
+2025-02-18 16:28:17,376 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:17,376 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Housing -> Switch: 1
+2025-02-18 16:28:17,377 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Housing -> Housing: 1
+2025-02-18 16:28:17,751 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:17,751 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Housing -> Control Circuitry
+2025-02-18 16:28:17,752 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:17,753 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Housing -> Control Circuitry: 1
+2025-02-18 16:28:17,754 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Row 6 complete: [1, 1, 1, 1, 1, 1, 1]
+2025-02-18 16:28:17,754 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-18 16:28:18,184 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:18,185 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Control Circuitry -> Motor
+2025-02-18 16:28:18,185 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:18,186 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Control Circuitry -> Motor: 1
+2025-02-18 16:28:18,775 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:18,776 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Control Circuitry -> Gear System
+2025-02-18 16:28:18,776 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:18,777 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Control Circuitry -> Gear System: 1
+2025-02-18 16:28:19,404 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:19,405 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Control Circuitry -> Chuck
+2025-02-18 16:28:19,406 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:19,407 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Control Circuitry -> Chuck: 1
+2025-02-18 16:28:20,118 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:20,119 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Control Circuitry -> Battery
+2025-02-18 16:28:20,120 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:20,120 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Control Circuitry -> Battery: 1
+2025-02-18 16:28:20,536 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:20,537 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Control Circuitry -> Switch
+2025-02-18 16:28:20,538 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:20,539 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Control Circuitry -> Switch: 1
+2025-02-18 16:28:21,132 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:21,132 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Control Circuitry -> Housing
+2025-02-18 16:28:21,133 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:21,134 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Control Circuitry -> Housing: 1
+2025-02-18 16:28:21,135 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Control Circuitry -> Control Circuitry: 1
+2025-02-18 16:28:21,135 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Row 7 complete: [1, 1, 1, 1, 1, 1, 1]
+2025-02-18 16:28:21,136 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-18 16:28:21,137 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Final Matrix:
+[[1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 0], [1, 1, 1, 1, 0, 1, 0], [1, 1, 1, 1, 1, 1, 1], [1, 1, 0, 1, 1, 1, 0], [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1]]
+2025-02-18 16:28:21,138 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-18 16:28:21,138 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix from response.
+2025-02-18 16:28:21,139 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - At run 4/5
+2025-02-18 16:28:21,140 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix: [[1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 0], [1, 1, 1, 1, 0, 1, 0], [1, 1, 1, 1, 1, 1, 1], [1, 1, 0, 1, 1, 1, 0], [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1]]
+2025-02-18 16:28:21,141 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-18 16:28:31,152 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Run 5/5
+2025-02-18 16:28:31,170 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - DEBUG: Initializing LLMInference.
+2025-02-18 16:28:31,170 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Initialized LLM inference for system: power screwdriver
+2025-02-18 16:28:31,171 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Initialized DSM for system: power screwdriver
+2025-02-18 16:28:31,172 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Inference model: gpt-4-turbo-preview
+2025-02-18 16:28:31,173 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Motor -> Motor: 1
+2025-02-18 16:28:31,860 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:31,861 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Motor -> Gear System
+2025-02-18 16:28:31,861 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:31,862 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Motor -> Gear System: 1
+2025-02-18 16:28:32,274 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:32,275 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Motor -> Chuck
+2025-02-18 16:28:32,275 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:32,276 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Motor -> Chuck: 1
+2025-02-18 16:28:32,637 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:32,638 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Motor -> Battery
+2025-02-18 16:28:32,639 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:32,639 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Motor -> Battery: 1
+2025-02-18 16:28:33,107 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:33,108 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Motor -> Switch
+2025-02-18 16:28:33,109 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:33,110 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Motor -> Switch: 1
+2025-02-18 16:28:33,483 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:33,484 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Motor -> Housing
+2025-02-18 16:28:33,485 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:33,486 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Motor -> Housing: 1
+2025-02-18 16:28:33,952 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:33,953 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Motor -> Control Circuitry
+2025-02-18 16:28:33,953 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:33,955 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Motor -> Control Circuitry: 1
+2025-02-18 16:28:33,955 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Row 1 complete: [1, 1, 1, 1, 1, 1, 1]
+2025-02-18 16:28:33,956 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-18 16:28:34,357 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:34,357 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Gear System -> Motor
+2025-02-18 16:28:34,358 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:34,359 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Gear System -> Motor: 1
+2025-02-18 16:28:34,360 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Gear System -> Gear System: 1
+2025-02-18 16:28:34,843 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:34,844 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Gear System -> Chuck
+2025-02-18 16:28:34,845 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:34,846 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Gear System -> Chuck: 1
+2025-02-18 16:28:35,210 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:35,210 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Gear System -> Battery
+2025-02-18 16:28:35,211 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:35,212 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Gear System -> Battery: 1
+2025-02-18 16:28:35,639 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:35,640 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Gear System -> Switch
+2025-02-18 16:28:35,641 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:35,642 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Gear System -> Switch: 1
+2025-02-18 16:28:36,071 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:36,072 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Gear System -> Housing
+2025-02-18 16:28:36,073 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:36,073 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Gear System -> Housing: 1
+2025-02-18 16:28:36,514 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: No
+2025-02-18 16:28:36,515 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Gear System -> Control Circuitry
+2025-02-18 16:28:36,534 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: No
+2025-02-18 16:28:36,535 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Gear System -> Control Circuitry: 0
+2025-02-18 16:28:36,536 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Row 2 complete: [1, 1, 1, 1, 1, 1, 0]
+2025-02-18 16:28:36,537 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-18 16:28:36,964 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:36,965 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Chuck -> Motor
+2025-02-18 16:28:36,966 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:36,966 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Chuck -> Motor: 1
+2025-02-18 16:28:37,496 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:37,497 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Chuck -> Gear System
+2025-02-18 16:28:37,498 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:37,499 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Chuck -> Gear System: 1
+2025-02-18 16:28:37,500 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Chuck -> Chuck: 1
+2025-02-18 16:28:38,091 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:38,092 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Chuck -> Battery
+2025-02-18 16:28:38,093 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:38,093 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Chuck -> Battery: 1
+2025-02-18 16:28:38,440 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: No
+2025-02-18 16:28:38,441 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Chuck -> Switch
+2025-02-18 16:28:38,441 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: No
+2025-02-18 16:28:38,442 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Chuck -> Switch: 0
+2025-02-18 16:28:38,903 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:38,903 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Chuck -> Housing
+2025-02-18 16:28:38,904 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:38,905 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Chuck -> Housing: 1
+2025-02-18 16:28:39,452 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: No
+2025-02-18 16:28:39,452 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Chuck -> Control Circuitry
+2025-02-18 16:28:39,453 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: No
+2025-02-18 16:28:39,454 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Chuck -> Control Circuitry: 0
+2025-02-18 16:28:39,455 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Row 3 complete: [1, 1, 1, 1, 0, 1, 0]
+2025-02-18 16:28:39,456 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-18 16:28:40,005 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:40,006 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Battery -> Motor
+2025-02-18 16:28:40,007 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:40,007 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Battery -> Motor: 1
+2025-02-18 16:28:40,424 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:40,425 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Battery -> Gear System
+2025-02-18 16:28:40,426 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:40,427 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Battery -> Gear System: 1
+2025-02-18 16:28:40,890 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:40,891 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Battery -> Chuck
+2025-02-18 16:28:40,892 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:40,892 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Battery -> Chuck: 1
+2025-02-18 16:28:40,893 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Battery -> Battery: 1
+2025-02-18 16:28:41,541 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:41,542 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Battery -> Switch
+2025-02-18 16:28:41,561 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:41,562 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Battery -> Switch: 1
+2025-02-18 16:28:41,963 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:41,964 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Battery -> Housing
+2025-02-18 16:28:41,965 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:41,965 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Battery -> Housing: 1
+2025-02-18 16:28:42,583 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:42,583 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Battery -> Control Circuitry
+2025-02-18 16:28:42,585 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:42,586 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Battery -> Control Circuitry: 1
+2025-02-18 16:28:42,586 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Row 4 complete: [1, 1, 1, 1, 1, 1, 1]
+2025-02-18 16:28:42,587 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-18 16:28:43,063 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:43,064 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Switch -> Motor
+2025-02-18 16:28:43,064 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:43,065 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Switch -> Motor: 1
+2025-02-18 16:28:43,636 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:43,637 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Switch -> Gear System
+2025-02-18 16:28:43,638 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:43,639 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Switch -> Gear System: 1
+2025-02-18 16:28:44,040 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: No
+2025-02-18 16:28:44,041 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Switch -> Chuck
+2025-02-18 16:28:44,042 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: No
+2025-02-18 16:28:44,043 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Switch -> Chuck: 0
+2025-02-18 16:28:44,753 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:44,754 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Switch -> Battery
+2025-02-18 16:28:44,755 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:44,756 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Switch -> Battery: 1
+2025-02-18 16:28:44,757 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Switch -> Switch: 1
+2025-02-18 16:28:45,377 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:45,377 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Switch -> Housing
+2025-02-18 16:28:45,378 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:45,379 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Switch -> Housing: 1
+2025-02-18 16:28:45,807 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: No
+2025-02-18 16:28:45,808 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Switch -> Control Circuitry
+2025-02-18 16:28:45,809 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: No
+2025-02-18 16:28:45,810 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Switch -> Control Circuitry: 0
+2025-02-18 16:28:45,811 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Row 5 complete: [1, 1, 0, 1, 1, 1, 0]
+2025-02-18 16:28:45,813 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-18 16:28:46,245 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:46,246 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Housing -> Motor
+2025-02-18 16:28:46,247 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:46,248 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Housing -> Motor: 1
+2025-02-18 16:28:46,858 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:46,859 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Housing -> Gear System
+2025-02-18 16:28:46,878 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:46,879 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Housing -> Gear System: 1
+2025-02-18 16:28:47,315 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:47,316 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Housing -> Chuck
+2025-02-18 16:28:47,316 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:47,317 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Housing -> Chuck: 1
+2025-02-18 16:28:47,692 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:47,693 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Housing -> Battery
+2025-02-18 16:28:47,694 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:47,694 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Housing -> Battery: 1
+2025-02-18 16:28:48,298 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:48,299 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Housing -> Switch
+2025-02-18 16:28:48,299 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:48,301 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Housing -> Switch: 1
+2025-02-18 16:28:48,302 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Housing -> Housing: 1
+2025-02-18 16:28:48,728 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:48,729 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Housing -> Control Circuitry
+2025-02-18 16:28:48,729 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:48,730 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Housing -> Control Circuitry: 1
+2025-02-18 16:28:48,731 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Row 6 complete: [1, 1, 1, 1, 1, 1, 1]
+2025-02-18 16:28:48,732 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-18 16:28:49,162 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:49,163 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Control Circuitry -> Motor
+2025-02-18 16:28:49,164 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:49,165 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Control Circuitry -> Motor: 1
+2025-02-18 16:28:49,582 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:49,583 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Control Circuitry -> Gear System
+2025-02-18 16:28:49,584 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:49,584 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Control Circuitry -> Gear System: 1
+2025-02-18 16:28:50,029 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:50,030 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Control Circuitry -> Chuck
+2025-02-18 16:28:50,030 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:50,031 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Control Circuitry -> Chuck: 1
+2025-02-18 16:28:50,568 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:50,569 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Control Circuitry -> Battery
+2025-02-18 16:28:50,570 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:50,570 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Control Circuitry -> Battery: 1
+2025-02-18 16:28:51,210 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:51,211 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Control Circuitry -> Switch
+2025-02-18 16:28:51,212 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:51,214 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Control Circuitry -> Switch: 1
+2025-02-18 16:28:51,685 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Yes
+2025-02-18 16:28:51,685 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Identifying proximity relationship: Control Circuitry -> Housing
+2025-02-18 16:28:51,686 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Answer: Yes
+2025-02-18 16:28:51,687 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Control Circuitry -> Housing: 1
+2025-02-18 16:28:51,688 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Relationship Control Circuitry -> Control Circuitry: 1
+2025-02-18 16:28:51,690 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Row 7 complete: [1, 1, 1, 1, 1, 1, 1]
+2025-02-18 16:28:51,690 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-18 16:28:51,691 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Final Matrix:
+[[1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 0], [1, 1, 1, 1, 0, 1, 0], [1, 1, 1, 1, 1, 1, 1], [1, 1, 0, 1, 1, 1, 0], [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1]]
+2025-02-18 16:28:51,692 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-18 16:28:51,693 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix from response.
+2025-02-18 16:28:51,694 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - At run 5/5
+2025-02-18 16:28:51,695 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix: [[1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 0], [1, 1, 1, 1, 0, 1, 0], [1, 1, 1, 1, 1, 1, 1], [1, 1, 0, 1, 1, 1, 0], [1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1]]
+2025-02-18 16:28:51,696 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-18 16:29:01,707 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Duration of reference combination {}: 0:02:53.920880
+2025-02-18 16:29:01,708 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2025-02-18 16:29:01,709 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - 
+==================================================
+2025-02-18 16:29:01,710 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Average DSM Matrix for model: gpt-4-turbo-preview
+2025-02-18 16:29:01,711 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - End of log reference type(s): ['baseline']
+2025-02-18 16:29:01,713 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Saving results to: ../output/experiment_llm_gpt-4-turbo-preview_20250218-162607/llm_refs_baseline
+2025-02-18 16:29:01,717 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - 
+Average Matrix:
+                   Motor  Gear System  Chuck  Battery  Switch  Housing  Control Circuitry
+Motor                  1            1      1        1       1        1                  1
+Gear System            1            1      1        1       1        1                  0
+Chuck                  1            1      1        1       0        1                  0
+Battery                1            1      1        1       1        1                  1
+Switch                 1            1      1        1       1        1                  0
+Housing                1            1      1        1       1        1                  1
+Control Circuitry      1            1      1        1       1        1                  1
+2025-02-18 16:29:01,718 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - 
+Components: ['Motor', 'Gear System', 'Chuck', 'Battery', 'Switch', 'Housing', 'Control Circuitry']
+2025-02-18 16:29:01,719 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - ==================================================
+
+2025-02-18 16:29:01,722 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Saved CSV to: ../output/experiment_llm_gpt-4-turbo-preview_20250218-162607/llm_refs_baseline/average_matrix_20250218-162607.csv
+2025-02-18 16:29:01,724 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Saved JSON to: ../output/experiment_llm_gpt-4-turbo-preview_20250218-162607/llm_refs_baseline/detailed_results_20250218-162607.json
+2025-02-18 16:29:02,002 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Saved visualization to: ../output/experiment_llm_gpt-4-turbo-preview_20250218-162607/llm_refs_baseline/average_matrix_20250218-162607.png
+2025-02-18 16:29:02,003 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Duration of experiment for gpt-4-turbo-preview in llm inference type: 0:02:55

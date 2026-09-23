@@ -1,0 +1,33 @@
+Running graphrag command...
+Command: python -m graphrag query --root ./ --method local --query Who is scrooge?
+
+
+
+INFO: Vector Store Args: {
+    "type": "lancedb",
+    "db_uri": "/graphrag/ragtest/cc_test/output/lancedb",
+    "container_name": "==== REDACTED ====",
+    "overwrite": true
+}
+creating llm client with {'api_key': 'REDACTED,len=164', 'type': "openai_chat", 'encoding_model': 'cl100k_base', 'model': 'gpt-4-turbo-preview', 'max_tokens': 4000, 'temperature': 0.0, 'top_p': 1.0, 'n': 1, 'frequency_penalty': 0.0, 'presence_penalty': 0.0, 'request_timeout': 180.0, 'api_base': None, 'api_version': None, 'organization': None, 'proxy': None, 'audience': None, 'deployment_name': None, 'model_supports_json': True, 'tokens_per_minute': 0, 'requests_per_minute': 0, 'max_retries': 10, 'max_retry_wait': 10.0, 'sleep_on_rate_limit_recommendation': True, 'concurrent_requests': 25, 'responses': None}
+creating embedding llm client with {'api_key': 'REDACTED,len=164', 'type': "openai_embedding", 'encoding_model': 'cl100k_base', 'model': 'text-embedding-3-small', 'max_tokens': 4000, 'temperature': 0, 'top_p': 1, 'n': 1, 'frequency_penalty': 0.0, 'presence_penalty': 0.0, 'request_timeout': 180.0, 'api_base': None, 'api_version': None, 'organization': None, 'proxy': None, 'audience': None, 'deployment_name': None, 'model_supports_json': None, 'tokens_per_minute': 0, 'requests_per_minute': 0, 'max_retries': 10, 'max_retry_wait': 10.0, 'sleep_on_rate_limit_recommendation': True, 'concurrent_requests': 25, 'responses': None}
+
+SUCCESS: Local Search Response:
+### Overview of Ebenezer Scrooge
+
+Ebenezer Scrooge is a central character in Charles Dickens' novella "A Christmas Carol," first published in 1843. He is initially portrayed as a miserly, cold-hearted businessman who despises Christmas and is indifferent to the plights of the poor and suffering in Victorian London. Scrooge's transformation from a selfish, greedy individual to a generous, kind-hearted man is the core of the story, serving as a powerful narrative on redemption and the spirit of Christmas.
+
+### Scrooge's Character and Transformation
+
+Scrooge is described as a "squeezing, wrenching, grasping, scraping, clutching, covetous old sinner," highlighting his extreme miserliness and disdain for social welfare and the festive season. His journey towards transformation begins with the visitation of his deceased business partner, Jacob Marley's ghost, followed by the appearances of three spirits: the Ghosts of Christmas Past, Present, and Yet to Come. These supernatural visits force Scrooge to confront his past decisions, witness the impact of his current actions, and face the grim future that awaits him if he does not change his ways [Data: Entities (17, 9); Reports (14, 11)].
+
+Marley's ghost plays a pivotal role in initiating Scrooge's transformation by warning him of the consequences of his greed and setting the stage for the visits by the three Christmas ghosts. Each spirit teaches Scrooge valuable lessons about generosity, compassion, and community, leading to his moral and emotional awakening [Data: Entities (18); Relationships (12, 13)].
+
+### Scrooge's Impact on Others
+
+Scrooge's transformation has a profound impact on those around him, particularly Bob Cratchit, his underpaid and overworked clerk, and Tiny Tim, Cratchit's ailing son. Initially, Scrooge's interactions with Cratchit are purely transactional, reflecting his miserly approach to business and life. However, after his transformation, Scrooge becomes a benefactor to the Cratchit family, raising Bob's salary and ensuring Tiny Tim receives the medical attention he needs, thus saving the boy's life [Data: Entities (10); Relationships (27, 171)].
+
+### Conclusion
+
+Ebenezer Scrooge's story is a timeless tale of redemption and the transformative power of kindness and generosity. Through his journey, Dickens illustrates the potential for change in everyone, regardless of past actions, and champions the values of empathy and community spirit. Scrooge's character serves as a reminder of the impact one individual can have on the lives of many, embodying the true spirit of Christmas [Data: Entities (17, 9); Reports (14, 11)].
+Command completed and logged to logs/cc_test_run_20250322_164609.log

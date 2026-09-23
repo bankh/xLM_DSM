@@ -1,0 +1,7 @@
+,On-Board Computer (OBC),Electrical Power System (EPS),Communication System,Attitude Determination and Control System (ADCS),Payload,Structural Frame
+On-Board Computer (OBC),1,1,1,1,1,1
+Electrical Power System (EPS),1,1,1,0,0,1
+Communication System,1,1,1,1,1,0
+Attitude Determination and Control System (ADCS),1,0,1,1,1,1
+Payload,1,0,1,1,1,1
+Structural Frame,1,1,0,1,1,1

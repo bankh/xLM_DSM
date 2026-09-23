@@ -1,0 +1,157 @@
+Running graphrag command...
+Command: python -m graphrag index --root ./
+
+Logging enabled at /ragtest/CS/auto_llama3_3_70b_8k_r2_r3-te3s/logs/indexing-engine.log
+Running standard indexing.
+🚀 create_base_text_units
+                                                    id  ... n_tokens
+0    40cddd9860b6b9a35968bea7b86d4686583f137e9ac59c...  ...     1200
+1    8a791b936a475da96d769744edd6efce964aff8b2fd2e4...  ...     1200
+2    6f5ebd16167423712a87367c403898a8f53070f6caad8a...  ...     1200
+3    02bd9e2d0f52cba87a83c789d5afa56cb7b690534d5ae5...  ...     1200
+4    3eaad05b8ef9046251bf3f4f12abf0eb6116306a59161d...  ...     1200
+..                                                 ...  ...      ...
+119  8f9eb6ea5505dd478d80791019775a582cfa8c7ad6536e...  ...     1200
+120  3b1bfc151367ecfb62843baaafbfbaf1c9ca3bc19e0940...  ...     1200
+121  1291f9e2154ce44bfecb5cf2635744d7d8a97cf219a082...  ...     1200
+122  9b4da273d3b94d521108b004e03737fbbb88df93074d89...  ...     1200
+123  dfc0c16f50d769d1aad2e32e26bfa4f362dac529ace111...  ...      611
+
+[124 rows x 4 columns]
+🚀 create_final_documents
+                                                  id  ...                                      text_unit_ids
+0  41d084cdec77fb7218f6ee958d216f56367c5df19e91f4...  ...  [40cddd9860b6b9a35968bea7b86d4686583f137e9ac59...
+
+[1 rows x 5 columns]
+🚀 extract_graph
+None
+🚀 compute_communities
+     level  community  parent                                         title
+0        0          0      -1                           ORBIT DETERMINATION
+0        0          0      -1                                        ALBEDO
+0        0          0      -1                           THERMAL ENVIRONMENT
+0        0          0      -1                         BI-PARABOLIC TRANSFER
+0        0          0      -1                                 ORBIT CONTROL
+..     ...        ...     ...                                           ...
+232      2        232     159                            ISO/IEC/IEEE 24748
+232      2        232     159                                  MARS ORBITER
+232      2        232     159  NASA/CALTECH JET PROPULSION LABORATORY (JPL)
+233      2        233     159                            PROJECT LIFE CYCLE
+233      2        233     159                        REQUIREMENTS GATHERING
+
+[2120 rows x 4 columns]
+🚀 create_final_entities
+                                        id  ...                                      text_unit_ids
+0     359ab1f6-8411-4ee9-a17a-f3ac79591e70  ...  [40cddd9860b6b9a35968bea7b86d4686583f137e9ac59...
+1     1e53389a-93a3-4c08-a98c-ded544779237  ...  [40cddd9860b6b9a35968bea7b86d4686583f137e9ac59...
+2     440bbc16-8168-4147-beb1-ece279f802bc  ...  [40cddd9860b6b9a35968bea7b86d4686583f137e9ac59...
+3     a9ecf6b9-da79-4442-b298-52c73546eec3  ...  [40cddd9860b6b9a35968bea7b86d4686583f137e9ac59...
+4     2aecb540-a4ce-4224-a7dc-64583030c37b  ...  [40cddd9860b6b9a35968bea7b86d4686583f137e9ac59...
+...                                    ...  ...                                                ...
+1658  73bc7a8c-cda1-42d9-b96a-1e1f5178492f  ...  [dfc0c16f50d769d1aad2e32e26bfa4f362dac529ace11...
+1659  e5c640a9-be6b-4c41-920b-0653b24f8300  ...  [dfc0c16f50d769d1aad2e32e26bfa4f362dac529ace11...
+1660  bec266b7-4333-41c6-afec-99e001b79db5  ...  [dfc0c16f50d769d1aad2e32e26bfa4f362dac529ace11...
+1661  892bca19-01b3-486d-858e-1ed7ff548f15  ...  [dfc0c16f50d769d1aad2e32e26bfa4f362dac529ace11...
+1662  8c89ae2b-f66a-4197-b828-6bcda114b46d  ...  [dfc0c16f50d769d1aad2e32e26bfa4f362dac529ace11...
+
+[1663 rows x 6 columns]
+🚀 create_final_relationships
+                                        id  ...                                      text_unit_ids
+0     7f642ffb-f678-4799-8d9a-ff367ba8d6d1  ...  [40cddd9860b6b9a35968bea7b86d4686583f137e9ac59...
+1     08863f38-d988-4f3b-b8b5-db8161a25f6e  ...  [40cddd9860b6b9a35968bea7b86d4686583f137e9ac59...
+2     deb9be74-50d2-4953-9798-78efb1b5f07d  ...  [40cddd9860b6b9a35968bea7b86d4686583f137e9ac59...
+3     c2daa271-500e-477a-bf85-8151d7c1f23c  ...  [40cddd9860b6b9a35968bea7b86d4686583f137e9ac59...
+4     1f9d9564-dcee-4553-95fa-be1a892a75cb  ...  [40cddd9860b6b9a35968bea7b86d4686583f137e9ac59...
+...                                    ...  ...                                                ...
+1447  b0a9aff8-33ea-4de4-ba1b-c991eeab4c62  ...  [dfc0c16f50d769d1aad2e32e26bfa4f362dac529ace11...
+1448  4fc99473-e293-415f-a479-c46161451239  ...  [dfc0c16f50d769d1aad2e32e26bfa4f362dac529ace11...
+1449  1b0903b5-9188-4f24-a433-dfd62ff98901  ...  [dfc0c16f50d769d1aad2e32e26bfa4f362dac529ace11...
+1450  c411b4e4-6b62-4cbd-8bf8-81f9297ce5ed  ...  [dfc0c16f50d769d1aad2e32e26bfa4f362dac529ace11...
+1451  72e5efd3-18a2-4b48-b9cd-cf10d696e9b9  ...  [dfc0c16f50d769d1aad2e32e26bfa4f362dac529ace11...
+
+[1452 rows x 8 columns]
+🚀 create_final_nodes
+                                        id  human_readable_id  ...    x    y
+0     359ab1f6-8411-4ee9-a17a-f3ac79591e70                  0  ...  0.0  0.0
+1     1e53389a-93a3-4c08-a98c-ded544779237                  1  ...  0.0  0.0
+2     440bbc16-8168-4147-beb1-ece279f802bc                  2  ...  0.0  0.0
+3     a9ecf6b9-da79-4442-b298-52c73546eec3                  3  ...  0.0  0.0
+4     2aecb540-a4ce-4224-a7dc-64583030c37b                  4  ...  0.0  0.0
+...                                    ...                ...  ...  ...  ...
+2847  e5c640a9-be6b-4c41-920b-0653b24f8300               1659  ...  0.0  0.0
+2848  e5c640a9-be6b-4c41-920b-0653b24f8300               1659  ...  0.0  0.0
+2849  bec266b7-4333-41c6-afec-99e001b79db5               1660  ...  0.0  0.0
+2850  892bca19-01b3-486d-858e-1ed7ff548f15               1661  ...  0.0  0.0
+2851  8c89ae2b-f66a-4197-b828-6bcda114b46d               1662  ...  0.0  0.0
+
+[2852 rows x 8 columns]
+🚀 create_final_communities
+                                       id human_readable_id  ...      period  size
+0    9e28efe4-3481-475b-b4d9-9bf533cfa8a9                 0  ...  2025-03-27    38
+1    4bc44a78-5925-440c-9b0f-583bd4d391b5                 1  ...  2025-03-27    27
+2    5f5a944b-1a6b-4795-a6f5-af2767f00510                 2  ...  2025-03-27    18
+3    82420350-3a4b-4e33-881c-6f1877319470                 3  ...  2025-03-27    44
+4    16ed23d7-602a-4856-b667-24c44ff86d5b                 4  ...  2025-03-27    91
+..                                    ...               ...  ...         ...   ...
+229  767ea22f-d520-47e2-a985-d80fc41bad45               229  ...  2025-03-27     2
+230  115ac705-586b-4f88-adcf-881903569c46               230  ...  2025-03-27     3
+231  55bbf5f8-9805-4d2b-ba9e-13f9366c8705               231  ...  2025-03-27     3
+232  90b62117-bee1-4f04-b9b3-f8f329460c80               232  ...  2025-03-27    11
+233  6e5786c6-26c2-42d1-9b5a-8c00e0ac00ef               233  ...  2025-03-27     2
+
+[234 rows x 11 columns]
+🚀 create_final_text_units
+                                                    id  ...                                   relationship_ids
+0    40cddd9860b6b9a35968bea7b86d4686583f137e9ac59c...  ...  [7f642ffb-f678-4799-8d9a-ff367ba8d6d1, 08863f3...
+1    8a791b936a475da96d769744edd6efce964aff8b2fd2e4...  ...                                               None
+2    6f5ebd16167423712a87367c403898a8f53070f6caad8a...  ...  [71a5345d-5adf-4ec4-85e6-a035138c9873, 8617634...
+3    02bd9e2d0f52cba87a83c789d5afa56cb7b690534d5ae5...  ...  [ebbf767d-4d17-4f82-8367-061ee6d02f89, 9c9dc7a...
+4    3eaad05b8ef9046251bf3f4f12abf0eb6116306a59161d...  ...  [d6a620d2-dd0c-49d8-a899-c9fe45dc012e, efd1517...
+..                                                 ...  ...                                                ...
+119  8f9eb6ea5505dd478d80791019775a582cfa8c7ad6536e...  ...  [048e127e-8f3c-418f-b35d-de9d2bcd5a4c, e5bd7af...
+120  3b1bfc151367ecfb62843baaafbfbaf1c9ca3bc19e0940...  ...  [f592e1f8-6af9-4db2-a86b-1316bc7bdcd5, aaf9c2d...
+121  1291f9e2154ce44bfecb5cf2635744d7d8a97cf219a082...  ...  [a6ae39b2-efc4-4836-8040-e72ab3f4850a, 9436fd1...
+122  9b4da273d3b94d521108b004e03737fbbb88df93074d89...  ...  [e81c4557-32f7-45c6-b4cc-e05c9cdd0473, 8256ba7...
+123  dfc0c16f50d769d1aad2e32e26bfa4f362dac529ace111...  ...  [dbc7fe2c-0513-4ea7-94bb-6ac2af6d4150, d7e079a...
+
+[124 rows x 7 columns]
+/graphrag/index/flows/create_final_community_reports.py:126: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  input.loc[:, NODE_DETAILS] = input.loc[
+🚀 create_final_community_reports
+                                   id  human_readable_id  ...      period  size
+0    2ead24bf7fc84bc595726ed95c85a7d8                164  ...  2025-03-27     8
+1    470fc1958e8145deb5b63fb5e74e63e8                165  ...  2025-03-27     2
+2    793bbff791c9487cbc587f39ccd57881                166  ...  2025-03-27     2
+3    0be822e6da544f60af03cd623ad5e1fa                167  ...  2025-03-27     6
+4    86afcc0da8ee42e1acea73d6f7a65535                168  ...  2025-03-27     2
+..                                ...                ...  ...         ...   ...
+226  93709f32f73949f88634a71c9d241f53                 18  ...  2025-03-27    22
+227  f687d043600f4e95add024fa9af57942                 19  ...  2025-03-27    12
+228  3761a1245dbe4afb943ab9923f0e0b55                 20  ...  2025-03-27    41
+229  267224483b464de0b1fa5b0edfe77637                 22  ...  2025-03-27    39
+230  598be11fff314b88b610e3ca1e05c3aa                 23  ...  2025-03-27     6
+
+[231 rows x 14 columns]
+[2025-03-27T14:57:49Z WARN  lance::dataset::write::insert] No existing dataset at /ragtest/CS/auto_llama3_3_70b_8k_r2_r3-te3s/output/lancedb/default-community-full_content.lance, it will be created
+[2025-03-27T14:58:18Z WARN  lance::dataset::write::insert] No existing dataset at /ragtest/CS/auto_llama3_3_70b_8k_r2_r3-te3s/output/lancedb/default-entity-description.lance, it will be created
+[2025-03-27T14:59:28Z WARN  lance::dataset::write::insert] No existing dataset at /ragtest/CS/auto_llama3_3_70b_8k_r2_r3-te3s/output/lancedb/default-text_unit-text.lance, it will be created
+🚀 generate_text_embeddings
+None
+⠋ GraphRAG Indexer 
+├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00
+├── create_base_text_units ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00
+├── create_final_documents ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00
+├── extract_graph ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00
+├── compute_communities ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00
+├── create_final_entities ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00
+├── create_final_relationships ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00
+├── create_final_nodes ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00
+├── create_final_communities ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00
+├── create_final_text_units ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00
+├── create_final_community_reports ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00
+├── generate_text_embeddings ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00🚀 All workflows completed successfully.
+Command completed and logged to logs/cc_test_run_20250326_182514.log

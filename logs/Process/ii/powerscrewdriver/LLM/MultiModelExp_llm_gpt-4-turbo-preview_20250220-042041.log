@@ -1,0 +1,366 @@
+2025-02-20 04:20:41,843 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Run 1/5
+2025-02-20 04:20:42,115 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - DEBUG: Initializing LLMInference.
+2025-02-20 04:20:42,116 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Initialized LLM inference for system: power screwdriver
+2025-02-20 04:20:42,116 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Initialized DSM for system: power screwdriver
+2025-02-20 04:20:42,117 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Inference model: gpt-4-turbo-preview
+2025-02-20 04:20:42,118 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Prompt (attempt 1/3): 
+            Please identify the major components of power screwdriver in the engineering based on proximity relationships.             
+            The number of components must not exceed 7 (can be equal) and must be a list of strings.             
+            Please do not identify similar components that will work together under subsystem level since our interest is to identify the major components that form the core architecture of the system.             
+            Here is an example of the components for made-up system:             
+            final response = [ "component 1", "component 2", "component 3", "component 4", "component 5" ]             
+            IMPORTANT: THE FORMAT OF THE OUTPUT MUST BE AS A LIST OF STRINGS ONLY SIMILAR TO THE ONE ABOVE (NO LATEX, NO CODE, NO DESCRIPTION, OR OTHER ENCODINGS).              
+2025-02-20 04:20:44,291 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: ["Motor", "Gear System", "Chuck", "Battery", "Switch", "Housing", "Control Circuitry"]
+2025-02-20 04:20:44,292 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix: ['Motor', 'Gear System', 'Chuck', 'Battery', 'Switch', 'Housing', 'Control Circuitry']
+2025-02-20 04:20:44,293 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Components: ['Motor', 'Gear System', 'Chuck', 'Battery', 'Switch', 'Housing', 'Control Circuitry']
+2025-02-20 04:20:45,142 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: Valid
+2025-02-20 04:20:45,142 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Validation response: Valid
+2025-02-20 04:20:45,143 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Filtered validation response: Valid
+2025-02-20 04:20:45,144 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Component list validated successfully on attempt 1
+2025-02-20 04:20:45,144 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Components: ['Motor', 'Gear System', 'Chuck', 'Battery', 'Switch', 'Housing', 'Control Circuitry']
+2025-02-20 04:20:45,145 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-20 04:20:45,145 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Predicted Components: ['Motor', 'Gear System', 'Chuck', 'Battery', 'Switch', 'Housing', 'Control Circuitry']
+2025-02-20 04:20:45,146 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Number of components: 7
+2025-02-20 04:20:45,147 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Predicted components for query: ['Motor', 'Gear System', 'Chuck', 'Battery', 'Switch', 'Housing', 'Control Circuitry']
+2025-02-20 04:20:45,147 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Query: 
+        Please identify system-level proximity relationships (in contact) between the components of Power Screwdriver, as listed below, and represent them in a Design Structure Matrix (DSM) format.  
+        The relationships should be articulated in plain English, capturing the essence of their interactions. 
+        Here is the list of subsystems/components to analyze: ['Motor', 'Gear System', 'Chuck', 'Battery', 'Switch', 'Housing', 'Control Circuitry'] 
+        The DSM should clearly indicate the interactions between these components as 1 exist and 0 does not exist, considering both the presence and nature of these connections.             
+        Present the output in a square matrix format (number of rows and columns MUST be the same as the number of components = 7 for this example), with rows and columns labeled accordingly. 
+        Diagonal elements should be 1 in DSM matrix since each component interacts with itself. 
+        If you don't know the answer, just write 2 for the specific cell that you are unsure of. A worst case scenario of the **as a list of lists** shown below (diagonal elements are 1 and rest are 2). Don't make up an answer.         final response = [
+            [1, 2, 2, 2, 2, 2, 2],
+            [2, 1, 2, 2, 2, 2, 2],
+            [2, 2, 1, 2, 2, 2, 2],
+            [2, 2, 2, 1, 2, 2, 2],
+            [2, 2, 2, 2, 1, 2, 2],
+            [2, 2, 2, 2, 2, 1, 2],
+            [2, 2, 2, 2, 2, 2, 1]
+        ]
+
+        IMPORTANT: Your response must **ONLY** contain a valid **as a list of lists** in the following example format 7x7 matrix.         
+        The below list of lists is just an example format of your response. **Replace** the values with your **actual analysis** while providing your response with parameter of 'final response'.        
+        final response = [
+            [1, 0, 0, 0, 0, 0, 0],
+            [0, 1, 0, 0, 0, 0, 0],
+            [0, 0, 1, 0, 0, 0, 0],
+            [0, 0, 0, 1, 0, 0, 0],
+            [0, 0, 0, 0, 1, 0, 0],
+            [0, 0, 0, 0, 0, 1, 0],
+            [0, 0, 0, 0, 0, 0, 1]
+        ]
+
+        IMPORTANT: THE FORMAT OF THE OUTPUT MUST BE AS LIST OF LISTS ONLY SIMILAR TO THE ONE ABOVE (NO LATEX, CODE, OR OTHER ENCODINGS).
+        
+2025-02-20 04:20:51,547 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: final response = [
+    [1, 1, 0, 1, 1, 1, 1],
+    [1, 1, 0, 0, 0, 1, 1],
+    [0, 0, 1, 0, 0, 1, 0],
+    [1, 0, 0, 1, 1, 1, 1],
+    [1, 0, 0, 1, 1, 1, 1],
+    [1, 1, 1, 1, 1, 1, 1],
+    [1, 1, 0, 1, 1, 1, 1]
+]
+2025-02-20 04:20:51,548 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Response: final response = [
+    [1, 1, 0, 1, 1, 1, 1],
+    [1, 1, 0, 0, 0, 1, 1],
+    [0, 0, 1, 0, 0, 1, 0],
+    [1, 0, 0, 1, 1, 1, 1],
+    [1, 0, 0, 1, 1, 1, 1],
+    [1, 1, 1, 1, 1, 1, 1],
+    [1, 1, 0, 1, 1, 1, 1]
+]
+2025-02-20 04:20:51,549 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix: [[1, 1, 0, 1, 1, 1, 1], [1, 1, 0, 0, 0, 1, 1], [0, 0, 1, 0, 0, 1, 0], [1, 0, 0, 1, 1, 1, 1], [1, 0, 0, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1], [1, 1, 0, 1, 1, 1, 1]]
+2025-02-20 04:20:51,550 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Final Matrix:
+[[1, 1, 0, 1, 1, 1, 1], [1, 1, 0, 0, 0, 1, 1], [0, 0, 1, 0, 0, 1, 0], [1, 0, 0, 1, 1, 1, 1], [1, 0, 0, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1], [1, 1, 0, 1, 1, 1, 1]]
+2025-02-20 04:20:51,551 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-20 04:20:51,552 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix from response.
+2025-02-20 04:20:51,552 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - At run 1/5
+2025-02-20 04:20:51,554 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix: [[1, 1, 0, 1, 1, 1, 1], [1, 1, 0, 0, 0, 1, 1], [0, 0, 1, 0, 0, 1, 0], [1, 0, 0, 1, 1, 1, 1], [1, 0, 0, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1], [1, 1, 0, 1, 1, 1, 1]]
+2025-02-20 04:20:51,555 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-20 04:21:01,566 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Run 2/5
+2025-02-20 04:21:01,605 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - DEBUG: Initializing LLMInference.
+2025-02-20 04:21:01,606 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Initialized LLM inference for system: power screwdriver
+2025-02-20 04:21:01,607 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Initialized DSM for system: power screwdriver
+2025-02-20 04:21:01,608 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Inference model: gpt-4-turbo-preview
+2025-02-20 04:21:01,609 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Predicted Components: ['Motor', 'Gear System', 'Chuck', 'Battery', 'Switch', 'Housing', 'Control Circuitry']
+2025-02-20 04:21:01,610 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Number of components: 7
+2025-02-20 04:21:01,610 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Predicted components for query: ['Motor', 'Gear System', 'Chuck', 'Battery', 'Switch', 'Housing', 'Control Circuitry']
+2025-02-20 04:21:01,611 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Query: 
+        Please identify system-level proximity relationships (in contact) between the components of Power Screwdriver, as listed below, and represent them in a Design Structure Matrix (DSM) format.  
+        The relationships should be articulated in plain English, capturing the essence of their interactions. 
+        Here is the list of subsystems/components to analyze: ['Motor', 'Gear System', 'Chuck', 'Battery', 'Switch', 'Housing', 'Control Circuitry'] 
+        The DSM should clearly indicate the interactions between these components as 1 exist and 0 does not exist, considering both the presence and nature of these connections.             
+        Present the output in a square matrix format (number of rows and columns MUST be the same as the number of components = 7 for this example), with rows and columns labeled accordingly. 
+        Diagonal elements should be 1 in DSM matrix since each component interacts with itself. 
+        If you don't know the answer, just write 2 for the specific cell that you are unsure of. A worst case scenario of the **as a list of lists** shown below (diagonal elements are 1 and rest are 2). Don't make up an answer.         final response = [
+            [1, 2, 2, 2, 2, 2, 2],
+            [2, 1, 2, 2, 2, 2, 2],
+            [2, 2, 1, 2, 2, 2, 2],
+            [2, 2, 2, 1, 2, 2, 2],
+            [2, 2, 2, 2, 1, 2, 2],
+            [2, 2, 2, 2, 2, 1, 2],
+            [2, 2, 2, 2, 2, 2, 1]
+        ]
+
+        IMPORTANT: Your response must **ONLY** contain a valid **as a list of lists** in the following example format 7x7 matrix.         
+        The below list of lists is just an example format of your response. **Replace** the values with your **actual analysis** while providing your response with parameter of 'final response'.        
+        final response = [
+            [1, 0, 0, 0, 0, 0, 0],
+            [0, 1, 0, 0, 0, 0, 0],
+            [0, 0, 1, 0, 0, 0, 0],
+            [0, 0, 0, 1, 0, 0, 0],
+            [0, 0, 0, 0, 1, 0, 0],
+            [0, 0, 0, 0, 0, 1, 0],
+            [0, 0, 0, 0, 0, 0, 1]
+        ]
+
+        IMPORTANT: THE FORMAT OF THE OUTPUT MUST BE AS LIST OF LISTS ONLY SIMILAR TO THE ONE ABOVE (NO LATEX, CODE, OR OTHER ENCODINGS).
+        
+2025-02-20 04:21:06,598 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: final response = [
+    [1, 1, 0, 1, 1, 1, 1],
+    [1, 1, 1, 0, 0, 1, 0],
+    [0, 1, 1, 0, 0, 1, 0],
+    [1, 0, 0, 1, 1, 1, 1],
+    [1, 0, 0, 1, 1, 1, 1],
+    [1, 1, 1, 1, 1, 1, 1],
+    [1, 0, 0, 1, 1, 1, 1]
+]
+2025-02-20 04:21:06,599 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Response: final response = [
+    [1, 1, 0, 1, 1, 1, 1],
+    [1, 1, 1, 0, 0, 1, 0],
+    [0, 1, 1, 0, 0, 1, 0],
+    [1, 0, 0, 1, 1, 1, 1],
+    [1, 0, 0, 1, 1, 1, 1],
+    [1, 1, 1, 1, 1, 1, 1],
+    [1, 0, 0, 1, 1, 1, 1]
+]
+2025-02-20 04:21:06,618 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix: [[1, 1, 0, 1, 1, 1, 1], [1, 1, 1, 0, 0, 1, 0], [0, 1, 1, 0, 0, 1, 0], [1, 0, 0, 1, 1, 1, 1], [1, 0, 0, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1], [1, 0, 0, 1, 1, 1, 1]]
+2025-02-20 04:21:06,619 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Final Matrix:
+[[1, 1, 0, 1, 1, 1, 1], [1, 1, 1, 0, 0, 1, 0], [0, 1, 1, 0, 0, 1, 0], [1, 0, 0, 1, 1, 1, 1], [1, 0, 0, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1], [1, 0, 0, 1, 1, 1, 1]]
+2025-02-20 04:21:06,620 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-20 04:21:06,621 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix from response.
+2025-02-20 04:21:06,622 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - At run 2/5
+2025-02-20 04:21:06,623 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix: [[1, 1, 0, 1, 1, 1, 1], [1, 1, 1, 0, 0, 1, 0], [0, 1, 1, 0, 0, 1, 0], [1, 0, 0, 1, 1, 1, 1], [1, 0, 0, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1], [1, 0, 0, 1, 1, 1, 1]]
+2025-02-20 04:21:06,624 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-20 04:21:16,635 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Run 3/5
+2025-02-20 04:21:16,674 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - DEBUG: Initializing LLMInference.
+2025-02-20 04:21:16,674 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Initialized LLM inference for system: power screwdriver
+2025-02-20 04:21:16,675 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Initialized DSM for system: power screwdriver
+2025-02-20 04:21:16,676 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Inference model: gpt-4-turbo-preview
+2025-02-20 04:21:16,677 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Predicted Components: ['Motor', 'Gear System', 'Chuck', 'Battery', 'Switch', 'Housing', 'Control Circuitry']
+2025-02-20 04:21:16,678 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Number of components: 7
+2025-02-20 04:21:16,679 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Predicted components for query: ['Motor', 'Gear System', 'Chuck', 'Battery', 'Switch', 'Housing', 'Control Circuitry']
+2025-02-20 04:21:16,680 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Query: 
+        Please identify system-level proximity relationships (in contact) between the components of Power Screwdriver, as listed below, and represent them in a Design Structure Matrix (DSM) format.  
+        The relationships should be articulated in plain English, capturing the essence of their interactions. 
+        Here is the list of subsystems/components to analyze: ['Motor', 'Gear System', 'Chuck', 'Battery', 'Switch', 'Housing', 'Control Circuitry'] 
+        The DSM should clearly indicate the interactions between these components as 1 exist and 0 does not exist, considering both the presence and nature of these connections.             
+        Present the output in a square matrix format (number of rows and columns MUST be the same as the number of components = 7 for this example), with rows and columns labeled accordingly. 
+        Diagonal elements should be 1 in DSM matrix since each component interacts with itself. 
+        If you don't know the answer, just write 2 for the specific cell that you are unsure of. A worst case scenario of the **as a list of lists** shown below (diagonal elements are 1 and rest are 2). Don't make up an answer.         final response = [
+            [1, 2, 2, 2, 2, 2, 2],
+            [2, 1, 2, 2, 2, 2, 2],
+            [2, 2, 1, 2, 2, 2, 2],
+            [2, 2, 2, 1, 2, 2, 2],
+            [2, 2, 2, 2, 1, 2, 2],
+            [2, 2, 2, 2, 2, 1, 2],
+            [2, 2, 2, 2, 2, 2, 1]
+        ]
+
+        IMPORTANT: Your response must **ONLY** contain a valid **as a list of lists** in the following example format 7x7 matrix.         
+        The below list of lists is just an example format of your response. **Replace** the values with your **actual analysis** while providing your response with parameter of 'final response'.        
+        final response = [
+            [1, 0, 0, 0, 0, 0, 0],
+            [0, 1, 0, 0, 0, 0, 0],
+            [0, 0, 1, 0, 0, 0, 0],
+            [0, 0, 0, 1, 0, 0, 0],
+            [0, 0, 0, 0, 1, 0, 0],
+            [0, 0, 0, 0, 0, 1, 0],
+            [0, 0, 0, 0, 0, 0, 1]
+        ]
+
+        IMPORTANT: THE FORMAT OF THE OUTPUT MUST BE AS LIST OF LISTS ONLY SIMILAR TO THE ONE ABOVE (NO LATEX, CODE, OR OTHER ENCODINGS).
+        
+2025-02-20 04:21:22,979 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: final response = [
+    [1, 1, 0, 1, 1, 1, 1],
+    [1, 1, 1, 0, 0, 1, 0],
+    [0, 1, 1, 0, 0, 1, 0],
+    [1, 0, 0, 1, 1, 1, 1],
+    [1, 0, 0, 1, 1, 1, 1],
+    [1, 1, 1, 1, 1, 1, 1],
+    [1, 0, 0, 1, 1, 1, 1]
+]
+2025-02-20 04:21:22,981 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Response: final response = [
+    [1, 1, 0, 1, 1, 1, 1],
+    [1, 1, 1, 0, 0, 1, 0],
+    [0, 1, 1, 0, 0, 1, 0],
+    [1, 0, 0, 1, 1, 1, 1],
+    [1, 0, 0, 1, 1, 1, 1],
+    [1, 1, 1, 1, 1, 1, 1],
+    [1, 0, 0, 1, 1, 1, 1]
+]
+2025-02-20 04:21:22,982 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix: [[1, 1, 0, 1, 1, 1, 1], [1, 1, 1, 0, 0, 1, 0], [0, 1, 1, 0, 0, 1, 0], [1, 0, 0, 1, 1, 1, 1], [1, 0, 0, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1], [1, 0, 0, 1, 1, 1, 1]]
+2025-02-20 04:21:22,983 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Final Matrix:
+[[1, 1, 0, 1, 1, 1, 1], [1, 1, 1, 0, 0, 1, 0], [0, 1, 1, 0, 0, 1, 0], [1, 0, 0, 1, 1, 1, 1], [1, 0, 0, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1], [1, 0, 0, 1, 1, 1, 1]]
+2025-02-20 04:21:22,983 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-20 04:21:22,984 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix from response.
+2025-02-20 04:21:22,985 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - At run 3/5
+2025-02-20 04:21:22,986 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix: [[1, 1, 0, 1, 1, 1, 1], [1, 1, 1, 0, 0, 1, 0], [0, 1, 1, 0, 0, 1, 0], [1, 0, 0, 1, 1, 1, 1], [1, 0, 0, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1], [1, 0, 0, 1, 1, 1, 1]]
+2025-02-20 04:21:22,986 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-20 04:21:32,997 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Run 4/5
+2025-02-20 04:21:33,036 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - DEBUG: Initializing LLMInference.
+2025-02-20 04:21:33,036 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Initialized LLM inference for system: power screwdriver
+2025-02-20 04:21:33,037 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Initialized DSM for system: power screwdriver
+2025-02-20 04:21:33,038 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Inference model: gpt-4-turbo-preview
+2025-02-20 04:21:33,039 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Predicted Components: ['Motor', 'Gear System', 'Chuck', 'Battery', 'Switch', 'Housing', 'Control Circuitry']
+2025-02-20 04:21:33,040 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Number of components: 7
+2025-02-20 04:21:33,041 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Predicted components for query: ['Motor', 'Gear System', 'Chuck', 'Battery', 'Switch', 'Housing', 'Control Circuitry']
+2025-02-20 04:21:33,042 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Query: 
+        Please identify system-level proximity relationships (in contact) between the components of Power Screwdriver, as listed below, and represent them in a Design Structure Matrix (DSM) format.  
+        The relationships should be articulated in plain English, capturing the essence of their interactions. 
+        Here is the list of subsystems/components to analyze: ['Motor', 'Gear System', 'Chuck', 'Battery', 'Switch', 'Housing', 'Control Circuitry'] 
+        The DSM should clearly indicate the interactions between these components as 1 exist and 0 does not exist, considering both the presence and nature of these connections.             
+        Present the output in a square matrix format (number of rows and columns MUST be the same as the number of components = 7 for this example), with rows and columns labeled accordingly. 
+        Diagonal elements should be 1 in DSM matrix since each component interacts with itself. 
+        If you don't know the answer, just write 2 for the specific cell that you are unsure of. A worst case scenario of the **as a list of lists** shown below (diagonal elements are 1 and rest are 2). Don't make up an answer.         final response = [
+            [1, 2, 2, 2, 2, 2, 2],
+            [2, 1, 2, 2, 2, 2, 2],
+            [2, 2, 1, 2, 2, 2, 2],
+            [2, 2, 2, 1, 2, 2, 2],
+            [2, 2, 2, 2, 1, 2, 2],
+            [2, 2, 2, 2, 2, 1, 2],
+            [2, 2, 2, 2, 2, 2, 1]
+        ]
+
+        IMPORTANT: Your response must **ONLY** contain a valid **as a list of lists** in the following example format 7x7 matrix.         
+        The below list of lists is just an example format of your response. **Replace** the values with your **actual analysis** while providing your response with parameter of 'final response'.        
+        final response = [
+            [1, 0, 0, 0, 0, 0, 0],
+            [0, 1, 0, 0, 0, 0, 0],
+            [0, 0, 1, 0, 0, 0, 0],
+            [0, 0, 0, 1, 0, 0, 0],
+            [0, 0, 0, 0, 1, 0, 0],
+            [0, 0, 0, 0, 0, 1, 0],
+            [0, 0, 0, 0, 0, 0, 1]
+        ]
+
+        IMPORTANT: THE FORMAT OF THE OUTPUT MUST BE AS LIST OF LISTS ONLY SIMILAR TO THE ONE ABOVE (NO LATEX, CODE, OR OTHER ENCODINGS).
+        
+2025-02-20 04:21:39,508 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: final response = [
+    [1, 1, 0, 1, 1, 1, 1],
+    [1, 1, 1, 0, 0, 1, 1],
+    [0, 1, 1, 0, 0, 1, 0],
+    [1, 0, 0, 1, 1, 1, 1],
+    [1, 0, 0, 1, 1, 1, 1],
+    [1, 1, 1, 1, 1, 1, 1],
+    [1, 1, 0, 1, 1, 1, 1]
+]
+2025-02-20 04:21:39,509 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Response: final response = [
+    [1, 1, 0, 1, 1, 1, 1],
+    [1, 1, 1, 0, 0, 1, 1],
+    [0, 1, 1, 0, 0, 1, 0],
+    [1, 0, 0, 1, 1, 1, 1],
+    [1, 0, 0, 1, 1, 1, 1],
+    [1, 1, 1, 1, 1, 1, 1],
+    [1, 1, 0, 1, 1, 1, 1]
+]
+2025-02-20 04:21:39,510 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix: [[1, 1, 0, 1, 1, 1, 1], [1, 1, 1, 0, 0, 1, 1], [0, 1, 1, 0, 0, 1, 0], [1, 0, 0, 1, 1, 1, 1], [1, 0, 0, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1], [1, 1, 0, 1, 1, 1, 1]]
+2025-02-20 04:21:39,511 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Final Matrix:
+[[1, 1, 0, 1, 1, 1, 1], [1, 1, 1, 0, 0, 1, 1], [0, 1, 1, 0, 0, 1, 0], [1, 0, 0, 1, 1, 1, 1], [1, 0, 0, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1], [1, 1, 0, 1, 1, 1, 1]]
+2025-02-20 04:21:39,512 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-20 04:21:39,513 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix from response.
+2025-02-20 04:21:39,514 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - At run 4/5
+2025-02-20 04:21:39,515 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix: [[1, 1, 0, 1, 1, 1, 1], [1, 1, 1, 0, 0, 1, 1], [0, 1, 1, 0, 0, 1, 0], [1, 0, 0, 1, 1, 1, 1], [1, 0, 0, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1], [1, 1, 0, 1, 1, 1, 1]]
+2025-02-20 04:21:39,516 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-20 04:21:49,527 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Run 5/5
+2025-02-20 04:21:49,566 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - DEBUG: Initializing LLMInference.
+2025-02-20 04:21:49,566 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Initialized LLM inference for system: power screwdriver
+2025-02-20 04:21:49,567 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Initialized DSM for system: power screwdriver
+2025-02-20 04:21:49,568 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Inference model: gpt-4-turbo-preview
+2025-02-20 04:21:49,569 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Predicted Components: ['Motor', 'Gear System', 'Chuck', 'Battery', 'Switch', 'Housing', 'Control Circuitry']
+2025-02-20 04:21:49,570 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Number of components: 7
+2025-02-20 04:21:49,571 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Predicted components for query: ['Motor', 'Gear System', 'Chuck', 'Battery', 'Switch', 'Housing', 'Control Circuitry']
+2025-02-20 04:21:49,572 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Query: 
+        Please identify system-level proximity relationships (in contact) between the components of Power Screwdriver, as listed below, and represent them in a Design Structure Matrix (DSM) format.  
+        The relationships should be articulated in plain English, capturing the essence of their interactions. 
+        Here is the list of subsystems/components to analyze: ['Motor', 'Gear System', 'Chuck', 'Battery', 'Switch', 'Housing', 'Control Circuitry'] 
+        The DSM should clearly indicate the interactions between these components as 1 exist and 0 does not exist, considering both the presence and nature of these connections.             
+        Present the output in a square matrix format (number of rows and columns MUST be the same as the number of components = 7 for this example), with rows and columns labeled accordingly. 
+        Diagonal elements should be 1 in DSM matrix since each component interacts with itself. 
+        If you don't know the answer, just write 2 for the specific cell that you are unsure of. A worst case scenario of the **as a list of lists** shown below (diagonal elements are 1 and rest are 2). Don't make up an answer.         final response = [
+            [1, 2, 2, 2, 2, 2, 2],
+            [2, 1, 2, 2, 2, 2, 2],
+            [2, 2, 1, 2, 2, 2, 2],
+            [2, 2, 2, 1, 2, 2, 2],
+            [2, 2, 2, 2, 1, 2, 2],
+            [2, 2, 2, 2, 2, 1, 2],
+            [2, 2, 2, 2, 2, 2, 1]
+        ]
+
+        IMPORTANT: Your response must **ONLY** contain a valid **as a list of lists** in the following example format 7x7 matrix.         
+        The below list of lists is just an example format of your response. **Replace** the values with your **actual analysis** while providing your response with parameter of 'final response'.        
+        final response = [
+            [1, 0, 0, 0, 0, 0, 0],
+            [0, 1, 0, 0, 0, 0, 0],
+            [0, 0, 1, 0, 0, 0, 0],
+            [0, 0, 0, 1, 0, 0, 0],
+            [0, 0, 0, 0, 1, 0, 0],
+            [0, 0, 0, 0, 0, 1, 0],
+            [0, 0, 0, 0, 0, 0, 1]
+        ]
+
+        IMPORTANT: THE FORMAT OF THE OUTPUT MUST BE AS LIST OF LISTS ONLY SIMILAR TO THE ONE ABOVE (NO LATEX, CODE, OR OTHER ENCODINGS).
+        
+2025-02-20 04:21:55,372 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - LLM Response: final response = [
+    [1, 1, 0, 1, 1, 1, 1],
+    [1, 1, 1, 0, 0, 1, 0],
+    [0, 1, 1, 0, 0, 1, 0],
+    [1, 0, 0, 1, 1, 1, 1],
+    [1, 0, 0, 1, 1, 1, 1],
+    [1, 1, 1, 1, 1, 1, 1],
+    [1, 0, 0, 1, 1, 1, 1]
+]
+2025-02-20 04:21:55,373 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Response: final response = [
+    [1, 1, 0, 1, 1, 1, 1],
+    [1, 1, 1, 0, 0, 1, 0],
+    [0, 1, 1, 0, 0, 1, 0],
+    [1, 0, 0, 1, 1, 1, 1],
+    [1, 0, 0, 1, 1, 1, 1],
+    [1, 1, 1, 1, 1, 1, 1],
+    [1, 0, 0, 1, 1, 1, 1]
+]
+2025-02-20 04:21:55,392 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix: [[1, 1, 0, 1, 1, 1, 1], [1, 1, 1, 0, 0, 1, 0], [0, 1, 1, 0, 0, 1, 0], [1, 0, 0, 1, 1, 1, 1], [1, 0, 0, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1], [1, 0, 0, 1, 1, 1, 1]]
+2025-02-20 04:21:55,393 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Final Matrix:
+[[1, 1, 0, 1, 1, 1, 1], [1, 1, 1, 0, 0, 1, 0], [0, 1, 1, 0, 0, 1, 0], [1, 0, 0, 1, 1, 1, 1], [1, 0, 0, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1], [1, 0, 0, 1, 1, 1, 1]]
+2025-02-20 04:21:55,394 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-20 04:21:55,394 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix from response.
+2025-02-20 04:21:55,395 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - At run 5/5
+2025-02-20 04:21:55,396 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Matrix: [[1, 1, 0, 1, 1, 1, 1], [1, 1, 1, 0, 0, 1, 0], [0, 1, 1, 0, 0, 1, 0], [1, 0, 0, 1, 1, 1, 1], [1, 0, 0, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1], [1, 0, 0, 1, 1, 1, 1]]
+2025-02-20 04:21:55,398 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - --------------------------------------------------
+2025-02-20 04:22:05,406 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Duration of reference combination {}: 0:01:23.562867
+2025-02-20 04:22:05,407 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2025-02-20 04:22:05,409 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - 
+==================================================
+2025-02-20 04:22:05,410 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Average DSM Matrix for model: gpt-4-turbo-preview
+2025-02-20 04:22:05,411 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - End of log reference type(s): ['baseline']
+2025-02-20 04:22:05,412 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Saving results to: ../output/experiment_llm_gpt-4-turbo-preview_20250220-042041/llm_refs_baseline
+2025-02-20 04:22:05,417 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - 
+Average Matrix:
+                   Motor  Gear System  Chuck  Battery  Switch  Housing  Control Circuitry
+Motor                  1            1      0        1       1        1                  1
+Gear System            1            1      1        0       0        1                  0
+Chuck                  0            1      1        0       0        1                  0
+Battery                1            0      0        1       1        1                  1
+Switch                 1            0      0        1       1        1                  1
+Housing                1            1      1        1       1        1                  1
+Control Circuitry      1            0      0        1       1        1                  1
+2025-02-20 04:22:05,418 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - 
+Components: ['Motor', 'Gear System', 'Chuck', 'Battery', 'Switch', 'Housing', 'Control Circuitry']
+2025-02-20 04:22:05,418 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - ==================================================
+
+2025-02-20 04:22:05,422 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Saved CSV to: ../output/experiment_llm_gpt-4-turbo-preview_20250220-042041/llm_refs_baseline/average_matrix_20250220-042041.csv
+2025-02-20 04:22:05,424 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Saved JSON to: ../output/experiment_llm_gpt-4-turbo-preview_20250220-042041/llm_refs_baseline/detailed_results_20250220-042041.json
+2025-02-20 04:22:05,707 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Saved visualization to: ../output/experiment_llm_gpt-4-turbo-preview_20250220-042041/llm_refs_baseline/average_matrix_20250220-042041.png
+2025-02-20 04:22:05,708 - DSM_MultiModelExp_llm_gpt-4-turbo-preview - INFO - Duration of experiment for gpt-4-turbo-preview in llm inference type: 0:01:24

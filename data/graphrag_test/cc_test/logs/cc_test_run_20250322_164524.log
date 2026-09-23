@@ -1,0 +1,30 @@
+Running graphrag command...
+Command: python -m graphrag query --root ./ --method basic --query Who is scrooge?
+
+
+False
+
+INFO: Vector Store Args: {
+    "type": "lancedb",
+    "db_uri": "/ragtest/cc_test/output/lancedb",
+    "container_name": "==== REDACTED ====",
+    "overwrite": true
+}
+creating llm client with {'api_key': 'REDACTED,len=164', 'type': "openai_chat", 'encoding_model': 'cl100k_base', 'model': 'gpt-4-turbo-preview', 'max_tokens': 4000, 'temperature': 0.0, 'top_p': 1.0, 'n': 1, 'frequency_penalty': 0.0, 'presence_penalty': 0.0, 'request_timeout': 180.0, 'api_base': None, 'api_version': None, 'organization': None, 'proxy': None, 'audience': None, 'deployment_name': None, 'model_supports_json': True, 'tokens_per_minute': 0, 'requests_per_minute': 0, 'max_retries': 10, 'max_retry_wait': 10.0, 'sleep_on_rate_limit_recommendation': True, 'concurrent_requests': 25, 'responses': None}
+creating embedding llm client with {'api_key': 'REDACTED,len=164', 'type': "openai_embedding", 'encoding_model': 'cl100k_base', 'model': 'text-embedding-3-small', 'max_tokens': 4000, 'temperature': 0, 'top_p': 1, 'n': 1, 'frequency_penalty': 0.0, 'presence_penalty': 0.0, 'request_timeout': 180.0, 'api_base': None, 'api_version': None, 'organization': None, 'proxy': None, 'audience': None, 'deployment_name': None, 'model_supports_json': None, 'tokens_per_minute': 0, 'requests_per_minute': 0, 'max_retries': 10, 'max_retry_wait': 10.0, 'sleep_on_rate_limit_recommendation': True, 'concurrent_requests': 25, 'responses': None}
+
+SUCCESS: Basic Search Response:
+Ebenezer Scrooge is the central character of Charles Dickens' novella "A Christmas Carol," a story that has become a classic of English literature and has been adapted into numerous films, plays, and other media since its publication in 1843. Scrooge is depicted as a miserly, cold-hearted, and solitary individual who despises Christmas and all forms of happiness and human connection. His name has become synonymous with greed and a lack of generosity.
+
+### Character Traits and Development
+
+At the beginning of the story, Scrooge is described as a squeezing, wrenching, grasping, scraping, clutching, covetous old sinner, hard and sharp as flint [Data: Sources (0)]. He is someone who carries his own low temperature around with him, icing his office during the dog-days and not thawing it one degree at Christmas. External heat and cold had little influence on him, and no weather could warm him or chill him more than he already was [Data: Sources (0)]. Scrooge is depicted as being completely isolated from society; nobody ever stopped him in the street to say hello, no beggars approached him, and even the blind men's dogs seemed to avoid him [Data: Sources (0)].
+
+### Transformation
+
+Scrooge's transformation is the heart of the story. After being visited by the ghost of his former business partner, Jacob Marley, and the Spirits of Christmas Past, Present, and Yet to Come, Scrooge awakens on Christmas Day with joy and love in his heart, vowing to change his ways. He begins to treat those around him with kindness, generosity, and compassion, embodying the spirit of Christmas [Data: Sources (2, 7)].
+
+### Conclusion
+
+Ebenezer Scrooge's journey from a miser to a benefactor is a powerful narrative of redemption and the impact of kindness and generosity. His story serves as a reminder of the capacity for change within all individuals, emphasizing the importance of compassion and human connection. Through Scrooge, Dickens delivers a timeless message about the transformative power of Christmas and the human spirit [Data: Sources (0, 2, 7)].
+Command completed and logged to logs/cc_test_run_20250322_164524.log

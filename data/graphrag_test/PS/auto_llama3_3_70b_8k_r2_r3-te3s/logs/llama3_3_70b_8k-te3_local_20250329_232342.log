@@ -1,0 +1,84 @@
+Running graphrag command...
+Command: python -m graphrag query --method local --query Please identify system-level proximity relationships between the components of power screwdriver, as listed below, and represent them in a Design Structure Matrix (DSM) format.  
+
+The relationships should be articulated in plain English, capturing the essence of their interactions. 
+
+Here is the list of subsystems/components to analyze: ['Bit', 'Transmission', 'Motor', 'Electrical System', 'Battery Holder', 'Housing', 'External Environment'] 
+
+The DSM should clearly indicate the interactions between these components as 1 exist and 0 does not exist, considering both the presence and nature of these connections. 
+    
+Present the output in a square matrix format (number of rows and columns MUST be the same as the number of components = 7 for this example), with rows and columns labeled accordingly. 
+
+Diagonal elements should be 1 in DSM matrix since each component interacts with itself. 
+
+If you don't know the answer, just write 2 for the specific cell that you are unsure of. A worst case scenario of the **as a list of lists** shown below (diagonal elements are 1 and rest are 2). Don't make up an answer. 
+
+This is an example of the output format for 7 components (as 7x7 matrix)-based on our system-of-interest the size of the matrix can change. 
+
+{
+  "final_response": [[1, 2, 2, 2, 2, 2, 2], [2, 1, 2, 2, 2, 2, 2], [2, 2, 1, 2, 2, 2, 2],[2, 2, 2, 1, 2, 2, 2],[2, 2, 2, 2, 1, 2, 2],[2, 2, 2, 2, 2, 1, 2],[2, 2, 2, 2, 2, 2, 1]]
+}
+
+IMPORTANT: Your response must **ONLY** contain a valid **as a list of lists** as json in the following example format 7x7 matrix. 
+
+The below list of lists is just an example format of your response. **Replace** the values with your **actual analysis** while providing your response with parameter of 'final response'.
+
+This is an example of the output format for 7 components (as 7x7 matrix)-based on our system-of-interest the size of the matrix can change. 
+
+IMPORTANT: Your response MUST be a valid JSON object in the following format:
+{
+  "final_response": [[1,0,0,0,0,0,0], [0,1,0,0,0,0,0], ...]
+} --root ./
+
+
+
+INFO: Vector Store Args: {
+    "type": "lancedb",
+    "db_uri": "/ragtest/PS/auto_llama3_3_70b_8k_r2_r3-te3s/output/lancedb",
+    "collection_name": "default",
+    "overwrite": true
+}
+creating llm client with {'api_key': 'REDACTED,len=6', 'type': "openai_chat", 'encoding_model': 'cl100k_base', 'model': 'llama3.3:70b-8k', 'max_tokens': 4000, 'temperature': 0.0, 'top_p': 1.0, 'n': 1, 'frequency_penalty': 0.0, 'presence_penalty': 0.0, 'request_timeout': 1200.0, 'api_base': 'http://localhost:11434/v1', 'api_version': None, 'organization': None, 'proxy': None, 'audience': None, 'deployment_name': None, 'model_supports_json': True, 'tokens_per_minute': 0, 'requests_per_minute': 0, 'max_retries': 10, 'max_retry_wait': 10.0, 'sleep_on_rate_limit_recommendation': True, 'concurrent_requests': 2, 'responses': None}
+creating embedding llm client with {'api_key': 'REDACTED,len=164', 'type': "openai_embedding", 'encoding_model': 'cl100k_base', 'model': 'text-embedding-3-small', 'max_tokens': 4000, 'temperature': 0, 'top_p': 1, 'n': 1, 'frequency_penalty': 0.0, 'presence_penalty': 0.0, 'request_timeout': 180.0, 'api_base': None, 'api_version': None, 'organization': None, 'proxy': None, 'audience': None, 'deployment_name': None, 'model_supports_json': None, 'tokens_per_minute': 0, 'requests_per_minute': 0, 'max_retries': 10, 'max_retry_wait': 10.0, 'sleep_on_rate_limit_recommendation': True, 'concurrent_requests': 1, 'responses': None}
+
+SUCCESS: Local Search Response:
+To analyze the system-level proximity relationships between the components of a power screwdriver and represent them in a Design Structure Matrix (DSM) format, we need to consider how each component interacts with every other component. The interactions can be based on physical connections, energy transfers, information exchanges, or any other form of dependency.
+
+Given the components: ['Bit', 'Transmission', 'Motor', 'Electrical System', 'Battery Holder', 'Housing', 'External Environment'], let's articulate their relationships:
+
+1. **Bit**: Interacts directly with the Transmission (as it is held and driven by it), and indirectly with other components through its function.
+2. **Transmission**: Directly interacts with the Bit (holds and drives it) and the Motor (transfers power from).
+3. **Motor**: Directly interacts with the Transmission (provides power to) and the Electrical System (receives power from).
+4. **Electrical System**: Interacts with the Motor (powers it), the Battery Holder (gets power from), and indirectly with other components.
+5. **Battery Holder**: Holds batteries that power the Electrical System, thus interacting with it directly.
+6. **Housing**: Physically encloses or supports all internal components (Bit, Transmission, Motor, Electrical System, Battery Holder), thus interacting with them in terms of providing structural support.
+7. **External Environment**: Interacts with the Housing (as the housing is exposed to and protects the internal components from the external environment) and indirectly with other components through user interaction or environmental conditions.
+
+Based on these interactions:
+
+- The Bit interacts directly with the Transmission.
+- The Transmission interacts with the Bit and the Motor.
+- The Motor interacts with the Transmission and the Electrical System.
+- The Electrical System interacts with the Motor, Battery Holder, and indirectly affects all components.
+- The Battery Holder interacts directly with the Electrical System.
+- The Housing interacts with all internal components (Bit, Transmission, Motor, Electrical System, Battery Holder) by enclosing them.
+- The External Environment interacts directly with the Housing.
+
+Given these considerations, here is a simplified representation of their interactions in DSM format. Note that this analysis focuses on direct physical or functional interactions:
+
+```json
+{
+  "final_response": [
+    [1, 1, 0, 0, 0, 1, 0],
+    [1, 1, 1, 0, 0, 1, 0],
+    [0, 1, 1, 1, 0, 1, 0],
+    [0, 0, 1, 1, 1, 1, 0],
+    [0, 0, 0, 1, 1, 1, 0],
+    [1, 1, 1, 1, 1, 1, 1],
+    [0, 0, 0, 0, 0, 1, 1]
+  ]
+}
+```
+
+This representation captures the direct interactions between components based on their functions and physical connections within a power screwdriver. The '1' indicates an interaction (physical, functional, or environmental), and '0' indicates no direct interaction as per the analysis provided. Note that indirect interactions are not explicitly marked but can be inferred through the network of direct interactions.
+Command completed and logged to logs/cc_test_run_20250329_232342.log

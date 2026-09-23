@@ -1,0 +1,8 @@
+,Motor,Housing,Ring Gear,Clip,Battery,Switch,Screwdriver Bit
+Motor,1,1,1,1,1,1,1
+Housing,1,1,1,1,0,1,0
+Ring Gear,1,1,1,1,0,0,0
+Clip,1,1,1,1,0,0,0
+Battery,1,0,0,0,1,1,0
+Switch,1,1,0,0,1,1,1
+Screwdriver Bit,1,0,0,0,0,1,1

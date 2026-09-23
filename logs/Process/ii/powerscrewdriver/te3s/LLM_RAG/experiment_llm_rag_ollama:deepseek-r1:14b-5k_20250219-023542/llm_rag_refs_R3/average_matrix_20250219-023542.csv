@@ -1,0 +1,5 @@
+,Motor,Trigger,Driver Bit,Housing
+Motor,1,1,1,1
+Trigger,1,1,0,1
+Driver Bit,1,0,1,1
+Housing,1,1,1,1

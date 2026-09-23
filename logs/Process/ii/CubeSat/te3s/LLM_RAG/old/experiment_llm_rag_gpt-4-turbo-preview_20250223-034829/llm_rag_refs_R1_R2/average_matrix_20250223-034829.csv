@@ -1,0 +1,7 @@
+,structure,payload,power system,command and data handling (C&DH),communication system,attitude determination and control system (ADCS)
+structure,1,1,1,1,1,1
+payload,0,1,0,1,1,1
+power system,1,0,1,1,1,1
+command and data handling (C&DH),0,1,1,1,1,1
+communication system,0,1,0,1,1,1
+attitude determination and control system (ADCS),0,1,1,1,1,1

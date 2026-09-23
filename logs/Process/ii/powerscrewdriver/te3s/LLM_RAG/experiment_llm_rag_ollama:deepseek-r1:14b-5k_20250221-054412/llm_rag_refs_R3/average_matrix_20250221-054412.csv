@@ -1,0 +1,8 @@
+,Motor,Housing,Trigger,Driver Bit,Chuck/Collet,Speed Adjustment Mechanism,Insulated Handle
+Motor,1,1,1,0,1,1,0
+Housing,1,1,1,0,1,1,1
+Trigger,1,1,1,0,0,0,0
+Driver Bit,0,0,0,1,0,0,0
+Chuck/Collet,1,1,0,1,1,0,0
+Speed Adjustment Mechanism,1,1,0,0,0,1,0
+Insulated Handle,0,1,0,0,0,0,1

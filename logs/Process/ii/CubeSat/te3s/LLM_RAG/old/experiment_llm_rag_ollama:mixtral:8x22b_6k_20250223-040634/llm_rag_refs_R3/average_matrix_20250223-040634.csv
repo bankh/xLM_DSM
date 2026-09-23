@@ -1,0 +1,7 @@
+,Satellite housing,Arduino development board,HyperDuino shield,Light and temperature sensors,Jumper cables,Battery cable and 9V battery
+Satellite housing,1,1,1,1,0,1
+Arduino development board,1,1,1,0,0,0
+HyperDuino shield,1,1,1,1,0,0
+Light and temperature sensors,1,0,1,1,0,0
+Jumper cables,0,0,0,0,1,0
+Battery cable and 9V battery,1,0,0,0,0,1

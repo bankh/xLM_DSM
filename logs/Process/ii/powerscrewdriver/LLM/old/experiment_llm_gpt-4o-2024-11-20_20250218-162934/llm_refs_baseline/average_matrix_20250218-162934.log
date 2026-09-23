@@ -1,0 +1,73 @@
+2025-02-20 03:53:07,912 - DSM_None_None_ - INFO - 
+Best matches for each ground truth component:
+2025-02-20 03:53:07,914 - DSM_None_None_ - INFO - 
+Bit:
+2025-02-20 03:53:07,916 - DSM_None_None_ - INFO -   predicted_component  embedding_similarity
+2               Chuck              0.320521
+0               Motor              0.295605
+4        Battery Pack              0.276195
+2025-02-20 03:53:07,920 - DSM_None_None_ - INFO - 
+Transmission:
+2025-02-20 03:53:07,921 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+8              Gearbox              0.524029
+10   Trigger Mechanism              0.451762
+7                Motor              0.450794
+2025-02-20 03:53:07,924 - DSM_None_None_ - INFO - 
+Motor:
+2025-02-20 03:53:07,925 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+14               Motor              1.000000
+15             Gearbox              0.475674
+20   Control Circuitry              0.380220
+2025-02-20 03:53:07,928 - DSM_None_None_ - INFO - 
+Electrical System:
+2025-02-20 03:53:07,929 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+27   Control Circuitry              0.539386
+25        Battery Pack              0.383829
+21               Motor              0.353539
+2025-02-20 03:53:07,932 - DSM_None_None_ - INFO - 
+Battery Holder:
+2025-02-20 03:53:07,933 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+32        Battery Pack              0.759982
+34   Control Circuitry              0.365353
+29             Gearbox              0.319527
+2025-02-20 03:53:07,935 - DSM_None_None_ - INFO - 
+Housing:
+2025-02-20 03:53:07,937 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+40             Housing              1.000000
+36             Gearbox              0.247303
+41   Control Circuitry              0.234630
+2025-02-20 03:53:07,940 - DSM_None_None_ - INFO - 
+External Environment:
+2025-02-20 03:53:07,941 - DSM_None_None_ - INFO -    predicted_component  embedding_similarity
+47             Housing              0.254411
+46        Battery Pack              0.246532
+45   Trigger Mechanism              0.246225
+2025-02-20 03:53:23,157 - DSM_None_None_ - INFO - System Context: power drill
+2025-02-20 03:53:23,159 - DSM_None_None_ - INFO - Similarity Threshold: 0.3
+2025-02-20 03:53:23,160 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-02-20 03:53:23,161 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/PowerDrill/LLM/experiment_llm_gpt-4o-2024-11-20_20250218-162934/llm_refs_baseline/average_matrix_20250218-162934.csv
+2025-02-20 03:53:23,162 - DSM_None_None_ - INFO - Extracted model: gpt-4o-2024-11-20
+2025-02-20 03:53:23,163 - DSM_None_None_ - INFO - Creating similarity matrix text
+2025-02-20 03:53:23,197 - DSM_None_None_ - INFO - Creating prompt
+2025-02-20 03:53:23,198 - DSM_None_None_ - INFO - Attempting to use model: gpt-4o-2024-11-20
+2025-02-20 03:53:29,718 - DSM_None_None_ - INFO - 
+Initial LLM Suggested Mappings:
+2025-02-20 03:53:29,720 - DSM_None_None_ - INFO - Bit -> Chuck (similarity: 0.321)
+2025-02-20 03:53:29,722 - DSM_None_None_ - INFO - Transmission -> Gearbox (similarity: 0.524)
+2025-02-20 03:53:29,724 - DSM_None_None_ - INFO - Motor -> Motor (similarity: 1.000)
+2025-02-20 03:53:29,726 - DSM_None_None_ - INFO - Electrical System -> Control Circuitry (similarity: 0.539)
+2025-02-20 03:53:29,728 - DSM_None_None_ - INFO - Battery Holder -> Battery Pack (similarity: 0.760)
+2025-02-20 03:53:29,730 - DSM_None_None_ - INFO - Housing -> Housing (similarity: 1.000)
+2025-02-20 03:53:29,731 - DSM_None_None_ - INFO - External Environment -> (no match) (invalid match)
+2025-02-20 03:53:29,736 - DSM_None_None_ - INFO - 
+Removing invalid mapping:
+2025-02-20 03:53:29,737 - DSM_None_None_ - INFO - - External Environment -> (no match)
+2025-02-20 03:53:29,740 - DSM_None_None_ - INFO - Final Component Mapping (only valid matches):
+2025-02-20 03:53:29,741 - DSM_None_None_ - INFO -   Ground Truth Component Matched Predicted Component
+0                    Bit                       Chuck
+1           Transmission                     Gearbox
+2                  Motor                       Motor
+3      Electrical System           Control Circuitry
+4         Battery Holder                Battery Pack
+5                Housing                     Housing
+2025-02-20 03:53:29,744 - DSM_None_None_ - INFO - Evaluation complete. Visualizations generated.

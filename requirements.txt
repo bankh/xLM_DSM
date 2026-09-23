@@ -1,0 +1,46 @@
+# xLM_DSM — Python dependencies
+#
+# Versions are those of the reference environment used to run the shipped scripts and notebooks
+# (conda, Python 3.10.18, Linux). Install with:
+#   conda create -n xlm_dsm python=3.10 -y && conda activate xlm_dsm && pip install -r requirements.txt
+#
+# System prerequisites (not installed via pip):
+# - Ollama (https://ollama.ai) service at http://localhost:11434 for the local models
+#   (classification: deepseek-r1-8b-optimized, see scripts/Modelfile.deepseek-r1-8b-optimized; nomic-embed-text)
+# - GraphRAG: the pinned git submodule ./graphrag (microsoft/graphrag v1.1.2), see readMe.md, Installation
+# - Fonts for figure generation: DejaVu (e.g., fonts-dejavu-core)
+# - Optional CLI tools used in docs/examples: curl, jq
+#
+# The original 2025 experiment runs were made with older releases of the LangChain stack
+# (langchain 0.0.339, openai 1.3.4, chromadb 0.4.17; see the commented install cell at the top of
+# scripts/Step2_DSM_LLM_RAG_GRAPHRAG.ipynb). The versions below are the ones the notebooks run with today.
+
+pandas==2.3.2
+numpy==2.2.6
+matplotlib==3.10.6
+scikit-learn==1.7.2
+scipy==1.15.3
+seaborn==0.13.2
+networkx==3.4.2
+pillow==12.2.0
+pikepdf==9.10.2
+pypdf==6.0.0
+PyMuPDF==1.27.1
+openpyxl==3.1.5
+pyyaml==6.0.3
+requests==2.33.1
+langchain==0.3.27
+langchain-community==0.3.29
+langchain-core==0.3.76
+langchain-text-splitters==0.3.11
+chromadb==1.0.20
+chroma-hnswlib==0.7.6
+tiktoken==0.11.0
+sentence-transformers==5.1.0
+openai==1.107.1
+anthropic==0.67.0
+neo4j==5.28.2
+
+# Optional (not installed in the reference environment):
+# mauve-text   # Step3 notebook, MAUVE score cell only
+# lancedb      # GraphRAG vector store; installed by the graphrag submodule's own dependencies

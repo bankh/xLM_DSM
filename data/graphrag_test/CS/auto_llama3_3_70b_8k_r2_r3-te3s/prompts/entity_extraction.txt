@@ -1,0 +1,240 @@
+
+-Goal-
+Given a text document that is potentially relevant to this activity and a list of entity types, identify all entities of those types from the text and all relationships among the identified entities.
+
+-Steps-
+1. Identify all entities. For each identified entity, extract the following information:
+- entity_name: Name of the entity, capitalized
+- entity_type: One of the following types: [system design concepts, system components, measurement units, system analysis methods, material properties, software tools, data handling functions]
+- entity_description: Comprehensive description of the entity's attributes and activities
+Format each entity as ("entity"{tuple_delimiter}<entity_name>{tuple_delimiter}<entity_type>{tuple_delimiter}<entity_description>)
+
+2. From the entities identified in step 1, identify all pairs of (source_entity, target_entity) that are *clearly related* to each other.
+For each pair of related entities, extract the following information:
+- source_entity: name of the source entity, as identified in step 1
+- target_entity: name of the target entity, as identified in step 1
+- relationship_description: explanation as to why you think the source entity and the target entity are related to each other
+- relationship_strength: an integer score between 1 to 10, indicating strength of the relationship between the source entity and target entity
+Format each relationship as ("relationship"{tuple_delimiter}<source_entity>{tuple_delimiter}<target_entity>{tuple_delimiter}<relationship_description>{tuple_delimiter}<relationship_strength>)
+
+3. Return output in English as a single list of all the entities and relationships identified in steps 1 and 2. Use **{record_delimiter}** as the list delimiter.
+
+4. If you have to translate into English, just translate the descriptions, nothing else!
+
+5. When finished, output {completion_delimiter}.
+
+-Examples-
+######################
+
+Example 1:
+
+entity_types: [system design concepts, system components, measurement units, system analysis methods, material properties, software tools, data handling functions]
+text:
+Results
+Cross-Interface Management
+Cross-Module Management
+References
+Alizon, 2009, Module-Based Design Symposium on Product Family & Product Platform Design, Helsinki University of Technology (TKK), Helsinki,
+mass
+Identify ##LTFigure##
+listed
+w/o
+(kg)
+Elsevier
+Clustering analysis also requires attention to the following considerations:
+Decompose Break the system down into its constituent elements perhaps through several hierarchical Identify Document the relationships among the system's Analyze Rearrange the elements and relationships to understand structural patterns and their implications for system Display Create a useful representation of the DSM model, highlighting of particular importance or of special Improve Most DSM applications result in not only better understanding of the system but also improvement of the system through actions taken as a result of the DSM analysis and interpretation of its
+Product or System A complex product or engineered Such systems come in many forms and include automobiles, aircraft, electronics, software, mechatronics, machinery, capital equipment, built environments, In this chapter, the general term "system" refers to either the product itself or the product and its surrounding environment or sup­ porting Product Architecture The arrangement of components interacting to perform specified The architecture of a product is embodied in its components, their relationships to each other and to the product's environment, and the principles guiding its design and The terms product architecture and system architecture are used interchange­ ably in certain Components The elements comprising a Depending on one's point of view, a component may be a complex product or Interactions The relationships between components or elements in a Interactions may be of various types depending on the nature of the Many interactions occur through interfaces between Product Architecture DSM A mapping of the network of interactions between a product's components, also known as system architecture DSM, product DSM, and component­ based Cluster A set of components grouped because of certain relationships, suggested through analysis of the product architecture DSM, and defined to comprise a module or
+Table 1 Important solar cell parameters Parameter Commonly referred as Units Open circuit voltage Vcc mV Open circuit current Icc mA Voltage at max power Vmp mV Current at max power Imp mA Average efficiency η % Dimensions Length(cid:1)width mm Cell area A cm2
+Table 14 Energy and solar array power required per orbit obtained based on the EPS requirements Parameter Units Value Energy required during eclipse (EE) Wh 0.88 Energy required during sunlit (ES) Wh 1.68 Energy required to produce (EP) Wh 2.56 Solar array power required (PSAR) W 2.61
+(L)
+D
+(kg)
+https://doi
+in
+prop
+##LTFigure## TEMPORARY TEMPORARY
+Table 16 Solar array power margin and battery capacity obtained based on the EPS requirements Parameter Units Value Solar array power margin (PSAM) W 0.18 % 6.81 Battery capacity (Batt) Wh 2.93
+Table
+Table 4 CommCubeSat1 chemical propulsion system sizing Insertion Δv (m/s) 269.5 S/C dry mass (kg) 20.0 Prop system dry mass (kg) 9.0 Thruster cant angle (degrees) 15.0 Worst-Case thrust force (N) 3.6 (cid:4)3σ Specific impulse (s) 201.9 ΔH Propellant mass (kg) 0.2 Δv Propellant mass used (kg) 2.9 Propellant vol used (L) 2.5 S/C wet mass (kg) 23.1
+Architecture
+F
+Satellite
+for
+and
+Statement
+Statement
+and
+and
+Table 8 Orbital parameters obtained based on the EPS requirements Parameter Units Value Orbital period (T) s 5676.81 min 94.61 h 1.58 Earth’s angular radius (ρ) degrees 68.02 Time of eclipse (TE) s 2145.15 min 35.75 h 0.60 Time in sunlight (TS) s 3531.66 min 58.86 h 0.98
+Inc
+Press,
+Table 5 CommCubeSat1 electric propulsion system sizing S/C dry mass (kg) 18.0 Max input power (W) 160.0 Max thrust force (N) 0.0024 Specific impulse (s) 2160.0 Propellant mass used (kg) 0.4 Prop system dry mass (kg) 3.0 S/C wet mass (kg) 21.4
+Everett,
+3
+chemical
+QUBIK
+(cid:129) Appearance check/confirm smell (cid:129) Measure the mass (cid:129) Measure the open circuit voltage (cid:129) Measure the charge and discharge characteristic/ the temperature characteristic for discharge (cid:129) Measure capacity (cid:129) Appearance check/confirm smell (cid:129) Measure the mass (cid:129) Measure the open circuit voltage (cid:129) Measure the charge and discharge characteristic/ the temperature characteristic for discharge (cid:129) Measure capacity (cid:129) Appearance check/confirm smell (cid:129) Measure the mass (cid:129) Measure the open circuit voltage (cid:129) Measure the charge and discharge characteristic/ the temperature characteristic for discharge (cid:129) Measure capacity Vacuum test Vibration test Selection of cells for flight Assemble batteries Screening test for one cell
+All
+control
+command
+command
+org/10.1016/B978-0-12-817884-3.00012-6
+11,285.8
+Lunar
+chemical
+Add a drop of CA glue on the knots to secure them in place
+6173.3
+rights
+269.5
+201.9
+102.0
+23.1
+------------------------
+output:
+("entity"{tuple_delimiter}Cross-Interface Management{tuple_delimiter}system design concepts{tuple_delimiter}A concept in system design focusing on the management and integration of interfaces between different system modules or components.)
+{record_delimiter}
+("entity"{tuple_delimiter}Cross-Module Management{tuple_delimiter}system design concepts{tuple_delimiter}A concept in system design that involves overseeing and coordinating the interactions and dependencies between various modules within a system.)
+{record_delimiter}
+("entity"{tuple_delimiter}Clustering Analysis{tuple_delimiter}system analysis methods{tuple_delimiter}A method used in system analysis to group elements or components based on their relationships or attributes, often to identify modules or subsystems within a larger system.)
+{record_delimiter}
+("entity"{tuple_delimiter}Product Architecture{tuple_delimiter}system design concepts{tuple_delimiter}The organizational structure of a product or system, detailing the arrangement and interaction of its components. It guides the design and evolution of the system.)
+{record_delimiter}
+("entity"{tuple_delimiter}Components{tuple_delimiter}system components{tuple_delimiter}The individual parts or elements that make up a system, which can range from simple to complex and interact with each other within the system's architecture.)
+{record_delimiter}
+("entity"{tuple_delimiter}Interactions{tuple_delimiter}system design concepts{tuple_delimiter}The ways in which system components or elements influence or relate to one another, which can vary in type and complexity depending on the system's design.)
+{record_delimiter}
+("entity"{tuple_delimiter}Product Architecture DSM{tuple_delimiter}software tools{tuple_delimiter}A tool used to map out the network of interactions between components within a product's architecture, facilitating analysis and optimization of the system design.)
+{record_delimiter}
+("entity"{tuple_delimiter}Cluster{tuple_delimiter}system components{tuple_delimiter}A group of components within a system that are grouped together based on certain relationships or characteristics, often identified through analysis like clustering analysis.)
+{record_delimiter}
+("entity"{tuple_delimiter}Open Circuit Voltage{tuple_delimiter}measurement units{tuple_delimiter}A parameter measured in millivolts (mV), representing the voltage across a photovoltaic cell when it is not connected to any load in the circuit.)
+{record_delimiter}
+("entity"{tuple_delimiter}Open Circuit Current{tuple_delimiter}measurement units{tuple_delimiter}A parameter measured in milliamperes (mA), indicating the current through a photovoltaic cell when the circuit is open and there is no external load.)
+{record_delimiter}
+("entity"{tuple_delimiter}Average Efficiency{tuple_delimiter}measurement units{tuple_delimiter}A percentage value representing the ratio of the output power to the input power of a system, commonly used to evaluate the performance of solar cells.)
+{record_delimiter}
+("entity"{tuple_delimiter}Cell Area{tuple_delimiter}measurement units{tuple_delimiter}The area of a solar cell measured in square centimeters (cm2), which is relevant to its capacity to convert solar energy into electrical energy.)
+{record_delimiter}
+("entity"{tuple_delimiter}Energy Required During Eclipse{tuple_delimiter}measurement units{tuple_delimiter}The amount of energy, measured in watt-hours (Wh), that a satellite system requires to operate during the period it is in the Earth's shadow and not receiving direct sunlight.)
+{record_delimiter}
+("entity"{tuple_delimiter}Solar Array Power Required{tuple_delimiter}measurement units{tuple_delimiter}The power, measured in watts (W), that a satellite's solar array needs to generate to meet the system's energy requirements during its operation in orbit.)
+{record_delimiter}
+("entity"{tuple_delimiter}Battery Capacity{tuple_delimiter}measurement units{tuple_delimiter}The total energy storage capacity of a battery, measured in watt-hours (Wh), indicating how much energy the battery can store and supply to the system.)
+{record_delimiter}
+("entity"{tuple_delimiter}Specific Impulse{tuple_delimiter}measurement units{tuple_delimiter}A measure of the efficiency of rocket and jet engines, expressed in seconds (s), indicating the thrust produced per unit of propellant consumed.)
+{record_delimiter}
+("entity"{tuple_delimiter}Propellant Mass{tuple_delimiter}measurement units{tuple_delimiter}The mass of propellant, measured in kilograms (kg), used or required by a propulsion system to achieve a certain change in velocity (∆v) for spacecraft maneuvering.)
+{record_delimiter}
+("relationship"{tuple_delimiter}Product Architecture{tuple_delimiter}Components{tuple_delimiter}Product architecture is defined by the arrangement and interaction of its components.{tuple_delimiter}10)
+{record_delimiter}
+("relationship"{tuple_delimiter}Product Architecture DSM{tuple_delimiter}Interactions{tuple_delimiter}The Product Architecture DSM tool is used to map out and analyze the interactions between components within a product's architecture.{tuple_delimiter}9)
+{record_delimiter}
+("relationship"{tuple_delimiter}Clustering Analysis{tuple_delimiter}Cluster{tuple_delimiter}Clustering analysis is a method used to identify clusters of components within a system based on their relationships or attributes.{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}Specific Impulse{tuple_delimiter}Propellant Mass{tuple_delimiter}Specific impulse is a key factor in determining the propellant mass required for achieving desired spacecraft maneuvers.{tuple_delimiter}7)
+{completion_delimiter}
+#############################
+
+
+Example 2:
+
+entity_types: [system design concepts, system components, measurement units, system analysis methods, material properties, software tools, data handling functions]
+text:
+ mark in the off-diagonal cell [D, F] represents an interaction that is both an input and an output depending on whether one takes the perspective of its provider (column F) or its receiver (row It is important to note that many DSM resources use the opposite convention, the transpose of the matrix, with an element's inputs shown in its column and its outputs shown in its The two conventions convey the same information, and both are widely used because of the diverse roots of matrix-based tools for modeling systems (which is the topic
+Figure 1.4 The numerical DSM representation using values (a) or colors (b) to represent strength or type of
+of the next Here we begin by adopting the original DSM convention with inputs in rows (IR) and outputs in Later we also present examples using the opposite inputs in columns (IC) convention (which stems from W charts and IDEFO The simple DSM in figure 1.3a is called a binary DSM because the off-diagonal marks indicate merely the presence or absence of an The binary DSM representation can be extended in a great variety of ways by including further attributes of the interac­ tions, such as the number of interactions and/or the importance, impact, or strength of each-which might be represented by using one or more numerical values, symbols, shad­ ings, or colors instead of just the binary marks in each of the off-diagonal This extended form of DSM is called a numerical Figure 1.4 shows two Addi­ tional attributes of the elements themselves may also be included by adding more columns to the left of the square matrix to describe, for example, the type, owner, or status of each Additional attributes of the interactions, such as their names, requirements, are usually kept in separate repositories but may be linked to the DSM cells by numerical identification numbers or DSM models can be partitioned or rearranged using a variety of analytical methods, the most common of which are clustering and sequencing, as shown in figures 1.5a and b, Clustering analysis applies primarily to the kinds of interaction networks found in product and organization architecture DSM models, where interaction marks are largely symmetric about the diagonal, as described in chapters Sequencing analy­ sis applies primarily to the kinds of directional or temporal interaction networks found in process DSM models, as described in chapters
+Figure 1.5 DSM partitioning analysis commonly entails clustering (a) or sequencing (b) based on the interactions con, tained in the (To illustrate clustering and sequencing, the interaction data in these two matrices are not the same and are different than those in figures 1.3 and
+The term DSM has its basis in using a matrix to model the design and structure (archi­ tecture) of a Over the years, other terms have also been applied using the DSM initials dependency structure matrix, dependency system model, deliverable source map, and other combinations of such Most of these alternative terms sprang from a desire to emphasize a particular aspect of a DSM model, such as its ability to model or map dependencies between elements in a In this book, we adopt the name DSM as a unifying term for a wide variety of square matrix models, even though some of these predate the term Our main criterion is that DSM is a square matrix, with the rows and columns identically labeled and ordered, and where the off-diagonal elements indicate relationships between the on-diagonal Later, in chapter 8, we describe a rectangular matrix called a domain mapping matrix (DMM) used to link DSM matrices across Many matrix-based methods have their origins in a branch of mathematics called graph theory, which has tended to focus on analytical Insights from graph theory continue to provide an impor­ tant source of extensions to DSM analysis
+System Architecture
+fundamental organization of a system embodied in its components, their relationships to each other, and to the environment, and the principles guiding its design and evolution" We adopt this IEEE definition with some minor modifications, mainly for the sake of clarity and First, we replace the word "organization" with the generic term "structure," retaining the former for particular application to what are widely referred to as organizations assemblies of Second, we generalize the product-oriented definition by using the generic term "elements" for any kinds of "components," reserving the latter term for the elements of a Third, we make the connection between architecture and function We therefore use the following definition:
+System Architecture: The structure of a system-embodied in its elements, their relation­ ships to each other (and to the system's environment), and the principles guiding its design and evolution -that gives rise to its functions and
+Thus, a system's architecture describes its elements and their relationships as a structure that can be designed and may evolve over We could refer to DSM as "the system architecture design matrix," but "design structure matrix" is simpler, has become widely accepted, and will suffice when understood in the proper All types of systems have Product architecture refers to the components and interactions within a physical artifact, such as hardware (and sometimes software), including automobiles, aircraft, buildings, ships, computers, equipment, machinery, and so Organization architecture refers to the people or teams and their interactions within an Process architecture refers to the actions and interactions that accomplish work, such as the design or production of a product, the delivery of a service, or the execu­ tion of software While products, organizations, and processes are each a type of system, at times the term "system" is used to refer to anyone of these complex products or portions thereof are often called systems), and sometimes it is used to refer to all of them In this book, we strive to use the terms "product," "process," or "organization" to refer to each of these particular types of systems while reserving the more general term "system" for remarks pertaining to any type of Two other categories of relationships that are particularly important in
+------------------------
+output:
+("entity"{tuple_delimiter}DSM (Design Structure Matrix){tuple_delimiter}system design concepts{tuple_delimiter}A matrix used to model the design and structure (architecture) of systems, highlighting the interactions between elements within the system. It represents interactions with off-diagonal marks indicating the presence or absence of an interaction and can be extended to include attributes like the number of interactions and their importance. DSM models can be analyzed through methods like clustering and sequencing to understand the system's architecture better.)
+{record_delimiter}
+("entity"{tuple_delimiter}Numerical DSM{tuple_delimiter}system components{tuple_delimiter}An extended form of the basic DSM that includes additional attributes for interactions, such as their number, importance, impact, or strength, which might be represented by numerical values, symbols, shadings, or colors. It provides a more detailed view of the system's interactions.)
+{record_delimiter}
+("entity"{tuple_delimiter}Clustering Analysis{tuple_delimiter}system analysis methods{tuple_delimiter}An analytical method applied to DSM models, particularly useful for understanding interaction networks in product and organization architectures. It focuses on grouping elements based on their interactions, which are largely symmetric about the DSM's diagonal.)
+{record_delimiter}
+("entity"{tuple_delimiter}Sequencing Analysis{tuple_delimiter}system analysis methods{tuple_delimiter}An analytical method used primarily for process DSM models, focusing on directional or temporal interaction networks. It helps in understanding the sequence of actions or interactions within the system.)
+{record_delimiter}
+("entity"{tuple_delimiter}System Architecture{tuple_delimiter}system design concepts{tuple_delimiter}The fundamental organization (or structure) of a system, embodied in its elements, their relationships to each other and to the environment, and the principles guiding its design and evolution. It describes the system's elements and their relationships as a structure that can be designed and may evolve over time.)
+{record_delimiter}
+("relationship"{tuple_delimiter}Numerical DSM{tuple_delimiter}DSM (Design Structure Matrix){tuple_delimiter}The Numerical DSM is an extended form of the basic DSM, providing more detailed attributes for system interactions.{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}Clustering Analysis{tuple_delimiter}DSM (Design Structure Matrix){tuple_delimiter}Clustering Analysis is applied to DSM models to understand the system's architecture through the grouping of elements based on their interactions.{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}Sequencing Analysis{tuple_delimiter}DSM (Design Structure Matrix){tuple_delimiter}Sequencing Analysis is used for DSM models to understand the sequence of actions or interactions within the system, especially for process architectures.{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}System Architecture{tuple_delimiter}DSM (Design Structure Matrix){tuple_delimiter}DSM is a tool for modeling the system architecture, detailing the interactions and relationships between system elements.{tuple_delimiter}9)
+{completion_delimiter}
+#############################
+
+
+Example 3:
+
+entity_types: [system design concepts, system components, measurement units, system analysis methods, material properties, software tools, data handling functions]
+text:
+ steps in conducting the FEM analysis are as follows: l importing the CAD model, remembering to apply the correct materials; l defining the FEM model using nodes and elements; l applying the loads that depend on the analysis that should be conducted; l defining the constraints; l running the analysis; l analyzing the results A detailed explanation of how to perform the analysis is beyond the scope of this chap- ter, but it is important to remember to define the main loads that should be considered for the analysis
+3.2 Structural analysis
+174 CubeSat Handbook
+3.2.1 Loads
+During a space mission, several loads will be applied to the satellite structure Mainly, they are due to the launch conditions and are well defined in the interface control man- ual (ICD) between the rocket and the spacecraft or in the launch vehicle manual Other loads can be caused by opening mechanisms, transportation or by thermal loads, such as the stresses caused when two materials, with different coefficient of thermal expan- sions, are coupled together In general the loads are caused by forces and accelerations and can be divided in three categories: static loads, which are time independent; dynamic loads, which are time dependent and for which inertial effects cannot be ignored;
+In 2016 the TuPOD, the first completely 3-D-printed satellite, was launched into space TuPOD is the acronym for TubeSat PicoSatellite Orbital Deployer, result of a cooperation between GAUSS Srl and TetonSys Similar to the UniSat platform from GAUSS, the TUPOD was designed to be a completely autonomous satellite with the main goal of releasing two smaller satellites once on orbit Considering its shape, it is directly analogous to a 3U CubeSat; see Fig 3 [15] The satellite was completely made of Windform XT 2.0, a carbon microfiber- reinforced polymer material produced by CRP Technology The material mechanical proprieties are shown in Table 1 The technology adopted to manufacture the satellite was the selective laser sintering (SLS) method The satellite mission was a success, and the structure performed properly during the in orbit phase, releasing the daughter satellites in the proper orbits
+Additive manufacturing does not always mean the use of new advanced materials The general approach is to use the capability to 3-D print traditional materials such as alu- minum and/or to generate new structural solutions Nevertheless, the new trend is to space qualify new materials typically used in additive manufacturing Of course, not all of these materials are suitable for space applications and the restrictions in terms of outgassing and other proprieties have always to be considered In the following, two examples of materials qualified for space applications that have been effectively used will be described
+4.2 New materials
+4.2.1 Windform XT 2.0
+or set of trajectories The use of the additive manufacturing induces a complete rev- olution of the design process An overview of additive manufacturing technologies and how to identify optimal design strategies for additive manufacturing has been con- sidered in various studies, for example, by Gaudenzi et al in [14] Additive manufacturing is not a complete or effective solution for all structures given that it has limitations too, but new possibilities for CubeSat structures are certainly facili- tated by 3-D printing
+176 CubeSat Handbook
+Fig 3 TUPOD structure: X+ face to the right, Z+ face to the left
+Following the invention of the CubeSat standard, new small satellite form factors have been introduced An overview of the most commonly adopted ones, along with their respective deployers and the main mission performed up to date, is provided
+tests and test levels can include data coming from different launch vehicles This will allow developers to maintain an important level of flexibility during the launcher selection and to be able to move from one launch opportunity to another This is an approach adopted by JAXA [5] that allows launches from International Space Station During the mission planning phase, it is important to consider the possibility of developing two nearly identical satellites: one engineering model (EM) and one flight unit (FU) Of course, budget and time might limit this approach, but this solution will allow designers to perform more invasive tests such as the qualification tests, normally performed at higher level than acceptance tests, on the EM, while testing the FU at lower levels during the acceptance tests
+178 CubeSat Handbook
+6 CubeSat-derived form factors
+6.1 PocketQubeSat
+PocketQubeSats (initially called PocketQubs) are pico-class satellites (mass between 0.1 and 1kg) that are envisioned to fly in constellations and perform a variety of func- tions from communications to Earth remote sensing and space research The PocketQubeSat standard was first proposed by Prof Bob Twiggs (Morehead State University) in 2009, with the idea of having a smaller and cheaper satellite than a CubeSat, and which could fit in a pocket, hence the name PocketQube With the PocketQubeSat idea the concept of a “personal satellite” was introduced, a satellite that can be developed by a single developer interested in having its own satellite in space and able to afford the mission costs The original concept envisioned the entire mission cost to be lower than the cost of an automobile The PocketQube dimensions are 1/8th of CubeSat since this miniaturized satellite has a size of 5cm cubed It is possible to design different units of PocketQubeSat remembering that the letter “p” indicates a unit of 5x5x5 cm Regarding the mass, 1p weights no more than 180g The electronic bus typically uses commercial off-the-shelf components [17] Several PocketQubeSat dimensions have been consid- ered in the last decade In 2018 GAUSS Srl, TU
+------------------------
+output:
+("entity"{tuple_delimiter}FEM ANALYSIS{tuple_delimiter}system analysis methods{tuple_delimiter}A computational technique used to approximate the behavior of physical systems; involves importing CAD models, defining models using nodes and elements, applying loads, defining constraints, running the analysis, and analyzing results)
+{record_delimiter}
+("entity"{tuple_delimiter}CAD MODEL{tuple_delimiter}system components{tuple_delimiter}A computer-based representation of a physical system's geometry and characteristics, used as the basis for FEM analysis)
+{record_delimiter}
+("entity"{tuple_delimiter}NODES AND ELEMENTS{tuple_delimiter}system components{tuple_delimiter}Fundamental components of FEM models representing discrete points and their connections, used to define the structure of the model)
+{record_delimiter}
+("entity"{tuple_delimiter}LOADS{tuple_delimiter}system design concepts{tuple_delimiter}Forces or other actions that cause stress or deformation in physical systems; can be static or dynamic and are essential for FEM analysis)
+{record_delimiter}
+("entity"{tuple_delimiter}CONSTRAINTS{tuple_delimiter}system design concepts{tuple_delimiter}Limitations or conditions defined within a model to simulate real-world physical restrictions and boundaries)
+{record_delimiter}
+("entity"{tuple_delimiter}WINDFORM XT 2.0{tuple_delimiter}material properties{tuple_delimiter}A carbon microfiber-reinforced polymer material produced by CRP Technology, used for 3-D printing and characterized by specific mechanical properties)
+{record_delimiter}
+("entity"{tuple_delimiter}SELECTIVE LASER SINTERING (SLS){tuple_delimiter}software tools{tuple_delimiter}A 3-D printing method that uses lasers to sinter powdered material, binding it together to create a solid structure)
+{record_delimiter}
+("entity"{tuple_delimiter}TUPOD{tuple_delimiter}system components{tuple_delimiter}The first completely 3-D-printed satellite, designed for deploying smaller satellites in orbit, made of Windform XT 2.0 and utilizing SLS technology)
+{record_delimiter}
+("entity"{tuple_delimiter}POCKETQUBESAT{tuple_delimiter}system components{tuple_delimiter}Pico-class satellites proposed by Prof Bob Twiggs, smaller and cheaper than CubeSats, designed for a variety of functions including Earth remote sensing)
+{record_delimiter}
+("relationship"{tuple_delimiter}FEM ANALYSIS{tuple_delimiter}CAD MODEL{tuple_delimiter}FEM analysis begins with importing a CAD model to define the physical system{tuple_delimiter}10)
+{record_delimiter}
+("relationship"{tuple_delimiter}FEM ANALYSIS{tuple_delimiter}NODES AND ELEMENTS{tuple_delimiter}FEM models are defined using nodes and elements to represent the physical system{tuple_delimiter}9)
+{record_delimiter}
+("relationship"{tuple_delimiter}FEM ANALYSIS{tuple_delimiter}LOADS{tuple_delimiter}Loads are applied in FEM analysis to simulate real-world forces on the model{tuple_delimiter}8)
+{record_delimiter}
+("relationship"{tuple_delimiter}FEM ANALYSIS{tuple_delimiter}CONSTRAINTS{tuple_delimiter}Constraints are defined in FEM analysis to simulate physical limitations{tuple_delimiter}7)
+{record_delimiter}
+("relationship"{tuple_delimiter}TUPOD{tuple_delimiter}WINDFORM XT 2.0{tuple_delimiter}TUPOD was made using Windform XT 2.0 material{tuple_delimiter}10)
+{record_delimiter}
+("relationship"{tuple_delimiter}TUPOD{tuple_delimiter}SELECTIVE LASER SINTERING (SLS){tuple_delimiter}TUPOD was manufactured using the SLS 3-D printing method{tuple_delimiter}9)
+{record_delimiter}
+("relationship"{tuple_delimiter}POCKETQUBESAT{tuple_delimiter}TUPOD{tuple_delimiter}TUPOD's mission concept is similar to the objectives of PocketQubeSats, focusing on deploying smaller satellites{tuple_delimiter}6)
+{completion_delimiter}
+#############################
+
+
+
+-Real Data-
+######################
+entity_types: [system design concepts, system components, measurement units, system analysis methods, material properties, software tools, data handling functions]
+text: {input_text}
+######################
+output:

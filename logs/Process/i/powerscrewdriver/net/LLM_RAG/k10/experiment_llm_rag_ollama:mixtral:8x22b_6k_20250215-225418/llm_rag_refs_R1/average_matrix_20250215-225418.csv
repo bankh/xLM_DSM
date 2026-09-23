@@ -1,0 +1,8 @@
+,Bit,Transmission,Motor,Electrical System,Battery Holder,Housing,External Environment
+Bit,1,1,0,1,0,1,1
+Transmission,1,1,1,1,0,1,1
+Motor,0,1,1,1,0,0,1
+Electrical System,1,1,1,1,1,1,1
+Battery Holder,0,0,0,1,1,0,1
+Housing,1,1,0,1,0,1,1
+External Environment,1,1,1,1,1,1,1

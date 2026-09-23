@@ -1,0 +1,7 @@
+,Structure,Power System,Communication System,Onboard Computer,Payload,Propulsion System
+Structure,1,1,0,0,0,1
+Power System,1,1,1,1,1,1
+Communication System,0,1,1,1,1,0
+Onboard Computer,0,1,1,1,1,1
+Payload,0,1,1,1,1,0
+Propulsion System,1,1,0,1,0,1

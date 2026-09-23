@@ -1,0 +1,1174 @@
+2025-02-24 04:59:56,617 - DSM_None_None_ - INFO - Product: CubeSat
+2025-02-24 04:59:56,617 - DSM_None_None_ - INFO - Model: gpt-4-turbo-preview
+2025-02-24 04:59:56,618 - DSM_None_None_ - INFO - Type: LLM_RAG
+2025-02-24 04:59:56,619 - DSM_None_None_ - INFO - Reference: R2
+2025-02-24 04:59:57,542 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-02-24 04:59:57,543 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_gpt-4-turbo-preview_20250223-144833/llm_rag_refs_R2/average_matrix_20250223-144833.csv
+2025-02-24 04:59:57,543 - DSM_None_None_ - INFO - Extracted model: gpt-4-turbo-preview
+2025-02-24 04:59:57,544 - DSM_None_None_ - INFO - Creating similarity matrix text
+2025-02-24 04:59:57,555 - DSM_None_None_ - INFO - Creating prompt
+2025-02-24 04:59:57,557 - DSM_None_None_ - INFO - Attempting to use model: gpt-4-turbo-preview
+2025-02-24 05:00:15,983 - DSM_None_None_ - INFO - 
+Initial LLM Suggested Mappings:
+2025-02-24 05:00:15,984 - DSM_None_None_ - INFO - Ground Truth Components: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software']
+2025-02-24 05:00:15,985 - DSM_None_None_ - INFO - Predicted Components: ['structure', 'power system', 'command and data handling (CDH)', 'communication system', 'attitude determination and control system (ADCS)', 'payload']
+2025-02-24 05:00:15,986 - DSM_None_None_ - INFO - 
+Checking mapping: Spacecraft -> structure
+2025-02-24 05:00:15,987 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 05:00:15,988 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 05:00:15,989 - DSM_None_None_ - INFO - 
+Checking mapping: Guidance, Navigation, and Control (GNC) Subsystem -> attitude determination and control system (ADCS)
+2025-02-24 05:00:15,990 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 05:00:15,991 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 05:00:15,992 - DSM_None_None_ - INFO - 
+Checking mapping: Propulsion Subsystem -> power system
+2025-02-24 05:00:15,993 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 05:00:15,994 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 05:00:15,994 - DSM_None_None_ - INFO - 
+Checking mapping: Power Subsystem -> communication system
+2025-02-24 05:00:15,995 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 05:00:15,996 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 05:00:15,997 - DSM_None_None_ - INFO - 
+Checking mapping: Reaction Wheel -> command and data handling (CDH)
+2025-02-24 05:00:15,998 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 05:00:15,999 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 05:00:15,999 - DSM_None_None_ - INFO - 
+Checking mapping: GNC Software -> payload
+2025-02-24 05:00:16,000 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 05:00:16,000 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 05:26:52,860 - DSM_None_None_ - INFO - Product: CubeSat
+2025-02-24 05:26:52,861 - DSM_None_None_ - INFO - Model: gpt-4-turbo-preview
+2025-02-24 05:26:52,862 - DSM_None_None_ - INFO - Type: LLM_RAG
+2025-02-24 05:26:52,862 - DSM_None_None_ - INFO - Reference: R2
+2025-02-24 05:26:53,796 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-02-24 05:26:53,797 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_gpt-4-turbo-preview_20250223-144833/llm_rag_refs_R2/average_matrix_20250223-144833.csv
+2025-02-24 05:26:53,797 - DSM_None_None_ - INFO - Extracted model: gpt-4-turbo-preview
+2025-02-24 05:26:53,798 - DSM_None_None_ - INFO - Creating similarity matrix text
+2025-02-24 05:26:53,810 - DSM_None_None_ - INFO - Creating prompt
+2025-02-24 05:26:53,811 - DSM_None_None_ - INFO - Attempting to use model: gpt-4-turbo-preview
+2025-02-24 05:27:05,303 - DSM_None_None_ - INFO - 
+Initial LLM Suggested Mappings:
+2025-02-24 05:27:05,304 - DSM_None_None_ - INFO - Ground Truth Components: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software']
+2025-02-24 05:27:05,305 - DSM_None_None_ - INFO - Predicted Components: ['structure', 'power system', 'command and data handling (CDH)', 'communication system', 'attitude determination and control system (ADCS)', 'payload']
+2025-02-24 05:27:05,306 - DSM_None_None_ - INFO - 
+Checking mapping: Spacecraft -> structure
+2025-02-24 05:27:05,307 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 05:27:05,308 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 05:27:05,309 - DSM_None_None_ - INFO - 
+Checking mapping: Guidance, Navigation, and Control (GNC) Subsystem -> attitude determination and control system (ADCS)
+2025-02-24 05:27:05,310 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 05:27:05,311 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 05:27:05,311 - DSM_None_None_ - INFO - 
+Checking mapping: Propulsion Subsystem -> power system
+2025-02-24 05:27:05,313 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 05:27:05,313 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 05:27:05,314 - DSM_None_None_ - INFO - 
+Checking mapping: Power Subsystem -> communication system
+2025-02-24 05:27:05,315 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 05:27:05,316 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 05:27:05,317 - DSM_None_None_ - INFO - 
+Checking mapping: Reaction Wheel -> command and data handling (CDH)
+2025-02-24 05:27:05,317 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 05:27:05,318 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 05:27:05,319 - DSM_None_None_ - INFO - 
+Checking mapping: GNC Software -> payload
+2025-02-24 05:27:05,319 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 05:27:05,321 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 05:27:06,806 - DSM_None_None_ - INFO - 
+Results for gpt-4-turbo-preview:
+2025-02-24 05:27:06,807 - DSM_None_None_ - INFO - 
+Raw Metrics:
+2025-02-24 05:27:06,808 - DSM_None_None_ - INFO - accuracy: 0.5278
+2025-02-24 05:27:06,809 - DSM_None_None_ - INFO - precision: 0.5714
+2025-02-24 05:27:06,810 - DSM_None_None_ - INFO - recall: 0.6000
+2025-02-24 05:27:06,810 - DSM_None_None_ - INFO - f1_score: 0.5854
+2025-02-24 05:27:06,811 - DSM_None_None_ - INFO - edit_distance: 17.0000
+2025-02-24 05:27:06,812 - DSM_None_None_ - INFO - spectral_distance: 2.1793
+2025-02-24 05:27:06,812 - DSM_None_None_ - INFO - 
+Aligned Metrics:
+2025-02-24 05:27:06,813 - DSM_None_None_ - INFO - accuracy: 0.6250
+2025-02-24 05:27:06,813 - DSM_None_None_ - INFO - precision: 0.7000
+2025-02-24 05:27:06,814 - DSM_None_None_ - INFO - recall: 0.7000
+2025-02-24 05:27:06,815 - DSM_None_None_ - INFO - f1_score: 0.7000
+2025-02-24 05:27:06,815 - DSM_None_None_ - INFO - edit_distance: 6.0000
+2025-02-24 05:27:06,816 - DSM_None_None_ - INFO - spectral_distance: 2.4495
+2025-02-24 05:27:06,816 - DSM_None_None_ - INFO - 
+Component Mapping:
+2025-02-24 05:27:06,818 - DSM_None_None_ - INFO -                               Ground Truth Component                       Matched Predicted Component
+0                                         Spacecraft                                         structure
+1  Guidance, Navigation, and Control (GNC) Subsystem  attitude determination and control system (ADCS)
+2                               Propulsion Subsystem                                      power system
+3                                    Power Subsystem                              communication system
+2025-02-24 07:14:27,755 - DSM_None_None_ - INFO - Product: CubeSat
+2025-02-24 07:14:27,757 - DSM_None_None_ - INFO - Model: gpt-4-turbo-preview
+2025-02-24 07:14:27,776 - DSM_None_None_ - INFO - Type: LLM_RAG
+2025-02-24 07:14:27,776 - DSM_None_None_ - INFO - Reference: R2
+2025-02-24 07:14:28,763 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-02-24 07:14:28,764 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_gpt-4-turbo-preview_20250223-144833/llm_rag_refs_R2/average_matrix_20250223-144833.csv
+2025-02-24 07:14:28,764 - DSM_None_None_ - INFO - Extracted model: gpt-4-turbo-preview
+2025-02-24 07:14:28,765 - DSM_None_None_ - INFO - Creating similarity matrix text
+2025-02-24 07:14:28,777 - DSM_None_None_ - INFO - Creating prompt
+2025-02-24 07:14:28,778 - DSM_None_None_ - INFO - Attempting to use model: gpt-4-turbo-preview
+2025-02-24 07:14:52,667 - DSM_None_None_ - INFO - 
+Initial LLM Suggested Mappings:
+2025-02-24 07:14:52,668 - DSM_None_None_ - INFO - Ground Truth Components: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software']
+2025-02-24 07:14:52,669 - DSM_None_None_ - INFO - Predicted Components: ['structure', 'power system', 'command and data handling (CDH)', 'communication system', 'attitude determination and control system (ADCS)', 'payload']
+2025-02-24 07:14:52,670 - DSM_None_None_ - INFO - 
+Checking mapping: Spacecraft -> structure
+2025-02-24 07:14:52,671 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 07:14:52,672 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 07:14:52,673 - DSM_None_None_ - INFO - 
+Checking mapping: Guidance, Navigation, and Control (GNC) Subsystem -> attitude determination and control system (ADCS)
+2025-02-24 07:14:52,674 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 07:14:52,675 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 07:14:52,676 - DSM_None_None_ - INFO - 
+Checking mapping: Propulsion Subsystem -> power system
+2025-02-24 07:14:52,677 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 07:14:52,678 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 07:14:52,679 - DSM_None_None_ - INFO - 
+Checking mapping: Power Subsystem -> communication system
+2025-02-24 07:14:52,680 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 07:14:52,681 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 07:14:52,682 - DSM_None_None_ - INFO - 
+Checking mapping: Reaction Wheel -> command and data handling (CDH)
+2025-02-24 07:14:52,682 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 07:14:52,683 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 07:14:52,684 - DSM_None_None_ - INFO - 
+Checking mapping: GNC Software -> payload
+2025-02-24 07:14:52,685 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 07:14:52,686 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 07:14:54,268 - DSM_None_None_ - INFO - 
+Results for gpt-4-turbo-preview:
+2025-02-24 07:14:54,269 - DSM_None_None_ - INFO - 
+Raw Metrics:
+2025-02-24 07:14:54,269 - DSM_None_None_ - INFO - accuracy: 0.5278
+2025-02-24 07:14:54,270 - DSM_None_None_ - INFO - precision: 0.5714
+2025-02-24 07:14:54,271 - DSM_None_None_ - INFO - recall: 0.6000
+2025-02-24 07:14:54,271 - DSM_None_None_ - INFO - f1_score: 0.5854
+2025-02-24 07:14:54,272 - DSM_None_None_ - INFO - edit_distance: 17.0000
+2025-02-24 07:14:54,272 - DSM_None_None_ - INFO - spectral_distance: 2.1793
+2025-02-24 07:14:54,272 - DSM_None_None_ - INFO - 
+Aligned Metrics:
+2025-02-24 07:14:54,273 - DSM_None_None_ - INFO - accuracy: 0.6250
+2025-02-24 07:14:54,273 - DSM_None_None_ - INFO - precision: 0.7000
+2025-02-24 07:14:54,275 - DSM_None_None_ - INFO - recall: 0.7000
+2025-02-24 07:14:54,275 - DSM_None_None_ - INFO - f1_score: 0.7000
+2025-02-24 07:14:54,276 - DSM_None_None_ - INFO - edit_distance: 6.0000
+2025-02-24 07:14:54,277 - DSM_None_None_ - INFO - spectral_distance: 2.4495
+2025-02-24 07:14:54,277 - DSM_None_None_ - INFO - 
+Component Mapping:
+2025-02-24 07:14:54,279 - DSM_None_None_ - INFO -                               Ground Truth Component                       Matched Predicted Component
+0                                         Spacecraft                                         structure
+1  Guidance, Navigation, and Control (GNC) Subsystem  attitude determination and control system (ADCS)
+2                               Propulsion Subsystem                                      power system
+3                                    Power Subsystem                              communication system
+2025-02-24 16:38:32,108 - DSM_None_None_ - INFO - Product: CubeSat
+2025-02-24 16:38:32,109 - DSM_None_None_ - INFO - Model: gpt-4-turbo-preview
+2025-02-24 16:38:32,110 - DSM_None_None_ - INFO - Type: LLM_RAG
+2025-02-24 16:38:32,111 - DSM_None_None_ - INFO - Reference: R2
+2025-02-24 16:38:33,721 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-02-24 16:38:33,722 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_gpt-4-turbo-preview_20250223-144833/llm_rag_refs_R2/average_matrix_20250223-144833.csv
+2025-02-24 16:38:33,723 - DSM_None_None_ - INFO - Extracted model: gpt-4-turbo-preview
+2025-02-24 16:38:33,723 - DSM_None_None_ - INFO - Creating similarity matrix text
+2025-02-24 16:38:33,735 - DSM_None_None_ - INFO - Creating prompt
+2025-02-24 16:38:33,736 - DSM_None_None_ - INFO - Attempting to use model: gpt-4-turbo-preview
+2025-02-24 16:38:59,728 - DSM_None_None_ - INFO - 
+Initial LLM Suggested Mappings:
+2025-02-24 16:38:59,730 - DSM_None_None_ - INFO - Ground Truth Components: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software']
+2025-02-24 16:38:59,731 - DSM_None_None_ - INFO - Predicted Components: ['structure', 'power system', 'command and data handling (CDH)', 'communication system', 'attitude determination and control system (ADCS)', 'payload']
+2025-02-24 16:38:59,732 - DSM_None_None_ - INFO - 
+Checking mapping: Spacecraft -> structure
+2025-02-24 16:38:59,732 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 16:38:59,734 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 16:38:59,735 - DSM_None_None_ - INFO - 
+Checking mapping: Guidance, Navigation, and Control (GNC) Subsystem -> attitude determination and control system (ADCS)
+2025-02-24 16:38:59,736 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 16:38:59,737 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 16:38:59,738 - DSM_None_None_ - INFO - 
+Checking mapping: Propulsion Subsystem -> power system
+2025-02-24 16:38:59,738 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 16:38:59,740 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 16:38:59,741 - DSM_None_None_ - INFO - 
+Checking mapping: Power Subsystem -> communication system
+2025-02-24 16:38:59,741 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 16:38:59,742 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 16:38:59,743 - DSM_None_None_ - INFO - 
+Checking mapping: Reaction Wheel -> command and data handling (CDH)
+2025-02-24 16:38:59,744 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 16:38:59,745 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 16:38:59,746 - DSM_None_None_ - INFO - 
+Checking mapping: GNC Software -> payload
+2025-02-24 16:38:59,747 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 16:38:59,748 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 16:39:01,248 - DSM_None_None_ - INFO - 
+Results for gpt-4-turbo-preview:
+2025-02-24 16:39:01,249 - DSM_None_None_ - INFO - 
+Raw Metrics:
+2025-02-24 16:39:01,250 - DSM_None_None_ - INFO - accuracy: 0.5278
+2025-02-24 16:39:01,251 - DSM_None_None_ - INFO - precision: 0.5714
+2025-02-24 16:39:01,251 - DSM_None_None_ - INFO - recall: 0.6000
+2025-02-24 16:39:01,252 - DSM_None_None_ - INFO - f1_score: 0.5854
+2025-02-24 16:39:01,253 - DSM_None_None_ - INFO - edit_distance: 17.0000
+2025-02-24 16:39:01,254 - DSM_None_None_ - INFO - spectral_distance: 2.1793
+2025-02-24 16:39:01,255 - DSM_None_None_ - INFO - 
+Aligned Metrics:
+2025-02-24 16:39:01,256 - DSM_None_None_ - INFO - accuracy: 0.6250
+2025-02-24 16:39:01,256 - DSM_None_None_ - INFO - precision: 0.7000
+2025-02-24 16:39:01,257 - DSM_None_None_ - INFO - recall: 0.7000
+2025-02-24 16:39:01,257 - DSM_None_None_ - INFO - f1_score: 0.7000
+2025-02-24 16:39:01,258 - DSM_None_None_ - INFO - edit_distance: 6.0000
+2025-02-24 16:39:01,259 - DSM_None_None_ - INFO - spectral_distance: 2.4495
+2025-02-24 16:39:01,259 - DSM_None_None_ - INFO - 
+Component Mapping:
+2025-02-24 16:39:01,261 - DSM_None_None_ - INFO -                               Ground Truth Component                       Matched Predicted Component
+0                                         Spacecraft                                         structure
+1  Guidance, Navigation, and Control (GNC) Subsystem  attitude determination and control system (ADCS)
+2                               Propulsion Subsystem                                      power system
+3                                    Power Subsystem                              communication system
+2025-02-24 16:39:01,261 - DSM_None_None_ - INFO - Resetting GPUs...
+2025-02-24 19:11:02,415 - DSM_None_None_ - INFO - Resetting GPUs...
+2025-02-24 19:11:50,596 - DSM_None_None_ - INFO - Product: CubeSat
+2025-02-24 19:11:50,597 - DSM_None_None_ - INFO - Model: gpt-4-turbo-preview
+2025-02-24 19:11:50,598 - DSM_None_None_ - INFO - Type: LLM_RAG
+2025-02-24 19:11:50,599 - DSM_None_None_ - INFO - Reference: R2
+2025-02-24 19:11:51,871 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-02-24 19:11:51,872 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_gpt-4-turbo-preview_20250223-144833/llm_rag_refs_R2/average_matrix_20250223-144833.csv
+2025-02-24 19:11:51,873 - DSM_None_None_ - INFO - Extracted model: gpt-4-turbo-preview
+2025-02-24 19:11:51,874 - DSM_None_None_ - INFO - Creating similarity matrix text
+2025-02-24 19:11:51,885 - DSM_None_None_ - INFO - Creating prompt
+2025-02-24 19:11:51,886 - DSM_None_None_ - INFO - Attempting to use model: gpt-4-turbo-preview
+2025-02-24 19:12:15,945 - DSM_None_None_ - INFO - 
+Initial LLM Suggested Mappings:
+2025-02-24 19:12:15,947 - DSM_None_None_ - INFO - Ground Truth Components: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software']
+2025-02-24 19:12:15,948 - DSM_None_None_ - INFO - Predicted Components: ['structure', 'power system', 'command and data handling (CDH)', 'communication system', 'attitude determination and control system (ADCS)', 'payload']
+2025-02-24 19:12:15,948 - DSM_None_None_ - INFO - 
+Checking mapping: Spacecraft -> structure
+2025-02-24 19:12:15,950 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 19:12:15,950 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 19:12:15,952 - DSM_None_None_ - INFO - 
+Checking mapping: Guidance, Navigation, and Control (GNC) Subsystem -> attitude determination and control system (ADCS)
+2025-02-24 19:12:15,952 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 19:12:15,953 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 19:12:15,954 - DSM_None_None_ - INFO - 
+Checking mapping: Propulsion Subsystem -> power system
+2025-02-24 19:12:15,955 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 19:12:15,956 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 19:12:15,957 - DSM_None_None_ - INFO - 
+Checking mapping: Power Subsystem -> communication system
+2025-02-24 19:12:15,958 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 19:12:15,959 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 19:12:15,960 - DSM_None_None_ - INFO - 
+Checking mapping: Reaction Wheel -> command and data handling (CDH)
+2025-02-24 19:12:15,960 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 19:12:15,962 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 19:12:15,962 - DSM_None_None_ - INFO - 
+Checking mapping: GNC Software -> payload
+2025-02-24 19:12:15,963 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 19:12:15,964 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 19:12:17,442 - DSM_None_None_ - INFO - 
+Results for gpt-4-turbo-preview:
+2025-02-24 19:12:17,443 - DSM_None_None_ - INFO - 
+Raw Metrics:
+2025-02-24 19:12:17,445 - DSM_None_None_ - INFO - accuracy: 0.5278
+2025-02-24 19:12:17,445 - DSM_None_None_ - INFO - precision: 0.5714
+2025-02-24 19:12:17,446 - DSM_None_None_ - INFO - recall: 0.6000
+2025-02-24 19:12:17,447 - DSM_None_None_ - INFO - f1_score: 0.5854
+2025-02-24 19:12:17,447 - DSM_None_None_ - INFO - edit_distance: 17.0000
+2025-02-24 19:12:17,448 - DSM_None_None_ - INFO - spectral_distance: 2.1793
+2025-02-24 19:12:17,448 - DSM_None_None_ - INFO - 
+Aligned Metrics:
+2025-02-24 19:12:17,449 - DSM_None_None_ - INFO - accuracy: 0.6250
+2025-02-24 19:12:17,450 - DSM_None_None_ - INFO - precision: 0.7000
+2025-02-24 19:12:17,450 - DSM_None_None_ - INFO - recall: 0.7000
+2025-02-24 19:12:17,451 - DSM_None_None_ - INFO - f1_score: 0.7000
+2025-02-24 19:12:17,453 - DSM_None_None_ - INFO - edit_distance: 6.0000
+2025-02-24 19:12:17,454 - DSM_None_None_ - INFO - spectral_distance: 2.4495
+2025-02-24 19:12:17,454 - DSM_None_None_ - INFO - 
+Component Mapping:
+2025-02-24 19:12:17,456 - DSM_None_None_ - INFO -                               Ground Truth Component                       Matched Predicted Component
+0                                         Spacecraft                                         structure
+1  Guidance, Navigation, and Control (GNC) Subsystem  attitude determination and control system (ADCS)
+2                               Propulsion Subsystem                                      power system
+3                                    Power Subsystem                              communication system
+2025-02-24 22:12:26,631 - DSM_None_None_ - INFO - Resetting GPUs...
+2025-02-24 22:13:13,339 - DSM_None_None_ - INFO - Product: CubeSat
+2025-02-24 22:13:13,340 - DSM_None_None_ - INFO - Model: gpt-4-turbo-preview
+2025-02-24 22:13:13,341 - DSM_None_None_ - INFO - Type: LLM_RAG
+2025-02-24 22:13:13,342 - DSM_None_None_ - INFO - Reference: R2
+2025-02-24 22:13:14,538 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-02-24 22:13:14,539 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_gpt-4-turbo-preview_20250223-144833/llm_rag_refs_R2/average_matrix_20250223-144833.csv
+2025-02-24 22:13:14,539 - DSM_None_None_ - INFO - Extracted model: gpt-4-turbo-preview
+2025-02-24 22:13:14,540 - DSM_None_None_ - INFO - Creating similarity matrix text
+2025-02-24 22:13:14,552 - DSM_None_None_ - INFO - Creating prompt
+2025-02-24 22:13:14,554 - DSM_None_None_ - INFO - Attempting to use model: gpt-4-turbo-preview
+2025-02-24 22:13:35,316 - DSM_None_None_ - INFO - 
+Initial LLM Suggested Mappings:
+2025-02-24 22:13:35,317 - DSM_None_None_ - INFO - Ground Truth Components: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software']
+2025-02-24 22:13:35,318 - DSM_None_None_ - INFO - Predicted Components: ['structure', 'power system', 'command and data handling (CDH)', 'communication system', 'attitude determination and control system (ADCS)', 'payload']
+2025-02-24 22:13:35,319 - DSM_None_None_ - INFO - 
+Checking mapping: Spacecraft -> structure
+2025-02-24 22:13:35,320 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 22:13:35,321 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 22:13:35,322 - DSM_None_None_ - INFO - 
+Checking mapping: Guidance, Navigation, and Control (GNC) Subsystem -> attitude determination and control system (ADCS)
+2025-02-24 22:13:35,323 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 22:13:35,324 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 22:13:35,325 - DSM_None_None_ - INFO - 
+Checking mapping: Propulsion Subsystem -> power system
+2025-02-24 22:13:35,325 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 22:13:35,326 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 22:13:35,327 - DSM_None_None_ - INFO - 
+Checking mapping: Power Subsystem -> communication system
+2025-02-24 22:13:35,328 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 22:13:35,329 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 22:13:35,330 - DSM_None_None_ - INFO - 
+Checking mapping: Reaction Wheel -> command and data handling (CDH)
+2025-02-24 22:13:35,331 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 22:13:35,332 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 22:13:35,332 - DSM_None_None_ - INFO - 
+Checking mapping: GNC Software -> payload
+2025-02-24 22:13:35,333 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 22:13:35,334 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 22:13:36,819 - DSM_None_None_ - INFO - 
+Results for gpt-4-turbo-preview:
+2025-02-24 22:13:36,821 - DSM_None_None_ - INFO - 
+Raw Metrics:
+2025-02-24 22:13:36,821 - DSM_None_None_ - INFO - accuracy: 0.5278
+2025-02-24 22:13:36,822 - DSM_None_None_ - INFO - precision: 0.5714
+2025-02-24 22:13:36,823 - DSM_None_None_ - INFO - recall: 0.6000
+2025-02-24 22:13:36,823 - DSM_None_None_ - INFO - f1_score: 0.5854
+2025-02-24 22:13:36,824 - DSM_None_None_ - INFO - edit_distance: 17.0000
+2025-02-24 22:13:36,825 - DSM_None_None_ - INFO - spectral_distance: 2.1793
+2025-02-24 22:13:36,826 - DSM_None_None_ - INFO - 
+Aligned Metrics:
+2025-02-24 22:13:36,827 - DSM_None_None_ - INFO - accuracy: 0.6250
+2025-02-24 22:13:36,827 - DSM_None_None_ - INFO - precision: 0.7000
+2025-02-24 22:13:36,828 - DSM_None_None_ - INFO - recall: 0.7000
+2025-02-24 22:13:36,828 - DSM_None_None_ - INFO - f1_score: 0.7000
+2025-02-24 22:13:36,829 - DSM_None_None_ - INFO - edit_distance: 6.0000
+2025-02-24 22:13:36,830 - DSM_None_None_ - INFO - spectral_distance: 2.4495
+2025-02-24 22:13:36,831 - DSM_None_None_ - INFO - 
+Component Mapping:
+2025-02-24 22:13:36,833 - DSM_None_None_ - INFO -                               Ground Truth Component                       Matched Predicted Component
+0                                         Spacecraft                                         structure
+1  Guidance, Navigation, and Control (GNC) Subsystem  attitude determination and control system (ADCS)
+2                               Propulsion Subsystem                                      power system
+3                                    Power Subsystem                              communication system
+2025-02-24 23:21:12,234 - DSM_None_None_ - INFO - Resetting GPUs...
+2025-02-24 23:21:59,252 - DSM_None_None_ - INFO - Product: CubeSat
+2025-02-24 23:21:59,253 - DSM_None_None_ - INFO - Model: gpt-4-turbo-preview
+2025-02-24 23:21:59,254 - DSM_None_None_ - INFO - Type: LLM_RAG
+2025-02-24 23:21:59,255 - DSM_None_None_ - INFO - Reference: R2
+2025-02-24 23:22:00,616 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-02-24 23:22:00,617 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_gpt-4-turbo-preview_20250223-144833/llm_rag_refs_R2/average_matrix_20250223-144833.csv
+2025-02-24 23:22:00,618 - DSM_None_None_ - INFO - Extracted model: gpt-4-turbo-preview
+2025-02-24 23:22:00,619 - DSM_None_None_ - INFO - Creating similarity matrix text
+2025-02-24 23:22:00,630 - DSM_None_None_ - INFO - Creating prompt
+2025-02-24 23:22:00,631 - DSM_None_None_ - INFO - Attempting to use model: gpt-4-turbo-preview
+2025-02-24 23:22:18,652 - DSM_None_None_ - INFO - 
+Initial LLM Suggested Mappings:
+2025-02-24 23:22:18,653 - DSM_None_None_ - INFO - Ground Truth Components: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software']
+2025-02-24 23:22:18,654 - DSM_None_None_ - INFO - Predicted Components: ['structure', 'power system', 'command and data handling (CDH)', 'communication system', 'attitude determination and control system (ADCS)', 'payload']
+2025-02-24 23:22:18,655 - DSM_None_None_ - INFO - 
+Checking mapping: Spacecraft -> structure
+2025-02-24 23:22:18,656 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 23:22:18,657 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 23:22:18,658 - DSM_None_None_ - INFO - 
+Checking mapping: Guidance, Navigation, and Control (GNC) Subsystem -> attitude determination and control system (ADCS)
+2025-02-24 23:22:18,659 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 23:22:18,660 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 23:22:18,661 - DSM_None_None_ - INFO - 
+Checking mapping: Propulsion Subsystem -> power system
+2025-02-24 23:22:18,662 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 23:22:18,663 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 23:22:18,664 - DSM_None_None_ - INFO - 
+Checking mapping: Power Subsystem -> communication system
+2025-02-24 23:22:18,664 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 23:22:18,665 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 23:22:18,666 - DSM_None_None_ - INFO - 
+Checking mapping: Reaction Wheel -> command and data handling (CDH)
+2025-02-24 23:22:18,667 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 23:22:18,668 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 23:22:18,668 - DSM_None_None_ - INFO - 
+Checking mapping: GNC Software -> payload
+2025-02-24 23:22:18,669 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 23:22:18,670 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 23:22:19,913 - DSM_None_None_ - INFO - Saved plot to ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_gpt-4-turbo-preview_20250223-144833/llm_rag_refs_R2/plots/metrics_comparison.png
+2025-02-24 23:22:22,627 - DSM_None_None_ - INFO - Saved plot to ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_gpt-4-turbo-preview_20250223-144833/llm_rag_refs_R2/plots/matrices_comparison.png
+2025-02-24 23:22:23,105 - DSM_None_None_ - INFO - 
+Results for gpt-4-turbo-preview:
+2025-02-24 23:22:23,106 - DSM_None_None_ - INFO - 
+Raw Metrics:
+2025-02-24 23:22:23,107 - DSM_None_None_ - INFO - accuracy: 0.5278
+2025-02-24 23:22:23,108 - DSM_None_None_ - INFO - precision: 0.5714
+2025-02-24 23:22:23,108 - DSM_None_None_ - INFO - recall: 0.6000
+2025-02-24 23:22:23,109 - DSM_None_None_ - INFO - f1_score: 0.5854
+2025-02-24 23:22:23,109 - DSM_None_None_ - INFO - edit_distance: 17.0000
+2025-02-24 23:22:23,110 - DSM_None_None_ - INFO - spectral_distance: 2.1793
+2025-02-24 23:22:23,112 - DSM_None_None_ - INFO - 
+Aligned Metrics:
+2025-02-24 23:22:23,112 - DSM_None_None_ - INFO - accuracy: 0.6250
+2025-02-24 23:22:23,113 - DSM_None_None_ - INFO - precision: 0.7000
+2025-02-24 23:22:23,114 - DSM_None_None_ - INFO - recall: 0.7000
+2025-02-24 23:22:23,114 - DSM_None_None_ - INFO - f1_score: 0.7000
+2025-02-24 23:22:23,115 - DSM_None_None_ - INFO - edit_distance: 6.0000
+2025-02-24 23:22:23,116 - DSM_None_None_ - INFO - spectral_distance: 2.4495
+2025-02-24 23:22:23,117 - DSM_None_None_ - INFO - 
+Component Mapping:
+2025-02-24 23:22:23,118 - DSM_None_None_ - INFO -                               Ground Truth Component                       Matched Predicted Component
+0                                         Spacecraft                                         structure
+1  Guidance, Navigation, and Control (GNC) Subsystem  attitude determination and control system (ADCS)
+2                               Propulsion Subsystem                                      power system
+3                                    Power Subsystem                              communication system
+2025-02-24 23:29:55,174 - DSM_None_None_ - INFO - Resetting GPUs...
+2025-02-24 23:30:45,608 - DSM_None_None_ - INFO - Product: CubeSat
+2025-02-24 23:30:45,610 - DSM_None_None_ - INFO - Model: gpt-4-turbo-preview
+2025-02-24 23:30:45,610 - DSM_None_None_ - INFO - Type: LLM_RAG
+2025-02-24 23:30:45,611 - DSM_None_None_ - INFO - Reference: R2
+2025-02-24 23:30:46,347 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-02-24 23:30:46,348 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_gpt-4-turbo-preview_20250223-144833/llm_rag_refs_R2/average_matrix_20250223-144833.csv
+2025-02-24 23:30:46,349 - DSM_None_None_ - INFO - Extracted model: gpt-4-turbo-preview
+2025-02-24 23:30:46,349 - DSM_None_None_ - INFO - Creating similarity matrix text
+2025-02-24 23:30:46,360 - DSM_None_None_ - INFO - Creating prompt
+2025-02-24 23:30:46,361 - DSM_None_None_ - INFO - Attempting to use model: gpt-4-turbo-preview
+2025-02-24 23:31:08,842 - DSM_None_None_ - INFO - 
+Initial LLM Suggested Mappings:
+2025-02-24 23:31:08,843 - DSM_None_None_ - INFO - Ground Truth Components: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software']
+2025-02-24 23:31:08,844 - DSM_None_None_ - INFO - Predicted Components: ['structure', 'power system', 'command and data handling (CDH)', 'communication system', 'attitude determination and control system (ADCS)', 'payload']
+2025-02-24 23:31:08,845 - DSM_None_None_ - INFO - 
+Checking mapping: Spacecraft -> structure
+2025-02-24 23:31:08,846 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 23:31:08,847 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 23:31:08,848 - DSM_None_None_ - INFO - 
+Checking mapping: Guidance, Navigation, and Control (GNC) Subsystem -> attitude determination and control system (ADCS)
+2025-02-24 23:31:08,849 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 23:31:08,850 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 23:31:08,851 - DSM_None_None_ - INFO - 
+Checking mapping: Propulsion Subsystem -> power system
+2025-02-24 23:31:08,852 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 23:31:08,853 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 23:31:08,854 - DSM_None_None_ - INFO - 
+Checking mapping: Power Subsystem -> communication system
+2025-02-24 23:31:08,855 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 23:31:08,855 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 23:31:08,856 - DSM_None_None_ - INFO - 
+Checking mapping: Reaction Wheel -> command and data handling (CDH)
+2025-02-24 23:31:08,857 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 23:31:08,859 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 23:31:08,860 - DSM_None_None_ - INFO - 
+Checking mapping: GNC Software -> payload
+2025-02-24 23:31:08,860 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 23:31:08,861 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 23:31:10,134 - DSM_None_None_ - INFO - Saved plot to ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_gpt-4-turbo-preview_20250223-144833/llm_rag_refs_R2/plots/metrics_comparison.png
+2025-02-24 23:31:12,814 - DSM_None_None_ - INFO - Saved plot to ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_gpt-4-turbo-preview_20250223-144833/llm_rag_refs_R2/plots/matrices_comparison.png
+2025-02-24 23:31:13,287 - DSM_None_None_ - INFO - 
+Results for gpt-4-turbo-preview:
+2025-02-24 23:31:13,287 - DSM_None_None_ - INFO - 
+Raw Metrics:
+2025-02-24 23:31:13,288 - DSM_None_None_ - INFO - accuracy: 0.5278
+2025-02-24 23:31:13,288 - DSM_None_None_ - INFO - precision: 0.5714
+2025-02-24 23:31:13,289 - DSM_None_None_ - INFO - recall: 0.6000
+2025-02-24 23:31:13,289 - DSM_None_None_ - INFO - f1_score: 0.5854
+2025-02-24 23:31:13,290 - DSM_None_None_ - INFO - edit_distance: 17.0000
+2025-02-24 23:31:13,290 - DSM_None_None_ - INFO - spectral_distance: 2.1793
+2025-02-24 23:31:13,291 - DSM_None_None_ - INFO - 
+Aligned Metrics:
+2025-02-24 23:31:13,291 - DSM_None_None_ - INFO - accuracy: 0.6250
+2025-02-24 23:31:13,291 - DSM_None_None_ - INFO - precision: 0.7000
+2025-02-24 23:31:13,292 - DSM_None_None_ - INFO - recall: 0.7000
+2025-02-24 23:31:13,292 - DSM_None_None_ - INFO - f1_score: 0.7000
+2025-02-24 23:31:13,293 - DSM_None_None_ - INFO - edit_distance: 6.0000
+2025-02-24 23:31:13,293 - DSM_None_None_ - INFO - spectral_distance: 2.4495
+2025-02-24 23:31:13,294 - DSM_None_None_ - INFO - 
+Component Mapping:
+2025-02-24 23:31:13,295 - DSM_None_None_ - INFO -                               Ground Truth Component                       Matched Predicted Component
+0                                         Spacecraft                                         structure
+1  Guidance, Navigation, and Control (GNC) Subsystem  attitude determination and control system (ADCS)
+2                               Propulsion Subsystem                                      power system
+3                                    Power Subsystem                              communication system
+2025-02-25 01:02:53,518 - DSM_None_None_ - INFO - Resetting GPUs...
+2025-02-25 01:03:40,207 - DSM_None_None_ - INFO - Product: CubeSat
+2025-02-25 01:03:40,208 - DSM_None_None_ - INFO - Model: gpt-4-turbo-preview
+2025-02-25 01:03:40,209 - DSM_None_None_ - INFO - Type: LLM_RAG
+2025-02-25 01:03:40,210 - DSM_None_None_ - INFO - Reference: R2
+2025-02-25 01:03:41,073 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-02-25 01:03:41,074 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_gpt-4-turbo-preview_20250223-144833/llm_rag_refs_R2/average_matrix_20250223-144833.csv
+2025-02-25 01:03:41,074 - DSM_None_None_ - INFO - Extracted model: gpt-4-turbo-preview
+2025-02-25 01:03:41,075 - DSM_None_None_ - INFO - Creating similarity matrix text
+2025-02-25 01:03:41,087 - DSM_None_None_ - INFO - Creating prompt
+2025-02-25 01:03:41,088 - DSM_None_None_ - INFO - Attempting to use model: gpt-4-turbo-preview
+2025-02-25 01:04:02,789 - DSM_None_None_ - INFO - 
+Initial LLM Suggested Mappings:
+2025-02-25 01:04:02,790 - DSM_None_None_ - INFO - Ground Truth Components: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software']
+2025-02-25 01:04:02,791 - DSM_None_None_ - INFO - Predicted Components: ['structure', 'power system', 'command and data handling (CDH)', 'communication system', 'attitude determination and control system (ADCS)', 'payload']
+2025-02-25 01:04:02,792 - DSM_None_None_ - INFO - 
+Checking mapping: Spacecraft -> structure
+2025-02-25 01:04:02,793 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 01:04:02,794 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 01:04:02,795 - DSM_None_None_ - INFO - 
+Checking mapping: Guidance, Navigation, and Control (GNC) Subsystem -> attitude determination and control system (ADCS)
+2025-02-25 01:04:02,797 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 01:04:02,797 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 01:04:02,799 - DSM_None_None_ - INFO - 
+Checking mapping: Propulsion Subsystem -> power system
+2025-02-25 01:04:02,800 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 01:04:02,801 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 01:04:02,802 - DSM_None_None_ - INFO - 
+Checking mapping: Power Subsystem -> communication system
+2025-02-25 01:04:02,803 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 01:04:02,804 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 01:04:02,805 - DSM_None_None_ - INFO - 
+Checking mapping: Reaction Wheel -> command and data handling (CDH)
+2025-02-25 01:04:02,806 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 01:04:02,807 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 01:04:02,808 - DSM_None_None_ - INFO - 
+Checking mapping: GNC Software -> payload
+2025-02-25 01:04:02,808 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 01:04:02,810 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 01:04:04,056 - DSM_None_None_ - INFO - Saved plot to ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_gpt-4-turbo-preview_20250223-144833/llm_rag_refs_R2/plots/metrics_comparison.png
+2025-02-25 01:04:06,766 - DSM_None_None_ - INFO - Saved plot to ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_gpt-4-turbo-preview_20250223-144833/llm_rag_refs_R2/plots/matrices_comparison.png
+2025-02-25 01:04:07,243 - DSM_None_None_ - INFO - 
+Results for gpt-4-turbo-preview:
+2025-02-25 01:04:07,244 - DSM_None_None_ - INFO - 
+Raw Metrics:
+2025-02-25 01:04:07,245 - DSM_None_None_ - INFO - accuracy: 0.5278
+2025-02-25 01:04:07,246 - DSM_None_None_ - INFO - precision: 0.5714
+2025-02-25 01:04:07,247 - DSM_None_None_ - INFO - recall: 0.6000
+2025-02-25 01:04:07,248 - DSM_None_None_ - INFO - f1_score: 0.5854
+2025-02-25 01:04:07,248 - DSM_None_None_ - INFO - edit_distance: 17.0000
+2025-02-25 01:04:07,249 - DSM_None_None_ - INFO - spectral_distance: 2.1793
+2025-02-25 01:04:07,250 - DSM_None_None_ - INFO - 
+Aligned Metrics:
+2025-02-25 01:04:07,250 - DSM_None_None_ - INFO - accuracy: 0.6250
+2025-02-25 01:04:07,251 - DSM_None_None_ - INFO - precision: 0.7000
+2025-02-25 01:04:07,252 - DSM_None_None_ - INFO - recall: 0.7000
+2025-02-25 01:04:07,253 - DSM_None_None_ - INFO - f1_score: 0.7000
+2025-02-25 01:04:07,253 - DSM_None_None_ - INFO - edit_distance: 6.0000
+2025-02-25 01:04:07,254 - DSM_None_None_ - INFO - spectral_distance: 2.4495
+2025-02-25 01:04:07,255 - DSM_None_None_ - INFO - 
+Component Mapping:
+2025-02-25 01:04:07,256 - DSM_None_None_ - INFO -                               Ground Truth Component                       Matched Predicted Component
+0                                         Spacecraft                                         structure
+1  Guidance, Navigation, and Control (GNC) Subsystem  attitude determination and control system (ADCS)
+2                               Propulsion Subsystem                                      power system
+3                                    Power Subsystem                              communication system
+2025-02-25 03:42:52,531 - DSM_None_None_ - INFO - Resetting GPUs...
+2025-02-25 03:43:39,210 - DSM_None_None_ - INFO - Product: CubeSat
+2025-02-25 03:43:39,211 - DSM_None_None_ - INFO - Model: gpt-4-turbo-preview
+2025-02-25 03:43:39,212 - DSM_None_None_ - INFO - Type: LLM_RAG
+2025-02-25 03:43:39,213 - DSM_None_None_ - INFO - Reference: R2
+2025-02-25 03:43:40,275 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-02-25 03:43:40,276 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_gpt-4-turbo-preview_20250223-144833/llm_rag_refs_R2/average_matrix_20250223-144833.csv
+2025-02-25 03:43:40,276 - DSM_None_None_ - INFO - Extracted model: gpt-4-turbo-preview
+2025-02-25 03:43:40,277 - DSM_None_None_ - INFO - Creating similarity matrix text
+2025-02-25 03:43:40,288 - DSM_None_None_ - INFO - Creating prompt
+2025-02-25 03:43:40,290 - DSM_None_None_ - INFO - Prompt: 
+Given these components from a cubesat, determine the optimal one-to-one mapping between ground truth and predicted components:
+
+    Ground Truth Components: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software']
+    Predicted Components: ['structure', 'power system', 'command and data handling (CDH)', 'communication system', 'attitude determination and control system (ADCS)', 'payload']
+
+    Available matches (above 0.3 similarity threshold):
+    
+Spacecraft potential matches:
+- structure (similarity: 0.323)
+
+Guidance, Navigation, and Control (GNC) Subsystem potential matches:
+- command and data handling (CDH) (similarity: 0.363)
+- communication system (similarity: 0.337)
+- attitude determination and control system (ADCS) (similarity: 0.457)
+
+Propulsion Subsystem potential matches:
+- power system (similarity: 0.428)
+- attitude determination and control system (ADCS) (similarity: 0.365)
+
+Power Subsystem potential matches:
+- power system (similarity: 0.747)
+- communication system (similarity: 0.355)
+- attitude determination and control system (ADCS) (similarity: 0.308)
+
+Reaction Wheel potential matches:
+- structure (similarity: 0.317)
+- power system (similarity: 0.317)
+- communication system (similarity: 0.301)
+- attitude determination and control system (ADCS) (similarity: 0.302)
+
+GNC Software potential matches:
+- command and data handling (CDH) (similarity: 0.303)
+
+
+    Task:
+    1. Consider ALL components simultaneously to find the optimal global matching
+    2. Each predicted component can only be matched ONCE
+    3. Each ground truth component should get at most one match
+    4. Consider:
+    - Similarity scores
+    - Functional equivalence
+    - System-level relationships
+    - Overall system coherence
+
+    Return in this format:
+    MAPPINGS:
+    [ground truth 1] -> [predicted 1]
+    [ground truth 2] -> [predicted 2]
+    ...
+    REASON: [brief explanation of the overall matching strategy]
+2025-02-25 03:43:40,290 - DSM_None_None_ - INFO - Attempting to use model: gpt-4-turbo-preview
+2025-02-25 03:43:59,180 - DSM_None_None_ - INFO - 
+Initial LLM Suggested Mappings:
+2025-02-25 03:43:59,182 - DSM_None_None_ - INFO - Ground Truth Components: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software']
+2025-02-25 03:43:59,182 - DSM_None_None_ - INFO - Predicted Components: ['structure', 'power system', 'command and data handling (CDH)', 'communication system', 'attitude determination and control system (ADCS)', 'payload']
+2025-02-25 03:43:59,183 - DSM_None_None_ - INFO - 
+Checking mapping: Spacecraft -> structure
+2025-02-25 03:43:59,184 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 03:43:59,184 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 03:43:59,185 - DSM_None_None_ - INFO - 
+Checking mapping: Guidance, Navigation, and Control (GNC) Subsystem -> attitude determination and control system (ADCS)
+2025-02-25 03:43:59,185 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 03:43:59,186 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 03:43:59,187 - DSM_None_None_ - INFO - 
+Checking mapping: Propulsion Subsystem -> power system
+2025-02-25 03:43:59,187 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 03:43:59,188 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 03:43:59,188 - DSM_None_None_ - INFO - 
+Checking mapping: Power Subsystem -> communication system
+2025-02-25 03:43:59,189 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 03:43:59,189 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 03:43:59,190 - DSM_None_None_ - INFO - 
+Checking mapping: Reaction Wheel -> command and data handling (CDH)
+2025-02-25 03:43:59,190 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 03:43:59,191 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 03:43:59,191 - DSM_None_None_ - INFO - 
+Checking mapping: GNC Software -> payload
+2025-02-25 03:43:59,192 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 03:43:59,192 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 03:44:00,570 - DSM_None_None_ - INFO - Saved plot to ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_gpt-4-turbo-preview_20250223-144833/llm_rag_refs_R2/plots/metrics_comparison.png
+2025-02-25 03:44:03,278 - DSM_None_None_ - INFO - Saved plot to ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_gpt-4-turbo-preview_20250223-144833/llm_rag_refs_R2/plots/matrices_comparison.png
+2025-02-25 03:44:03,753 - DSM_None_None_ - INFO - 
+Results for gpt-4-turbo-preview:
+2025-02-25 03:44:03,754 - DSM_None_None_ - INFO - 
+Raw Metrics:
+2025-02-25 03:44:03,755 - DSM_None_None_ - INFO - accuracy: 0.5278
+2025-02-25 03:44:03,756 - DSM_None_None_ - INFO - precision: 0.5714
+2025-02-25 03:44:03,756 - DSM_None_None_ - INFO - recall: 0.6000
+2025-02-25 03:44:03,757 - DSM_None_None_ - INFO - f1_score: 0.5854
+2025-02-25 03:44:03,758 - DSM_None_None_ - INFO - edit_distance: 17.0000
+2025-02-25 03:44:03,759 - DSM_None_None_ - INFO - spectral_distance: 2.1793
+2025-02-25 03:44:03,759 - DSM_None_None_ - INFO - 
+Aligned Metrics:
+2025-02-25 03:44:03,760 - DSM_None_None_ - INFO - accuracy: 0.6250
+2025-02-25 03:44:03,760 - DSM_None_None_ - INFO - precision: 0.7000
+2025-02-25 03:44:03,761 - DSM_None_None_ - INFO - recall: 0.7000
+2025-02-25 03:44:03,762 - DSM_None_None_ - INFO - f1_score: 0.7000
+2025-02-25 03:44:03,763 - DSM_None_None_ - INFO - edit_distance: 6.0000
+2025-02-25 03:44:03,764 - DSM_None_None_ - INFO - spectral_distance: 2.4495
+2025-02-25 03:44:03,765 - DSM_None_None_ - INFO - 
+Component Mapping:
+2025-02-25 03:44:03,766 - DSM_None_None_ - INFO -                               Ground Truth Component                       Matched Predicted Component
+0                                         Spacecraft                                         structure
+1  Guidance, Navigation, and Control (GNC) Subsystem  attitude determination and control system (ADCS)
+2                               Propulsion Subsystem                                      power system
+3                                    Power Subsystem                              communication system
+2025-02-25 04:20:04,359 - DSM_None_None_ - INFO - Resetting GPUs...
+2025-02-25 04:20:51,123 - DSM_None_None_ - INFO - Product: CubeSat
+2025-02-25 04:20:51,125 - DSM_None_None_ - INFO - Model: gpt-4-turbo-preview
+2025-02-25 04:20:51,125 - DSM_None_None_ - INFO - Type: LLM_RAG
+2025-02-25 04:20:51,126 - DSM_None_None_ - INFO - Reference: R2
+2025-02-25 04:20:52,207 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-02-25 04:20:52,208 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_gpt-4-turbo-preview_20250223-144833/llm_rag_refs_R2/average_matrix_20250223-144833.csv
+2025-02-25 04:20:52,209 - DSM_None_None_ - INFO - Extracted model: gpt-4-turbo-preview
+2025-02-25 04:20:52,209 - DSM_None_None_ - INFO - Creating similarity matrix text
+2025-02-25 04:20:52,220 - DSM_None_None_ - INFO - Creating prompt
+2025-02-25 04:20:52,222 - DSM_None_None_ - INFO - Prompt: 
+Given these components from a cubesat, determine the optimal one-to-one mapping between ground truth and predicted major components:
+
+    Ground Truth Components: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software']
+    Predicted Major Components: ['structure', 'power system', 'command and data handling (CDH)', 'communication system', 'attitude determination and control system (ADCS)', 'payload']
+
+    Available matches (above 0.3 similarity threshold):
+    
+Spacecraft potential matches:
+- structure (similarity: 0.323)
+
+Guidance, Navigation, and Control (GNC) Subsystem potential matches:
+- command and data handling (CDH) (similarity: 0.363)
+- communication system (similarity: 0.337)
+- attitude determination and control system (ADCS) (similarity: 0.455)
+
+Propulsion Subsystem potential matches:
+- power system (similarity: 0.429)
+- attitude determination and control system (ADCS) (similarity: 0.363)
+
+Power Subsystem potential matches:
+- power system (similarity: 0.747)
+- communication system (similarity: 0.355)
+- attitude determination and control system (ADCS) (similarity: 0.307)
+
+Reaction Wheel potential matches:
+- structure (similarity: 0.317)
+- power system (similarity: 0.317)
+- communication system (similarity: 0.301)
+- attitude determination and control system (ADCS) (similarity: 0.302)
+
+GNC Software potential matches:
+- command and data handling (CDH) (similarity: 0.303)
+
+
+    Task:
+    1. Consider ALL major components simultaneously to find the optimal global matching
+    2. Each predicted component can only be matched ONCE
+    3. Each ground truth component should get at most one match
+    4. Consider:
+    - Similarity scores
+    - Functional equivalence at the core architecture level
+    - System-level relationships (not subsystem relationships)
+    - Overall coherence of the cubesat
+
+    Return in this format:
+    MAPPINGS:
+    [ground truth 1] -> [predicted 1]
+    [ground truth 2] -> [predicted 2]
+    ...
+    REASON: [brief explanation of the overall matching strategy focused on major component identification]
+2025-02-25 04:20:52,223 - DSM_None_None_ - INFO - Attempting to use model: gpt-4-turbo-preview
+2025-02-25 04:21:11,143 - DSM_None_None_ - INFO - 
+Initial LLM Suggested Mappings:
+2025-02-25 04:21:11,145 - DSM_None_None_ - INFO - Ground Truth Components: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software']
+2025-02-25 04:21:11,146 - DSM_None_None_ - INFO - Predicted Components: ['structure', 'power system', 'command and data handling (CDH)', 'communication system', 'attitude determination and control system (ADCS)', 'payload']
+2025-02-25 04:21:11,147 - DSM_None_None_ - INFO - 
+Checking mapping: Spacecraft -> structure
+2025-02-25 04:21:11,148 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 04:21:11,148 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 04:21:11,149 - DSM_None_None_ - INFO - 
+Checking mapping: Guidance, Navigation, and Control (GNC) Subsystem -> attitude determination and control system (ADCS)
+2025-02-25 04:21:11,151 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 04:21:11,152 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 04:21:11,153 - DSM_None_None_ - INFO - 
+Checking mapping: Propulsion Subsystem -> power system
+2025-02-25 04:21:11,153 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 04:21:11,154 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 04:21:11,155 - DSM_None_None_ - INFO - 
+Checking mapping: Power Subsystem -> communication system
+2025-02-25 04:21:11,156 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 04:21:11,157 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 04:21:11,158 - DSM_None_None_ - INFO - 
+Checking mapping: Reaction Wheel -> command and data handling (CDH)
+2025-02-25 04:21:11,159 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 04:21:11,160 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 04:21:11,161 - DSM_None_None_ - INFO - 
+Checking mapping: GNC Software -> payload
+2025-02-25 04:21:11,161 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 04:21:11,162 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 04:21:12,407 - DSM_None_None_ - INFO - Saved plot to ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_gpt-4-turbo-preview_20250223-144833/llm_rag_refs_R2/plots/metrics_comparison.png
+2025-02-25 04:21:15,241 - DSM_None_None_ - INFO - Saved plot to ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_gpt-4-turbo-preview_20250223-144833/llm_rag_refs_R2/plots/matrices_comparison.png
+2025-02-25 04:21:15,702 - DSM_None_None_ - INFO - 
+Results for gpt-4-turbo-preview:
+2025-02-25 04:21:15,703 - DSM_None_None_ - INFO - 
+Raw Metrics:
+2025-02-25 04:21:15,704 - DSM_None_None_ - INFO - accuracy: 0.5278
+2025-02-25 04:21:15,705 - DSM_None_None_ - INFO - precision: 0.5714
+2025-02-25 04:21:15,706 - DSM_None_None_ - INFO - recall: 0.6000
+2025-02-25 04:21:15,706 - DSM_None_None_ - INFO - f1_score: 0.5854
+2025-02-25 04:21:15,707 - DSM_None_None_ - INFO - edit_distance: 17.0000
+2025-02-25 04:21:15,708 - DSM_None_None_ - INFO - spectral_distance: 2.1793
+2025-02-25 04:21:15,709 - DSM_None_None_ - INFO - 
+Aligned Metrics:
+2025-02-25 04:21:15,709 - DSM_None_None_ - INFO - accuracy: 0.6250
+2025-02-25 04:21:15,710 - DSM_None_None_ - INFO - precision: 0.7000
+2025-02-25 04:21:15,711 - DSM_None_None_ - INFO - recall: 0.7000
+2025-02-25 04:21:15,711 - DSM_None_None_ - INFO - f1_score: 0.7000
+2025-02-25 04:21:15,712 - DSM_None_None_ - INFO - edit_distance: 6.0000
+2025-02-25 04:21:15,713 - DSM_None_None_ - INFO - spectral_distance: 2.4495
+2025-02-25 04:21:15,714 - DSM_None_None_ - INFO - 
+Component Mapping:
+2025-02-25 04:21:15,715 - DSM_None_None_ - INFO -                               Ground Truth Component                       Matched Predicted Component
+0                                         Spacecraft                                         structure
+1  Guidance, Navigation, and Control (GNC) Subsystem  attitude determination and control system (ADCS)
+2                               Propulsion Subsystem                                      power system
+3                                    Power Subsystem                              communication system
+2025-02-25 05:06:28,938 - DSM_None_None_ - INFO - Resetting GPUs...
+2025-02-25 05:07:15,535 - DSM_None_None_ - INFO - Product: CubeSat
+2025-02-25 05:07:15,537 - DSM_None_None_ - INFO - Model: gpt-4-turbo-preview
+2025-02-25 05:07:15,537 - DSM_None_None_ - INFO - Type: LLM_RAG
+2025-02-25 05:07:15,538 - DSM_None_None_ - INFO - Reference: R2
+2025-02-25 05:07:16,558 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-02-25 05:07:16,559 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_gpt-4-turbo-preview_20250223-144833/llm_rag_refs_R2/average_matrix_20250223-144833.csv
+2025-02-25 05:07:16,559 - DSM_None_None_ - INFO - Extracted model: gpt-4-turbo-preview
+2025-02-25 05:07:16,560 - DSM_None_None_ - INFO - Creating similarity matrix text
+2025-02-25 05:07:16,572 - DSM_None_None_ - INFO - Creating prompt
+2025-02-25 05:07:16,573 - DSM_None_None_ - INFO - Attempting to use model: gpt-4-turbo-preview
+2025-02-25 05:07:30,911 - DSM_None_None_ - WARNING - LLM matching incomplete or failed. Falling back to ensemble similarity matching.
+2025-02-25 05:07:30,935 - DSM_None_None_ - INFO - Final mappings: {'Spacecraft': 'structure', 'Guidance, Navigation, and Control (GNC) Subsystem': 'command and data handling (CDH)', 'Power Subsystem': 'power system', 'Reaction Wheel': 'communication system'}
+2025-02-25 05:07:32,297 - DSM_None_None_ - INFO - Saved plot to ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_gpt-4-turbo-preview_20250223-144833/llm_rag_refs_R2/plots/metrics_comparison.png
+2025-02-25 05:07:34,990 - DSM_None_None_ - INFO - Saved plot to ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_gpt-4-turbo-preview_20250223-144833/llm_rag_refs_R2/plots/matrices_comparison.png
+2025-02-25 05:07:35,461 - DSM_None_None_ - INFO - 
+Results for gpt-4-turbo-preview:
+2025-02-25 05:07:35,463 - DSM_None_None_ - INFO - 
+Raw Metrics:
+2025-02-25 05:07:35,463 - DSM_None_None_ - INFO - accuracy: 0.5278
+2025-02-25 05:07:35,464 - DSM_None_None_ - INFO - precision: 0.5714
+2025-02-25 05:07:35,465 - DSM_None_None_ - INFO - recall: 0.6000
+2025-02-25 05:07:35,465 - DSM_None_None_ - INFO - f1_score: 0.5854
+2025-02-25 05:07:35,466 - DSM_None_None_ - INFO - edit_distance: 17.0000
+2025-02-25 05:07:35,466 - DSM_None_None_ - INFO - spectral_distance: 2.1793
+2025-02-25 05:07:35,467 - DSM_None_None_ - INFO - 
+Aligned Metrics:
+2025-02-25 05:07:35,468 - DSM_None_None_ - INFO - accuracy: 0.6250
+2025-02-25 05:07:35,468 - DSM_None_None_ - INFO - precision: 0.8000
+2025-02-25 05:07:35,469 - DSM_None_None_ - INFO - recall: 0.6667
+2025-02-25 05:07:35,469 - DSM_None_None_ - INFO - f1_score: 0.7273
+2025-02-25 05:07:35,470 - DSM_None_None_ - INFO - edit_distance: 6.0000
+2025-02-25 05:07:35,471 - DSM_None_None_ - INFO - spectral_distance: 2.8284
+2025-02-25 05:07:35,473 - DSM_None_None_ - INFO - 
+Component Mapping:
+2025-02-25 05:07:35,475 - DSM_None_None_ - INFO -                               Ground Truth Component      Matched Predicted Component
+0                                         Spacecraft                        structure
+1  Guidance, Navigation, and Control (GNC) Subsystem  command and data handling (CDH)
+2                                    Power Subsystem                     power system
+3                                     Reaction Wheel             communication system
+2025-02-25 05:42:37,606 - DSM_None_None_ - INFO - Resetting GPUs...
+2025-02-25 05:43:24,314 - DSM_None_None_ - INFO - Product: CubeSat
+2025-02-25 05:43:24,316 - DSM_None_None_ - INFO - Model: gpt-4-turbo-preview
+2025-02-25 05:43:24,317 - DSM_None_None_ - INFO - Type: LLM_RAG
+2025-02-25 05:43:24,318 - DSM_None_None_ - INFO - Reference: R2
+2025-02-25 05:43:25,373 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-02-25 05:43:25,374 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_gpt-4-turbo-preview_20250223-144833/llm_rag_refs_R2/average_matrix_20250223-144833.csv
+2025-02-25 05:43:25,375 - DSM_None_None_ - INFO - Extracted model: gpt-4-turbo-preview
+2025-02-25 05:43:25,375 - DSM_None_None_ - INFO - Creating similarity matrix text
+2025-02-25 05:43:25,387 - DSM_None_None_ - INFO - Creating prompt
+2025-02-25 05:43:25,388 - DSM_None_None_ - INFO - Prompt: 
+You are an expert matching engine for cubesat systems. Your task is to determine the optimal one-to-one mapping between ground truth major components and predicted major components. Use the provided similarity scores and domain-specific rules to guide your decision.
+
+Ground Truth Components:
+['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software']
+
+Predicted Major Components:
+['structure', 'power system', 'command and data handling (CDH)', 'communication system', 'attitude determination and control system (ADCS)', 'payload']
+
+Available Matches (only list those with similarity scores above 0.3):
+
+Spacecraft potential matches:
+- structure (similarity: 0.323)
+
+Guidance, Navigation, and Control (GNC) Subsystem potential matches:
+- command and data handling (CDH) (similarity: 0.363)
+- communication system (similarity: 0.337)
+- attitude determination and control system (ADCS) (similarity: 0.455)
+
+Propulsion Subsystem potential matches:
+- power system (similarity: 0.428)
+- attitude determination and control system (ADCS) (similarity: 0.362)
+
+Power Subsystem potential matches:
+- power system (similarity: 0.747)
+- communication system (similarity: 0.355)
+- attitude determination and control system (ADCS) (similarity: 0.307)
+
+Reaction Wheel potential matches:
+- structure (similarity: 0.317)
+- power system (similarity: 0.317)
+- communication system (similarity: 0.301)
+- attitude determination and control system (ADCS) (similarity: 0.302)
+
+GNC Software potential matches:
+- command and data handling (CDH) (similarity: 0.303)
+
+
+Instructions:
+1. Evaluate each pairing based on:
+   - Embedding similarity scores.
+   - Functional equivalence at the core architecture level.
+   - System-level whole-part relationships.
+   - Overall coherence within the cubesat.
+2. Each predicted component may only be matched once.
+3. Each ground truth component may receive at most one match.
+4. Do not include any text other than what is specified below.
+
+Output Format (exactly as shown):
+--------------------------------------------------
+MAPPINGS:
+[ground truth 1] -> [predicted 1]
+[ground truth 2] -> [predicted 2]
+...
+REASON: [a brief explanation (one or two sentences) summarizing your mapping strategy]
+--------------------------------------------------
+
+Ensure that your output does not include additional headers, footers, or commentary. Your answer must strictly conform to this format.
+
+2025-02-25 05:43:25,389 - DSM_None_None_ - INFO - Attempting to use model: gpt-4-turbo-preview
+2025-02-25 05:43:29,828 - DSM_None_None_ - INFO - 
+Initial LLM Suggested Mappings:
+2025-02-25 05:43:29,829 - DSM_None_None_ - INFO - Ground Truth Components: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software']
+2025-02-25 05:43:29,830 - DSM_None_None_ - INFO - Predicted Components: ['structure', 'power system', 'command and data handling (CDH)', 'communication system', 'attitude determination and control system (ADCS)', 'payload']
+2025-02-25 05:43:29,831 - DSM_None_None_ - INFO - 
+Checking mapping: Spacecraft -> structure
+2025-02-25 05:43:29,832 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 05:43:29,833 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 05:43:29,834 - DSM_None_None_ - INFO - 
+Checking mapping: Guidance, Navigation, and Control (GNC) Subsystem -> attitude determination and control system (ADCS)
+2025-02-25 05:43:29,835 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 05:43:29,836 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 05:43:29,837 - DSM_None_None_ - INFO - 
+Checking mapping: Propulsion Subsystem -> power system
+2025-02-25 05:43:29,838 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 05:43:29,839 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 05:43:29,839 - DSM_None_None_ - INFO - 
+Checking mapping: Power Subsystem -> communication system
+2025-02-25 05:43:29,841 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 05:43:29,842 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 05:43:29,842 - DSM_None_None_ - INFO - 
+Checking mapping: Reaction Wheel -> command and data handling (CDH)
+2025-02-25 05:43:29,843 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 05:43:29,844 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 05:43:29,845 - DSM_None_None_ - INFO - 
+Checking mapping: GNC Software -> payload
+2025-02-25 05:43:29,846 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 05:43:29,847 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 05:43:31,099 - DSM_None_None_ - INFO - Saved plot to ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_gpt-4-turbo-preview_20250223-144833/llm_rag_refs_R2/plots/metrics_comparison.png
+2025-02-25 05:43:33,814 - DSM_None_None_ - INFO - Saved plot to ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_gpt-4-turbo-preview_20250223-144833/llm_rag_refs_R2/plots/matrices_comparison.png
+2025-02-25 05:43:34,290 - DSM_None_None_ - INFO - 
+Results for gpt-4-turbo-preview:
+2025-02-25 05:43:34,291 - DSM_None_None_ - INFO - 
+Raw Metrics:
+2025-02-25 05:43:34,292 - DSM_None_None_ - INFO - accuracy: 0.5278
+2025-02-25 05:43:34,292 - DSM_None_None_ - INFO - precision: 0.5714
+2025-02-25 05:43:34,293 - DSM_None_None_ - INFO - recall: 0.6000
+2025-02-25 05:43:34,294 - DSM_None_None_ - INFO - f1_score: 0.5854
+2025-02-25 05:43:34,294 - DSM_None_None_ - INFO - edit_distance: 17.0000
+2025-02-25 05:43:34,295 - DSM_None_None_ - INFO - spectral_distance: 2.1793
+2025-02-25 05:43:34,296 - DSM_None_None_ - INFO - 
+Aligned Metrics:
+2025-02-25 05:43:34,297 - DSM_None_None_ - INFO - accuracy: 0.6250
+2025-02-25 05:43:34,297 - DSM_None_None_ - INFO - precision: 0.7000
+2025-02-25 05:43:34,298 - DSM_None_None_ - INFO - recall: 0.7000
+2025-02-25 05:43:34,300 - DSM_None_None_ - INFO - f1_score: 0.7000
+2025-02-25 05:43:34,301 - DSM_None_None_ - INFO - edit_distance: 6.0000
+2025-02-25 05:43:34,302 - DSM_None_None_ - INFO - spectral_distance: 2.4495
+2025-02-25 05:43:34,303 - DSM_None_None_ - INFO - 
+Component Mapping:
+2025-02-25 05:43:34,304 - DSM_None_None_ - INFO -                               Ground Truth Component                       Matched Predicted Component
+0                                         Spacecraft                                         structure
+1  Guidance, Navigation, and Control (GNC) Subsystem  attitude determination and control system (ADCS)
+2                               Propulsion Subsystem                                      power system
+3                                    Power Subsystem                              communication system
+2025-02-25 06:11:12,429 - DSM_None_None_ - INFO - Resetting GPUs...
+2025-02-25 06:11:59,140 - DSM_None_None_ - INFO - Product: CubeSat
+2025-02-25 06:11:59,141 - DSM_None_None_ - INFO - Model: gpt-4-turbo-preview
+2025-02-25 06:11:59,142 - DSM_None_None_ - INFO - Type: LLM_RAG
+2025-02-25 06:11:59,144 - DSM_None_None_ - INFO - Reference: R2
+2025-02-25 06:12:00,154 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-02-25 06:12:00,155 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_gpt-4-turbo-preview_20250223-144833/llm_rag_refs_R2/average_matrix_20250223-144833.csv
+2025-02-25 06:12:00,156 - DSM_None_None_ - INFO - Extracted model: gpt-4-turbo-preview
+2025-02-25 06:12:00,157 - DSM_None_None_ - INFO - Creating similarity matrix text
+2025-02-25 06:12:00,169 - DSM_None_None_ - INFO - Creating prompt
+2025-02-25 06:12:00,170 - DSM_None_None_ - INFO - Prompt: 
+You are an expert matching engine for cubesat systems. Your task is to determine the optimal one-to-one mapping between ground truth major components and predicted major components. Use the provided similarity scores and domain-specific rules to guide your decision.
+
+Ground Truth Components: (Listed sub parts are part of cubesat)
+['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software']
+
+Predicted Major Components:
+['structure', 'power system', 'command and data handling (CDH)', 'communication system', 'attitude determination and control system (ADCS)', 'payload']
+
+Available Matches (only list those with similarity scores above 0.3):
+
+Spacecraft potential matches:
+- structure (similarity: 0.323)
+
+Guidance, Navigation, and Control (GNC) Subsystem potential matches:
+- command and data handling (CDH) (similarity: 0.363)
+- communication system (similarity: 0.337)
+- attitude determination and control system (ADCS) (similarity: 0.455)
+
+Propulsion Subsystem potential matches:
+- power system (similarity: 0.428)
+- attitude determination and control system (ADCS) (similarity: 0.362)
+
+Power Subsystem potential matches:
+- power system (similarity: 0.747)
+- communication system (similarity: 0.355)
+- attitude determination and control system (ADCS) (similarity: 0.307)
+
+Reaction Wheel potential matches:
+- structure (similarity: 0.317)
+- power system (similarity: 0.317)
+- communication system (similarity: 0.301)
+- attitude determination and control system (ADCS) (similarity: 0.302)
+
+GNC Software potential matches:
+- command and data handling (CDH) (similarity: 0.303)
+
+
+Instructions:
+1. Evaluate each pairing based on:
+   - Embedding similarity scores.
+   - Functional equivalence at the core architecture level.
+   - System-level whole-part relationships.
+   - Overall coherence within the cubesat.
+2. Each predicted component may only be matched once.
+3. Each ground truth component may receive at most one match.
+4. Do not include any text other than what is specified below.
+
+Output Format (exactly as shown):
+--------------------------------------------------
+MAPPINGS Examples (not real ones, just examples for giving you an idea):
+[X subsystem] -> [x system]
+[Y subsystem] -> [y system]
+...
+REASON: [a brief explanation (one or two sentences) summarizing your mapping strategy]
+--------------------------------------------------
+
+Ensure that your output does not include additional headers, footers, or commentary. Your answer must strictly conform to this format.
+
+2025-02-25 06:12:00,171 - DSM_None_None_ - INFO - Attempting to use model: gpt-4-turbo-preview
+2025-02-25 06:12:07,414 - DSM_None_None_ - INFO - 
+Initial LLM Suggested Mappings:
+2025-02-25 06:12:07,416 - DSM_None_None_ - INFO - Ground Truth Components: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software']
+2025-02-25 06:12:07,417 - DSM_None_None_ - INFO - Predicted Components: ['structure', 'power system', 'command and data handling (CDH)', 'communication system', 'attitude determination and control system (ADCS)', 'payload']
+2025-02-25 06:12:07,418 - DSM_None_None_ - INFO - 
+Checking mapping: Spacecraft -> structure
+2025-02-25 06:12:07,418 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 06:12:07,420 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 06:12:07,420 - DSM_None_None_ - INFO - 
+Checking mapping: Guidance, Navigation, and Control (GNC) Subsystem -> attitude determination and control system (ADCS)
+2025-02-25 06:12:07,421 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 06:12:07,422 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 06:12:07,423 - DSM_None_None_ - INFO - 
+Checking mapping: Propulsion Subsystem -> power system
+2025-02-25 06:12:07,424 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 06:12:07,425 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 06:12:07,426 - DSM_None_None_ - INFO - 
+Checking mapping: Power Subsystem -> communication system
+2025-02-25 06:12:07,427 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 06:12:07,428 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 06:12:07,429 - DSM_None_None_ - INFO - 
+Checking mapping: Reaction Wheel -> command and data handling (CDH)
+2025-02-25 06:12:07,429 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 06:12:07,430 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 06:12:07,431 - DSM_None_None_ - INFO - 
+Checking mapping: GNC Software -> payload
+2025-02-25 06:12:07,432 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 06:12:07,433 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 06:12:07,434 - DSM_None_None_ - INFO - Initial mapping: {'Spacecraft': 'structure', 'Guidance, Navigation, and Control (GNC) Subsystem': 'attitude determination and control system (ADCS)', 'Propulsion Subsystem': 'power system', 'Power Subsystem': 'communication system', 'Reaction Wheel': 'command and data handling (CDH)', 'GNC Software': 'payload'}
+2025-02-25 06:12:08,913 - DSM_None_None_ - INFO - Saved plot to ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_gpt-4-turbo-preview_20250223-144833/llm_rag_refs_R2/plots/metrics_comparison.png
+2025-02-25 06:12:11,657 - DSM_None_None_ - INFO - Saved plot to ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_gpt-4-turbo-preview_20250223-144833/llm_rag_refs_R2/plots/matrices_comparison.png
+2025-02-25 06:12:12,140 - DSM_None_None_ - INFO - 
+Results for gpt-4-turbo-preview:
+2025-02-25 06:12:12,141 - DSM_None_None_ - INFO - 
+Raw Metrics:
+2025-02-25 06:12:12,142 - DSM_None_None_ - INFO - accuracy: 0.5278
+2025-02-25 06:12:12,142 - DSM_None_None_ - INFO - precision: 0.5714
+2025-02-25 06:12:12,143 - DSM_None_None_ - INFO - recall: 0.6000
+2025-02-25 06:12:12,144 - DSM_None_None_ - INFO - f1_score: 0.5854
+2025-02-25 06:12:12,145 - DSM_None_None_ - INFO - edit_distance: 17.0000
+2025-02-25 06:12:12,145 - DSM_None_None_ - INFO - spectral_distance: 2.1793
+2025-02-25 06:12:12,146 - DSM_None_None_ - INFO - 
+Aligned Metrics:
+2025-02-25 06:12:12,147 - DSM_None_None_ - INFO - accuracy: 0.6250
+2025-02-25 06:12:12,148 - DSM_None_None_ - INFO - precision: 0.7000
+2025-02-25 06:12:12,148 - DSM_None_None_ - INFO - recall: 0.7000
+2025-02-25 06:12:12,149 - DSM_None_None_ - INFO - f1_score: 0.7000
+2025-02-25 06:12:12,150 - DSM_None_None_ - INFO - edit_distance: 6.0000
+2025-02-25 06:12:12,151 - DSM_None_None_ - INFO - spectral_distance: 2.4495
+2025-02-25 06:12:12,151 - DSM_None_None_ - INFO - 
+Component Mapping:
+2025-02-25 06:12:12,153 - DSM_None_None_ - INFO -                               Ground Truth Component                       Matched Predicted Component
+0                                         Spacecraft                                         structure
+1  Guidance, Navigation, and Control (GNC) Subsystem  attitude determination and control system (ADCS)
+2                               Propulsion Subsystem                                      power system
+3                                    Power Subsystem                              communication system
+2025-02-25 06:40:35,795 - DSM_None_None_ - INFO - Resetting GPUs...
+2025-02-25 07:05:52,471 - DSM_None_None_ - INFO - Resetting GPUs...
+2025-02-25 07:06:39,164 - DSM_None_None_ - INFO - Product: CubeSat
+2025-02-25 07:06:39,165 - DSM_None_None_ - INFO - Model: gpt-4-turbo-preview
+2025-02-25 07:06:39,165 - DSM_None_None_ - INFO - Type: LLM_RAG
+2025-02-25 07:06:39,166 - DSM_None_None_ - INFO - Reference: R2
+2025-02-25 07:06:40,056 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-02-25 07:06:40,057 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_gpt-4-turbo-preview_20250223-144833/llm_rag_refs_R2/average_matrix_20250223-144833.csv
+2025-02-25 07:06:40,058 - DSM_None_None_ - INFO - Extracted model: gpt-4-turbo-preview
+2025-02-25 07:06:40,065 - DSM_None_None_ - INFO - Automatic high-similarity match: Power Subsystem -> power system (similarity: 0.747)
+2025-02-25 07:06:40,078 - DSM_None_None_ - INFO - Prompt: 
+You are an expert matching engine for cubesat systems. Your task is to determine the optimal one-to-one mapping between remaining ground truth and predicted major components.
+
+Remaining Ground Truth Components:
+['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Reaction Wheel', 'GNC Software']
+
+Remaining Predicted Components:
+['structure', 'command and data handling (CDH)', 'communication system', 'attitude determination and control system (ADCS)', 'payload']
+
+Note: The following components have already been automatically matched due to high similarity (>0.8):
+['Power Subsystem -> power system']
+
+Available Matches for Remaining Components (above 0.3 similarity threshold):
+
+Spacecraft potential matches:
+- structure (similarity: 0.323)
+
+Guidance, Navigation, and Control (GNC) Subsystem potential matches:
+- command and data handling (CDH) (similarity: 0.363)
+- communication system (similarity: 0.337)
+- attitude determination and control system (ADCS) (similarity: 0.455)
+
+Propulsion Subsystem potential matches:
+- attitude determination and control system (ADCS) (similarity: 0.362)
+
+Reaction Wheel potential matches:
+- structure (similarity: 0.317)
+- communication system (similarity: 0.301)
+- attitude determination and control system (ADCS) (similarity: 0.302)
+
+GNC Software potential matches:
+- command and data handling (CDH) (similarity: 0.303)
+
+
+Instructions:
+1. Evaluate each pairing based on:
+   - Embedding similarity scores
+   - Functional equivalence at the core architecture level
+   - System-level whole-part relationships
+   - Overall coherence within the cubesat
+2. Each predicted component may only be matched once
+3. Each ground truth component may receive at most one match
+4. Do not include any text other than what is specified below
+5. Only match the remaining components - do not rematch already matched components
+
+Output Format (exactly as shown):
+--------------------------------------------------
+MAPPINGS:
+[ground truth 1] -> [predicted 1]
+[ground truth 2] -> [predicted 2]
+...
+REASON: [brief explanation focusing on functional equivalence]
+--------------------------------------------------
+2025-02-25 07:06:40,079 - DSM_None_None_ - INFO - Attempting to use model: gpt-4-turbo-preview
+2025-02-25 07:06:49,081 - DSM_None_None_ - INFO - 
+Final Mappings:
+2025-02-25 07:06:49,082 - DSM_None_None_ - INFO - Automatic high-similarity matches: {'Power Subsystem': 'power system'}
+2025-02-25 07:06:49,083 - DSM_None_None_ - INFO - LLM-suggested matches: {'Spacecraft': 'structure', 'Guidance, Navigation, and Control (GNC) Subsystem': 'attitude determination and control system (ADCS)', 'Propulsion Subsystem': 'payload', 'Reaction Wheel': 'command and data handling (CDH)', 'GNC Software': 'communication system'}
+2025-02-25 07:06:49,085 - DSM_None_None_ - INFO - Initial mapping: {'Power Subsystem': 'power system', 'Spacecraft': 'structure', 'Guidance, Navigation, and Control (GNC) Subsystem': 'attitude determination and control system (ADCS)', 'Propulsion Subsystem': 'payload', 'Reaction Wheel': 'command and data handling (CDH)', 'GNC Software': 'communication system'}
+2025-02-25 07:06:50,389 - DSM_None_None_ - INFO - Saved plot to ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_gpt-4-turbo-preview_20250223-144833/llm_rag_refs_R2/plots/metrics_comparison.png
+2025-02-25 07:06:53,050 - DSM_None_None_ - INFO - Saved plot to ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_gpt-4-turbo-preview_20250223-144833/llm_rag_refs_R2/plots/matrices_comparison.png
+2025-02-25 07:06:53,506 - DSM_None_None_ - INFO - 
+Results for gpt-4-turbo-preview:
+2025-02-25 07:06:53,507 - DSM_None_None_ - INFO - 
+Raw Metrics:
+2025-02-25 07:06:53,508 - DSM_None_None_ - INFO - accuracy: 0.5278
+2025-02-25 07:06:53,508 - DSM_None_None_ - INFO - precision: 0.5714
+2025-02-25 07:06:53,509 - DSM_None_None_ - INFO - recall: 0.6000
+2025-02-25 07:06:53,510 - DSM_None_None_ - INFO - f1_score: 0.5854
+2025-02-25 07:06:53,510 - DSM_None_None_ - INFO - edit_distance: 17.0000
+2025-02-25 07:06:53,511 - DSM_None_None_ - INFO - spectral_distance: 2.1793
+2025-02-25 07:06:53,512 - DSM_None_None_ - INFO - 
+Aligned Metrics:
+2025-02-25 07:06:53,512 - DSM_None_None_ - INFO - accuracy: 0.6667
+2025-02-25 07:06:53,513 - DSM_None_None_ - INFO - precision: 0.8333
+2025-02-25 07:06:53,513 - DSM_None_None_ - INFO - recall: 0.7143
+2025-02-25 07:06:53,514 - DSM_None_None_ - INFO - f1_score: 0.7692
+2025-02-25 07:06:53,515 - DSM_None_None_ - INFO - edit_distance: 3.0000
+2025-02-25 07:06:53,515 - DSM_None_None_ - INFO - spectral_distance: 2.0000
+2025-02-25 07:06:53,516 - DSM_None_None_ - INFO - 
+Component Mapping:
+2025-02-25 07:06:53,518 - DSM_None_None_ - INFO -                               Ground Truth Component                       Matched Predicted Component
+0                                    Power Subsystem                                      power system
+1                                         Spacecraft                                         structure
+2  Guidance, Navigation, and Control (GNC) Subsystem  attitude determination and control system (ADCS)

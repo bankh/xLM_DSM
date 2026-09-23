@@ -1,0 +1,104 @@
+2025-02-23 07:05:28,552 - DSM_None_None_ - INFO - Initial Data Shapes:
+2025-02-23 07:05:28,553 - DSM_None_None_ - INFO - Product data shape: (6, 6)
+2025-02-23 07:05:28,554 - DSM_None_None_ - INFO - Predicted data shape: (6, 6)
+2025-02-23 07:05:28,555 - DSM_None_None_ - INFO - Product Data Components:
+2025-02-23 07:05:28,556 - DSM_None_None_ - INFO - ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software']
+2025-02-23 07:05:28,557 - DSM_None_None_ - INFO - Predicted Data Components:
+2025-02-23 07:05:28,557 - DSM_None_None_ - INFO - ['Satellite housing', 'HyperDuino starter kit', 'Sensors for light and temperature', 'Power subsystem (battery cable and 9V battery)', 'Communication system', 'Base plates and mounting hardware']
+2025-02-23 07:05:28,558 - DSM_None_None_ - INFO - Component Counts:
+2025-02-23 07:05:28,559 - DSM_None_None_ - INFO - Ground Truth Components: 6
+2025-02-23 07:05:28,560 - DSM_None_None_ - INFO - Predicted Components: 6
+2025-02-23 07:05:28,561 - DSM_None_None_ - INFO - All Unique Components: 12
+2025-02-23 07:05:29,335 - DSM_None_None_ - INFO - 
+Embeddings Created:
+2025-02-23 07:05:29,336 - DSM_None_None_ - INFO - Number of embeddings: 12
+2025-02-23 07:05:30,237 - DSM_None_None_ - INFO - 
+Best matches for each ground truth component:
+2025-02-23 07:05:30,238 - DSM_None_None_ - INFO - 
+Spacecraft:
+2025-02-23 07:05:30,240 - DSM_None_None_ - INFO -                  predicted_component  embedding_similarity
+0                  Satellite housing              0.471371
+4               Communication system              0.238881
+5  Base plates and mounting hardware              0.219800
+2025-02-23 07:05:30,244 - DSM_None_None_ - INFO - 
+Guidance, Navigation, and Control (GNC) Subsystem:
+2025-02-23 07:05:30,245 - DSM_None_None_ - INFO -                                predicted_component  embedding_similarity
+10                            Communication system              0.348168
+6                                Satellite housing              0.251433
+9   Power subsystem (battery cable and 9V battery)              0.240975
+2025-02-23 07:05:30,248 - DSM_None_None_ - INFO - 
+Propulsion Subsystem:
+2025-02-23 07:05:30,249 - DSM_None_None_ - INFO -                                predicted_component  embedding_similarity
+15  Power subsystem (battery cable and 9V battery)              0.410078
+17               Base plates and mounting hardware              0.300432
+16                            Communication system              0.291182
+2025-02-23 07:05:30,252 - DSM_None_None_ - INFO - 
+Power Subsystem:
+2025-02-23 07:05:30,253 - DSM_None_None_ - INFO -                                predicted_component  embedding_similarity
+21  Power subsystem (battery cable and 9V battery)              0.547980
+22                            Communication system              0.373991
+23               Base plates and mounting hardware              0.276625
+2025-02-23 07:05:30,256 - DSM_None_None_ - INFO - 
+Reaction Wheel:
+2025-02-23 07:05:30,257 - DSM_None_None_ - INFO -                                predicted_component  embedding_similarity
+28                            Communication system              0.317612
+27  Power subsystem (battery cable and 9V battery)              0.205032
+25                          HyperDuino starter kit              0.195972
+2025-02-23 07:05:30,260 - DSM_None_None_ - INFO - 
+GNC Software:
+2025-02-23 07:05:30,261 - DSM_None_None_ - INFO -                   predicted_component  embedding_similarity
+34               Communication system              0.239964
+35  Base plates and mounting hardware              0.218059
+31             HyperDuino starter kit              0.201525
+2025-02-23 07:05:30,422 - DSM_None_None_ - INFO - System Context: cubesat
+2025-02-23 07:05:30,424 - DSM_None_None_ - INFO - Similarity Threshold: 0.3
+2025-02-23 07:05:30,425 - DSM_None_None_ - INFO - 
+Initial LLM Suggested Mappings:
+2025-02-23 07:05:30,426 - DSM_None_None_ - INFO - Ground Truth Components: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software']
+2025-02-23 07:05:30,426 - DSM_None_None_ - INFO - Predicted Components: ['Satellite housing', 'HyperDuino starter kit', 'Sensors for light and temperature', 'Power subsystem (battery cable and 9V battery)', 'Communication system', 'Base plates and mounting hardware']
+2025-02-23 07:05:30,427 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-02-23 07:05:30,428 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_ollama:deepseek-r1:14b-5k_20250223-050053/llm_rag_refs_R1_R2/average_matrix_20250223-050053.csv
+2025-02-23 07:05:30,429 - DSM_None_None_ - INFO - Extracted model: deepseek-r1:14b-5k
+2025-02-23 07:05:30,430 - DSM_None_None_ - INFO - Creating similarity matrix text
+2025-02-23 07:05:30,441 - DSM_None_None_ - INFO - Creating prompt
+2025-02-23 07:05:30,443 - DSM_None_None_ - INFO - Attempting to use model: deepseek-r1:14b-5k
+2025-02-23 07:05:30,443 - DSM_None_None_ - INFO - Using Ollama path
+2025-02-23 07:05:30,484 - DSM_None_None_ - INFO - Model name: deepseek-r1:14b-5k
+2025-02-23 07:05:30,484 - DSM_None_None_ - INFO - Prompt length: 1669
+2025-02-23 07:06:46,460 - DSM_None_None_ - INFO - Response status code: 200
+2025-02-23 07:06:46,462 - DSM_None_None_ - INFO - API call succeeded
+2025-02-23 07:06:46,463 - DSM_None_None_ - INFO - Got response: <think>
+Alright, I'm trying to figure out how to optimally map the ground truth components to the pr...
+2025-02-23 07:06:46,464 - DSM_None_None_ - INFO - 
+Initial LLM Suggested Mappings:
+2025-02-23 07:06:46,465 - DSM_None_None_ - INFO - Ground Truth Components: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software']
+2025-02-23 07:06:46,466 - DSM_None_None_ - INFO - Predicted Components: ['Satellite housing', 'HyperDuino starter kit', 'Sensors for light and temperature', 'Power subsystem (battery cable and 9V battery)', 'Communication system', 'Base plates and mounting hardware']
+2025-02-23 07:06:46,467 - DSM_None_None_ - INFO - 
+Checking mapping: Spacecraft -> Satellite housing
+2025-02-23 07:06:46,467 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-23 07:06:46,468 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-23 07:06:46,469 - DSM_None_None_ - INFO - 
+Checking mapping: GNC Subsystem -> Communication system
+2025-02-23 07:06:46,470 - DSM_None_None_ - INFO - Is GT in gt_components? False
+2025-02-23 07:06:46,471 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-23 07:06:46,472 - DSM_None_None_ - INFO - 
+Checking mapping: PowerSubsystem -> Power subsystem (battery cable and 9V battery)
+2025-02-23 07:06:46,473 - DSM_None_None_ - INFO - Is GT in gt_components? False
+2025-02-23 07:06:46,473 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-23 07:06:46,474 - DSM_None_None_ - INFO - 
+Checking mapping: PropulsionSubsystem -> Base plates and mounting hardware
+2025-02-23 07:06:46,474 - DSM_None_None_ - INFO - Is GT in gt_components? False
+2025-02-23 07:06:46,476 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-23 07:06:46,478 - DSM_None_None_ - INFO - 
+Removing invalid mapping:
+2025-02-23 07:06:46,479 - DSM_None_None_ - INFO - - GNC Subsystem -> Communication system
+2025-02-23 07:06:46,479 - DSM_None_None_ - INFO - 
+Removing invalid mapping:
+2025-02-23 07:06:46,480 - DSM_None_None_ - INFO - - PowerSubsystem -> Power subsystem (battery cable and 9V battery)
+2025-02-23 07:06:46,481 - DSM_None_None_ - INFO - 
+Removing invalid mapping:
+2025-02-23 07:06:46,481 - DSM_None_None_ - INFO - - PropulsionSubsystem -> Base plates and mounting hardware
+2025-02-23 07:06:46,484 - DSM_None_None_ - INFO - Final Component Mapping (only valid matches):
+2025-02-23 07:06:46,485 - DSM_None_None_ - INFO -   Ground Truth Component Matched Predicted Component
+0             Spacecraft           Satellite housing
+2025-02-23 07:06:46,488 - DSM_None_None_ - INFO - Evaluation complete. Visualizations generated.

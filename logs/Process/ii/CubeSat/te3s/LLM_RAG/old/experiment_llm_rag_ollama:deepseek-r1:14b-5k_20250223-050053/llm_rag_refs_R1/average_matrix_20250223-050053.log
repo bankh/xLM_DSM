@@ -1,0 +1,116 @@
+2025-02-23 06:59:31,885 - DSM_None_None_ - INFO - Initial Data Shapes:
+2025-02-23 06:59:31,886 - DSM_None_None_ - INFO - Product data shape: (6, 6)
+2025-02-23 06:59:31,887 - DSM_None_None_ - INFO - Predicted data shape: (6, 6)
+2025-02-23 06:59:31,888 - DSM_None_None_ - INFO - Product Data Components:
+2025-02-23 06:59:31,889 - DSM_None_None_ - INFO - ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software']
+2025-02-23 06:59:31,889 - DSM_None_None_ - INFO - Predicted Data Components:
+2025-02-23 06:59:31,890 - DSM_None_None_ - INFO - ['Structure/Chassis', 'Power System', 'Communication System', 'Onboard Computer', 'Attitude Control System', 'Payload']
+2025-02-23 06:59:31,891 - DSM_None_None_ - INFO - Component Counts:
+2025-02-23 06:59:31,891 - DSM_None_None_ - INFO - Ground Truth Components: 6
+2025-02-23 06:59:31,892 - DSM_None_None_ - INFO - Predicted Components: 6
+2025-02-23 06:59:31,893 - DSM_None_None_ - INFO - All Unique Components: 12
+2025-02-23 06:59:33,238 - DSM_None_None_ - INFO - 
+Embeddings Created:
+2025-02-23 06:59:33,239 - DSM_None_None_ - INFO - Number of embeddings: 12
+2025-02-23 06:59:34,104 - DSM_None_None_ - INFO - 
+Best matches for each ground truth component:
+2025-02-23 06:59:34,106 - DSM_None_None_ - INFO - 
+Spacecraft:
+2025-02-23 06:59:34,107 - DSM_None_None_ - INFO -   predicted_component  embedding_similarity
+5             Payload              0.339523
+3    Onboard Computer              0.332392
+0   Structure/Chassis              0.317030
+2025-02-23 06:59:34,111 - DSM_None_None_ - INFO - 
+Guidance, Navigation, and Control (GNC) Subsystem:
+2025-02-23 06:59:34,112 - DSM_None_None_ - INFO -         predicted_component  embedding_similarity
+10  Attitude Control System              0.448703
+9          Onboard Computer              0.394357
+8      Communication System              0.391103
+2025-02-23 06:59:34,114 - DSM_None_None_ - INFO - 
+Propulsion Subsystem:
+2025-02-23 06:59:34,115 - DSM_None_None_ - INFO -         predicted_component  embedding_similarity
+13             Power System              0.460317
+16  Attitude Control System              0.402950
+12        Structure/Chassis              0.358539
+2025-02-23 06:59:34,118 - DSM_None_None_ - INFO - 
+Power Subsystem:
+2025-02-23 06:59:34,119 - DSM_None_None_ - INFO -      predicted_component  embedding_similarity
+19          Power System              0.786208
+20  Communication System              0.414140
+23               Payload              0.321044
+2025-02-23 06:59:34,121 - DSM_None_None_ - INFO - 
+Reaction Wheel:
+2025-02-23 06:59:34,124 - DSM_None_None_ - INFO -      predicted_component  embedding_similarity
+26  Communication System              0.338200
+24     Structure/Chassis              0.326372
+25          Power System              0.304876
+2025-02-23 06:59:34,126 - DSM_None_None_ - INFO - 
+GNC Software:
+2025-02-23 06:59:34,128 - DSM_None_None_ - INFO -      predicted_component  embedding_similarity
+33      Onboard Computer              0.354996
+32  Communication System              0.270984
+35               Payload              0.216538
+2025-02-23 06:59:34,279 - DSM_None_None_ - INFO - System Context: cubesat
+2025-02-23 06:59:34,281 - DSM_None_None_ - INFO - Similarity Threshold: 0.3
+2025-02-23 06:59:34,281 - DSM_None_None_ - INFO - 
+Initial LLM Suggested Mappings:
+2025-02-23 06:59:34,282 - DSM_None_None_ - INFO - Ground Truth Components: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software']
+2025-02-23 06:59:34,283 - DSM_None_None_ - INFO - Predicted Components: ['Structure/Chassis', 'Power System', 'Communication System', 'Onboard Computer', 'Attitude Control System', 'Payload']
+2025-02-23 06:59:34,284 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-02-23 06:59:34,284 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_ollama:deepseek-r1:14b-5k_20250223-050053/llm_rag_refs_R1/average_matrix_20250223-050053.csv
+2025-02-23 06:59:34,286 - DSM_None_None_ - INFO - Extracted model: deepseek-r1:14b-5k
+2025-02-23 06:59:34,287 - DSM_None_None_ - INFO - Creating similarity matrix text
+2025-02-23 06:59:34,298 - DSM_None_None_ - INFO - Creating prompt
+2025-02-23 06:59:34,300 - DSM_None_None_ - INFO - Attempting to use model: deepseek-r1:14b-5k
+2025-02-23 06:59:34,300 - DSM_None_None_ - INFO - Using Ollama path
+2025-02-23 06:59:34,340 - DSM_None_None_ - INFO - Model name: deepseek-r1:14b-5k
+2025-02-23 06:59:34,341 - DSM_None_None_ - INFO - Prompt length: 2090
+2025-02-23 07:00:41,141 - DSM_None_None_ - INFO - Response status code: 200
+2025-02-23 07:00:41,143 - DSM_None_None_ - INFO - API call succeeded
+2025-02-23 07:00:41,144 - DSM_None_None_ - INFO - Got response: <think>
+Okay, so I have to figure out how to optimally map these ground truth components from a cube...
+2025-02-23 07:00:41,145 - DSM_None_None_ - INFO - 
+Initial LLM Suggested Mappings:
+2025-02-23 07:00:41,146 - DSM_None_None_ - INFO - Ground Truth Components: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software']
+2025-02-23 07:00:41,147 - DSM_None_None_ - INFO - Predicted Components: ['Structure/Chassis', 'Power System', 'Communication System', 'Onboard Computer', 'Attitude Control System', 'Payload']
+2025-02-23 07:00:41,148 - DSM_None_None_ - INFO - 
+Checking mapping: Spacecraft -> Structure/Chassis
+2025-02-23 07:00:41,148 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-23 07:00:41,149 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-23 07:00:41,151 - DSM_None_None_ - INFO - 
+Checking mapping: GNC Subsystem -> Attitude Control System
+2025-02-23 07:00:41,152 - DSM_None_None_ - INFO - Is GT in gt_components? False
+2025-02-23 07:00:41,153 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-23 07:00:41,154 - DSM_None_None_ - INFO - 
+Checking mapping: PowerSubsystem -> Power System
+2025-02-23 07:00:41,155 - DSM_None_None_ - INFO - Is GT in gt_components? False
+2025-02-23 07:00:41,156 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-23 07:00:41,157 - DSM_None_None_ - INFO - 
+Checking mapping: PropulsionSubsystem -> Payload
+2025-02-23 07:00:41,158 - DSM_None_None_ - INFO - Is GT in gt_components? False
+2025-02-23 07:00:41,159 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-23 07:00:41,159 - DSM_None_None_ - INFO - 
+Checking mapping: ReactionWheel -> Communication System
+2025-02-23 07:00:41,160 - DSM_None_None_ - INFO - Is GT in gt_components? False
+2025-02-23 07:00:41,161 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-23 07:00:41,161 - DSM_None_None_ - INFO - 
+Checking mapping: GNC Software -> Onboard Computer
+2025-02-23 07:00:41,164 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-23 07:00:41,164 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-23 07:00:41,166 - DSM_None_None_ - INFO - 
+Removing invalid mapping:
+2025-02-23 07:00:41,168 - DSM_None_None_ - INFO - - GNC Subsystem -> Attitude Control System
+2025-02-23 07:00:41,168 - DSM_None_None_ - INFO - 
+Removing invalid mapping:
+2025-02-23 07:00:41,169 - DSM_None_None_ - INFO - - PowerSubsystem -> Power System
+2025-02-23 07:00:41,170 - DSM_None_None_ - INFO - 
+Removing invalid mapping:
+2025-02-23 07:00:41,171 - DSM_None_None_ - INFO - - PropulsionSubsystem -> Payload
+2025-02-23 07:00:41,172 - DSM_None_None_ - INFO - 
+Removing invalid mapping:
+2025-02-23 07:00:41,173 - DSM_None_None_ - INFO - - ReactionWheel -> Communication System
+2025-02-23 07:00:41,176 - DSM_None_None_ - INFO - Final Component Mapping (only valid matches):
+2025-02-23 07:00:41,177 - DSM_None_None_ - INFO -   Ground Truth Component Matched Predicted Component
+0             Spacecraft           Structure/Chassis
+1           GNC Software            Onboard Computer
+2025-02-23 07:00:41,180 - DSM_None_None_ - INFO - Evaluation complete. Visualizations generated.

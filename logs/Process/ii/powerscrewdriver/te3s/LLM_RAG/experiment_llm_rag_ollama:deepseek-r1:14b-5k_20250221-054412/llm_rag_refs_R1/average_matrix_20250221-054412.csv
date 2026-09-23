@@ -1,0 +1,8 @@
+,Housing,Motor,Gearbox,Chuck/Bit Holder,Trigger Switch,Battery,Wires and Circuitry
+Housing,1,1,1,1,1,1,1
+Motor,0,1,1,0,1,1,1
+Gearbox,0,1,1,1,0,0,1
+Chuck/Bit Holder,1,0,1,1,0,0,0
+Trigger Switch,0,1,0,0,1,1,1
+Battery,1,1,0,0,1,1,1
+Wires and Circuitry,0,1,1,0,1,1,1

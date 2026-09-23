@@ -1,0 +1,21 @@
+{
+  "system_name": "aircraft",
+  "relationship_type": "functionally",
+  "api_keys": {
+    "openai_api_key": "your-openai-api-key-here",
+    "claude_api_key": "your-claude-api-key-here"
+  },
+  "selected_model": "openai",
+  "inference_type": "llm",
+  "output_directory": "path-to-your-output-directory",
+  "reference_files": [
+    {
+      "path": "path-to-your-reference-document.pdf",
+      "description": "Description of the document"
+    },
+    {
+      "path": "path-to-your-reference-document-2.pdf",
+      "description": "Description of the document 2"
+    }
+  ]
+}

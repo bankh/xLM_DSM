@@ -1,0 +1,8 @@
+,Motor,Battery Pack,Gear System,Switch,Bit Holder/Chuck,Screw Bit,Control Board
+Motor,1,1,1,1,0,0,1
+Battery Pack,1,1,0,1,0,0,1
+Gear System,1,0,1,0,1,0,1
+Switch,1,1,0,1,0,0,1
+Bit Holder/Chuck,0,0,1,0,1,1,1
+Screw Bit,0,0,0,0,1,1,0
+Control Board,1,1,1,1,1,0,1

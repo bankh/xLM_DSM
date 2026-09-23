@@ -1,0 +1,8 @@
+,Motor,Battery,Gearbox,Chuck,Handle,Switch,Circuit Board
+Motor,1,1,1,0,1,1,1
+Battery,1,1,0,0,0,0,1
+Gearbox,1,0,1,1,0,0,0
+Chuck,0,0,1,1,0,0,0
+Handle,1,0,0,0,1,1,1
+Switch,1,0,0,0,1,1,1
+Circuit Board,1,1,0,0,1,1,1

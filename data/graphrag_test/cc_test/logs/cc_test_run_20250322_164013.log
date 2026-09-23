@@ -1,0 +1,185 @@
+Running graphrag command...
+Command: python -m graphrag query --root ./ --method drift --query Who is scrooge?
+/lib/python3.11/site-packages/numpy/core/fromnumeric.py:59: FutureWarning: 'DataFrame.swapaxes' is deprecated and will be removed in a future version. Please use 'DataFrame.transpose' instead.
+  return bound(*args, **kwds)
+
+
+
+INFO: Vector Store Args: {
+    "type": "lancedb",
+    "db_uri": "/graphrag/ragtest/cc_test/output/lancedb",
+    "container_name": "==== REDACTED ====",
+    "overwrite": true
+}
+creating llm client with {'api_key': 'REDACTED,len=164', 'type': "openai_chat", 'encoding_model': 'cl100k_base', 'model': 'gpt-4-turbo-preview', 'max_tokens': 4000, 'temperature': 0.0, 'top_p': 1.0, 'n': 1, 'frequency_penalty': 0.0, 'presence_penalty': 0.0, 'request_timeout': 180.0, 'api_base': None, 'api_version': None, 'organization': None, 'proxy': None, 'audience': None, 'deployment_name': None, 'model_supports_json': True, 'tokens_per_minute': 0, 'requests_per_minute': 0, 'max_retries': 10, 'max_retry_wait': 10.0, 'sleep_on_rate_limit_recommendation': True, 'concurrent_requests': 25, 'responses': None}
+creating embedding llm client with {'api_key': 'REDACTED,len=164', 'type': "openai_embedding", 'encoding_model': 'cl100k_base', 'model': 'text-embedding-3-small', 'max_tokens': 4000, 'temperature': 0, 'top_p': 1, 'n': 1, 'frequency_penalty': 0.0, 'presence_penalty': 0.0, 'request_timeout': 180.0, 'api_base': None, 'api_version': None, 'organization': None, 'proxy': None, 'audience': None, 'deployment_name': None, 'model_supports_json': None, 'tokens_per_minute': 0, 'requests_per_minute': 0, 'max_retries': 10, 'max_retry_wait': 10.0, 'sleep_on_rate_limit_recommendation': True, 'concurrent_requests': 25, 'responses': None}
+
+  0%|          | 0/5 [00:00<?, ?it/s]
+ 20%|██        | 1/5 [00:12<00:48, 12.22s/it]
+ 40%|████      | 2/5 [00:13<00:17,  5.88s/it]
+ 60%|██████    | 3/5 [00:15<00:07,  3.82s/it]
+ 80%|████████  | 4/5 [00:15<00:02,  2.46s/it]
+100%|██████████| 5/5 [00:17<00:00,  2.15s/it]
+                                             
+
+  0%|          | 0/20 [00:00<?, ?it/s]
+  5%|▌         | 1/20 [00:18<05:43, 18.10s/it]
+ 10%|█         | 2/20 [00:20<02:43,  9.07s/it]
+ 15%|█▌        | 3/20 [00:22<01:34,  5.53s/it]
+ 20%|██        | 4/20 [00:25<01:12,  4.55s/it]
+ 30%|███       | 6/20 [00:26<00:35,  2.55s/it]
+ 35%|███▌      | 7/20 [00:27<00:25,  1.97s/it]
+ 40%|████      | 8/20 [00:27<00:18,  1.50s/it]
+ 45%|████▌     | 9/20 [00:27<00:13,  1.21s/it]
+ 50%|█████     | 10/20 [00:28<00:09,  1.07it/s]
+ 60%|██████    | 12/20 [00:28<00:04,  1.82it/s]
+ 65%|██████▌   | 13/20 [00:30<00:06,  1.14it/s]
+ 70%|███████   | 14/20 [00:30<00:04,  1.47it/s]
+ 75%|███████▌  | 15/20 [00:30<00:02,  1.68it/s]
+ 80%|████████  | 16/20 [00:30<00:01,  2.18it/s]
+ 85%|████████▌ | 17/20 [00:31<00:01,  2.60it/s]
+ 90%|█████████ | 18/20 [00:32<00:01,  1.54it/s]
+ 95%|█████████▌| 19/20 [00:33<00:00,  1.30it/s]
+100%|██████████| 20/20 [00:38<00:00,  2.07s/it]
+                                               
+
+  0%|          | 0/20 [00:00<?, ?it/s]
+  5%|▌         | 1/20 [00:23<07:20, 23.19s/it]
+ 10%|█         | 2/20 [00:24<03:03, 10.19s/it]
+ 15%|█▌        | 3/20 [00:24<01:37,  5.73s/it]
+ 20%|██        | 4/20 [00:25<01:00,  3.79s/it]
+ 25%|██▌       | 5/20 [00:26<00:40,  2.69s/it]
+ 30%|███       | 6/20 [00:26<00:27,  1.96s/it]
+ 35%|███▌      | 7/20 [00:27<00:19,  1.46s/it]
+ 40%|████      | 8/20 [00:27<00:13,  1.15s/it]
+ 50%|█████     | 10/20 [00:27<00:06,  1.53it/s]
+ 55%|█████▌    | 11/20 [00:28<00:05,  1.75it/s]
+ 65%|██████▌   | 13/20 [00:29<00:03,  1.82it/s]
+ 70%|███████   | 14/20 [00:29<00:02,  2.16it/s]
+ 75%|███████▌  | 15/20 [00:29<00:01,  2.58it/s]
+ 85%|████████▌ | 17/20 [00:29<00:00,  3.84it/s]
+ 95%|█████████▌| 19/20 [00:29<00:00,  5.28it/s]Failed to parse search response: 
+Traceback (most recent call last):
+  File "/graphrag/query/structured_search/drift_search/action.py", line 76, in asearch
+    response = json.loads(search_result.response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+No answer found for query: How does the character of Scrooge change throughout 'A Christmas Carol'?
+No follow-up actions found for response: {}
+
+100%|██████████| 20/20 [01:12<00:00,  9.06s/it]
+                                               
+No follow-up actions for action: How does the character of Scrooge change throughout 'A Christmas Carol'?
+
+  0%|          | 0/20 [00:00<?, ?it/s]
+  5%|▌         | 1/20 [00:16<05:04, 16.02s/it]
+ 10%|█         | 2/20 [00:17<02:17,  7.66s/it]
+ 15%|█▌        | 3/20 [00:18<01:17,  4.58s/it]
+ 20%|██        | 4/20 [00:19<00:46,  2.91s/it]
+ 25%|██▌       | 5/20 [00:21<00:41,  2.76s/it]
+ 30%|███       | 6/20 [00:21<00:27,  1.93s/it]
+ 35%|███▌      | 7/20 [00:22<00:21,  1.65s/it]
+ 40%|████      | 8/20 [00:24<00:18,  1.57s/it]
+ 50%|█████     | 10/20 [00:25<00:10,  1.08s/it]
+ 55%|█████▌    | 11/20 [00:26<00:09,  1.03s/it]
+ 60%|██████    | 12/20 [00:27<00:08,  1.03s/it]
+ 65%|██████▌   | 13/20 [00:27<00:05,  1.18it/s]
+ 70%|███████   | 14/20 [00:28<00:04,  1.40it/s]
+ 75%|███████▌  | 15/20 [00:29<00:04,  1.13it/s]
+ 80%|████████  | 16/20 [00:31<00:04,  1.24s/it]
+ 85%|████████▌ | 17/20 [00:31<00:02,  1.04it/s]
+ 90%|█████████ | 18/20 [00:31<00:01,  1.37it/s]
+ 95%|█████████▌| 19/20 [00:33<00:00,  1.01it/s]Failed to parse search response: 
+Traceback (most recent call last):
+  File "/graphrag/query/structured_search/drift_search/action.py", line 76, in asearch
+    response = json.loads(search_result.response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+No answer found for query: What is the significance of Scrooge's change of heart towards the Cratchit family?
+No follow-up actions found for response: {}
+
+100%|██████████| 20/20 [01:08<00:00, 11.14s/it]
+                                               
+No follow-up actions for action: What is the significance of Scrooge's change of heart towards the Cratchit family?
+
+SUCCESS: DRIFT Search Response:
+### Understanding Ebenezer Scrooge and His Transformation
+
+Ebenezer Scrooge, a central figure in the narrative of 'A Christmas Carol,' is initially portrayed as a miserly old man who despises Christmas and lacks empathy towards those around him. His transformation is at the heart of the story, catalyzed by the supernatural interventions of Marley's Ghost and the Three Spirits, each playing a distinct role in guiding Scrooge towards redemption. Marley's Ghost, as Scrooge's former business partner, initiates this change by warning Scrooge of the consequences of his greed and introducing the visits from the three spirits. These spirits, each representing a different Christmas (Past, Present, and Yet to Come), reveal to Scrooge the ramifications of his actions and the sadness of his isolation.
+
+The journey through his past, present, and potential future forces Scrooge to confront his life choices, leading to a profound moral and emotional awakening. This transformation is symbolized by his newfound generosity towards the poor and kindness towards his employee, Bob Cratchit, and Cratchit's family. The narrative emphasizes redemption, the impact of one's actions on others, and the universal celebration of Christmas as a time of generosity and community. Moreover, the setting, including Camden Town, and characters like the Cratchit family, add layers to Scrooge's journey by illustrating the socio-economic challenges and the spirit of Christmas beyond Scrooge's initial narrow world view.
+
+The transformation of Scrooge from a symbol of miserliness to one of generosity underscores the possibility of change and the power of introspection and empathy. It highlights the narrative’s broader themes of hope, redemption, and the social impact of one's actions, making Scrooge's story a timeless tale of personal and communal transformation.
+
+### Understanding Scrooge: A Complex Character's Journey
+
+Scrooge is a central figure whose journey from miserliness to generosity encapsulates themes of transformation, redemption, and the powerful influence of family, community, and the Christmas spirit. Initially, Scrooge is portrayed as a solitary figure, estranged from his family and indifferent to the joys and communal spirit of Christmas. The report highlights several key elements that contribute to Scrooge's transformation:
+
+1. **Scrooge's Christmas Transformation** underscores the significance of family and the Christmas spirit in facilitating personal change. The participation in a simple Yes and No game at his nephew Fred's Christmas gathering marks a departure from his usual disdain, indicating his openness to reconnecting with family and embracing holiday joy.
+
+2. **The Role of Scrooge's Nephew** emphasizes Fred's optimism and persistence in including Scrooge in family festivities, showcasing the contrast between Scrooge's initial scepticism and the potential for change.
+
+3. **Familial and Social Connections** reveal the joy and warmth from interacting with family members like the Plump Sister, Scrooge's niece, and her interaction with Topper, illustrating the importance of social bonds.
+
+4. **Unexpected Visits** such as Scrooge's to his niece by marriage highlight the change in Scrooge's behavior, from isolation to actively seeking family connections.
+
+5. **Christmas as a Catalyst** for change, with the festive season serving as a backdrop for Scrooge's transformation, emphasizing the joy, family, and social gatherings.
+
+6. **Tiny Tim and the Cratchit Family** represent hope, unity, and the impact of socioeconomic conditions on family life, with Scrooge's eventual generosity significantly improving Tiny Tim's situation.
+
+7. **Fezziwig's Christmas Celebration** reflects the joy and generosity of the holiday season, with Scrooge reminiscing about the positive role models and the genuine spirit of Christmas.
+
+This tale of transformation is not just about an individual's redemption but also about the social impact of generosity and the communal spirit of the holiday season.
+
+### Analysis of Scrooge's Character Through Community Interactions
+
+The character of Scrooge is central to understanding the narratives explored in the community summaries provided. From the descriptions, Scrooge's interactions and connections with various characters and communities offer insights into his complex personality and the transformative journey he undergoes. Specifically, the mentions of Scrooge in the context of the Cratchit family, Belle, and Old Joe's network allow us to piece together different facets of his character and his impact on the people around him.
+
+The Cratchit family's celebration, characterized by warmth and collective effort despite financial hardship, serves as a stark contrast to Scrooge’s initial disposition. Their festive spirit and resilience in the face of adversity underscore Scrooge's absence of joy and familial bond, highlighting the transformation he needs to undergo. The mention of Mrs. Dilber's horror at Scrooge's actions regarding the second-hand dealings at Old Joe's shop reveals societal perceptions and judgments towards Scrooge, indicating a negative impact on his community.
+
+Belle’s past connection with Scrooge introduces an element of personal history and lost relationships, suggesting how Scrooge's choices have led him to isolation and regret. The narrative significance of Belle's perspective adds depth to Scrooge's character, emphasizing the emotional and social consequences of his actions. The implied relationship between Belle and a figure referred to as Father could indicate family dynamics that further reveal Scrooge's impact on those close to him in the past.
+
+Old Joe's community of second-hand dealings, with Scrooge's indirect involvement through observed transactions, reveals the economic aspects of his character. His association with this network highlights the moral and ethical implications of his behavior, aligning with the broader societal criticisms of his character.
+
+In sum, through these communities, we see the representation o
+
+### Analysis of the Query: Who is Scrooge?
+
+In the context of exploring the character of Scrooge, the summaries provided offer indirect insights through themes and characters associated with him, specifically from the narrative of 'A Christmas Carol' mentioned in the Project Gutenberg initiative. Scrooge, a key figure in this story, is notably absent in direct discussions but his essence is hinted at through the exploration of death, debt, and relief in 'The Relief of Caroline's Family' and the familial dynamics in 'The Bob and Peter Family Dynamics', which indirectly tie back to Scrooge's influence and eventual transformation in the story. Project Gutenberg’s mention of 'A Christmas Carol' confirms the narrative’s availability and significance in digital literary preservation, hinting at Scrooge’s cultural importance.
+
+Scrooge is a character defined by his initial miserliness and lack of empathy, evolving through ghostly interventions that lead him to rediscover compassion and the meaning of Christmas. The family dynamics explored in the summaries, focusing on hope, death, and financial struggles, reflect the broader societal issues Scrooge confronts and ultimately seeks to amend. The narrative of Caroline and her family, dealing with the complex interplay between death and financial relief, reflects the Scrooge arc where a personal journey is deeply intertwined with the socioeconomic impacts of one’s actions. Similarly, the focus on Bob and Peter’s relationship, with its emphasis on future hopes and remembrance of Tiny Tim, mirrors the themes of redemption and familial bond rejuvenation found in Scrooge’s story arc.
+
+While the direct query on Scrooge is not explicitly answered, the summaries provide a thematic backdrop to his character, underlining the societal and personal growth themes central to ‘A Christmas Carol.’ The details also highlight the importance of digital preservation efforts by Project Gutenberg in keeping such culturally significant narratives accessible, underscoring the story’s ongoing relevance and Scrooge’s place within it.
+
+# Intermediate Answer Related to the Query about Scrooge
+
+The query inquires about who Scrooge is. None of the top-ranked community summaries directly address characters from literature or fictional entities such as Scrooge. However, examining the summaries offers a sideways glimpse into relevant areas:
+
+1. **Project Gutenberg Literary Archive Foundation and Its Network** section highlights the foundation's commitment to distributing Project Gutenberg electronic works, including potentially relevant literary texts where a character like Scrooge might be found.
+
+2. **Legal and Educational Mission of the Foundation** discusses the foundation’s role in copyright management, suggesting they could hold texts or adaptations narrating about Scrooge.
+
+3. **Trademark and Distribution** mentions the distribution under the Project Gutenberg™ trademark, possibly including works by authors who have created iconic characters like Scrooge.
+
+4. **Tax-Exempt Status and Organizational Compliance**, and **Promotion and Management of Electronic Works** sections do not directly relate to Scrooge but indicate the foundation’s broader role in making literature accessible.
+
+5. **Dutch Tiles and Merchant Heritage** and **U.S. Copyright Law** sections are further removed from the query but hint at the cultural and historical context of narratives that may include similar characters.
+
+Overall, while the summaries don’t specifically mention Scrooge or the literary work he originates from, the connection to the Project Gutenberg Literary Archive Foundation suggests a pathway to exploring literature that might feature Scrooge or similarly significant characters. This information indicates the need to directly search Project Gutenberg's catalog or other literature-related entities for a more focused answer.
+Command completed and logged to logs/cc_test_run_20250322_164013.log

@@ -1,0 +1,7 @@
+,Structure,Power System,Communication System,Onboard Computer/Avionics,Payload,Attitude and Orbit Control System (AOCS)
+Structure,1,1,1,1,1,1
+Power System,1,1,1,1,1,1
+Communication System,1,1,1,1,1,1
+Onboard Computer/Avionics,1,1,1,1,1,1
+Payload,1,1,1,1,1,0
+Attitude and Orbit Control System (AOCS),1,1,1,1,0,1

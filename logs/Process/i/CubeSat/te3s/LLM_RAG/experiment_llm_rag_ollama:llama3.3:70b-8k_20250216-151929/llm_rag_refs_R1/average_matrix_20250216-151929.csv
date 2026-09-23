@@ -1,0 +1,7 @@
+,Spacecraft,"Guidance, Navigation, and Control (GNC) Subsystem",Propulsion Subsystem,Power Subsystem,Reaction Wheel,GNC Software
+Spacecraft,1,1,1,1,1,1
+"Guidance, Navigation, and Control (GNC) Subsystem",1,1,0,0,1,1
+Propulsion Subsystem,1,0,1,1,0,0
+Power Subsystem,1,0,1,1,0,0
+Reaction Wheel,1,1,0,0,1,0
+GNC Software,1,1,0,0,0,1

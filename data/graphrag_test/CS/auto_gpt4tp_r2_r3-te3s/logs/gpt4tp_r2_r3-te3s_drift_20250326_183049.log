@@ -1,0 +1,185 @@
+Running graphrag command...
+Command: python -m graphrag query --root ./ --method drift --query Please identify system-level whole-part relationships between the components of CubeSat (nanosatellite), as listed below, and represent them in a Design Structure Matrix (DSM) format.  
+
+The relationships should be articulated in plain English, capturing the essence of their interactions. 
+
+Here is the list of subsystems/components to analyze: ['Spacecraft', 'GNC Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software'] 
+
+The DSM should clearly indicate the interactions between these components as 1 exist and 0 does not exist, considering both the presence and nature of these connections. 
+    
+Present the output in a square matrix format (number of rows and columns MUST be the same as the number of components = 6 for this example), with rows and columns labeled accordingly. 
+
+Diagonal elements should be 1 in DSM matrix since each component interacts with itself. 
+
+If you don't know the answer, just write 2 for the specific cell that you are unsure of. A worst case scenario of the **as a list of lists** shown below (diagonal elements are 1 and rest are 2). Don't make up an answer. 
+
+This is an example of the output format for 6 components (as 6x6 matrix)-based on our system-of-interest the size of the matrix can change. 
+
+{
+  "final_response": [[1, 2, 2, 2, 2, 2], [2, 1, 2, 2, 2, 2], [2, 2, 1, 2, 2, 2],[2, 2, 2, 1, 2, 2],[2, 2, 2, 2, 1, 2],[2, 2, 2, 2, 2, 1]]
+}
+
+IMPORTANT: Your response must **ONLY** contain a valid **as a list of lists** as json in the following example format 6x6 matrix. 
+
+The below list of lists is just an example format of your response. **Replace** the values with your **actual analysis** while providing your response with parameter of 'final response'.
+
+This is an example of the output format for 6 components (as 6x6 matrix)-based on our system-of-interest the size of the matrix can change. 
+
+IMPORTANT: Your response MUST be a valid JSON object in the following format:
+{
+  "final_response": [[1,0,0,0,0,0,0], [0,1,0,0,0,0,0], ...]
+}
+/lib/python3.11/site-packages/numpy/core/fromnumeric.py:59: FutureWarning: 'DataFrame.swapaxes' is deprecated and will be removed in a future version. Please use 'DataFrame.transpose' instead.
+  return bound(*args, **kwds)
+
+
+
+INFO: Vector Store Args: {
+    "type": "lancedb",
+    "db_uri": "/ragtest/CS/auto_gpt4tp_r2_r3-te3s/output/lancedb",
+    "container_name": "==== REDACTED ====",
+    "overwrite": true
+}
+creating llm client with {'api_key': 'REDACTED,len=164', 'type': "openai_chat", 'encoding_model': 'cl100k_base', 'model': 'gpt-4-turbo-preview', 'max_tokens': 4000, 'temperature': 0.0, 'top_p': 1.0, 'n': 1, 'frequency_penalty': 0.0, 'presence_penalty': 0.0, 'request_timeout': 180.0, 'api_base': None, 'api_version': None, 'organization': None, 'proxy': None, 'audience': None, 'deployment_name': None, 'model_supports_json': True, 'tokens_per_minute': 0, 'requests_per_minute': 0, 'max_retries': 10, 'max_retry_wait': 10.0, 'sleep_on_rate_limit_recommendation': True, 'concurrent_requests': 25, 'responses': None}
+creating embedding llm client with {'api_key': 'REDACTED,len=164', 'type': "openai_embedding", 'encoding_model': 'cl100k_base', 'model': 'text-embedding-3-small', 'max_tokens': 4000, 'temperature': 0, 'top_p': 1, 'n': 1, 'frequency_penalty': 0.0, 'presence_penalty': 0.0, 'request_timeout': 180.0, 'api_base': None, 'api_version': None, 'organization': None, 'proxy': None, 'audience': None, 'deployment_name': None, 'model_supports_json': None, 'tokens_per_minute': 0, 'requests_per_minute': 0, 'max_retries': 10, 'max_retry_wait': 10.0, 'sleep_on_rate_limit_recommendation': True, 'concurrent_requests': 25, 'responses': None}
+
+  0%|          | 0/5 [00:00<?, ?it/s]
+ 20%|██        | 1/5 [00:19<01:17, 19.34s/it]
+ 40%|████      | 2/5 [00:22<00:29,  9.67s/it]
+ 60%|██████    | 3/5 [00:23<00:11,  5.96s/it]
+100%|██████████| 5/5 [00:25<00:00,  3.15s/it]
+                                             
+
+  0%|          | 0/20 [00:00<?, ?it/s]
+  5%|▌         | 1/20 [00:23<07:24, 23.38s/it]
+ 10%|█         | 2/20 [00:25<03:11, 10.63s/it]
+ 20%|██        | 4/20 [00:26<01:09,  4.36s/it]
+ 25%|██▌       | 5/20 [00:26<00:45,  3.05s/it]
+ 30%|███       | 6/20 [00:27<00:35,  2.56s/it]
+ 35%|███▌      | 7/20 [00:29<00:31,  2.41s/it]
+ 45%|████▌     | 9/20 [00:31<00:17,  1.57s/it]
+ 55%|█████▌    | 11/20 [00:31<00:08,  1.01it/s]
+ 60%|██████    | 12/20 [00:31<00:06,  1.24it/s]
+ 65%|██████▌   | 13/20 [00:32<00:05,  1.34it/s]
+ 75%|███████▌  | 15/20 [00:32<00:02,  1.67it/s]
+ 80%|████████  | 16/20 [00:36<00:04,  1.17s/it]
+ 85%|████████▌ | 17/20 [00:36<00:02,  1.02it/s]
+ 90%|█████████ | 18/20 [00:37<00:02,  1.06s/it]
+ 95%|█████████▌| 19/20 [00:41<00:01,  1.70s/it]
+100%|██████████| 20/20 [00:43<00:00,  1.77s/it]
+                                               
+
+  0%|          | 0/20 [00:00<?, ?it/s]No follow-up actions found for response: {}
+
+  5%|▌         | 1/20 [00:12<03:58, 12.54s/it]
+ 10%|█         | 2/20 [00:21<03:11, 10.66s/it]
+ 15%|█▌        | 3/20 [00:22<01:46,  6.27s/it]
+ 20%|██        | 4/20 [00:23<01:02,  3.93s/it]
+ 25%|██▌       | 5/20 [00:23<00:38,  2.56s/it]
+ 30%|███       | 6/20 [00:24<00:27,  1.99s/it]
+ 35%|███▌      | 7/20 [00:24<00:17,  1.38s/it]
+ 45%|████▌     | 9/20 [00:25<00:10,  1.02it/s]
+ 50%|█████     | 10/20 [00:25<00:07,  1.29it/s]
+ 55%|█████▌    | 11/20 [00:26<00:07,  1.19it/s]
+ 60%|██████    | 12/20 [00:26<00:05,  1.54it/s]
+ 65%|██████▌   | 13/20 [00:28<00:05,  1.17it/s]
+ 70%|███████   | 14/20 [00:28<00:04,  1.29it/s]
+ 75%|███████▌  | 15/20 [00:30<00:04,  1.04it/s]
+ 80%|████████  | 16/20 [00:31<00:03,  1.02it/s]
+ 90%|█████████ | 18/20 [00:32<00:01,  1.08it/s]
+ 95%|█████████▌| 19/20 [00:33<00:00,  1.31it/s]
+100%|██████████| 20/20 [00:34<00:00,  1.13it/s]
+                                               
+No follow-up actions for action: What are the challenges in synchronizing the Propulsion Subsystem with the GNC Subsystem for interplanetary missions?
+
+  0%|          | 0/20 [00:00<?, ?it/s]No follow-up actions found for response: {}
+
+  5%|▌         | 1/20 [00:17<05:26, 17.20s/it]No follow-up actions found for response: {}
+
+ 10%|█         | 2/20 [00:17<02:09,  7.17s/it]No follow-up actions found for response: {}
+
+ 15%|█▌        | 3/20 [00:19<01:25,  5.03s/it]
+ 20%|██        | 4/20 [00:20<00:55,  3.48s/it]
+ 25%|██▌       | 5/20 [00:21<00:34,  2.28s/it]
+ 30%|███       | 6/20 [00:24<00:38,  2.75s/it]
+ 40%|████      | 8/20 [00:27<00:24,  2.05s/it]
+ 45%|████▌     | 9/20 [00:27<00:17,  1.56s/it]
+ 50%|█████     | 10/20 [00:28<00:13,  1.32s/it]
+ 60%|██████    | 12/20 [00:28<00:06,  1.25it/s]
+ 65%|██████▌   | 13/20 [00:30<00:07,  1.14s/it]
+ 70%|███████   | 14/20 [00:30<00:05,  1.13it/s]
+ 75%|███████▌  | 15/20 [00:31<00:03,  1.35it/s]
+ 80%|████████  | 16/20 [00:33<00:04,  1.03s/it]
+ 85%|████████▌ | 17/20 [00:34<00:03,  1.25s/it]
+ 90%|█████████ | 18/20 [00:35<00:01,  1.02it/s]
+ 95%|█████████▌| 19/20 [00:38<00:01,  1.68s/it]
+100%|██████████| 20/20 [00:41<00:00,  2.17s/it]
+                                               
+No follow-up actions for action: What strategies can be employed to optimize GNC software for operation on low-power computational hardware?
+No follow-up actions for action: What are the common sources of electromagnetic interference in CubeSats, and how are they mitigated?
+No follow-up actions for action: Can you provide examples of successful end-to-end mission simulation tests for CubeSats?
+
+SUCCESS: DRIFT Search Response:
+# Analysis of CubeSat System-Level Whole-Part Relationships
+
+To construct an accurate Design Structure Matrix (DSM) for the CubeSat components listed ('Spacecraft', 'GNC Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software'), we examine the logical and functional relationships between these subsystems. Given the complexity and integration required for CubeSat operations, these components do not function in isolation but rather through a network of interactions.
+
+First, the 'Spacecraft' component encompasses all other subsystems as integral parts of its operation, ensuring overall mission functionality. The 'GNC Subsystem' (Guidance, Navigation, and Control), critical for the CubeSat's orientation and navigation, relies on input from the 'GNC Software' for algorithms and commands, and utilizes the 'Reaction Wheel' for physical attitude adjustments. The 'Propulsion Subsystem' enables maneuvering and orbital adjustments. It operates independently but requires data from the GNC for effective use. The 'Power Subsystem' supplies the necessary electrical power for all components, including the GNC, Propulsion systems, and the Reaction Wheel, underscoring its central role in CubeSat operations. Finally, 'GNC Software' specifically interfaces with the GNC Subsystem, directing its operations.
+
+In the DSM representation, interactions are noted where operational interdependence exists, reflecting the essential connectivity for CubeSat functionality. This matrix represents not just the presence of relationships but also their nature - directive, supportive, or operational.
+
+Given this analysis, a DSM can be structured to reflect these interactions, offering insight into the CubeSat's complex system architecture. Such a matrix is pivotal for understanding component integration and operational dependencies, serving as a foundation for further system-level optimization and analysis.
+
+### Analysis of CubeSat Components System-Level Relationships
+
+The CubeSat components including the 'Spacecraft', 'GNC Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', and 'GNC Software', each play a pivotal role in the functioning and success of a CubeSat mission. Understanding the interactions among these components requires a detailed analysis:
+
+- The **Spacecraft** itself forms the primary structural and functional unit, within which all other components find their place and purpose. Being the encompassing entity, it directly or indirectly interacts with all subsystems and components, ensuring they function as a cohesive unit.
+
+- The **GNC Subsystem (Guidance, Navigation, and Control)** is integral for the spacecraft's orientation and trajectory. It relies heavily on data from the Propulsion Subsystem for maneuvering, and the Power Subsystem for its energy needs. The Reaction Wheel, part of this subsystem, utilizes this power to maintain or alter the spacecraft's orientation.
+
+- **Propulsion Subsystem** provides the CubeSat with the capability to change orbits or maintain altitude, which demands a direct interaction with the GNC for precise movements and with the Power Subsystem for energy requirements.
+
+- **Power Subsystem** is crucial for supplying energy to all components. Its role fundamentally supports the GNC Subsystem, Propulsion, and the onboard computers running the GNC Software, ensuring there is adequate power for operations and data processing.
+
+- **Reaction Wheels** are specific components within the GNC Subsystem used for attitude control. They interact closely with the GNC Software, which commands their operation, and rely on the Power Subsystem for the energy necessary to function.
+
+- **GNC Software** is the brain behind the GNC Subsystem's operations, instructing the Reaction Wheels and utilizing data from the spacecraft's various sensors and subsystems. It is dependent on the Power Subsystem for operational energy and is tailored to optimize the functioning of the hardware within the GNC Subsystem.
+
+These system-level interactions suggest a complex web of dependencies, with the Power Subsystem acting as a central hub for energy, the GNC Subsystem ensuring precise navigation and control facilitated by both software and mechanical components like the Reaction Wheel, and the Propulsion Subsystem enabling maneuverability with guidance from the GNC. The analysis of these interrelationships is crucial for the successful design, deployment, and operation of CubeSats.
+
+
+# Analysis of CubeSat Subsystem Interactions for DSM Representation
+
+The CubeSat, a type of nanosatellite, comprises various subsystems critical for its operation in space. This analysis aims to delineate the whole-part relationships between these subsystems: 'Spacecraft', 'GNC Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', and 'GNC Software', focusing on their interactions for a DSM matrix representation. Given the complexity of satellite systems, each component plays a vital role, interacting closely with others to ensure mission success.
+
+The 'Spacecraft' acts as the overarching system that encompasses all other subsystems and components, serving as the primary structure that integrates these elements for cohesive functionality. The GNC (Guidance, Navigation, and Control) Subsystem is pivotal for the CubeSat’s orientation and trajectory, employing algorithms (encompassed within 'GNC Software') and physical actuators (including 'Reaction Wheels') for precise control. The 'Power Subsystem' is essential for supplying energy to all components, highlighting its direct interdependence with the operations of GNC Software and the Propulsion Subsystem, which itself is crucial for maneuvering the satellite in space.
+
+Drawing from these interactions, the propulsion system relies on the GNC Subsystem for navigation commands, while the Power Subsystem must adequately support the energy needs of the Reaction Wheel and GNC Software for processing and control implementations. These relationships signify a complex web of dependencies and interactions that are critical for the nuanced operation of CubeSat missions. Designing a DSM involves identifying the presence and nature of these connections, converting the nuanced interdependencies into a simplified, interpretable matrix format that encapsulates the essence of CubeSat system design and operation dynamics.
+
+Given the interconnected nature of CubeSat subsystems, the DSM representation will elucidate the intricate system-level whole-part relationships, reflecting the operational interplay and dependencies integral to the CubeSat’s functionality. The primary challenge lies in accurately mapping these relationships to a binary format, considering both the direct and indirect interactions among components.
+
+# Analysis of System-Level Whole-Part Relationships in CubeSat Components
+
+The query involves a complex interaction analysis of CubeSat subsystems/components, focusing on understanding and depicting these relationships in a Design Structure Matrix (DSM) format. Based on the knowledge provided, let's construct relationships between the specified components: ['Spacecraft', 'GNC Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software'] and articulate these interactions in plain English before presenting the DSM.
+
+The spacecraft serves as the overarching system, encapsulating all subsystems and components, including GNC (Guidance, Navigation, and Control), Propulsion, Power subsystems, and Reaction Wheels. The ‘Spacecraft’ interacts with all these components since they collectively fulfill the mission's objective. The GNC Subsystem is crucial for navigating and controlling the spacecraft orientation. It interacts closely with the GNC Software, dictating operational commands to both the reaction wheels (for attitude control) and the propulsion subsystem (for trajectory control).
+
+The Propulsion Subsystem is vital for controlling the CubeSat's position and managing maneuvers in space, relying on inputs from the GNC System and power from the Power Subsystem. The Power Subsystem, in turn, is essential for providing the necessary energy for all CubeSat operations, including the GNC subsystem, Propulsion subsystem, and the reaction wheels. The Reaction Wheel is a key component of attitude control, managed by the GNC Subsystem and powered by the Power Subsystem.
+
+Lastly, GNC Software directly governs the operation of the GNC Subsystem, effectively acting as the 'brain' for navigation, orientation, and control tasks. It is interlinked with the Reaction Wheels, directing them for precise attitude adjustment.
+
+Representing these interconnections in DSM, we assign 1 when an interaction exists and 0 when it does not, understanding that diagonal elements are always 1 since a component always interacts with itself. For this analysis, we assume that our matrix will reveal explicit dependencies between these components, deducing the presence and absence of interactions based on component functionality within the CubeSat system.
+
+Given the summaries, we notice an absence of direct details regarding the interrelationship in DSM format for the specific CubeSat components listed. However, understanding the function and role of each component within the system allows for a reasoned inference of how these components might interrelate.
+
+### Analysis of System-Level Interactions in CubeSat Components
+
+To understand the system-level whole-part relationships between the components of a CubeSat, we first establish the role and function of each component: the spacecraft, GNC subsystem, propulsion subsystem, power subsystem, reaction wheel, and GNC software. The spacecraft serves as the primary structure that houses all subsystems and components. The GNC (Guidance, Navigation, and Control) subsystem is responsible for the CubeSat's orientation and trajectory, employing sensors and algorithms to navigate space. This includes the GNC software, which contains the control algorithms and interfaces with hardware like reaction wheels, essential for attitude control. The propulsion subsystem provides the means for CubeSat maneuvering and orbit adjustment, while the power subsystem supplies the necessary electrical power to all components, especially critical for the operation of the GNC subsystem, reaction wheels, and propulsion systems.
+
+Given these roles, we can deduce the interactions: the spacecraft inherently interacts with all components as it contains them; the GNC subsystem must closely coordinate with the power subsystem for energy and the propulsion subsystem for maneuvering capabilities; reaction wheels are directly controlled by the GNC system, necessitating a strong link between them; GNC software is the brain behind GNC operations, thus interacting directly with the hardware it controls. These understandings allow the mapping of these relationships into a Design Structure Matrix (DSM). The DSM will reflect not just the existence of these interactions but also their nature - direct control, power supply, or containment.
+
+Consequently, the analysis transitions into a quantitative representation, which translates the qualitative relationships into a matrix format. This matrix showcases the direct and indirect interactions among the subsystems/components, adhering to the principles of systems engineering. Considering the specific request for a DSM format, each component is assessed for its interactive presence ('1' for an existing interaction and '0' for no direct interaction) with every other component, including a reflexive interaction (each component with itself).
+
+This approach enables a comprehensive overview of the CubeSat's system architecture, offering insights into the intricate web of dependencies and interactions that define its functionality and performance in space. Such an analysis is crucial for identifying potential points of failure, optimizing design for efficiency, and ensuring that all system components cohesively work towards the CubeSat's mission objectives.
+Command completed and logged to logs/cc_test_run_20250326_183049.log

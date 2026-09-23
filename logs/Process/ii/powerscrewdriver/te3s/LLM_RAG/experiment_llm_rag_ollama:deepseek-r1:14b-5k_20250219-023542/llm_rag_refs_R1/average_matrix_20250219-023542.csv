@@ -1,0 +1,8 @@
+,Housing,Motor,Battery,Gear System,Trigger Switch,Power Management Circuitry,PCB
+Housing,1,1,1,1,1,1,1
+Motor,1,1,1,1,1,1,1
+Battery,1,1,1,0,1,1,1
+Gear System,1,1,1,1,0,0,1
+Trigger Switch,1,1,1,0,1,1,1
+Power Management Circuitry,1,1,1,0,1,1,1
+PCB,1,1,0,1,1,1,1

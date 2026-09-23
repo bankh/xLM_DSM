@@ -1,0 +1,3121 @@
+2025-02-22 21:00:00,936 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Run 1/5
+2025-02-22 21:00:00,972 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - DEBUG: Initializing LLMInference.
+2025-02-22 21:00:00,973 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Initialized LLM inference for system: CubeSat (nanosatellite)
+2025-02-22 21:00:00,975 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Initialized DSM for system: CubeSat (nanosatellite)
+2025-02-22 21:00:00,975 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Inference model: ollama:deepseek-r1:14b-5k
+2025-02-22 21:00:00,976 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Prompt (attempt 1/3): 
+            Please identify the major components of CubeSat (nanosatellite) in the engineering based on hierarchical whole-part relationships.             
+            The number of components must be 6 and must be a list of strings.             
+            Please do not identify similar components that will work together under subsystem level since our interest is to identify the major components that form the core architecture of the system.             
+            Here is an example of the components for made-up system:             
+            final response = [ "component 1", "component 2", "component 3", "component 4", "component 5" ]             
+            IMPORTANT: THE FORMAT OF THE OUTPUT MUST BE AS A LIST OF STRINGS ONLY SIMILAR TO THE ONE ABOVE (NO LATEX, NO CODE, NO DESCRIPTION, OR OTHER ENCODINGS).              
+2025-02-22 21:00:12,648 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - LLM Response: <think>
+Okay, so the user is asking me to identify the major components of a CubeSat, which is a type of nanosatellite. They want six components listed as strings in a list format. I need to make sure each component is distinct and not part of a subsystem; they're looking for core architecture parts.
+
+First, I should think about what makes up a CubeSat. The main systems are usually power, communication, attitude control, etc. Let me break it down:
+
+1. Structure: That's the physical frame holding everything together.
+2. Power System: This includes solar panels and batteries to keep the satellite powered.
+3. Communication System: Antennas and radios for sending/receiving data.
+4. Onboard Computer: The brain of the satellite, handling all operations.
+5. Attitude Control: Motors or other systems to orient the satellite correctly.
+6. Payload: The main mission-specific equipment, like sensors or instruments.
+
+Wait, does that cover everything? I think so. Each component is a major part without overlapping into subsystems. Let me make sure each one is essential and doesn't combine multiple parts. Yeah, this should meet the user's requirements.
+</think>
+
+[ "Structure", "Power System", "Communication System", "Onboard Computer", "Attitude Control System", "Payload" ]
+2025-02-22 21:00:12,649 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Matrix: ['Structure', 'Power System', 'Communication System', 'Onboard Computer', 'Attitude Control System', 'Payload']
+2025-02-22 21:00:12,650 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Components: ['Structure', 'Power System', 'Communication System', 'Onboard Computer', 'Attitude Control System', 'Payload']
+2025-02-22 21:00:19,632 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - LLM Response: <think>
+Okay, so I need to figure out if the response provided is valid based on the original prompt. Let me start by understanding what the original prompt was asking for.
+
+The user asked to identify the major components of a CubeSat (which is a type of nanosatellite) in an engineering context, focusing on hierarchical whole-part relationships. They specified that exactly six components should be listed as strings in a list format. The example given included five components, but the requirement was six, so I need to make sure the response meets that number.
+
+Looking at the response provided: [ "Structure", "Power System", "Communication System", "Onboard Computer", "Attitude Control System", "Payload" ]. That's six items, which matches the requirement. 
+
+I should check if these components are considered major and core parts of a CubeSat. The structure is essential as it provides the framework. Power system is crucial for energy management. Communication system handles data transmission, which is vital. Onboard computer acts as the central processing unit. Attitude control ensures proper orientation. Payload varies but is a key component depending on mission objectives.
+
+I also need to ensure that these are not similar components grouped under subsystems but rather standalone major parts. Each listed item seems distinct and at the core level, so they fit the criteria.
+
+The format is correct as it's a list of strings without any extra formatting like LaTeX or code. The response adheres to all specified requirements: six components in the right format.
+</think>
+
+Valid
+2025-02-22 21:00:19,634 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Validation response: <think>
+Okay, so I need to figure out if the response provided is valid based on the original prompt. Let me start by understanding what the original prompt was asking for.
+
+The user asked to identify the major components of a CubeSat (which is a type of nanosatellite) in an engineering context, focusing on hierarchical whole-part relationships. They specified that exactly six components should be listed as strings in a list format. The example given included five components, but the requirement was six, so I need to make sure the response meets that number.
+
+Looking at the response provided: [ "Structure", "Power System", "Communication System", "Onboard Computer", "Attitude Control System", "Payload" ]. That's six items, which matches the requirement. 
+
+I should check if these components are considered major and core parts of a CubeSat. The structure is essential as it provides the framework. Power system is crucial for energy management. Communication system handles data transmission, which is vital. Onboard computer acts as the central processing unit. Attitude control ensures proper orientation. Payload varies but is a key component depending on mission objectives.
+
+I also need to ensure that these are not similar components grouped under subsystems but rather standalone major parts. Each listed item seems distinct and at the core level, so they fit the criteria.
+
+The format is correct as it's a list of strings without any extra formatting like LaTeX or code. The response adheres to all specified requirements: six components in the right format.
+</think>
+
+Valid
+2025-02-22 21:00:19,635 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Filtered validation response: 
+
+Valid
+2025-02-22 21:00:19,636 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Component list validated successfully on attempt 1
+2025-02-22 21:00:19,637 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Components: ['Structure', 'Power System', 'Communication System', 'Onboard Computer', 'Attitude Control System', 'Payload']
+2025-02-22 21:00:19,638 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - --------------------------------------------------
+2025-02-22 21:00:19,639 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Predicted Components: ['Structure', 'Power System', 'Communication System', 'Onboard Computer', 'Attitude Control System', 'Payload']
+2025-02-22 21:00:19,640 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Number of components: 6
+2025-02-22 21:00:19,641 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Predicted components for query: ['Structure', 'Power System', 'Communication System', 'Onboard Computer', 'Attitude Control System', 'Payload']
+2025-02-22 21:00:19,642 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Query: 
+        Please identify system-level hierarchical whole-part relationships between the components of CubeSat (nanosatellite), as listed below, and represent them in a Design Structure Matrix (DSM) format.          
+        The relationships should be articulated in plain English, capturing the essence of their interactions.         
+        Here is the list of subsystems/components to analyze: ['Structure', 'Power System', 'Communication System', 'Onboard Computer', 'Attitude Control System', 'Payload']         
+        The DSM should clearly indicate the interactions between these components as 1 exist and 0 does not exist, considering both the presence and nature of these connections.         
+        Present the output in a square matrix format (number of rows and columns MUST be the same as the number of components = 6 for this example), with rows and columns labeled accordingly.         
+        Diagonal elements should be 1 in DSM matrix since each component interacts with itself.         
+        If you don't know the answer, just write 2 for the specific cell that you are unsure of. A worst case scenario of the **as a list of lists** shown below (diagonal elements are 1 and rest are 2). Don't make up an answer.         
+        final response = [[1, 2, 2, 2, 2, 2, 2],[2, 1, 2, 2, 2, 2, 2],[2, 2, 1, 2, 2, 2, 2],[2, 2, 2, 1, 2, 2, 2],[2, 2, 2, 2, 1, 2, 2],[2, 2, 2, 2, 2, 1, 2],[2, 2, 2, 2, 2, 2, 1]] for 7 components         
+        final response = [[1, 2, 2],[2, 1, 2],[2, 2, 1]] for 3 components         
+        IMPORTANT: Your response must **ONLY** contain a valid **as a list of lists** in the following example format 7x7 matrix.         
+        The below list of lists is just an example format of a response. **Replace** the values with your **actual analysis** while providing your response with parameter of 'final response'.        
+        final response = [[1, 0, 0, 0, 0, 0, 0],[0, 1, 0, 0, 0, 0, 0],[0, 0, 1, 0, 0, 0, 0],   [0, 0, 0, 1, 0, 0, 0],[0, 0, 0, 0, 1, 0, 0],[0, 0, 0, 0, 0, 1, 0],[0, 0, 0, 0, 0, 0, 1]] for 7 components         
+        final response = [[1, 0, 0],[0, 1, 0],[0, 0, 1]] for 3 components         
+        IMPORTANT: THE FORMAT OF THE OUTPUT MUST BE AS LIST OF LISTS ONLY SIMILAR TO THE ONE ABOVE (NO LATEX, CODE, OR OTHER ENCODINGS).
+        
+2025-02-22 21:01:46,671 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - LLM Response: <think>
+Alright, I need to create a Design Structure Matrix (DSM) for the CubeSat subsystems. The components are Structure, Power System, Communication System, Onboard Computer, Attitude Control System, and Payload. That's six components, so the matrix will be 6x6.
+
+First, each component interacts with itself, so all diagonal elements are 1.
+
+Next, I'll go through each pair of components to see if they have a connection.
+
+1. **Structure & Power System**: The structure holds the power system, so they interact.
+2. **Structure & Communication System**: The structure supports the communication hardware.
+3. **Structure & Onboard Computer**: The computer is mounted on the structure.
+4. **Structure & Attitude Control System**: The attitude control (like reaction wheels) is part of the structure.
+5. **Structure & Payload**: The payload is attached to the structure.
+
+So, Structure interacts with all others except maybe not directly with Payload? Wait, no, the structure supports it, so yes.
+
+**Power System**: It provides power to all subsystems. So it interacts with Communication, Onboard Computer, Attitude Control, and Payload. Does it interact with Structure? Yes, because the structure holds the power components.
+
+So Power System has interactions with all except maybe not directly with Structure? Wait, no, they are connected through mounting, so yes.
+
+**Communication System**: It communicates data, which is processed by the Onboard Computer. It might also need power from the Power System and be mounted on the Structure. Does it interact with Attitude Control or Payload? Probably not directly unless the payload includes communication modules, but generally no.
+
+So Communication interacts with Structure (mounting), Power (power supply), and Onboard Computer (processing data).
+
+**Onboard Computer**: It's the central processing unit. It interacts with all subsystems except maybe not directly with Structure. It processes data from Attitude Control, Payload, and communicates via Communication System. So it interacts with Power (to function), Structure? Maybe not directly unless it's mounted on it.
+
+Wait, Onboard Computer is part of the structure, so yes, they interact.
+
+So Onboard Computer interacts with all except maybe nothing; probably interacts with all.
+
+**Attitude Control System**: It needs power and might communicate data to the computer. It also interacts with Structure (mounting reaction wheels). Does it interact with Payload? Probably not unless payload is involved in attitude control, which isn't standard.
+
+So Attitude Control interacts with Structure, Power, Onboard Computer.
+
+**Payload**: It's mounted on Structure, uses Power, and communicates data via Communication System. It might also send data to the Onboard Computer. Does it interact with Attitude Control? Not directly unless specific payload functions do, which is unlikely.
+
+So Payload interacts with Structure, Power, Communication, Onboard Computer.
+
+Now, let me map this out:
+
+- **Structure (1)**: Interacts with all except maybe none; probably yes.
+- **Power System (2)**: Interacts with all except maybe none.
+- **Communication System (3)**: Interacts with 1, 2, and 4.
+- **Onboard Computer (4)**: Interacts with all except maybe none.
+- **Attitude Control (5)**: Interacts with 1, 2, 4.
+- **Payload (6)**: Interacts with 1, 2, 3, 4.
+
+Wait, but in a DSM, rows are components and columns are what they interact with. So for each row, list the columns it interacts with.
+
+Let me go step by step:
+
+1. Structure (Row 1):
+   - Column 1: 1
+   - Columns 2-6: All have interactions, so 1s in all except maybe none? Wait, does Structure interact with itself only? No, because it's the base for others.
+
+Wait, no. The structure is a subsystem that other components are mounted on, but in terms of functional interaction beyond physical mounting, perhaps not. So maybe Structure doesn't have functional interactions beyond being a platform. Hmm, this is tricky.
+
+In DSM, we consider both physical and functional interactions. Since the user mentioned system-level hierarchical whole-part relationships, it's more about functional interactions rather than just physical mounting.
+
+So, for example:
+
+- **Structure** might not interact functionally with others except perhaps through interfaces like mounting points, but in terms of data or power flow, maybe not. So Structure would only have 1 on the diagonal and 0 elsewhere? But that doesn't make sense because it's a subsystem that other components depend on.
+
+Wait, I'm getting confused. Let me think again.
+
+DSM includes both direct connections (like data exchange) and indirect ones like physical mounting. Since the user wants hierarchical whole-part relationships, perhaps Structure is a container for others, so all components are part of Structure. But in terms of DSM, each component's row shows what it interacts with.
+
+Alternatively, maybe Structure doesn't have functional interactions beyond being a platform, so only itself has 1, and others don't interact with it functionally.
+
+But that might not be accurate because the structure is essential for mounting other components, which could be considered an interaction.
+
+I think I need to clarify: in this context, are physical connections considered as interactions? If yes, then Structure interacts with all. But if only functional (data/power), maybe not.
+
+Given the user's example where they used 2s for unknowns and 1s on diagonals, perhaps it's better to assume that Structure does interact with others functionally beyond just mounting.
+
+Alternatively, perhaps each subsystem is part of the structure, so the structure interacts with all. But I'm not entirely sure.
+
+To proceed, I'll consider both physical and functional interactions, meaning Structure interacts with all components except itself? No, because it's a container. So maybe Structure has 1 on diagonal and 0 elsewhere, but that doesn't make sense because other subsystems are part of the structure.
+
+Wait, perhaps in DSM, each row represents what the component interacts with. So for example:
+
+- **Structure** (Row 1) interacts with all components except itself? No, it's a container, so maybe it doesn't interact functionally but physically holds them. But since we're considering hierarchical relationships, Structure is the parent, and others are children.
+
+In that case, perhaps each subsystem is part of the structure, so the structure has interactions with all others as 'contains' or 'is contained in'.
+
+But I'm not sure how to represent that in DSM. Maybe it's better to assume that Structure interacts with all components functionally beyond just being a container.
+
+Alternatively, perhaps only certain components interact with each other based on data/power flow.
+
+Given the confusion, maybe it's safer to proceed by considering functional interactions:
+
+- **Structure**: Only itself (1) because it doesn't exchange data or power with others; it's more about physical mounting.
+- **Power System**: Interacts with all except Structure? No, it provides power to all, so interacts with Communication, Onboard Computer, Attitude Control, Payload. So columns 2:1, 3:1,4:1,5:1,6:1
+- **Communication System**: Interacts with Power (needs power), Onboard Computer (processes data), and Structure? Maybe not functionally beyond physical mounting.
+- **Onboard Computer**: Interacts with all except maybe nothing; it processes data from Attitude Control, Payload, communicates via Communication System, uses Power. So interacts with 2,3,4,5,6
+- **Attitude Control System**: Interacts with Onboard Computer (for commands), Power (to function), and Structure? Maybe not functionally.
+- **Payload**: Interacts with Onboard Computer (data processing), Power (needs power), Communication System (to send data), and Structure? Not functionally.
+
+So, mapping this:
+
+1. Structure: only 1
+2. Power: 1 on diag, and 1s for 3,4,5,6
+3. Comm: 1 on diag, and 1s for 2,4
+4. Onboard Computer: 1 on diag, and 1s for 2,3,5,6
+5. Attitude Control: 1 on diag, and 1s for 2,4
+6. Payload: 1 on diag, and 1s for 2,3,4
+
+Wait, but this might not capture all interactions accurately.
+
+Alternatively, perhaps:
+
+- Structure interacts with all except itself? No, because it's a container.
+- Power System interacts with all except maybe nothing; provides power to all.
+- Communication System needs power and uses the computer.
+- Onboard Computer interacts with all except maybe nothing.
+- Attitude Control interacts with computer and power.
+- Payload interacts with computer, power, communication.
+
+But I'm still unsure about Structure's interactions beyond physical mounting. Since the user mentioned hierarchical whole-part relationships, perhaps Structure is a parent system containing others, so it has interactions with all as 'contains' or 'is contained in'.
+
+In that case, Structure would have 1s for all except itself? No, because each component is part of the structure, but the structure doesn't directly interact functionally with them beyond that.
+
+I think I need to make a decision here. To avoid overcomplicating, perhaps only consider functional interactions (data/power) and not physical mounting.
+
+So:
+
+- **Structure**: 1 on diag, 0 elsewhere
+- **Power System**: 1 on diag, 1s for Communication, Onboard Computer, Attitude Control, Payload
+- **Communication System**: 1 on diag, 1s for Power, Onboard Computer
+- **Onboard Computer**: 1 on diag, 1s for Power, Communication, Attitude Control, Payload
+- **Attitude Control System**: 1 on diag, 1s for Power, Onboard Computer
+- **Payload**: 1 on diag, 1s for Power, Communication, Onboard Computer
+
+So the matrix would look like:
+
+Row 0: Structure [1,0,0,0,0,0]
+Row 1: Power [0,1,1,1,1,1]
+Row 2: Comm [0,1,1,1,0,0]
+Row 3: Onboard Computer [0,1,1,1,1,1]
+Row 4: Attitude Control [0,1,0,1,1,0]
+Row 5: Payload [0,1,1,1,0,1]
+
+Wait, but that's not correct because each row should have the same number of elements as columns. Let me adjust:
+
+Each row has 6 elements (including self).
+
+So:
+
+Structure (row 0): [1,0,0,0,0,0]
+Power (row 1): [0,1,1,1,1,1]
+Communication (row 2): [0,1,1,1,0,0]
+Onboard Computer (row3): [0,1,1,1,1,1]
+Attitude Control (row4): [0,1,0,1,1,0]
+Payload (row5): [0,1,1,1,0,1]
+
+Wait, but in the example given by the user, the final response was a list of lists with 6 elements each. So I need to make sure each row has 6 entries.
+
+But wait, the initial problem statement says that for 7 components, it's a 7x7 matrix, and for 3, it's 3x3. Here we have 6 components, so it should be 6x6.
+
+So each row must have 6 elements (columns 0-5).
+
+Let me re-express:
+
+Row 0: Structure
+- Column 0: 1
+- Columns 1-5: 0
+
+Row 1: Power System
+- Column 0: 0
+- Column1:1
+- Columns2,3,4,5:1 (Communication, Onboard Computer, Attitude Control, Payload)
+
+Wait, but Communication is row2, which is column2. So:
+
+Row1: [0,1,1,1,1,1]
+
+Row2: Communication System
+- Column0:0
+- Column1:1 (Power)
+- Column3:1 (Onboard Computer)
+- Others: 0
+
+So Row2: [0,1,1,1,0,0] ?
+
+Wait, no. Let's clarify:
+
+Each row represents a component, and each column represents what it interacts with.
+
+For example, Communication System (row2) interacts with Power (column1), Onboard Computer (column3). So in row2, columns 1 and 3 are 1s, others 0 except diag.
+
+Wait no, the diagonal is for self-interaction. So:
+
+Row2: [0,1,1,0,0,0] ?
+
+No, because Communication System interacts with itself (diag=1), Power (column1=1), Onboard Computer (column3=1). So row2 would be [0,1,1,1,0,0], but that's 6 elements.
+
+Wait, no. Let me index properly:
+
+Columns are 0:Structure,1:Power,2:Comm,3:Onboard,4:Attitude,5:Payload
+
+So for Communication System (row2):
+
+- Itself: column2=1
+- Interacts with Power (column1=1)
+- Interacts with Onboard Computer (column3=1)
+
+So row2 would be [0,1,1,1,0,0]
+
+Similarly:
+
+Row0: Structure: [1,0,0,0,0,0]
+Row1: Power: [0,1,1,1,1,1]
+Row2: Comm: [0,1,1,1,0,0]
+Row3: Onboard Computer: [0,1,1,1,1,1]
+Row4: Attitude Control: [0,1,0,1,1,0]
+Row5: Payload: [0,1,1,1,0,1]
+
+Wait, but in row5 (Payload), it interacts with Power (column1=1), Communication (column2=1), Onboard Computer (column3=1). So row5 would be [0,1,1,1,0,1] because diag is 1.
+
+But wait, diag for Payload is column5, so in row5, column5 is 1. The other interactions are columns1,2,3.
+
+So row5: [0,1,1,1,0,1]
+
+Putting it all together:
+
+[
+[1,0,0,0,0,0],   # Structure
+[0,1,1,1,1,1],   # Power
+[0,1,1,1,0,0],   # Comm
+[0,1,1,1,1,1],   # Onboard Computer
+[0,1,0,1,1,0],   # Attitude Control
+[0,1,1,1,0,1]    # Payload
+]
+
+Wait, but in the example given by the user, for 3 components, it's [[1,2,2],[2,1,2],[2,2,1]], which suggests that if unsure, use 2. But I'm trying to be accurate.
+
+I think this is as close as I can get without more specific knowledge.
+</think>
+
+final response = [
+    [1,0,0,0,0,0],
+    [0,1,1,1,1,1],
+    [0,1,1,1,0,0],
+    [0,1,1,1,1,1],
+    [0,1,0,1,1,0],
+    [0,1,1,1,0,1]
+]
+2025-02-22 21:01:46,673 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Response: <think>
+Alright, I need to create a Design Structure Matrix (DSM) for the CubeSat subsystems. The components are Structure, Power System, Communication System, Onboard Computer, Attitude Control System, and Payload. That's six components, so the matrix will be 6x6.
+
+First, each component interacts with itself, so all diagonal elements are 1.
+
+Next, I'll go through each pair of components to see if they have a connection.
+
+1. **Structure & Power System**: The structure holds the power system, so they interact.
+2. **Structure & Communication System**: The structure supports the communication hardware.
+3. **Structure & Onboard Computer**: The computer is mounted on the structure.
+4. **Structure & Attitude Control System**: The attitude control (like reaction wheels) is part of the structure.
+5. **Structure & Payload**: The payload is attached to the structure.
+
+So, Structure interacts with all others except maybe not directly with Payload? Wait, no, the structure supports it, so yes.
+
+**Power System**: It provides power to all subsystems. So it interacts with Communication, Onboard Computer, Attitude Control, and Payload. Does it interact with Structure? Yes, because the structure holds the power components.
+
+So Power System has interactions with all except maybe not directly with Structure? Wait, no, they are connected through mounting, so yes.
+
+**Communication System**: It communicates data, which is processed by the Onboard Computer. It might also need power from the Power System and be mounted on the Structure. Does it interact with Attitude Control or Payload? Probably not directly unless the payload includes communication modules, but generally no.
+
+So Communication interacts with Structure (mounting), Power (power supply), and Onboard Computer (processing data).
+
+**Onboard Computer**: It's the central processing unit. It interacts with all subsystems except maybe not directly with Structure. It processes data from Attitude Control, Payload, and communicates via Communication System. So it interacts with Power (to function), Structure? Maybe not directly unless it's mounted on it.
+
+Wait, Onboard Computer is part of the structure, so yes, they interact.
+
+So Onboard Computer interacts with all except maybe nothing; probably interacts with all.
+
+**Attitude Control System**: It needs power and might communicate data to the computer. It also interacts with Structure (mounting reaction wheels). Does it interact with Payload? Probably not unless payload is involved in attitude control, which isn't standard.
+
+So Attitude Control interacts with Structure, Power, Onboard Computer.
+
+**Payload**: It's mounted on Structure, uses Power, and communicates data via Communication System. It might also send data to the Onboard Computer. Does it interact with Attitude Control? Not directly unless specific payload functions do, which is unlikely.
+
+So Payload interacts with Structure, Power, Communication, Onboard Computer.
+
+Now, let me map this out:
+
+- **Structure (1)**: Interacts with all except maybe none; probably yes.
+- **Power System (2)**: Interacts with all except maybe none.
+- **Communication System (3)**: Interacts with 1, 2, and 4.
+- **Onboard Computer (4)**: Interacts with all except maybe none.
+- **Attitude Control (5)**: Interacts with 1, 2, 4.
+- **Payload (6)**: Interacts with 1, 2, 3, 4.
+
+Wait, but in a DSM, rows are components and columns are what they interact with. So for each row, list the columns it interacts with.
+
+Let me go step by step:
+
+1. Structure (Row 1):
+   - Column 1: 1
+   - Columns 2-6: All have interactions, so 1s in all except maybe none? Wait, does Structure interact with itself only? No, because it's the base for others.
+
+Wait, no. The structure is a subsystem that other components are mounted on, but in terms of functional interaction beyond physical mounting, perhaps not. So maybe Structure doesn't have functional interactions beyond being a platform. Hmm, this is tricky.
+
+In DSM, we consider both physical and functional interactions. Since the user mentioned system-level hierarchical whole-part relationships, it's more about functional interactions rather than just physical mounting.
+
+So, for example:
+
+- **Structure** might not interact functionally with others except perhaps through interfaces like mounting points, but in terms of data or power flow, maybe not. So Structure would only have 1 on the diagonal and 0 elsewhere? But that doesn't make sense because it's a subsystem that other components depend on.
+
+Wait, I'm getting confused. Let me think again.
+
+DSM includes both direct connections (like data exchange) and indirect ones like physical mounting. Since the user wants hierarchical whole-part relationships, perhaps Structure is a container for others, so all components are part of Structure. But in terms of DSM, each component's row shows what it interacts with.
+
+Alternatively, maybe Structure doesn't have functional interactions beyond being a platform, so only itself has 1, and others don't interact with it functionally.
+
+But that might not be accurate because the structure is essential for mounting other components, which could be considered an interaction.
+
+I think I need to clarify: in this context, are physical connections considered as interactions? If yes, then Structure interacts with all. But if only functional (data/power), maybe not.
+
+Given the user's example where they used 2s for unknowns and 1s on diagonals, perhaps it's better to assume that Structure does interact with others functionally beyond just mounting.
+
+Alternatively, perhaps each subsystem is part of the structure, so the structure interacts with all. But I'm not entirely sure.
+
+To proceed, I'll consider both physical and functional interactions, meaning Structure interacts with all components except itself? No, because it's a container. So maybe Structure has 1 on diagonal and 0 elsewhere, but that doesn't make sense because other subsystems are part of the structure.
+
+Wait, perhaps in DSM, each row represents what the component interacts with. So for example:
+
+- **Structure** (Row 1) interacts with all components except itself? No, it's a container, so maybe it doesn't interact functionally but physically holds them. But since we're considering hierarchical relationships, Structure is the parent, and others are children.
+
+In that case, perhaps each subsystem is part of the structure, so the structure has interactions with all others as 'contains' or 'is contained in'.
+
+But I'm not sure how to represent that in DSM. Maybe it's better to assume that Structure interacts with all components functionally beyond just being a container.
+
+Alternatively, perhaps only certain components interact with each other based on data/power flow.
+
+Given the confusion, maybe it's safer to proceed by considering functional interactions:
+
+- **Structure**: Only itself (1) because it doesn't exchange data or power with others; it's more about physical mounting.
+- **Power System**: Interacts with all except Structure? No, it provides power to all, so interacts with Communication, Onboard Computer, Attitude Control, Payload. So columns 2:1, 3:1,4:1,5:1,6:1
+- **Communication System**: Interacts with Power (needs power), Onboard Computer (processes data), and Structure? Maybe not functionally beyond physical mounting.
+- **Onboard Computer**: Interacts with all except maybe nothing; it processes data from Attitude Control, Payload, communicates via Communication System, uses Power. So interacts with 2,3,4,5,6
+- **Attitude Control System**: Interacts with Onboard Computer (for commands), Power (to function), and Structure? Maybe not functionally.
+- **Payload**: Interacts with Onboard Computer (data processing), Power (needs power), Communication System (to send data), and Structure? Not functionally.
+
+So, mapping this:
+
+1. Structure: only 1
+2. Power: 1 on diag, and 1s for 3,4,5,6
+3. Comm: 1 on diag, and 1s for 2,4
+4. Onboard Computer: 1 on diag, and 1s for 2,3,5,6
+5. Attitude Control: 1 on diag, and 1s for 2,4
+6. Payload: 1 on diag, and 1s for 2,3,4
+
+Wait, but this might not capture all interactions accurately.
+
+Alternatively, perhaps:
+
+- Structure interacts with all except itself? No, because it's a container.
+- Power System interacts with all except maybe nothing; provides power to all.
+- Communication System needs power and uses the computer.
+- Onboard Computer interacts with all except maybe nothing.
+- Attitude Control interacts with computer and power.
+- Payload interacts with computer, power, communication.
+
+But I'm still unsure about Structure's interactions beyond physical mounting. Since the user mentioned hierarchical whole-part relationships, perhaps Structure is a parent system containing others, so it has interactions with all as 'contains' or 'is contained in'.
+
+In that case, Structure would have 1s for all except itself? No, because each component is part of the structure, but the structure doesn't directly interact functionally with them beyond that.
+
+I think I need to make a decision here. To avoid overcomplicating, perhaps only consider functional interactions (data/power) and not physical mounting.
+
+So:
+
+- **Structure**: 1 on diag, 0 elsewhere
+- **Power System**: 1 on diag, 1s for Communication, Onboard Computer, Attitude Control, Payload
+- **Communication System**: 1 on diag, 1s for Power, Onboard Computer
+- **Onboard Computer**: 1 on diag, 1s for Power, Communication, Attitude Control, Payload
+- **Attitude Control System**: 1 on diag, 1s for Power, Onboard Computer
+- **Payload**: 1 on diag, 1s for Power, Communication, Onboard Computer
+
+So the matrix would look like:
+
+Row 0: Structure [1,0,0,0,0,0]
+Row 1: Power [0,1,1,1,1,1]
+Row 2: Comm [0,1,1,1,0,0]
+Row 3: Onboard Computer [0,1,1,1,1,1]
+Row 4: Attitude Control [0,1,0,1,1,0]
+Row 5: Payload [0,1,1,1,0,1]
+
+Wait, but that's not correct because each row should have the same number of elements as columns. Let me adjust:
+
+Each row has 6 elements (including self).
+
+So:
+
+Structure (row 0): [1,0,0,0,0,0]
+Power (row 1): [0,1,1,1,1,1]
+Communication (row 2): [0,1,1,1,0,0]
+Onboard Computer (row3): [0,1,1,1,1,1]
+Attitude Control (row4): [0,1,0,1,1,0]
+Payload (row5): [0,1,1,1,0,1]
+
+Wait, but in the example given by the user, the final response was a list of lists with 6 elements each. So I need to make sure each row has 6 entries.
+
+But wait, the initial problem statement says that for 7 components, it's a 7x7 matrix, and for 3, it's 3x3. Here we have 6 components, so it should be 6x6.
+
+So each row must have 6 elements (columns 0-5).
+
+Let me re-express:
+
+Row 0: Structure
+- Column 0: 1
+- Columns 1-5: 0
+
+Row 1: Power System
+- Column 0: 0
+- Column1:1
+- Columns2,3,4,5:1 (Communication, Onboard Computer, Attitude Control, Payload)
+
+Wait, but Communication is row2, which is column2. So:
+
+Row1: [0,1,1,1,1,1]
+
+Row2: Communication System
+- Column0:0
+- Column1:1 (Power)
+- Column3:1 (Onboard Computer)
+- Others: 0
+
+So Row2: [0,1,1,1,0,0] ?
+
+Wait, no. Let's clarify:
+
+Each row represents a component, and each column represents what it interacts with.
+
+For example, Communication System (row2) interacts with Power (column1), Onboard Computer (column3). So in row2, columns 1 and 3 are 1s, others 0 except diag.
+
+Wait no, the diagonal is for self-interaction. So:
+
+Row2: [0,1,1,0,0,0] ?
+
+No, because Communication System interacts with itself (diag=1), Power (column1=1), Onboard Computer (column3=1). So row2 would be [0,1,1,1,0,0], but that's 6 elements.
+
+Wait, no. Let me index properly:
+
+Columns are 0:Structure,1:Power,2:Comm,3:Onboard,4:Attitude,5:Payload
+
+So for Communication System (row2):
+
+- Itself: column2=1
+- Interacts with Power (column1=1)
+- Interacts with Onboard Computer (column3=1)
+
+So row2 would be [0,1,1,1,0,0]
+
+Similarly:
+
+Row0: Structure: [1,0,0,0,0,0]
+Row1: Power: [0,1,1,1,1,1]
+Row2: Comm: [0,1,1,1,0,0]
+Row3: Onboard Computer: [0,1,1,1,1,1]
+Row4: Attitude Control: [0,1,0,1,1,0]
+Row5: Payload: [0,1,1,1,0,1]
+
+Wait, but in row5 (Payload), it interacts with Power (column1=1), Communication (column2=1), Onboard Computer (column3=1). So row5 would be [0,1,1,1,0,1] because diag is 1.
+
+But wait, diag for Payload is column5, so in row5, column5 is 1. The other interactions are columns1,2,3.
+
+So row5: [0,1,1,1,0,1]
+
+Putting it all together:
+
+[
+[1,0,0,0,0,0],   # Structure
+[0,1,1,1,1,1],   # Power
+[0,1,1,1,0,0],   # Comm
+[0,1,1,1,1,1],   # Onboard Computer
+[0,1,0,1,1,0],   # Attitude Control
+[0,1,1,1,0,1]    # Payload
+]
+
+Wait, but in the example given by the user, for 3 components, it's [[1,2,2],[2,1,2],[2,2,1]], which suggests that if unsure, use 2. But I'm trying to be accurate.
+
+I think this is as close as I can get without more specific knowledge.
+</think>
+
+final response = [
+    [1,0,0,0,0,0],
+    [0,1,1,1,1,1],
+    [0,1,1,1,0,0],
+    [0,1,1,1,1,1],
+    [0,1,0,1,1,0],
+    [0,1,1,1,0,1]
+]
+2025-02-22 21:01:46,674 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Matrix: [[1, 0, 0, 0, 0, 0], [0, 1, 1, 1, 1, 1], [0, 1, 1, 1, 0, 0], [0, 1, 1, 1, 1, 1], [0, 1, 0, 1, 1, 0], [0, 1, 1, 1, 0, 1]]
+2025-02-22 21:01:46,675 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Final Matrix:
+[[1, 0, 0, 0, 0, 0], [0, 1, 1, 1, 1, 1], [0, 1, 1, 1, 0, 0], [0, 1, 1, 1, 1, 1], [0, 1, 0, 1, 1, 0], [0, 1, 1, 1, 0, 1]]
+2025-02-22 21:01:46,677 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - --------------------------------------------------
+2025-02-22 21:01:46,678 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Matrix from response.
+2025-02-22 21:01:46,678 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - At run 1/5
+2025-02-22 21:01:46,679 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Matrix: [[1, 0, 0, 0, 0, 0], [0, 1, 1, 1, 1, 1], [0, 1, 1, 1, 0, 0], [0, 1, 1, 1, 1, 1], [0, 1, 0, 1, 1, 0], [0, 1, 1, 1, 0, 1]]
+2025-02-22 21:01:46,680 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - --------------------------------------------------
+2025-02-22 21:01:56,692 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Run 2/5
+2025-02-22 21:01:56,710 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - DEBUG: Initializing LLMInference.
+2025-02-22 21:01:56,711 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Initialized LLM inference for system: CubeSat (nanosatellite)
+2025-02-22 21:01:56,712 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Initialized DSM for system: CubeSat (nanosatellite)
+2025-02-22 21:01:56,712 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Inference model: ollama:deepseek-r1:14b-5k
+2025-02-22 21:01:56,713 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Predicted Components: ['Structure', 'Power System', 'Communication System', 'Onboard Computer', 'Attitude Control System', 'Payload']
+2025-02-22 21:01:56,714 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Number of components: 6
+2025-02-22 21:01:56,715 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Predicted components for query: ['Structure', 'Power System', 'Communication System', 'Onboard Computer', 'Attitude Control System', 'Payload']
+2025-02-22 21:01:56,716 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Query: 
+        Please identify system-level hierarchical whole-part relationships between the components of CubeSat (nanosatellite), as listed below, and represent them in a Design Structure Matrix (DSM) format.          
+        The relationships should be articulated in plain English, capturing the essence of their interactions.         
+        Here is the list of subsystems/components to analyze: ['Structure', 'Power System', 'Communication System', 'Onboard Computer', 'Attitude Control System', 'Payload']         
+        The DSM should clearly indicate the interactions between these components as 1 exist and 0 does not exist, considering both the presence and nature of these connections.         
+        Present the output in a square matrix format (number of rows and columns MUST be the same as the number of components = 6 for this example), with rows and columns labeled accordingly.         
+        Diagonal elements should be 1 in DSM matrix since each component interacts with itself.         
+        If you don't know the answer, just write 2 for the specific cell that you are unsure of. A worst case scenario of the **as a list of lists** shown below (diagonal elements are 1 and rest are 2). Don't make up an answer.         
+        final response = [[1, 2, 2, 2, 2, 2, 2],[2, 1, 2, 2, 2, 2, 2],[2, 2, 1, 2, 2, 2, 2],[2, 2, 2, 1, 2, 2, 2],[2, 2, 2, 2, 1, 2, 2],[2, 2, 2, 2, 2, 1, 2],[2, 2, 2, 2, 2, 2, 1]] for 7 components         
+        final response = [[1, 2, 2],[2, 1, 2],[2, 2, 1]] for 3 components         
+        IMPORTANT: Your response must **ONLY** contain a valid **as a list of lists** in the following example format 7x7 matrix.         
+        The below list of lists is just an example format of a response. **Replace** the values with your **actual analysis** while providing your response with parameter of 'final response'.        
+        final response = [[1, 0, 0, 0, 0, 0, 0],[0, 1, 0, 0, 0, 0, 0],[0, 0, 1, 0, 0, 0, 0],   [0, 0, 0, 1, 0, 0, 0],[0, 0, 0, 0, 1, 0, 0],[0, 0, 0, 0, 0, 1, 0],[0, 0, 0, 0, 0, 0, 1]] for 7 components         
+        final response = [[1, 0, 0],[0, 1, 0],[0, 0, 1]] for 3 components         
+        IMPORTANT: THE FORMAT OF THE OUTPUT MUST BE AS LIST OF LISTS ONLY SIMILAR TO THE ONE ABOVE (NO LATEX, CODE, OR OTHER ENCODINGS).
+        
+2025-02-22 21:03:12,672 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - LLM Response: <think>
+Alright, I need to create a Design Structure Matrix (DSM) for the CubeSat subsystems. The components are Structure, Power System, Communication System, Onboard Computer, Attitude Control System, and Payload. That's six components, so the matrix will be 6x6.
+
+First, each component interacts with itself, so all diagonal elements are 1.
+
+Next, I'll go through each pair of components to see if they have a connection.
+
+1. **Structure & Power System**: The structure holds the power system, so they interact.
+2. **Structure & Communication System**: The structure supports the communication hardware.
+3. **Structure & Onboard Computer**: The computer is mounted on the structure.
+4. **Structure & Attitude Control System**: The attitude control (like reaction wheels) is part of the structure.
+5. **Structure & Payload**: The payload is attached to the structure.
+
+So, Structure interacts with all others except maybe not directly with Payload? Wait, no, the structure supports it, so yes.
+
+**Power System**: It provides power to all subsystems. So it interacts with Communication, Onboard Computer, Attitude Control, and Payload. Does it interact with Structure? Yes, because the structure holds the power components.
+
+So Power System has interactions with all except maybe not directly with Structure? Wait, no, they are connected through mounting, so yes.
+
+**Communication System**: It communicates data, which is processed by the Onboard Computer. It might also need power from the Power System and be mounted on the Structure. Does it interact with Attitude Control or Payload? Probably not directly unless the payload includes communication modules, but generally no.
+
+So Communication interacts with Structure (mounting), Power (power supply), and Onboard Computer (processing data).
+
+**Onboard Computer**: It's the central processing unit. It interacts with all subsystems except maybe not directly with Structure. It needs data from Attitude Control, communicates via Communication System, manages power, etc.
+
+So Onboard Computer interacts with Power, Communication, Attitude Control, and Payload. Does it interact with Structure? Maybe not directly unless for mounting, but functionally, no.
+
+**Attitude Control System**: It provides orientation data to the Onboard Computer and might communicate with the Communication System if sending telemetry. It needs power from the Power System and is mounted on the Structure.
+
+So Attitude Control interacts with Structure (mounting), Power (power supply), Onboard Computer (data processing), and possibly Communication for telemetry.
+
+**Payload**: It's the mission-specific component. It likely interfaces with the Onboard Computer to send data, uses power, and is mounted on the structure. It might not interact directly with Attitude Control or Communication unless it's part of the payload.
+
+So Payload interacts with Structure (mounting), Power (power supply), and Onboard Computer (data processing).
+
+Now, let me map this out:
+
+- **Structure** interacts with all except maybe none? No, it supports everything.
+- **Power System** interacts with all except maybe nothing?
+Wait, no. Each component needs power, so yes.
+
+But wait, in reality, the Power System provides power to all other systems, but does each system directly interact with Power? Yes, because they need power.
+
+Similarly, Onboard Computer is connected to all for data processing.
+
+So let's go step by step:
+
+1. **Structure**:
+   - Structure interacts with itself (1).
+   - It interacts with Power System (1), Communication (1), Onboard Computer (1), Attitude Control (1), Payload (1).
+
+2. **Power System**:
+   - Interacts with Structure (1), and provides power to all others: Communication, Onboard Computer, Attitude Control, Payload.
+
+3. **Communication System**:
+   - Interacts with Structure (mounting), Power (power), Onboard Computer (processing data). Maybe not with Attitude or Payload unless specific.
+
+4. **Onboard Computer**:
+   - Interacts with all except maybe none? It processes data from Attitude, communicates via Communication, manages power, and handles Payload data.
+
+5. **Attitude Control System**:
+   - Interacts with Structure (mounting), Power (power), Onboard Computer (data). Maybe not with others unless specific.
+
+6. **Payload**:
+   - Interacts with Structure (mounting), Power (power), Onboard Computer (processing).
+
+So, the matrix would have 1s where they interact and 0 otherwise, except diagonals are 1.
+
+Wait, but in the example given, the user used 2 for unknowns. But I need to use 0 or 1 based on actual interactions.
+
+Let me structure it:
+
+- Structure (S) interacts with all: S, P, C, O, A, Pa.
+- Power System (P) interacts with S, C, O, A, Pa.
+- Communication (C) interacts with S, P, O.
+- Onboard Computer (O) interacts with S, P, C, A, Pa.
+- Attitude Control (A) interacts with S, P, O.
+- Payload (Pa) interacts with S, P, O.
+
+So the matrix would be:
+
+Row order: Structure, Power, Comm, Onboard, Attitude, Payload.
+
+Each row represents what the component interacts with.
+
+Structure's row: [1,1,1,1,1,1]
+
+Power System's row: [1,1,1,1,1,1] (since it provides power to all)
+
+Wait no, Power doesn't interact with Attitude and Payload beyond providing power. But in DSM, if they are connected via a shared resource like power, is that considered an interaction? Or only direct interfaces.
+
+In CubeSats, each subsystem gets power from the Power System, but their interactions might be more about functional dependencies rather than physical connections.
+
+So perhaps:
+
+- Structure interacts with all except maybe none.
+- Power interacts with all except maybe nothing.
+But in reality, each component is connected to Power for power and to Onboard Computer for control.
+
+Wait, this is getting confusing. Let me think again.
+
+Each subsystem has a dependency on the Power System (for power) and the Onboard Computer (for commands and data processing). So:
+
+- Structure: interacts with itself, Power, Onboard.
+- Power: interacts with all except maybe nothing? No, it provides power to all.
+Wait, but in terms of DSM, if a component is supplied by another, that's an interaction.
+
+So perhaps:
+
+Structure interacts with Power (needs power), Onboard Computer (for commands), and Attitude Control/Payload via the computer.
+
+But I'm getting stuck. Maybe it's better to look for typical CubeSat interactions.
+
+Typically:
+
+- Structure supports all components.
+- Power provides power to all.
+- Onboard Computer controls everything.
+- Communication sends data, which is processed by the computer.
+- Attitude Control interfaces with the computer.
+- Payload interfaces with the computer and may use communication.
+
+So in terms of direct interactions (not via shared resources):
+
+Structure interacts with all except maybe nothing? No, it's the base.
+
+Power interacts with all except maybe nothing.
+
+Onboard Computer interacts with all except Structure? Or does it interact with Structure for mounting?
+
+Wait, no. The Onboard Computer is part of the structure, so they are connected physically, but functionally, the computer interfaces with other systems via software or electrical connections.
+
+So perhaps:
+
+- Structure: 1s everywhere (since it's the base)
+- Power System: interacts with all except maybe nothing
+- Communication: interacts with Structure (mounting), Onboard Computer (processing data), and possibly Attitude Control for telemetry.
+Wait, no. Communication is used to send data from the computer, so it doesn't directly interact with Attitude Control.
+
+Similarly, Payload might not interact with others unless specified.
+
+This is getting too vague. Maybe I should look up typical CubeSat DSMs or system interactions.
+
+Alternatively, perhaps each subsystem interacts with Structure (for mounting), Power (for power), and Onboard Computer (for control). So:
+
+- Each row would have 1s for Structure, Power, and Onboard Computer, plus any specific interactions.
+
+So:
+
+Structure: [1,1,1,1,1,1]
+
+Power: [1,1,1,1,1,1]
+
+Communication: [1 (S), 1 (P), 1 (O), 0, 0, 0] ?
+
+Wait, no. Communication needs to send data, which is processed by Onboard Computer, so it interacts with O.
+
+Similarly, Attitude Control sends data to Onboard Computer, so A interacts with O.
+
+Payload might interact with O and maybe C if it's a sensor payload that communicates data.
+
+So:
+
+Structure row: all 1s
+
+Power row: all 1s
+
+Communication row: S (1), P (needs power), O (processes data)
+
+Onboard Computer row: S, P, C, A, Pa
+
+Attitude Control row: S, P, O
+
+Payload row: S, P, O
+
+So the matrix would be:
+
+Row order: Structure, Power, Comm, Onboard, Attitude, Payload.
+
+Structure: [1,1,1,1,1,1]
+
+Power: [1,1,1,1,1,1]
+
+Comm: [1,1,1,1,0,0] (interacts with S, P, O)
+
+Onboard: [1,1,1,1,1,1] (interacts with all except maybe none?)
+
+Wait, no. Onboard Computer interacts with Structure (mounting), Power (power), Communication (data), Attitude Control (commands), and Payload (data). So yes, all.
+
+Attitude Control: [1,1,0,1,1,0] (interacts with S, P, O)
+
+Payload: [1,1,0,1,0,1] (interacts with S, P, O)
+
+Wait, but this might not be accurate. Let me try to define each row:
+
+Structure:
+- Interacts with all components because it's the base structure.
+
+Power System:
+- Provides power to all except maybe nothing? So interacts with all.
+
+Communication System:
+- Needs power (P), is mounted on Structure (S), and communicates data processed by Onboard Computer (O). So S, P, O.
+
+Onboard Computer:
+- Controls everything: Structure (maybe not directly?), Power (commands), Communication (data), Attitude Control (commands), Payload (data). So S, P, C, A, Pa.
+
+Attitude Control System:
+- Mounted on Structure (S), uses power (P), sends data to Onboard Computer (O).
+
+Payload:
+- Mounted on Structure (S), uses power (P), sends/receives data via Onboard Computer (O).
+
+So the matrix would be:
+
+Row 1: [1,1,1,1,1,1] - Structure
+
+Row 2: [1,1,1,1,1,1] - Power
+
+Row 3: [1,1,1,1,0,0] - Communication (interacts with S, P, O)
+
+Row 4: [1,1,1,1,1,1] - Onboard Computer
+
+Row 5: [1,1,0,1,1,0] - Attitude Control (S, P, O)
+
+Row 6: [1,1,0,1,0,1] - Payload (S, P, O, Pa?)
+
+Wait, but in the initial list, Payload is the last component. So row 6 would be:
+
+Structure: S=1
+
+Power: P=1
+
+Communication: C=0 (no direct interaction unless payload includes comm)
+
+Onboard Computer: O=1
+
+Attitude Control: A=0
+
+Payload: Pa=1
+
+So row 6: [1,1,0,1,0,1]
+
+Similarly, Attitude Control row:
+
+Structure: S=1
+
+Power: P=1
+
+Communication: C=0
+
+Onboard Computer: O=1
+
+Attitude Control: A=1 (itself)
+
+Payload: Pa=0
+
+So row 5: [1,1,0,1,1,0]
+
+Wait, but Attitude Control doesn't interact with Payload unless the payload is part of it, which it's not.
+
+Similarly, Communication System might not interact with Attitude Control or Payload unless specific. So:
+
+Row 3 (Communication): S=1, P=1, O=1, A=0, Pa=0
+
+So putting it all together:
+
+Structure: [1,1,1,1,1,1]
+
+Power: [1,1,1,1,1,1]
+
+Comm: [1,1,1,1,0,0]
+
+Onboard: [1,1,1,1,1,1]
+
+Attitude: [1,1,0,1,1,0]
+
+Payload: [1,1,0,1,0,1]
+
+Wait, but this might not be accurate. For example, does the Attitude Control System interact with Payload? Probably not unless the payload is part of the attitude control, which it's not.
+
+Similarly, Communication System doesn't need to interact with Attitude or Payload beyond what's processed by Onboard Computer.
+
+So the final matrix would look like this:
+
+[
+ [1, 1, 1, 1, 1, 1],
+ [1, 1, 1, 1, 1, 1],
+ [1, 1, 1, 1, 0, 0],
+ [1, 1, 1, 1, 1, 1],
+ [1, 1, 0, 1, 1, 0],
+ [1, 1, 0, 1, 0, 1]
+]
+
+But wait, the initial example used 0 for no interaction and 1 for yes. So I think this is correct.
+</think>
+
+final response = [[1,1,1,1,1,1],[1,1,1,1,1,1],[1,1,1,1,0,0],[1,1,1,1,1,1],[1,1,0,1,1,0],[1,1,0,1,0,1]]
+2025-02-22 21:03:12,674 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Response: <think>
+Alright, I need to create a Design Structure Matrix (DSM) for the CubeSat subsystems. The components are Structure, Power System, Communication System, Onboard Computer, Attitude Control System, and Payload. That's six components, so the matrix will be 6x6.
+
+First, each component interacts with itself, so all diagonal elements are 1.
+
+Next, I'll go through each pair of components to see if they have a connection.
+
+1. **Structure & Power System**: The structure holds the power system, so they interact.
+2. **Structure & Communication System**: The structure supports the communication hardware.
+3. **Structure & Onboard Computer**: The computer is mounted on the structure.
+4. **Structure & Attitude Control System**: The attitude control (like reaction wheels) is part of the structure.
+5. **Structure & Payload**: The payload is attached to the structure.
+
+So, Structure interacts with all others except maybe not directly with Payload? Wait, no, the structure supports it, so yes.
+
+**Power System**: It provides power to all subsystems. So it interacts with Communication, Onboard Computer, Attitude Control, and Payload. Does it interact with Structure? Yes, because the structure holds the power components.
+
+So Power System has interactions with all except maybe not directly with Structure? Wait, no, they are connected through mounting, so yes.
+
+**Communication System**: It communicates data, which is processed by the Onboard Computer. It might also need power from the Power System and be mounted on the Structure. Does it interact with Attitude Control or Payload? Probably not directly unless the payload includes communication modules, but generally no.
+
+So Communication interacts with Structure (mounting), Power (power supply), and Onboard Computer (processing data).
+
+**Onboard Computer**: It's the central processing unit. It interacts with all subsystems except maybe not directly with Structure. It needs data from Attitude Control, communicates via Communication System, manages power, etc.
+
+So Onboard Computer interacts with Power, Communication, Attitude Control, and Payload. Does it interact with Structure? Maybe not directly unless for mounting, but functionally, no.
+
+**Attitude Control System**: It provides orientation data to the Onboard Computer and might communicate with the Communication System if sending telemetry. It needs power from the Power System and is mounted on the Structure.
+
+So Attitude Control interacts with Structure (mounting), Power (power supply), Onboard Computer (data processing), and possibly Communication for telemetry.
+
+**Payload**: It's the mission-specific component. It likely interfaces with the Onboard Computer to send data, uses power, and is mounted on the structure. It might not interact directly with Attitude Control or Communication unless it's part of the payload.
+
+So Payload interacts with Structure (mounting), Power (power supply), and Onboard Computer (data processing).
+
+Now, let me map this out:
+
+- **Structure** interacts with all except maybe none? No, it supports everything.
+- **Power System** interacts with all except maybe nothing?
+Wait, no. Each component needs power, so yes.
+
+But wait, in reality, the Power System provides power to all other systems, but does each system directly interact with Power? Yes, because they need power.
+
+Similarly, Onboard Computer is connected to all for data processing.
+
+So let's go step by step:
+
+1. **Structure**:
+   - Structure interacts with itself (1).
+   - It interacts with Power System (1), Communication (1), Onboard Computer (1), Attitude Control (1), Payload (1).
+
+2. **Power System**:
+   - Interacts with Structure (1), and provides power to all others: Communication, Onboard Computer, Attitude Control, Payload.
+
+3. **Communication System**:
+   - Interacts with Structure (mounting), Power (power), Onboard Computer (processing data). Maybe not with Attitude or Payload unless specific.
+
+4. **Onboard Computer**:
+   - Interacts with all except maybe none? It processes data from Attitude, communicates via Communication, manages power, and handles Payload data.
+
+5. **Attitude Control System**:
+   - Interacts with Structure (mounting), Power (power), Onboard Computer (data). Maybe not with others unless specific.
+
+6. **Payload**:
+   - Interacts with Structure (mounting), Power (power), Onboard Computer (processing).
+
+So, the matrix would have 1s where they interact and 0 otherwise, except diagonals are 1.
+
+Wait, but in the example given, the user used 2 for unknowns. But I need to use 0 or 1 based on actual interactions.
+
+Let me structure it:
+
+- Structure (S) interacts with all: S, P, C, O, A, Pa.
+- Power System (P) interacts with S, C, O, A, Pa.
+- Communication (C) interacts with S, P, O.
+- Onboard Computer (O) interacts with S, P, C, A, Pa.
+- Attitude Control (A) interacts with S, P, O.
+- Payload (Pa) interacts with S, P, O.
+
+So the matrix would be:
+
+Row order: Structure, Power, Comm, Onboard, Attitude, Payload.
+
+Each row represents what the component interacts with.
+
+Structure's row: [1,1,1,1,1,1]
+
+Power System's row: [1,1,1,1,1,1] (since it provides power to all)
+
+Wait no, Power doesn't interact with Attitude and Payload beyond providing power. But in DSM, if they are connected via a shared resource like power, is that considered an interaction? Or only direct interfaces.
+
+In CubeSats, each subsystem gets power from the Power System, but their interactions might be more about functional dependencies rather than physical connections.
+
+So perhaps:
+
+- Structure interacts with all except maybe none.
+- Power interacts with all except maybe nothing.
+But in reality, each component is connected to Power for power and to Onboard Computer for control.
+
+Wait, this is getting confusing. Let me think again.
+
+Each subsystem has a dependency on the Power System (for power) and the Onboard Computer (for commands and data processing). So:
+
+- Structure: interacts with itself, Power, Onboard.
+- Power: interacts with all except maybe nothing? No, it provides power to all.
+Wait, but in terms of DSM, if a component is supplied by another, that's an interaction.
+
+So perhaps:
+
+Structure interacts with Power (needs power), Onboard Computer (for commands), and Attitude Control/Payload via the computer.
+
+But I'm getting stuck. Maybe it's better to look for typical CubeSat interactions.
+
+Typically:
+
+- Structure supports all components.
+- Power provides power to all.
+- Onboard Computer controls everything.
+- Communication sends data, which is processed by the computer.
+- Attitude Control interfaces with the computer.
+- Payload interfaces with the computer and may use communication.
+
+So in terms of direct interactions (not via shared resources):
+
+Structure interacts with all except maybe nothing? No, it's the base.
+
+Power interacts with all except maybe nothing.
+
+Onboard Computer interacts with all except Structure? Or does it interact with Structure for mounting?
+
+Wait, no. The Onboard Computer is part of the structure, so they are connected physically, but functionally, the computer interfaces with other systems via software or electrical connections.
+
+So perhaps:
+
+- Structure: 1s everywhere (since it's the base)
+- Power System: interacts with all except maybe nothing
+- Communication: interacts with Structure (mounting), Onboard Computer (processing data), and possibly Attitude Control for telemetry.
+Wait, no. Communication is used to send data from the computer, so it doesn't directly interact with Attitude Control.
+
+Similarly, Payload might not interact with others unless specified.
+
+This is getting too vague. Maybe I should look up typical CubeSat DSMs or system interactions.
+
+Alternatively, perhaps each subsystem interacts with Structure (for mounting), Power (for power), and Onboard Computer (for control). So:
+
+- Each row would have 1s for Structure, Power, and Onboard Computer, plus any specific interactions.
+
+So:
+
+Structure: [1,1,1,1,1,1]
+
+Power: [1,1,1,1,1,1]
+
+Communication: [1 (S), 1 (P), 1 (O), 0, 0, 0] ?
+
+Wait, no. Communication needs to send data, which is processed by Onboard Computer, so it interacts with O.
+
+Similarly, Attitude Control sends data to Onboard Computer, so A interacts with O.
+
+Payload might interact with O and maybe C if it's a sensor payload that communicates data.
+
+So:
+
+Structure row: all 1s
+
+Power row: all 1s
+
+Communication row: S (1), P (needs power), O (processes data)
+
+Onboard Computer row: S, P, C, A, Pa
+
+Attitude Control row: S, P, O
+
+Payload row: S, P, O
+
+So the matrix would be:
+
+Row order: Structure, Power, Comm, Onboard, Attitude, Payload.
+
+Structure: [1,1,1,1,1,1]
+
+Power: [1,1,1,1,1,1]
+
+Comm: [1,1,1,1,0,0] (interacts with S, P, O)
+
+Onboard: [1,1,1,1,1,1] (interacts with all except maybe none?)
+
+Wait, no. Onboard Computer interacts with Structure (mounting), Power (power), Communication (data), Attitude Control (commands), and Payload (data). So yes, all.
+
+Attitude Control: [1,1,0,1,1,0] (interacts with S, P, O)
+
+Payload: [1,1,0,1,0,1] (interacts with S, P, O)
+
+Wait, but this might not be accurate. Let me try to define each row:
+
+Structure:
+- Interacts with all components because it's the base structure.
+
+Power System:
+- Provides power to all except maybe nothing? So interacts with all.
+
+Communication System:
+- Needs power (P), is mounted on Structure (S), and communicates data processed by Onboard Computer (O). So S, P, O.
+
+Onboard Computer:
+- Controls everything: Structure (maybe not directly?), Power (commands), Communication (data), Attitude Control (commands), Payload (data). So S, P, C, A, Pa.
+
+Attitude Control System:
+- Mounted on Structure (S), uses power (P), sends data to Onboard Computer (O).
+
+Payload:
+- Mounted on Structure (S), uses power (P), sends/receives data via Onboard Computer (O).
+
+So the matrix would be:
+
+Row 1: [1,1,1,1,1,1] - Structure
+
+Row 2: [1,1,1,1,1,1] - Power
+
+Row 3: [1,1,1,1,0,0] - Communication (interacts with S, P, O)
+
+Row 4: [1,1,1,1,1,1] - Onboard Computer
+
+Row 5: [1,1,0,1,1,0] - Attitude Control (S, P, O)
+
+Row 6: [1,1,0,1,0,1] - Payload (S, P, O, Pa?)
+
+Wait, but in the initial list, Payload is the last component. So row 6 would be:
+
+Structure: S=1
+
+Power: P=1
+
+Communication: C=0 (no direct interaction unless payload includes comm)
+
+Onboard Computer: O=1
+
+Attitude Control: A=0
+
+Payload: Pa=1
+
+So row 6: [1,1,0,1,0,1]
+
+Similarly, Attitude Control row:
+
+Structure: S=1
+
+Power: P=1
+
+Communication: C=0
+
+Onboard Computer: O=1
+
+Attitude Control: A=1 (itself)
+
+Payload: Pa=0
+
+So row 5: [1,1,0,1,1,0]
+
+Wait, but Attitude Control doesn't interact with Payload unless the payload is part of it, which it's not.
+
+Similarly, Communication System might not interact with Attitude Control or Payload unless specific. So:
+
+Row 3 (Communication): S=1, P=1, O=1, A=0, Pa=0
+
+So putting it all together:
+
+Structure: [1,1,1,1,1,1]
+
+Power: [1,1,1,1,1,1]
+
+Comm: [1,1,1,1,0,0]
+
+Onboard: [1,1,1,1,1,1]
+
+Attitude: [1,1,0,1,1,0]
+
+Payload: [1,1,0,1,0,1]
+
+Wait, but this might not be accurate. For example, does the Attitude Control System interact with Payload? Probably not unless the payload is part of the attitude control, which it's not.
+
+Similarly, Communication System doesn't need to interact with Attitude or Payload beyond what's processed by Onboard Computer.
+
+So the final matrix would look like this:
+
+[
+ [1, 1, 1, 1, 1, 1],
+ [1, 1, 1, 1, 1, 1],
+ [1, 1, 1, 1, 0, 0],
+ [1, 1, 1, 1, 1, 1],
+ [1, 1, 0, 1, 1, 0],
+ [1, 1, 0, 1, 0, 1]
+]
+
+But wait, the initial example used 0 for no interaction and 1 for yes. So I think this is correct.
+</think>
+
+final response = [[1,1,1,1,1,1],[1,1,1,1,1,1],[1,1,1,1,0,0],[1,1,1,1,1,1],[1,1,0,1,1,0],[1,1,0,1,0,1]]
+2025-02-22 21:03:12,675 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Matrix: [[1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 0, 0], [1, 1, 1, 1, 1, 1], [1, 1, 0, 1, 1, 0], [1, 1, 0, 1, 0, 1]]
+2025-02-22 21:03:12,676 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Final Matrix:
+[[1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 0, 0], [1, 1, 1, 1, 1, 1], [1, 1, 0, 1, 1, 0], [1, 1, 0, 1, 0, 1]]
+2025-02-22 21:03:12,677 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - --------------------------------------------------
+2025-02-22 21:03:12,678 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Matrix from response.
+2025-02-22 21:03:12,680 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - At run 2/5
+2025-02-22 21:03:12,681 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Matrix: [[1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 0, 0], [1, 1, 1, 1, 1, 1], [1, 1, 0, 1, 1, 0], [1, 1, 0, 1, 0, 1]]
+2025-02-22 21:03:12,682 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - --------------------------------------------------
+2025-02-22 21:03:22,693 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Run 3/5
+2025-02-22 21:03:22,729 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - DEBUG: Initializing LLMInference.
+2025-02-22 21:03:22,730 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Initialized LLM inference for system: CubeSat (nanosatellite)
+2025-02-22 21:03:22,731 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Initialized DSM for system: CubeSat (nanosatellite)
+2025-02-22 21:03:22,731 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Inference model: ollama:deepseek-r1:14b-5k
+2025-02-22 21:03:22,732 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Predicted Components: ['Structure', 'Power System', 'Communication System', 'Onboard Computer', 'Attitude Control System', 'Payload']
+2025-02-22 21:03:22,733 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Number of components: 6
+2025-02-22 21:03:22,734 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Predicted components for query: ['Structure', 'Power System', 'Communication System', 'Onboard Computer', 'Attitude Control System', 'Payload']
+2025-02-22 21:03:22,735 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Query: 
+        Please identify system-level hierarchical whole-part relationships between the components of CubeSat (nanosatellite), as listed below, and represent them in a Design Structure Matrix (DSM) format.          
+        The relationships should be articulated in plain English, capturing the essence of their interactions.         
+        Here is the list of subsystems/components to analyze: ['Structure', 'Power System', 'Communication System', 'Onboard Computer', 'Attitude Control System', 'Payload']         
+        The DSM should clearly indicate the interactions between these components as 1 exist and 0 does not exist, considering both the presence and nature of these connections.         
+        Present the output in a square matrix format (number of rows and columns MUST be the same as the number of components = 6 for this example), with rows and columns labeled accordingly.         
+        Diagonal elements should be 1 in DSM matrix since each component interacts with itself.         
+        If you don't know the answer, just write 2 for the specific cell that you are unsure of. A worst case scenario of the **as a list of lists** shown below (diagonal elements are 1 and rest are 2). Don't make up an answer.         
+        final response = [[1, 2, 2, 2, 2, 2, 2],[2, 1, 2, 2, 2, 2, 2],[2, 2, 1, 2, 2, 2, 2],[2, 2, 2, 1, 2, 2, 2],[2, 2, 2, 2, 1, 2, 2],[2, 2, 2, 2, 2, 1, 2],[2, 2, 2, 2, 2, 2, 1]] for 7 components         
+        final response = [[1, 2, 2],[2, 1, 2],[2, 2, 1]] for 3 components         
+        IMPORTANT: Your response must **ONLY** contain a valid **as a list of lists** in the following example format 7x7 matrix.         
+        The below list of lists is just an example format of a response. **Replace** the values with your **actual analysis** while providing your response with parameter of 'final response'.        
+        final response = [[1, 0, 0, 0, 0, 0, 0],[0, 1, 0, 0, 0, 0, 0],[0, 0, 1, 0, 0, 0, 0],   [0, 0, 0, 1, 0, 0, 0],[0, 0, 0, 0, 1, 0, 0],[0, 0, 0, 0, 0, 1, 0],[0, 0, 0, 0, 0, 0, 1]] for 7 components         
+        final response = [[1, 0, 0],[0, 1, 0],[0, 0, 1]] for 3 components         
+        IMPORTANT: THE FORMAT OF THE OUTPUT MUST BE AS LIST OF LISTS ONLY SIMILAR TO THE ONE ABOVE (NO LATEX, CODE, OR OTHER ENCODINGS).
+        
+2025-02-22 21:04:38,775 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - LLM Response: <think>
+Alright, I need to create a Design Structure Matrix (DSM) for the CubeSat subsystems. The components are Structure, Power System, Communication System, Onboard Computer, Attitude Control System, and Payload. That's six components, so the matrix will be 6x6.
+
+First, each component interacts with itself, so all diagonal elements are 1.
+
+Next, I'll go through each pair of components to see if they have a connection.
+
+1. **Structure & Power System**: The structure holds the power system, so they interact.
+2. **Structure & Communication System**: The structure supports the communication hardware.
+3. **Structure & Onboard Computer**: The computer is mounted on the structure.
+4. **Structure & Attitude Control System**: The attitude control (like reaction wheels) is part of the structure.
+5. **Structure & Payload**: The payload is attached to the structure.
+
+So, Structure interacts with all others except maybe not directly with Payload? Wait, no, the structure supports it, so yes.
+
+**Power System**: It provides power to all subsystems. So it interacts with Communication, Onboard Computer, Attitude Control, and Payload. Does it interact with Structure? Yes, because the structure holds the power components.
+
+So Power System has interactions with all except maybe not directly with Structure? Wait, no, they are connected through mounting, so yes.
+
+**Communication System**: It communicates data, which is processed by the Onboard Computer. It might also need power from the Power System and be mounted on the Structure. Does it interact with Attitude Control or Payload? Probably not directly unless the payload includes communication modules, but generally no.
+
+So Communication interacts with Structure (mounting), Power (power supply), and Onboard Computer (processing data).
+
+**Onboard Computer**: It's the central processing unit. It interacts with all subsystems except maybe not directly with Structure. It needs data from Attitude Control, communicates via Communication System, manages power, etc.
+
+So Onboard Computer interacts with Power, Communication, Attitude Control, and Payload. Does it interact with Structure? Maybe not directly unless for mounting, but functionally, no.
+
+**Attitude Control System**: It provides orientation data to the Onboard Computer and might communicate with the Communication System if sending telemetry. It needs power from the Power System and is mounted on the Structure.
+
+So Attitude Control interacts with Structure (mounting), Power (power supply), Onboard Computer (data processing), and possibly Communication for telemetry.
+
+**Payload**: It's the mission-specific component. It likely interfaces with the Onboard Computer to send data, uses power, and is mounted on the structure. It might not interact directly with Attitude Control or Communication unless it's part of the payload.
+
+So Payload interacts with Structure (mounting), Power (power supply), and Onboard Computer (data processing).
+
+Now, let me map this out:
+
+- **Structure** interacts with all except maybe none? No, it supports everything.
+- **Power System** interacts with all except maybe nothing?
+Wait, no. Each component needs power, so yes.
+
+But wait, in reality, the Power System provides power to all other systems, but does each system directly interact with Power? Yes, because they need power.
+
+Similarly, Onboard Computer is connected to all for data processing.
+
+So let's go step by step:
+
+1. **Structure**:
+   - Structure interacts with itself (1).
+   - It interacts with Power System (1), Communication (1), Onboard Computer (1), Attitude Control (1), Payload (1).
+
+2. **Power System**:
+   - Interacts with Structure (1), and provides power to all others: Communication, Onboard Computer, Attitude Control, Payload.
+
+3. **Communication System**:
+   - Interacts with Structure (mounting), Power (power), Onboard Computer (processing data). Maybe not with Attitude or Payload unless specific.
+
+4. **Onboard Computer**:
+   - Interacts with all except maybe none? It processes data from Attitude, communicates via Communication, manages power, and handles Payload data.
+
+5. **Attitude Control System**:
+   - Interacts with Structure (mounting), Power (power), Onboard Computer (data). Maybe not with others unless specific.
+
+6. **Payload**:
+   - Interacts with Structure (mounting), Power (power), Onboard Computer (processing).
+
+So, the matrix would have 1s where they interact and 0 otherwise, except diagonals are 1.
+
+Wait, but in the example given, the user used 2 for unknowns. But I need to use 0 or 1 based on actual interactions.
+
+Let me structure it:
+
+- Structure (S) interacts with all: S, P, C, O, A, Pa.
+- Power System (P) interacts with S, C, O, A, Pa.
+- Communication (C) interacts with S, P, O.
+- Onboard Computer (O) interacts with S, P, C, A, Pa.
+- Attitude Control (A) interacts with S, P, O.
+- Payload (Pa) interacts with S, P, O.
+
+So the matrix would be:
+
+Row order: Structure, Power, Comm, Onboard, Attitude, Payload.
+
+Each row represents what the component interacts with.
+
+Structure's row: [1,1,1,1,1,1]
+
+Power System's row: [1,1,1,1,1,1] (since it provides power to all)
+
+Wait no, Power doesn't interact with Attitude and Payload beyond providing power. But in DSM, if they are connected via a shared resource like power, is that considered an interaction? Or only direct interfaces.
+
+In CubeSats, each subsystem gets power from the Power System, but their interactions might be more about functional dependencies rather than physical connections.
+
+So perhaps:
+
+- Structure interacts with all except maybe none.
+- Power interacts with all except maybe nothing.
+But in reality, each component is connected to Power for power and to Onboard Computer for control.
+
+Wait, this is getting confusing. Let me think again.
+
+Each subsystem has a dependency on the Power System (for power) and the Onboard Computer (for commands and data processing). So:
+
+- Structure: interacts with itself, Power, Onboard.
+- Power: interacts with all except maybe nothing? No, it provides power to all.
+Wait, but in terms of DSM, if a component is supplied by another, that's an interaction.
+
+So perhaps:
+
+Structure interacts with Power (needs power), Onboard Computer (for commands), and Attitude Control/Payload via the computer.
+
+But I'm getting stuck. Maybe it's better to look for typical CubeSat interactions.
+
+Typically:
+
+- Structure supports all components.
+- Power provides power to all.
+- Onboard Computer controls everything.
+- Communication sends data, which is processed by the computer.
+- Attitude Control interfaces with the computer.
+- Payload interfaces with the computer and may use communication.
+
+So in terms of direct interactions (not via shared resources):
+
+Structure interacts with all except maybe nothing? No, it's the base.
+
+Power interacts with all except maybe nothing.
+
+Onboard Computer interacts with all except Structure? Or does it interact with Structure for mounting?
+
+Wait, no. The Onboard Computer is part of the structure, so they are connected physically, but functionally, the computer interfaces with other systems via software or electrical connections.
+
+So perhaps:
+
+- Structure: 1s everywhere (since it's the base)
+- Power System: interacts with all except maybe nothing
+- Communication: interacts with Structure (mounting), Onboard Computer (processing data), and possibly Attitude Control for telemetry.
+Wait, no. Communication is used to send data from the computer, so it doesn't directly interact with Attitude Control.
+
+Similarly, Payload might not interact with others unless specified.
+
+This is getting too vague. Maybe I should look up typical CubeSat DSMs or system interactions.
+
+Alternatively, perhaps each subsystem interacts with Structure (for mounting), Power (for power), and Onboard Computer (for control). So:
+
+- Each row would have 1s for Structure, Power, and Onboard Computer, plus any specific interactions.
+
+So:
+
+Structure: [1,1,1,1,1,1]
+
+Power: [1,1,1,1,1,1]
+
+Communication: [1 (S), 1 (P), 1 (O), 0, 0, 0] ?
+
+Wait, no. Communication needs to send data, which is processed by Onboard Computer, so it interacts with O.
+
+Similarly, Attitude Control sends data to Onboard Computer, so A interacts with O.
+
+Payload might interact with O and maybe C if it's a sensor payload that communicates data.
+
+So:
+
+Structure row: all 1s
+
+Power row: all 1s
+
+Communication row: S (1), P (needs power), O (processes data)
+
+Onboard Computer row: S, P, C, A, Pa
+
+Attitude Control row: S, P, O
+
+Payload row: S, P, O
+
+So the matrix would be:
+
+Row order: Structure, Power, Comm, Onboard, Attitude, Payload.
+
+Structure: [1,1,1,1,1,1]
+
+Power: [1,1,1,1,1,1]
+
+Comm: [1,1,1,1,0,0] (interacts with S, P, O)
+
+Onboard: [1,1,1,1,1,1] (interacts with all except maybe none?)
+
+Wait, no. Onboard Computer interacts with Structure (mounting), Power (power), Communication (data), Attitude Control (commands), and Payload (data). So yes, all.
+
+Attitude Control: [1,1,0,1,1,0] (interacts with S, P, O)
+
+Payload: [1,1,0,1,0,1] (interacts with S, P, O)
+
+Wait, but this might not be accurate. Let me try to define each row:
+
+Structure:
+- Interacts with all components because it's the base structure.
+
+Power System:
+- Provides power to all except maybe nothing? So interacts with all.
+
+Communication System:
+- Needs power (P), is mounted on Structure (S), and communicates data processed by Onboard Computer (O). So S, P, O.
+
+Onboard Computer:
+- Controls everything: Structure (maybe not directly?), Power (commands), Communication (data), Attitude Control (commands), Payload (data). So S, P, C, A, Pa.
+
+Attitude Control System:
+- Mounted on Structure (S), uses power (P), sends data to Onboard Computer (O).
+
+Payload:
+- Mounted on Structure (S), uses power (P), sends/receives data via Onboard Computer (O).
+
+So the matrix would be:
+
+Row 1: [1,1,1,1,1,1] - Structure
+
+Row 2: [1,1,1,1,1,1] - Power
+
+Row 3: [1,1,1,1,0,0] - Communication (interacts with S, P, O)
+
+Row 4: [1,1,1,1,1,1] - Onboard Computer
+
+Row 5: [1,1,0,1,1,0] - Attitude Control (S, P, O)
+
+Row 6: [1,1,0,1,0,1] - Payload (S, P, O, Pa?)
+
+Wait, but in the initial list, Payload is the last component. So row 6 would be:
+
+Structure: S=1
+
+Power: P=1
+
+Communication: C=0 (no direct interaction unless payload includes comm)
+
+Onboard Computer: O=1
+
+Attitude Control: A=0
+
+Payload: Pa=1
+
+So row 6: [1,1,0,1,0,1]
+
+Similarly, Attitude Control row:
+
+Structure: S=1
+
+Power: P=1
+
+Communication: C=0
+
+Onboard Computer: O=1
+
+Attitude Control: A=1 (itself)
+
+Payload: Pa=0
+
+So row 5: [1,1,0,1,1,0]
+
+Wait, but Attitude Control doesn't interact with Payload unless the payload is part of it, which it's not.
+
+Similarly, Communication System might not interact with Attitude Control or Payload unless specific. So:
+
+Row 3 (Communication): S=1, P=1, O=1, A=0, Pa=0
+
+So putting it all together:
+
+Structure: [1,1,1,1,1,1]
+
+Power: [1,1,1,1,1,1]
+
+Comm: [1,1,1,1,0,0]
+
+Onboard: [1,1,1,1,1,1]
+
+Attitude: [1,1,0,1,1,0]
+
+Payload: [1,1,0,1,0,1]
+
+Wait, but this might not be accurate. For example, does the Attitude Control System interact with Payload? Probably not unless the payload is part of the attitude control, which it's not.
+
+Similarly, Communication System doesn't need to interact with Attitude or Payload beyond what's processed by Onboard Computer.
+
+So the final matrix would look like this:
+
+[
+ [1, 1, 1, 1, 1, 1],
+ [1, 1, 1, 1, 1, 1],
+ [1, 1, 1, 1, 0, 0],
+ [1, 1, 1, 1, 1, 1],
+ [1, 1, 0, 1, 1, 0],
+ [1, 1, 0, 1, 0, 1]
+]
+
+But wait, the initial example used 0 for no interaction and 1 for yes. So I think this is correct.
+</think>
+
+final response = [[1,1,1,1,1,1],[1,1,1,1,1,1],[1,1,1,1,0,0],[1,1,1,1,1,1],[1,1,0,1,1,0],[1,1,0,1,0,1]]
+2025-02-22 21:04:38,776 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Response: <think>
+Alright, I need to create a Design Structure Matrix (DSM) for the CubeSat subsystems. The components are Structure, Power System, Communication System, Onboard Computer, Attitude Control System, and Payload. That's six components, so the matrix will be 6x6.
+
+First, each component interacts with itself, so all diagonal elements are 1.
+
+Next, I'll go through each pair of components to see if they have a connection.
+
+1. **Structure & Power System**: The structure holds the power system, so they interact.
+2. **Structure & Communication System**: The structure supports the communication hardware.
+3. **Structure & Onboard Computer**: The computer is mounted on the structure.
+4. **Structure & Attitude Control System**: The attitude control (like reaction wheels) is part of the structure.
+5. **Structure & Payload**: The payload is attached to the structure.
+
+So, Structure interacts with all others except maybe not directly with Payload? Wait, no, the structure supports it, so yes.
+
+**Power System**: It provides power to all subsystems. So it interacts with Communication, Onboard Computer, Attitude Control, and Payload. Does it interact with Structure? Yes, because the structure holds the power components.
+
+So Power System has interactions with all except maybe not directly with Structure? Wait, no, they are connected through mounting, so yes.
+
+**Communication System**: It communicates data, which is processed by the Onboard Computer. It might also need power from the Power System and be mounted on the Structure. Does it interact with Attitude Control or Payload? Probably not directly unless the payload includes communication modules, but generally no.
+
+So Communication interacts with Structure (mounting), Power (power supply), and Onboard Computer (processing data).
+
+**Onboard Computer**: It's the central processing unit. It interacts with all subsystems except maybe not directly with Structure. It needs data from Attitude Control, communicates via Communication System, manages power, etc.
+
+So Onboard Computer interacts with Power, Communication, Attitude Control, and Payload. Does it interact with Structure? Maybe not directly unless for mounting, but functionally, no.
+
+**Attitude Control System**: It provides orientation data to the Onboard Computer and might communicate with the Communication System if sending telemetry. It needs power from the Power System and is mounted on the Structure.
+
+So Attitude Control interacts with Structure (mounting), Power (power supply), Onboard Computer (data processing), and possibly Communication for telemetry.
+
+**Payload**: It's the mission-specific component. It likely interfaces with the Onboard Computer to send data, uses power, and is mounted on the structure. It might not interact directly with Attitude Control or Communication unless it's part of the payload.
+
+So Payload interacts with Structure (mounting), Power (power supply), and Onboard Computer (data processing).
+
+Now, let me map this out:
+
+- **Structure** interacts with all except maybe none? No, it supports everything.
+- **Power System** interacts with all except maybe nothing?
+Wait, no. Each component needs power, so yes.
+
+But wait, in reality, the Power System provides power to all other systems, but does each system directly interact with Power? Yes, because they need power.
+
+Similarly, Onboard Computer is connected to all for data processing.
+
+So let's go step by step:
+
+1. **Structure**:
+   - Structure interacts with itself (1).
+   - It interacts with Power System (1), Communication (1), Onboard Computer (1), Attitude Control (1), Payload (1).
+
+2. **Power System**:
+   - Interacts with Structure (1), and provides power to all others: Communication, Onboard Computer, Attitude Control, Payload.
+
+3. **Communication System**:
+   - Interacts with Structure (mounting), Power (power), Onboard Computer (processing data). Maybe not with Attitude or Payload unless specific.
+
+4. **Onboard Computer**:
+   - Interacts with all except maybe none? It processes data from Attitude, communicates via Communication, manages power, and handles Payload data.
+
+5. **Attitude Control System**:
+   - Interacts with Structure (mounting), Power (power), Onboard Computer (data). Maybe not with others unless specific.
+
+6. **Payload**:
+   - Interacts with Structure (mounting), Power (power), Onboard Computer (processing).
+
+So, the matrix would have 1s where they interact and 0 otherwise, except diagonals are 1.
+
+Wait, but in the example given, the user used 2 for unknowns. But I need to use 0 or 1 based on actual interactions.
+
+Let me structure it:
+
+- Structure (S) interacts with all: S, P, C, O, A, Pa.
+- Power System (P) interacts with S, C, O, A, Pa.
+- Communication (C) interacts with S, P, O.
+- Onboard Computer (O) interacts with S, P, C, A, Pa.
+- Attitude Control (A) interacts with S, P, O.
+- Payload (Pa) interacts with S, P, O.
+
+So the matrix would be:
+
+Row order: Structure, Power, Comm, Onboard, Attitude, Payload.
+
+Each row represents what the component interacts with.
+
+Structure's row: [1,1,1,1,1,1]
+
+Power System's row: [1,1,1,1,1,1] (since it provides power to all)
+
+Wait no, Power doesn't interact with Attitude and Payload beyond providing power. But in DSM, if they are connected via a shared resource like power, is that considered an interaction? Or only direct interfaces.
+
+In CubeSats, each subsystem gets power from the Power System, but their interactions might be more about functional dependencies rather than physical connections.
+
+So perhaps:
+
+- Structure interacts with all except maybe none.
+- Power interacts with all except maybe nothing.
+But in reality, each component is connected to Power for power and to Onboard Computer for control.
+
+Wait, this is getting confusing. Let me think again.
+
+Each subsystem has a dependency on the Power System (for power) and the Onboard Computer (for commands and data processing). So:
+
+- Structure: interacts with itself, Power, Onboard.
+- Power: interacts with all except maybe nothing? No, it provides power to all.
+Wait, but in terms of DSM, if a component is supplied by another, that's an interaction.
+
+So perhaps:
+
+Structure interacts with Power (needs power), Onboard Computer (for commands), and Attitude Control/Payload via the computer.
+
+But I'm getting stuck. Maybe it's better to look for typical CubeSat interactions.
+
+Typically:
+
+- Structure supports all components.
+- Power provides power to all.
+- Onboard Computer controls everything.
+- Communication sends data, which is processed by the computer.
+- Attitude Control interfaces with the computer.
+- Payload interfaces with the computer and may use communication.
+
+So in terms of direct interactions (not via shared resources):
+
+Structure interacts with all except maybe nothing? No, it's the base.
+
+Power interacts with all except maybe nothing.
+
+Onboard Computer interacts with all except Structure? Or does it interact with Structure for mounting?
+
+Wait, no. The Onboard Computer is part of the structure, so they are connected physically, but functionally, the computer interfaces with other systems via software or electrical connections.
+
+So perhaps:
+
+- Structure: 1s everywhere (since it's the base)
+- Power System: interacts with all except maybe nothing
+- Communication: interacts with Structure (mounting), Onboard Computer (processing data), and possibly Attitude Control for telemetry.
+Wait, no. Communication is used to send data from the computer, so it doesn't directly interact with Attitude Control.
+
+Similarly, Payload might not interact with others unless specified.
+
+This is getting too vague. Maybe I should look up typical CubeSat DSMs or system interactions.
+
+Alternatively, perhaps each subsystem interacts with Structure (for mounting), Power (for power), and Onboard Computer (for control). So:
+
+- Each row would have 1s for Structure, Power, and Onboard Computer, plus any specific interactions.
+
+So:
+
+Structure: [1,1,1,1,1,1]
+
+Power: [1,1,1,1,1,1]
+
+Communication: [1 (S), 1 (P), 1 (O), 0, 0, 0] ?
+
+Wait, no. Communication needs to send data, which is processed by Onboard Computer, so it interacts with O.
+
+Similarly, Attitude Control sends data to Onboard Computer, so A interacts with O.
+
+Payload might interact with O and maybe C if it's a sensor payload that communicates data.
+
+So:
+
+Structure row: all 1s
+
+Power row: all 1s
+
+Communication row: S (1), P (needs power), O (processes data)
+
+Onboard Computer row: S, P, C, A, Pa
+
+Attitude Control row: S, P, O
+
+Payload row: S, P, O
+
+So the matrix would be:
+
+Row order: Structure, Power, Comm, Onboard, Attitude, Payload.
+
+Structure: [1,1,1,1,1,1]
+
+Power: [1,1,1,1,1,1]
+
+Comm: [1,1,1,1,0,0] (interacts with S, P, O)
+
+Onboard: [1,1,1,1,1,1] (interacts with all except maybe none?)
+
+Wait, no. Onboard Computer interacts with Structure (mounting), Power (power), Communication (data), Attitude Control (commands), and Payload (data). So yes, all.
+
+Attitude Control: [1,1,0,1,1,0] (interacts with S, P, O)
+
+Payload: [1,1,0,1,0,1] (interacts with S, P, O)
+
+Wait, but this might not be accurate. Let me try to define each row:
+
+Structure:
+- Interacts with all components because it's the base structure.
+
+Power System:
+- Provides power to all except maybe nothing? So interacts with all.
+
+Communication System:
+- Needs power (P), is mounted on Structure (S), and communicates data processed by Onboard Computer (O). So S, P, O.
+
+Onboard Computer:
+- Controls everything: Structure (maybe not directly?), Power (commands), Communication (data), Attitude Control (commands), Payload (data). So S, P, C, A, Pa.
+
+Attitude Control System:
+- Mounted on Structure (S), uses power (P), sends data to Onboard Computer (O).
+
+Payload:
+- Mounted on Structure (S), uses power (P), sends/receives data via Onboard Computer (O).
+
+So the matrix would be:
+
+Row 1: [1,1,1,1,1,1] - Structure
+
+Row 2: [1,1,1,1,1,1] - Power
+
+Row 3: [1,1,1,1,0,0] - Communication (interacts with S, P, O)
+
+Row 4: [1,1,1,1,1,1] - Onboard Computer
+
+Row 5: [1,1,0,1,1,0] - Attitude Control (S, P, O)
+
+Row 6: [1,1,0,1,0,1] - Payload (S, P, O, Pa?)
+
+Wait, but in the initial list, Payload is the last component. So row 6 would be:
+
+Structure: S=1
+
+Power: P=1
+
+Communication: C=0 (no direct interaction unless payload includes comm)
+
+Onboard Computer: O=1
+
+Attitude Control: A=0
+
+Payload: Pa=1
+
+So row 6: [1,1,0,1,0,1]
+
+Similarly, Attitude Control row:
+
+Structure: S=1
+
+Power: P=1
+
+Communication: C=0
+
+Onboard Computer: O=1
+
+Attitude Control: A=1 (itself)
+
+Payload: Pa=0
+
+So row 5: [1,1,0,1,1,0]
+
+Wait, but Attitude Control doesn't interact with Payload unless the payload is part of it, which it's not.
+
+Similarly, Communication System might not interact with Attitude Control or Payload unless specific. So:
+
+Row 3 (Communication): S=1, P=1, O=1, A=0, Pa=0
+
+So putting it all together:
+
+Structure: [1,1,1,1,1,1]
+
+Power: [1,1,1,1,1,1]
+
+Comm: [1,1,1,1,0,0]
+
+Onboard: [1,1,1,1,1,1]
+
+Attitude: [1,1,0,1,1,0]
+
+Payload: [1,1,0,1,0,1]
+
+Wait, but this might not be accurate. For example, does the Attitude Control System interact with Payload? Probably not unless the payload is part of the attitude control, which it's not.
+
+Similarly, Communication System doesn't need to interact with Attitude or Payload beyond what's processed by Onboard Computer.
+
+So the final matrix would look like this:
+
+[
+ [1, 1, 1, 1, 1, 1],
+ [1, 1, 1, 1, 1, 1],
+ [1, 1, 1, 1, 0, 0],
+ [1, 1, 1, 1, 1, 1],
+ [1, 1, 0, 1, 1, 0],
+ [1, 1, 0, 1, 0, 1]
+]
+
+But wait, the initial example used 0 for no interaction and 1 for yes. So I think this is correct.
+</think>
+
+final response = [[1,1,1,1,1,1],[1,1,1,1,1,1],[1,1,1,1,0,0],[1,1,1,1,1,1],[1,1,0,1,1,0],[1,1,0,1,0,1]]
+2025-02-22 21:04:38,778 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Matrix: [[1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 0, 0], [1, 1, 1, 1, 1, 1], [1, 1, 0, 1, 1, 0], [1, 1, 0, 1, 0, 1]]
+2025-02-22 21:04:38,778 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Final Matrix:
+[[1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 0, 0], [1, 1, 1, 1, 1, 1], [1, 1, 0, 1, 1, 0], [1, 1, 0, 1, 0, 1]]
+2025-02-22 21:04:38,779 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - --------------------------------------------------
+2025-02-22 21:04:38,781 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Matrix from response.
+2025-02-22 21:04:38,782 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - At run 3/5
+2025-02-22 21:04:38,782 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Matrix: [[1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 0, 0], [1, 1, 1, 1, 1, 1], [1, 1, 0, 1, 1, 0], [1, 1, 0, 1, 0, 1]]
+2025-02-22 21:04:38,783 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - --------------------------------------------------
+2025-02-22 21:04:48,795 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Run 4/5
+2025-02-22 21:04:48,830 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - DEBUG: Initializing LLMInference.
+2025-02-22 21:04:48,831 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Initialized LLM inference for system: CubeSat (nanosatellite)
+2025-02-22 21:04:48,832 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Initialized DSM for system: CubeSat (nanosatellite)
+2025-02-22 21:04:48,833 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Inference model: ollama:deepseek-r1:14b-5k
+2025-02-22 21:04:48,834 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Predicted Components: ['Structure', 'Power System', 'Communication System', 'Onboard Computer', 'Attitude Control System', 'Payload']
+2025-02-22 21:04:48,835 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Number of components: 6
+2025-02-22 21:04:48,835 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Predicted components for query: ['Structure', 'Power System', 'Communication System', 'Onboard Computer', 'Attitude Control System', 'Payload']
+2025-02-22 21:04:48,836 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Query: 
+        Please identify system-level hierarchical whole-part relationships between the components of CubeSat (nanosatellite), as listed below, and represent them in a Design Structure Matrix (DSM) format.          
+        The relationships should be articulated in plain English, capturing the essence of their interactions.         
+        Here is the list of subsystems/components to analyze: ['Structure', 'Power System', 'Communication System', 'Onboard Computer', 'Attitude Control System', 'Payload']         
+        The DSM should clearly indicate the interactions between these components as 1 exist and 0 does not exist, considering both the presence and nature of these connections.         
+        Present the output in a square matrix format (number of rows and columns MUST be the same as the number of components = 6 for this example), with rows and columns labeled accordingly.         
+        Diagonal elements should be 1 in DSM matrix since each component interacts with itself.         
+        If you don't know the answer, just write 2 for the specific cell that you are unsure of. A worst case scenario of the **as a list of lists** shown below (diagonal elements are 1 and rest are 2). Don't make up an answer.         
+        final response = [[1, 2, 2, 2, 2, 2, 2],[2, 1, 2, 2, 2, 2, 2],[2, 2, 1, 2, 2, 2, 2],[2, 2, 2, 1, 2, 2, 2],[2, 2, 2, 2, 1, 2, 2],[2, 2, 2, 2, 2, 1, 2],[2, 2, 2, 2, 2, 2, 1]] for 7 components         
+        final response = [[1, 2, 2],[2, 1, 2],[2, 2, 1]] for 3 components         
+        IMPORTANT: Your response must **ONLY** contain a valid **as a list of lists** in the following example format 7x7 matrix.         
+        The below list of lists is just an example format of a response. **Replace** the values with your **actual analysis** while providing your response with parameter of 'final response'.        
+        final response = [[1, 0, 0, 0, 0, 0, 0],[0, 1, 0, 0, 0, 0, 0],[0, 0, 1, 0, 0, 0, 0],   [0, 0, 0, 1, 0, 0, 0],[0, 0, 0, 0, 1, 0, 0],[0, 0, 0, 0, 0, 1, 0],[0, 0, 0, 0, 0, 0, 1]] for 7 components         
+        final response = [[1, 0, 0],[0, 1, 0],[0, 0, 1]] for 3 components         
+        IMPORTANT: THE FORMAT OF THE OUTPUT MUST BE AS LIST OF LISTS ONLY SIMILAR TO THE ONE ABOVE (NO LATEX, CODE, OR OTHER ENCODINGS).
+        
+2025-02-22 21:06:04,885 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - LLM Response: <think>
+Alright, I need to create a Design Structure Matrix (DSM) for the CubeSat subsystems. The components are Structure, Power System, Communication System, Onboard Computer, Attitude Control System, and Payload. That's six components, so the matrix will be 6x6.
+
+First, each component interacts with itself, so all diagonal elements are 1.
+
+Next, I'll go through each pair of components to see if they have a connection.
+
+1. **Structure & Power System**: The structure holds the power system, so they interact.
+2. **Structure & Communication System**: The structure supports the communication hardware.
+3. **Structure & Onboard Computer**: The computer is mounted on the structure.
+4. **Structure & Attitude Control System**: The attitude control (like reaction wheels) is part of the structure.
+5. **Structure & Payload**: The payload is attached to the structure.
+
+So, Structure interacts with all others except maybe not directly with Payload? Wait, no, the structure supports it, so yes.
+
+**Power System**: It provides power to all subsystems. So it interacts with Communication, Onboard Computer, Attitude Control, and Payload. Does it interact with Structure? Yes, because the structure holds the power components.
+
+So Power System has interactions with all except maybe not directly with Structure? Wait, no, they are connected through mounting, so yes.
+
+**Communication System**: It communicates data, which is processed by the Onboard Computer. It might also need power from the Power System and be mounted on the Structure. Does it interact with Attitude Control or Payload? Probably not directly unless the payload includes communication modules, but generally no.
+
+So Communication interacts with Structure (mounting), Power (power supply), and Onboard Computer (processing data).
+
+**Onboard Computer**: It's the central processing unit. It interacts with all subsystems except maybe not directly with Structure. It needs data from Attitude Control, communicates via Communication System, manages power, etc.
+
+So Onboard Computer interacts with Power, Communication, Attitude Control, and Payload. Does it interact with Structure? Maybe not directly unless for mounting, but functionally, no.
+
+**Attitude Control System**: It provides orientation data to the Onboard Computer and might communicate with the Communication System if sending telemetry. It needs power from the Power System and is mounted on the Structure.
+
+So Attitude Control interacts with Structure (mounting), Power (power supply), Onboard Computer (data processing), and possibly Communication for telemetry.
+
+**Payload**: It's the mission-specific component. It likely interfaces with the Onboard Computer to send data, uses power, and is mounted on the structure. It might not interact directly with Attitude Control or Communication unless it's part of the payload.
+
+So Payload interacts with Structure (mounting), Power (power supply), and Onboard Computer (data processing).
+
+Now, let me map this out:
+
+- **Structure** interacts with all except maybe none? No, it supports everything.
+- **Power System** interacts with all except maybe nothing?
+Wait, no. Each component needs power, so yes.
+
+But wait, in reality, the Power System provides power to all other systems, but does each system directly interact with Power? Yes, because they need power.
+
+Similarly, Onboard Computer is connected to all for data processing.
+
+So let's go step by step:
+
+1. **Structure**:
+   - Structure interacts with itself (1).
+   - It interacts with Power System (1), Communication (1), Onboard Computer (1), Attitude Control (1), Payload (1).
+
+2. **Power System**:
+   - Interacts with Structure (1), and provides power to all others: Communication, Onboard Computer, Attitude Control, Payload.
+
+3. **Communication System**:
+   - Interacts with Structure (mounting), Power (power), Onboard Computer (processing data). Maybe not with Attitude or Payload unless specific.
+
+4. **Onboard Computer**:
+   - Interacts with all except maybe none? It processes data from Attitude, communicates via Communication, manages power, and handles Payload data.
+
+5. **Attitude Control System**:
+   - Interacts with Structure (mounting), Power (power), Onboard Computer (data). Maybe not with others unless specific.
+
+6. **Payload**:
+   - Interacts with Structure (mounting), Power (power), Onboard Computer (processing).
+
+So, the matrix would have 1s where they interact and 0 otherwise, except diagonals are 1.
+
+Wait, but in the example given, the user used 2 for unknowns. But I need to use 0 or 1 based on actual interactions.
+
+Let me structure it:
+
+- Structure (S) interacts with all: S, P, C, O, A, Pa.
+- Power System (P) interacts with S, C, O, A, Pa.
+- Communication (C) interacts with S, P, O.
+- Onboard Computer (O) interacts with S, P, C, A, Pa.
+- Attitude Control (A) interacts with S, P, O.
+- Payload (Pa) interacts with S, P, O.
+
+So the matrix would be:
+
+Row order: Structure, Power, Comm, Onboard, Attitude, Payload.
+
+Each row represents what the component interacts with.
+
+Structure's row: [1,1,1,1,1,1]
+
+Power System's row: [1,1,1,1,1,1] (since it provides power to all)
+
+Wait no, Power doesn't interact with Attitude and Payload beyond providing power. But in DSM, if they are connected via a shared resource like power, is that considered an interaction? Or only direct interfaces.
+
+In CubeSats, each subsystem gets power from the Power System, but their interactions might be more about functional dependencies rather than physical connections.
+
+So perhaps:
+
+- Structure interacts with all except maybe none.
+- Power interacts with all except maybe nothing.
+But in reality, each component is connected to Power for power and to Onboard Computer for control.
+
+Wait, this is getting confusing. Let me think again.
+
+Each subsystem has a dependency on the Power System (for power) and the Onboard Computer (for commands and data processing). So:
+
+- Structure: interacts with itself, Power, Onboard.
+- Power: interacts with all except maybe nothing? No, it provides power to all.
+Wait, but in terms of DSM, if a component is supplied by another, that's an interaction.
+
+So perhaps:
+
+Structure interacts with Power (needs power), Onboard Computer (for commands), and Attitude Control/Payload via the computer.
+
+But I'm getting stuck. Maybe it's better to look for typical CubeSat interactions.
+
+Typically:
+
+- Structure supports all components.
+- Power provides power to all.
+- Onboard Computer controls everything.
+- Communication sends data, which is processed by the computer.
+- Attitude Control interfaces with the computer.
+- Payload interfaces with the computer and may use communication.
+
+So in terms of direct interactions (not via shared resources):
+
+Structure interacts with all except maybe nothing? No, it's the base.
+
+Power interacts with all except maybe nothing.
+
+Onboard Computer interacts with all except Structure? Or does it interact with Structure for mounting?
+
+Wait, no. The Onboard Computer is part of the structure, so they are connected physically, but functionally, the computer interfaces with other systems via software or electrical connections.
+
+So perhaps:
+
+- Structure: 1s everywhere (since it's the base)
+- Power System: interacts with all except maybe nothing
+- Communication: interacts with Structure (mounting), Onboard Computer (processing data), and possibly Attitude Control for telemetry.
+Wait, no. Communication is used to send data from the computer, so it doesn't directly interact with Attitude Control.
+
+Similarly, Payload might not interact with others unless specified.
+
+This is getting too vague. Maybe I should look up typical CubeSat DSMs or system interactions.
+
+Alternatively, perhaps each subsystem interacts with Structure (for mounting), Power (for power), and Onboard Computer (for control). So:
+
+- Each row would have 1s for Structure, Power, and Onboard Computer, plus any specific interactions.
+
+So:
+
+Structure: [1,1,1,1,1,1]
+
+Power: [1,1,1,1,1,1]
+
+Communication: [1 (S), 1 (P), 1 (O), 0, 0, 0] ?
+
+Wait, no. Communication needs to send data, which is processed by Onboard Computer, so it interacts with O.
+
+Similarly, Attitude Control sends data to Onboard Computer, so A interacts with O.
+
+Payload might interact with O and maybe C if it's a sensor payload that communicates data.
+
+So:
+
+Structure row: all 1s
+
+Power row: all 1s
+
+Communication row: S (1), P (needs power), O (processes data)
+
+Onboard Computer row: S, P, C, A, Pa
+
+Attitude Control row: S, P, O
+
+Payload row: S, P, O
+
+So the matrix would be:
+
+Row order: Structure, Power, Comm, Onboard, Attitude, Payload.
+
+Structure: [1,1,1,1,1,1]
+
+Power: [1,1,1,1,1,1]
+
+Comm: [1,1,1,1,0,0] (interacts with S, P, O)
+
+Onboard: [1,1,1,1,1,1] (interacts with all except maybe none?)
+
+Wait, no. Onboard Computer interacts with Structure (mounting), Power (power), Communication (data), Attitude Control (commands), and Payload (data). So yes, all.
+
+Attitude Control: [1,1,0,1,1,0] (interacts with S, P, O)
+
+Payload: [1,1,0,1,0,1] (interacts with S, P, O)
+
+Wait, but this might not be accurate. Let me try to define each row:
+
+Structure:
+- Interacts with all components because it's the base structure.
+
+Power System:
+- Provides power to all except maybe nothing? So interacts with all.
+
+Communication System:
+- Needs power (P), is mounted on Structure (S), and communicates data processed by Onboard Computer (O). So S, P, O.
+
+Onboard Computer:
+- Controls everything: Structure (maybe not directly?), Power (commands), Communication (data), Attitude Control (commands), Payload (data). So S, P, C, A, Pa.
+
+Attitude Control System:
+- Mounted on Structure (S), uses power (P), sends data to Onboard Computer (O).
+
+Payload:
+- Mounted on Structure (S), uses power (P), sends/receives data via Onboard Computer (O).
+
+So the matrix would be:
+
+Row 1: [1,1,1,1,1,1] - Structure
+
+Row 2: [1,1,1,1,1,1] - Power
+
+Row 3: [1,1,1,1,0,0] - Communication (interacts with S, P, O)
+
+Row 4: [1,1,1,1,1,1] - Onboard Computer
+
+Row 5: [1,1,0,1,1,0] - Attitude Control (S, P, O)
+
+Row 6: [1,1,0,1,0,1] - Payload (S, P, O, Pa?)
+
+Wait, but in the initial list, Payload is the last component. So row 6 would be:
+
+Structure: S=1
+
+Power: P=1
+
+Communication: C=0 (no direct interaction unless payload includes comm)
+
+Onboard Computer: O=1
+
+Attitude Control: A=0
+
+Payload: Pa=1
+
+So row 6: [1,1,0,1,0,1]
+
+Similarly, Attitude Control row:
+
+Structure: S=1
+
+Power: P=1
+
+Communication: C=0
+
+Onboard Computer: O=1
+
+Attitude Control: A=1 (itself)
+
+Payload: Pa=0
+
+So row 5: [1,1,0,1,1,0]
+
+Wait, but Attitude Control doesn't interact with Payload unless the payload is part of it, which it's not.
+
+Similarly, Communication System might not interact with Attitude Control or Payload unless specific. So:
+
+Row 3 (Communication): S=1, P=1, O=1, A=0, Pa=0
+
+So putting it all together:
+
+Structure: [1,1,1,1,1,1]
+
+Power: [1,1,1,1,1,1]
+
+Comm: [1,1,1,1,0,0]
+
+Onboard: [1,1,1,1,1,1]
+
+Attitude: [1,1,0,1,1,0]
+
+Payload: [1,1,0,1,0,1]
+
+Wait, but this might not be accurate. For example, does the Attitude Control System interact with Payload? Probably not unless the payload is part of the attitude control, which it's not.
+
+Similarly, Communication System doesn't need to interact with Attitude or Payload beyond what's processed by Onboard Computer.
+
+So the final matrix would look like this:
+
+[
+ [1, 1, 1, 1, 1, 1],
+ [1, 1, 1, 1, 1, 1],
+ [1, 1, 1, 1, 0, 0],
+ [1, 1, 1, 1, 1, 1],
+ [1, 1, 0, 1, 1, 0],
+ [1, 1, 0, 1, 0, 1]
+]
+
+But wait, the initial example used 0 for no interaction and 1 for yes. So I think this is correct.
+</think>
+
+final response = [[1,1,1,1,1,1],[1,1,1,1,1,1],[1,1,1,1,0,0],[1,1,1,1,1,1],[1,1,0,1,1,0],[1,1,0,1,0,1]]
+2025-02-22 21:06:04,886 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Response: <think>
+Alright, I need to create a Design Structure Matrix (DSM) for the CubeSat subsystems. The components are Structure, Power System, Communication System, Onboard Computer, Attitude Control System, and Payload. That's six components, so the matrix will be 6x6.
+
+First, each component interacts with itself, so all diagonal elements are 1.
+
+Next, I'll go through each pair of components to see if they have a connection.
+
+1. **Structure & Power System**: The structure holds the power system, so they interact.
+2. **Structure & Communication System**: The structure supports the communication hardware.
+3. **Structure & Onboard Computer**: The computer is mounted on the structure.
+4. **Structure & Attitude Control System**: The attitude control (like reaction wheels) is part of the structure.
+5. **Structure & Payload**: The payload is attached to the structure.
+
+So, Structure interacts with all others except maybe not directly with Payload? Wait, no, the structure supports it, so yes.
+
+**Power System**: It provides power to all subsystems. So it interacts with Communication, Onboard Computer, Attitude Control, and Payload. Does it interact with Structure? Yes, because the structure holds the power components.
+
+So Power System has interactions with all except maybe not directly with Structure? Wait, no, they are connected through mounting, so yes.
+
+**Communication System**: It communicates data, which is processed by the Onboard Computer. It might also need power from the Power System and be mounted on the Structure. Does it interact with Attitude Control or Payload? Probably not directly unless the payload includes communication modules, but generally no.
+
+So Communication interacts with Structure (mounting), Power (power supply), and Onboard Computer (processing data).
+
+**Onboard Computer**: It's the central processing unit. It interacts with all subsystems except maybe not directly with Structure. It needs data from Attitude Control, communicates via Communication System, manages power, etc.
+
+So Onboard Computer interacts with Power, Communication, Attitude Control, and Payload. Does it interact with Structure? Maybe not directly unless for mounting, but functionally, no.
+
+**Attitude Control System**: It provides orientation data to the Onboard Computer and might communicate with the Communication System if sending telemetry. It needs power from the Power System and is mounted on the Structure.
+
+So Attitude Control interacts with Structure (mounting), Power (power supply), Onboard Computer (data processing), and possibly Communication for telemetry.
+
+**Payload**: It's the mission-specific component. It likely interfaces with the Onboard Computer to send data, uses power, and is mounted on the structure. It might not interact directly with Attitude Control or Communication unless it's part of the payload.
+
+So Payload interacts with Structure (mounting), Power (power supply), and Onboard Computer (data processing).
+
+Now, let me map this out:
+
+- **Structure** interacts with all except maybe none? No, it supports everything.
+- **Power System** interacts with all except maybe nothing?
+Wait, no. Each component needs power, so yes.
+
+But wait, in reality, the Power System provides power to all other systems, but does each system directly interact with Power? Yes, because they need power.
+
+Similarly, Onboard Computer is connected to all for data processing.
+
+So let's go step by step:
+
+1. **Structure**:
+   - Structure interacts with itself (1).
+   - It interacts with Power System (1), Communication (1), Onboard Computer (1), Attitude Control (1), Payload (1).
+
+2. **Power System**:
+   - Interacts with Structure (1), and provides power to all others: Communication, Onboard Computer, Attitude Control, Payload.
+
+3. **Communication System**:
+   - Interacts with Structure (mounting), Power (power), Onboard Computer (processing data). Maybe not with Attitude or Payload unless specific.
+
+4. **Onboard Computer**:
+   - Interacts with all except maybe none? It processes data from Attitude, communicates via Communication, manages power, and handles Payload data.
+
+5. **Attitude Control System**:
+   - Interacts with Structure (mounting), Power (power), Onboard Computer (data). Maybe not with others unless specific.
+
+6. **Payload**:
+   - Interacts with Structure (mounting), Power (power), Onboard Computer (processing).
+
+So, the matrix would have 1s where they interact and 0 otherwise, except diagonals are 1.
+
+Wait, but in the example given, the user used 2 for unknowns. But I need to use 0 or 1 based on actual interactions.
+
+Let me structure it:
+
+- Structure (S) interacts with all: S, P, C, O, A, Pa.
+- Power System (P) interacts with S, C, O, A, Pa.
+- Communication (C) interacts with S, P, O.
+- Onboard Computer (O) interacts with S, P, C, A, Pa.
+- Attitude Control (A) interacts with S, P, O.
+- Payload (Pa) interacts with S, P, O.
+
+So the matrix would be:
+
+Row order: Structure, Power, Comm, Onboard, Attitude, Payload.
+
+Each row represents what the component interacts with.
+
+Structure's row: [1,1,1,1,1,1]
+
+Power System's row: [1,1,1,1,1,1] (since it provides power to all)
+
+Wait no, Power doesn't interact with Attitude and Payload beyond providing power. But in DSM, if they are connected via a shared resource like power, is that considered an interaction? Or only direct interfaces.
+
+In CubeSats, each subsystem gets power from the Power System, but their interactions might be more about functional dependencies rather than physical connections.
+
+So perhaps:
+
+- Structure interacts with all except maybe none.
+- Power interacts with all except maybe nothing.
+But in reality, each component is connected to Power for power and to Onboard Computer for control.
+
+Wait, this is getting confusing. Let me think again.
+
+Each subsystem has a dependency on the Power System (for power) and the Onboard Computer (for commands and data processing). So:
+
+- Structure: interacts with itself, Power, Onboard.
+- Power: interacts with all except maybe nothing? No, it provides power to all.
+Wait, but in terms of DSM, if a component is supplied by another, that's an interaction.
+
+So perhaps:
+
+Structure interacts with Power (needs power), Onboard Computer (for commands), and Attitude Control/Payload via the computer.
+
+But I'm getting stuck. Maybe it's better to look for typical CubeSat interactions.
+
+Typically:
+
+- Structure supports all components.
+- Power provides power to all.
+- Onboard Computer controls everything.
+- Communication sends data, which is processed by the computer.
+- Attitude Control interfaces with the computer.
+- Payload interfaces with the computer and may use communication.
+
+So in terms of direct interactions (not via shared resources):
+
+Structure interacts with all except maybe nothing? No, it's the base.
+
+Power interacts with all except maybe nothing.
+
+Onboard Computer interacts with all except Structure? Or does it interact with Structure for mounting?
+
+Wait, no. The Onboard Computer is part of the structure, so they are connected physically, but functionally, the computer interfaces with other systems via software or electrical connections.
+
+So perhaps:
+
+- Structure: 1s everywhere (since it's the base)
+- Power System: interacts with all except maybe nothing
+- Communication: interacts with Structure (mounting), Onboard Computer (processing data), and possibly Attitude Control for telemetry.
+Wait, no. Communication is used to send data from the computer, so it doesn't directly interact with Attitude Control.
+
+Similarly, Payload might not interact with others unless specified.
+
+This is getting too vague. Maybe I should look up typical CubeSat DSMs or system interactions.
+
+Alternatively, perhaps each subsystem interacts with Structure (for mounting), Power (for power), and Onboard Computer (for control). So:
+
+- Each row would have 1s for Structure, Power, and Onboard Computer, plus any specific interactions.
+
+So:
+
+Structure: [1,1,1,1,1,1]
+
+Power: [1,1,1,1,1,1]
+
+Communication: [1 (S), 1 (P), 1 (O), 0, 0, 0] ?
+
+Wait, no. Communication needs to send data, which is processed by Onboard Computer, so it interacts with O.
+
+Similarly, Attitude Control sends data to Onboard Computer, so A interacts with O.
+
+Payload might interact with O and maybe C if it's a sensor payload that communicates data.
+
+So:
+
+Structure row: all 1s
+
+Power row: all 1s
+
+Communication row: S (1), P (needs power), O (processes data)
+
+Onboard Computer row: S, P, C, A, Pa
+
+Attitude Control row: S, P, O
+
+Payload row: S, P, O
+
+So the matrix would be:
+
+Row order: Structure, Power, Comm, Onboard, Attitude, Payload.
+
+Structure: [1,1,1,1,1,1]
+
+Power: [1,1,1,1,1,1]
+
+Comm: [1,1,1,1,0,0] (interacts with S, P, O)
+
+Onboard: [1,1,1,1,1,1] (interacts with all except maybe none?)
+
+Wait, no. Onboard Computer interacts with Structure (mounting), Power (power), Communication (data), Attitude Control (commands), and Payload (data). So yes, all.
+
+Attitude Control: [1,1,0,1,1,0] (interacts with S, P, O)
+
+Payload: [1,1,0,1,0,1] (interacts with S, P, O)
+
+Wait, but this might not be accurate. Let me try to define each row:
+
+Structure:
+- Interacts with all components because it's the base structure.
+
+Power System:
+- Provides power to all except maybe nothing? So interacts with all.
+
+Communication System:
+- Needs power (P), is mounted on Structure (S), and communicates data processed by Onboard Computer (O). So S, P, O.
+
+Onboard Computer:
+- Controls everything: Structure (maybe not directly?), Power (commands), Communication (data), Attitude Control (commands), Payload (data). So S, P, C, A, Pa.
+
+Attitude Control System:
+- Mounted on Structure (S), uses power (P), sends data to Onboard Computer (O).
+
+Payload:
+- Mounted on Structure (S), uses power (P), sends/receives data via Onboard Computer (O).
+
+So the matrix would be:
+
+Row 1: [1,1,1,1,1,1] - Structure
+
+Row 2: [1,1,1,1,1,1] - Power
+
+Row 3: [1,1,1,1,0,0] - Communication (interacts with S, P, O)
+
+Row 4: [1,1,1,1,1,1] - Onboard Computer
+
+Row 5: [1,1,0,1,1,0] - Attitude Control (S, P, O)
+
+Row 6: [1,1,0,1,0,1] - Payload (S, P, O, Pa?)
+
+Wait, but in the initial list, Payload is the last component. So row 6 would be:
+
+Structure: S=1
+
+Power: P=1
+
+Communication: C=0 (no direct interaction unless payload includes comm)
+
+Onboard Computer: O=1
+
+Attitude Control: A=0
+
+Payload: Pa=1
+
+So row 6: [1,1,0,1,0,1]
+
+Similarly, Attitude Control row:
+
+Structure: S=1
+
+Power: P=1
+
+Communication: C=0
+
+Onboard Computer: O=1
+
+Attitude Control: A=1 (itself)
+
+Payload: Pa=0
+
+So row 5: [1,1,0,1,1,0]
+
+Wait, but Attitude Control doesn't interact with Payload unless the payload is part of it, which it's not.
+
+Similarly, Communication System might not interact with Attitude Control or Payload unless specific. So:
+
+Row 3 (Communication): S=1, P=1, O=1, A=0, Pa=0
+
+So putting it all together:
+
+Structure: [1,1,1,1,1,1]
+
+Power: [1,1,1,1,1,1]
+
+Comm: [1,1,1,1,0,0]
+
+Onboard: [1,1,1,1,1,1]
+
+Attitude: [1,1,0,1,1,0]
+
+Payload: [1,1,0,1,0,1]
+
+Wait, but this might not be accurate. For example, does the Attitude Control System interact with Payload? Probably not unless the payload is part of the attitude control, which it's not.
+
+Similarly, Communication System doesn't need to interact with Attitude or Payload beyond what's processed by Onboard Computer.
+
+So the final matrix would look like this:
+
+[
+ [1, 1, 1, 1, 1, 1],
+ [1, 1, 1, 1, 1, 1],
+ [1, 1, 1, 1, 0, 0],
+ [1, 1, 1, 1, 1, 1],
+ [1, 1, 0, 1, 1, 0],
+ [1, 1, 0, 1, 0, 1]
+]
+
+But wait, the initial example used 0 for no interaction and 1 for yes. So I think this is correct.
+</think>
+
+final response = [[1,1,1,1,1,1],[1,1,1,1,1,1],[1,1,1,1,0,0],[1,1,1,1,1,1],[1,1,0,1,1,0],[1,1,0,1,0,1]]
+2025-02-22 21:06:04,887 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Matrix: [[1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 0, 0], [1, 1, 1, 1, 1, 1], [1, 1, 0, 1, 1, 0], [1, 1, 0, 1, 0, 1]]
+2025-02-22 21:06:04,888 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Final Matrix:
+[[1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 0, 0], [1, 1, 1, 1, 1, 1], [1, 1, 0, 1, 1, 0], [1, 1, 0, 1, 0, 1]]
+2025-02-22 21:06:04,890 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - --------------------------------------------------
+2025-02-22 21:06:04,891 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Matrix from response.
+2025-02-22 21:06:04,892 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - At run 4/5
+2025-02-22 21:06:04,893 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Matrix: [[1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 0, 0], [1, 1, 1, 1, 1, 1], [1, 1, 0, 1, 1, 0], [1, 1, 0, 1, 0, 1]]
+2025-02-22 21:06:04,893 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - --------------------------------------------------
+2025-02-22 21:06:14,905 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Run 5/5
+2025-02-22 21:06:14,942 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - DEBUG: Initializing LLMInference.
+2025-02-22 21:06:14,943 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Initialized LLM inference for system: CubeSat (nanosatellite)
+2025-02-22 21:06:14,944 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Initialized DSM for system: CubeSat (nanosatellite)
+2025-02-22 21:06:14,945 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Inference model: ollama:deepseek-r1:14b-5k
+2025-02-22 21:06:14,946 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Predicted Components: ['Structure', 'Power System', 'Communication System', 'Onboard Computer', 'Attitude Control System', 'Payload']
+2025-02-22 21:06:14,947 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Number of components: 6
+2025-02-22 21:06:14,948 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Predicted components for query: ['Structure', 'Power System', 'Communication System', 'Onboard Computer', 'Attitude Control System', 'Payload']
+2025-02-22 21:06:14,949 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Query: 
+        Please identify system-level hierarchical whole-part relationships between the components of CubeSat (nanosatellite), as listed below, and represent them in a Design Structure Matrix (DSM) format.          
+        The relationships should be articulated in plain English, capturing the essence of their interactions.         
+        Here is the list of subsystems/components to analyze: ['Structure', 'Power System', 'Communication System', 'Onboard Computer', 'Attitude Control System', 'Payload']         
+        The DSM should clearly indicate the interactions between these components as 1 exist and 0 does not exist, considering both the presence and nature of these connections.         
+        Present the output in a square matrix format (number of rows and columns MUST be the same as the number of components = 6 for this example), with rows and columns labeled accordingly.         
+        Diagonal elements should be 1 in DSM matrix since each component interacts with itself.         
+        If you don't know the answer, just write 2 for the specific cell that you are unsure of. A worst case scenario of the **as a list of lists** shown below (diagonal elements are 1 and rest are 2). Don't make up an answer.         
+        final response = [[1, 2, 2, 2, 2, 2, 2],[2, 1, 2, 2, 2, 2, 2],[2, 2, 1, 2, 2, 2, 2],[2, 2, 2, 1, 2, 2, 2],[2, 2, 2, 2, 1, 2, 2],[2, 2, 2, 2, 2, 1, 2],[2, 2, 2, 2, 2, 2, 1]] for 7 components         
+        final response = [[1, 2, 2],[2, 1, 2],[2, 2, 1]] for 3 components         
+        IMPORTANT: Your response must **ONLY** contain a valid **as a list of lists** in the following example format 7x7 matrix.         
+        The below list of lists is just an example format of a response. **Replace** the values with your **actual analysis** while providing your response with parameter of 'final response'.        
+        final response = [[1, 0, 0, 0, 0, 0, 0],[0, 1, 0, 0, 0, 0, 0],[0, 0, 1, 0, 0, 0, 0],   [0, 0, 0, 1, 0, 0, 0],[0, 0, 0, 0, 1, 0, 0],[0, 0, 0, 0, 0, 1, 0],[0, 0, 0, 0, 0, 0, 1]] for 7 components         
+        final response = [[1, 0, 0],[0, 1, 0],[0, 0, 1]] for 3 components         
+        IMPORTANT: THE FORMAT OF THE OUTPUT MUST BE AS LIST OF LISTS ONLY SIMILAR TO THE ONE ABOVE (NO LATEX, CODE, OR OTHER ENCODINGS).
+        
+2025-02-22 21:07:31,032 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - LLM Response: <think>
+Alright, I need to create a Design Structure Matrix (DSM) for the CubeSat subsystems. The components are Structure, Power System, Communication System, Onboard Computer, Attitude Control System, and Payload. That's six components, so the matrix will be 6x6.
+
+First, each component interacts with itself, so all diagonal elements are 1.
+
+Next, I'll go through each pair of components to see if they have a connection.
+
+1. **Structure & Power System**: The structure holds the power system, so they interact.
+2. **Structure & Communication System**: The structure supports the communication hardware.
+3. **Structure & Onboard Computer**: The computer is mounted on the structure.
+4. **Structure & Attitude Control System**: The attitude control (like reaction wheels) is part of the structure.
+5. **Structure & Payload**: The payload is attached to the structure.
+
+So, Structure interacts with all others except maybe not directly with Payload? Wait, no, the structure supports it, so yes.
+
+**Power System**: It provides power to all subsystems. So it interacts with Communication, Onboard Computer, Attitude Control, and Payload. Does it interact with Structure? Yes, because the structure holds the power components.
+
+So Power System has interactions with all except maybe not directly with Structure? Wait, no, they are connected through mounting, so yes.
+
+**Communication System**: It communicates data, which is processed by the Onboard Computer. It might also need power from the Power System and be mounted on the Structure. Does it interact with Attitude Control or Payload? Probably not directly unless the payload includes communication modules, but generally no.
+
+So Communication interacts with Structure (mounting), Power (power supply), and Onboard Computer (processing data).
+
+**Onboard Computer**: It's the central processing unit. It interacts with all subsystems except maybe not directly with Structure. It needs data from Attitude Control, communicates via Communication System, manages power, etc.
+
+So Onboard Computer interacts with Power, Communication, Attitude Control, and Payload. Does it interact with Structure? Maybe not directly unless for mounting, but functionally, no.
+
+**Attitude Control System**: It provides orientation data to the Onboard Computer and might communicate with the Communication System if sending telemetry. It needs power from the Power System and is mounted on the Structure.
+
+So Attitude Control interacts with Structure (mounting), Power (power supply), Onboard Computer (data processing), and possibly Communication for telemetry.
+
+**Payload**: It's the mission-specific component. It likely interfaces with the Onboard Computer to send data, uses power, and is mounted on the structure. It might not interact directly with Attitude Control or Communication unless it's part of the payload.
+
+So Payload interacts with Structure (mounting), Power (power supply), and Onboard Computer (data processing).
+
+Now, let me map this out:
+
+- **Structure** interacts with all except maybe none? No, it supports everything.
+- **Power System** interacts with all except maybe nothing?
+Wait, no. Each component needs power, so yes.
+
+But wait, in reality, the Power System provides power to all other systems, but does each system directly interact with Power? Yes, because they need power.
+
+Similarly, Onboard Computer is connected to all for data processing.
+
+So let's go step by step:
+
+1. **Structure**:
+   - Structure interacts with itself (1).
+   - It interacts with Power System (1), Communication (1), Onboard Computer (1), Attitude Control (1), Payload (1).
+
+2. **Power System**:
+   - Interacts with Structure (1), and provides power to all others: Communication, Onboard Computer, Attitude Control, Payload.
+
+3. **Communication System**:
+   - Interacts with Structure (mounting), Power (power), Onboard Computer (processing data). Maybe not with Attitude or Payload unless specific.
+
+4. **Onboard Computer**:
+   - Interacts with all except maybe none? It processes data from Attitude, communicates via Communication, manages power, and handles Payload data.
+
+5. **Attitude Control System**:
+   - Interacts with Structure (mounting), Power (power), Onboard Computer (data). Maybe not with others unless specific.
+
+6. **Payload**:
+   - Interacts with Structure (mounting), Power (power), Onboard Computer (processing).
+
+So, the matrix would have 1s where they interact and 0 otherwise, except diagonals are 1.
+
+Wait, but in the example given, the user used 2 for unknowns. But I need to use 0 or 1 based on actual interactions.
+
+Let me structure it:
+
+- Structure (S) interacts with all: S, P, C, O, A, Pa.
+- Power System (P) interacts with S, C, O, A, Pa.
+- Communication (C) interacts with S, P, O.
+- Onboard Computer (O) interacts with S, P, C, A, Pa.
+- Attitude Control (A) interacts with S, P, O.
+- Payload (Pa) interacts with S, P, O.
+
+So the matrix would be:
+
+Row order: Structure, Power, Comm, Onboard, Attitude, Payload.
+
+Each row represents what the component interacts with.
+
+Structure's row: [1,1,1,1,1,1]
+
+Power System's row: [1,1,1,1,1,1] (since it provides power to all)
+
+Wait no, Power doesn't interact with Attitude and Payload beyond providing power. But in DSM, if they are connected via a shared resource like power, is that considered an interaction? Or only direct interfaces.
+
+In CubeSats, each subsystem gets power from the Power System, but their interactions might be more about functional dependencies rather than physical connections.
+
+So perhaps:
+
+- Structure interacts with all except maybe none.
+- Power interacts with all except maybe nothing.
+But in reality, each component is connected to Power for power and to Onboard Computer for control.
+
+Wait, this is getting confusing. Let me think again.
+
+Each subsystem has a dependency on the Power System (for power) and the Onboard Computer (for commands and data processing). So:
+
+- Structure: interacts with itself, Power, Onboard.
+- Power: interacts with all except maybe nothing? No, it provides power to all.
+Wait, but in terms of DSM, if a component is supplied by another, that's an interaction.
+
+So perhaps:
+
+Structure interacts with Power (needs power), Onboard Computer (for commands), and Attitude Control/Payload via the computer.
+
+But I'm getting stuck. Maybe it's better to look for typical CubeSat interactions.
+
+Typically:
+
+- Structure supports all components.
+- Power provides power to all.
+- Onboard Computer controls everything.
+- Communication sends data, which is processed by the computer.
+- Attitude Control interfaces with the computer.
+- Payload interfaces with the computer and may use communication.
+
+So in terms of direct interactions (not via shared resources):
+
+Structure interacts with all except maybe nothing? No, it's the base.
+
+Power interacts with all except maybe nothing.
+
+Onboard Computer interacts with all except Structure? Or does it interact with Structure for mounting?
+
+Wait, no. The Onboard Computer is part of the structure, so they are connected physically, but functionally, the computer interfaces with other systems via software or electrical connections.
+
+So perhaps:
+
+- Structure: 1s everywhere (since it's the base)
+- Power System: interacts with all except maybe nothing
+- Communication: interacts with Structure (mounting), Onboard Computer (processing data), and possibly Attitude Control for telemetry.
+Wait, no. Communication is used to send data from the computer, so it doesn't directly interact with Attitude Control.
+
+Similarly, Payload might not interact with others unless specified.
+
+This is getting too vague. Maybe I should look up typical CubeSat DSMs or system interactions.
+
+Alternatively, perhaps each subsystem interacts with Structure (for mounting), Power (for power), and Onboard Computer (for control). So:
+
+- Each row would have 1s for Structure, Power, and Onboard Computer, plus any specific interactions.
+
+So:
+
+Structure: [1,1,1,1,1,1]
+
+Power: [1,1,1,1,1,1]
+
+Communication: [1 (S), 1 (P), 1 (O), 0, 0, 0] ?
+
+Wait, no. Communication needs to send data, which is processed by Onboard Computer, so it interacts with O.
+
+Similarly, Attitude Control sends data to Onboard Computer, so A interacts with O.
+
+Payload might interact with O and maybe C if it's a sensor payload that communicates data.
+
+So:
+
+Structure row: all 1s
+
+Power row: all 1s
+
+Communication row: S (1), P (needs power), O (processes data)
+
+Onboard Computer row: S, P, C, A, Pa
+
+Attitude Control row: S, P, O
+
+Payload row: S, P, O
+
+So the matrix would be:
+
+Row order: Structure, Power, Comm, Onboard, Attitude, Payload.
+
+Structure: [1,1,1,1,1,1]
+
+Power: [1,1,1,1,1,1]
+
+Comm: [1,1,1,1,0,0] (interacts with S, P, O)
+
+Onboard: [1,1,1,1,1,1] (interacts with all except maybe none?)
+
+Wait, no. Onboard Computer interacts with Structure (mounting), Power (power), Communication (data), Attitude Control (commands), and Payload (data). So yes, all.
+
+Attitude Control: [1,1,0,1,1,0] (interacts with S, P, O)
+
+Payload: [1,1,0,1,0,1] (interacts with S, P, O)
+
+Wait, but this might not be accurate. Let me try to define each row:
+
+Structure:
+- Interacts with all components because it's the base structure.
+
+Power System:
+- Provides power to all except maybe nothing? So interacts with all.
+
+Communication System:
+- Needs power (P), is mounted on Structure (S), and communicates data processed by Onboard Computer (O). So S, P, O.
+
+Onboard Computer:
+- Controls everything: Structure (maybe not directly?), Power (commands), Communication (data), Attitude Control (commands), Payload (data). So S, P, C, A, Pa.
+
+Attitude Control System:
+- Mounted on Structure (S), uses power (P), sends data to Onboard Computer (O).
+
+Payload:
+- Mounted on Structure (S), uses power (P), sends/receives data via Onboard Computer (O).
+
+So the matrix would be:
+
+Row 1: [1,1,1,1,1,1] - Structure
+
+Row 2: [1,1,1,1,1,1] - Power
+
+Row 3: [1,1,1,1,0,0] - Communication (interacts with S, P, O)
+
+Row 4: [1,1,1,1,1,1] - Onboard Computer
+
+Row 5: [1,1,0,1,1,0] - Attitude Control (S, P, O)
+
+Row 6: [1,1,0,1,0,1] - Payload (S, P, O, Pa?)
+
+Wait, but in the initial list, Payload is the last component. So row 6 would be:
+
+Structure: S=1
+
+Power: P=1
+
+Communication: C=0 (no direct interaction unless payload includes comm)
+
+Onboard Computer: O=1
+
+Attitude Control: A=0
+
+Payload: Pa=1
+
+So row 6: [1,1,0,1,0,1]
+
+Similarly, Attitude Control row:
+
+Structure: S=1
+
+Power: P=1
+
+Communication: C=0
+
+Onboard Computer: O=1
+
+Attitude Control: A=1 (itself)
+
+Payload: Pa=0
+
+So row 5: [1,1,0,1,1,0]
+
+Wait, but Attitude Control doesn't interact with Payload unless the payload is part of it, which it's not.
+
+Similarly, Communication System might not interact with Attitude Control or Payload unless specific. So:
+
+Row 3 (Communication): S=1, P=1, O=1, A=0, Pa=0
+
+So putting it all together:
+
+Structure: [1,1,1,1,1,1]
+
+Power: [1,1,1,1,1,1]
+
+Comm: [1,1,1,1,0,0]
+
+Onboard: [1,1,1,1,1,1]
+
+Attitude: [1,1,0,1,1,0]
+
+Payload: [1,1,0,1,0,1]
+
+Wait, but this might not be accurate. For example, does the Attitude Control System interact with Payload? Probably not unless the payload is part of the attitude control, which it's not.
+
+Similarly, Communication System doesn't need to interact with Attitude or Payload beyond what's processed by Onboard Computer.
+
+So the final matrix would look like this:
+
+[
+ [1, 1, 1, 1, 1, 1],
+ [1, 1, 1, 1, 1, 1],
+ [1, 1, 1, 1, 0, 0],
+ [1, 1, 1, 1, 1, 1],
+ [1, 1, 0, 1, 1, 0],
+ [1, 1, 0, 1, 0, 1]
+]
+
+But wait, the initial example used 0 for no interaction and 1 for yes. So I think this is correct.
+</think>
+
+final response = [[1,1,1,1,1,1],[1,1,1,1,1,1],[1,1,1,1,0,0],[1,1,1,1,1,1],[1,1,0,1,1,0],[1,1,0,1,0,1]]
+2025-02-22 21:07:31,033 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Response: <think>
+Alright, I need to create a Design Structure Matrix (DSM) for the CubeSat subsystems. The components are Structure, Power System, Communication System, Onboard Computer, Attitude Control System, and Payload. That's six components, so the matrix will be 6x6.
+
+First, each component interacts with itself, so all diagonal elements are 1.
+
+Next, I'll go through each pair of components to see if they have a connection.
+
+1. **Structure & Power System**: The structure holds the power system, so they interact.
+2. **Structure & Communication System**: The structure supports the communication hardware.
+3. **Structure & Onboard Computer**: The computer is mounted on the structure.
+4. **Structure & Attitude Control System**: The attitude control (like reaction wheels) is part of the structure.
+5. **Structure & Payload**: The payload is attached to the structure.
+
+So, Structure interacts with all others except maybe not directly with Payload? Wait, no, the structure supports it, so yes.
+
+**Power System**: It provides power to all subsystems. So it interacts with Communication, Onboard Computer, Attitude Control, and Payload. Does it interact with Structure? Yes, because the structure holds the power components.
+
+So Power System has interactions with all except maybe not directly with Structure? Wait, no, they are connected through mounting, so yes.
+
+**Communication System**: It communicates data, which is processed by the Onboard Computer. It might also need power from the Power System and be mounted on the Structure. Does it interact with Attitude Control or Payload? Probably not directly unless the payload includes communication modules, but generally no.
+
+So Communication interacts with Structure (mounting), Power (power supply), and Onboard Computer (processing data).
+
+**Onboard Computer**: It's the central processing unit. It interacts with all subsystems except maybe not directly with Structure. It needs data from Attitude Control, communicates via Communication System, manages power, etc.
+
+So Onboard Computer interacts with Power, Communication, Attitude Control, and Payload. Does it interact with Structure? Maybe not directly unless for mounting, but functionally, no.
+
+**Attitude Control System**: It provides orientation data to the Onboard Computer and might communicate with the Communication System if sending telemetry. It needs power from the Power System and is mounted on the Structure.
+
+So Attitude Control interacts with Structure (mounting), Power (power supply), Onboard Computer (data processing), and possibly Communication for telemetry.
+
+**Payload**: It's the mission-specific component. It likely interfaces with the Onboard Computer to send data, uses power, and is mounted on the structure. It might not interact directly with Attitude Control or Communication unless it's part of the payload.
+
+So Payload interacts with Structure (mounting), Power (power supply), and Onboard Computer (data processing).
+
+Now, let me map this out:
+
+- **Structure** interacts with all except maybe none? No, it supports everything.
+- **Power System** interacts with all except maybe nothing?
+Wait, no. Each component needs power, so yes.
+
+But wait, in reality, the Power System provides power to all other systems, but does each system directly interact with Power? Yes, because they need power.
+
+Similarly, Onboard Computer is connected to all for data processing.
+
+So let's go step by step:
+
+1. **Structure**:
+   - Structure interacts with itself (1).
+   - It interacts with Power System (1), Communication (1), Onboard Computer (1), Attitude Control (1), Payload (1).
+
+2. **Power System**:
+   - Interacts with Structure (1), and provides power to all others: Communication, Onboard Computer, Attitude Control, Payload.
+
+3. **Communication System**:
+   - Interacts with Structure (mounting), Power (power), Onboard Computer (processing data). Maybe not with Attitude or Payload unless specific.
+
+4. **Onboard Computer**:
+   - Interacts with all except maybe none? It processes data from Attitude, communicates via Communication, manages power, and handles Payload data.
+
+5. **Attitude Control System**:
+   - Interacts with Structure (mounting), Power (power), Onboard Computer (data). Maybe not with others unless specific.
+
+6. **Payload**:
+   - Interacts with Structure (mounting), Power (power), Onboard Computer (processing).
+
+So, the matrix would have 1s where they interact and 0 otherwise, except diagonals are 1.
+
+Wait, but in the example given, the user used 2 for unknowns. But I need to use 0 or 1 based on actual interactions.
+
+Let me structure it:
+
+- Structure (S) interacts with all: S, P, C, O, A, Pa.
+- Power System (P) interacts with S, C, O, A, Pa.
+- Communication (C) interacts with S, P, O.
+- Onboard Computer (O) interacts with S, P, C, A, Pa.
+- Attitude Control (A) interacts with S, P, O.
+- Payload (Pa) interacts with S, P, O.
+
+So the matrix would be:
+
+Row order: Structure, Power, Comm, Onboard, Attitude, Payload.
+
+Each row represents what the component interacts with.
+
+Structure's row: [1,1,1,1,1,1]
+
+Power System's row: [1,1,1,1,1,1] (since it provides power to all)
+
+Wait no, Power doesn't interact with Attitude and Payload beyond providing power. But in DSM, if they are connected via a shared resource like power, is that considered an interaction? Or only direct interfaces.
+
+In CubeSats, each subsystem gets power from the Power System, but their interactions might be more about functional dependencies rather than physical connections.
+
+So perhaps:
+
+- Structure interacts with all except maybe none.
+- Power interacts with all except maybe nothing.
+But in reality, each component is connected to Power for power and to Onboard Computer for control.
+
+Wait, this is getting confusing. Let me think again.
+
+Each subsystem has a dependency on the Power System (for power) and the Onboard Computer (for commands and data processing). So:
+
+- Structure: interacts with itself, Power, Onboard.
+- Power: interacts with all except maybe nothing? No, it provides power to all.
+Wait, but in terms of DSM, if a component is supplied by another, that's an interaction.
+
+So perhaps:
+
+Structure interacts with Power (needs power), Onboard Computer (for commands), and Attitude Control/Payload via the computer.
+
+But I'm getting stuck. Maybe it's better to look for typical CubeSat interactions.
+
+Typically:
+
+- Structure supports all components.
+- Power provides power to all.
+- Onboard Computer controls everything.
+- Communication sends data, which is processed by the computer.
+- Attitude Control interfaces with the computer.
+- Payload interfaces with the computer and may use communication.
+
+So in terms of direct interactions (not via shared resources):
+
+Structure interacts with all except maybe nothing? No, it's the base.
+
+Power interacts with all except maybe nothing.
+
+Onboard Computer interacts with all except Structure? Or does it interact with Structure for mounting?
+
+Wait, no. The Onboard Computer is part of the structure, so they are connected physically, but functionally, the computer interfaces with other systems via software or electrical connections.
+
+So perhaps:
+
+- Structure: 1s everywhere (since it's the base)
+- Power System: interacts with all except maybe nothing
+- Communication: interacts with Structure (mounting), Onboard Computer (processing data), and possibly Attitude Control for telemetry.
+Wait, no. Communication is used to send data from the computer, so it doesn't directly interact with Attitude Control.
+
+Similarly, Payload might not interact with others unless specified.
+
+This is getting too vague. Maybe I should look up typical CubeSat DSMs or system interactions.
+
+Alternatively, perhaps each subsystem interacts with Structure (for mounting), Power (for power), and Onboard Computer (for control). So:
+
+- Each row would have 1s for Structure, Power, and Onboard Computer, plus any specific interactions.
+
+So:
+
+Structure: [1,1,1,1,1,1]
+
+Power: [1,1,1,1,1,1]
+
+Communication: [1 (S), 1 (P), 1 (O), 0, 0, 0] ?
+
+Wait, no. Communication needs to send data, which is processed by Onboard Computer, so it interacts with O.
+
+Similarly, Attitude Control sends data to Onboard Computer, so A interacts with O.
+
+Payload might interact with O and maybe C if it's a sensor payload that communicates data.
+
+So:
+
+Structure row: all 1s
+
+Power row: all 1s
+
+Communication row: S (1), P (needs power), O (processes data)
+
+Onboard Computer row: S, P, C, A, Pa
+
+Attitude Control row: S, P, O
+
+Payload row: S, P, O
+
+So the matrix would be:
+
+Row order: Structure, Power, Comm, Onboard, Attitude, Payload.
+
+Structure: [1,1,1,1,1,1]
+
+Power: [1,1,1,1,1,1]
+
+Comm: [1,1,1,1,0,0] (interacts with S, P, O)
+
+Onboard: [1,1,1,1,1,1] (interacts with all except maybe none?)
+
+Wait, no. Onboard Computer interacts with Structure (mounting), Power (power), Communication (data), Attitude Control (commands), and Payload (data). So yes, all.
+
+Attitude Control: [1,1,0,1,1,0] (interacts with S, P, O)
+
+Payload: [1,1,0,1,0,1] (interacts with S, P, O)
+
+Wait, but this might not be accurate. Let me try to define each row:
+
+Structure:
+- Interacts with all components because it's the base structure.
+
+Power System:
+- Provides power to all except maybe nothing? So interacts with all.
+
+Communication System:
+- Needs power (P), is mounted on Structure (S), and communicates data processed by Onboard Computer (O). So S, P, O.
+
+Onboard Computer:
+- Controls everything: Structure (maybe not directly?), Power (commands), Communication (data), Attitude Control (commands), Payload (data). So S, P, C, A, Pa.
+
+Attitude Control System:
+- Mounted on Structure (S), uses power (P), sends data to Onboard Computer (O).
+
+Payload:
+- Mounted on Structure (S), uses power (P), sends/receives data via Onboard Computer (O).
+
+So the matrix would be:
+
+Row 1: [1,1,1,1,1,1] - Structure
+
+Row 2: [1,1,1,1,1,1] - Power
+
+Row 3: [1,1,1,1,0,0] - Communication (interacts with S, P, O)
+
+Row 4: [1,1,1,1,1,1] - Onboard Computer
+
+Row 5: [1,1,0,1,1,0] - Attitude Control (S, P, O)
+
+Row 6: [1,1,0,1,0,1] - Payload (S, P, O, Pa?)
+
+Wait, but in the initial list, Payload is the last component. So row 6 would be:
+
+Structure: S=1
+
+Power: P=1
+
+Communication: C=0 (no direct interaction unless payload includes comm)
+
+Onboard Computer: O=1
+
+Attitude Control: A=0
+
+Payload: Pa=1
+
+So row 6: [1,1,0,1,0,1]
+
+Similarly, Attitude Control row:
+
+Structure: S=1
+
+Power: P=1
+
+Communication: C=0
+
+Onboard Computer: O=1
+
+Attitude Control: A=1 (itself)
+
+Payload: Pa=0
+
+So row 5: [1,1,0,1,1,0]
+
+Wait, but Attitude Control doesn't interact with Payload unless the payload is part of it, which it's not.
+
+Similarly, Communication System might not interact with Attitude Control or Payload unless specific. So:
+
+Row 3 (Communication): S=1, P=1, O=1, A=0, Pa=0
+
+So putting it all together:
+
+Structure: [1,1,1,1,1,1]
+
+Power: [1,1,1,1,1,1]
+
+Comm: [1,1,1,1,0,0]
+
+Onboard: [1,1,1,1,1,1]
+
+Attitude: [1,1,0,1,1,0]
+
+Payload: [1,1,0,1,0,1]
+
+Wait, but this might not be accurate. For example, does the Attitude Control System interact with Payload? Probably not unless the payload is part of the attitude control, which it's not.
+
+Similarly, Communication System doesn't need to interact with Attitude or Payload beyond what's processed by Onboard Computer.
+
+So the final matrix would look like this:
+
+[
+ [1, 1, 1, 1, 1, 1],
+ [1, 1, 1, 1, 1, 1],
+ [1, 1, 1, 1, 0, 0],
+ [1, 1, 1, 1, 1, 1],
+ [1, 1, 0, 1, 1, 0],
+ [1, 1, 0, 1, 0, 1]
+]
+
+But wait, the initial example used 0 for no interaction and 1 for yes. So I think this is correct.
+</think>
+
+final response = [[1,1,1,1,1,1],[1,1,1,1,1,1],[1,1,1,1,0,0],[1,1,1,1,1,1],[1,1,0,1,1,0],[1,1,0,1,0,1]]
+2025-02-22 21:07:31,034 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Matrix: [[1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 0, 0], [1, 1, 1, 1, 1, 1], [1, 1, 0, 1, 1, 0], [1, 1, 0, 1, 0, 1]]
+2025-02-22 21:07:31,035 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Final Matrix:
+[[1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 0, 0], [1, 1, 1, 1, 1, 1], [1, 1, 0, 1, 1, 0], [1, 1, 0, 1, 0, 1]]
+2025-02-22 21:07:31,035 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - --------------------------------------------------
+2025-02-22 21:07:31,036 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Matrix from response.
+2025-02-22 21:07:31,036 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - At run 5/5
+2025-02-22 21:07:31,037 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Matrix: [[1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 0, 0], [1, 1, 1, 1, 1, 1], [1, 1, 0, 1, 1, 0], [1, 1, 0, 1, 0, 1]]
+2025-02-22 21:07:31,038 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - --------------------------------------------------
+2025-02-22 21:07:41,048 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Duration of reference combination {}: 0:07:40.112239
+2025-02-22 21:07:41,049 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2025-02-22 21:07:41,050 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - 
+==================================================
+2025-02-22 21:07:41,051 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Average DSM Matrix for model: ollama:deepseek-r1:14b-5k
+2025-02-22 21:07:41,052 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - End of log reference type(s): ['baseline']
+2025-02-22 21:07:41,054 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Saving results to: ../output/experiment_llm_ollama:deepseek-r1:14b-5k_20250222-210000/llm_refs_baseline
+2025-02-22 21:07:41,058 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - 
+Average Matrix:
+                         Structure  Power System  Communication System  Onboard Computer  Attitude Control System  Payload
+Structure                        1             1                     1                 1                        1        1
+Power System                     1             1                     1                 1                        1        1
+Communication System             1             1                     1                 1                        0        0
+Onboard Computer                 1             1                     1                 1                        1        1
+Attitude Control System          1             1                     0                 1                        1        0
+Payload                          1             1                     0                 1                        0        1
+2025-02-22 21:07:41,058 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - 
+Components: ['Structure', 'Power System', 'Communication System', 'Onboard Computer', 'Attitude Control System', 'Payload']
+2025-02-22 21:07:41,059 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - ==================================================
+
+2025-02-22 21:07:41,062 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Saved CSV to: ../output/experiment_llm_ollama:deepseek-r1:14b-5k_20250222-210000/llm_refs_baseline/average_matrix_20250222-210000.csv
+2025-02-22 21:07:41,063 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Saved JSON to: ../output/experiment_llm_ollama:deepseek-r1:14b-5k_20250222-210000/llm_refs_baseline/detailed_results_20250222-210000.json
+2025-02-22 21:07:41,323 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Saved visualization to: ../output/experiment_llm_ollama:deepseek-r1:14b-5k_20250222-210000/llm_refs_baseline/average_matrix_20250222-210000.png
+2025-02-22 21:07:41,324 - DSM_MultiModelExp_llm_ollama:deepseek-r1:14b-5k - INFO - Duration of experiment for ollama:deepseek-r1:14b-5k in llm inference type: 0:07:41

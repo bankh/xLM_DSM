@@ -1,0 +1,8 @@
+,Housing,Motor,Gear,Bit Holder,Trigger,Battery,Chuck
+Housing,1,1,1,1,1,1,1
+Motor,1,1,1,1,1,1,0
+Gear,1,1,1,1,0,0,1
+Bit Holder,1,1,1,1,0,0,1
+Trigger,1,1,0,0,1,0,0
+Battery,1,1,0,0,0,1,0
+Chuck,1,0,1,1,0,0,1

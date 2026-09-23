@@ -1,0 +1,67 @@
+2026-02-03 15:56:15,042 - __main__ - INFO - Initialized LLM with model: deepseek-r1-8b-optimized:latest
+2026-02-03 15:56:15,042 - __main__ - INFO - Initialized embeddings with model: nomic-embed-text
+2026-02-03 15:56:15,043 - __main__ - INFO - Built DataFrame from direct inputs with 7 references
+2026-02-03 15:56:15,043 - __main__ - INFO - Starting reference classification process
+2026-02-03 15:56:15,043 - __main__ - INFO - Starting classification of 7 references
+2026-02-03 15:56:15,043 - __main__ - INFO - Processing reference 1/7: [2014 Sinha] R1-Structural Complexity and Its Implications for Design of CPSs
+2026-02-03 15:56:22,367 - __main__ - INFO - Processing reference 2/7: [1986 Christoforo] R3-The Complete Book of Portable Power Tool Techniques
+2026-02-03 15:56:37,450 - __main__ - INFO - Processing reference 3/7: [2012 Tilstra] R1-A HDDSM for the Quantitative Assessment of Product Architecture
+2026-02-03 15:56:44,563 - __main__ - INFO - Processing reference 4/7: [2012 Eppinger_Browning] R2-Design Structure Matrix Methods and Applications
+2026-02-03 15:56:49,542 - __main__ - INFO - Processing reference 5/7: [2006 Thiel] R3-David Thiels Power Tool Maintenance
+2026-02-03 15:56:54,415 - __main__ - INFO - Processing reference 6/7: [2007 Joshi] R2-Machine Tools Handbook  Design And Operation
+2026-02-03 15:56:58,722 - __main__ - INFO - Processing reference 7/7: [BCITO] R3-BCATS Power Tools
+2026-02-03 15:57:04,144 - __main__ - INFO - Saved detailed results to: ../logs/classification_test/classification_results_deepseek-r1-8b-optimized_latest_20260203_155704.json
+2026-02-03 15:57:04,147 - __main__ - INFO - Saved summary to: ../logs/classification_test/classification_summary_deepseek-r1-8b-optimized_latest_20260203_155704.csv
+2026-02-03 15:57:04,147 - __main__ - INFO - Classification Statistics:
+2026-02-03 15:57:04,147 - __main__ - INFO - Total references: 7
+2026-02-03 15:57:04,147 - __main__ - INFO - R1 (Expert Knowledge): 2 (28.6%)
+2026-02-03 15:57:04,147 - __main__ - INFO - R2 (Formal/Normative): 2 (28.6%)
+2026-02-03 15:57:04,147 - __main__ - INFO - R3 (Non-expert): 3 (42.9%)
+2026-02-03 15:57:04,147 - __main__ - INFO - Errors: 0 (0.0%)
+2026-02-03 15:57:04,147 - __main__ - INFO - Unknown: 0 (0.0%)
+2026-02-03 15:57:04,147 - __main__ - INFO - Statistics saved to: ../logs/classification_test/classification_statistics_deepseek-r1-8b-optimized_latest_20260203_155704.json
+2026-02-03 15:57:04,672 - __main__ - INFO - Confusion matrix saved to: ../logs/classification_test/confusion_matrix_deepseek-r1-8b-optimized_latest_20260203_155704.csv
+2026-02-03 15:57:04,672 - __main__ - INFO - Confusion Matrix (rows=ground truth, cols=predicted):
+2026-02-03 15:57:04,673 - __main__ - INFO - 
+              R1  R2  R3
+Ground Truth            
+R1             2   0   0
+R2             0   2   0
+R3             0   0   3
+2026-02-03 15:57:04,673 - __main__ - INFO - Accuracy (vs ground truth in filenames): 100.00% (7/7)
+2026-02-03 15:57:04,675 - __main__ - INFO - Classification metrics saved to: ../logs/classification_test/classification_metrics_deepseek-r1-8b-optimized_latest_20260203_155704.json
+2026-02-03 15:57:04,676 - __main__ - INFO - Classification process completed successfully
+2026-02-03 15:57:04,676 - __main__ - INFO - Results saved to: ../logs/classification_test
+2026-02-03 16:10:18,856 - __main__ - INFO - Initialized LLM with model: deepseek-r1-8b-optimized:latest
+2026-02-03 16:10:18,856 - __main__ - INFO - Initialized embeddings with model: nomic-embed-text
+2026-02-03 16:10:18,857 - __main__ - INFO - Built DataFrame from direct inputs with 6 references
+2026-02-03 16:10:18,857 - __main__ - INFO - Starting reference classification process
+2026-02-03 16:10:18,857 - __main__ - INFO - Starting classification of 6 references
+2026-02-03 16:10:18,859 - __main__ - INFO - Processing reference 1/6: [2021 Capelletti] R2-Cubesat Hm Mission Design to Operations
+2026-02-03 16:10:30,135 - __main__ - INFO - Processing reference 2/6: [2013 Asundi] R1-CubeSat_mission_a_systems_engineering_approach
+2026-02-03 16:10:40,510 - __main__ - INFO - Processing reference 3/6: [2012 Eppinger_Browning] R2-Design Structure Matrix Methods and Applications
+2026-02-03 16:10:45,429 - __main__ - INFO - Processing reference 4/6: [2024 Autodesk_Instructables] R3-HyperDuino-based CubeSat _ 6 with Pictures) - Instructables
+2026-02-03 16:10:49,609 - __main__ - INFO - Processing reference 5/6: [2023 Girardello] R1-GreatCUBE+_Cesign Tool for CubeSats Design
+2026-02-03 16:10:54,791 - __main__ - INFO - Processing reference 6/6: [2024 Autodesk_Instructables] R3-Launch-Ready SSTV CubeSat _ 7 with Pictures) - Instructables
+2026-02-03 16:11:00,900 - __main__ - INFO - Saved detailed results to: ../logs/classification_test/classification_results_deepseek-r1-8b-optimized_latest_20260203_161100.json
+2026-02-03 16:11:00,905 - __main__ - INFO - Saved summary to: ../logs/classification_test/classification_summary_deepseek-r1-8b-optimized_latest_20260203_161100.csv
+2026-02-03 16:11:00,906 - __main__ - INFO - Classification Statistics:
+2026-02-03 16:11:00,906 - __main__ - INFO - Total references: 6
+2026-02-03 16:11:00,906 - __main__ - INFO - R1 (Expert Knowledge): 2 (33.3%)
+2026-02-03 16:11:00,906 - __main__ - INFO - R2 (Formal/Normative): 2 (33.3%)
+2026-02-03 16:11:00,906 - __main__ - INFO - R3 (Non-expert): 2 (33.3%)
+2026-02-03 16:11:00,906 - __main__ - INFO - Errors: 0 (0.0%)
+2026-02-03 16:11:00,906 - __main__ - INFO - Unknown: 0 (0.0%)
+2026-02-03 16:11:00,906 - __main__ - INFO - Statistics saved to: ../logs/classification_test/classification_statistics_deepseek-r1-8b-optimized_latest_20260203_161100.json
+2026-02-03 16:11:01,601 - __main__ - INFO - Confusion matrix saved to: ../logs/classification_test/confusion_matrix_deepseek-r1-8b-optimized_latest_20260203_161100.csv
+2026-02-03 16:11:01,602 - __main__ - INFO - Confusion Matrix (rows=ground truth, cols=predicted):
+2026-02-03 16:11:01,603 - __main__ - INFO - 
+              R1  R2  R3
+Ground Truth            
+R1             2   0   0
+R2             0   2   0
+R3             0   0   2
+2026-02-03 16:11:01,603 - __main__ - INFO - Accuracy (vs ground truth in filenames): 100.00% (6/6)
+2026-02-03 16:11:01,606 - __main__ - INFO - Classification metrics saved to: ../logs/classification_test/classification_metrics_deepseek-r1-8b-optimized_latest_20260203_161100.json
+2026-02-03 16:11:01,606 - __main__ - INFO - Classification process completed successfully
+2026-02-03 16:11:01,606 - __main__ - INFO - Results saved to: ../logs/classification_test

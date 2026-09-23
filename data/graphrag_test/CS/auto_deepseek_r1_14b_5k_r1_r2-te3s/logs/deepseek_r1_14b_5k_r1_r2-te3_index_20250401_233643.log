@@ -1,0 +1,246 @@
+Running graphrag command...
+Command: python -m graphrag index --root ./
+
+Logging enabled at /ragtest/CS/auto_deepseek_r1_14b_5k_r1_r2-te3s/logs/indexing-engine.log
+Running standard indexing.
+🚀 create_base_text_units
+                                                    id  ... n_tokens
+0    6cca1f8d19dc35c0f278a46a8cac8e067620fcc8b1aa69...  ...     1200
+1    497901e22d2be6b41c12ee545c304aef5934103154a678...  ...     1200
+2    65effc3d1d1db40923697a7b27207d4febab3dd6ba65cc...  ...     1200
+3    d4a437575492e9e6c9831dfe017235a6715e7e9932a079...  ...     1200
+4    2dfaa47d48cab054f2a1e2323bcff0ea419cf4b533c86b...  ...     1200
+..                                                 ...  ...      ...
+242  bf87ad0f0a605ced93ac8576bc7540ffbf113ed0695c47...  ...     1200
+243  37bb715281d8edc48f012a976ee8a8104adc3c028fed1b...  ...     1200
+244  6c89dec85cd366a87acf86ff7692f94986cdebb66202cd...  ...     1200
+245  7a84ac5e57bfb07cf119f8ded28356e4cdcd02a918f7f4...  ...     1200
+246  aa40426d77703475744ab2bb9c89deb9a8417dd1b77551...  ...      522
+
+[247 rows x 4 columns]
+🚀 create_final_documents
+                                                  id  ...                                      text_unit_ids
+0  d09a774c666c758e1e039d3de27884c66af8865311f749...  ...  [6cca1f8d19dc35c0f278a46a8cac8e067620fcc8b1aa6...
+
+[1 rows x 5 columns]
+🚀 extract_graph
+None
+🚀 compute_communities
+    level  community  parent                       title
+0       0          0      -1                     BENINGO
+0       0          0      -1          PROJECT MANAGEMENT
+0       0          0      -1                   CAMBRIDGE
+0       0          0      -1                  PATHFINDER
+0       0          0      -1                       PMBOK
+..    ...        ...     ...                         ...
+56      2         56      33         THERMAL ENVIRONMENT
+57      2         57      33                        TVAC
+57      2         57      33                         EMC
+58      2         58      33                       GREEN
+58      2         58      33  SUSTAINABILITY INITIATIVES
+
+[519 rows x 4 columns]
+🚀 create_final_entities
+                                       id  ...                                      text_unit_ids
+0    5125ad3d-5224-4b58-ab17-c1d7879891f5  ...  [d4a437575492e9e6c9831dfe017235a6715e7e9932a07...
+1    cdf88961-f56e-43e9-a5a9-a30b4cd57f97  ...  [d4a437575492e9e6c9831dfe017235a6715e7e9932a07...
+2    1cd2e196-4b3f-4017-977a-509af4f17af0  ...  [d4a437575492e9e6c9831dfe017235a6715e7e9932a07...
+3    94444f02-2425-48f3-969c-1800a0b1727c  ...  [d4a437575492e9e6c9831dfe017235a6715e7e9932a07...
+4    c11cb68e-8193-4ab5-9eca-cf724da05e4a  ...  [d4a437575492e9e6c9831dfe017235a6715e7e9932a07...
+..                                    ...  ...                                                ...
+486  fb5e3b84-bb16-4e2c-a16a-5d33d1ededaa  ...  [aa40426d77703475744ab2bb9c89deb9a8417dd1b7755...
+487  a9c13589-66bf-4e2c-b9c2-cdb0acbfa7fa  ...  [aa40426d77703475744ab2bb9c89deb9a8417dd1b7755...
+488  8fffc6ac-e8c6-4179-8810-bc67c08d277a  ...  [aa40426d77703475744ab2bb9c89deb9a8417dd1b7755...
+489  452074e2-1658-4b10-8f1a-3699c0275115  ...  [aa40426d77703475744ab2bb9c89deb9a8417dd1b7755...
+490  e697900f-38b5-4fb4-acf1-241b3594ddf3  ...  [aa40426d77703475744ab2bb9c89deb9a8417dd1b7755...
+
+[491 rows x 6 columns]
+🚀 create_final_relationships
+                                       id  ...                                      text_unit_ids
+0    c2e3b43d-f3a4-4864-b983-0c2697c7d228  ...  [d4a437575492e9e6c9831dfe017235a6715e7e9932a07...
+1    0a869754-db3b-47a2-9847-397c0fa42f92  ...  [d4a437575492e9e6c9831dfe017235a6715e7e9932a07...
+2    15e06790-89ee-4ab7-b2c6-e3e46afa55ec  ...  [d4a437575492e9e6c9831dfe017235a6715e7e9932a07...
+3    5a3e06e1-3fc9-4ae0-8ca0-b6833c6f201d  ...  [d4a437575492e9e6c9831dfe017235a6715e7e9932a07...
+4    84d60e3c-124c-4f5c-90a7-acce046b6414  ...  [d4a437575492e9e6c9831dfe017235a6715e7e9932a07...
+..                                    ...  ...                                                ...
+367  edccf1b2-4726-4c3f-99bc-092127cad5a4  ...  [26ad5da3b544f36743c327d3df0bf4f4577b5496d8d0a...
+368  29e3581d-86b7-4891-941d-8c6c8a59cad6  ...  [26ad5da3b544f36743c327d3df0bf4f4577b5496d8d0a...
+369  cfd4a296-0962-4842-b1f0-6222b7823667  ...  [aa40426d77703475744ab2bb9c89deb9a8417dd1b7755...
+370  88c80799-3eef-44d2-9cba-4c9f7b2cd2df  ...  [aa40426d77703475744ab2bb9c89deb9a8417dd1b7755...
+371  8d66d568-ca3d-401d-a808-99946bfbc91c  ...  [aa40426d77703475744ab2bb9c89deb9a8417dd1b7755...
+
+[372 rows x 8 columns]
+🚀 create_final_nodes
+                                       id  human_readable_id  ...    x    y
+0    5125ad3d-5224-4b58-ab17-c1d7879891f5                  0  ...  0.0  0.0
+1    5125ad3d-5224-4b58-ab17-c1d7879891f5                  0  ...  0.0  0.0
+2    cdf88961-f56e-43e9-a5a9-a30b4cd57f97                  1  ...  0.0  0.0
+3    cdf88961-f56e-43e9-a5a9-a30b4cd57f97                  1  ...  0.0  0.0
+4    1cd2e196-4b3f-4017-977a-509af4f17af0                  2  ...  NaN  NaN
+..                                    ...                ...  ...  ...  ...
+738  a9c13589-66bf-4e2c-b9c2-cdb0acbfa7fa                487  ...  0.0  0.0
+739  8fffc6ac-e8c6-4179-8810-bc67c08d277a                488  ...  0.0  0.0
+740  452074e2-1658-4b10-8f1a-3699c0275115                489  ...  0.0  0.0
+741  e697900f-38b5-4fb4-acf1-241b3594ddf3                490  ...  0.0  0.0
+742  e697900f-38b5-4fb4-acf1-241b3594ddf3                490  ...  0.0  0.0
+
+[743 rows x 8 columns]
+🚀 create_final_communities
+                                      id human_readable_id  ...      period  size
+0   d49ad8dc-6420-4ead-b8ed-ab11dbd838b8                 0  ...  2025-04-02     7
+1   1a9dbea2-bfa5-4730-9947-de56790ea92a                 1  ...  2025-04-02    26
+2   183aafa2-4103-4367-9b69-5b633513b28b                 2  ...  2025-04-02    31
+3   37fb74ed-7b3f-4590-b21b-638bee659328                 3  ...  2025-04-02    12
+4   f7f428d6-a33d-45b9-a13f-e7cdeb8e7c80                 4  ...  2025-04-02    16
+5   df3d4c15-f595-4d8f-97bd-47972a953c7c                 5  ...  2025-04-02    31
+6   32a52b83-ebcf-4d30-a8ee-84f9bd72415f                 6  ...  2025-04-02    14
+7   accc5a7b-8003-476e-afb9-066380aaf0c1                 7  ...  2025-04-02    26
+8   c10a6cae-ba9b-4626-b1e2-33a70b9f7913                 8  ...  2025-04-02    22
+9   fd10c97d-c355-4b86-a0d7-a1a2a8053ef6                 9  ...  2025-04-02    38
+10  1a7ef8cf-145a-4bd5-9404-103dd8f80a0a                10  ...  2025-04-02     8
+11  fe8ed748-52c0-4f81-9535-3a74fd05b23d                11  ...  2025-04-02     6
+12  76486aac-20e7-4b0e-a4cc-f62877481e8a                12  ...  2025-04-02    16
+13  a6f34145-d533-4d15-ba63-a5bef22f5ba4                13  ...  2025-04-02    10
+14  ea232403-6937-419a-960d-18e09e1e3e3a                14  ...  2025-04-02     4
+15  43807965-1852-4a21-ac0c-5056dec017fb                15  ...  2025-04-02    12
+16  e2547b10-b7dd-40f5-9a01-4a0a048734cd                16  ...  2025-04-02     4
+17  c94157a3-6975-456d-95cb-ab7ac2b3477c                17  ...  2025-04-02     6
+18  36958a2d-cbf6-494b-a66f-15e6b8b74718                18  ...  2025-04-02     4
+19  88696935-892c-47b1-8e7b-522a64f7eecc                19  ...  2025-04-02     3
+20  adcd2871-d5b3-4874-9a13-343b8c810519                20  ...  2025-04-02    12
+21  8ffce696-73aa-4205-913d-d91c66c77fcb                21  ...  2025-04-02    11
+22  f42a6963-da6a-42a5-a9d1-8e6ca1331aa3                22  ...  2025-04-02     2
+23  ae434440-3dbd-4203-9381-ede6afcf2c35                23  ...  2025-04-02     3
+24  ac49cc40-bf13-4acd-a0ef-046adc75cb88                24  ...  2025-04-02     5
+25  1ffa268a-b2eb-470f-a801-f6a6cd86310f                25  ...  2025-04-02     4
+26  2ba978ef-a1bf-40f4-bf42-e325d540185d                26  ...  2025-04-02     3
+27  e8e00222-e530-449c-b0f2-94d1e5bf442c                27  ...  2025-04-02     3
+28  07b1253c-0efb-44bd-8bdc-605044737c8d                28  ...  2025-04-02    10
+29  d1048a91-63fe-4b8e-a678-9f2dd88a9632                29  ...  2025-04-02     3
+30  a81b51e6-b76f-45ce-b8dc-6b5a02fc78e4                30  ...  2025-04-02     2
+31  11e0be75-bd28-41b5-8f34-e518b316fe7d                31  ...  2025-04-02     8
+32  44d7be91-f1fb-4377-88cf-c7df8a4c4f72                32  ...  2025-04-02     3
+33  59a9931e-6560-4a6c-ae06-85de516a35a0                33  ...  2025-04-02    10
+34  0212e180-3fe6-4c1a-ba2a-ba3790c9ad3a                34  ...  2025-04-02     8
+35  24044dca-3aa1-489c-a29e-09bfb8957b04                35  ...  2025-04-02     9
+36  c7f2d7b4-a94c-4941-8bb4-4710c3b886d4                36  ...  2025-04-02     2
+37  1c1b9ba4-c9f2-4f45-9ea3-33246f6fb9a4                37  ...  2025-04-02     3
+38  b4e044dd-856e-4322-8d4c-ffaebdab9aa3                38  ...  2025-04-02     6
+39  31788578-c62e-4459-85a1-6f95316bb23e                39  ...  2025-04-02    11
+40  a2ecbf9f-cb19-4430-9d7c-254531e4c4e3                40  ...  2025-04-02     2
+41  ee809a40-b5e5-4e4a-bd9d-2113d2d3aa67                41  ...  2025-04-02     7
+42  70949c57-8971-464a-95dd-75cc64cdf113                42  ...  2025-04-02    14
+43  cfb9ab70-a39e-4a01-be73-eed74c4a9d74                43  ...  2025-04-02     2
+44  34005932-b45d-40e7-9bd3-16270c7540fb                44  ...  2025-04-02     2
+45  505685bb-3cbb-4f46-8e3d-b91c3c31799a                45  ...  2025-04-02     2
+46  c932e31b-de7b-4d8e-a93f-2176c6d4b266                46  ...  2025-04-02     2
+47  5a595567-39fb-449a-bf9d-824121c5ac64                47  ...  2025-04-02    27
+48  d2a59585-0e7d-4c45-bfe9-8f97f988efe3                48  ...  2025-04-02     4
+49  4eeaacb4-ee82-4bab-9b75-17b1b1a06f38                49  ...  2025-04-02     2
+50  c8f4b0d1-8d81-4081-b2c2-2f6ba872c424                50  ...  2025-04-02     5
+51  9b88be50-3ec4-4bc9-b117-5d42cdaac4d4                51  ...  2025-04-02     9
+52  8f966982-40a1-40d2-b422-63dec51e3b3e                52  ...  2025-04-02     4
+53  387a26b7-e210-4fad-a6ae-b03071a28d5b                53  ...  2025-04-02     3
+54  17a4136b-1b07-40db-bf21-025287c088c1                54  ...  2025-04-02     7
+55  f3ff043b-ed1d-46be-944f-8a46c22ac270                55  ...  2025-04-02     3
+56  7b0a9090-faf3-41c8-939c-035d2e0fd94a                56  ...  2025-04-02     6
+57  7d7f26d5-70e5-442e-a8db-6a72e2e17e55                57  ...  2025-04-02     2
+58  c5d2928a-6562-43eb-af4b-11ab8dcd7700                58  ...  2025-04-02     2
+
+[59 rows x 11 columns]
+🚀 create_final_text_units
+                                                    id  ...                                   relationship_ids
+0    6cca1f8d19dc35c0f278a46a8cac8e067620fcc8b1aa69...  ...                                               None
+1    497901e22d2be6b41c12ee545c304aef5934103154a678...  ...                                               None
+2    65effc3d1d1db40923697a7b27207d4febab3dd6ba65cc...  ...                                               None
+3    d4a437575492e9e6c9831dfe017235a6715e7e9932a079...  ...  [c2e3b43d-f3a4-4864-b983-0c2697c7d228, 0a86975...
+4    2dfaa47d48cab054f2a1e2323bcff0ea419cf4b533c86b...  ...  [e764a351-ae5f-4edd-ab21-46336bb6ba55, b64fccb...
+..                                                 ...  ...                                                ...
+242  bf87ad0f0a605ced93ac8576bc7540ffbf113ed0695c47...  ...                                               None
+243  37bb715281d8edc48f012a976ee8a8104adc3c028fed1b...  ...                                               None
+244  6c89dec85cd366a87acf86ff7692f94986cdebb66202cd...  ...                                               None
+245  7a84ac5e57bfb07cf119f8ded28356e4cdcd02a918f7f4...  ...                                               None
+246  aa40426d77703475744ab2bb9c89deb9a8417dd1b77551...  ...  [cfd4a296-0962-4842-b1f0-6222b7823667, 88c8079...
+
+[247 rows x 7 columns]
+/graphrag/index/flows/create_final_community_reports.py:126: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  input.loc[:, NODE_DETAILS] = input.loc[
+🚀 create_final_community_reports
+                                  id  human_readable_id  ...      period  size
+0   4a99a494b03b485eb7ffcdc65b941854                 56  ...  2025-04-02     6
+1   8a25aff7db7f4b248ab6e5f2de7b85db                 57  ...  2025-04-02     2
+2   78520beaa0534ddbb53e97098d19d5bf                 58  ...  2025-04-02     2
+3   472d3fbc22084df6a6042363857d62af                 15  ...  2025-04-02    12
+4   a8a36e3954b94e6ba3a4e44e86c97a24                 16  ...  2025-04-02     4
+5   b0127d228dfd40ee806f2c5a789a46a6                 17  ...  2025-04-02     6
+6   55fea3bf44d7439894bd5193e4079595                 18  ...  2025-04-02     4
+7   244326f7efab46e198d34df54b638141                 19  ...  2025-04-02     3
+8   aa7709aaa9704349ba6624e331be4870                 20  ...  2025-04-02    12
+9   5441082c410f46118fc7c1f669a72e4f                 21  ...  2025-04-02    11
+10  fcbc981b71064af99c49266614bd42ea                 22  ...  2025-04-02     2
+11  2b433a6956484a559f59e9b7e5111cb1                 23  ...  2025-04-02     3
+12  7920739fdde54a71b1471a9d2cb4c345                 24  ...  2025-04-02     5
+13  1d27492cefe54c1d9839fab5cb7a9176                 25  ...  2025-04-02     4
+14  e699fe1bd0c74c979dd25745415772ad                 26  ...  2025-04-02     3
+15  5541431a1e1645c08284f593993d268f                 27  ...  2025-04-02     3
+16  e431d16d1bbc4ba5a02cfb9eb6e5612c                 28  ...  2025-04-02    10
+17  883ccb19bd07412198ca5f53eeae6753                 29  ...  2025-04-02     3
+18  609211f46dbe4f9e874c0f7e72767a2f                 30  ...  2025-04-02     2
+19  d6f4ef67869b4b3b87bb3ddc521694fa                 31  ...  2025-04-02     8
+20  58565f33f9164b518d992a7b13a22b63                 32  ...  2025-04-02     3
+21  6586ef366c544b4a80a96cc2e7ca96e3                 34  ...  2025-04-02     8
+22  0030320c836f418287bd9b06d5567d77                 35  ...  2025-04-02     9
+23  c2e90f2fc7344544bc7ca4fe5bf7e684                 36  ...  2025-04-02     2
+24  3faaea1930ff4b56bb9a1bc7226ac3f0                 37  ...  2025-04-02     3
+25  0aae7803ddb144e49c1563c0dff86358                 38  ...  2025-04-02     6
+26  7b54189b6be6457fb3f2a169da2a190a                 39  ...  2025-04-02    11
+27  ca5d26ba124f42099e2e7004ef1e7211                 40  ...  2025-04-02     2
+28  a809a5fc74b14628b288aa9a759bdca5                 41  ...  2025-04-02     7
+29  514f53f6a6534432821e98c869165b72                 42  ...  2025-04-02    14
+30  05b7efe3c3fb4f52a18116df7783535b                 43  ...  2025-04-02     2
+31  bea6989fe52f498f946aa8f9b34ddd0c                 44  ...  2025-04-02     2
+32  3847574b89dc4f2e9ae45fb7905ed0a3                 45  ...  2025-04-02     2
+33  e48066e6739b402d93fd3fce346e15ba                 46  ...  2025-04-02     2
+34  efe3a30827b94ec5b5c4b943ac47a995                 47  ...  2025-04-02    27
+35  89b38c23f4e94131b4d44690b7929e51                 48  ...  2025-04-02     4
+36  11e844d3de9f416497801b83ce975bcc                 49  ...  2025-04-02     2
+37  db498e2924c14b46a2c770f691373bd0                 50  ...  2025-04-02     5
+38  b58154473e6340eaa71e42cff69792c6                 51  ...  2025-04-02     9
+39  f7408e7c9c564bacbaa06bfd057ad000                 53  ...  2025-04-02     3
+40  c48bb0fd46c84ea0817dbdff5fff99e4                 54  ...  2025-04-02     7
+41  2d40a31f9b5d4e7b865f4208f7b08d29                 55  ...  2025-04-02     3
+42  5c0f2b1a51d542068b455623f9f414bc                  0  ...  2025-04-02     7
+43  07e60f87c2d74375bb7bb587d8129f89                  2  ...  2025-04-02    31
+44  98b486f2c84c4ec5bbea5eb994699e6e                  3  ...  2025-04-02    12
+45  6eb2f499d3064972b7df6853f4e6cc4f                  6  ...  2025-04-02    14
+46  eb50aac7ce63458c93f44b0d2b15afbb                  8  ...  2025-04-02    22
+47  14c63b01ba704f838b14ffc4b21b36cd                 10  ...  2025-04-02     8
+48  cf21d180922840eab1c95674c45dab92                 11  ...  2025-04-02     6
+49  9db46652c0fd4dc183240c1d1e999026                 12  ...  2025-04-02    16
+50  84124d5971494840874d54c0968566a9                 13  ...  2025-04-02    10
+51  94f3853bf8d04cceb3c4938d0eca40cd                 14  ...  2025-04-02     4
+
+[52 rows x 14 columns]
+[2025-04-02T09:57:33Z WARN  lance::dataset::write::insert] No existing dataset at /ragtest/CS/auto_deepseek_r1_14b_5k_r1_r2-te3s/output/lancedb/default-entity-description.lance, it will be created
+[2025-04-02T09:57:58Z WARN  lance::dataset::write::insert] No existing dataset at /ragtest/CS/auto_deepseek_r1_14b_5k_r1_r2-te3s/output/lancedb/default-text_unit-text.lance, it will be created
+[2025-04-02T09:58:00Z WARN  lance::dataset::write::insert] No existing dataset at /ragtest/CS/auto_deepseek_r1_14b_5k_r1_r2-te3s/output/lancedb/default-community-full_content.lance, it will be created
+🚀 generate_text_embeddings
+None
+⠋ GraphRAG Indexer 
+├── Loading Input (InputFileType.text) - 1 files loaded (0 filtered) ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00
+├── create_base_text_units ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00
+├── create_final_documents ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00
+├── extract_graph ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00
+├── compute_communities ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00
+├── create_final_entities ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00
+├── create_final_relationships ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00
+├── create_final_nodes ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00
+├── create_final_communities ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00
+├── create_final_text_units ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00
+├── create_final_community_reports ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00
+├── generate_text_embeddings ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00 0:00:00🚀 All workflows completed successfully.
+Command completed and logged to logs/cc_test_run_20250401_233643.log

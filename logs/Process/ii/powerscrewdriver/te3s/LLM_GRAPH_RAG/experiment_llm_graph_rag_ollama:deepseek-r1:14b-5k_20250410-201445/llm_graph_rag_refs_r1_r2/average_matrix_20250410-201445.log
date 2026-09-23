@@ -1,0 +1,1627 @@
+2025-04-10 22:50:14,178 - DSM_None_None_ - INFO - Resetting GPUs...
+2025-04-10 22:51:01,015 - DSM_None_None_ - INFO - Product: powerscrewdriver
+2025-04-10 22:51:01,017 - DSM_None_None_ - INFO - Model: ollama:deepseek-r1:14b-5k
+2025-04-10 22:51:01,018 - DSM_None_None_ - INFO - Type: LLM_GRAPH_RAG
+2025-04-10 22:51:01,019 - DSM_None_None_ - INFO - Reference: r1_r2
+2025-04-10 22:51:02,139 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-04-10 22:51:02,140 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/average_matrix_20250410-201445.csv
+2025-04-10 22:51:02,140 - DSM_None_None_ - INFO - Extracted model: deepseek-r1:14b-5k
+2025-04-10 22:51:02,169 - DSM_None_None_ - INFO - Prompt: 
+You are an expert matching engine for cyber-physical system systems. Your task is to determine the optimal one-to-one mapping between remaining ground truth and predicted major components.
+
+Remaining Ground Truth Components:
+['Bit', 'Transmission', 'Motor', 'Electrical System', 'Battery Holder', 'Housing', 'External Environment']
+
+Remaining Predicted Components:
+['INNOVAGE POWERED SCREWDRIVER', 'ELECTRIC ENERGY', 'BEARING COMPARTMENT', 'MECHANICAL CONNECTION', 'HYDRAULIC ENERGY', 'PHYSICAL CONNECTION', 'ENGINE ARCHITECTURES']
+
+Note: The following components have already been automatically matched due to high similarity (>0.8):
+[]
+
+Available Matches for Remaining Components (above 0.3 similarity threshold):
+
+Bit potential matches:
+
+Transmission potential matches:
+- MECHANICAL CONNECTION (similarity: 0.411)
+- PHYSICAL CONNECTION (similarity: 0.311)
+
+Motor potential matches:
+- INNOVAGE POWERED SCREWDRIVER (similarity: 0.366)
+- MECHANICAL CONNECTION (similarity: 0.426)
+- ENGINE ARCHITECTURES (similarity: 0.332)
+
+Electrical System potential matches:
+- ELECTRIC ENERGY (similarity: 0.548)
+- MECHANICAL CONNECTION (similarity: 0.369)
+- HYDRAULIC ENERGY (similarity: 0.341)
+- PHYSICAL CONNECTION (similarity: 0.326)
+- ENGINE ARCHITECTURES (similarity: 0.319)
+
+Battery Holder potential matches:
+- INNOVAGE POWERED SCREWDRIVER (similarity: 0.342)
+- BEARING COMPARTMENT (similarity: 0.338)
+
+Housing potential matches:
+
+External Environment potential matches:
+
+
+Instructions:
+1. Evaluate each pairing based on:
+   - Embedding similarity scores
+   - Functional equivalence at the core architecture level
+   - System-level whole-part relationships
+   - Overall coherence within the cyber-physical system
+2. Each predicted component may only be matched once
+3. Each ground truth component may receive at most one match
+4. Do not include any text other than what is specified below
+5. Only match the remaining components - do not rematch already matched components
+
+Output Format (exactly as shown):
+--------------------------------------------------
+MAPPINGS:
+[ground truth 1] -> [predicted 1]
+[ground truth 2] -> [predicted 2]
+...
+REASON: [brief explanation focusing on functional equivalence]
+--------------------------------------------------
+2025-04-10 22:51:02,170 - DSM_None_None_ - INFO - Attempting to use model: deepseek-r1:14b-5k
+2025-04-10 22:51:02,172 - DSM_None_None_ - INFO - Using Ollama path
+2025-04-10 22:51:02,172 - DSM_None_None_ - INFO - Model name: deepseek-r1:14b-5k
+2025-04-10 22:51:02,173 - DSM_None_None_ - INFO - Prompt length: 2246
+2025-04-10 22:53:46,853 - DSM_None_None_ - INFO - Response status code: 200
+2025-04-10 22:53:46,854 - DSM_None_None_ - INFO - API call succeeded
+2025-04-10 22:53:46,855 - DSM_None_None_ - INFO - Got response: <think>
+Okay, I need to figure out how to map the remaining ground truth components to the predicted...
+2025-04-10 22:53:46,856 - DSM_None_None_ - INFO - 
+Final Mappings:
+2025-04-10 22:53:46,857 - DSM_None_None_ - INFO - Automatic high-similarity matches: {}
+2025-04-10 22:53:46,858 - DSM_None_None_ - INFO - LLM-suggested matches: {}
+2025-04-10 22:53:46,860 - DSM_None_None_ - INFO - Initial mapping: {}
+2025-04-10 22:53:46,863 - DSM_None_None_ - ERROR - No valid component mappings found
+2025-04-10 23:27:33,576 - DSM_None_None_ - INFO - Resetting GPUs...
+2025-04-10 23:35:13,330 - DSM_None_None_ - INFO - Resetting GPUs...
+2025-04-10 23:36:00,205 - DSM_None_None_ - INFO - Running Analysis For:
+2025-04-10 23:36:00,207 - DSM_None_None_ - INFO -   Product: powerscrewdriver
+2025-04-10 23:36:00,208 - DSM_None_None_ - INFO -   Model: ollama:deepseek-r1:14b-5k
+2025-04-10 23:36:00,209 - DSM_None_None_ - INFO -   Type: LLM_GRAPH_RAG
+2025-04-10 23:36:00,210 - DSM_None_None_ - INFO -   Reference: r1_r2
+2025-04-10 23:36:00,211 - DSM_None_None_ - INFO -   Relationship: whole-part
+2025-04-10 23:36:00,211 - DSM_None_None_ - INFO -   Avg Pred Path: ../logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/average_matrix_20250410-201445.csv
+2025-04-10 23:36:00,212 - DSM_None_None_ - INFO -   Indiv JSON Path: ../logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/average_matrix_20250410-201445.json
+2025-04-10 23:36:00,218 - DSM_None_None_ - INFO - Loading individual matrices from ../logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/average_matrix_20250410-201445.json
+2025-04-10 23:36:00,219 - DSM_None_None_ - INFO - Loaded 5 individual matrices.
+2025-04-10 23:36:00,220 - DSM_None_None_ - INFO - Calculating Raw Metrics...
+2025-04-10 23:36:00,250 - DSM_None_None_ - INFO - Calculated Raw Metrics Mean and Std Dev.
+2025-04-10 23:36:00,250 - DSM_None_None_ - INFO - Calculating Component Similarity based on Average Matrix...
+2025-04-10 23:36:02,136 - DSM_None_None_ - INFO - Attempting Component Mapping based on Average Matrix...
+2025-04-10 23:36:02,137 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-04-10 23:36:02,138 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/average_matrix_20250410-201445.csv
+2025-04-10 23:36:02,139 - DSM_None_None_ - INFO - Extracted model: deepseek-r1:14b-5k
+2025-04-10 23:36:02,167 - DSM_None_None_ - INFO - Prompt: 
+You are an expert matching engine for cyber-physical system systems. Your task is to determine the optimal one-to-one mapping between remaining ground truth and predicted major components.
+
+Remaining Ground Truth Components:
+['Bit', 'Transmission', 'Motor', 'Electrical System', 'Battery Holder', 'Housing', 'External Environment']
+
+Remaining Predicted Components:
+['INNOVAGE POWERED SCREWDRIVER', 'ELECTRIC ENERGY', 'BEARING COMPARTMENT', 'MECHANICAL CONNECTION', 'HYDRAULIC ENERGY', 'PHYSICAL CONNECTION', 'ENGINE ARCHITECTURES']
+
+Note: The following components have already been automatically matched due to high similarity (>0.8):
+[]
+
+Available Matches for Remaining Components (above 0.3 similarity threshold):
+
+Bit potential matches:
+
+Transmission potential matches:
+- MECHANICAL CONNECTION (similarity: 0.411)
+- PHYSICAL CONNECTION (similarity: 0.311)
+
+Motor potential matches:
+- INNOVAGE POWERED SCREWDRIVER (similarity: 0.366)
+- MECHANICAL CONNECTION (similarity: 0.426)
+- ENGINE ARCHITECTURES (similarity: 0.332)
+
+Electrical System potential matches:
+- ELECTRIC ENERGY (similarity: 0.548)
+- MECHANICAL CONNECTION (similarity: 0.369)
+- HYDRAULIC ENERGY (similarity: 0.341)
+- PHYSICAL CONNECTION (similarity: 0.326)
+- ENGINE ARCHITECTURES (similarity: 0.319)
+
+Battery Holder potential matches:
+- INNOVAGE POWERED SCREWDRIVER (similarity: 0.342)
+- BEARING COMPARTMENT (similarity: 0.338)
+
+Housing potential matches:
+
+External Environment potential matches:
+
+
+Instructions:
+1. Evaluate each pairing based on:
+   - Embedding similarity scores
+   - Functional equivalence at the core architecture level
+   - System-level whole-part relationships
+   - Overall coherence within the cyber-physical system
+2. Each predicted component may only be matched once
+3. Each ground truth component may receive at most one match
+4. Do not include any text other than what is specified below
+5. Only match the remaining components - do not rematch already matched components
+
+Output Format (exactly as shown):
+--------------------------------------------------
+MAPPINGS:
+[ground truth 1] -> [predicted 1]
+[ground truth 2] -> [predicted 2]
+...
+REASON: [brief explanation focusing on functional equivalence]
+--------------------------------------------------
+2025-04-10 23:36:02,169 - DSM_None_None_ - INFO - Attempting to use model: deepseek-r1:14b-5k
+2025-04-10 23:36:02,169 - DSM_None_None_ - INFO - Using Ollama path
+2025-04-10 23:36:02,170 - DSM_None_None_ - INFO - Model name: deepseek-r1:14b-5k
+2025-04-10 23:36:02,171 - DSM_None_None_ - INFO - Prompt length: 2246
+2025-04-10 23:44:13,560 - DSM_None_None_ - INFO - Resetting GPUs...
+2025-04-10 23:45:00,483 - DSM_None_None_ - INFO - Running Analysis For:
+2025-04-10 23:45:00,485 - DSM_None_None_ - INFO -   Product: powerscrewdriver
+2025-04-10 23:45:00,486 - DSM_None_None_ - INFO -   Model: ollama:deepseek-r1:14b-5k
+2025-04-10 23:45:00,486 - DSM_None_None_ - INFO -   Type: LLM_GRAPH_RAG
+2025-04-10 23:45:00,488 - DSM_None_None_ - INFO -   Reference: r1_r2
+2025-04-10 23:45:00,489 - DSM_None_None_ - INFO -   Relationship: whole-part
+2025-04-10 23:45:00,490 - DSM_None_None_ - INFO -   Avg Pred Path: ../logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/average_matrix_20250410-201445.csv
+2025-04-10 23:45:00,491 - DSM_None_None_ - INFO -   Indiv JSON Path: ../logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/average_matrix_20250410-201445.json
+2025-04-10 23:45:00,496 - DSM_None_None_ - INFO - Loading individual matrices from ../logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/average_matrix_20250410-201445.json
+2025-04-10 23:45:00,498 - DSM_None_None_ - INFO - Loaded 5 individual matrices.
+2025-04-10 23:45:00,499 - DSM_None_None_ - INFO - Calculating Raw Metrics...
+2025-04-10 23:45:00,553 - DSM_None_None_ - INFO - Calculated Raw Metrics Mean and Std Dev.
+2025-04-10 23:45:00,553 - DSM_None_None_ - INFO - Calculating Component Similarity based on Average Matrix...
+2025-04-10 23:45:03,669 - DSM_None_None_ - INFO - Attempting Component Mapping based on Average Matrix...
+2025-04-10 23:45:03,670 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-04-10 23:45:03,671 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/average_matrix_20250410-201445.csv
+2025-04-10 23:45:03,671 - DSM_None_None_ - INFO - Extracted model: deepseek-r1:14b-5k
+2025-04-10 23:45:03,700 - DSM_None_None_ - INFO - Prompt: 
+You are an expert matching engine for cyber-physical system systems. Your task is to determine the optimal one-to-one mapping between remaining ground truth and predicted major components.
+
+Remaining Ground Truth Components:
+['Bit', 'Transmission', 'Motor', 'Electrical System', 'Battery Holder', 'Housing', 'External Environment']
+
+Remaining Predicted Components:
+['INNOVAGE POWERED SCREWDRIVER', 'ELECTRIC ENERGY', 'BEARING COMPARTMENT', 'MECHANICAL CONNECTION', 'HYDRAULIC ENERGY', 'PHYSICAL CONNECTION', 'ENGINE ARCHITECTURES']
+
+Note: The following components have already been automatically matched due to high similarity (>0.8):
+[]
+
+Available Matches for Remaining Components (above 0.3 similarity threshold):
+
+Bit potential matches:
+
+Transmission potential matches:
+- MECHANICAL CONNECTION (similarity: 0.411)
+- PHYSICAL CONNECTION (similarity: 0.311)
+
+Motor potential matches:
+- INNOVAGE POWERED SCREWDRIVER (similarity: 0.366)
+- MECHANICAL CONNECTION (similarity: 0.426)
+- ENGINE ARCHITECTURES (similarity: 0.332)
+
+Electrical System potential matches:
+- ELECTRIC ENERGY (similarity: 0.548)
+- MECHANICAL CONNECTION (similarity: 0.369)
+- HYDRAULIC ENERGY (similarity: 0.341)
+- PHYSICAL CONNECTION (similarity: 0.326)
+- ENGINE ARCHITECTURES (similarity: 0.319)
+
+Battery Holder potential matches:
+- INNOVAGE POWERED SCREWDRIVER (similarity: 0.342)
+- BEARING COMPARTMENT (similarity: 0.338)
+
+Housing potential matches:
+
+External Environment potential matches:
+
+
+Instructions:
+1. Evaluate each pairing based on:
+   - Embedding similarity scores
+   - Functional equivalence at the core architecture level
+   - System-level whole-part relationships
+   - Overall coherence within the cyber-physical system
+2. Each predicted component may only be matched once
+3. Each ground truth component may receive at most one match
+4. Do not include any text other than what is specified below
+5. Only match the remaining components - do not rematch already matched components
+
+Output Format (exactly as shown):
+--------------------------------------------------
+MAPPINGS:
+[ground truth 1] -> [predicted 1]
+[ground truth 2] -> [predicted 2]
+...
+REASON: [brief explanation focusing on functional equivalence]
+--------------------------------------------------
+2025-04-10 23:45:03,702 - DSM_None_None_ - INFO - Attempting to use model: deepseek-r1:14b-5k
+2025-04-10 23:45:03,703 - DSM_None_None_ - INFO - Using Ollama path
+2025-04-10 23:45:03,703 - DSM_None_None_ - INFO - Model name: deepseek-r1:14b-5k
+2025-04-10 23:45:03,704 - DSM_None_None_ - INFO - Prompt length: 2246
+2025-04-10 23:47:55,693 - DSM_None_None_ - INFO - Response status code: 200
+2025-04-10 23:47:55,694 - DSM_None_None_ - INFO - API call succeeded
+2025-04-10 23:47:55,695 - DSM_None_None_ - INFO - Got response: <think>
+Alright, so I need to figure out the optimal one-to-one mapping between the remaining ground...
+2025-04-10 23:47:55,696 - DSM_None_None_ - INFO - 
+Final Mappings:
+2025-04-10 23:47:55,697 - DSM_None_None_ - INFO - Automatic high-similarity matches: {}
+2025-04-10 23:47:55,698 - DSM_None_None_ - INFO - LLM-suggested matches: {}
+2025-04-10 23:47:55,699 - DSM_None_None_ - INFO - Initial mapping: {}
+2025-04-10 23:47:55,702 - DSM_None_None_ - ERROR - No valid component mappings found based on average data. Skipping aligned metrics and plots.
+2025-04-10 23:47:55,703 - DSM_None_None_ - INFO - 
+Raw Metrics Summary (Alignment Failed):
+2025-04-10 23:47:55,704 - DSM_None_None_ - INFO -   accuracy: 0.5551 ± 0.0327
+2025-04-10 23:47:55,705 - DSM_None_None_ - INFO -   precision: 0.7455 ± 0.0096
+2025-04-10 23:47:55,705 - DSM_None_None_ - INFO -   recall: 0.5471 ± 0.0824
+2025-04-10 23:47:55,706 - DSM_None_None_ - INFO -   f1_score: 0.6266 ± 0.0584
+2025-04-10 23:47:55,708 - DSM_None_None_ - INFO -   edit_distance: 21.8000 ± 1.6000
+2025-04-10 23:47:55,709 - DSM_None_None_ - INFO -   spectral_distance: 1.6641 ± 0.3712
+2025-04-10 23:57:48,436 - DSM_None_None_ - INFO - Resetting GPUs...
+2025-04-11 00:01:15,479 - DSM_None_None_ - INFO - Resetting GPUs...
+2025-04-11 00:02:02,393 - DSM_None_None_ - INFO - Running Analysis For:
+2025-04-11 00:02:02,395 - DSM_None_None_ - INFO -   Product: powerscrewdriver
+2025-04-11 00:02:02,396 - DSM_None_None_ - INFO -   Model: ollama:deepseek-r1:14b-5k
+2025-04-11 00:02:02,396 - DSM_None_None_ - INFO -   Type: LLM_GRAPH_RAG
+2025-04-11 00:02:02,398 - DSM_None_None_ - INFO -   Reference: r1_r2
+2025-04-11 00:02:02,399 - DSM_None_None_ - INFO -   Relationship: whole-part
+2025-04-11 00:02:02,399 - DSM_None_None_ - INFO -   Avg Pred Path: ../logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/average_matrix_20250410-201445.csv
+2025-04-11 00:02:02,400 - DSM_None_None_ - INFO -   Indiv JSON Path: ../logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/average_matrix_20250410-201445.json
+2025-04-11 00:02:02,406 - DSM_None_None_ - INFO - Loading individual matrices from ../logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/average_matrix_20250410-201445.json
+2025-04-11 00:02:02,407 - DSM_None_None_ - INFO - Loaded 5 individual matrices.
+2025-04-11 00:02:02,408 - DSM_None_None_ - INFO - Calculating Raw Metrics...
+2025-04-11 00:02:02,462 - DSM_None_None_ - INFO - Calculated Raw Metrics Mean and Std Dev.
+2025-04-11 00:02:02,463 - DSM_None_None_ - INFO - Calculating Component Similarity based on Average Matrix...
+2025-04-11 00:02:03,260 - DSM_None_None_ - INFO - Attempting Component Mapping based on Average Matrix...
+2025-04-11 00:02:03,261 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-04-11 00:02:03,262 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/average_matrix_20250410-201445.csv
+2025-04-11 00:02:03,262 - DSM_None_None_ - INFO - Extracted model: deepseek-r1:14b-5k
+2025-04-11 00:02:03,292 - DSM_None_None_ - INFO - Prompt: 
+You are an expert matching engine for cyber-physical system systems. Your task is to determine the optimal one-to-one mapping between remaining ground truth and predicted major components.
+
+Remaining Ground Truth Components:
+['Bit', 'Transmission', 'Motor', 'Electrical System', 'Battery Holder', 'Housing', 'External Environment']
+
+Remaining Predicted Components:
+['INNOVAGE POWERED SCREWDRIVER', 'ELECTRIC ENERGY', 'BEARING COMPARTMENT', 'MECHANICAL CONNECTION', 'HYDRAULIC ENERGY', 'PHYSICAL CONNECTION', 'ENGINE ARCHITECTURES']
+
+Note: The following components have already been automatically matched due to high similarity (>0.8):
+[]
+
+Available Matches for Remaining Components (above 0.3 similarity threshold):
+
+Bit potential matches:
+
+Transmission potential matches:
+- MECHANICAL CONNECTION (similarity: 0.411)
+- PHYSICAL CONNECTION (similarity: 0.311)
+
+Motor potential matches:
+- INNOVAGE POWERED SCREWDRIVER (similarity: 0.367)
+- MECHANICAL CONNECTION (similarity: 0.428)
+- ENGINE ARCHITECTURES (similarity: 0.333)
+
+Electrical System potential matches:
+- ELECTRIC ENERGY (similarity: 0.548)
+- MECHANICAL CONNECTION (similarity: 0.369)
+- HYDRAULIC ENERGY (similarity: 0.341)
+- PHYSICAL CONNECTION (similarity: 0.326)
+- ENGINE ARCHITECTURES (similarity: 0.319)
+
+Battery Holder potential matches:
+- INNOVAGE POWERED SCREWDRIVER (similarity: 0.342)
+- BEARING COMPARTMENT (similarity: 0.338)
+
+Housing potential matches:
+
+External Environment potential matches:
+
+
+Instructions:
+1. Evaluate each pairing based on:
+   - Embedding similarity scores
+   - Functional equivalence at the core architecture level
+   - System-level whole-part relationships
+   - Overall coherence within the cyber-physical system
+2. Each predicted component may only be matched once
+3. Each ground truth component may receive at most one match
+4. Do not include any text other than what is specified below
+5. Only match the remaining components - do not rematch already matched components
+
+Output Format (exactly as shown):
+--------------------------------------------------
+MAPPINGS:
+[ground truth 1] -> [predicted 1]
+[ground truth 2] -> [predicted 2]
+...
+REASON: [brief explanation focusing on functional equivalence]
+--------------------------------------------------
+2025-04-11 00:02:03,293 - DSM_None_None_ - INFO - Attempting to use model: deepseek-r1:14b-5k
+2025-04-11 00:02:03,294 - DSM_None_None_ - INFO - Using Ollama path
+2025-04-11 00:02:03,294 - DSM_None_None_ - INFO - Model name: deepseek-r1:14b-5k
+2025-04-11 00:02:03,295 - DSM_None_None_ - INFO - Prompt length: 2246
+2025-04-11 00:06:30,349 - DSM_None_None_ - INFO - Resetting GPUs...
+2025-04-11 00:07:17,232 - DSM_None_None_ - INFO - Running Analysis For:
+2025-04-11 00:07:17,233 - DSM_None_None_ - INFO -   Product: powerscrewdriver
+2025-04-11 00:07:17,234 - DSM_None_None_ - INFO -   Model: ollama:deepseek-r1:14b-5k
+2025-04-11 00:07:17,235 - DSM_None_None_ - INFO -   Type: LLM_GRAPH_RAG
+2025-04-11 00:07:17,236 - DSM_None_None_ - INFO -   Reference: r1_r2
+2025-04-11 00:07:17,238 - DSM_None_None_ - INFO -   Relationship: whole-part
+2025-04-11 00:07:17,239 - DSM_None_None_ - INFO -   Avg Pred Path: ../logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/average_matrix_20250410-201445.csv
+2025-04-11 00:07:17,239 - DSM_None_None_ - INFO -   Indiv JSON Path: ../logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/average_matrix_20250410-201445.json
+2025-04-11 00:07:17,245 - DSM_None_None_ - INFO - Loading individual matrices from ../logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/average_matrix_20250410-201445.json
+2025-04-11 00:07:17,246 - DSM_None_None_ - INFO - Loaded 5 individual matrices.
+2025-04-11 00:07:17,247 - DSM_None_None_ - INFO - Calculating Raw Metrics...
+2025-04-11 00:07:17,301 - DSM_None_None_ - INFO - Calculated Raw Metrics Mean and Std Dev.
+2025-04-11 00:07:17,302 - DSM_None_None_ - INFO - Calculating Component Similarity based on Average Matrix...
+2025-04-11 00:07:18,559 - DSM_None_None_ - INFO - Attempting Component Mapping based on Average Matrix...
+2025-04-11 00:07:18,560 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-04-11 00:07:18,561 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/average_matrix_20250410-201445.csv
+2025-04-11 00:07:18,561 - DSM_None_None_ - INFO - Extracted model: deepseek-r1:14b-5k
+2025-04-11 00:07:18,590 - DSM_None_None_ - INFO - Prompt: 
+You are an expert matching engine for cyber-physical system systems. Your task is to determine the optimal one-to-one mapping between remaining ground truth and predicted major components.
+
+Remaining Ground Truth Components:
+['Bit', 'Transmission', 'Motor', 'Electrical System', 'Battery Holder', 'Housing', 'External Environment']
+
+Remaining Predicted Components:
+['INNOVAGE POWERED SCREWDRIVER', 'ELECTRIC ENERGY', 'BEARING COMPARTMENT', 'MECHANICAL CONNECTION', 'HYDRAULIC ENERGY', 'PHYSICAL CONNECTION', 'ENGINE ARCHITECTURES']
+
+Note: The following components have already been automatically matched due to high similarity (>0.8):
+[]
+
+Available Matches for Remaining Components (above 0.3 similarity threshold):
+
+Bit potential matches:
+
+Transmission potential matches:
+- MECHANICAL CONNECTION (similarity: 0.411)
+- PHYSICAL CONNECTION (similarity: 0.312)
+
+Motor potential matches:
+- INNOVAGE POWERED SCREWDRIVER (similarity: 0.367)
+- MECHANICAL CONNECTION (similarity: 0.428)
+- ENGINE ARCHITECTURES (similarity: 0.333)
+
+Electrical System potential matches:
+- ELECTRIC ENERGY (similarity: 0.548)
+- MECHANICAL CONNECTION (similarity: 0.369)
+- HYDRAULIC ENERGY (similarity: 0.341)
+- PHYSICAL CONNECTION (similarity: 0.326)
+- ENGINE ARCHITECTURES (similarity: 0.319)
+
+Battery Holder potential matches:
+- INNOVAGE POWERED SCREWDRIVER (similarity: 0.342)
+- BEARING COMPARTMENT (similarity: 0.338)
+
+Housing potential matches:
+
+External Environment potential matches:
+
+
+Instructions:
+1. Evaluate each pairing based on:
+   - Embedding similarity scores
+   - Functional equivalence at the core architecture level
+   - System-level whole-part relationships
+   - Overall coherence within the cyber-physical system
+2. Each predicted component may only be matched once
+3. Each ground truth component may receive at most one match
+4. Do not include any text other than what is specified below
+5. Only match the remaining components - do not rematch already matched components
+
+Output Format (exactly as shown):
+--------------------------------------------------
+MAPPINGS:
+[ground truth 1] -> [predicted 1]
+[ground truth 2] -> [predicted 2]
+...
+REASON: [brief explanation focusing on functional equivalence]
+--------------------------------------------------
+2025-04-11 00:07:18,591 - DSM_None_None_ - INFO - Attempting to use model: deepseek-r1:14b-5k
+2025-04-11 00:07:18,592 - DSM_None_None_ - INFO - Using Ollama path
+2025-04-11 00:07:18,593 - DSM_None_None_ - INFO - Model name: deepseek-r1:14b-5k
+2025-04-11 00:07:18,593 - DSM_None_None_ - INFO - Prompt length: 2246
+2025-04-11 00:14:35,396 - DSM_None_None_ - INFO - Resetting GPUs...
+2025-04-11 00:15:22,266 - DSM_None_None_ - INFO - Running Analysis For:
+2025-04-11 00:15:22,267 - DSM_None_None_ - INFO -   Product: powerscrewdriver
+2025-04-11 00:15:22,268 - DSM_None_None_ - INFO -   Model: ollama:deepseek-r1:14b-5k
+2025-04-11 00:15:22,269 - DSM_None_None_ - INFO -   Type: LLM_GRAPH_RAG
+2025-04-11 00:15:22,269 - DSM_None_None_ - INFO -   Reference: r1_r2
+2025-04-11 00:15:22,270 - DSM_None_None_ - INFO -   Relationship: whole-part
+2025-04-11 00:15:22,271 - DSM_None_None_ - INFO -   Avg Pred Path: ../logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/average_matrix_20250410-201445.csv
+2025-04-11 00:15:22,272 - DSM_None_None_ - INFO -   Indiv JSON Path: ../logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/average_matrix_20250410-201445.json
+2025-04-11 00:15:22,279 - DSM_None_None_ - INFO - Loading individual matrices from ../logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/average_matrix_20250410-201445.json
+2025-04-11 00:15:22,280 - DSM_None_None_ - INFO - Loaded 5 individual matrices.
+2025-04-11 00:15:22,281 - DSM_None_None_ - INFO - Calculating Raw Metrics...
+2025-04-11 00:15:22,335 - DSM_None_None_ - INFO - Calculated Raw Metrics Mean and Std Dev.
+2025-04-11 00:15:22,336 - DSM_None_None_ - INFO - Calculating Component Similarity based on Average Matrix...
+2025-04-11 00:15:23,609 - DSM_None_None_ - INFO - Attempting Component Mapping based on Average Matrix...
+2025-04-11 00:15:23,610 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-04-11 00:15:23,611 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/average_matrix_20250410-201445.csv
+2025-04-11 00:15:23,611 - DSM_None_None_ - INFO - Extracted model: deepseek-r1:14b-5k
+2025-04-11 00:15:23,639 - DSM_None_None_ - INFO - Prompt: 
+You are an expert matching engine for cyber-physical system systems. Your task is to determine the optimal one-to-one mapping between remaining ground truth and predicted major components.
+
+Remaining Ground Truth Components:
+['Bit', 'Transmission', 'Motor', 'Electrical System', 'Battery Holder', 'Housing', 'External Environment']
+
+Remaining Predicted Components:
+['INNOVAGE POWERED SCREWDRIVER', 'ELECTRIC ENERGY', 'BEARING COMPARTMENT', 'MECHANICAL CONNECTION', 'HYDRAULIC ENERGY', 'PHYSICAL CONNECTION', 'ENGINE ARCHITECTURES']
+
+Note: The following components have already been automatically matched due to high similarity (>0.8):
+[]
+
+Available Matches for Remaining Components (above 0.3 similarity threshold):
+
+Bit potential matches:
+
+Transmission potential matches:
+- MECHANICAL CONNECTION (similarity: 0.411)
+- PHYSICAL CONNECTION (similarity: 0.312)
+
+Motor potential matches:
+- INNOVAGE POWERED SCREWDRIVER (similarity: 0.367)
+- MECHANICAL CONNECTION (similarity: 0.428)
+- ENGINE ARCHITECTURES (similarity: 0.333)
+
+Electrical System potential matches:
+- ELECTRIC ENERGY (similarity: 0.548)
+- MECHANICAL CONNECTION (similarity: 0.369)
+- HYDRAULIC ENERGY (similarity: 0.340)
+- PHYSICAL CONNECTION (similarity: 0.326)
+- ENGINE ARCHITECTURES (similarity: 0.319)
+
+Battery Holder potential matches:
+- INNOVAGE POWERED SCREWDRIVER (similarity: 0.342)
+- BEARING COMPARTMENT (similarity: 0.338)
+
+Housing potential matches:
+
+External Environment potential matches:
+
+
+Instructions:
+1. Evaluate each pairing based on:
+   - Embedding similarity scores
+   - Functional equivalence at the core architecture level
+   - System-level whole-part relationships
+   - Overall coherence within the cyber-physical system
+2. Each predicted component may only be matched once
+3. Each ground truth component may receive at most one match
+4. Do not include any text other than what is specified below
+5. Only match the remaining components - do not rematch already matched components
+
+Output Format (exactly as shown):
+--------------------------------------------------
+MAPPINGS:
+[ground truth 1] -> [predicted 1]
+[ground truth 2] -> [predicted 2]
+...
+REASON: [brief explanation focusing on functional equivalence]
+--------------------------------------------------
+2025-04-11 00:15:23,640 - DSM_None_None_ - INFO - Attempting to use model: deepseek-r1:14b-5k
+2025-04-11 00:15:23,641 - DSM_None_None_ - INFO - Using Ollama path
+2025-04-11 00:15:23,641 - DSM_None_None_ - INFO - Model name: deepseek-r1:14b-5k
+2025-04-11 00:15:23,641 - DSM_None_None_ - INFO - Prompt length: 2246
+2025-04-11 00:17:50,654 - DSM_None_None_ - INFO - Response status code: 200
+2025-04-11 00:17:50,655 - DSM_None_None_ - INFO - API call succeeded
+2025-04-11 00:17:50,657 - DSM_None_None_ - INFO - Got response: <think>
+Alright, I need to figure out the optimal one-to-one mapping between the remaining ground tr...
+2025-04-11 00:17:50,658 - DSM_None_None_ - INFO - 
+Final Mappings:
+2025-04-11 00:17:50,659 - DSM_None_None_ - INFO - Automatic high-similarity matches: {}
+2025-04-11 00:17:50,660 - DSM_None_None_ - INFO - LLM-suggested matches: {'Transmission': 'MECHANICAL CONNECTION', 'Motor': 'INNOVAGE POWERED SCREWDRIVER', 'Electrical System': 'ELECTRIC ENERGY', 'Battery Holder': 'BEARING COMPARTMENT', 'Housing': 'PHYSICAL CONNECTION'}
+2025-04-11 00:17:50,661 - DSM_None_None_ - INFO - Initial mapping: {'Transmission': 'MECHANICAL CONNECTION', 'Motor': 'INNOVAGE POWERED SCREWDRIVER', 'Electrical System': 'ELECTRIC ENERGY', 'Battery Holder': 'BEARING COMPARTMENT', 'Housing': 'PHYSICAL CONNECTION'}
+2025-04-11 00:17:50,665 - DSM_None_None_ - INFO - Component mapping successful based on average data.
+2025-04-11 00:17:50,666 - DSM_None_None_ - INFO - 
+Component Mapping:
+2025-04-11 00:17:50,668 - DSM_None_None_ - INFO -   Ground Truth Component   Matched Predicted Component
+0           Transmission         MECHANICAL CONNECTION
+1                  Motor  INNOVAGE POWERED SCREWDRIVER
+2      Electrical System               ELECTRIC ENERGY
+3         Battery Holder           BEARING COMPARTMENT
+2025-04-11 00:17:50,669 - DSM_None_None_ - INFO - Calculating Aligned Metrics...
+2025-04-11 00:17:50,671 - DSM_None_None_ - INFO - Calculating Aligned Metrics Mean and Std Dev from individual runs...
+2025-04-11 00:17:50,713 - DSM_None_None_ - INFO - Calculated Aligned Metrics Mean and Std Dev.
+2025-04-11 00:17:50,714 - DSM_None_None_ - INFO - Calculating Aligned Average Predicted Matrix for heatmap...
+2025-04-11 00:17:50,715 - DSM_None_None_ - INFO - Generating plots with Mean and Std Dev...
+2025-04-11 00:17:51,276 - DSM_None_None_ - INFO - Saved plot to ../logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/plots/performance_metrics_with_stddev.png
+2025-04-11 00:17:51,860 - DSM_None_None_ - INFO - Saved plot to ../logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/plots/distance_metrics_with_stddev.png
+2025-04-11 00:17:54,096 - DSM_None_None_ - INFO - Saved plot to ../logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/plots/matrices_comparison_avg.png
+2025-04-11 00:17:54,495 - DSM_None_None_ - INFO - Plots generated and saved.
+2025-04-11 00:17:54,497 - DSM_None_None_ - INFO - 
+--- Results Summary for ollama:deepseek-r1:14b-5k (r1_r2) ---
+2025-04-11 00:17:54,497 - DSM_None_None_ - INFO - 
+Raw Metrics (Mean ± StdDev):
+2025-04-11 00:17:54,498 - DSM_None_None_ - INFO -   accuracy: 0.5551 ± 0.0327
+2025-04-11 00:17:54,499 - DSM_None_None_ - INFO -   precision: 0.7455 ± 0.0096
+2025-04-11 00:17:54,500 - DSM_None_None_ - INFO -   recall: 0.5471 ± 0.0824
+2025-04-11 00:17:54,500 - DSM_None_None_ - INFO -   f1_score: 0.6266 ± 0.0584
+2025-04-11 00:17:54,501 - DSM_None_None_ - INFO -   edit_distance: 21.8000 ± 1.6000
+2025-04-11 00:17:54,502 - DSM_None_None_ - INFO -   spectral_distance: 1.6641 ± 0.3712
+2025-04-11 00:17:54,502 - DSM_None_None_ - INFO - 
+Aligned Metrics (Mean ± StdDev):
+2025-04-11 00:17:54,503 - DSM_None_None_ - INFO -   accuracy: 0.6875 ± 0.0000
+2025-04-11 00:17:54,504 - DSM_None_None_ - INFO -   precision: 0.7100 ± 0.0450
+2025-04-11 00:17:54,504 - DSM_None_None_ - INFO -   recall: 0.9455 ± 0.1091
+2025-04-11 00:17:54,506 - DSM_None_None_ - INFO -   f1_score: 0.8042 ± 0.0212
+2025-04-11 00:17:54,507 - DSM_None_None_ - INFO -   edit_distance: 5.0000 ± 0.0000
+2025-04-11 00:17:54,507 - DSM_None_None_ - INFO -   spectral_distance: 1.5914 ± 0.3133
+2025-04-11 00:17:54,508 - DSM_None_None_ - INFO - --- End Results Summary ---
+2025-04-11 00:36:08,691 - DSM_None_None_ - INFO - Resetting GPUs...
+2025-04-11 00:36:55,609 - DSM_None_None_ - INFO - Running Analysis For:
+2025-04-11 00:36:55,611 - DSM_None_None_ - INFO -   Product: powerscrewdriver
+2025-04-11 00:36:55,611 - DSM_None_None_ - INFO -   Model: ollama:deepseek-r1:14b-5k
+2025-04-11 00:36:55,612 - DSM_None_None_ - INFO -   Type: LLM_GRAPH_RAG
+2025-04-11 00:36:55,614 - DSM_None_None_ - INFO -   Reference: r1_r2
+2025-04-11 00:36:55,615 - DSM_None_None_ - INFO -   Relationship: whole-part
+2025-04-11 00:36:55,616 - DSM_None_None_ - INFO -   Avg Pred Path: ../logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/average_matrix_20250410-201445.csv
+2025-04-11 00:36:55,616 - DSM_None_None_ - INFO -   Indiv JSON Path: ../logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/average_matrix_20250410-201445.json
+2025-04-11 00:36:55,622 - DSM_None_None_ - INFO - Loading individual matrices from ../logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/average_matrix_20250410-201445.json
+2025-04-11 00:36:55,624 - DSM_None_None_ - INFO - Loaded 5 individual matrices.
+2025-04-11 00:36:55,625 - DSM_None_None_ - INFO - Calculating Raw Metrics...
+2025-04-11 00:36:55,677 - DSM_None_None_ - INFO - Calculated Raw Metrics Mean and Std Dev.
+2025-04-11 00:36:55,678 - DSM_None_None_ - INFO - Calculating Component Similarity based on Average Matrix...
+2025-04-11 00:36:57,011 - DSM_None_None_ - INFO - Attempting Component Mapping based on Average Matrix...
+2025-04-11 00:36:57,012 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-04-11 00:36:57,013 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/average_matrix_20250410-201445.csv
+2025-04-11 00:36:57,013 - DSM_None_None_ - INFO - Extracted model: deepseek-r1:14b-5k
+2025-04-11 00:36:57,042 - DSM_None_None_ - INFO - Prompt: 
+You are an expert matching engine for cyber-physical system systems. Your task is to determine the optimal one-to-one mapping between remaining ground truth and predicted major components.
+
+Remaining Ground Truth Components:
+['Bit', 'Transmission', 'Motor', 'Electrical System', 'Battery Holder', 'Housing', 'External Environment']
+
+Remaining Predicted Components:
+['INNOVAGE POWERED SCREWDRIVER', 'ELECTRIC ENERGY', 'BEARING COMPARTMENT', 'MECHANICAL CONNECTION', 'HYDRAULIC ENERGY', 'PHYSICAL CONNECTION', 'ENGINE ARCHITECTURES']
+
+Note: The following components have already been automatically matched due to high similarity (>0.8):
+[]
+
+Available Matches for Remaining Components (above 0.3 similarity threshold):
+
+Bit potential matches:
+
+Transmission potential matches:
+- MECHANICAL CONNECTION (similarity: 0.411)
+- PHYSICAL CONNECTION (similarity: 0.311)
+
+Motor potential matches:
+- INNOVAGE POWERED SCREWDRIVER (similarity: 0.366)
+- MECHANICAL CONNECTION (similarity: 0.426)
+- ENGINE ARCHITECTURES (similarity: 0.332)
+
+Electrical System potential matches:
+- ELECTRIC ENERGY (similarity: 0.548)
+- MECHANICAL CONNECTION (similarity: 0.369)
+- HYDRAULIC ENERGY (similarity: 0.341)
+- PHYSICAL CONNECTION (similarity: 0.326)
+- ENGINE ARCHITECTURES (similarity: 0.319)
+
+Battery Holder potential matches:
+- INNOVAGE POWERED SCREWDRIVER (similarity: 0.342)
+- BEARING COMPARTMENT (similarity: 0.338)
+
+Housing potential matches:
+
+External Environment potential matches:
+
+
+Instructions:
+1. Evaluate each pairing based on:
+   - Embedding similarity scores
+   - Functional equivalence at the core architecture level
+   - System-level whole-part relationships
+   - Overall coherence within the cyber-physical system
+2. Each predicted component may only be matched once
+3. Each ground truth component may receive at most one match
+4. Do not include any text other than what is specified below
+5. Only match the remaining components - do not rematch already matched components
+
+Output Format (exactly as shown):
+--------------------------------------------------
+MAPPINGS:
+[ground truth 1] -> [predicted 1]
+[ground truth 2] -> [predicted 2]
+...
+REASON: [brief explanation focusing on functional equivalence]
+--------------------------------------------------
+2025-04-11 00:36:57,043 - DSM_None_None_ - INFO - Attempting to use model: deepseek-r1:14b-5k
+2025-04-11 00:36:57,044 - DSM_None_None_ - INFO - Using Ollama path
+2025-04-11 00:36:57,045 - DSM_None_None_ - INFO - Model name: deepseek-r1:14b-5k
+2025-04-11 00:36:57,046 - DSM_None_None_ - INFO - Prompt length: 2246
+2025-04-11 00:37:32,042 - DSM_None_None_ - INFO - Response status code: 200
+2025-04-11 00:37:32,043 - DSM_None_None_ - INFO - API call succeeded
+2025-04-11 00:37:32,044 - DSM_None_None_ - INFO - Got response: <think>
+Okay, I'm trying to figure out how to optimally map the remaining ground truth components to...
+2025-04-11 00:37:32,045 - DSM_None_None_ - INFO - 
+Final Mappings:
+2025-04-11 00:37:32,046 - DSM_None_None_ - INFO - Automatic high-similarity matches: {}
+2025-04-11 00:37:32,047 - DSM_None_None_ - INFO - LLM-suggested matches: {'Bit': 'MECHANICAL CONNECTION', 'Transmission': 'PHYSICAL CONNECTION', 'Motor': 'INNOVAGE POWERED SCREWDRIVER', 'Electrical System': 'ELECTRIC ENERGY', 'Battery Holder': 'BEARING COMPARTMENT'}
+2025-04-11 00:37:32,048 - DSM_None_None_ - INFO - Initial mapping: {'Bit': 'MECHANICAL CONNECTION', 'Transmission': 'PHYSICAL CONNECTION', 'Motor': 'INNOVAGE POWERED SCREWDRIVER', 'Electrical System': 'ELECTRIC ENERGY', 'Battery Holder': 'BEARING COMPARTMENT'}
+2025-04-11 00:37:32,054 - DSM_None_None_ - INFO - Component mapping successful based on average data.
+2025-04-11 00:37:32,055 - DSM_None_None_ - INFO - 
+Component Mapping:
+2025-04-11 00:37:32,057 - DSM_None_None_ - INFO -   Ground Truth Component   Matched Predicted Component
+0           Transmission           PHYSICAL CONNECTION
+1                  Motor  INNOVAGE POWERED SCREWDRIVER
+2      Electrical System               ELECTRIC ENERGY
+3         Battery Holder           BEARING COMPARTMENT
+2025-04-11 00:37:32,058 - DSM_None_None_ - INFO - Calculating Aligned Metrics...
+2025-04-11 00:37:32,060 - DSM_None_None_ - INFO - Calculating Aligned Metrics Mean and Std Dev from individual runs...
+2025-04-11 00:37:32,112 - DSM_None_None_ - INFO - Calculated Aligned Metrics Mean and Std Dev.
+2025-04-11 00:37:32,113 - DSM_None_None_ - INFO - Calculating Aligned Average Predicted Matrix for heatmap...
+2025-04-11 00:37:32,114 - DSM_None_None_ - INFO - Generating plots with Mean and Std Dev...
+2025-04-11 00:37:32,659 - DSM_None_None_ - INFO - Saved plot to ../logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/plots/performance_metrics_with_stddev.png
+2025-04-11 00:37:33,258 - DSM_None_None_ - INFO - Saved plot to ../logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/plots/distance_metrics_with_stddev.png
+2025-04-11 00:37:35,492 - DSM_None_None_ - INFO - Saved plot to ../logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/plots/matrices_comparison_avg.png
+2025-04-11 00:37:35,889 - DSM_None_None_ - INFO - Plots generated and saved.
+2025-04-11 00:37:35,890 - DSM_None_None_ - INFO - 
+--- Results Summary for ollama:deepseek-r1:14b-5k (r1_r2) ---
+2025-04-11 00:37:35,890 - DSM_None_None_ - INFO - 
+Raw Metrics (Mean ± StdDev):
+2025-04-11 00:37:35,891 - DSM_None_None_ - INFO -   accuracy: 0.5551 ± 0.0327
+2025-04-11 00:37:35,892 - DSM_None_None_ - INFO -   precision: 0.7455 ± 0.0096
+2025-04-11 00:37:35,892 - DSM_None_None_ - INFO -   recall: 0.5471 ± 0.0824
+2025-04-11 00:37:35,893 - DSM_None_None_ - INFO -   f1_score: 0.6266 ± 0.0584
+2025-04-11 00:37:35,893 - DSM_None_None_ - INFO -   edit_distance: 21.8000 ± 1.6000
+2025-04-11 00:37:35,894 - DSM_None_None_ - INFO -   spectral_distance: 1.6641 ± 0.3712
+2025-04-11 00:37:35,894 - DSM_None_None_ - INFO - 
+Aligned Metrics (Mean ± StdDev):
+2025-04-11 00:37:35,895 - DSM_None_None_ - INFO -   accuracy: 0.6625 ± 0.0500
+2025-04-11 00:37:35,896 - DSM_None_None_ - INFO -   precision: 0.6900 ± 0.0050
+2025-04-11 00:37:35,896 - DSM_None_None_ - INFO -   recall: 0.9273 ± 0.1455
+2025-04-11 00:37:35,897 - DSM_None_None_ - INFO -   f1_score: 0.7852 ± 0.0593
+2025-04-11 00:37:35,899 - DSM_None_None_ - INFO -   edit_distance: 5.4000 ± 0.8000
+2025-04-11 00:37:35,900 - DSM_None_None_ - INFO -   spectral_distance: 1.5733 ± 0.3496
+2025-04-11 00:37:35,901 - DSM_None_None_ - INFO - --- End Results Summary ---
+2025-04-11 00:45:18,139 - DSM_None_None_ - INFO - Resetting GPUs...
+2025-04-11 00:46:05,063 - DSM_None_None_ - INFO - Running Analysis For:
+2025-04-11 00:46:05,064 - DSM_None_None_ - INFO -   Product: powerscrewdriver
+2025-04-11 00:46:05,065 - DSM_None_None_ - INFO -   Model: ollama:deepseek-r1:14b-5k
+2025-04-11 00:46:05,066 - DSM_None_None_ - INFO -   Type: LLM_GRAPH_RAG
+2025-04-11 00:46:05,067 - DSM_None_None_ - INFO -   Reference: r1_r2
+2025-04-11 00:46:05,068 - DSM_None_None_ - INFO -   Relationship: whole-part
+2025-04-11 00:46:05,069 - DSM_None_None_ - INFO -   Avg Pred Path: ../logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/average_matrix_20250410-201445.csv
+2025-04-11 00:46:05,070 - DSM_None_None_ - INFO -   Indiv JSON Path: ../logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/average_matrix_20250410-201445.json
+2025-04-11 00:46:05,076 - DSM_None_None_ - INFO - Loading individual matrices from ../logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/average_matrix_20250410-201445.json
+2025-04-11 00:46:05,077 - DSM_None_None_ - INFO - Loaded 5 individual matrices.
+2025-04-11 00:46:05,078 - DSM_None_None_ - INFO - Calculating Raw Metrics...
+2025-04-11 00:46:05,132 - DSM_None_None_ - INFO - Calculated Raw Metrics Mean and Std Dev.
+2025-04-11 00:46:05,133 - DSM_None_None_ - INFO - Calculating Component Similarity based on Average Matrix...
+2025-04-11 00:46:06,455 - DSM_None_None_ - INFO - Attempting Component Mapping based on Average Matrix...
+2025-04-11 00:46:06,456 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-04-11 00:46:06,457 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/average_matrix_20250410-201445.csv
+2025-04-11 00:46:06,457 - DSM_None_None_ - INFO - Extracted model: deepseek-r1:14b-5k
+2025-04-11 00:46:06,486 - DSM_None_None_ - INFO - Prompt: 
+You are an expert matching engine for cyber-physical system systems. Your task is to determine the optimal one-to-one mapping between remaining ground truth and predicted major components.
+
+Remaining Ground Truth Components:
+['Bit', 'Transmission', 'Motor', 'Electrical System', 'Battery Holder', 'Housing', 'External Environment']
+
+Remaining Predicted Components:
+['INNOVAGE POWERED SCREWDRIVER', 'ELECTRIC ENERGY', 'BEARING COMPARTMENT', 'MECHANICAL CONNECTION', 'HYDRAULIC ENERGY', 'PHYSICAL CONNECTION', 'ENGINE ARCHITECTURES']
+
+Note: The following components have already been automatically matched due to high similarity (>0.8):
+[]
+
+Available Matches for Remaining Components (above 0.3 similarity threshold):
+
+Bit potential matches:
+
+Transmission potential matches:
+- MECHANICAL CONNECTION (similarity: 0.411)
+- PHYSICAL CONNECTION (similarity: 0.311)
+
+Motor potential matches:
+- INNOVAGE POWERED SCREWDRIVER (similarity: 0.366)
+- MECHANICAL CONNECTION (similarity: 0.426)
+- ENGINE ARCHITECTURES (similarity: 0.332)
+
+Electrical System potential matches:
+- ELECTRIC ENERGY (similarity: 0.548)
+- MECHANICAL CONNECTION (similarity: 0.369)
+- HYDRAULIC ENERGY (similarity: 0.341)
+- PHYSICAL CONNECTION (similarity: 0.326)
+- ENGINE ARCHITECTURES (similarity: 0.319)
+
+Battery Holder potential matches:
+- INNOVAGE POWERED SCREWDRIVER (similarity: 0.342)
+- BEARING COMPARTMENT (similarity: 0.338)
+
+Housing potential matches:
+
+External Environment potential matches:
+
+
+Instructions:
+1. Evaluate each pairing based on:
+   - Embedding similarity scores
+   - Functional equivalence at the core architecture level
+   - System-level whole-part relationships
+   - Overall coherence within the cyber-physical system
+2. Each predicted component may only be matched once
+3. Each ground truth component may receive at most one match
+4. Do not include any text other than what is specified below
+5. Only match the remaining components - do not rematch already matched components
+
+Output Format (exactly as shown):
+--------------------------------------------------
+MAPPINGS:
+[ground truth 1] -> [predicted 1]
+[ground truth 2] -> [predicted 2]
+...
+REASON: [brief explanation focusing on functional equivalence]
+--------------------------------------------------
+2025-04-11 00:46:06,488 - DSM_None_None_ - INFO - Attempting to use model: deepseek-r1:14b-5k
+2025-04-11 00:46:06,489 - DSM_None_None_ - INFO - Using Ollama path
+2025-04-11 00:46:06,490 - DSM_None_None_ - INFO - Model name: deepseek-r1:14b-5k
+2025-04-11 00:46:06,490 - DSM_None_None_ - INFO - Prompt length: 2246
+2025-04-11 00:47:46,312 - DSM_None_None_ - INFO - Response status code: 200
+2025-04-11 00:47:46,313 - DSM_None_None_ - INFO - API call succeeded
+2025-04-11 00:47:46,314 - DSM_None_None_ - INFO - Got response: <think>
+Okay, so I need to figure out the optimal one-to-one mapping between the remaining ground tr...
+2025-04-11 00:47:46,315 - DSM_None_None_ - INFO - 
+Final Mappings:
+2025-04-11 00:47:46,316 - DSM_None_None_ - INFO - Automatic high-similarity matches: {}
+2025-04-11 00:47:46,317 - DSM_None_None_ - INFO - LLM-suggested matches: {'Bit': 'INNOVAGE POWERED SCREWDRIVER', 'Transmission': 'MECHANICAL CONNECTION', 'Electrical System': 'ELECTRIC ENERGY', 'Battery Holder': 'BEARING COMPARTMENT', 'Housing': 'PHYSICAL CONNECTION', 'External Environment': 'HYDRAULIC ENERGY'}
+2025-04-11 00:47:46,318 - DSM_None_None_ - INFO - Initial mapping: {'Bit': 'INNOVAGE POWERED SCREWDRIVER', 'Transmission': 'MECHANICAL CONNECTION', 'Electrical System': 'ELECTRIC ENERGY', 'Battery Holder': 'BEARING COMPARTMENT', 'Housing': 'PHYSICAL CONNECTION', 'External Environment': 'HYDRAULIC ENERGY'}
+2025-04-11 00:47:46,324 - DSM_None_None_ - INFO - Component mapping successful based on average data.
+2025-04-11 00:47:46,325 - DSM_None_None_ - INFO - 
+Component Mapping:
+2025-04-11 00:47:46,327 - DSM_None_None_ - INFO -   Ground Truth Component Matched Predicted Component
+0           Transmission       MECHANICAL CONNECTION
+1      Electrical System             ELECTRIC ENERGY
+2         Battery Holder         BEARING COMPARTMENT
+2025-04-11 00:47:46,328 - DSM_None_None_ - INFO - Calculating Aligned Metrics...
+2025-04-11 00:47:46,330 - DSM_None_None_ - INFO - Calculating Aligned Metrics Mean and Std Dev from individual runs...
+2025-04-11 00:47:46,381 - DSM_None_None_ - INFO - Calculated Aligned Metrics Mean and Std Dev.
+2025-04-11 00:47:46,381 - DSM_None_None_ - INFO - Calculating Aligned Average Predicted Matrix for heatmap...
+2025-04-11 00:47:46,382 - DSM_None_None_ - INFO - Generating plots with Mean and Std Dev...
+2025-04-11 00:47:46,951 - DSM_None_None_ - INFO - Saved plot to ../logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/plots/performance_metrics_with_stddev.png
+2025-04-11 00:47:47,535 - DSM_None_None_ - INFO - Saved plot to ../logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/plots/distance_metrics_with_stddev.png
+2025-04-11 00:47:48,255 - DSM_None_None_ - INFO - Could not generate aligned predicted matrix plot due to missing data (aligned_pred_matrix, gt_components, or pred_components).
+2025-04-11 00:47:49,805 - DSM_None_None_ - INFO - Saved plot to ../logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/plots/matrices_comparison_avg.png
+2025-04-11 00:47:50,144 - DSM_None_None_ - INFO - Plots generated and saved.
+2025-04-11 00:47:50,145 - DSM_None_None_ - INFO - 
+--- Results Summary for ollama:deepseek-r1:14b-5k (r1_r2) ---
+2025-04-11 00:47:50,146 - DSM_None_None_ - INFO - 
+Raw Metrics (Mean ± StdDev):
+2025-04-11 00:47:50,146 - DSM_None_None_ - INFO -   accuracy: 0.5551 ± 0.0327
+2025-04-11 00:47:50,147 - DSM_None_None_ - INFO -   precision: 0.7455 ± 0.0096
+2025-04-11 00:47:50,148 - DSM_None_None_ - INFO -   recall: 0.5471 ± 0.0824
+2025-04-11 00:47:50,149 - DSM_None_None_ - INFO -   f1_score: 0.6266 ± 0.0584
+2025-04-11 00:47:50,149 - DSM_None_None_ - INFO -   edit_distance: 21.8000 ± 1.6000
+2025-04-11 00:47:50,150 - DSM_None_None_ - INFO -   spectral_distance: 1.6641 ± 0.3712
+2025-04-11 00:47:50,151 - DSM_None_None_ - INFO - 
+Aligned Metrics (Mean ± StdDev):
+2025-04-11 00:47:50,151 - DSM_None_None_ - INFO -   accuracy: 0.6667 ± 0.0000
+2025-04-11 00:47:50,153 - DSM_None_None_ - INFO -   precision: 0.7333 ± 0.1333
+2025-04-11 00:47:50,153 - DSM_None_None_ - INFO -   recall: 0.9000 ± 0.2000
+2025-04-11 00:47:50,154 - DSM_None_None_ - INFO -   f1_score: 0.7733 ± 0.0533
+2025-04-11 00:47:50,155 - DSM_None_None_ - INFO -   edit_distance: 3.0000 ± 0.0000
+2025-04-11 00:47:50,155 - DSM_None_None_ - INFO -   spectral_distance: 1.4142 ± 0.0000
+2025-04-11 00:47:50,156 - DSM_None_None_ - INFO - --- End Results Summary ---
+2025-04-11 01:24:58,301 - DSM_None_None_ - INFO - Resetting GPUs...
+2025-04-11 01:37:47,543 - DSM_None_None_ - INFO - Resetting GPUs...
+2025-04-11 01:38:09,464 - DSM_None_None_ - INFO - Running Analysis For:
+2025-04-11 01:38:09,465 - DSM_None_None_ - INFO -   Product: powerscrewdriver
+2025-04-11 01:38:09,466 - DSM_None_None_ - INFO -   Model: ollama:deepseek-r1:14b-5k
+2025-04-11 01:38:09,467 - DSM_None_None_ - INFO -   Type: LLM_GRAPH_RAG
+2025-04-11 01:38:09,468 - DSM_None_None_ - INFO -   Reference: r1_r2
+2025-04-11 01:38:09,469 - DSM_None_None_ - INFO -   Relationship: whole-part
+2025-04-11 01:38:09,471 - DSM_None_None_ - INFO -   Ground Truth Path: ../logs/Process/gt_powerscrewdriver.csv
+2025-04-11 01:38:09,471 - DSM_None_None_ - INFO -   Avg Pred Path: ../logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/average_matrix_20250410-201445.csv
+2025-04-11 01:38:09,472 - DSM_None_None_ - INFO -   Indiv JSON Path: ../logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/average_matrix_20250410-201445.json
+2025-04-11 01:38:09,478 - DSM_None_None_ - INFO - Loading individual matrices from ../logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/average_matrix_20250410-201445.json
+2025-04-11 01:38:09,480 - DSM_None_None_ - INFO - Loaded 5 individual matrices.
+2025-04-11 01:38:09,480 - DSM_None_None_ - INFO - Calculating Raw Metrics...
+2025-04-11 01:38:09,534 - DSM_None_None_ - INFO - Calculated Raw Metrics Mean and Std Dev from individual runs.
+2025-04-11 01:38:09,535 - DSM_None_None_ - INFO - Calculating Component Similarity based on Average Matrix...
+2025-04-11 01:38:10,292 - DSM_None_None_ - INFO - Attempting Component Mapping based on Average Matrix...
+2025-04-11 01:38:10,293 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-04-11 01:38:10,293 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_gpt-4-turbo-preview_20250410-192514/llm_graph_rag_refs_r2_r3/average_matrix_20250410-192514.csv
+2025-04-11 01:38:10,294 - DSM_None_None_ - INFO - Extracted model: gpt-4-turbo-preview
+2025-04-11 01:38:10,326 - DSM_None_None_ - INFO - Prompt: 
+You are an expert matching engine for cyber-physical system systems. Your task is to determine the optimal one-to-one mapping between remaining ground truth and predicted major components.
+
+Remaining Ground Truth Components:
+['Bit', 'Transmission', 'Motor', 'Electrical System', 'Battery Holder', 'Housing', 'External Environment']
+
+Remaining Predicted Components:
+['INNOVAGE POWERED SCREWDRIVER', 'ELECTRIC ENERGY', 'BEARING COMPARTMENT', 'MECHANICAL CONNECTION', 'HYDRAULIC ENERGY', 'PHYSICAL CONNECTION', 'ENGINE ARCHITECTURES']
+
+Note: The following components have already been automatically matched due to high similarity (>0.8):
+[]
+
+Available Matches for Remaining Components (above 0.3 similarity threshold):
+
+Bit potential matches:
+
+Transmission potential matches:
+- MECHANICAL CONNECTION (similarity: 0.411)
+- PHYSICAL CONNECTION (similarity: 0.311)
+
+Motor potential matches:
+- INNOVAGE POWERED SCREWDRIVER (similarity: 0.366)
+- MECHANICAL CONNECTION (similarity: 0.426)
+- ENGINE ARCHITECTURES (similarity: 0.332)
+
+Electrical System potential matches:
+- ELECTRIC ENERGY (similarity: 0.548)
+- MECHANICAL CONNECTION (similarity: 0.369)
+- HYDRAULIC ENERGY (similarity: 0.341)
+- PHYSICAL CONNECTION (similarity: 0.326)
+- ENGINE ARCHITECTURES (similarity: 0.319)
+
+Battery Holder potential matches:
+- INNOVAGE POWERED SCREWDRIVER (similarity: 0.342)
+- BEARING COMPARTMENT (similarity: 0.338)
+
+Housing potential matches:
+
+External Environment potential matches:
+
+
+Instructions:
+1. Evaluate each pairing based on:
+   - Embedding similarity scores
+   - Functional equivalence at the core architecture level
+   - System-level whole-part relationships
+   - Overall coherence within the cyber-physical system
+2. Each predicted component may only be matched once
+3. Each ground truth component may receive at most one match
+4. Do not include any text other than what is specified below
+5. Only match the remaining components - do not rematch already matched components
+
+Output Format (exactly as shown):
+--------------------------------------------------
+MAPPINGS:
+[ground truth 1] -> [predicted 1]
+[ground truth 2] -> [predicted 2]
+...
+REASON: [brief explanation focusing on functional equivalence]
+--------------------------------------------------
+2025-04-11 01:38:10,327 - DSM_None_None_ - INFO - Attempting to use model: gpt-4-turbo-preview
+2025-04-11 01:38:17,838 - DSM_None_None_ - INFO - 
+Final Mappings:
+2025-04-11 01:38:17,840 - DSM_None_None_ - INFO - Automatic high-similarity matches: {}
+2025-04-11 01:38:17,840 - DSM_None_None_ - INFO - LLM-suggested matches: {'Electrical System': 'ELECTRIC ENERGY', 'Transmission': 'MECHANICAL CONNECTION', 'Motor': 'ENGINE ARCHITECTURES', 'Battery Holder': 'BEARING COMPARTMENT'}
+2025-04-11 01:38:17,841 - DSM_None_None_ - INFO - Initial mapping: {'Electrical System': 'ELECTRIC ENERGY', 'Transmission': 'MECHANICAL CONNECTION', 'Motor': 'ENGINE ARCHITECTURES', 'Battery Holder': 'BEARING COMPARTMENT'}
+2025-04-11 01:38:17,846 - DSM_None_None_ - INFO - Component mapping successful based on average data.
+2025-04-11 01:38:17,848 - DSM_None_None_ - INFO - 
+Component Mapping:
+2025-04-11 01:38:17,850 - DSM_None_None_ - INFO -   Ground Truth Component Matched Predicted Component
+0      Electrical System             ELECTRIC ENERGY
+1           Transmission       MECHANICAL CONNECTION
+2                  Motor        ENGINE ARCHITECTURES
+3         Battery Holder         BEARING COMPARTMENT
+2025-04-11 01:38:17,853 - DSM_None_None_ - INFO - Calculating Aligned Metrics...
+2025-04-11 01:38:17,857 - DSM_None_None_ - INFO - Calculating Aligned Metrics Mean and Std Dev from individual runs...
+2025-04-11 01:38:17,909 - DSM_None_None_ - INFO - Calculated Aligned Metrics Mean and Std Dev from individual runs.
+2025-04-11 01:38:17,909 - DSM_None_None_ - INFO - Calculating Aligned Average Predicted Matrix for heatmap (post-individual run processing)...
+2025-04-11 01:38:17,910 - DSM_None_None_ - INFO - Generating plots with Mean and Std Dev...
+2025-04-11 01:38:17,911 - DSM_None_None_ - INFO - Plotting performance metrics...
+2025-04-11 01:38:18,471 - DSM_None_None_ - INFO - Saved plot to ../logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/plots/performance_metrics_with_stddev.png
+2025-04-11 01:38:18,591 - DSM_None_None_ - INFO - Plotting distance metrics...
+2025-04-11 01:38:19,054 - DSM_None_None_ - INFO - Saved plot to ../logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/plots/distance_metrics_with_stddev.png
+2025-04-11 01:38:19,158 - DSM_None_None_ - INFO - Plotting matrix comparison...
+2025-04-11 01:38:21,331 - DSM_None_None_ - INFO - Saved plot to ../logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/plots/matrices_comparison_avg.png
+2025-04-11 01:38:21,739 - DSM_None_None_ - INFO - Plots generated and saved.
+2025-04-11 01:38:21,740 - DSM_None_None_ - INFO - 
+--- Results Summary for ollama:deepseek-r1:14b-5k (r1_r2) ---
+2025-04-11 01:38:21,741 - DSM_None_None_ - INFO - 
+Raw Metrics (Mean ± StdDev):
+2025-04-11 01:38:21,742 - DSM_None_None_ - INFO -   accuracy: 0.5551 ± 0.0327
+2025-04-11 01:38:21,742 - DSM_None_None_ - INFO -   precision: 0.7455 ± 0.0096
+2025-04-11 01:38:21,743 - DSM_None_None_ - INFO -   recall: 0.5471 ± 0.0824
+2025-04-11 01:38:21,743 - DSM_None_None_ - INFO -   f1_score: 0.6266 ± 0.0584
+2025-04-11 01:38:21,744 - DSM_None_None_ - INFO -   edit_distance: 21.8000 ± 1.6000
+2025-04-11 01:38:21,745 - DSM_None_None_ - INFO -   spectral_distance: 1.6641 ± 0.3712
+2025-04-11 01:38:21,745 - DSM_None_None_ - INFO - 
+Aligned Metrics (Mean ± StdDev):
+2025-04-11 01:38:21,746 - DSM_None_None_ - INFO -   accuracy: 0.5625 ± 0.0000
+2025-04-11 01:38:21,746 - DSM_None_None_ - INFO -   precision: 0.7600 ± 0.1200
+2025-04-11 01:38:21,747 - DSM_None_None_ - INFO -   recall: 0.5818 ± 0.1091
+2025-04-11 01:38:21,747 - DSM_None_None_ - INFO -   f1_score: 0.6400 ± 0.0533
+2025-04-11 01:38:21,748 - DSM_None_None_ - INFO -   edit_distance: 7.0000 ± 0.0000
+2025-04-11 01:38:21,749 - DSM_None_None_ - INFO -   spectral_distance: 0.8321 ± 0.5839
+2025-04-11 01:38:21,750 - DSM_None_None_ - INFO - 
+Component Mapping (used for alignment):
+2025-04-11 01:38:21,753 - DSM_None_None_ - INFO -   Ground Truth Component Matched Predicted Component
+0      Electrical System             ELECTRIC ENERGY
+1           Transmission       MECHANICAL CONNECTION
+2                  Motor        ENGINE ARCHITECTURES
+3         Battery Holder         BEARING COMPARTMENT
+2025-04-11 01:38:21,753 - DSM_None_None_ - INFO - --- End Results Summary ---
+2025-04-11 01:42:35,243 - DSM_None_None_ - INFO - Resetting GPUs...
+2025-04-11 01:42:57,136 - DSM_None_None_ - INFO - Running Analysis For:
+2025-04-11 01:42:57,137 - DSM_None_None_ - INFO -   Product: powerscrewdriver
+2025-04-11 01:42:57,138 - DSM_None_None_ - INFO -   Model: ollama:deepseek-r1:14b-5k
+2025-04-11 01:42:57,139 - DSM_None_None_ - INFO -   Type: LLM_GRAPH_RAG
+2025-04-11 01:42:57,141 - DSM_None_None_ - INFO -   Reference: r1_r2
+2025-04-11 01:42:57,142 - DSM_None_None_ - INFO -   Relationship: whole-part
+2025-04-11 01:42:57,143 - DSM_None_None_ - INFO -   Ground Truth Path: ../logs/Process/gt_powerscrewdriver.csv
+2025-04-11 01:42:57,144 - DSM_None_None_ - INFO -   Avg Pred Path: ../logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/average_matrix_20250410-201445.csv
+2025-04-11 01:42:57,144 - DSM_None_None_ - INFO -   Indiv JSON Path: ../logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/average_matrix_20250410-201445.json
+2025-04-11 01:42:57,150 - DSM_None_None_ - INFO - Loading individual matrices from ../logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/average_matrix_20250410-201445.json
+2025-04-11 01:42:57,152 - DSM_None_None_ - INFO - Loaded 5 individual matrices.
+2025-04-11 01:42:57,153 - DSM_None_None_ - INFO - Calculating Raw Metrics...
+2025-04-11 01:42:57,206 - DSM_None_None_ - INFO - Calculated Raw Metrics Mean and Std Dev from individual runs.
+2025-04-11 01:42:57,207 - DSM_None_None_ - INFO - Calculating Component Similarity based on Average Matrix...
+2025-04-11 01:42:59,557 - DSM_None_None_ - INFO - Attempting Component Mapping based on Average Matrix...
+2025-04-11 01:42:59,557 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-04-11 01:42:59,558 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_gpt-4-turbo-preview_20250410-192514/llm_graph_rag_refs_r2_r3/average_matrix_20250410-192514.csv
+2025-04-11 01:42:59,559 - DSM_None_None_ - INFO - Extracted model: gpt-4-turbo-preview
+2025-04-11 01:42:59,587 - DSM_None_None_ - INFO - Prompt: 
+You are an expert matching engine for cyber-physical system systems. Your task is to determine the optimal one-to-one mapping between remaining ground truth and predicted major components.
+
+Remaining Ground Truth Components:
+['Bit', 'Transmission', 'Motor', 'Electrical System', 'Battery Holder', 'Housing', 'External Environment']
+
+Remaining Predicted Components:
+['INNOVAGE POWERED SCREWDRIVER', 'ELECTRIC ENERGY', 'BEARING COMPARTMENT', 'MECHANICAL CONNECTION', 'HYDRAULIC ENERGY', 'PHYSICAL CONNECTION', 'ENGINE ARCHITECTURES']
+
+Note: The following components have already been automatically matched due to high similarity (>0.8):
+[]
+
+Available Matches for Remaining Components (above 0.3 similarity threshold):
+
+Bit potential matches:
+
+Transmission potential matches:
+- MECHANICAL CONNECTION (similarity: 0.411)
+- PHYSICAL CONNECTION (similarity: 0.311)
+
+Motor potential matches:
+- INNOVAGE POWERED SCREWDRIVER (similarity: 0.366)
+- MECHANICAL CONNECTION (similarity: 0.426)
+- ENGINE ARCHITECTURES (similarity: 0.332)
+
+Electrical System potential matches:
+- ELECTRIC ENERGY (similarity: 0.548)
+- MECHANICAL CONNECTION (similarity: 0.369)
+- HYDRAULIC ENERGY (similarity: 0.341)
+- PHYSICAL CONNECTION (similarity: 0.326)
+- ENGINE ARCHITECTURES (similarity: 0.319)
+
+Battery Holder potential matches:
+- INNOVAGE POWERED SCREWDRIVER (similarity: 0.342)
+- BEARING COMPARTMENT (similarity: 0.338)
+
+Housing potential matches:
+
+External Environment potential matches:
+
+
+Instructions:
+1. Evaluate each pairing based on:
+   - Embedding similarity scores
+   - Functional equivalence at the core architecture level
+   - System-level whole-part relationships
+   - Overall coherence within the cyber-physical system
+2. Each predicted component may only be matched once
+3. Each ground truth component may receive at most one match
+4. Do not include any text other than what is specified below
+5. Only match the remaining components - do not rematch already matched components
+
+Output Format (exactly as shown):
+--------------------------------------------------
+MAPPINGS:
+[ground truth 1] -> [predicted 1]
+[ground truth 2] -> [predicted 2]
+...
+REASON: [brief explanation focusing on functional equivalence]
+--------------------------------------------------
+2025-04-11 01:42:59,589 - DSM_None_None_ - INFO - Attempting to use model: gpt-4-turbo-preview
+2025-04-11 01:43:10,850 - DSM_None_None_ - INFO - 
+Final Mappings:
+2025-04-11 01:43:10,851 - DSM_None_None_ - INFO - Automatic high-similarity matches: {}
+2025-04-11 01:43:10,852 - DSM_None_None_ - INFO - LLM-suggested matches: {'Electrical System': 'ELECTRIC ENERGY', 'Transmission': 'MECHANICAL CONNECTION', 'Motor': 'ENGINE ARCHITECTURES', 'Battery Holder': 'BEARING COMPARTMENT'}
+2025-04-11 01:43:10,853 - DSM_None_None_ - INFO - Initial mapping: {'Electrical System': 'ELECTRIC ENERGY', 'Transmission': 'MECHANICAL CONNECTION', 'Motor': 'ENGINE ARCHITECTURES', 'Battery Holder': 'BEARING COMPARTMENT'}
+2025-04-11 01:43:10,858 - DSM_None_None_ - INFO - Component mapping successful based on average data.
+2025-04-11 01:43:10,859 - DSM_None_None_ - INFO - 
+Component Mapping:
+2025-04-11 01:43:10,862 - DSM_None_None_ - INFO -   Ground Truth Component Matched Predicted Component
+0      Electrical System             ELECTRIC ENERGY
+1           Transmission       MECHANICAL CONNECTION
+2                  Motor        ENGINE ARCHITECTURES
+3         Battery Holder         BEARING COMPARTMENT
+2025-04-11 01:43:10,863 - DSM_None_None_ - INFO - Calculating Aligned Metrics...
+2025-04-11 01:43:10,865 - DSM_None_None_ - INFO - Calculating Aligned Metrics Mean and Std Dev from individual runs...
+2025-04-11 01:43:10,918 - DSM_None_None_ - INFO - Calculated Aligned Metrics Mean and Std Dev from individual runs.
+2025-04-11 01:43:10,919 - DSM_None_None_ - INFO - Calculating Aligned Average Predicted Matrix for heatmap (post-individual run processing)...
+2025-04-11 01:43:10,920 - DSM_None_None_ - INFO - Generating plots with Mean and Std Dev...
+2025-04-11 01:43:10,921 - DSM_None_None_ - INFO - Plotting performance metrics...
+2025-04-11 01:43:11,494 - DSM_None_None_ - INFO - Saved plot to ../logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/plots/performance_metrics_with_stddev.png
+2025-04-11 01:43:11,615 - DSM_None_None_ - INFO - Plotting distance metrics...
+2025-04-11 01:43:12,084 - DSM_None_None_ - INFO - Saved plot to ../logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/plots/distance_metrics_with_stddev.png
+2025-04-11 01:43:12,184 - DSM_None_None_ - INFO - Plotting matrix comparison...
+2025-04-11 01:43:14,365 - DSM_None_None_ - INFO - Saved plot to ../logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/plots/matrices_comparison_avg.png
+2025-04-11 01:43:14,777 - DSM_None_None_ - INFO - Plots generated and saved.
+2025-04-11 01:43:14,778 - DSM_None_None_ - INFO - 
+--- Results Summary for ollama:deepseek-r1:14b-5k (r1_r2) ---
+2025-04-11 01:43:14,778 - DSM_None_None_ - INFO - 
+Raw Metrics (Mean ± StdDev):
+2025-04-11 01:43:14,779 - DSM_None_None_ - INFO -   accuracy: 0.5551 ± 0.0327
+2025-04-11 01:43:14,779 - DSM_None_None_ - INFO -   precision: 0.7455 ± 0.0096
+2025-04-11 01:43:14,780 - DSM_None_None_ - INFO -   recall: 0.5471 ± 0.0824
+2025-04-11 01:43:14,781 - DSM_None_None_ - INFO -   f1_score: 0.6266 ± 0.0584
+2025-04-11 01:43:14,781 - DSM_None_None_ - INFO -   edit_distance: 21.8000 ± 1.6000
+2025-04-11 01:43:14,783 - DSM_None_None_ - INFO -   spectral_distance: 1.6641 ± 0.3712
+2025-04-11 01:43:14,784 - DSM_None_None_ - INFO - 
+Aligned Metrics (Mean ± StdDev):
+2025-04-11 01:43:14,784 - DSM_None_None_ - INFO -   accuracy: 0.5625 ± 0.0000
+2025-04-11 01:43:14,785 - DSM_None_None_ - INFO -   precision: 0.7600 ± 0.1200
+2025-04-11 01:43:14,785 - DSM_None_None_ - INFO -   recall: 0.5818 ± 0.1091
+2025-04-11 01:43:14,786 - DSM_None_None_ - INFO -   f1_score: 0.6400 ± 0.0533
+2025-04-11 01:43:14,787 - DSM_None_None_ - INFO -   edit_distance: 7.0000 ± 0.0000
+2025-04-11 01:43:14,788 - DSM_None_None_ - INFO -   spectral_distance: 0.8321 ± 0.5839
+2025-04-11 01:43:14,788 - DSM_None_None_ - INFO - 
+Component Mapping (used for alignment):
+2025-04-11 01:43:14,790 - DSM_None_None_ - INFO -   Ground Truth Component Matched Predicted Component
+0      Electrical System             ELECTRIC ENERGY
+1           Transmission       MECHANICAL CONNECTION
+2                  Motor        ENGINE ARCHITECTURES
+3         Battery Holder         BEARING COMPARTMENT
+2025-04-11 01:43:14,791 - DSM_None_None_ - INFO - --- End Results Summary ---
+2025-04-11 03:27:51,621 - DSM_None_None_ - INFO - Resetting GPUs...
+2025-04-11 03:28:13,552 - DSM_None_None_ - INFO - Running Analysis For:
+2025-04-11 03:28:13,554 - DSM_None_None_ - INFO -   Product: powerscrewdriver
+2025-04-11 03:28:13,554 - DSM_None_None_ - INFO -   Model: ollama:deepseek-r1:14b-5k
+2025-04-11 03:28:13,556 - DSM_None_None_ - INFO -   Type: LLM_GRAPH_RAG
+2025-04-11 03:28:13,557 - DSM_None_None_ - INFO -   Reference: r1_r2
+2025-04-11 03:28:13,557 - DSM_None_None_ - INFO -   Relationship: whole-part
+2025-04-11 03:28:13,559 - DSM_None_None_ - INFO -   Ground Truth Path: xLM_DSM_wip/logs/Process/gt_powerscrewdriver.csv
+2025-04-11 03:28:13,560 - DSM_None_None_ - INFO -   Avg Pred Path: xLM_DSM_wip/logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/average_matrix_20250410-201445.csv
+2025-04-11 03:28:13,560 - DSM_None_None_ - INFO -   Indiv JSON Path: xLM_DSM_wip/logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/average_matrix_20250410-201445.json
+2025-04-11 03:28:13,566 - DSM_None_None_ - INFO - Loading individual matrices from xLM_DSM_wip/logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/average_matrix_20250410-201445.json
+2025-04-11 03:28:13,568 - DSM_None_None_ - INFO - Loaded 5 individual matrices.
+2025-04-11 03:28:13,568 - DSM_None_None_ - INFO - Calculating Raw Metrics...
+2025-04-11 03:28:13,621 - DSM_None_None_ - INFO - Calculated Raw Metrics Mean/StdDev from runs.
+2025-04-11 03:28:13,622 - DSM_None_None_ - INFO - Calculating Component Similarity based on Average Matrix...
+2025-04-11 03:28:19,588 - DSM_None_None_ - INFO - Attempting Component Mapping based on Average Matrix...
+2025-04-11 03:28:19,588 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-04-11 03:28:19,589 - DSM_None_None_ - INFO - Extracting model from path: xLM_DSM_wip/logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/average_matrix_20250410-201445.csv
+2025-04-11 03:28:19,590 - DSM_None_None_ - INFO - Extracted model: deepseek-r1:14b-5k
+2025-04-11 03:28:19,618 - DSM_None_None_ - INFO - Prompt: 
+You are an expert matching engine for cyber-physical system systems. Your task is to determine the optimal one-to-one mapping between remaining ground truth and predicted major components.
+
+Remaining Ground Truth Components:
+['Bit', 'Transmission', 'Motor', 'Electrical System', 'Battery Holder', 'Housing', 'External Environment']
+
+Remaining Predicted Components:
+['INNOVAGE POWERED SCREWDRIVER', 'ELECTRIC ENERGY', 'BEARING COMPARTMENT', 'MECHANICAL CONNECTION', 'HYDRAULIC ENERGY', 'PHYSICAL CONNECTION', 'ENGINE ARCHITECTURES']
+
+Note: The following components have already been automatically matched due to high similarity (>0.8):
+[]
+
+Available Matches for Remaining Components (above 0.3 similarity threshold):
+
+Bit potential matches:
+
+Transmission potential matches:
+- MECHANICAL CONNECTION (similarity: 0.411)
+- PHYSICAL CONNECTION (similarity: 0.311)
+
+Motor potential matches:
+- INNOVAGE POWERED SCREWDRIVER (similarity: 0.366)
+- MECHANICAL CONNECTION (similarity: 0.426)
+- ENGINE ARCHITECTURES (similarity: 0.332)
+
+Electrical System potential matches:
+- ELECTRIC ENERGY (similarity: 0.548)
+- MECHANICAL CONNECTION (similarity: 0.369)
+- HYDRAULIC ENERGY (similarity: 0.341)
+- PHYSICAL CONNECTION (similarity: 0.326)
+- ENGINE ARCHITECTURES (similarity: 0.319)
+
+Battery Holder potential matches:
+- INNOVAGE POWERED SCREWDRIVER (similarity: 0.342)
+- BEARING COMPARTMENT (similarity: 0.338)
+
+Housing potential matches:
+
+External Environment potential matches:
+
+
+Instructions:
+1. Evaluate each pairing based on:
+   - Embedding similarity scores
+   - Functional equivalence at the core architecture level
+   - System-level whole-part relationships
+   - Overall coherence within the cyber-physical system
+2. Each predicted component may only be matched once
+3. Each ground truth component may receive at most one match
+4. Do not include any text other than what is specified below
+5. Only match the remaining components - do not rematch already matched components
+
+Output Format (exactly as shown):
+--------------------------------------------------
+MAPPINGS:
+[ground truth 1] -> [predicted 1] 
+[ground truth 2] -> [predicted 2]
+...
+REASON: [brief explanation focusing on functional equivalence]
+--------------------------------------------------
+2025-04-11 03:28:19,620 - DSM_None_None_ - INFO - Attempting to use model: deepseek-r1:14b-5k
+2025-04-11 03:28:19,620 - DSM_None_None_ - INFO - Using Ollama path
+2025-04-11 03:28:19,621 - DSM_None_None_ - INFO - Model name: deepseek-r1:14b-5k
+2025-04-11 03:28:19,622 - DSM_None_None_ - INFO - Prompt length: 2247
+2025-04-11 03:29:51,153 - DSM_None_None_ - INFO - Response status code: 200
+2025-04-11 03:29:51,154 - DSM_None_None_ - INFO - API call succeeded
+2025-04-11 03:29:51,155 - DSM_None_None_ - INFO - Got response: <think>
+Alright, so I've been given this problem where I need to map remaining ground truth componen...
+2025-04-11 03:29:51,156 - DSM_None_None_ - INFO - 
+Final Mappings:
+2025-04-11 03:29:51,157 - DSM_None_None_ - INFO - Automatic high-similarity matches: {}
+2025-04-11 03:29:51,159 - DSM_None_None_ - INFO - LLM-suggested matches: {'Transmission': 'MECHANICAL CONNECTION', 'Motor': 'INNOVAGE POWERED SCREWDRIVER', 'Electrical System': 'ELECTRIC ENERGY', 'Battery Holder': 'BEARING COMPARTMENT'}
+2025-04-11 03:29:51,160 - DSM_None_None_ - INFO - Initial mapping: {'Transmission': 'MECHANICAL CONNECTION', 'Motor': 'INNOVAGE POWERED SCREWDRIVER', 'Electrical System': 'ELECTRIC ENERGY', 'Battery Holder': 'BEARING COMPARTMENT'}
+2025-04-11 03:29:51,165 - DSM_None_None_ - INFO - Component mapping successful.
+2025-04-11 03:29:51,166 - DSM_None_None_ - INFO - 
+Component Mapping:
+2025-04-11 03:29:51,168 - DSM_None_None_ - INFO -   Ground Truth Component   Matched Predicted Component
+0           Transmission         MECHANICAL CONNECTION
+1                  Motor  INNOVAGE POWERED SCREWDRIVER
+2      Electrical System               ELECTRIC ENERGY
+3         Battery Holder           BEARING COMPARTMENT
+2025-04-11 03:29:51,169 - DSM_None_None_ - INFO - Calculating Aligned Metrics...
+2025-04-11 03:29:51,172 - DSM_None_None_ - INFO - Calculating Aligned Metrics Mean/StdDev from runs...
+2025-04-11 03:29:51,224 - DSM_None_None_ - INFO - Calculated Aligned Metrics Mean/StdDev from runs.
+2025-04-11 03:29:51,224 - DSM_None_None_ - INFO - Calculating Aligned Average Predicted Matrix for heatmap...
+2025-04-11 03:29:51,226 - DSM_None_None_ - INFO - Generating plots...
+2025-04-11 03:29:51,227 - DSM_None_None_ - INFO - Plotting performance metrics...
+2025-04-11 03:29:51,782 - DSM_None_None_ - ERROR - Plotting failed: MetricBarPlotter class likely not defined or imported correctly. name 'logger' is not defined
+2025-04-11 03:29:51,783 - DSM_None_None_ - INFO - 
+--- Results Summary for ollama:deepseek-r1:14b-5k (r1_r2) ---
+2025-04-11 03:29:51,784 - DSM_None_None_ - INFO - 
+Raw Metrics (Mean ± StdDev):
+2025-04-11 03:29:51,785 - DSM_None_None_ - INFO -   accuracy: 0.5551 ± 0.0327
+2025-04-11 03:29:51,786 - DSM_None_None_ - INFO -   precision: 0.5551 ± 0.0327
+2025-04-11 03:29:51,786 - DSM_None_None_ - INFO -   recall: 0.5551 ± 0.0327
+2025-04-11 03:29:51,787 - DSM_None_None_ - INFO -   f1_score: 0.5551 ± 0.0327
+2025-04-11 03:29:51,788 - DSM_None_None_ - INFO -   edit_distance: 21.8000 ± 1.6000
+2025-04-11 03:29:51,788 - DSM_None_None_ - INFO -   spectral_distance: 1.6641 ± 0.3712
+2025-04-11 03:29:51,789 - DSM_None_None_ - INFO - 
+Aligned Metrics (Mean ± StdDev):
+2025-04-11 03:29:51,789 - DSM_None_None_ - INFO -   accuracy: 0.6875 ± 0.0000
+2025-04-11 03:29:51,790 - DSM_None_None_ - INFO -   precision: 0.6875 ± 0.0000
+2025-04-11 03:29:51,791 - DSM_None_None_ - INFO -   recall: 0.6875 ± 0.0000
+2025-04-11 03:29:51,791 - DSM_None_None_ - INFO -   f1_score: 0.6875 ± 0.0000
+2025-04-11 03:29:51,792 - DSM_None_None_ - INFO -   edit_distance: 5.0000 ± 0.0000
+2025-04-11 03:29:51,792 - DSM_None_None_ - INFO -   spectral_distance: 1.5914 ± 0.3133
+2025-04-11 03:29:51,793 - DSM_None_None_ - INFO - 
+Component Mapping (used for alignment):
+2025-04-11 03:29:51,795 - DSM_None_None_ - INFO -   Ground Truth Component   Matched Predicted Component
+0           Transmission         MECHANICAL CONNECTION
+1                  Motor  INNOVAGE POWERED SCREWDRIVER
+2      Electrical System               ELECTRIC ENERGY
+3         Battery Holder           BEARING COMPARTMENT
+2025-04-11 03:29:51,795 - DSM_None_None_ - INFO - --- End Results Summary ---
+2025-04-11 16:43:21,214 - DSM_None_None_ - INFO - Resetting GPUs...
+2025-04-11 16:43:43,159 - DSM_None_None_ - INFO - Running Analysis For:
+2025-04-11 16:43:43,160 - DSM_None_None_ - INFO -   Product: powerscrewdriver
+2025-04-11 16:43:43,161 - DSM_None_None_ - INFO -   Model: ollama:deepseek-r1:14b-5k
+2025-04-11 16:43:43,162 - DSM_None_None_ - INFO -   Type: LLM_GRAPH_RAG
+2025-04-11 16:43:43,162 - DSM_None_None_ - INFO -   Reference: r1_r2
+2025-04-11 16:43:43,163 - DSM_None_None_ - INFO -   Relationship: whole-part
+2025-04-11 16:43:43,164 - DSM_None_None_ - INFO -   Ground Truth Path: xLM_DSM_wip/logs/Process/gt_powerscrewdriver.csv
+2025-04-11 16:43:43,165 - DSM_None_None_ - INFO -   Avg Pred Path: xLM_DSM_wip/logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/average_matrix_20250410-201445.csv
+2025-04-11 16:43:43,166 - DSM_None_None_ - INFO -   Indiv JSON Path: xLM_DSM_wip/logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/average_matrix_20250410-201445.json
+2025-04-11 16:43:43,169 - DSM_None_None_ - INFO - Loading individual matrices from xLM_DSM_wip/logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/average_matrix_20250410-201445.json
+2025-04-11 16:43:43,171 - DSM_None_None_ - INFO - Loaded 5 individual matrices.
+2025-04-11 16:43:43,171 - DSM_None_None_ - INFO - Calculating Raw Metrics...
+2025-04-11 16:43:43,196 - DSM_None_None_ - INFO - Calculated Raw Metrics Mean/StdDev from runs.
+2025-04-11 16:43:43,197 - DSM_None_None_ - INFO - Calculating Component Similarity based on Average Matrix...
+2025-04-11 16:43:44,395 - DSM_None_None_ - INFO - Attempting Component Mapping based on Average Matrix...
+2025-04-11 16:43:44,396 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-04-11 16:43:44,397 - DSM_None_None_ - INFO - Extracting model from path: xLM_DSM_wip/logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/average_matrix_20250410-201445.csv
+2025-04-11 16:43:44,398 - DSM_None_None_ - INFO - Extracted model: deepseek-r1:14b-5k
+2025-04-11 16:43:44,426 - DSM_None_None_ - INFO - Prompt: 
+You are an expert matching engine for cyber-physical system systems. Your task is to determine the optimal one-to-one mapping between remaining ground truth and predicted major components.
+
+Remaining Ground Truth Components:
+['Bit', 'Transmission', 'Motor', 'Electrical System', 'Battery Holder', 'Housing', 'External Environment']
+
+Remaining Predicted Components:
+['INNOVAGE POWERED SCREWDRIVER', 'ELECTRIC ENERGY', 'BEARING COMPARTMENT', 'MECHANICAL CONNECTION', 'HYDRAULIC ENERGY', 'PHYSICAL CONNECTION', 'ENGINE ARCHITECTURES']
+
+Note: The following components have already been automatically matched due to high similarity (>0.8):
+[]
+
+Available Matches for Remaining Components (above 0.3 similarity threshold):
+
+Bit potential matches:
+
+Transmission potential matches:
+- MECHANICAL CONNECTION (similarity: 0.411)
+- PHYSICAL CONNECTION (similarity: 0.312)
+
+Motor potential matches:
+- INNOVAGE POWERED SCREWDRIVER (similarity: 0.367)
+- MECHANICAL CONNECTION (similarity: 0.428)
+- ENGINE ARCHITECTURES (similarity: 0.333)
+
+Electrical System potential matches:
+- ELECTRIC ENERGY (similarity: 0.548)
+- MECHANICAL CONNECTION (similarity: 0.369)
+- HYDRAULIC ENERGY (similarity: 0.341)
+- PHYSICAL CONNECTION (similarity: 0.326)
+- ENGINE ARCHITECTURES (similarity: 0.319)
+
+Battery Holder potential matches:
+- INNOVAGE POWERED SCREWDRIVER (similarity: 0.342)
+- BEARING COMPARTMENT (similarity: 0.338)
+
+Housing potential matches:
+
+External Environment potential matches:
+
+
+Instructions:
+1. Evaluate each pairing based on:
+   - Embedding similarity scores
+   - Functional equivalence at the core architecture level
+   - System-level whole-part relationships
+   - Overall coherence within the cyber-physical system
+2. Each predicted component may only be matched once
+3. Each ground truth component may receive at most one match
+4. Do not include any text other than what is specified below
+5. Only match the remaining components - do not rematch already matched components
+
+Output Format (exactly as shown):
+--------------------------------------------------
+MAPPINGS:
+[ground truth 1] -> [predicted 1] 
+[ground truth 2] -> [predicted 2]
+...
+REASON: [brief explanation focusing on functional equivalence]
+--------------------------------------------------
+2025-04-11 16:43:44,428 - DSM_None_None_ - INFO - Attempting to use model: deepseek-r1:14b-5k
+2025-04-11 16:43:44,428 - DSM_None_None_ - INFO - Using Ollama path
+2025-04-11 16:43:44,429 - DSM_None_None_ - INFO - Model name: deepseek-r1:14b-5k
+2025-04-11 16:43:44,430 - DSM_None_None_ - INFO - Prompt length: 2247
+2025-04-11 16:45:44,846 - DSM_None_None_ - INFO - Response status code: 200
+2025-04-11 16:45:44,847 - DSM_None_None_ - INFO - API call succeeded
+2025-04-11 16:45:44,849 - DSM_None_None_ - INFO - Got response: <think>
+Okay, so I need to figure out how to map the remaining ground truth components to the predic...
+2025-04-11 16:45:44,850 - DSM_None_None_ - INFO - 
+Final Mappings:
+2025-04-11 16:45:44,851 - DSM_None_None_ - INFO - Automatic high-similarity matches: {}
+2025-04-11 16:45:44,852 - DSM_None_None_ - INFO - LLM-suggested matches: {'Electrical System': 'ELECTRIC ENERGY', 'Transmission': 'MECHANICAL CONNECTION', 'Motor': 'INNOVAGE POWERED SCREWDRIVER', 'Battery Holder': 'BEARING COMPARTMENT'}
+2025-04-11 16:45:44,854 - DSM_None_None_ - INFO - Initial mapping: {'Electrical System': 'ELECTRIC ENERGY', 'Transmission': 'MECHANICAL CONNECTION', 'Motor': 'INNOVAGE POWERED SCREWDRIVER', 'Battery Holder': 'BEARING COMPARTMENT'}
+2025-04-11 16:45:44,858 - DSM_None_None_ - INFO - Component mapping successful.
+2025-04-11 16:45:44,859 - DSM_None_None_ - INFO - 
+Component Mapping:
+2025-04-11 16:45:44,861 - DSM_None_None_ - INFO -   Ground Truth Component   Matched Predicted Component
+0      Electrical System               ELECTRIC ENERGY
+1           Transmission         MECHANICAL CONNECTION
+2                  Motor  INNOVAGE POWERED SCREWDRIVER
+3         Battery Holder           BEARING COMPARTMENT
+2025-04-11 16:45:44,862 - DSM_None_None_ - INFO - Calculating Aligned Metrics...
+2025-04-11 16:45:44,864 - DSM_None_None_ - INFO - Calculating Aligned Metrics Mean/StdDev from runs...
+2025-04-11 16:45:44,917 - DSM_None_None_ - INFO - Calculated Aligned Metrics Mean/StdDev from runs.
+2025-04-11 16:45:44,918 - DSM_None_None_ - INFO - Calculating Aligned Average Predicted Matrix for heatmap...
+2025-04-11 16:45:44,919 - DSM_None_None_ - INFO - Generating plots...
+2025-04-11 16:45:44,920 - DSM_None_None_ - INFO - Plotting performance metrics...
+2025-04-11 16:45:45,474 - DSM_None_None_ - INFO - Saved plot to xLM_DSM_wip/logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/plots/performance_metrics_with_stddev.png
+2025-04-11 16:45:45,604 - DSM_None_None_ - INFO - Plotting distance metrics...
+2025-04-11 16:45:46,085 - DSM_None_None_ - INFO - Saved plot to xLM_DSM_wip/logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/plots/distance_metrics_with_stddev.png
+2025-04-11 16:45:46,185 - DSM_None_None_ - INFO - Plotting matrix comparison...
+2025-04-11 16:45:48,354 - DSM_None_None_ - INFO - Saved plot to xLM_DSM_wip/logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/plots/matrices_comparison_avg.png
+2025-04-11 16:45:48,762 - DSM_None_None_ - INFO - Plots generated and saved.
+2025-04-11 16:45:48,763 - DSM_None_None_ - INFO - 
+--- Results Summary for ollama:deepseek-r1:14b-5k (r1_r2) ---
+2025-04-11 16:45:48,763 - DSM_None_None_ - INFO - 
+Raw Metrics (Mean ± StdDev):
+2025-04-11 16:45:48,764 - DSM_None_None_ - INFO -   accuracy: 0.5551 ± 0.0327
+2025-04-11 16:45:48,765 - DSM_None_None_ - INFO -   precision: 0.5551 ± 0.0327
+2025-04-11 16:45:48,765 - DSM_None_None_ - INFO -   recall: 0.5551 ± 0.0327
+2025-04-11 16:45:48,766 - DSM_None_None_ - INFO -   f1_score: 0.5551 ± 0.0327
+2025-04-11 16:45:48,766 - DSM_None_None_ - INFO -   edit_distance: 21.8000 ± 1.6000
+2025-04-11 16:45:48,767 - DSM_None_None_ - INFO -   spectral_distance: 1.6641 ± 0.3712
+2025-04-11 16:45:48,768 - DSM_None_None_ - INFO - 
+Aligned Metrics (Mean ± StdDev):
+2025-04-11 16:45:48,768 - DSM_None_None_ - INFO -   accuracy: 0.6875 ± 0.0000
+2025-04-11 16:45:48,769 - DSM_None_None_ - INFO -   precision: 0.6875 ± 0.0000
+2025-04-11 16:45:48,769 - DSM_None_None_ - INFO -   recall: 0.6875 ± 0.0000
+2025-04-11 16:45:48,772 - DSM_None_None_ - INFO -   f1_score: 0.6875 ± 0.0000
+2025-04-11 16:45:48,772 - DSM_None_None_ - INFO -   edit_distance: 5.0000 ± 0.0000
+2025-04-11 16:45:48,773 - DSM_None_None_ - INFO -   spectral_distance: 1.5914 ± 0.3133
+2025-04-11 16:45:48,774 - DSM_None_None_ - INFO - 
+Component Mapping (used for alignment):
+2025-04-11 16:45:48,776 - DSM_None_None_ - INFO -   Ground Truth Component   Matched Predicted Component
+0      Electrical System               ELECTRIC ENERGY
+1           Transmission         MECHANICAL CONNECTION
+2                  Motor  INNOVAGE POWERED SCREWDRIVER
+3         Battery Holder           BEARING COMPARTMENT
+2025-04-11 16:45:48,776 - DSM_None_None_ - INFO - --- End Results Summary ---
+2025-04-11 17:21:32,293 - DSM_None_None_ - INFO - Resetting GPUs...
+2025-04-11 17:21:54,129 - DSM_None_None_ - INFO - Running Analysis For:
+2025-04-11 17:21:54,130 - DSM_None_None_ - INFO -   Product: powerscrewdriver
+2025-04-11 17:21:54,131 - DSM_None_None_ - INFO -   Model: ollama:deepseek-r1:14b-5k
+2025-04-11 17:21:54,132 - DSM_None_None_ - INFO -   Type: LLM_GRAPH_RAG
+2025-04-11 17:21:54,133 - DSM_None_None_ - INFO -   Reference: r1_r2
+2025-04-11 17:21:54,134 - DSM_None_None_ - INFO -   Relationship: whole-part
+2025-04-11 17:21:54,135 - DSM_None_None_ - INFO -   Ground Truth Path: xLM_DSM_wip/logs/Process/gt_powerscrewdriver.csv
+2025-04-11 17:21:54,136 - DSM_None_None_ - INFO -   Avg Pred Path: xLM_DSM_wip/logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/average_matrix_20250410-201445.csv
+2025-04-11 17:21:54,138 - DSM_None_None_ - INFO -   Indiv JSON Path: xLM_DSM_wip/logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/average_matrix_20250410-201445.json
+2025-04-11 17:21:54,143 - DSM_None_None_ - INFO - Loading individual matrices from xLM_DSM_wip/logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/average_matrix_20250410-201445.json
+2025-04-11 17:21:54,145 - DSM_None_None_ - INFO - Loaded 5 individual matrices.
+2025-04-11 17:21:54,146 - DSM_None_None_ - INFO - Calculating Raw Metrics...
+2025-04-11 17:21:54,199 - DSM_None_None_ - INFO - Calculated Raw Metrics Mean/StdDev from runs.
+2025-04-11 17:21:54,200 - DSM_None_None_ - INFO - Calculating Component Similarity based on Average Matrix...
+2025-04-11 17:21:54,804 - DSM_None_None_ - INFO - Attempting Component Mapping based on Average Matrix...
+2025-04-11 17:21:54,805 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-04-11 17:21:54,806 - DSM_None_None_ - INFO - Extracting model from path: xLM_DSM_wip/logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/average_matrix_20250410-201445.csv
+2025-04-11 17:21:54,806 - DSM_None_None_ - INFO - Extracted model: deepseek-r1:14b-5k
+2025-04-11 17:21:54,836 - DSM_None_None_ - INFO - Prompt: 
+You are an expert matching engine for cyber-physical system systems. Your task is to determine the optimal one-to-one mapping between remaining ground truth and predicted major components.
+
+Remaining Ground Truth Components:
+['Bit', 'Transmission', 'Motor', 'Electrical System', 'Battery Holder', 'Housing', 'External Environment']
+
+Remaining Predicted Components:
+['INNOVAGE POWERED SCREWDRIVER', 'ELECTRIC ENERGY', 'BEARING COMPARTMENT', 'MECHANICAL CONNECTION', 'HYDRAULIC ENERGY', 'PHYSICAL CONNECTION', 'ENGINE ARCHITECTURES']
+
+Note: The following components have already been automatically matched due to high similarity (>0.8):
+[]
+
+Available Matches for Remaining Components (above 0.3 similarity threshold):
+
+Bit potential matches:
+
+Transmission potential matches:
+- MECHANICAL CONNECTION (similarity: 0.411)
+- PHYSICAL CONNECTION (similarity: 0.311)
+
+Motor potential matches:
+- INNOVAGE POWERED SCREWDRIVER (similarity: 0.366)
+- MECHANICAL CONNECTION (similarity: 0.426)
+- ENGINE ARCHITECTURES (similarity: 0.332)
+
+Electrical System potential matches:
+- ELECTRIC ENERGY (similarity: 0.548)
+- MECHANICAL CONNECTION (similarity: 0.369)
+- HYDRAULIC ENERGY (similarity: 0.341)
+- PHYSICAL CONNECTION (similarity: 0.326)
+- ENGINE ARCHITECTURES (similarity: 0.319)
+
+Battery Holder potential matches:
+- INNOVAGE POWERED SCREWDRIVER (similarity: 0.342)
+- BEARING COMPARTMENT (similarity: 0.338)
+
+Housing potential matches:
+
+External Environment potential matches:
+
+
+Instructions:
+1. Evaluate each pairing based on:
+   - Embedding similarity scores
+   - Functional equivalence at the core architecture level
+   - System-level whole-part relationships
+   - Overall coherence within the cyber-physical system
+2. Each predicted component may only be matched once
+3. Each ground truth component may receive at most one match
+4. Do not include any text other than what is specified below
+5. Only match the remaining components - do not rematch already matched components
+
+Output Format (exactly as shown):
+--------------------------------------------------
+MAPPINGS:
+[ground truth 1] -> [predicted 1] 
+[ground truth 2] -> [predicted 2]
+...
+REASON: [brief explanation focusing on functional equivalence]
+--------------------------------------------------
+2025-04-11 17:21:54,837 - DSM_None_None_ - INFO - Attempting to use model: deepseek-r1:14b-5k
+2025-04-11 17:21:54,838 - DSM_None_None_ - INFO - Using Ollama path
+2025-04-11 17:21:54,839 - DSM_None_None_ - INFO - Model name: deepseek-r1:14b-5k
+2025-04-11 17:21:54,839 - DSM_None_None_ - INFO - Prompt length: 2247
+2025-04-11 17:23:09,101 - DSM_None_None_ - INFO - Response status code: 200
+2025-04-11 17:23:09,102 - DSM_None_None_ - INFO - API call succeeded
+2025-04-11 17:23:09,103 - DSM_None_None_ - INFO - Got response: <think>
+Okay, I need to figure out the optimal one-to-one mapping between the remaining ground truth...
+2025-04-11 17:23:09,104 - DSM_None_None_ - INFO - 
+Final Mappings:
+2025-04-11 17:23:09,105 - DSM_None_None_ - INFO - Automatic high-similarity matches: {}
+2025-04-11 17:23:09,106 - DSM_None_None_ - INFO - LLM-suggested matches: {'Bit': 'INNOVAGE POWERED SCREWDRIVER', 'Transmission': 'MECHANICAL CONNECTION', 'Motor': 'ENGINE ARCHITECTURES', 'Electrical System': 'ELECTRIC ENERGY', 'Battery Holder': 'BEARING COMPARTMENT', 'Housing': 'HYDRAULIC ENERGY', 'External Environment': 'PHYSICAL CONNECTION'}
+2025-04-11 17:23:09,108 - DSM_None_None_ - INFO - Initial mapping: {'Bit': 'INNOVAGE POWERED SCREWDRIVER', 'Transmission': 'MECHANICAL CONNECTION', 'Motor': 'ENGINE ARCHITECTURES', 'Electrical System': 'ELECTRIC ENERGY', 'Battery Holder': 'BEARING COMPARTMENT', 'Housing': 'HYDRAULIC ENERGY', 'External Environment': 'PHYSICAL CONNECTION'}
+2025-04-11 17:23:09,110 - DSM_None_None_ - INFO - Skipping mapping for GT 'Bit' -> Pred 'INNOVAGE POWERED SCREWDRIVER': Similarity 0.192 <= threshold 0.3.
+2025-04-11 17:23:09,115 - DSM_None_None_ - INFO - Skipping mapping for GT 'Housing' -> Pred 'HYDRAULIC ENERGY': Similarity 0.234 <= threshold 0.3.
+2025-04-11 17:23:09,116 - DSM_None_None_ - INFO - Skipping mapping for GT 'External Environment' -> Pred 'PHYSICAL CONNECTION': Similarity 0.248 <= threshold 0.3.
+2025-04-11 17:23:09,118 - DSM_None_None_ - INFO - Component mapping successful.
+2025-04-11 17:23:09,119 - DSM_None_None_ - INFO - 
+Component Mapping:
+2025-04-11 17:23:09,121 - DSM_None_None_ - INFO -   Ground Truth Component Matched Predicted Component
+0           Transmission       MECHANICAL CONNECTION
+1                  Motor        ENGINE ARCHITECTURES
+2      Electrical System             ELECTRIC ENERGY
+3         Battery Holder         BEARING COMPARTMENT
+2025-04-11 17:23:09,122 - DSM_None_None_ - INFO - Calculating Aligned Metrics...
+2025-04-11 17:23:09,125 - DSM_None_None_ - INFO - Calculating Aligned Metrics Mean/StdDev from runs...
+2025-04-11 17:23:09,176 - DSM_None_None_ - INFO - Calculated Aligned Metrics Mean/StdDev from runs.
+2025-04-11 17:23:09,177 - DSM_None_None_ - INFO - Calculating Aligned Average Predicted Matrix for heatmap...
+2025-04-11 17:23:09,178 - DSM_None_None_ - INFO - Generating plots...
+2025-04-11 17:23:09,178 - DSM_None_None_ - INFO - Plotting performance metrics...
+2025-04-11 17:23:09,781 - DSM_None_None_ - INFO - Saved plot to xLM_DSM_wip/logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/plots/performance_metrics_with_stddev.png
+2025-04-11 17:23:09,911 - DSM_None_None_ - INFO - Plotting distance metrics...
+2025-04-11 17:23:10,417 - DSM_None_None_ - INFO - Saved plot to xLM_DSM_wip/logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/plots/distance_metrics_with_stddev.png
+2025-04-11 17:23:10,527 - DSM_None_None_ - INFO - Plotting matrix comparison...
+2025-04-11 17:23:12,720 - DSM_None_None_ - INFO - Saved plot to xLM_DSM_wip/logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/plots/matrices_comparison_avg.png
+2025-04-11 17:23:13,132 - DSM_None_None_ - INFO - Plots generated and saved.
+2025-04-11 17:23:13,133 - DSM_None_None_ - INFO - 
+--- Results Summary for ollama:deepseek-r1:14b-5k (r1_r2) ---
+2025-04-11 17:23:13,134 - DSM_None_None_ - INFO - 
+Raw Metrics (Mean ± StdDev):
+2025-04-11 17:23:13,135 - DSM_None_None_ - INFO -   accuracy: 0.5551 ± 0.0327
+2025-04-11 17:23:13,135 - DSM_None_None_ - INFO -   precision: 0.5551 ± 0.0327
+2025-04-11 17:23:13,136 - DSM_None_None_ - INFO -   recall: 0.5551 ± 0.0327
+2025-04-11 17:23:13,137 - DSM_None_None_ - INFO -   f1_score: 0.5551 ± 0.0327
+2025-04-11 17:23:13,138 - DSM_None_None_ - INFO -   edit_distance: 21.8000 ± 1.6000
+2025-04-11 17:23:13,139 - DSM_None_None_ - INFO -   spectral_distance: 1.6641 ± 0.3712
+2025-04-11 17:23:13,139 - DSM_None_None_ - INFO - 
+Aligned Metrics (Mean ± StdDev):
+2025-04-11 17:23:13,140 - DSM_None_None_ - INFO -   accuracy: 0.5625 ± 0.0000
+2025-04-11 17:23:13,141 - DSM_None_None_ - INFO -   precision: 0.5625 ± 0.0000
+2025-04-11 17:23:13,141 - DSM_None_None_ - INFO -   recall: 0.5625 ± 0.0000
+2025-04-11 17:23:13,142 - DSM_None_None_ - INFO -   f1_score: 0.5625 ± 0.0000
+2025-04-11 17:23:13,142 - DSM_None_None_ - INFO -   edit_distance: 7.0000 ± 0.0000
+2025-04-11 17:23:13,143 - DSM_None_None_ - INFO -   spectral_distance: 0.8321 ± 0.5839
+2025-04-11 17:23:13,144 - DSM_None_None_ - INFO - 
+Component Mapping (used for alignment):
+2025-04-11 17:23:13,145 - DSM_None_None_ - INFO -   Ground Truth Component Matched Predicted Component
+0           Transmission       MECHANICAL CONNECTION
+1                  Motor        ENGINE ARCHITECTURES
+2      Electrical System             ELECTRIC ENERGY
+3         Battery Holder         BEARING COMPARTMENT
+2025-04-11 17:23:13,146 - DSM_None_None_ - INFO - --- End Results Summary ---
+2025-04-11 19:21:25,773 - DSM_None_None_ - INFO - Resetting GPUs...
+2025-04-11 19:21:50,869 - DSM_None_None_ - INFO - Running Analysis For:
+2025-04-11 19:21:50,870 - DSM_None_None_ - INFO -   Product: powerscrewdriver
+2025-04-11 19:21:50,871 - DSM_None_None_ - INFO -   Model: ollama:deepseek-r1:14b-5k
+2025-04-11 19:21:50,872 - DSM_None_None_ - INFO -   Type: LLM_GRAPH_RAG
+2025-04-11 19:21:50,873 - DSM_None_None_ - INFO -   Reference: r1_r2
+2025-04-11 19:21:50,875 - DSM_None_None_ - INFO -   Relationship: whole-part
+2025-04-11 19:21:50,875 - DSM_None_None_ - INFO -   Ground Truth Path: xLM_DSM_wip/logs/Process/gt_powerscrewdriver.csv
+2025-04-11 19:21:50,876 - DSM_None_None_ - INFO -   Avg Pred Path: xLM_DSM_wip/logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/average_matrix_20250410-201445.csv
+2025-04-11 19:21:50,877 - DSM_None_None_ - INFO -   Indiv JSON Path: xLM_DSM_wip/logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/average_matrix_20250410-201445.json
+2025-04-11 19:21:50,883 - DSM_None_None_ - INFO - Loading individual matrices from xLM_DSM_wip/logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/average_matrix_20250410-201445.json
+2025-04-11 19:21:50,884 - DSM_None_None_ - INFO - Loaded 5 individual matrices.
+2025-04-11 19:21:50,885 - DSM_None_None_ - INFO - Calculating Raw Metrics...
+2025-04-11 19:21:50,947 - DSM_None_None_ - INFO - Calculated Raw Metrics Mean/StdDev from runs.
+2025-04-11 19:21:50,948 - DSM_None_None_ - INFO - Calculating Component Similarity based on Average Matrix...
+2025-04-11 19:21:51,916 - DSM_None_None_ - INFO - Attempting Component Mapping based on Average Matrix...
+2025-04-11 19:21:51,917 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-04-11 19:21:51,918 - DSM_None_None_ - INFO - Extracting model from path: xLM_DSM_wip/logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/average_matrix_20250410-201445.csv
+2025-04-11 19:21:51,919 - DSM_None_None_ - INFO - Extracted model: deepseek-r1:14b-5k
+2025-04-11 19:21:51,948 - DSM_None_None_ - INFO - Prompt: 
+You are an expert matching engine for cyber-physical system systems. Your task is to determine the optimal one-to-one mapping between remaining ground truth and predicted major components.
+
+Remaining Ground Truth Components:
+['Bit', 'Transmission', 'Motor', 'Electrical System', 'Battery Holder', 'Housing', 'External Environment']
+
+Remaining Predicted Components:
+['INNOVAGE POWERED SCREWDRIVER', 'ELECTRIC ENERGY', 'BEARING COMPARTMENT', 'MECHANICAL CONNECTION', 'HYDRAULIC ENERGY', 'PHYSICAL CONNECTION', 'ENGINE ARCHITECTURES']
+
+Note: The following components have already been automatically matched due to high similarity (>0.8):
+[]
+
+Available Matches for Remaining Components (above 0.3 similarity threshold):
+
+Bit potential matches:
+
+Transmission potential matches:
+- MECHANICAL CONNECTION (similarity: 0.411)
+- PHYSICAL CONNECTION (similarity: 0.311)
+
+Motor potential matches:
+- INNOVAGE POWERED SCREWDRIVER (similarity: 0.366)
+- MECHANICAL CONNECTION (similarity: 0.426)
+- ENGINE ARCHITECTURES (similarity: 0.332)
+
+Electrical System potential matches:
+- ELECTRIC ENERGY (similarity: 0.548)
+- MECHANICAL CONNECTION (similarity: 0.369)
+- HYDRAULIC ENERGY (similarity: 0.341)
+- PHYSICAL CONNECTION (similarity: 0.326)
+- ENGINE ARCHITECTURES (similarity: 0.319)
+
+Battery Holder potential matches:
+- INNOVAGE POWERED SCREWDRIVER (similarity: 0.342)
+- BEARING COMPARTMENT (similarity: 0.338)
+
+Housing potential matches:
+
+External Environment potential matches:
+
+
+Instructions:
+1. Evaluate each pairing based on:
+   - Embedding similarity scores
+   - Functional equivalence at the core architecture level
+   - System-level whole-part relationships
+   - Overall coherence within the cyber-physical system
+2. Each predicted component may only be matched once
+3. Each ground truth component may receive at most one match
+4. Do not include any text other than what is specified below
+5. Only match the remaining components - do not rematch already matched components
+
+Output Format (exactly as shown):
+--------------------------------------------------
+MAPPINGS:
+[ground truth 1] -> [predicted 1] 
+[ground truth 2] -> [predicted 2]
+...
+REASON: [brief explanation focusing on functional equivalence]
+--------------------------------------------------
+2025-04-11 19:21:51,949 - DSM_None_None_ - INFO - Attempting to use model: deepseek-r1:14b-5k
+2025-04-11 19:21:51,949 - DSM_None_None_ - INFO - Using Ollama path
+2025-04-11 19:21:51,950 - DSM_None_None_ - INFO - Model name: deepseek-r1:14b-5k
+2025-04-11 19:21:51,951 - DSM_None_None_ - INFO - Prompt length: 2247
+2025-04-11 19:23:39,985 - DSM_None_None_ - INFO - Response status code: 200
+2025-04-11 19:23:39,986 - DSM_None_None_ - INFO - API call succeeded
+2025-04-11 19:23:39,987 - DSM_None_None_ - INFO - Got response: <think>
+Alright, I need to figure out the optimal one-to-one mapping between the remaining ground tr...
+2025-04-11 19:23:39,989 - DSM_None_None_ - INFO - 
+Final Mappings:
+2025-04-11 19:23:39,990 - DSM_None_None_ - INFO - Automatic high-similarity matches: {}
+2025-04-11 19:23:39,991 - DSM_None_None_ - INFO - LLM-suggested matches: {'Bit': 'INNOVAGE POWERED SCREWDRIVER', 'Transmission': 'MECHANICAL CONNECTION', 'Motor': 'ENGINE ARCHITECTURES', 'Electrical System': 'ELECTRIC ENERGY', 'Battery Holder': 'BEARING COMPARTMENT', 'Housing': 'HYDRAULIC ENERGY', 'External Environment': 'PHYSICAL CONNECTION'}
+2025-04-11 19:23:39,992 - DSM_None_None_ - INFO - Initial mapping: {'Bit': 'INNOVAGE POWERED SCREWDRIVER', 'Transmission': 'MECHANICAL CONNECTION', 'Motor': 'ENGINE ARCHITECTURES', 'Electrical System': 'ELECTRIC ENERGY', 'Battery Holder': 'BEARING COMPARTMENT', 'Housing': 'HYDRAULIC ENERGY', 'External Environment': 'PHYSICAL CONNECTION'}
+2025-04-11 19:23:39,994 - DSM_None_None_ - INFO - Skipping mapping for GT 'Bit' -> Pred 'INNOVAGE POWERED SCREWDRIVER': Similarity 0.192 <= threshold 0.3.
+2025-04-11 19:23:39,999 - DSM_None_None_ - INFO - Skipping mapping for GT 'Housing' -> Pred 'HYDRAULIC ENERGY': Similarity 0.234 <= threshold 0.3.
+2025-04-11 19:23:40,001 - DSM_None_None_ - INFO - Skipping mapping for GT 'External Environment' -> Pred 'PHYSICAL CONNECTION': Similarity 0.248 <= threshold 0.3.
+2025-04-11 19:23:40,003 - DSM_None_None_ - INFO - Component mapping successful.
+2025-04-11 19:23:40,004 - DSM_None_None_ - INFO - 
+Component Mapping:
+2025-04-11 19:23:40,006 - DSM_None_None_ - INFO -   Ground Truth Component Matched Predicted Component
+0           Transmission       MECHANICAL CONNECTION
+1                  Motor        ENGINE ARCHITECTURES
+2      Electrical System             ELECTRIC ENERGY
+3         Battery Holder         BEARING COMPARTMENT
+2025-04-11 19:23:40,007 - DSM_None_None_ - INFO - Calculating Aligned Metrics...
+2025-04-11 19:23:40,009 - DSM_None_None_ - INFO - Calculating Aligned Metrics Mean/StdDev from runs...
+2025-04-11 19:23:40,068 - DSM_None_None_ - INFO - Calculated Aligned Metrics Mean/StdDev from runs.
+2025-04-11 19:23:40,069 - DSM_None_None_ - INFO - Calculating Aligned Average Predicted Matrix for heatmap...
+2025-04-11 19:23:40,070 - DSM_None_None_ - INFO - Generating plots...
+2025-04-11 19:23:40,071 - DSM_None_None_ - INFO - Plotting performance metrics...
+2025-04-11 19:23:40,697 - DSM_None_None_ - INFO - Saved plot to xLM_DSM_wip/logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/plots/performance_metrics_with_stddev.png
+2025-04-11 19:23:40,831 - DSM_None_None_ - INFO - Plotting distance metrics...
+2025-04-11 19:23:41,358 - DSM_None_None_ - INFO - Saved plot to xLM_DSM_wip/logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/plots/distance_metrics_with_stddev.png
+2025-04-11 19:23:41,467 - DSM_None_None_ - INFO - Plotting matrix comparison...
+2025-04-11 19:23:43,674 - DSM_None_None_ - INFO - Saved plot to xLM_DSM_wip/logs/Process/ii/powerscrewdriver/te3s/LLM_GRAPH_RAG/experiment_llm_graph_rag_ollama:deepseek-r1:14b-5k_20250410-201445/llm_graph_rag_refs_r1_r2/plots/matrices_comparison_avg.png
+2025-04-11 19:23:44,083 - DSM_None_None_ - INFO - Plots generated and saved.
+2025-04-11 19:23:44,084 - DSM_None_None_ - INFO - 
+--- Results Summary for ollama:deepseek-r1:14b-5k (r1_r2) ---
+2025-04-11 19:23:44,085 - DSM_None_None_ - INFO - 
+Raw Metrics (Mean ± StdDev):
+2025-04-11 19:23:44,086 - DSM_None_None_ - INFO -   accuracy: 0.5551 ± 0.0327
+2025-04-11 19:23:44,087 - DSM_None_None_ - INFO -   precision: 0.7455 ± 0.0096
+2025-04-11 19:23:44,087 - DSM_None_None_ - INFO -   recall: 0.5471 ± 0.0824
+2025-04-11 19:23:44,088 - DSM_None_None_ - INFO -   f1_score: 0.6266 ± 0.0584
+2025-04-11 19:23:44,089 - DSM_None_None_ - INFO -   edit_distance: 21.8000 ± 1.6000
+2025-04-11 19:23:44,089 - DSM_None_None_ - INFO -   spectral_distance: 1.6641 ± 0.3712
+2025-04-11 19:23:44,090 - DSM_None_None_ - INFO - 
+Aligned Metrics (Mean ± StdDev):
+2025-04-11 19:23:44,090 - DSM_None_None_ - INFO -   accuracy: 0.5625 ± 0.0000
+2025-04-11 19:23:44,091 - DSM_None_None_ - INFO -   precision: 0.7600 ± 0.1200
+2025-04-11 19:23:44,092 - DSM_None_None_ - INFO -   recall: 0.5818 ± 0.1091
+2025-04-11 19:23:44,092 - DSM_None_None_ - INFO -   f1_score: 0.6400 ± 0.0533
+2025-04-11 19:23:44,093 - DSM_None_None_ - INFO -   edit_distance: 7.0000 ± 0.0000
+2025-04-11 19:23:44,093 - DSM_None_None_ - INFO -   spectral_distance: 0.8321 ± 0.5839
+2025-04-11 19:23:44,094 - DSM_None_None_ - INFO - 
+Component Mapping (used for alignment):
+2025-04-11 19:23:44,096 - DSM_None_None_ - INFO -   Ground Truth Component Matched Predicted Component
+0           Transmission       MECHANICAL CONNECTION
+1                  Motor        ENGINE ARCHITECTURES
+2      Electrical System             ELECTRIC ENERGY
+3         Battery Holder         BEARING COMPARTMENT
+2025-04-11 19:23:44,098 - DSM_None_None_ - INFO - --- End Results Summary ---

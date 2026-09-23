@@ -1,0 +1,365 @@
+2025-02-24 05:54:19,124 - DSM_None_None_ - INFO - Product: CubeSat
+2025-02-24 05:54:19,125 - DSM_None_None_ - INFO - Model: ollama:mixtral:8x22b_6k
+2025-02-24 05:54:19,126 - DSM_None_None_ - INFO - Type: LLM_RAG
+2025-02-24 05:54:19,127 - DSM_None_None_ - INFO - Reference: R3
+2025-02-24 05:54:19,901 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-02-24 05:54:19,902 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_ollama:mixtral:8x22b_6k_20250223-150636/llm_rag_refs_R3/average_matrix_20250223-150636.csv
+2025-02-24 05:54:19,903 - DSM_None_None_ - INFO - Extracted model: mixtral:8x22b
+2025-02-24 05:54:19,904 - DSM_None_None_ - INFO - Creating similarity matrix text
+2025-02-24 05:54:19,915 - DSM_None_None_ - INFO - Creating prompt
+2025-02-24 05:54:19,916 - DSM_None_None_ - INFO - Attempting to use model: mixtral:8x22b
+2025-02-24 05:54:19,917 - DSM_None_None_ - INFO - Using Ollama path
+2025-02-24 05:54:19,917 - DSM_None_None_ - INFO - Model name: mixtral:8x22b
+2025-02-24 05:54:19,918 - DSM_None_None_ - INFO - Prompt length: 1314
+2025-02-24 05:54:53,921 - DSM_None_None_ - INFO - Response status code: 200
+2025-02-24 05:54:53,922 - DSM_None_None_ - INFO - API call succeeded
+2025-02-24 05:54:53,923 - DSM_None_None_ - INFO - Got response:  MAPPINGS:
+['Spacecraft'] -> ['Satellite housing']
+['Guidance, Navigation, and Control (GNC) Subsyst...
+2025-02-24 05:54:53,923 - DSM_None_None_ - INFO - 
+Initial LLM Suggested Mappings:
+2025-02-24 05:54:53,924 - DSM_None_None_ - INFO - Ground Truth Components: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software']
+2025-02-24 05:54:53,925 - DSM_None_None_ - INFO - Predicted Components: ['Satellite housing', 'Arduino development board', 'HyperDuino shield', 'Light and temperature sensors', 'Jumper cables', 'Battery cable and 9V battery']
+2025-02-24 05:54:53,925 - DSM_None_None_ - INFO - 
+Checking mapping: Spacecraft -> Satellite housing
+2025-02-24 05:54:53,926 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 05:54:53,926 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 05:54:53,927 - DSM_None_None_ - INFO - 
+Checking mapping: Guidance, Navigation, and Control (GNC) Subsystem -> No match found based on provided information.
+2025-02-24 05:54:53,928 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 05:54:53,928 - DSM_None_None_ - INFO - Is Pred in pred_components? False
+2025-02-24 05:54:53,929 - DSM_None_None_ - INFO - 
+Checking mapping: Propulsion Subsystem -> No match found based on provided information.
+2025-02-24 05:54:53,929 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 05:54:53,930 - DSM_None_None_ - INFO - Is Pred in pred_components? False
+2025-02-24 05:54:53,930 - DSM_None_None_ - INFO - 
+Checking mapping: Power Subsystem -> Battery cable and 9V battery
+2025-02-24 05:54:53,931 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 05:54:53,932 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 05:54:53,932 - DSM_None_None_ - INFO - 
+Checking mapping: Reaction Wheel -> No match found based on provided information.
+2025-02-24 05:54:53,933 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 05:54:53,933 - DSM_None_None_ - INFO - Is Pred in pred_components? False
+2025-02-24 05:54:53,934 - DSM_None_None_ - INFO - 
+Checking mapping: GNC Software -> Arduino development board
+2025-02-24 05:54:53,934 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 05:54:53,938 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 05:54:55,495 - DSM_None_None_ - INFO - 
+Results for ollama:mixtral:8x22b_6k:
+2025-02-24 05:54:55,496 - DSM_None_None_ - INFO - 
+Raw Metrics:
+2025-02-24 05:54:55,497 - DSM_None_None_ - INFO - accuracy: 0.4444
+2025-02-24 05:54:55,498 - DSM_None_None_ - INFO - precision: 0.5000
+2025-02-24 05:54:55,498 - DSM_None_None_ - INFO - recall: 0.5000
+2025-02-24 05:54:55,499 - DSM_None_None_ - INFO - f1_score: 0.5000
+2025-02-24 05:54:55,500 - DSM_None_None_ - INFO - edit_distance: 20.0000
+2025-02-24 05:54:55,501 - DSM_None_None_ - INFO - spectral_distance: 1.1819
+2025-02-24 05:54:55,501 - DSM_None_None_ - INFO - 
+Aligned Metrics:
+2025-02-24 05:54:55,502 - DSM_None_None_ - INFO - accuracy: 1.0000
+2025-02-24 05:54:55,503 - DSM_None_None_ - INFO - precision: 1.0000
+2025-02-24 05:54:55,503 - DSM_None_None_ - INFO - recall: 1.0000
+2025-02-24 05:54:55,504 - DSM_None_None_ - INFO - f1_score: 1.0000
+2025-02-24 05:54:55,504 - DSM_None_None_ - INFO - edit_distance: 0.0000
+2025-02-24 05:54:55,505 - DSM_None_None_ - INFO - spectral_distance: 0.0000
+2025-02-24 05:54:55,507 - DSM_None_None_ - INFO - 
+Component Mapping:
+2025-02-24 05:54:55,509 - DSM_None_None_ - INFO -   Ground Truth Component Matched Predicted Component
+0             Spacecraft           Satellite housing
+2025-02-24 07:23:18,265 - DSM_None_None_ - INFO - Product: CubeSat
+2025-02-24 07:23:18,266 - DSM_None_None_ - INFO - Model: ollama:mixtral:8x22b_6k
+2025-02-24 07:23:18,267 - DSM_None_None_ - INFO - Type: LLM_RAG
+2025-02-24 07:23:18,268 - DSM_None_None_ - INFO - Reference: R3
+2025-02-24 07:23:19,150 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-02-24 07:23:19,151 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_ollama:mixtral:8x22b_6k_20250223-150636/llm_rag_refs_R3/average_matrix_20250223-150636.csv
+2025-02-24 07:23:19,152 - DSM_None_None_ - INFO - Extracted model: mixtral:8x22b
+2025-02-24 07:23:19,153 - DSM_None_None_ - INFO - Creating similarity matrix text
+2025-02-24 07:23:19,165 - DSM_None_None_ - INFO - Creating prompt
+2025-02-24 07:23:19,166 - DSM_None_None_ - INFO - Attempting to use model: mixtral:8x22b
+2025-02-24 07:23:19,167 - DSM_None_None_ - INFO - Using Ollama path
+2025-02-24 07:23:19,168 - DSM_None_None_ - INFO - Model name: mixtral:8x22b
+2025-02-24 07:23:19,168 - DSM_None_None_ - INFO - Prompt length: 1314
+2025-02-24 07:23:23,237 - DSM_None_None_ - INFO - Response status code: 500
+2025-02-24 07:23:23,239 - DSM_None_None_ - ERROR - API call failed: {"error":"llama runner process has terminated: error:Could not initialize Tensile host: No devices found"}
+2025-02-24 07:23:23,239 - DSM_None_None_ - ERROR - Error getting matches: Error code: 500 - {'error': 'llama runner process has terminated: error:Could not initialize Tensile host: No devices found'}
+2025-02-24 07:23:23,242 - DSM_None_None_ - ERROR - No valid component mappings found
+2025-02-24 21:49:55,054 - DSM_None_None_ - INFO - Resetting GPUs...
+2025-02-24 21:50:42,250 - DSM_None_None_ - INFO - Product: CubeSat
+2025-02-24 21:50:42,251 - DSM_None_None_ - INFO - Model: ollama:mixtral:8x22b_6k
+2025-02-24 21:50:42,252 - DSM_None_None_ - INFO - Type: LLM_RAG
+2025-02-24 21:50:42,253 - DSM_None_None_ - INFO - Reference: R3
+2025-02-24 21:50:43,465 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-02-24 21:50:43,466 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_ollama:mixtral:8x22b_6k_20250223-150636/llm_rag_refs_R3/average_matrix_20250223-150636.csv
+2025-02-24 21:50:43,467 - DSM_None_None_ - INFO - Extracted model: mixtral:8x22b
+2025-02-24 21:50:43,468 - DSM_None_None_ - INFO - Creating similarity matrix text
+2025-02-24 21:50:43,479 - DSM_None_None_ - INFO - Creating prompt
+2025-02-24 21:50:43,481 - DSM_None_None_ - INFO - Attempting to use model: mixtral:8x22b
+2025-02-24 21:50:43,482 - DSM_None_None_ - INFO - Using Ollama path
+2025-02-24 21:50:43,483 - DSM_None_None_ - INFO - Model name: mixtral:8x22b
+2025-02-24 21:50:43,484 - DSM_None_None_ - INFO - Prompt length: 1314
+2025-02-24 21:51:57,155 - DSM_None_None_ - INFO - Response status code: 200
+2025-02-24 21:51:57,156 - DSM_None_None_ - INFO - API call succeeded
+2025-02-24 21:51:57,157 - DSM_None_None_ - INFO - Got response:  MAPPINGS:
+['Spacecraft'] -> ['Satellite housing']
+['Guidance, Navigation, and Control (GNC) Subsyst...
+2025-02-24 21:51:57,158 - DSM_None_None_ - INFO - 
+Initial LLM Suggested Mappings:
+2025-02-24 21:51:57,160 - DSM_None_None_ - INFO - Ground Truth Components: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software']
+2025-02-24 21:51:57,161 - DSM_None_None_ - INFO - Predicted Components: ['Satellite housing', 'Arduino development board', 'HyperDuino shield', 'Light and temperature sensors', 'Jumper cables', 'Battery cable and 9V battery']
+2025-02-24 21:51:57,162 - DSM_None_None_ - INFO - 
+Checking mapping: Spacecraft -> Satellite housing
+2025-02-24 21:51:57,163 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 21:51:57,165 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 21:51:57,166 - DSM_None_None_ - INFO - 
+Checking mapping: Guidance, Navigation, and Control (GNC) Subsystem -> Arduino development board
+2025-02-24 21:51:57,166 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 21:51:57,168 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 21:51:57,169 - DSM_None_None_ - INFO - 
+Checking mapping: Propulsion Subsystem -> HyperDuino shield
+2025-02-24 21:51:57,170 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 21:51:57,171 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 21:51:57,171 - DSM_None_None_ - INFO - 
+Checking mapping: Power Subsystem -> Battery cable and 9V battery
+2025-02-24 21:51:57,173 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 21:51:57,174 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 21:51:57,175 - DSM_None_None_ - INFO - 
+Checking mapping: Reaction Wheel -> None
+2025-02-24 21:51:57,176 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 21:51:57,177 - DSM_None_None_ - INFO - Is Pred in pred_components? False
+2025-02-24 21:51:57,178 - DSM_None_None_ - INFO - 
+Checking mapping: GNC Software -> Jumper cables
+2025-02-24 21:51:57,179 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-24 21:51:57,180 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-24 21:51:58,587 - DSM_None_None_ - INFO - 
+Results for ollama:mixtral:8x22b_6k:
+2025-02-24 21:51:58,589 - DSM_None_None_ - INFO - 
+Raw Metrics:
+2025-02-24 21:51:58,589 - DSM_None_None_ - INFO - accuracy: 0.4444
+2025-02-24 21:51:58,590 - DSM_None_None_ - INFO - precision: 0.5000
+2025-02-24 21:51:58,591 - DSM_None_None_ - INFO - recall: 0.5000
+2025-02-24 21:51:58,592 - DSM_None_None_ - INFO - f1_score: 0.5000
+2025-02-24 21:51:58,593 - DSM_None_None_ - INFO - edit_distance: 20.0000
+2025-02-24 21:51:58,593 - DSM_None_None_ - INFO - spectral_distance: 1.1819
+2025-02-24 21:51:58,594 - DSM_None_None_ - INFO - 
+Aligned Metrics:
+2025-02-24 21:51:58,595 - DSM_None_None_ - INFO - accuracy: 1.0000
+2025-02-24 21:51:58,596 - DSM_None_None_ - INFO - precision: 1.0000
+2025-02-24 21:51:58,597 - DSM_None_None_ - INFO - recall: 1.0000
+2025-02-24 21:51:58,598 - DSM_None_None_ - INFO - f1_score: 1.0000
+2025-02-24 21:51:58,599 - DSM_None_None_ - INFO - edit_distance: 0.0000
+2025-02-24 21:51:58,599 - DSM_None_None_ - INFO - spectral_distance: 0.0000
+2025-02-24 21:51:58,600 - DSM_None_None_ - INFO - 
+Component Mapping:
+2025-02-24 21:51:58,605 - DSM_None_None_ - INFO -   Ground Truth Component Matched Predicted Component
+0             Spacecraft           Satellite housing
+2025-02-25 00:00:11,432 - DSM_None_None_ - INFO - Resetting GPUs...
+2025-02-25 00:01:01,953 - DSM_None_None_ - INFO - Product: CubeSat
+2025-02-25 00:01:01,954 - DSM_None_None_ - INFO - Model: ollama:mixtral:8x22b_6k
+2025-02-25 00:01:01,956 - DSM_None_None_ - INFO - Type: LLM_RAG
+2025-02-25 00:01:01,956 - DSM_None_None_ - INFO - Reference: R3
+2025-02-25 00:01:03,034 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-02-25 00:01:03,035 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_ollama:mixtral:8x22b_6k_20250223-150636/llm_rag_refs_R3/average_matrix_20250223-150636.csv
+2025-02-25 00:01:03,036 - DSM_None_None_ - INFO - Extracted model: mixtral:8x22b
+2025-02-25 00:01:03,036 - DSM_None_None_ - INFO - Creating similarity matrix text
+2025-02-25 00:01:03,048 - DSM_None_None_ - INFO - Creating prompt
+2025-02-25 00:01:03,049 - DSM_None_None_ - INFO - Attempting to use model: mixtral:8x22b
+2025-02-25 00:01:03,049 - DSM_None_None_ - INFO - Using Ollama path
+2025-02-25 00:01:03,050 - DSM_None_None_ - INFO - Model name: mixtral:8x22b
+2025-02-25 00:01:03,050 - DSM_None_None_ - INFO - Prompt length: 1314
+2025-02-25 00:02:09,343 - DSM_None_None_ - INFO - Response status code: 200
+2025-02-25 00:02:09,344 - DSM_None_None_ - INFO - API call succeeded
+2025-02-25 00:02:09,345 - DSM_None_None_ - INFO - Got response:  MAPPINGS:
+['Spacecraft'] -> ['Satellite housing']
+['Guidance, Navigation, and Control (GNC) Subsyst...
+2025-02-25 00:02:09,346 - DSM_None_None_ - INFO - 
+Initial LLM Suggested Mappings:
+2025-02-25 00:02:09,347 - DSM_None_None_ - INFO - Ground Truth Components: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software']
+2025-02-25 00:02:09,348 - DSM_None_None_ - INFO - Predicted Components: ['Satellite housing', 'Arduino development board', 'HyperDuino shield', 'Light and temperature sensors', 'Jumper cables', 'Battery cable and 9V battery']
+2025-02-25 00:02:09,349 - DSM_None_None_ - INFO - 
+Checking mapping: Spacecraft -> Satellite housing
+2025-02-25 00:02:09,350 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 00:02:09,350 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 00:02:09,351 - DSM_None_None_ - INFO - 
+Checking mapping: Guidance, Navigation, and Control (GNC) Subsystem -> None
+2025-02-25 00:02:09,352 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 00:02:09,353 - DSM_None_None_ - INFO - Is Pred in pred_components? False
+2025-02-25 00:02:09,354 - DSM_None_None_ - INFO - 
+Checking mapping: Propulsion Subsystem -> None
+2025-02-25 00:02:09,355 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 00:02:09,356 - DSM_None_None_ - INFO - Is Pred in pred_components? False
+2025-02-25 00:02:09,356 - DSM_None_None_ - INFO - 
+Checking mapping: Power Subsystem -> Battery cable and 9V battery
+2025-02-25 00:02:09,357 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 00:02:09,358 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 00:02:09,359 - DSM_None_None_ - INFO - 
+Checking mapping: Reaction Wheel -> None
+2025-02-25 00:02:09,360 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 00:02:09,361 - DSM_None_None_ - INFO - Is Pred in pred_components? False
+2025-02-25 00:02:09,361 - DSM_None_None_ - INFO - 
+Checking mapping: GNC Software -> Arduino development board', 'HyperDuino shield', 'Light and temperature sensors', 'Jumper cables
+2025-02-25 00:02:09,362 - DSM_None_None_ - INFO - Is GT in gt_components? True
+2025-02-25 00:02:09,363 - DSM_None_None_ - INFO - Is Pred in pred_components? False
+2025-02-25 00:02:10,624 - DSM_None_None_ - INFO - Saved plot to ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_ollama:mixtral:8x22b_6k_20250223-150636/llm_rag_refs_R3/plots/metrics_comparison.png
+2025-02-25 00:02:13,311 - DSM_None_None_ - INFO - Saved plot to ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_ollama:mixtral:8x22b_6k_20250223-150636/llm_rag_refs_R3/plots/matrices_comparison.png
+2025-02-25 00:02:13,747 - DSM_None_None_ - INFO - 
+Results for ollama:mixtral:8x22b_6k:
+2025-02-25 00:02:13,748 - DSM_None_None_ - INFO - 
+Raw Metrics:
+2025-02-25 00:02:13,749 - DSM_None_None_ - INFO - accuracy: 0.4444
+2025-02-25 00:02:13,749 - DSM_None_None_ - INFO - precision: 0.5000
+2025-02-25 00:02:13,750 - DSM_None_None_ - INFO - recall: 0.5000
+2025-02-25 00:02:13,751 - DSM_None_None_ - INFO - f1_score: 0.5000
+2025-02-25 00:02:13,752 - DSM_None_None_ - INFO - edit_distance: 20.0000
+2025-02-25 00:02:13,753 - DSM_None_None_ - INFO - spectral_distance: 1.1819
+2025-02-25 00:02:13,753 - DSM_None_None_ - INFO - 
+Aligned Metrics:
+2025-02-25 00:02:13,754 - DSM_None_None_ - INFO - accuracy: 1.0000
+2025-02-25 00:02:13,755 - DSM_None_None_ - INFO - precision: 1.0000
+2025-02-25 00:02:13,757 - DSM_None_None_ - INFO - recall: 1.0000
+2025-02-25 00:02:13,757 - DSM_None_None_ - INFO - f1_score: 1.0000
+2025-02-25 00:02:13,758 - DSM_None_None_ - INFO - edit_distance: 0.0000
+2025-02-25 00:02:13,759 - DSM_None_None_ - INFO - spectral_distance: 0.0000
+2025-02-25 00:02:13,759 - DSM_None_None_ - INFO - 
+Component Mapping:
+2025-02-25 00:02:13,761 - DSM_None_None_ - INFO -   Ground Truth Component Matched Predicted Component
+0             Spacecraft           Satellite housing
+2025-02-25 00:15:14,660 - DSM_None_None_ - INFO - Resetting GPUs...
+2025-02-25 00:16:01,459 - DSM_None_None_ - INFO - Product: CubeSat
+2025-02-25 00:16:01,461 - DSM_None_None_ - INFO - Model: ollama:mixtral:8x22b_6k
+2025-02-25 00:16:01,462 - DSM_None_None_ - INFO - Type: LLM_RAG
+2025-02-25 00:16:01,463 - DSM_None_None_ - INFO - Reference: R3
+2025-02-25 00:16:02,521 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-02-25 00:16:02,522 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_ollama:mixtral:8x22b_6k_20250223-150636/llm_rag_refs_R3/average_matrix_20250223-150636.csv
+2025-02-25 00:16:02,523 - DSM_None_None_ - INFO - Extracted model: mixtral:8x22b
+2025-02-25 00:16:02,523 - DSM_None_None_ - INFO - Creating similarity matrix text
+2025-02-25 00:16:02,535 - DSM_None_None_ - INFO - Creating prompt
+2025-02-25 00:16:02,536 - DSM_None_None_ - INFO - Attempting to use model: mixtral:8x22b
+2025-02-25 00:16:02,537 - DSM_None_None_ - INFO - Using Ollama path
+2025-02-25 00:16:02,539 - DSM_None_None_ - INFO - Model name: mixtral:8x22b
+2025-02-25 00:16:02,540 - DSM_None_None_ - INFO - Prompt length: 1314
+2025-02-25 00:17:08,869 - DSM_None_None_ - INFO - Response status code: 200
+2025-02-25 00:17:08,871 - DSM_None_None_ - INFO - API call succeeded
+2025-02-25 00:17:08,872 - DSM_None_None_ - INFO - Got response:  Given the constraints and available information, here is my attempt to map the ground truth compone...
+2025-02-25 00:17:08,874 - DSM_None_None_ - INFO - 
+Initial LLM Suggested Mappings:
+2025-02-25 00:17:08,874 - DSM_None_None_ - INFO - Ground Truth Components: ['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software']
+2025-02-25 00:17:08,876 - DSM_None_None_ - INFO - Predicted Components: ['Satellite housing', 'Arduino development board', 'HyperDuino shield', 'Light and temperature sensors', 'Jumper cables', 'Battery cable and 9V battery']
+2025-02-25 00:17:08,877 - DSM_None_None_ - INFO - 
+Checking mapping: 1. Spacecraft -> Satellite housing
+2025-02-25 00:17:08,878 - DSM_None_None_ - INFO - Is GT in gt_components? False
+2025-02-25 00:17:08,879 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 00:17:08,880 - DSM_None_None_ - INFO - 
+Checking mapping: 2. Guidance, Navigation, and Control (GNC) Subsystem -> Arduino development board
+2025-02-25 00:17:08,881 - DSM_None_None_ - INFO - Is GT in gt_components? False
+2025-02-25 00:17:08,882 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 00:17:08,883 - DSM_None_None_ - INFO - 
+Checking mapping: 3. Propulsion Subsystem -> Jumper cables (*Assuming that jumper cables are used to connect propulsion components in the predicted system*)
+2025-02-25 00:17:08,884 - DSM_None_None_ - INFO - Is GT in gt_components? False
+2025-02-25 00:17:08,886 - DSM_None_None_ - INFO - Is Pred in pred_components? False
+2025-02-25 00:17:08,887 - DSM_None_None_ - INFO - 
+Checking mapping: 4. Power Subsystem -> Battery cable and 9V battery
+2025-02-25 00:17:08,888 - DSM_None_None_ - INFO - Is GT in gt_components? False
+2025-02-25 00:17:08,889 - DSM_None_None_ - INFO - Is Pred in pred_components? True
+2025-02-25 00:17:08,890 - DSM_None_None_ - INFO - 
+Checking mapping: 5. Reaction Wheel -> Light and temperature sensors (*Assuming light and temperature sensors can be interpreted as a feedback control mechanism similar to reaction wheels, although not an exact match*)
+2025-02-25 00:17:08,892 - DSM_None_None_ - INFO - Is GT in gt_components? False
+2025-02-25 00:17:08,893 - DSM_None_None_ - INFO - Is Pred in pred_components? False
+2025-02-25 00:17:08,894 - DSM_None_None_ - INFO - 
+Checking mapping: 6. GNC Software -> HyperDuino shield (*Considering this component as the software interface for controlling other components in the predicted system*)
+2025-02-25 00:17:08,895 - DSM_None_None_ - INFO - Is GT in gt_components? False
+2025-02-25 00:17:08,896 - DSM_None_None_ - INFO - Is Pred in pred_components? False
+2025-02-25 00:17:08,900 - DSM_None_None_ - ERROR - No valid component mappings found
+2025-02-25 07:43:06,570 - DSM_None_None_ - INFO - Resetting GPUs...
+2025-02-25 07:43:53,523 - DSM_None_None_ - INFO - Product: CubeSat
+2025-02-25 07:43:53,524 - DSM_None_None_ - INFO - Model: ollama:mixtral:8x22b_6k
+2025-02-25 07:43:53,526 - DSM_None_None_ - INFO - Type: LLM_RAG
+2025-02-25 07:43:53,526 - DSM_None_None_ - INFO - Reference: R3
+2025-02-25 07:43:54,572 - DSM_None_None_ - INFO - Starting get_best_component_matches function
+2025-02-25 07:43:54,572 - DSM_None_None_ - INFO - Extracting model from path: ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_ollama:mixtral:8x22b_6k_20250223-150636/llm_rag_refs_R3/average_matrix_20250223-150636.csv
+2025-02-25 07:43:54,573 - DSM_None_None_ - INFO - Extracted model: mixtral:8x22b
+2025-02-25 07:43:54,594 - DSM_None_None_ - INFO - Prompt: 
+You are an expert matching engine for cubesat systems. Your task is to determine the optimal one-to-one mapping between remaining ground truth and predicted major components.
+
+Remaining Ground Truth Components:
+['Spacecraft', 'Guidance, Navigation, and Control (GNC) Subsystem', 'Propulsion Subsystem', 'Power Subsystem', 'Reaction Wheel', 'GNC Software']
+
+Remaining Predicted Components:
+['Satellite housing', 'Arduino development board', 'HyperDuino shield', 'Light and temperature sensors', 'Jumper cables', 'Battery cable and 9V battery']
+
+Note: The following components have already been automatically matched due to high similarity (>0.8):
+[]
+
+Available Matches for Remaining Components (above 0.3 similarity threshold):
+
+Spacecraft potential matches:
+- Satellite housing (similarity: 0.471)
+
+Guidance, Navigation, and Control (GNC) Subsystem potential matches:
+
+Propulsion Subsystem potential matches:
+
+Power Subsystem potential matches:
+
+Reaction Wheel potential matches:
+
+GNC Software potential matches:
+
+
+Instructions:
+1. Evaluate each pairing based on:
+   - Embedding similarity scores
+   - Functional equivalence at the core architecture level
+   - System-level whole-part relationships
+   - Overall coherence within the cubesat
+2. Each predicted component may only be matched once
+3. Each ground truth component may receive at most one match
+4. Do not include any text other than what is specified below
+5. Only match the remaining components - do not rematch already matched components
+
+Output Format (exactly as shown):
+--------------------------------------------------
+MAPPINGS:
+[ground truth 1] -> [predicted 1]
+[ground truth 2] -> [predicted 2]
+...
+REASON: [brief explanation focusing on functional equivalence]
+--------------------------------------------------
+2025-02-25 07:43:54,594 - DSM_None_None_ - INFO - Attempting to use model: mixtral:8x22b
+2025-02-25 07:43:54,595 - DSM_None_None_ - INFO - Using Ollama path
+2025-02-25 07:43:54,595 - DSM_None_None_ - INFO - Model name: mixtral:8x22b
+2025-02-25 07:43:54,595 - DSM_None_None_ - INFO - Prompt length: 1781
+2025-02-25 07:45:01,907 - DSM_None_None_ - INFO - Response status code: 200
+2025-02-25 07:45:01,908 - DSM_None_None_ - INFO - API call succeeded
+2025-02-25 07:45:01,909 - DSM_None_None_ - INFO - Got response:  MAPPINGS:
+['Spacecraft'] -> ['Satellite housing']
+
+REASON: The 'Spacecraft' ground truth component ...
+2025-02-25 07:45:01,909 - DSM_None_None_ - INFO - 
+Final Mappings:
+2025-02-25 07:45:01,910 - DSM_None_None_ - INFO - Automatic high-similarity matches: {}
+2025-02-25 07:45:01,911 - DSM_None_None_ - INFO - LLM-suggested matches: {'Spacecraft': 'Satellite housing'}
+2025-02-25 07:45:01,913 - DSM_None_None_ - INFO - Initial mapping: {'Spacecraft': 'Satellite housing'}
+2025-02-25 07:45:03,154 - DSM_None_None_ - INFO - Saved plot to ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_ollama:mixtral:8x22b_6k_20250223-150636/llm_rag_refs_R3/plots/metrics_comparison.png
+2025-02-25 07:45:05,715 - DSM_None_None_ - INFO - Saved plot to ../logs/Process/ii/CubeSat/te3s/LLM_RAG/experiment_llm_rag_ollama:mixtral:8x22b_6k_20250223-150636/llm_rag_refs_R3/plots/matrices_comparison.png
+2025-02-25 07:45:06,141 - DSM_None_None_ - INFO - 
+Results for ollama:mixtral:8x22b_6k:
+2025-02-25 07:45:06,142 - DSM_None_None_ - INFO - 
+Raw Metrics:
+2025-02-25 07:45:06,142 - DSM_None_None_ - INFO - accuracy: 0.4444
+2025-02-25 07:45:06,143 - DSM_None_None_ - INFO - precision: 0.5000
+2025-02-25 07:45:06,143 - DSM_None_None_ - INFO - recall: 0.5000
+2025-02-25 07:45:06,144 - DSM_None_None_ - INFO - f1_score: 0.5000
+2025-02-25 07:45:06,144 - DSM_None_None_ - INFO - edit_distance: 20.0000
+2025-02-25 07:45:06,145 - DSM_None_None_ - INFO - spectral_distance: 1.1819
+2025-02-25 07:45:06,145 - DSM_None_None_ - INFO - 
+Aligned Metrics:
+2025-02-25 07:45:06,146 - DSM_None_None_ - INFO - accuracy: 1.0000
+2025-02-25 07:45:06,146 - DSM_None_None_ - INFO - precision: 1.0000
+2025-02-25 07:45:06,147 - DSM_None_None_ - INFO - recall: 1.0000
+2025-02-25 07:45:06,147 - DSM_None_None_ - INFO - f1_score: 1.0000
+2025-02-25 07:45:06,148 - DSM_None_None_ - INFO - edit_distance: 0.0000
+2025-02-25 07:45:06,148 - DSM_None_None_ - INFO - spectral_distance: 0.0000
+2025-02-25 07:45:06,149 - DSM_None_None_ - INFO - 
+Component Mapping:
+2025-02-25 07:45:06,150 - DSM_None_None_ - INFO -   Ground Truth Component Matched Predicted Component
+0             Spacecraft           Satellite housing
